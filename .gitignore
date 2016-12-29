@@ -49,8 +49,3 @@ Temporary Items
 # Mercurial versioning system
 .hg
 .hgignore
-
-# Application release folder and temporary folders
-release/*
-development/Var/Tmp/*
-development/Var/Logs/*
