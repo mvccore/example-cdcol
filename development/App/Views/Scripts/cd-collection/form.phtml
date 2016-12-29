@@ -1,0 +1,30 @@
+<form
+	class="album-edit"
+	action="<?php echo $this->Url("CdCollection::Submit"); ?>" 
+	method="POST" 
+	enctype="application/x-www-form-urlencoded">
+	<?php if ($this->Errors): ?>
+		<div class="errors">
+			<?php foreach ($this->Errors as $error): ?>
+				<div class="error"><?php echo $error; ?></div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?>
+	<input type="hidden" name="csrf" value="<?php echo App_Controllers_Base::GetSessionHash(); ?>" />
+	<?php if (isset($this->Album->Id)): ?>
+		<input type="hidden" name="id" value="<?php echo $this->Album->Id; ?>" />
+	<?php endif; ?>
+	<label for="title">
+		<span>Title:</span>
+		<input name="title" value="<?php echo $this->Album->Title; ?>" type="text" size="200" autocomplete="off" required="required" />
+	</label>
+	<label for="interpret">
+		<span>Interpret:</span>
+		<input name="interpret" value="<?php echo $this->Album->Interpret; ?>" type="text" size="200" autocomplete="off" required="required" />
+	</label>
+	<label for="year">
+		<span>Year:</span>
+		<input name="year" value="<?php echo $this->Album->Year; ?>" type="number" size="4" />
+	</label>
+	<button class="button-green" type="submit"><span><b>Save</b></span></button>
+</form>

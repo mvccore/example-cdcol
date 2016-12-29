@@ -1,0 +1,19 @@
+<h1>CD Collection</h1>
+<p>Use login: "admin" and password: "demo".</p>
+<form 
+	class="login"
+	action="<?php echo $this->Url("Default::Login"); ?>"
+	method="POST"
+	enctype="application/x-www-form-urlencoded">
+	<?php if ($this->Errors): ?>
+		<div class="errors">
+			<?php foreach ($this->Errors as $error): ?>
+				<div class="error"><?php echo $error; ?></div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?>
+	<input type="hidden" name="csrf" value="<?php echo App_Controllers_Base::GetSessionHash(); ?>" />
+	<input name="username" value="<?php if ($this->User) echo $this->User->UserName; ?>" type="text" size="50" required="required" placeholder="login" />
+	<input name="password" value="" type="password" size="50" autocomplete="off" required="required" placeholder="password" />
+	<button class="button-green" type="submit"><span><b>Login</b></span></button>
+</form>
