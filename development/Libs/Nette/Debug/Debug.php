@@ -14,10 +14,10 @@
 //use Nette,
 //	Nette\Environment;
 
-@include_once('exceptions.php');
-@include_once('IDebugPanel.php');
-@include_once('DebugPanel.php');
-@include_once('DebugHelpers.php');
+include_once(__DIR__.'/exceptions.php');
+include_once(__DIR__.'/IDebugPanel.php');
+include_once(__DIR__.'/DebugPanel.php');
+include_once(__DIR__.'/DebugHelpers.php');
 
 /**
  * Debugger: displays and logs errors.

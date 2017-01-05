@@ -32,6 +32,10 @@ final class DebugHelpers
 	 * Template property
 	 */
 	public static $data = array();
+	/**
+	 * Template property
+	 */
+	public static $exception;
 
 	/**
 	 * Renders blue screen.
@@ -43,7 +47,7 @@ final class DebugHelpers
 		/*if (class_exists('Nette\Environment', FALSE)) {
 			$application = Environment::getContext()->hasService('Nette\\Application\\Application', TRUE) ? Environment::getContext()->getService('Nette\\Application\\Application') : NULL;
 		}*/
-		$_GLOBAL['nette_blue_screen_exception'] = $exception;
+		DebugHelpers::$exception = $exception;
 		include(__DIR__ . '/templates/bluescreen.phtml');
 	}
 

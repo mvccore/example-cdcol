@@ -6,7 +6,7 @@ class App_Models_Base {
 		// sql lite:
 		
 		'driver'	=> 'sqllite',
-        'path'		=> '/../../../database/cdcol-sqllite.db',
+        'path'		=> '/../database/cdcol-sqllite.db',
 		
 		
 		// mysql:
@@ -33,9 +33,14 @@ class App_Models_Base {
 		if (!self::$connection) {
 			$cfg = (object) self::$config;
 			$options = array();
-			
+
 			if ($cfg->driver == 'sqllite') {
-				$fullPath = realpath(__DIR__ . $cfg->path);
+				$appRoot = MvcCore::GetRequest()->appRoot;
+				if (strpos($appRoot, 'phar://') !== FALSE) {
+					$lastSlashPos = strrpos($appRoot, '/');
+					$appRoot = substr($appRoot, 7, $lastSlashPos - 7);
+				}
+				$fullPath = realpath($appRoot . $cfg->path);
 				self::$connection = new PDO("sqlite:$fullPath");
 				
 			} else if ($cfg->driver == 'mysql') {

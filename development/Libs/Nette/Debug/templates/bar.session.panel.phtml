@@ -28,13 +28,13 @@
 		<b>Session Panel</b>
 	</span>
 	<small class="pull-right expiration">
-		<strong>Max.&nbsp;life&nbsp;time:</strong>&nbsp;<?php echo $this->formateDate($this->sessionMaxTime); ?>
+		<strong>Max.&nbsp;life&nbsp;time:</strong>&nbsp;<?php echo SessionPanel::FormateDate(SessionPanel::$SessionMaxTime); ?>
 	</small>
 	<span class="clear"></span>
 </div>
 <div id="nette-debug-session-panel">
-	<?php foreach ($this->session as $sectionName => $section): ?>
-		<?php $sessionMeta = $this->sessionMetaStore[$sectionName]; ?>
+	<?php foreach (SessionPanel::$Session as $sectionName => $section): ?>
+		<?php $sessionMeta = SessionPanel::$SessionMetaStore[$sectionName]; ?>
 		<table>
 			<thead>
 				<tr>
@@ -57,7 +57,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach ($section as $key => $typeAndDumpedValues): ?>
+				<?php foreach ($section as $key => $typeAndDumpedValues):  ?>
 					<tr>
 						<td class="key">
 							<?php echo $key; ?><br /><i>(<?php echo $typeAndDumpedValues[0]; ?>)</i>

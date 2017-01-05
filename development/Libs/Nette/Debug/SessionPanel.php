@@ -1,14 +1,16 @@
 <?php
 
+include_once(__DIR__.'/IDebugPanel.php');
+
 class SessionPanel implements IDebugPanel
 {
 	public $now = 0;
 	
-	public $session = array();
+	public static $SessionMaxTime = 0;
 
-	public $sessionMetaStore = array();
+	public static $SessionMetaStore = array();
 	
-	public $sessionMaxTime = 0;
+	public static $Session = array();
 
 	public function __construct ()
 	{
@@ -22,7 +24,6 @@ class SessionPanel implements IDebugPanel
 
 	public function getTab()
 	{
-		
 		ob_start();
 		require(__DIR__ . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'bar.session.tab.phtml');
 		return ob_get_clean();
@@ -31,7 +32,7 @@ class SessionPanel implements IDebugPanel
 	public function getPanel()
 	{
 		$this->readSession();
-		if (!$this->session) return '';
+		if (!self::$Session) return '';
 		ob_start();
 		require(__DIR__ . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . 'bar.session.panel.phtml');
 		return ob_get_clean();
@@ -39,8 +40,10 @@ class SessionPanel implements IDebugPanel
 	
 	protected function readSession ()
 	{
-		$this->session = array();
+		self::$Session = array();
+		if (!isset($_SESSION) || (isset($_SESSION) && is_null($_SESSION))) return;
 		$sessionMetaStore = isset($_SESSION['__ZF']) ? $_SESSION['__ZF'] : array();
+
 		foreach ($_SESSION as $sectionName => $section) {
 		
 			if ($sectionName === '__ZF') continue;
@@ -49,52 +52,55 @@ class SessionPanel implements IDebugPanel
 			if (isset($sessionMetaStore[$sectionName]['ENT'])) {
 				$sectionMetaInfo->lifeType = 'time';
 				$timestamp = $sessionMetaStore[$sectionName]['ENT'] - $this->now;
-				if ($timestamp > $this->sessionMaxTime) $this->sessionMaxTime = $timestamp;
+				if ($timestamp > self::$SessionMaxTime) self::$SessionMaxTime = $timestamp;
 				$sectionMetaInfo->timestamp = $timestamp;
-				$sectionMetaInfo->timeFormated = $this->formateDate($timestamp);
-			} else if ((isset($sessionMetaStore[$sectionName]['B'])) && ($this->sessionMetaStore[$sectionName]['B'] === TRUE)) {
+				$sectionMetaInfo->timeFormated = self::FormateDate($timestamp);
+			} else if ((isset($sessionMetaStore[$sectionName]['B'])) && ($sessionMetaStore[$sectionName]['B'] === TRUE)) {
 				$sectionMetaInfo->lifeType = 'browser';
 			} else {
 				$sectionMetaInfo->lifeType = 'nothing';
 			}
-			$this->sessionMetaStore[$sectionName] = $sectionMetaInfo;
+			self::$SessionMetaStore[$sectionName] = $sectionMetaInfo;
 			
-			$dumpedSection = array();
-			if (gettype($section) != 'array') continue;
-			foreach ($section as $key => $value) {
-				$valueType = '';
-				if (gettype($value) == 'string') {
-					// try to unserialize
-					$phpValue = unserialize($value);
-					if ($phpValue !== FALSE && $value !== 'b:0;') {
-						$valueType = 'SERIALIZED';
-					} else {
-						$phpValue = $value;
-					}
-					// try  to encode json
-					if (!$valueType && (substr($value, 0, 1) == '{' || substr($value, 0, 1) == '[')) {
-						$phpValue = json_decode($value);
-						if ($phpValue !== NULL && strtolower($value) !== 'null') {
-							$valueType = 'JSON ENCODED';
+			if (in_array(gettype($section), array('string', 'int', 'bool'))) {
+				$dumpedSection[$sectionName] = array('PURE_PHP', $section);
+			} else {
+				$dumpedSection = array();
+				foreach ($section as $key => $value) {
+					$valueType = '';
+					if (gettype($value) == 'string') {
+						// try to unserialize
+						$phpValue = unserialize($value);
+						if ($phpValue !== FALSE && $value !== 'b:0;') {
+							$valueType = 'SERIALIZED';
 						} else {
 							$phpValue = $value;
 						}
-					}
-					if (!$valueType) {
+						// try  to encode json
+						if (!$valueType && (substr($value, 0, 1) == '{' || substr($value, 0, 1) == '[')) {
+							$phpValue = json_decode($value);
+							if ($phpValue !== NULL && strtolower($value) !== 'null') {
+								$valueType = 'JSON ENCODED';
+							} else {
+								$phpValue = $value;
+							}
+						}
+						if (!$valueType) {
+							$valueType = 'PURE PHP';
+							$phpValue = $value;
+						}
+					} else {
 						$valueType = 'PURE PHP';
 						$phpValue = $value;
 					}
-				} else {
-					$valueType = 'PURE PHP';
-					$phpValue = $value;
+					$dumpedSection[$key] = array($valueType, $phpValue);
 				}
-				$dumpedSection[$key] = array($valueType, $phpValue);
 			}
-			$this->session[$sectionName] = $dumpedSection;
+			self::$Session[$sectionName] = $dumpedSection;	
 		}
 	}
 	
-	public function formateDate ($timestamp = 0)
+	public function FormateDate ($timestamp = 0)
 	{
 		$timeFormated = '';
 		if ($timestamp >= 31557600) {

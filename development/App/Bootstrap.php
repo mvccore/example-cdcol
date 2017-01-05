@@ -3,7 +3,7 @@
 class App_Bootstrap
 {
 	public static function Init () {
-		@Nette_DebugAdapter::Init(TRUE);
+		Nette_DebugAdapter::Init(MvcCore::GetEnvironment() == 'development');
 
 		MvcCore::SetRoutes(array(
 			'Default::Default'		=> array(

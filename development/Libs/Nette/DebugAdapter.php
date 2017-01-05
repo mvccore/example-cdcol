@@ -12,7 +12,12 @@ class Nette_DebugAdapter
 	 * If directory bellow doesn't exist, it will be created at first use
 	 */
 	private static $_logDirectory = '/Var/Logs';
-	
+
+	/**
+	 * @var boolean
+	 */
+	private static $_initialized = FALSE;
+
 	/**
 	 * Initialization of Nette\Debug tool
 	 * @param $debug			boolean		optional	set TRUE on development mode
@@ -27,33 +32,35 @@ class Nette_DebugAdapter
 		$appRootPath = mb_substr($indexFilePath, 0, mb_strrpos($indexFilePath, '/'));
 		$logDirectory = $appRootPath . ($logDirectory ? $logDirectory : self::$_logDirectory);
 		$debugRecepient = $debugRecepient ? $debugRecepient : self::$_debugRecepient;
-		
-		if (strpos(__FILE__, 'phar://') === 0 || class_exists('PHP_PACKAGER')) {
+
+		if (class_exists('MvcCore') && MvcCore::GetCompiled()) {
 			$logDirectory = '';
 		} else {
 			if (!is_dir($logDirectory)) mkdir($logDirectory, 0777, TRUE);
 			if (!is_writable($logDirectory)) {
 				try {
 					chmod($logDirectory, 0777);
-				} catch (Exception $e) {
+				}
+				catch (Exception $e) {
 					die('[Nette_DebugAdapter] ' . $e->getMessage());
 				}
 			}
 		}
-		
+
 		Debug::enable(!$debug, $logDirectory, $debugRecepient);
-		Debug::$consoleMode = FALSE;
-		
+		Debug::$editor .= '&editor=MSVS2015';
+
 		self::_initDebugPanels();
 		self::_initGlobalShorthands();
+		self::$_initialized = TRUE;
 	}
 	public static function Shutdown () {
 		Debug::_shutdownHandler();
 	}
 	private static function _includeFiles () {
-		@include_once('Debug/Debug.php');
-		@include_once('Debug/IncludePanel.php');
-		@include_once('Debug/SessionPanel.php');
+		include_once(__DIR__.'/Debug/Debug.php');
+		include_once(__DIR__.'/Debug/IncludePanel.php');
+		include_once(__DIR__.'/Debug/SessionPanel.php');
 	}
 	private static function _initDebugPanels () {
 		Debug::addPanel(new IncludePanel);

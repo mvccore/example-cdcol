@@ -26,6 +26,8 @@ class App_Controllers_Base extends MvcCore_Controller
 				'jsMinify'	=> 1,
 				'jsJoin'	=> 1,
 				'tmpDir'	=> self::$tmpPath,
+				// for PHAR packing - uncomment line bellow to "md5_file"
+				//'fileChecking'	=> 'md5_file',
 			));
 			$this->view->Css('fixedHead')
 				->AppendRendered(self::$staticPath . 'css/fonts.css')

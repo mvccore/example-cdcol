@@ -19,7 +19,7 @@ button span,
 .button span{
 	line-height:31px;
 	background-color:transparent;
-	background-image:url('<?php echo $this->url('/static/img/buttons.png'); ?>');
+	background-image:url('<?php echo $this->AssetUrl('/static/img/buttons.png'); ?>');
 }
 button,
 .button{
@@ -94,6 +94,7 @@ button span{
 .button:focus,
 .button:active{
 	background-color:transparent !important;
+	border:0;
 }
 .button-green span b{
 	display:block;

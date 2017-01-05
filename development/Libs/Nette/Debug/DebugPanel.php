@@ -11,7 +11,7 @@
 
 //namespace Nette;
 
-
+include_once(__DIR__.'/IDebugPanel.php');
 
 /**
  * IDebugPanel implementation helper.

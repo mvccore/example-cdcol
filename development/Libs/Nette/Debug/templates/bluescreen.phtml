@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
  * Debugger bluescreen template.
@@ -38,6 +38,7 @@ static $errorTypes = array(
 	E_USER_DEPRECATED => 'User Deprecated',
 );
 
+$exception = DebugHelpers::$exception;
 $title = ($exception instanceof \FatalErrorException && isset($errorTypes[$exception->getSeverity()])) ? $errorTypes[$exception->getSeverity()] : get_class($exception);
 
 //$expandPath = NETTE_DIR . DIRECTORY_SEPARATOR; // . 'Utils' . DIRECTORY_SEPARATOR . 'Object';
@@ -48,16 +49,19 @@ $counter = 0;
 if (headers_sent()) {
 	echo '</pre></xmp></table>';
 }
-echo '<!DOCTYPE html>
+
+?><!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="robots" content="noindex,noarchive">
 	<meta name="generator" content="Nette Framework">
-	<title>' . htmlspecialchars($title) . '</title><!-- ';
+
+	<title><?php echo htmlspecialchars($title) ?></title><!-- <?php
 		$ex = $exception; echo $ex->getMessage(), ($ex->getCode() ? ' #' . $ex->getCode() : '');
 		while ((method_exists($ex, 'getPrevious') && $ex = $ex->getPrevious()) || (isset($ex->previous) && $ex = $ex->previous)) echo '; caused by ', get_class($ex), ' ', $ex->getMessage(), ($ex->getCode() ? ' #' . $ex->getCode() : '');
-	echo ' -->
+	?> -->
+
 	<style type="text/css" class="nette">
     body{margin:0 0 2em;padding:0}
 	#netteBluescreen{font:9pt/1.5 Verdana,sans-serif;background:white;color:#333;position:absolute;left:0;top:0;width:100%;z-index:23178;text-align:left}
@@ -97,273 +101,276 @@ echo '<!DOCTYPE html>
 	#netteBluescreen a[href^=editor\:]{color:inherit;border-bottom:1px dotted #328ADC}
 </style>
 </head>
+
+
+
 <body>
 <div id="netteBluescreen">
 	<a id="netteBluescreenIcon" href="#" rel="next"><abbr>&#x25bc;</abbr></a
+
 	><div>
 		<div id="netteBluescreenError" class="panel">
-			<h1>' . htmlspecialchars($title), ($exception->getCode() ? ' #' . $exception->getCode() : '') . '</h1>
-			<p>' . htmlspecialchars($exception->getMessage()) . '</p>
-		</div>';
-		$ex = $exception; $level = 0;
-		do {
-			if ($level++):
-				echo '<div class="panel">
-					<h2><a href="#" rel="netteBsPnl' . ++$counter . '">Caused by <abbr>' . (($collapsed = $level > 2) ? '&#x25ba;' : '&#x25bc;') . '</abbr></a></h2>
-					<div id="netteBsPnl' . $counter . '" class="' . ($collapsed ? 'nette-collapsed ' : '') . 'inner">
-						<div class="panel">
-							<h1>' . htmlspecialchars(get_class($ex)), ($ex->getCode() ? ' #' . $ex->getCode() : '') . '</h1>
-							<p><b>' . htmlspecialchars($ex->getMessage()) . '</b></p>
-						</div>';
-			endif;
+			<h1><?php echo htmlspecialchars($title), ($exception->getCode() ? ' #' . $exception->getCode() : '') ?></h1>
 
-			$stack = $ex->getTrace();
-			$expanded = NULL;
-			if (strpos($ex->getFile(), $expandPath) === 0) {
+			<p><?php echo htmlspecialchars($exception->getMessage()) ?></p>
+		</div>
+
+
+
+		<?php $ex = $exception; $level = 0; ?>
+		<?php do { ?>
+
+			<?php if ($level++): ?>
+			<div class="panel">
+			<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">Caused by <abbr><?php echo ($collapsed = $level > 2) ? '&#x25ba;' : '&#x25bc;' ?></abbr></a></h2>
+
+			<div id="netteBsPnl<?php echo $counter ?>" class="<?php echo $collapsed ? 'nette-collapsed ' : '' ?>inner">
+				<div class="panel">
+					<h1><?php echo htmlspecialchars(get_class($ex)), ($ex->getCode() ? ' #' . $ex->getCode() : '') ?></h1>
+
+					<p><b><?php echo htmlspecialchars($ex->getMessage()) ?></b></p>
+				</div>
+			<?php endif ?>
+
+			<?php $stack = $ex->getTrace(); $expanded = NULL ?>
+			<?php if (strpos($ex->getFile(), $expandPath) === 0) {
 				foreach ($stack as $key => $row) {
 					if (isset($row['file']) && strpos($row['file'], $expandPath) !== 0) { $expanded = $key; break; }
 				}
-			}
-			if (is_file($ex->getFile())):
-				echo '<div class="panel">
-					<h2><a href="#" rel="netteBsPnl' . ++$counter . '">Source file <abbr>' . (($collapsed = $expanded !== NULL) ? '&#x25ba;' : '&#x25bc;') . '</abbr></a></h2>
-					<div id="netteBsPnlp' . $counter . '" class="' . ($collapsed ? 'nette-collapsed ' : '')  .'inner">
-						<p><b>Fi' . 'le:</b> ' . ((Debug::$editor) ? '<a href="' . htmlspecialchars(DebugHelpers::editorLink($ex->getFile(), $ex->getLine())) . '">' : '') . htmlspecialchars($ex->getFile()) . (Debug::$editor ? '</a>':'') . '&nbsp; <b>Line:</b> ' . $ex->getLine() . '</p>
-						<pre>' . DebugHelpers::highlightFile($ex->getFile(), $ex->getLine()) . '</pre>
-					</div>
-				</div>';
-			endif;
+			} ?>
+			<?php if (is_file($ex->getFile())): ?>
+			<div class="panel">
+			<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">Source file <abbr><?php echo ($collapsed = $expanded !== NULL) ? '&#x25ba;' : '&#x25bc;' ?></abbr></a></h2>
+
+			<div id="netteBsPnl<?php echo $counter ?>" class="<?php echo $collapsed ? 'nette-collapsed ' : '' ?>inner">
+				<p><b>File:</b> <?php if (Debug::$editor) echo '<a href="', htmlspecialchars(DebugHelpers::editorLink($ex->getFile(), $ex->getLine())), '">' ?>
+				<?php echo htmlspecialchars($ex->getFile()), (Debug::$editor ? '</a>':'') ?> &nbsp; <b>Line:</b> <?php echo $ex->getLine() ?></p>
+				<pre><?php echo DebugHelpers::highlightFile($ex->getFile(), $ex->getLine()) ?></pre>
+			</div></div>
+			<?php endif?>
 
 
-			if (isset($stack[0]['class']) && $stack[0]['class'] === 'Nette\Debug' && ($stack[0]['function'] === '_shutdownHandler' || $stack[0]['function'] === '_errorHandler')) unset($stack[0]);
-			if (Debug::$fatalErrorDebugBackTrace) $stack = Debug::$fatalErrorDebugBackTrace;
-			if ($stack):
-				echo '<div class="panel">';
-					echo '<h2><a href="#" rel="netteBsPnl' . ++$counter . '">Call stack <abbr>&#x25bc;</abbr></a></h2>';
-					echo '<div id="netteBsPnl' . $counter . '" class="inner">';
-						echo '<ol>';
-							foreach ($stack as $key => $row):
-								echo '<li>';
-									echo '<p>';
-										if (isset($row['file']) && is_file($row['file'])):
-											echo Debug::$editor ? '<a href="' . htmlspecialchars(DebugHelpers::editorLink($row['file'], $row['line'])) . '"' : '<span';
-											echo ' title="' . htmlSpecialChars($row['file']) . '">';
-												echo htmlSpecialChars(basename(dirname($row['file'])));
-												echo '/<b>', htmlSpecialChars(basename($row['file'])), '</b>';
-											echo Debug::$editor ? '</a>':'</span>';
-											echo ' (' . $row['line'] . ')';
-										else:
-											echo '<i>inner-code</i>'; if (isset($row['line'])) echo ' (', $row['line'], ')';
-										endif;
+			<?php if (isset($stack[0]['class']) && $stack[0]['class'] === 'Nette\Debug' && ($stack[0]['function'] === '_shutdownHandler' || $stack[0]['function'] === '_errorHandler')) unset($stack[0]) ?>
+			<?php if (Debug::$fatalErrorDebugBackTrace) $stack = Debug::$fatalErrorDebugBackTrace; ?>
+			<?php if ($stack): ?>
+			<div class="panel">
+				<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">Call stack <abbr>&#x25bc;</abbr></a></h2>
 
-										if (isset($row['file']) && is_file($row['file'])): 
-											echo '<a href="#" rel="netteBsSrc';
-											echo $level."-".$key;
-											echo '">&nbsp;source <abbr>&#x25ba;</abbr></a>&nbsp; "';
-										endif;
+				<div id="netteBsPnl<?php echo $counter ?>" class="inner">
+				<ol>
+					<?php foreach ($stack as $key => $row): ?>
+					<li><p>
 
-										if (isset($row['class'])) echo $row['class'] . $row['type'];
-										echo $row['function'];
-										
-										echo '(';
-										if (!empty($row['args'])):
-											echo '<a href="#" rel="netteBsArgs'.$level."-".$key.'">arguments <abbr>&#x25ba;</abbr></a>';
-										endif;
-										echo ')';
-									echo '</p>';
+					<?php if (isset($row['file']) && is_file($row['file'])): ?>
+						<?php echo Debug::$editor ? '<a href="' . htmlspecialchars(DebugHelpers::editorLink($row['file'], $row['line'])) . '"' : '<span'; ?> title="<?php echo htmlSpecialChars($row['file'])?>">
+						<?php echo htmlSpecialChars(basename(dirname($row['file']))), '/<b>', htmlSpecialChars(basename($row['file'])), '</b>', (Debug::$editor ? '</a>':'</span>'), ' (', $row['line'], ')' ?>
+					<?php else: ?>
+						<i>inner-code</i><?php if (isset($row['line'])) echo ' (', $row['line'], ')' ?>
+					<?php endif ?>
 
-									if (!empty($row['args'])):
-										echo '<div class="nette-collapsed outer" id="netteBsArgs' . $level . "-" . $key; echo '"><table>';
-										try {
-											$r = isset($row['class']) ? new \ReflectionMethod($row['class'], $row['function']) : new \ReflectionFunction($row['function']);
-											$params = $r->getParameters();
-										} catch (\Exception $e) {
-											$params = array();
-										}
-										foreach ($row['args'] as $k => $v) {
-											echo '<tr><th>', (isset($params[$k]) ? '$' . $params[$k]->name : "#$k"), '</th><td>';
-											echo DebugHelpers::clickableDump($v);
-											echo "</td></tr>\n";
-										}
-										echo '</table>
-										</div>';
-									endif;
+					<?php if (isset($row['file']) && is_file($row['file'])): ?><a href="#" rel="netteBsSrc<?php echo "$level-$key" ?>">source <abbr>&#x25ba;</abbr></a>&nbsp; <?php endif ?>
 
-									if (isset($row['file']) && is_file($row['file'])):
-										echo '<pre '; if ($expanded !== $key) echo 'class="nette-collapsed"'; echo ' id="netteBsSrc'; echo $level.'-'.$key; echo '">';echo DebugHelpers::highlightFile($row['file'], $row['line']); echo '</pre>';
-									endif;
-									
-								echo '</li>';
-							endforeach;
-						echo '</ol>';
-					echo '</div>';
-				echo '</div>';
-			endif;
+					<?php if (isset($row['class'])) echo $row['class'] . $row['type'] ?>
+					<?php echo $row['function'] ?>
 
+					(<?php if (!empty($row['args'])): ?><a href="#" rel="netteBsArgs<?php echo "$level-$key" ?>">arguments <abbr>&#x25ba;</abbr></a><?php endif ?>)
+					</p>
 
-
-			if ($ex instanceof IDebugPanel && ($tab = $ex->getTab()) && ($panel = $ex->getPanel())):
-				echo '<div class="panel">
-						<h2><a href="#" rel="netteBsPnl' . ++$counter . '">' . htmlSpecialChars($tab) . ' <abbr>&#x25bc;</abbr></a></h2>
-
-					<div id="netteBsPnl' . $counter . '" class="inner">
-						' . $panel . '
-					</div>
-				</div>';
-			endif;
-
-
-
-			if (isset($ex->context) && is_array($ex->context)):
-				echo '<div class="panel">
-					<h2><a href="#" rel="netteBsPnl' . ++$counter . '">Variables <abbr>&#x25ba;</abbr></a></h2>
-
-					<div id="netteBsPnl' . $counter . '" class="nette-collapsed inner">
-						<div class="outer">
-							<table>';
-				foreach ($ex->context as $k => $v) {
-					echo '<tr><th>$', htmlspecialchars($k), '</th><td>', DebugHelpers::clickableDump($v), "</td></tr>\n";
-				}
-						echo '</table>
+					<?php if (!empty($row['args'])): ?>
+						<div class="nette-collapsed outer" id="netteBsArgs<?php echo "$level-$key" ?>">
+						<table>
+						<?php
+						try {
+							$r = isset($row['class']) ? new \ReflectionMethod($row['class'], $row['function']) : new \ReflectionFunction($row['function']);
+							$params = $r->getParameters();
+						} catch (\Exception $e) {
+							$params = array();
+						}
+						foreach ($row['args'] as $k => $v) {
+							echo '<tr><th>', (isset($params[$k]) ? '$' . $params[$k]->name : "#$k"), '</th><td>';
+							echo DebugHelpers::clickableDump($v);
+							echo "</td></tr>\n";
+						}
+						?>
+						</table>
 						</div>
-					</div>
-				</div>';
-			endif;
-
-		} while ((method_exists($ex, 'getPrevious') && $ex = $ex->getPrevious()) || (isset($ex->previous) && $ex = $ex->previous));
-		
-		while (--$level) echo '</div></div>';
+					<?php endif ?>
 
 
+					<?php if (isset($row['file']) && is_file($row['file'])): ?>
+						<pre <?php if ($expanded !== $key) echo 'class="nette-collapsed"'; ?> id="netteBsSrc<?php echo "$level-$key" ?>"><?php echo DebugHelpers::highlightFile($row['file'], $row['line']) ?></pre>
+					<?php endif ?>
 
-		if (!empty($application)):
-			echo '<div class="panel">
-				<h2><a href="#" rel="netteBsPnl' . ++$counter . '">Nette Application <abbr>&#x25ba;</abbr></a></h2>
-
-				<div id="netteBsPnl' . $counter . '" class="nette-collapsed inner">
-					<h3>Requests</h3>
-					' . DebugHelpers::clickableDump($application->getRequests()) . '
-					<h3>Presenter</h3>
-					' . DebugHelpers::clickableDump($application->getPresenter()) . '
-				</div>
-			</div>';
-		endif;
+					</li>
+					<?php endforeach ?>
+				</ol>
+			</div></div>
+			<?php endif ?>
 
 
 
-		echo '<div class="panel">
-			<h2><a href="#" rel="netteBsPnl' . ++$counter . '">Environment <abbr>&#x25ba;</abbr></a></h2>
-			<div id="netteBsPnl' . $counter . '" class="nette-collapsed inner">';
-			
-		$list = get_defined_constants(TRUE);
-		if (!empty($list['user'])):
-			echo '<h3><a href="#" rel="netteBsPnl-env-const">Constants <abbr>&#x25bc;</abbr></a></h3>
-				<div class="outer">
-					<table id="netteBsPnl-env-const">';
+			<?php if ($ex instanceof IDebugPanel && ($tab = $ex->getTab()) && ($panel = $ex->getPanel())): ?>
+			<div class="panel">
+				<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>"><?php echo htmlSpecialChars($tab) ?> <abbr>&#x25bc;</abbr></a></h2>
+
+				<div id="netteBsPnl<?php echo $counter ?>" class="inner">
+				<?php echo $panel ?>
+			</div></div>
+			<?php endif ?>
+
+
+
+			<?php if (isset($ex->context) && is_array($ex->context)):?>
+			<div class="panel">
+			<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">Variables <abbr>&#x25ba;</abbr></a></h2>
+
+			<div id="netteBsPnl<?php echo $counter ?>" class="nette-collapsed inner">
+			<div class="outer">
+			<table>
+			<?php
+			foreach ($ex->context as $k => $v) {
+					echo '<tr><th>$', htmlspecialchars($k), '</th><td>', DebugHelpers::clickableDump($v), "</td></tr>\n";
+			}
+			?>
+			</table>
+			</div>
+			</div></div>
+			<?php endif ?>
+
+		<?php } while ((method_exists($ex, 'getPrevious') && $ex = $ex->getPrevious()) || (isset($ex->previous) && $ex = $ex->previous)); ?>
+		<?php while (--$level) echo '</div></div>' ?>
+
+
+
+		<?php if (!empty($application)):?>
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">Nette Application <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl<?php echo $counter ?>" class="nette-collapsed inner">
+			<h3>Requests</h3>
+			<?php echo DebugHelpers::clickableDump($application->getRequests()) ?>
+
+			<h3>Presenter</h3>
+			<?php echo DebugHelpers::clickableDump($application->getPresenter()) ?>
+		</div></div>
+		<?php endif ?>
+
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">Environment <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl<?php echo $counter ?>" class="nette-collapsed inner">
+			<?php
+			$list = get_defined_constants(TRUE);
+			if (!empty($list['user'])):?>
+			<h3><a href="#" rel="netteBsPnl-env-const">Constants <abbr>&#x25bc;</abbr></a></h3>
+			<div class="outer">
+			<table id="netteBsPnl-env-const">
+			<?php
 			foreach ($list['user'] as $k => $v) {
 				echo '<tr><th>', htmlspecialchars($k), '</th>';
 				echo '<td>', DebugHelpers::clickableDump($v), "</td></tr>\n";
 			}
-			echo '</table>
-				</div>';
-		endif;
+			?>
+			</table>
+			</div>
+			<?php endif ?>
 
 
-		echo '<h3><a href="#" rel="netteBsPnl-env-files">Included files <abbr>&#x25ba;</abbr></a> (' . count(get_included_files()) . ')</h3>
+			<h3><a href="#" rel="netteBsPnl-env-files">Included files <abbr>&#x25ba;</abbr></a> (<?php echo count(get_included_files()) ?>)</h3>
 			<div class="outer">
-				<table id="netteBsPnl-env-files" class="nette-collapsed">';
-		foreach (get_included_files() as $v) {
-			echo '<tr><td>', htmlspecialchars($v), "</td></tr>\n";
-		}
-		echo '</table>
-		</div>';
+			<table id="netteBsPnl-env-files" class="nette-collapsed">
+			<?php
+			foreach (get_included_files() as $v) {
+				echo '<tr><td>', htmlspecialchars($v), "</td></tr>\n";
+			}
+			?>
+			</table>
+			</div>
 
 
-		echo '<h3>$_SERVER</h3>';
-		if (empty($_SERVER)):
-			echo '<p><i>empty</i></p>';
-		else:
-			echo '<div class="outer">
-				<table>';			
-			foreach ($_SERVER as $k => $v):
-				echo '<tr><th>', htmlspecialchars($k), '</th><td>', DebugHelpers::clickableDump($v), "</td></tr>\n";
-			endforeach;
-			echo '</table>
-			</div>';
-		endif;
-		echo '</div></div>';
-
-
-
-		echo '<div class="panel">
-			<h2><a href="#" rel="netteBsPnl' . ++$counter . '">HTTP request <abbr>&#x25ba;</abbr></a></h2>
-
-			<div id="netteBsPnl' . $counter . '" class="nette-collapsed inner">';
-		if (function_exists('apache_request_headers')):
-			echo '<h3>Headers</h3>
-				<div class="outer">
-					<table>';
-			foreach (apache_request_headers() as $k => $v):
-				echo '<tr><th>', htmlspecialchars($k), '</th><td>', htmlspecialchars($v), "</td></tr>\n";
-			endforeach;
-			echo '</table>
-			</div>';
-		endif;
-
-
-		foreach (array('_GET', '_POST', '_COOKIE') as $name):
-			echo '<h3>$' . $name . '</h3>';
-			if (empty($GLOBALS[$name])):
-				echo '<p><i>empty</i></p>';
-			else:
-				echo '<div class="outer">
-					<table>';
-				foreach ($GLOBALS[$name] as $k => $v):
-					echo '<tr><th>', htmlspecialchars($k), '</th><td>', DebugHelpers::clickableDump($v), "</td></tr>\n";
-				endforeach;
-				echo '</table>
-				</div>';
-			endif;
-		endforeach;
-		echo '</div></div>';
+			<h3>$_SERVER</h3>
+			<?php if (empty($_SERVER)):?>
+			<p><i>empty</i></p>
+			<?php else: ?>
+			<div class="outer">
+			<table>
+			<?php
+			foreach ($_SERVER as $k => $v) echo '<tr><th>', htmlspecialchars($k), '</th><td>', DebugHelpers::clickableDump($v), "</td></tr>\n";
+			?>
+			</table>
+			</div>
+			<?php endif ?>
+		</div></div>
 
 
 
-		echo '<div class="panel">
-			<h2><a href="#" rel="netteBsPnl' . ++$counter . '">HTTP response <abbr>&#x25ba;</abbr></a></h2>';
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">HTTP request <abbr>&#x25ba;</abbr></a></h2>
 
-		echo '<div id="netteBsPnl' . $counter . '" class="nette-collapsed inner">
-			<h3>Headers</h3>';
-		if (headers_list()):
-			echo '<pre>';
-			foreach (headers_list() as $s):
-				echo htmlspecialchars($s), '<br>';
-			endforeach;
-			echo '</pre>';
-		else:
-			echo '<p><i>no headers</i></p>';
-		endif;
-		echo '</div></div>';
+		<div id="netteBsPnl<?php echo $counter ?>" class="nette-collapsed inner">
+			<?php if (function_exists('apache_request_headers')): ?>
+			<h3>Headers</h3>
+			<div class="outer">
+			<table>
+			<?php
+			foreach (apache_request_headers() as $k => $v) echo '<tr><th>', htmlspecialchars($k), '</th><td>', htmlspecialchars($v), "</td></tr>\n";
+			?>
+			</table>
+			</div>
+			<?php endif ?>
 
 
-		echo '<ul>
-			<li>Report generated at ' . @date('Y/m/d H:i:s', Debug::$time) . '</li>';
-			if (preg_match('#^https?://#', Debug::$source)):
-				echo '<li><a href="', htmlSpecialChars(Debug::$source), '">', htmlSpecialChars(Debug::$source), '</a></li>';
-			elseif (Debug::$source):
-				echo '<li>', htmlSpecialChars(Debug::$source), '</li>';
-			endif;
-			echo '<li>PHP ', htmlSpecialChars(PHP_VERSION), '</li>';
-			if (isset($_SERVER['SERVER_SOFTWARE'])):
-				echo '<li>', htmlSpecialChars($_SERVER['SERVER_SOFTWARE']), '</li>';
-			endif;
-		echo '</ul>
+			<?php foreach (array('_GET', '_POST', '_COOKIE') as $name): ?>
+			<h3>$<?php echo $name ?></h3>
+			<?php if (empty($GLOBALS[$name])):?>
+			<p><i>empty</i></p>
+			<?php else: ?>
+			<div class="outer">
+			<table>
+			<?php
+			foreach ($GLOBALS[$name] as $k => $v) echo '<tr><th>', htmlspecialchars($k), '</th><td>', DebugHelpers::clickableDump($v), "</td></tr>\n";
+			?>
+			</table>
+			</div>
+			<?php endif ?>
+			<?php endforeach ?>
+		</div></div>
+
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl<?php echo ++$counter ?>">HTTP response <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl<?php echo $counter ?>" class="nette-collapsed inner">
+			<h3>Headers</h3>
+			<?php if (headers_list()): ?>
+			<pre><?php
+			foreach (headers_list() as $s) echo htmlspecialchars($s), '<br>';
+			?></pre>
+			<?php else: ?>
+			<p><i>no headers</i></p>
+			<?php endif ?>
+		</div></div>
+
+
+		<ul>
+			<li>Report generated at <?php echo @date('Y/m/d H:i:s', Debug::$time) ?></li>
+			<?php if (preg_match('#^https?://#', Debug::$source)): ?>
+				<li><a href="<?php echo htmlSpecialChars(Debug::$source) ?>"><?php echo htmlSpecialChars(Debug::$source) ?></a></li>
+			<?php elseif (Debug::$source): ?>
+				<li><?php echo htmlSpecialChars(Debug::$source) ?></li>
+			<?php endif ?>
+			<li>PHP <?php echo htmlSpecialChars(PHP_VERSION) ?></li>
+			<?php if (isset($_SERVER['SERVER_SOFTWARE'])): ?><li><?php echo htmlSpecialChars($_SERVER['SERVER_SOFTWARE']) ?></li><?php endif ?>
+		</ul>
 	</div>
-</div>';
+</div>
 
-echo '<script type="text/javascript">/*<![CDATA[*/var bs=document.getElementById("netteBluescreen");document.body.appendChild(bs);document.onkeyup=function(b){b=b||window.event;b.keyCode==27&&bs.onclick({target:document.getElementById("netteBluescreenIcon")})};
+<script type="text/javascript">/*<![CDATA[*/var bs=document.getElementById("netteBluescreen");document.body.appendChild(bs);document.onkeyup=function(b){b=b||window.event;b.keyCode==27&&bs.onclick({target:document.getElementById("netteBluescreenIcon")})};
 for(var i=0,styles=document.styleSheets;i<styles.length;i++)if((styles[i].owningElement||styles[i].ownerNode).className!=="nette"){styles[i].oldDisabled=styles[i].disabled;styles[i].disabled=true}else styles[i].addRule?styles[i].addRule(".nette-collapsed","display: none"):styles[i].insertRule(".nette-collapsed { display: none }",0);
 bs.onclick=function(b){b=b||window.event;for(var a=b.target||b.srcElement;a&&a.tagName&&a.tagName.toLowerCase()!=="a";)a=a.parentNode;if(!a||!a.rel)return true;for(var d=a.getElementsByTagName("abbr")[0],c=a.rel==="next"?a.nextSibling:document.getElementById(a.rel);c.nodeType!==1;)c=c.nextSibling;b=c.currentStyle?c.currentStyle.display=="none":getComputedStyle(c,null).display=="none";try{d.innerHTML=String.fromCharCode(b?9660:9658)}catch(e){}c.style.display=b?c.tagName.toLowerCase()==="code"?"inline":
 "block":"none";if(a.id==="netteBluescreenIcon"){a=0;for(d=document.styleSheets;a<d.length;a++)if((d[a].owningElement||d[a].ownerNode).className!=="nette")d[a].disabled=b?true:d[a].oldDisabled}return false};/*]]>*/</script>
 </body>
-</html>';
+</html>

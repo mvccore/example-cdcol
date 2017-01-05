@@ -15,7 +15,7 @@ a:visited{color:#7CD023;border-bottom:1px solid #7CD023;}
 
 form input[type=text],
 form input[type=number],
-form input[type=password]{padding:8px 10px;font-size:14px;border:1px solid #bbb;margin:5px 0;border-radius:3px;-webkit-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);-moz-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);}
+form input[type=password]{padding:8px 10px;font-size:14px;border:1px solid #bbb;margin:5px 0;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;-webkit-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);-moz-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);-ms-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);}
 
 .content{padding:25px;background:#fff;border-radius:3px;box-shadow:0 0 15px rgba(0,0,0,0.6);}
 .content a.head-btn{float:right;}
@@ -36,13 +36,16 @@ form input[type=password]{padding:8px 10px;font-size:14px;border:1px solid #bbb;
 form.album-edit{margin:25px;text-align:center;}
 form.album-edit label{display:block;}
 form.album-edit label span{display:inline-block;width:70px;}
-form.album-edit button{margin:10px auto;}
+form.album-edit .btn-cont{padding:5px 0 0 95px;}
+form.album-edit button{float:left;}
 form.album-edit label span{width:56px;text-align:right;padding:0 10px 0 0;}
 form.album-edit input{width:200px;margin:5px 56px 5px 0;}
 
 form.login{margin:25px;text-align:center;}
 form.login button{margin:10px auto;}
-form.login input{width:200px;margin:5px auto;display: block;}
+form.login input{width:200px;margin:5px auto;display:block;}
+form.login input.text-link:hover,form.login input.text-link:focus,form.login input.text-link:active{border-bottom:0 !important;}
 
 form.logout{height:21px;margin:0 25px 10px 25px;text-align:right;color:#fff;}
-form.logout input{margin-left:5px;color:#fff !important;border-bottom: 1px solid #fff !important;}
+form.logout input{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important;}
+form.logout input.text-link:hover,form.logout input.text-link:focus,form.logout input.text-link:active{border-bottom:0 !important;}

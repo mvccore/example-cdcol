@@ -1,5 +1,7 @@
 <?php
 
+include_once(__DIR__.'/IDebugPanel.php');
+
 // class IncludePanel implements Nette\Diagnostics\IBarPanel
 class IncludePanel implements IDebugPanel
 {

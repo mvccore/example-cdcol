@@ -3,7 +3,7 @@ class App_Controllers_System extends App_Controllers_Base
 {
 	public function JsErrorsLogAction () {
 		$this->DisableView();
-		if (!class_exists('Debug') || Debug::$productionMode) return;
+		if (MvcCore::GetEnvironment() == 'production') return;
 		$keys = array('message'=>1,'uri'=>1,'file'=>1,'line'=>0,'column'=>0,'callstack'=>1,'browser'=>1,'platform'=>0,);
 		$data = array();
 		foreach ($keys as $key => $hex) {
@@ -13,7 +13,7 @@ class App_Controllers_System extends App_Controllers_Base
 			$data[$key] = $param;
 		}
 		$msg = json_encode($data);
-		Debug::log($msg, 'javascript');
+		if (class_exists('Debug')) Debug::log($msg, 'javascript');
 	}
 	private static function _hexToStr ($hex) {
 		$string='';

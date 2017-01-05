@@ -1,24 +1,24 @@
 
-/* /Var/Tmp/rendered_css_9bb70e5aa46105d9a485a4237253bd47_static_css_fonts.css */
-@font-face{font-family:'MyriadRegular';src:url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.eot');src:url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.woff') format('woff'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.ttf') format('truetype'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.svg#MyriadRegular') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'MyriadSemiBold';src:url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.eot');src:url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.woff') format('woff'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.ttf') format('truetype'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.svg#MyriadSemiBold') format('svg');font-weight:bold;font-style:normal}@font-face{font-family:'MyriadBold';src:url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.eot');src:url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.woff') format('woff'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.ttf') format('truetype'),
-url('index.php?controller=assets&action=img&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.svg#MyriadBold') format('svg');font-weight:bold;font-style:normal}
+/* /static/css/fonts.css */
+@font-face{font-family:'MyriadRegular';src:url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.eot');src:url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.woff') format('woff'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.ttf') format('truetype'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-regular-webfont.svg#MyriadRegular') format('svg');font-weight:normal;font-style:normal}@font-face{font-family:'MyriadSemiBold';src:url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.eot');src:url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.woff') format('woff'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.ttf') format('truetype'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-semibold-webfont.svg#MyriadSemiBold') format('svg');font-weight:bold;font-style:normal}@font-face{font-family:'MyriadBold';src:url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.eot');src:url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.woff') format('woff'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.ttf') format('truetype'),
+url('index.php?controller=controller&action=asset&path=%2Fstatic%2Ffonts%2Fmyriadwebpro%2Fmyriadwebpro-bold-webfont.svg#MyriadBold') format('svg');font-weight:bold;font-style:normal}
 
-/* /Var/Tmp/rendered_css_9bb70e5aa46105d9a485a4237253bd47_static_css_all.css */
+/* /static/css/all.css */
 html,body{margin:0;font-family:'MyriadRegular',Arial,Helvetica,sans-serif;line-height:1.5em;font-size:14px;background:#999}.clear{clear:both}.master-container{width:500px;margin:30px
 auto 50px auto}input.text-link{background:transparent;border:0;padding:0}a,input.text-link{font-family:'MyriadRegular';color:#307C00;text-decoration:none;border-bottom:1px solid #307C00;cursor:pointer}a:hover,a:focus,a:active,input.text-link:hover,input.text-link:focus,input.text-link:active{color:#5FA21B;border-bottom:1px solid #5FA21B}a:visited{color:#7CD023;border-bottom:1px solid #7CD023}form input[type=text],
 form input[type=number],
 form input[type=password]{padding:8px
 10px;font-size:14px;border:1px
 solid #bbb;margin:5px
-0;border-radius:3px;-webkit-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);-moz-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75)}.content{padding:25px;background:#fff;border-radius:3px;box-shadow:0 0 15px rgba(0,0,0,0.6)}.content a.head-btn{float:right}.content
+0;-webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;border-radius:3px;-webkit-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);-moz-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);-ms-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75)}.content{padding:25px;background:#fff;border-radius:3px;box-shadow:0 0 15px rgba(0,0,0,0.6)}.content a.head-btn{float:right}.content
 h1{margin:10px
 0 25px 0;font-family:'MyriadBold'}.cd-collection-items{width:100%}.cd-collection-items th,
 .cd-collection-items
@@ -31,9 +31,9 @@ td.center{text-align:center}.cd-collection-items
 th{background:#7cd023;color:#fff}.cd-collection-items
 td{white-space:nowrap}.error{color:#ff0021;font-family:'MyriadBold';text-align:center}form.album-edit{margin:25px;text-align:center}form.album-edit
 label{display:block}form.album-edit label
-span{display:inline-block;width:70px}form.album-edit
-button{margin:10px
-auto}form.album-edit label
+span{display:inline-block;width:70px}form.album-edit .btn-cont{padding:5px
+0 0 95px}form.album-edit
+button{float:left}form.album-edit label
 span{width:56px;text-align:right;padding:0
 10px 0 0}form.album-edit
 input{width:200px;margin:5px
@@ -41,11 +41,11 @@ input{width:200px;margin:5px
 button{margin:10px
 auto}form.login
 input{width:200px;margin:5px
-auto;display:block}form.logout{height:21px;margin:0
+auto;display:block}form.login input.text-link:hover,form.login input.text-link:focus,form.login input.text-link:active{border-bottom:0 !important}form.logout{height:21px;margin:0
 25px 10px 25px;text-align:right;color:#fff}form.logout
-input{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important}
+input{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important}form.logout input.text-link:hover,form.logout input.text-link:focus,form.logout input.text-link:active{border-bottom:0 !important}
 
-/* /Var/Tmp/rendered_css_9bb70e5aa46105d9a485a4237253bd47_static_css_button.css */
+/* /static/css/button.css */
 button,
 button span,
 button span b,
@@ -56,7 +56,7 @@ b{display:block;text-decoration:none;height:31px;border:0;padding-top:0;padding-
 button span,
 .button,
 .button
-span{line-height:31px;background-color:transparent;background-image:url('index.php?controller=assets&action=img&path=%2Fstatic%2Fimg%2Fbuttons.png')}button,.button{margin:0;padding-left:15px;padding-right:0;background-position:0 0}button{#padding:0}button span,
+span{line-height:31px;background-color:transparent;background-image:url('index.php?controller=controller&action=asset&path=%2Fstatic%2Fimg%2Fbuttons.png')}button,.button{margin:0;padding-left:15px;padding-right:0;background-position:0 0}button{#padding:0}button span,
 .button
 span{padding-right:15px;padding-left:0;background-position:100% -62px}@-moz-document url-prefix(){button
 span{position:relative;top:-1px}}button span b,
@@ -75,7 +75,7 @@ span{background-position:100% -217px}.button-blue{background-position:0 -248px}.
 span{background-position:100% -372px}.button-blue:hover,.button-blue:focus{background-position:0 -279px}.button-blue:hover span,.button-blue:focus
 span{background-position:100% -403px}.button-blue.button-left-arrow{padding-left:37px;background-position:0 -310px}.button-blue.button-left-arrow:hover,.button-blue.button-left-arrow:focus{background-position:0 -341px}.button-blue.button-right-arrow
 span{padding-right:37px;background-position:100% -434px}.button-blue.button-right-arrow:hover span,.button-blue.button-right-arrow:focus
-span{background-position:100% -465px}.button:hover,.button:focus,.button:active{background-color:transparent !important}.button-green span
+span{background-position:100% -465px}.button:hover,.button:focus,.button:active{background-color:transparent !important;border:0}.button-green span
 b{display:block;color:#fff;text-shadow:-1px -1px 1px #56a800,1px -1px 1px #56a800,-1px 1px 1px #56a800,1px 1px 1px #56a800;-moz-text-shadow:-1px -1px 1px #56a800,1px -1px 1px #56a800,-1px 1px 1px #56a800,1px 1px 1px #56a800;-webkit-text-shadow:-1px -1px 1px #56a800,1px -1px 1px #56a800,-1px 1px 1px #56a800,1px 1px 1px #56a800;-ms-text-shadow:-1px -1px 1px #56a800,1px -1px 1px #56a800,-1px 1px 1px #56a800,1px 1px 1px #56a800;-o-text-shadow:-1px -1px 1px #56a800,1px -1px 1px #56a800,-1px 1px 1px #56a800,1px 1px 1px #56a800;-khtml-text-shadow:-1px -1px 1px #56a800,1px -1px 1px #56a800,-1px 1px 1px #56a800,1px 1px 1px #56a800}.filters .button-green span
 b{zoom:1;background-color:#56a801;filter:progid:DXImageTransform.Microsoft.Chroma(Color=#56a801)
 progid:DXImageTransform.Microsoft.Dropshadow(offX=0,offY=-1,Color=#56a800,positive=true)}.button-blue span

@@ -3,6 +3,9 @@
 class App_Controllers_Default extends App_Controllers_Base
 {
     public function DefaultAction () {
+		if ($this->user instanceof App_Models_User) {
+			self::Redirect($this->Url('CdCollection::Default'));
+		}
 		$this->view->Title = 'CD collection';
 		$this->view->Errors = $this->formErrors('login');
 		$this->view->User = $this->user;

@@ -1,4 +1,4 @@
-﻿Class.Define('List', {
+Class.Define('List', {
 	Constructor: function() {
 		var forms = document.getElementsByTagName('form'),
 			form;
