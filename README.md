@@ -7,12 +7,12 @@
 
 - [**MvcCore**](https://github.com/mvccore/mvccore) classic CD collection CRUD example with default SQLite database with cd albums
 - Current SQLite database, MySQL and MSSQL database backups included in `./.database/` dir
-- Result is completly portable - `./release/index.php` + `./release/.htaccess`
-- Result application currently packed in strict package mode, all packing configurations included in `./.packager/`
-- All packing ways are possible to use:
-  - **PHAR**
+- **Result** is **completly portable** - `./release/index.php` + `./release/.htaccess`
+- Result application **currently packed in strict package mode**, all packing configurations included in `./.packager/`
+- Packed with [**Packager library - mvccore/packager**](https://github.com/mvccore/packager)), all packing ways possible:
+  - **PHAR file**
     - standard PHAR package with whole devel dir content
-  - **PHP** (packed with [**Packager library - mvccore/packager**](https://github.com/mvccore/packager))
+  - **PHP file**
     - **strict package**
       - everything is contained in result `index.php`
       - only `.htaccess` or `web.config` are necessary to use mod_rewrite
