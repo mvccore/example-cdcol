@@ -10,23 +10,23 @@
 - Result is completly portable - `./release/index.php` + `./release/.htaccess`
 - Result application currently packed in strict package mode, all packing configurations included in `./.packager/`
 - All packing ways are possible to use:
-  - PHAR
+  - **PHAR**
     - standard PHAR package with whole devel dir content
-  - PHP (packed with [**Packager library - mvccore/packager**](https://github.com/mvccore/packager))
-    - strict package
+  - **PHP** (packed with [**Packager library - mvccore/packager**](https://github.com/mvccore/packager))
+    - **strict package**
       - everything is contained in result `index.php`
       - only `.htaccess` or `web.config` are necessary to use mod_rewrite
-    - preserve package
+    - **preserve package**
       - result `index.php` file contains PHP files, 
         PHTML templates but no CSS/JS/fonts or images
       - all wrapped file system functions are looking inside 
         package first, then they try to read data from HDD
-    - preserve hdd
+    - **preserve hdd**
       - result `index.php` file contains PHP files, 
         PHTML templates but no CSS/JS/fonts or images
       - all wrapped file system functions are looking on HDD first, 
         then they try to read data from package inself
-    - strict hdd
+    - **strict hdd**
       - result `index.php` file contains only PHP files, 
         but PHTML templates, all CSS/JS/fonts and images are on HDD
       - no PHP file system function is wrapped
