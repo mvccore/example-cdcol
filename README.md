@@ -14,16 +14,16 @@ yo it's completly portable, ou can find it as index.php in release directory.
 
 ## Instalation
 ```shell
-# load project
+# load example
 composer create-project mvccore/example-cdcol
 
-# go to created project directory
+# go to created directory
 cd example-cdcol
 
 # update dependencies for packing
 composer update
 
-# go to development directory
+# go to example development directory
 cd development
 
 # update dependencies for application sources
