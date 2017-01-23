@@ -1,11 +1,30 @@
 <?php
 
-class App_Models_User extends App_Models_Base
+class App_Models_User extends MvcCoreExt_Auth_User
 {
+	/** @var int */
 	public $Id;
 	public $UserName = '';
 	public $PasswordHash = '';
 	public $FullName = '';
+	
+	public static function GetUserBySession () {
+		$session = static::getSession();
+		if (isset($session->uname)) {
+			return self::GetByUserName($session->uname);
+		}
+		return NULL;
+	}
+
+	public static function Authenticate ($uniqueUserName = '', $password = '') {
+		$hashedPassword = static::GetPasswordHash($password);
+		$user = self::GetByUserName($uniqueUserName);
+		if ($user && $user->PasswordHash === $hashedPassword) {
+			return $user;
+		}
+		return NULL;
+	}
+
 	public static function GetByUserName ($userName) {
 		$select = self::getDb()->prepare("
 			SELECT
@@ -21,22 +40,9 @@ class App_Models_User extends App_Models_Base
         $select->execute(array(
             ":user_name" => $userName,
         ));
-        $data = $select->fetch(PDO::FETCH_ASSOC);
-		if ($data) {
-			$result = new self();
-			$result->setUp($data);
-			return $result;
-		} else {
-			return NULL;
+		if ($data = $select->fetch(PDO::FETCH_ASSOC)) {
+			return (new self())->setUp($data);
 		}
+		return NULL;
     }
-	public static function HashPassword ($password) {
-		//return sha1(crypt($password, 'S3F8OI2P3X6ER1F6XY2Q9ZCY' . $_SERVER['SERVER_NAME']));
-		return sha1(crypt($password, 'S3F8OI2P3X6ER1F6XY2Q9ZCY'));
-	}
-	protected function setUp ($data) {
-		foreach ($data as $key => $value) {
-			$this->$key = $value;
-		}
-	}
 }

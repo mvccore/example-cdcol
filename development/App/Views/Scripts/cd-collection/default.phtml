@@ -1,34 +1,53 @@
-<a class="head-btn button button-green" href="<?php echo $this->Url('CdCollection::Create'); ?>"><span><b>New album</b></span></a>
+<?php /** @var $this MvcCore_View */ ?>
+<?php /** @var $this->Albums App_Models_Album[] */ ?>
+
+<a class="head-btn button button-green" href="<?php
+	echo $this->Url(':Create');
+?>"><span><b>New album</b></span></a>
+
 <h1>CD Collection</h1>
-<table class="cd-collection-items">
-	<thead>
-		<tr>
-			<th class="right">Id</th>
-			<th>Title</th>
-			<th>Interpret</th>
-			<th class="right">Year</th>
-			<th></th>
-		</tr>
-	</thead>
-	<tbody>
-		<?php foreach ($this->Albums as $id => $album): ?>
+
+<?php if (!$this->Albums): ?>
+	<p>No albums in database. To create, click to 'New Album' button.</p>
+<?php else: ?>
+	<table class="cd-collection-items">
+		<thead>
 			<tr>
-				<td class="right"><?php echo $album->Id; ?></td>
-				<td><a href="<?php echo $this->Url("CdCollection::Edit", array(
-					"id"	=> $album->Id,
-				)); ?>">
-					<?php echo $album->Title; ?>
-				</a></td>
-				<td><?php echo $album->Interpret; ?></td>
-				<td class="right"><?php echo $album->Year; ?></td>
-				<td class="center">
-					<form class="delete" action="<?php echo $this->Url("CdCollection::Delete"); ?>" method="post">
-						<input type="hidden" name="csrf" value="<?php echo App_Controllers_Base::GetSessionHash(); ?>" />
-						<input type="hidden" name="id" value="<?php echo $album->Id; ?>" />
-						<input type="submit" class="text-link" value="Delete" />
-					</form>
-				</td>
+				<th class="right">Id</th>
+				<th>Title</th>
+				<th>Interpret</th>
+				<th class="right">Year</th>
+				<th></th>
 			</tr>
-		<?php endforeach; ?>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<?php foreach ($this->Albums as $id => & $album): ?>
+				<tr>
+					<td class="right"><?php echo $album->Id; ?></td>
+					<td><a href="<?php
+						echo $this->Url(':Edit', array(
+							"id"	=> $album->Id,
+						));
+					?>">
+						<?php echo $album->Title; ?>
+					</a></td>
+					<td><?php echo $album->Interpret; ?></td>
+					<td class="right"><?php echo $album->Year; ?></td>
+					<td class="center">
+						<form class="delete" action="<?php
+							echo $this->Url(':Delete', array('absolute' => TRUE));
+						?>" method="post">
+							<input type="hidden" name="<?php
+								echo $this->CsrfName;
+							?>" value="<?php
+								echo $this->CsrfValue;
+							?>" />
+							<input type="hidden" name="id" value="<?php echo $album->Id; ?>" />
+							<input type="submit" class="text-link" value="Delete" />
+						</form>
+					</td>
+				</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+<?php endif; ?>

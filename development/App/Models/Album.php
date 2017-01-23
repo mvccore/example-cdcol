@@ -1,13 +1,22 @@
 <?php
 
-class App_Models_Album extends App_Models_Base
+class App_Models_Album extends MvcCore_Model
 {
+	/** @var int */
 	public $Id;
-	public $Title = '';
-	public $Interpret = '';
-	public $Year = '';
-	public static function GetAll() {
-		$rawData = self::getDb()->query("
+	/** @var string */
+	public $Title;
+	/** @var string */
+	public $Interpret;
+	/** @var int */
+	public $Year;
+
+	/**
+	 * Get all albums in database as array, keyed by $album->Id.
+	 * @return MvcCore_Model[]
+	 */
+	public static function GetAll () {
+		$rawData = self::GetDb()->query("
 			SELECT
 				c.id AS Id,
 				c.title AS Title,
@@ -18,14 +27,19 @@ class App_Models_Album extends App_Models_Base
 		")->fetchAll(PDO::FETCH_ASSOC);
 		$result = array();
 		foreach ($rawData as $rawItem) {
-			$item = new self;
-			$item->setUp($rawItem);
+			$item = (new self)->SetUp($rawItem);
 			$result[$item->Id] = $item;
 		}
 		return $result;
 	}
-	public static function GetById($id) {
-		$select = self::getDb()->prepare("
+
+	/**
+	 * Get single album instance by given id or null if no record by id in database.
+	 * @param int $id 
+	 * @return MvcCore_Model|null
+	 */
+	public static function GetById ($id) {
+		$select = self::GetDb()->prepare("
 			SELECT
 				c.id AS Id,
 				c.title AS Title,
@@ -41,21 +55,15 @@ class App_Models_Album extends App_Models_Base
         ));
         $data = $select->fetch(PDO::FETCH_ASSOC);
 		if ($data) {
-			$result = new self();
-			$result->setUp($data);
-			return $result;
-		} else {
-			return NULL;
+			return (new self)->SetUp($data);
 		}
+		return NULL;
     }
-	public function Save () {
-		if (isset($this->Id)) {
-			$this->update();
-		} else {
-			$this->Id = $this->insert();
-		}
-		return $this->Id;
-    }
+
+	/**
+	 * Delete database row by album Id. Return affected rows count.
+	 * @return bool
+	 */
 	public function Delete () {
 		$update = $this->db->prepare("
 			DELETE FROM
@@ -64,9 +72,27 @@ class App_Models_Album extends App_Models_Base
 				id = :id
 		");
         return $update->execute(array(
-            ":id"			=> $this->Id,
+            ":id"	=> $this->Id,
         ));
 	}
+	/**
+	 * Update album with completed Id or insert new one if no Id defined.
+	 * Return Id as result.
+	 * @return int
+	 */
+	public function Save () {
+		if (isset($this->Id)) {
+			$this->update();
+		} else {
+			$this->Id = $this->insert();
+		}
+		return $this->Id;
+    }
+
+	/**
+	 * Update all public defined properties.
+	 * @return bool
+	 */
 	protected function update () {
 		$update = $this->db->prepare("
 			UPDATE
@@ -85,22 +111,25 @@ class App_Models_Album extends App_Models_Base
             ":id"			=> $this->Id,
         ));
 	}
+
+	/**
+	 * Insert only filled values, return new album id.
+	 * @return int
+	 */
 	protected function insert() {
-		$insertCommand = $this->db->prepare("
-			INSERT INTO cds (interpret, year, title) 
-			VALUES (:interpret, :year, :title)
-		");
-		$insertCommand->execute(array(
-			":interpret"	=> $this->Interpret,
-			":year"			=> $this->Year,
-			":title"		=> $this->Title,
-		));
-		$newId = $this->db->lastInsertId();
-		return $newId;
-	}
-	protected function setUp ($data) {
-		foreach ($data as $key => $value) {
-			$this->$key = $value;
+		$columnsSql = array();
+		$params = array();
+		$newValues = $this->GetValues();
+		foreach ($newValues as $key => & $value) {
+			$keyUnderscored = MvcCore_Tool::GetUnderscoredFromPascalCase($key);
+			$columnsSql[] = $keyUnderscored;
+			$params[$keyUnderscored] = $value;
 		}
+		$insertCommand = $this->db->prepare(
+			'INSERT INTO cds (' . implode(',', $columnsSql) . ')
+			 VALUES (:' . implode(', :', $columnsSql) . ')'
+		);
+		$insertCommand->execute($params);
+		return (int) $this->db->lastInsertId();
 	}
 }

@@ -1,0 +1,16 @@
+<?php /** @var $this MvcCore_View */ ?>
+<?php /** @var $this->SignOutForm MvcCoreExt_Auth_SignOutForm */ ?>
+
+<?php if ($this->SignOutForm): ?>
+	<?php echo $this->SignOutForm->RenderBegin(); ?>
+
+		<?php if ($this->User): ?>
+			<span><?php echo $this->User->FullName; ?></span>
+		<?php endif; ?>
+
+		<?php foreach ($this->SignOutForm->Fields as & $field): ?>
+			<?php echo $field->Render(); ?>
+		<?php endforeach; ?>
+
+	<?php echo $this->SignOutForm->RenderEnd(); ?>
+<?php endif; ?>

@@ -12,6 +12,7 @@ button span b,
 	padding-bottom:0;
 	cursor:pointer;
 	text-decoration:none !important;
+	white-space:nowrap;
 }
 button,
 button span,
@@ -24,22 +25,33 @@ button span,
 button,
 .button{
 	margin:0;
-	padding-left:15px;
+	padding-left: 15px;
 	padding-right:0;
 	background-position:0 0;
 }
-button{
-	#padding:0;
+.filters button,
+.filters .button{
+	padding-left:0;
 }
 button span,
 .button span{
+	position:relative;
 	padding-right:15px;
 	padding-left:0;
 	background-position:100% -62px;
 }
+.filters button span,
+.filters .button span{
+	padding-right:0;
+	margin-top:1px;
+	top:-1px;
+}
+.filters button span b,
+.filters .button span b{
+	margin-right:15px;
+}
 @-moz-document url-prefix() {
 	button span{
-		position:relative;
 		top:-1px;
 	}
 }
@@ -57,18 +69,16 @@ button span b,
 	font-family:'MyriadSemiBold',Arial,Helvetica,sans-serif;
 	overflow:hidden;
 }
+.filters button span b,
+.filters .button span b{
+	position:relative;
+	top:-2px;
+}
 button,
 button:hover,
 button:focus,
 button:active{outline:0 !important;}
-button span{
-	position:relative;
-}
-.filters button span b,
-.filters .button span b{
-	position:relative;
-	top:-1px;
-}
+
 
 /* green */
 .button-green{background-position:0 0;}
@@ -94,7 +104,6 @@ button span{
 .button:focus,
 .button:active{
 	background-color:transparent !important;
-	border:0;
 }
 .button-green span b{
 	display:block;
@@ -146,7 +155,6 @@ button span{
 	filter: progid:DXImageTransform.Microsoft.Chroma(Color=#cc8001)
 			progid:DXImageTransform.Microsoft.Dropshadow(offX=0,offY=-1,Color=#cc8000,positive=true);
 }
-
 
 /* green and blue - active */
 /* normal */

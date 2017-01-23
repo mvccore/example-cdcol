@@ -4,47 +4,38 @@ class App_Controllers_Default extends App_Controllers_Base
 {
     public function DefaultAction () {
 		if ($this->user instanceof App_Models_User) {
-			self::Redirect($this->Url('CdCollection::Default'));
+			self::Redirect($this->Url('CdCollection:Default'));
 		}
-		$this->view->Title = 'CD collection';
-		$this->view->Errors = $this->formErrors('login');
+		$this->view->Title = 'CD Collection';
 		$this->view->User = $this->user;
+		$this->view->SignInForm = $this->getSignInFormCustomized();
     }
-	public function LoginAction () {
-		$result = FALSE;
-		if ($this->checkSessionHash()) {
-			$userName = $this->GetParam("username");
-			$password = $this->GetParam("password", "a-zA-Z0-9_/\-\.\*\#\?\!\(\)\[\]\{\}\&\$\@\%\=\+\^\~\:\;");
-			$user = App_Models_User::GetByUserName($userName);
-			if (!$user) {
-				$this->formErrors('login', 'Wrong user name.');
-			} else if ($user->PasswordHash == App_Models_User::HashPassword($password)) {
-				$_SESSION['user_name'] = $user->UserName;
-				$result = TRUE;
-			} else {
-				$this->formErrors('login', 'Wrong password.');
-			}
-		}
-		if ($result) {
-			self::Redirect($this->Url('CdCollection::Default'));
-		} else {
-			sleep(3);
-			self::Redirect($this->Url('Default::Default'));
-		}
-	}
-	public function LogoutAction () {
-		$result = FALSE;
-		if ($this->checkSessionHash()) {
-			unset($_SESSION['user_name']);
-			$result = TRUE;
-		}
-		if ($result) {
-			self::Redirect($this->Url('Default::Default'));
-		} else {
-			sleep(3);
-			self::Redirect($this->Url('CdCollection::Default'));
-		}
-	}
     public function NotFoundAction () {
+		$this->view->Title = "Error 404 - requested page not found.";
+		$this->view->Message = $this->request->Params['message'];
     }
+
+	protected function getSignInFormCustomized () {
+		// customize sign in form
+		/** @var $signInForm MvcCoreExt_Auth_SignInForm */
+		$signInForm = MvcCoreExt_Auth::GetInstance()->GetForm()
+			// initialize fields
+			->Init()
+			// set signed in url to albums list
+			->SetDefaults(array(
+				'successUrl' => $this->Url('CdCollection:Default', array('absolute' => TRUE)),
+			));
+		// remove username label and create input placeholder text
+		$signInForm->GetFirstFieldsByClass(SimpleForm_Text::class, TRUE)
+			->SetLabel('')->SetPlaceholder('login');
+		// remove password label and create input placeholder text
+		$signInForm->GetFirstFieldsByClass(SimpleForm_Password::class)
+			->SetLabel('')->SetPlaceholder('password');
+		// get submit button and customize submit button inner code
+		$signInFormSubmitBtn = $signInForm->GetFirstFieldsByClass(SimpleForm_SubmitButton::class);
+		$signInFormSubmitBtn->AddCssClass('button-green')->SetValue(
+			'<span><b>' . $signInFormSubmitBtn->GetValue() . '</b></span>'
+		);
+		return $signInForm;
+	}
 }
