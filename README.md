@@ -15,7 +15,10 @@ yo it's completly portable, ou can find it as index.php in release directory.
 ## Instalation
 ```shell
 # load project
-composer require mvccore/example-cdcol
+composer create-project mvccore/example-cdcol
+
+# go to created project directory
+cd example-cdcol
 
 # update dependencies for packing
 composer update
@@ -33,4 +36,3 @@ sh make.sh
 # or Windows:
 make.cmd
 ```
-
