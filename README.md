@@ -1,5 +1,5 @@
 # MvcCore - Example - CD Collection
-- MvcCore classic CD collection CRUD example with default SQLite database with cd albums
+- [**MvcCore**](https://github.com/mvccore/mvccore) classic CD collection CRUD example with default SQLite database with cd albums
 - Current SQLite database, MySQL and MSSQL database backups included in `./.database/` dir
 - Result is completly portable - `./release/index.php` + `./release/.htaccess`
 - Result application currently packed in strict package mode, all packing configurations included in `./.packager/`
