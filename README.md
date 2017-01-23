@@ -26,7 +26,7 @@ composer update
 
 ## Build
 
-# Prepare application
+### 1. Prepare application
 - go to `example-cdcol/development`
 - clear everything in `./Var/Tmp`
 - change `$app->Run();` to `$app->Run();` in `./index.php`
@@ -34,7 +34,9 @@ composer update
   groups to generate `./Var/Tmp` content for result app
 - run build process
 
-# Linux build:
+### 2. Build
+
+#### Linux:
 ```shell
 # go to project root dir
 cd example-cdcol
@@ -42,7 +44,7 @@ cd example-cdcol
 sh make.sh
 ```
 
-# Windows build:
+#### Windows:
 ```shell
 # go to project root dir
 cd example-cdcol
@@ -50,7 +52,7 @@ cd example-cdcol
 make.cmd
 ```
 
-# Browser build:
+#### Browser:
 ```shell
 # visit script `make-php.php` in your project root directory:
 http://localhost/example-cdcol/make-php.php
