@@ -14,17 +14,26 @@ yo it's completly portable, ou can find it as index.php in release directory.
 
 ## Instalation
 ```shell
-# load project
+# load example
 composer create-project mvccore/example-cdcol
 
-# go to project development directory
+# go to project development dir
 cd example-cdcol/development
 
-# update dependencies for application development sources
+# update dependencies for app development sources
 composer update
 ```
 
 ## Build
+
+# Prepare application
+- go to `example-cdcol/development`
+- clear everything in `./Var/Tmp`
+- change `$app->Run();` to `$app->Run();` in `./index.php`
+- visit all aplication routes where are different JS/CSS bundles 
+  groups to generate `./Var/Tmp` content for result app
+- run build process
+
 # Linux build:
 ```shell
 # go to project root dir
