@@ -17,22 +17,34 @@ yo it's completly portable, ou can find it as index.php in release directory.
 # load project
 composer create-project mvccore/example-cdcol
 
-# go to created project directory
-cd example-cdcol
+# go to project development directory
+cd example-cdcol/development
 
-# update dependencies for packing
-composer update
-
-# go to development directory
-cd development
-
-# update dependencies for application sources
+# update dependencies for application development sources
 composer update
 ```
 
 ## Build
+# Linux build:
 ```shell
+# go to project root dir
+cd example-cdcol
+# run build process into single PHP file
 sh make.sh
-# or Windows:
+```
+
+# Windows build:
+```shell
+# go to project root dir
+cd example-cdcol
+# run build process into single PHP file
 make.cmd
+```
+
+# Browser build:
+```shell
+# visit script `make-php.php` in your project root directory:
+http://localhost/example-cdcol/make-php.php
+# now run your result in:
+http://localhost/example-cdcol/release/
 ```

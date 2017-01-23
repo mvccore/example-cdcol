@@ -1,8 +1,8 @@
 {
-	"name": "mvccore/example-translator",
+	"name": "mvccore/example-cdcol",
 	"type": "application",
-	"description": "MvcCore Example - Pig Latin Translator - translate English to Pig Latin - https://en.wikipedia.org/wiki/Pig_Latin.",
-	"keywords": ["mvccore", "framework", "mvc", "simple mvc", "super fast mvc", "easy mvc", "single file application", "pig latin translator"],
+	"description": "MvcCore Example - CD collection - classic CRUD example with default SQLite database with cd albums.",
+	"keywords": ["mvccore", "framework", "mvc", "simple mvc", "super fast mvc", "easy mvc", "single file application", "cd collection", "cd albums", "CRUD", "CRUD example", "mvccore CRUD"],
 	"license": ["BSD-3-Clause"],
 	"authors": [
 		{
