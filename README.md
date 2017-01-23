@@ -1,7 +1,8 @@
 # MvcCore - Example - CD Collection
-MvcCore classic CD collection CRUD example with default SQLite database with cd albums.
-MySQL and MSSQL database backups included. Result application is packed in strict package mode,
-yo it's completly portable, ou can find it as index.php in release directory.
+- MvcCore classic CD collection CRUD example with default SQLite database with cd albums
+- Current SQLite database, MySQL and MSSQL database backups included in `./.database/` dir
+- Result application currently packed in strict package mode, all packing configurations included in `./.packager/`
+- Result is completly portable - `./release/index.php` + `./release/.htaccess`
 
 ## Features
 - all packing ways are possible to use:
@@ -28,10 +29,10 @@ composer update
 
 ### 1. Prepare application
 - go to `example-cdcol/development`
-- clear everything in `./Var/Tmp`
+- clear everything in `./Var/Tmp/`
 - change `$app->Run();` to `$app->Run();` in `./index.php`
 - visit all aplication routes where are different JS/CSS bundles 
-  groups to generate `./Var/Tmp` content for result app
+  groups to generate `./Var/Tmp/` content for result app
 - run build process
 
 ### 2. Build
