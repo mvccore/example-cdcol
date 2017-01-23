@@ -4,6 +4,8 @@
 // - '/development/static/fonts'	=> '/release/static/fonts'
 // - '/development/static/img'		=> '/release/static/img'
 // - '/development/Var/Tmp'			=> '/release/Var/Tmp'
+// and you need to uncomment line 12 in Bootstrap.php
+// before compilation to generate css/js files properly in tmp
 
 $config = array(
 	'sourcesDir'				=> __DIR__ . '/../development',
