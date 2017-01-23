@@ -1,4 +1,10 @@
 # MvcCore - Example - CD Collection
+
+[![Latest Stable Version](https://img.shields.io/badge/Stable-v3.1.2-brightgreen.svg?style=plastic)](https://github.com/mvccore/example-cdcol/releases)
+[![License](https://img.shields.io/badge/Licence-BSD-brightgreen.svg?style=plastic)](https://github.com/mvccore/example-cdcol/blob/master/LICENCE.md)
+[![Packager Build](https://img.shields.io/badge/Packager%20Build-passing-brightgreen.svg?style=plastic)](https://github.com/mvccore/packager)
+![PHP Version](https://img.shields.io/badge/PHP->=5.3-brightgreen.svg?style=plastic)
+
 - [**MvcCore**](https://github.com/mvccore/mvccore) classic CD collection CRUD example with default SQLite database with cd albums
 - Current SQLite database, MySQL and MSSQL database backups included in `./.database/` dir
 - Result is completly portable - `./release/index.php` + `./release/.htaccess`
