@@ -1,17 +1,22 @@
 <?php
 
-class App_Controllers_Base extends MvcCore_Controller
+namespace App\Controllers;
+
+use \MvcCore\Ext\Form,
+	\MvcCore\Ext\Auth;
+
+class Base extends \MvcCore\Controller
 {
-	/** @var MvcCoreExt_Auth_Abstract_User */
+	/** @var \MvcCore\Ext\Auth\Virtual\User */
 	protected $user = null;
 
 	public function Init() {
 		parent::Init();
-		$this->user = MvcCoreExt_Auth::GetInstance()->GetUser();
-		SimpleForm::AddCsrfErrorHandler(function (SimpleForm & $form, $errorMsg) {
-			MvcCoreExt_Auth_User::ClearFromSession();
+		$this->user = Auth::GetInstance()->GetUser();
+		Form::AddCsrfErrorHandler(function (Form & $form, $errorMsg) {
+			Auth\User::ClearFromSession();
 			self::Redirect($this->Url(
-				'Default:Default',
+				'Index:Index',
 				array('absolute' => TRUE, 'sourceUrl'	=> urlencode($form->ErrorUrl))
 			));
 		});
@@ -29,20 +34,20 @@ class App_Controllers_Base extends MvcCore_Controller
 		// customize sign out form if necessary, set it into view
 		$signOutForm = NULL;
 		if ($this->user) {
-			/** @var $signOutForm MvcCoreExt_Auth_SignOutForm */
-			$signOutForm = MvcCoreExt_Auth::GetInstance()->GetForm()
+			/** @var $signOutForm \MvcCore\Ext\Auth\SignOutForm */
+			$signOutForm = Auth::GetInstance()->GetForm()
 				// initialize fields
 				->Init()
 				// set signed out url to homepage
 				->SetDefaults(array(
-					'successUrl' => $this->Url('Default:Default', array('absolute' => TRUE))
+					'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
 				));
 			$signOutForm
 				// replace sign out <button> tag to sign out <input> tag
 				->RemoveField(
-					$signOutForm->GetFirstFieldsByClass(SimpleForm_SubmitButton::class)->Name
+					$signOutForm->GetFirstFieldsByClass(Form\SubmitButton::class)->Name
 				)
-				->AddField(new SimpleForm_SubmitInput(array(
+				->AddField(new Form\SubmitInput(array(
 					'name'		=> 'send',
 					'value'		=> 'Sign Out',
 					'cssClasses'=> array('text-link')
@@ -52,7 +57,7 @@ class App_Controllers_Base extends MvcCore_Controller
 		$this->view->SignOutForm = $signOutForm;
 	}
 	private function _preDispatchSetUpBundles () {
-		MvcCoreExt_ViewHelpers_Assets::SetGlobalOptions(array(
+		\MvcCore\Ext\View\Helpers\Assets::SetGlobalOptions(array(
 				'cssMinify'	=> 1,
 				'cssJoin'	=> 1,
 				'jsMinify'	=> 1,

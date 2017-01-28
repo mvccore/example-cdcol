@@ -1,6 +1,8 @@
 <?php
 
-class App_Models_User extends MvcCoreExt_Auth_User
+namespace App\Models;
+
+class User extends \MvcCore\Ext\Auth\User
 {
 	/** @var int */
 	public $Id;
@@ -40,7 +42,7 @@ class App_Models_User extends MvcCoreExt_Auth_User
         $select->execute(array(
             ":user_name" => $userName,
         ));
-		if ($data = $select->fetch(PDO::FETCH_ASSOC)) {
+		if ($data = $select->fetch(\PDO::FETCH_ASSOC)) {
 			return (new self())->setUp($data);
 		}
 		return NULL;

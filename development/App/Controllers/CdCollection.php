@@ -1,8 +1,13 @@
 <?php
 
-class App_Controllers_CdCollection extends App_Controllers_Base
+namespace App\Controllers;
+
+use \App\Models,
+	\MvcCore\Ext\Form;
+
+class CdCollection extends Base
 {
-	/** @var App_Models_Album */
+	/** @var \App\Models\Album */
 	protected $album;
     /**
 	 * Initialize this controller, before prdispatching and before every action 
@@ -14,8 +19,7 @@ class App_Controllers_CdCollection extends App_Controllers_Base
 		// if user is not authorized, redirect to homepage and exit
 		if (!$this->user) {
 			self::Redirect($this->Url(
-				'Default:Default',
-				array('sourceUrl' => urlencode($this->request->Referer))
+				'Index:Index', array('sourceUrl' => urlencode($this->request->Referer))
 			));
 		}
 	}
@@ -29,7 +33,7 @@ class App_Controllers_CdCollection extends App_Controllers_Base
 		// try to load album model instance from database
 		$id = $this->GetParam("id", "0-9");
 		if (strlen($id) > 0) {
-			$this->album = App_Models_Album::GetById($id);
+			$this->album = Models\Album::GetById(intval($id));
 			if (!$this->album) $this->renderNotFound();
 		}
     }
@@ -41,10 +45,10 @@ class App_Controllers_CdCollection extends App_Controllers_Base
 	 * created multiple times in view only.
 	 * @return void
      */
-    public function DefaultAction () {
+    public function IndexAction () {
 		$this->view->Title = 'CD Collection';
-		$this->view->Albums = App_Models_Album::GetAll();
-		/** @var $abstractForm SimpleForm */
+		$this->view->Albums = Models\Album::GetAll();
+		/** @var $abstractForm \MvcCore\Ext\Form */
 		list($this->view->CsrfName, $this->view->CsrfValue)
 			= $this->getVirtualDeleteForm()->SetUpCsrf();
 		$this->view->Js('varFoot')
@@ -76,7 +80,7 @@ class App_Controllers_CdCollection extends App_Controllers_Base
     public function SubmitAction () {
 		$detailForm = $this->getCreateEditForm();
 		if (!$this->album) {
-			$this->album = new App_Models_Album();
+			$this->album = new Models\Album();
 			$detailForm->SetErrorUrl($this->Url(':Create', array('absolute' => TRUE)));
 		} else {
 			$detailForm->SetErrorUrl($this->Url(':Edit', array('id' => $this->album->Id, 'absolute' => TRUE)));
@@ -98,44 +102,44 @@ class App_Controllers_CdCollection extends App_Controllers_Base
 		if ($this->getVirtualDeleteForm()->ValidateCsrf($_POST)) {
 			$this->album->Delete();
 		}
-		self::Redirect($this->Url(':Default'));
+		self::Redirect($this->Url(':Index'));
     }
 	/**
 	 * Create form for create album and edit album
-	 * @return SimpleForm
+	 * @return \MvcCore\Ext\Form
 	 */
 	protected function getCreateEditForm ($editForm = TRUE) {
-		$form = (new SimpleForm($this))
+		$form = (new Form($this))
 			->SetId('detail')
-			->SetMethod(SimpleForm::METHOD_POST)
+			->SetMethod(Form::METHOD_POST)
 			->SetAction($this->Url(':Submit'))
-			->SetSuccessUrl($this->Url(':Default', array('absolute' => TRUE)))
+			->SetSuccessUrl($this->Url(':Index', array('absolute' => TRUE)))
 			->SetFieldsDefaultRenderMode(
-				SimpleForm::FIELD_RENDER_MODE_LABEL_AROUND
+				Form::FIELD_RENDER_MODE_LABEL_AROUND
 			);
 		if ($editForm) {
-			$id = (new SimpleForm_Hidden)
+			$id = (new Form\Hidden)
 				->SetName('id')
 				->AddValidators('NumberField');
 			$form->AddField($id);
 		}
-		$title = (new SimpleForm_Text)
+		$title = (new Form\Text)
 			->SetName('title')
 			->SetLabel('Title:')
 			->SetSize(200)
 			->SetRequired()
 			->SetAutocomplete('off');
-		$interpret = (new SimpleForm_Text)
+		$interpret = (new Form\Text)
 			->SetName('interpret')
 			->SetLabel('Interpret:')
 			->SetSize(200)
 			->SetRequired()
 			->SetAutocomplete('off');
-		$year = (new SimpleForm_Number)
+		$year = (new Form\Number)
 			->SetName('year')
 			->SetLabel('Year:')
 			->SetSize(4);
-		$send = (new SimpleForm_SubmitButton)
+		$send = (new Form\SubmitButton)
 			->SetName('send')
 			->SetCssClasses('button-green')
 			->SetValue('<span><b>Save</b></span>');
@@ -143,15 +147,15 @@ class App_Controllers_CdCollection extends App_Controllers_Base
 	}
 	/**
 	 * Create empty form where to store CSRF tokens
-	 * @return SimpleForm
+	 * @return \MvcCore\Ext\Form|mixed
 	 */
 	protected function getVirtualDeleteForm () {
-		return (new SimpleForm($this))
+		return (new Form($this))
 			->SetId('delete')
 			// set error url, where to redirect if CSRF 
 			// are wrong, see App_Controller_Base::Init()
 			->SetErrorUrl(
-				$this->Url(':Default', array('absolute' => TRUE))
+				$this->Url('Index:Index', array('absolute' => TRUE))
 			);
 	}
 }

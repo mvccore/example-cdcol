@@ -1,6 +1,8 @@
 <?php
 
-class App_Models_Album extends MvcCore_Model
+namespace App\Models;
+
+class Album extends \MvcCore\Model
 {
 	/** @var int */
 	public $Id;
@@ -13,7 +15,7 @@ class App_Models_Album extends MvcCore_Model
 
 	/**
 	 * Get all albums in database as array, keyed by $album->Id.
-	 * @return MvcCore_Model[]
+	 * @return \MvcCore\Model[]
 	 */
 	public static function GetAll () {
 		$rawData = self::GetDb()->query("
@@ -24,7 +26,7 @@ class App_Models_Album extends MvcCore_Model
 				c.year AS Year
 			FROM 
 				cds AS c
-		")->fetchAll(PDO::FETCH_ASSOC);
+		")->fetchAll(\PDO::FETCH_ASSOC);
 		$result = array();
 		foreach ($rawData as $rawItem) {
 			$item = (new self)->SetUp($rawItem);
@@ -35,8 +37,8 @@ class App_Models_Album extends MvcCore_Model
 
 	/**
 	 * Get single album instance by given id or null if no record by id in database.
-	 * @param int $id 
-	 * @return MvcCore_Model|null
+	 * @param int $id
+	 * @return \MvcCore\Model|null
 	 */
 	public static function GetById ($id) {
 		$select = self::GetDb()->prepare("
@@ -53,7 +55,7 @@ class App_Models_Album extends MvcCore_Model
         $select->execute(array(
             ":id" => $id,
         ));
-        $data = $select->fetch(PDO::FETCH_ASSOC);
+        $data = $select->fetch(\PDO::FETCH_ASSOC);
 		if ($data) {
 			return (new self)->SetUp($data);
 		}
@@ -121,7 +123,7 @@ class App_Models_Album extends MvcCore_Model
 		$params = array();
 		$newValues = $this->GetValues();
 		foreach ($newValues as $key => & $value) {
-			$keyUnderscored = MvcCore_Tool::GetUnderscoredFromPascalCase($key);
+			$keyUnderscored = \MvcCore\Tool::GetUnderscoredFromPascalCase($key);
 			$columnsSql[] = $keyUnderscored;
 			$params[$keyUnderscored] = $value;
 		}

@@ -1,10 +1,14 @@
 <?php
 
-class App_Controllers_Default extends App_Controllers_Base
+namespace App\Controllers;
+
+use \MvcCore\Ext\Form;
+
+class Index extends Base
 {
-    public function DefaultAction () {
-		if ($this->user instanceof App_Models_User) {
-			self::Redirect($this->Url('CdCollection:Default'));
+    public function IndexAction () {
+		if ($this->user instanceof \App\Models\User) {
+			self::Redirect($this->Url('CdCollection:'));
 		}
 		$this->view->Title = 'CD Collection';
 		$this->view->User = $this->user;
@@ -17,22 +21,22 @@ class App_Controllers_Default extends App_Controllers_Base
 
 	protected function getSignInFormCustomized () {
 		// customize sign in form
-		/** @var $signInForm MvcCoreExt_Auth_SignInForm */
-		$signInForm = MvcCoreExt_Auth::GetInstance()->GetForm()
+		/** @var $signInForm \MvcCore\Ext\Auth\SignInForm */
+		$signInForm = \MvcCore\Ext\Auth::GetInstance()->GetForm()
 			// initialize fields
 			->Init()
 			// set signed in url to albums list
 			->SetDefaults(array(
-				'successUrl' => $this->Url('CdCollection:Default', array('absolute' => TRUE)),
+				'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
 			));
 		// remove username label and create input placeholder text
-		$signInForm->GetFirstFieldsByClass(SimpleForm_Text::class, TRUE)
+		$signInForm->GetFirstFieldsByClass(Form\Text::class, TRUE)
 			->SetLabel('')->SetPlaceholder('login');
 		// remove password label and create input placeholder text
-		$signInForm->GetFirstFieldsByClass(SimpleForm_Password::class)
+		$signInForm->GetFirstFieldsByClass(Form\Password::class)
 			->SetLabel('')->SetPlaceholder('password');
 		// get submit button and customize submit button inner code
-		$signInFormSubmitBtn = $signInForm->GetFirstFieldsByClass(SimpleForm_SubmitButton::class);
+		$signInFormSubmitBtn = $signInForm->GetFirstFieldsByClass(Form\SubmitButton::class);
 		$signInFormSubmitBtn->AddCssClass('button-green')->SetValue(
 			'<span><b>' . $signInFormSubmitBtn->GetValue() . '</b></span>'
 		);

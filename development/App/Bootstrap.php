@@ -1,29 +1,23 @@
 <?php
 
-class App_Bootstrap
+namespace App;
+
+class Bootstrap
 {
 	public static function Init () {
 		// patch core to use extended debug class
-		MvcCore::GetInstance()->SetDebugClass(MvcCoreExt_Tracy::class);
-
-		// use this line only if you want to pack application without JS/CSS/fonts/images
-		// inside package and you want to have all those files placed on hard drive manualy. 
-		// You can use this variant in modes PHP_PRESERVE_PACKAGE, PHP_PRESERVE_HDD and PHP_STRICT_HDD
-		//MvcCoreExt_ViewHelpers_Assets::SetAssetUrlCompletion(FALSE);
-
-		// add another view helper namespace
-		MvcCore_View::AddHelpersClassBases('MvcCoreExt_ViewHelpers');
+		\MvcCore::GetInstance()->SetDebugClass(\MvcCore\Ext\Debug\Tracy::class);
 		
 		// Initialize authentication service extension and set custom user class
-		MvcCoreExt_Auth::GetInstance()->Init()->SetUserClass(App_Models_User::class);
+		\MvcCore\Ext\Auth::GetInstance()->Init()->SetUserClass(\App\Models\User::class);
 		
 		// set up application routes without custom names, defined basicly as Controller::Action
-		MvcCore_Router::GetInstance(array(
-			'Default:Default'		=> array(
+		\MvcCore\Router::GetInstance(array(
+			'Index:Index'			=> array(
 				'pattern'			=> "#^/$#",
 				'reverse'			=> '/',
 			),
-			'CdCollection:Default'	=> array(
+			'CdCollection:Index'	=> array(
 				'pattern'			=> "#^/albums$#",
 				'reverse'			=> '/albums',
 			),

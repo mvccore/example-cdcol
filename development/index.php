@@ -2,8 +2,8 @@
 
 	@include_once('vendor/autoload.php');
 
-	$app = MvcCore::GetInstance();
+	$app = \MvcCore::GetInstance();
 
-	App_Bootstrap::Init();
+	\App\Bootstrap::Init();
 	
 	$app->Run();

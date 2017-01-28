@@ -2,7 +2,20 @@
 	"name": "mvccore/example-cdcol",
 	"type": "application",
 	"description": "MvcCore Example - CD collection - classic CRUD example with default SQLite database with cd albums.",
-	"keywords": ["mvccore", "framework", "mvc", "simple mvc", "super fast mvc", "easy mvc", "single file application", "cd collection", "cd albums", "CRUD", "CRUD example", "mvccore CRUD"],
+	"keywords": [
+		"mvccore", 
+		"framework", 
+		"mvc", 
+		"simple mvc", 
+		"super fast mvc", 
+		"easy mvc", 
+		"single file application", 
+		"cd collection", 
+		"cd albums", 
+		"CRUD", 
+		"CRUD example", 
+		"mvccore CRUD"
+	],
 	"license": ["BSD-3-Clause"],
 	"authors": [
 		{
@@ -13,7 +26,7 @@
 	"require": {
 		"php": ">=5.3.0",
 		"mrclay/minify": "^2.2",
-		"mvccore/packager": ">=2.1.5"
+		"mvccore/packager": ">=2.1.10"
 	},
 	"minimum-stability": "dev"
 }
