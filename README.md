@@ -1,6 +1,6 @@
 # MvcCore - Example - CD Collection
 
-[![Latest Stable Version](https://img.shields.io/badge/Stable-v4.0.0-brightgreen.svg?style=plastic)](https://github.com/mvccore/example-cdcol/releases)
+[![Latest Stable Version](https://img.shields.io/badge/Stable-v4.2.0-brightgreen.svg?style=plastic)](https://github.com/mvccore/example-cdcol/releases)
 [![License](https://img.shields.io/badge/Licence-BSD-brightgreen.svg?style=plastic)](https://github.com/mvccore/example-cdcol/blob/master/LICENCE.md)
 [![Packager Build](https://img.shields.io/badge/Packager%20Build-passing-brightgreen.svg?style=plastic)](https://github.com/mvccore/packager)
 ![PHP Version](https://img.shields.io/badge/PHP->=5.3-brightgreen.svg?style=plastic)

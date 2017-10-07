@@ -11,8 +11,6 @@ Options -Indexes
 	RewriteRule ^Libs/.*$ / [F,L]
 	RewriteRule ^vendor/.*$ / [F,L]
 	RewriteRule ^Var/Logs/.*$ / [F,L]
-	RewriteRule ^Var/Documents.*$ / [F,L]
-	RewriteRule ^Var/Questionnaires.*$ / [F,L]
 	
 	# basic zend-framework setup see: http://framework.zend.com/manual/en/zend.controller.html
 	RewriteCond %{REQUEST_FILENAME} -s [OR]
