@@ -9,7 +9,7 @@ class User extends \MvcCore\Ext\Auth\User
 	public $UserName = '';
 	public $PasswordHash = '';
 	public $FullName = '';
-	
+
 	public static function GetUserBySession () {
 		$session = static::getSession();
 		if (isset($session->uname)) {
@@ -35,13 +35,13 @@ class User extends \MvcCore\Ext\Auth\User
 				u.password_hash AS PasswordHash,
 				u.full_name AS FullName
 			FROM
-				users as u
+				users AS u
 			WHERE
 				u.user_name = :user_name
 		");
-        $select->execute(array(
-            ":user_name" => $userName,
-        ));
+		$select->execute(array(
+			":user_name" => $userName,
+		));
 		if ($data = $select->fetch(\PDO::FETCH_ASSOC)) {
 			return (new self())->setUp($data);
 		}

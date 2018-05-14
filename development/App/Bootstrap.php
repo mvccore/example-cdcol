@@ -5,30 +5,28 @@ namespace App;
 class Bootstrap
 {
 	public static function Init () {
+
+		$app = \MvcCore\Application::GetInstance();
+
 		// patch core to use extended debug class
-		\MvcCore::GetInstance()->SetDebugClass(\MvcCore\Ext\Debug\Tracy::class);
-		
+		if (class_exists('\MvcCore\Ext\Debug\Tracy')) {
+			\MvcCore\Ext\Debug\Tracy::$Editor = 'MSVS2017';
+			$app->SetDebugClass(\MvcCore\Ext\Debug\Tracy::class);
+		}
+
 		// Initialize authentication service extension and set custom user class
 		\MvcCore\Ext\Auth::GetInstance()->Init()->SetUserClass(\App\Models\User::class);
-		
+
 		// set up application routes without custom names, defined basicly as Controller::Action
 		\MvcCore\Router::GetInstance(array(
-			'Index:Index'			=> array(
-				'pattern'			=> "#^/$#",
-				'reverse'			=> '/',
-			),
-			'CdCollection:Index'	=> array(
-				'pattern'			=> "#^/albums$#",
-				'reverse'			=> '/albums',
-			),
-			'CdCollection:Create'	=> array(
-				'pattern'			=> "#^/create#",
-				'reverse'			=> '/create',
-			),
+			'Index:Index'			=> '/',
+			'CdCollection:Index'	=> '/albums',
+			'CdCollection:Create'	=> '/create',
 			'CdCollection:Edit'	=> array(
-				'pattern'			=> "#^/edit/([0-9]*)#",
-				'reverse'			=> '/edit/{%id}',
-				'params'			=> array('id' => 0,),
+				'pattern'			=> "/edit/<id>",
+				'constraints'		=> array(
+					'id' => '\d'
+				),
 			),
 		));
 	}

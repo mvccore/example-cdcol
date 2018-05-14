@@ -10,8 +10,8 @@ class CdCollection extends Base
 	/** @var \App\Models\Album */
 	protected $album;
     /**
-	 * Initialize this controller, before prdispatching and before every action 
-	 * executing in current controller. This method is template method - so 
+	 * Initialize this controller, before prdispatching and before every action
+	 * executing in current controller. This method is template method - so
 	 * it's necessary to call parent method at the beginning.
 	 */
 	public function Init(){
@@ -24,7 +24,7 @@ class CdCollection extends Base
 		}
 	}
     /**
-     * Pre execute every action in current controller. This method 
+     * Pre execute every action in current controller. This method
 	 * is template method - so it's necessary to call parent method at the beginning.
      */
     public function PreDispatch() {
@@ -63,7 +63,7 @@ class CdCollection extends Base
 		$this->view->DetailForm = $this->getCreateEditForm(FALSE);
     }
     /**
-     * Load previously saved album data, 
+     * Load previously saved album data,
 	 * create edit form with hidden id input
 	 * and set form defaults with album values.
 	 * @return void
@@ -93,8 +93,8 @@ class CdCollection extends Base
 		$detailForm->RedirectAfterSubmit();
     }
     /**
-	 * Delete album by sended id param, if sended CSRF tokens 
-	 * are the same as tokens in session, tokens are managed 
+	 * Delete album by sended id param, if sended CSRF tokens
+	 * are the same as tokens in session, tokens are managed
 	 * by virtual delete form, initialized only once, not for all album rows.
 	 * @return void
      */
@@ -152,7 +152,7 @@ class CdCollection extends Base
 	protected function getVirtualDeleteForm () {
 		return (new Form($this))
 			->SetId('delete')
-			// set error url, where to redirect if CSRF 
+			// set error url, where to redirect if CSRF
 			// are wrong, see App_Controller_Base::Init()
 			->SetErrorUrl(
 				$this->Url('Index:Index', array('absolute' => TRUE))

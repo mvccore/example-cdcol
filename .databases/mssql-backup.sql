@@ -1,7 +1,7 @@
 USE [master]
 GO
 
-CREATE DATABASE [cdcol]
+CREATE DATABASE [cdcol] COLLATE Latin1_General_CS_AS;
 GO
 
 USE [cdcol]

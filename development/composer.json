@@ -1,14 +1,43 @@
 {
+	"name": "mvccore/example-cdcol",
+	"type": "application",
+	"description": "MvcCore Example - CD collection - classic CRUD example with default SQLite database with cd albums.",
+	"keywords": [
+		"mvccore", 
+		"framework", 
+		"mvc", 
+		"simple mvc", 
+		"super fast mvc", 
+		"easy mvc", 
+		"single file application", 
+		"cd collection", 
+		"cdcol", 
+		"cds", 
+		"albums",
+		"cd albums", 
+		"CRUD", 
+		"CRUD example", 
+		"albums CRUD",
+		"cds CRUD",
+		"cd collection CRUD",
+		"mvccore CRUD"
+	],
+	"license": ["BSD-3-Clause"],
+	"authors": [{
+		"name": "Tom Flidr",
+		"homepage": "https://github.com/tomFlidr"
+	}],
 	"require": {
 		"php": ">=5.3.0",
-		"mvccore/mvccore": "^4.2",
-		"mvccore/ext-form": "^4.2",
-		"mvccore/ext-view-helper-assets": "^4.2",
-		"mvccore/ext-auth": "^4.2",
-		"mvccore/ext-debug-tracy": "^4.2",
-		"mvccore/ext-debug-tracy-auth": "^4.2",
-		"mvccore/ext-debug-tracy-mvccore": "^4.2",
-		"mvccore/ext-debug-tracy-routing": "^4.2",
-		"mvccore/ext-debug-tracy-session": "^4.2"
-	}
+		"mvccore/mvccore": "^4.3.1",
+		"mvccore/ext-form": "^4.3.1",
+		"mvccore/ext-view-helper-assets": "^4.3.1",
+		"mvccore/ext-auth": "^4.3.1",
+		"mvccore/ext-debug-tracy": "^4.3.1",
+		"mvccore/ext-debug-tracy-auth": "^4.3.1",
+		"mvccore/ext-debug-tracy-mvccore": "^4.3.1",
+		"mvccore/ext-debug-tracy-routing": "^4.3.1",
+		"mvccore/ext-debug-tracy-session": "^4.3.1"
+	},
+	"minimum-stability": "stable"
 }

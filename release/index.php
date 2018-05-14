@@ -1,68 +1,110 @@
 <?php
 namespace{
 error_reporting(5);
-class Packager_Php_Wrapper{/** @var string */const FS_MODE='PHP_STRICT_PACKAGE';/** @var string */public static$BasePath;/** @var int */public static$BasePathLength;/** @var mixed */public static$Context=NULL;/** @var array */public static$NewContextContents=array();/** @var array */public static$Contents=array();/** @var array */public static$Info=array(
-'/vendor/mvccore/mvccore/src/MvcCore/Tool.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>3756,'lines'=>array(1,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Route.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>4978,'lines'=>array(2,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Response.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>4752,'lines'=>array(3,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Exception.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>439,'lines'=>array(4,1)),
-'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Assets.php'=>array('index'=>-1,'mtime'=>1485678895,'size'=>16368,'lines'=>array(5,1)),
-'/App/Bootstrap.php'=>array('index'=>-1,'mtime'=>1485609024,'size'=>976,'lines'=>array(6,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>15932,'lines'=>array(7,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Session.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>6557,'lines'=>array(8,1)),
-'/App/Views/Helpers/JsonAttr.php'=>array('index'=>-1,'mtime'=>1485608932,'size'=>316,'lines'=>array(9,1)),
-'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Js.php'=>array('index'=>-1,'mtime'=>1485678895,'size'=>17437,'lines'=>array(10,1)),
-'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Css.php'=>array('index'=>-1,'mtime'=>1485678895,'size'=>19243,'lines'=>array(11,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Button.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>1978,'lines'=>array(12,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Validator.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>3446,'lines'=>array(13,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Debug.php'=>array('index'=>-1,'mtime'=>1503090562,'size'=>10988,'lines'=>array(14,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Config.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>11414,'lines'=>array(15,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Router.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>14764,'lines'=>array(16,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Request.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>13898,'lines'=>array(17,1)),
-'/vendor/mvccore/mvccore/src/MvcCore.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>32215,'lines'=>array(19,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Controller.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>11519,'lines'=>array(21,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/View.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>11148,'lines'=>array(22,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Hidden.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>533,'lines'=>array(23,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>16548,'lines'=>array(24,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Helpers.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>7685,'lines'=>array(25,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/View.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>6092,'lines'=>array(26,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Field.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>26049,'lines'=>array(27,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Base.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>11395,'lines'=>array(28,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Configuration.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>33326,'lines'=>array(29,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/Form.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>2215,'lines'=>array(30,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Number.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>1804,'lines'=>array(31,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Text.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>2188,'lines'=>array(32,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignOutForm.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>1692,'lines'=>array(33,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignInForm.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>2649,'lines'=>array(34,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Password.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>482,'lines'=>array(35,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitButton.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>515,'lines'=>array(36,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/FieldGroup.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>15452,'lines'=>array(37,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitInput.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>1643,'lines'=>array(38,1)),
-'/vendor/mvccore/mvccore/src/MvcCore/Model.php'=>array('index'=>-1,'mtime'=>1485678892,'size'=>14571,'lines'=>array(39,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/User.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>1754,'lines'=>array(40,1)),
-'/App/Models/Album.php'=>array('index'=>-1,'mtime'=>1485607758,'size'=>3023,'lines'=>array(41,34)),
-'/App/Controllers/Base.php'=>array('index'=>-1,'mtime'=>1485613332,'size'=>2278,'lines'=>array(75,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/User.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>2917,'lines'=>array(76,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/Controller.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>863,'lines'=>array(77,1)),
-'/App/Models/User.php'=>array('index'=>-1,'mtime'=>1485607815,'size'=>1169,'lines'=>array(78,11)),
-'/App/Controllers/CdCollection.php'=>array('index'=>-1,'mtime'=>1485613478,'size'=>5061,'lines'=>array(89,1)),
-'/App/Controllers/Index.php'=>array('index'=>-1,'mtime'=>1488133957,'size'=>1598,'lines'=>array(90,1)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Controller.php'=>array('index'=>-1,'mtime'=>1485678897,'size'=>1538,'lines'=>array(91,1)),
-'/App/Controllers/System.php'=>array('index'=>-1,'mtime'=>1485608826,'size'=>890,'lines'=>array(92,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/NumberField.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>2664,'lines'=>array(93,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/SafeString.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>2302,'lines'=>array(94,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Maxlength.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>1304,'lines'=>array(95,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Integer.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>1138,'lines'=>array(96,1)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Url.php'=>array('index'=>-1,'mtime'=>1485678894,'size'=>1207,'lines'=>array(97,1)),
-'/index.php'=>array('index'=>-1,'mtime'=>1507400066,'size'=>130,'lines'=>array(99,1)),
-'/App/config.ini'=>array('index'=>0,'mtime'=>1485129914,'size'=>292,'store'=>'text'),
+class Packager_Php_Wrapper
+{
+	/** @var string */
+	const FS_MODE = 'PHP_STRICT_PACKAGE';
+	
+	/** @var string */
+	public static $ScriptFilename;
+
+	/** @var string */
+	public static $BasePath;
+
+	/** @var int */
+	public static $BasePathLength;
+
+	// Packager_Php_Scripts_Completer::start(fields)
+	/** @var mixed */
+	public static $Context = NULL;
+
+	/** @var array */
+	public static $NewContextContents = array();
+
+	/** @var array */
+	public static $Contents = array();
+
+	/** @var array */
+	public static $Info = array(/*____\Packager_Php_Wrapper::$Info____*/
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IApplication.php'=>array('index'=>-1,'mtime'=>1526048260,'size'=>27618,'lines'=>array(0,704)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application/Dispatching.php'=>array('index'=>-1,'mtime'=>1526304363,'size'=>17496,'lines'=>array(704,463)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application/GettersSetters.php'=>array('index'=>-1,'mtime'=>1526051642,'size'=>24642,'lines'=>array(1167,747)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application/Helpers.php'=>array('index'=>-1,'mtime'=>1526051785,'size'=>4387,'lines'=>array(1914,118)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IController.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>16593,'lines'=>array(2032,427)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IView.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>11871,'lines'=>array(2459,300)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Exception.php'=>array('index'=>-1,'mtime'=>1485618923,'size'=>439,'lines'=>array(2759,16)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IModel.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>8292,'lines'=>array(2775,222)),
+'/vendor/mvccore/ext-view-helper/src/MvcCore/Ext/View/Helpers/IHelper.php'=>array('index'=>-1,'mtime'=>1524054938,'size'=>2211,'lines'=>array(2997,47)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/ITool.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>2986,'lines'=>array(3044,91)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IConfig.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>3918,'lines'=>array(3135,107)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IDebug.php'=>array('index'=>-1,'mtime'=>1526026926,'size'=>3486,'lines'=>array(3242,106)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRequest.php'=>array('index'=>-1,'mtime'=>1526055870,'size'=>17662,'lines'=>array(3348,551)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IResponse.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>7435,'lines'=>array(3899,208)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRoute.php'=>array('index'=>-1,'mtime'=>1526055891,'size'=>19724,'lines'=>array(4107,466)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRouter.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>13585,'lines'=>array(4573,325)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/ISession.php'=>array('index'=>-1,'mtime'=>1526301209,'size'=>4011,'lines'=>array(4898,143)),
+'/App/Bootstrap.php'=>array('index'=>-1,'mtime'=>1526300298,'size'=>859,'lines'=>array(5041,32)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth.php'=>array('index'=>-1,'mtime'=>1526302880,'size'=>16527,'lines'=>array(5073,459)),
+'/App/Views/Helpers/JsonAttr.php'=>array('index'=>-1,'mtime'=>1485608932,'size'=>316,'lines'=>array(5532,14)),
+'/vendor/mvccore/mvccore/src/MvcCore/Controller.php'=>array('index'=>-1,'mtime'=>1526050733,'size'=>29519,'lines'=>array(5546,845)),
+'/vendor/mvccore/mvccore/src/MvcCore/Model.php'=>array('index'=>-1,'mtime'=>1526303572,'size'=>22552,'lines'=>array(6391,571)),
+'/vendor/mvccore/ext-view-helper/src/MvcCore/Ext/View/Helpers/AbstractHelper.php'=>array('index'=>-1,'mtime'=>1525338269,'size'=>4206,'lines'=>array(6962,102)),
+'/vendor/mvccore/mvccore/src/MvcCore/Tool.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>4899,'lines'=>array(7064,144)),
+'/vendor/mvccore/mvccore/src/MvcCore/Request.php'=>array('index'=>-1,'mtime'=>1526292919,'size'=>43202,'lines'=>array(7208,1331)),
+'/vendor/mvccore/mvccore/src/MvcCore/Response.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>12846,'lines'=>array(8539,403)),
+'/vendor/mvccore/mvccore/src/MvcCore/Route.php'=>array('index'=>-1,'mtime'=>1526305033,'size'=>43599,'lines'=>array(8942,1086)),
+'/vendor/mvccore/mvccore/src/MvcCore/Session.php'=>array('index'=>-1,'mtime'=>1526301464,'size'=>9578,'lines'=>array(10028,320)),
+'/vendor/mvccore/mvccore/src/MvcCore/Router.php'=>array('index'=>-1,'mtime'=>1526054113,'size'=>26975,'lines'=>array(10348,717)),
+'/vendor/mvccore/mvccore/src/MvcCore/Debug.php'=>array('index'=>-1,'mtime'=>1526295041,'size'=>16086,'lines'=>array(11065,478)),
+'/App/Controllers/Base.php'=>array('index'=>-1,'mtime'=>1485613332,'size'=>2278,'lines'=>array(11543,77)),
+'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Assets.php'=>array('index'=>-1,'mtime'=>1526054234,'size'=>16663,'lines'=>array(11620,512)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/User.php'=>array('index'=>-1,'mtime'=>1485496281,'size'=>1758,'lines'=>array(12132,75)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/Controller.php'=>array('index'=>-1,'mtime'=>1526303692,'size'=>864,'lines'=>array(12207,32)),
+'/App/Models/Album.php'=>array('index'=>-1,'mtime'=>1485607758,'size'=>3023,'lines'=>array(12239,136)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/User.php'=>array('index'=>-1,'mtime'=>1526300120,'size'=>2999,'lines'=>array(12375,108)),
+'/App/Controllers/Index.php'=>array('index'=>-1,'mtime'=>1526304782,'size'=>1811,'lines'=>array(12483,51)),
+'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Css.php'=>array('index'=>-1,'mtime'=>1524226656,'size'=>19777,'lines'=>array(12534,546)),
+'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Js.php'=>array('index'=>-1,'mtime'=>1524226656,'size'=>17963,'lines'=>array(13080,519)),
+'/App/Controllers/CdCollection.php'=>array('index'=>-1,'mtime'=>1526304828,'size'=>4895,'lines'=>array(13599,160)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Controller.php'=>array('index'=>-1,'mtime'=>1526303868,'size'=>1537,'lines'=>array(13759,47)),
+'/App/Controllers/System.php'=>array('index'=>-1,'mtime'=>1485608826,'size'=>890,'lines'=>array(13806,36)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application.php'=>array('index'=>-1,'mtime'=>1525962055,'size'=>2290,'lines'=>array(13842,59)),
+'/App/Models/User.php'=>array('index'=>-1,'mtime'=>1526303402,'size'=>1099,'lines'=>array(13901,49)),
+'/vendor/mvccore/mvccore/src/MvcCore/View.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>22762,'lines'=>array(13950,648)),
+'/vendor/mvccore/mvccore/src/MvcCore/Config.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>13885,'lines'=>array(14598,399)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Button.php'=>array('index'=>-1,'mtime'=>1485675968,'size'=>1978,'lines'=>array(14997,60)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Validator.php'=>array('index'=>-1,'mtime'=>1487286786,'size'=>3548,'lines'=>array(15057,101)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Hidden.php'=>array('index'=>-1,'mtime'=>1485678435,'size'=>555,'lines'=>array(15158,21)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form.php'=>array('index'=>-1,'mtime'=>1526053732,'size'=>16544,'lines'=>array(15179,458)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Helpers.php'=>array('index'=>-1,'mtime'=>1526299064,'size'=>7701,'lines'=>array(15637,245)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/View.php'=>array('index'=>-1,'mtime'=>1526050845,'size'=>6082,'lines'=>array(15882,194)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Field.php'=>array('index'=>-1,'mtime'=>1494456224,'size'=>26055,'lines'=>array(16076,762)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Base.php'=>array('index'=>-1,'mtime'=>1526305980,'size'=>11430,'lines'=>array(16838,283)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Configuration.php'=>array('index'=>-1,'mtime'=>1526054012,'size'=>33327,'lines'=>array(17121,834)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/Form.php'=>array('index'=>-1,'mtime'=>1485496281,'size'=>2223,'lines'=>array(17955,78)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitButton.php'=>array('index'=>-1,'mtime'=>1526308530,'size'=>514,'lines'=>array(18033,20)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Text.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>2188,'lines'=>array(18053,74)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Password.php'=>array('index'=>-1,'mtime'=>1485678433,'size'=>503,'lines'=>array(18127,20)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignInForm.php'=>array('index'=>-1,'mtime'=>1526054167,'size'=>2667,'lines'=>array(18147,91)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Number.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>1804,'lines'=>array(18238,66)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignOutForm.php'=>array('index'=>-1,'mtime'=>1485496281,'size'=>1700,'lines'=>array(18304,64)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitInput.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>1643,'lines'=>array(18368,53)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/FieldGroup.php'=>array('index'=>-1,'mtime'=>1485675968,'size'=>15452,'lines'=>array(18421,438)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/NumberField.php'=>array('index'=>-1,'mtime'=>1485678424,'size'=>2750,'lines'=>array(18859,85)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Maxlength.php'=>array('index'=>-1,'mtime'=>1485678426,'size'=>1350,'lines'=>array(18944,45)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/SafeString.php'=>array('index'=>-1,'mtime'=>1485678421,'size'=>2376,'lines'=>array(18989,73)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Url.php'=>array('index'=>-1,'mtime'=>1485678419,'size'=>1250,'lines'=>array(19062,42)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Integer.php'=>array('index'=>-1,'mtime'=>1485678426,'size'=>1176,'lines'=>array(19104,37)),
+'/index.php'=>array('index'=>-1,'mtime'=>1526304358,'size'=>118,'lines'=>array(19141,4)),
+'/App/config.ini'=>array('index'=>0,'mtime'=>1526303494,'size'=>359,'store'=>'text'),
 '/App/Views/Layouts/layout/sign-out-form.phtml'=>array('index'=>1,'mtime'=>1485608956,'size'=>496,'store'=>'template'),
 '/App/Views/Layouts/layout.phtml'=>array('index'=>2,'mtime'=>1485608972,'size'=>1220,'store'=>'template'),
 '/App/Views/Scripts/cd-collection/create.phtml'=>array('index'=>3,'mtime'=>1485608541,'size'=>234,'store'=>'template'),
 '/App/Views/Scripts/cd-collection/edit.phtml'=>array('index'=>4,'mtime'=>1507400261,'size'=>191,'store'=>'template'),
-'/App/Views/Scripts/cd-collection/index.phtml'=>array('index'=>5,'mtime'=>1485608521,'size'=>1519,'store'=>'template'),
-'/App/Views/Scripts/index/index.phtml'=>array('index'=>6,'mtime'=>1485609251,'size'=>235,'store'=>'template'),
-'/App/Views/Scripts/index/not-found.phtml'=>array('index'=>7,'mtime'=>1485608474,'size'=>132,'store'=>'template'),
+'/App/Views/Scripts/cd-collection/index.phtml'=>array('index'=>5,'mtime'=>1526304891,'size'=>1466,'store'=>'template'),
+'/App/Views/Scripts/index/error.phtml'=>array('index'=>6,'mtime'=>1485608474,'size'=>132,'store'=>'template'),
+'/App/Views/Scripts/index/index.phtml'=>array('index'=>7,'mtime'=>1485609251,'size'=>235,'store'=>'template'),
 '/static/fonts/myriadwebpro/myriadwebpro-bold-webfont.eot'=>array('index'=>8,'mtime'=>1456749696,'size'=>24703,'store'=>'binary'),
 '/static/fonts/myriadwebpro/myriadwebpro-bold-webfont.svg'=>array('index'=>9,'mtime'=>1456749696,'size'=>60744,'store'=>'gzip'),
 '/static/fonts/myriadwebpro/myriadwebpro-bold-webfont.ttf'=>array('index'=>10,'mtime'=>1456749696,'size'=>51776,'store'=>'binary'),
@@ -77,112 +119,805 @@ class Packager_Php_Wrapper{/** @var string */const FS_MODE='PHP_STRICT_PACKAGE';
 '/static/fonts/myriadwebpro/myriadwebpro-semibold-webfont.woff'=>array('index'=>19,'mtime'=>1456749696,'size'=>34280,'store'=>'binary'),
 '/static/img/buttons.png'=>array('index'=>20,'mtime'=>1456749696,'size'=>29500,'store'=>'binary'),
 '/static/img/favicon.ico'=>array('index'=>21,'mtime'=>1459332216,'size'=>7886,'store'=>'binary'),
-'/Var/Tmp/minified_css_2ec230d8dd5ce135d407ed58bdd89f0e.css'=>array('index'=>22,'mtime'=>1507400110,'size'=>10767,'store'=>'gzip'),
-'/Var/Tmp/minified_js_0a22c902c25a64e464ece951c7a3a78b.js'=>array('index'=>23,'mtime'=>1507400113,'size'=>14910,'store'=>'gzip'),
-'/Var/Tmp/minified_js_1b7cee0f91c0592097ba380c17de88ca.js'=>array('index'=>24,'mtime'=>1507400113,'size'=>173,'store'=>'gzip'),
-'/Var/Tmp/minified_js_acd741cc5f1e772d165769e88965a7e3.js'=>array('index'=>25,'mtime'=>1507400119,'size'=>525,'store'=>'gzip'),
-'/vendor/mvccore/mvccore/src/MvcCore/debug.html'=>array('index'=>26,'mtime'=>1485678892,'size'=>1407,'store'=>'text'),
-);/** @var int */private static$_baseLinesCount=3117;/** @var bool */private static$_minifiedPhp=TRUE;/** @var array */private static$_contexts=array();/** @var bool */private static$_closureRendering=TRUE;/** @var array */private static$_currentFileSource=array();public static function PrintBacktrace(){echo '<pre>';var_dump(debug_backtrace());echo '</pre>';}public static function Init(){self::$BasePath=str_replace('\\','/',__DIR__);self::$BasePathLength=mb_strlen(self::$BasePath);if(version_compare(PHP_VERSION,'5.4.0',"<")){self::$_closureRendering=FALSE;}}private static function _includeFile($path,&$context,$onceOnly,$fn=''){$path=self::NormalizePath($path);if($onceOnly&&self::_getIsFileIncluded($path))return;if(!isset(self::$Info[$path])){self::Warning('',$path,$fn);return FALSE;}else{return self::_includeFileWithRendering($path,$context,$onceOnly);}}private static function _getIsFileIncluded($path){return(isset(self::$Info[$path])&&self::$Info[$path]['included'])?TRUE:FALSE;}private static function _includeFileWithRendering($path,&$context,$onceOnly){$store=self::$Info[$path]['store'];$closureRendering=$store=='template'&&self::$_closureRendering;$result=self::_renderFile($path,$context,$onceOnly,$closureRendering,$store);if($closureRendering){return$result;}else{echo $result;return 1;}}private static function _renderFile($path,&$context,$onceOnly,$closureRendering,$store){if($closureRendering){$result=self::_callTemplateClosure($path,$context);}else{$result=self::_evalFile($path,$context,$store);}if($onceOnly)self::_setFileIsIncluded($path);return$result;}private static function _callTemplateClosure($path,&$context){$templateClosure=self::_getFileContent($path,FALSE);if(!is_null($context)){$templateClosure=$templateClosure->bindTo($context,$context);}return$templateClosure();}private static function _evalFile($path,&$context,$store){if($store=='template'){$content=&self::_getStaticWithContext($path,$context,$store);}else{$content=self::_getFileContent($path,TRUE);}self::_addContext($context);ob_start();try{eval(' ?'.'>'.$content.'<'.'?php ');}catch(Exception$e){throw$e;}self::_removeContext();return trim(ob_get_clean());}private static function _getStaticWithContext($path,$context){if(is_null($context)){$templateClosure=self::_getFileContent($path,TRUE);$content=self::_getTemplateClosureBody($templateClosure);}else{$content=&self::_getStaticWithContextAlreadyProcessed($path);if(mb_strlen($content)===0){$templateClosure=self::_getFileContent($path,TRUE);$content=self::_getTemplateClosureBody($templateClosure);$content=preg_replace("#([^\\\])(\\\$this)([^a-zA-Z0-9_\x7f-\xff])#im","$1".__CLASS__."::\$Context$3",$content);$index=self::$Info[$path]['index'];self::$NewContextContents[$index]=$content;}}return$content;}private static function _getTemplateClosureBody(Closure$templateClosure){$reflection=new ReflectionFunction($templateClosure);$startLine=$reflection->getStartLine()-1;$endLine=$reflection->getEndLine();$length=$endLine-$startLine;self::_setUpCurrentFileSource();$functionSource=implode('',array_slice(self::$_currentFileSource,$startLine,$length));$firstCloseTagPos=mb_strpos($functionSource,'?>')+2;$lastOpenTagPos=mb_strrpos($functionSource,'<?php');$functionBodyLength=$lastOpenTagPos-$firstCloseTagPos;$functionSource=mb_substr($functionSource,$firstCloseTagPos,$functionBodyLength);return$functionSource;}private static function _setUpCurrentFileSource(){if(count(self::$_currentFileSource)===0){self::$_currentFileSource=file(__FILE__);}}private static function _getStaticWithContextAlreadyProcessed($path){$content='';if(isset(self::$Info[$path])){$index=self::$Info[$path]['index'];if(isset(self::$NewContextContents[$index])){$content=&self::$NewContextContents[$index];}}return$content;}private static function _addContext($context){self::$_contexts[]=$context;self::$Context=$context;}private static function _removeContext(){$contextsCount=count(self::$_contexts);$newContext=NULL;if($contextsCount>0){$contextsCount-=1;unset(self::$_contexts[$contextsCount]);self::$_contexts=array_values(self::$_contexts);if($contextsCount>0){$newContext=self::$_contexts[$contextsCount-1];}}self::$Context=$newContext;}private static function _setFileIsIncluded($path){if(isset(self::$Info[$path])){self::$Info[$path]['included']=1;}else{self::$Info[$path]=array('included'=>1);}}private static function _getFileContent($path,$decodeGzip=TRUE){if(!isset(self::$Info[$path]))return FALSE;$record=self::$Info[$path];$index=$record['index'];if($index==-1){return self::_getScript($record['lines']);}else{return self::_getStatic($record['store'],$index,$decodeGzip);}}private static function _getScript($lines){self::_setUpCurrentFileSource();$begin=self::$_baseLinesCount+$lines[0]-1;$end=$begin+$lines[1];$r="<?php\n";$g=self::$_minifiedPhp?"\n":"";for($i=$begin,$l=$end;$i<$l;$i+=1){$r.=$g.self::$_currentFileSource[$i];}$r.="\n?>";return$r;}private static function _getStatic($store,$index,$decodeGzip=TRUE){if($store=='template'){return self::$Contents[$index];}else if($store=='gzip'){return$decodeGzip?gzdecode(self::$Contents[$index]):self::$Contents[$index];}else if($store=='base64'){return base64_decode(self::$Contents[$index]);}else{return self::$Contents[$index];}}public static function NormalizePath($path){$path=str_replace('\\','/',$path);if(mb_strpos($path,'/./')!==FALSE){$path=str_replace('/./','/',$path);}if(mb_strpos($path,'/..')!==FALSE){while(true){$doubleDotPos=mb_strpos($path,"/..");if($doubleDotPos===FALSE){break;}else{$path1=mb_substr($path,0,$doubleDotPos);$path2=mb_substr($path,$doubleDotPos+3);$lastSlashPos=mb_strrpos($path1,'/');$path1=mb_substr($path1,0,$lastSlashPos);$path=$path1.$path2;}}}if(mb_strpos($path,self::$BasePath)===0){$path=mb_substr($path,self::$BasePathLength);}return str_replace('//','/',$path);}public static function _isProtocolPath($path){return preg_match("#^([a-z]*)\://(.*)#",$path)?TRUE:FALSE;}public static function Warning($msg='',$path='',$fn=''){if(!$msg)$msg="$fn($path): failed to open stream: No such file or directory";trigger_error($msg,E_USER_WARNING);}public static function Readfile($filename,$use_include_path=FALSE,$context=NULL){if(self::_isProtocolPath($filename))return call_user_func_array('readfile',func_get_args());$path=self::NormalizePath($filename);$content=self::_getFileContent($path,FALSE);if($content===FALSE){self::Warning('',$filename,'readfile');return FALSE;}else{return self::_readfile($content,$path);}}private static function _readfile(&$content,$path){$store=self::$Info[$path]['store'];if($store=='gzip'){if(strpos($_SERVER['HTTP_ACCEPT_ENCODING'],'gzip')!==FALSE){header('Content-Encoding: gzip');}else{$content=gzdecode($content);}}echo $content;return self::$Info[$path]['size'];}public static function IsDir($filename){$path=self::NormalizePath($filename);$catched=FALSE;foreach(self::$Info as$pathKey=>&$item){if(strpos($pathKey,$path)===0){$catched=TRUE;break;}}return$catched;}public static function FileGetContents($filename,$use_include_path=FALSE,$context=NULL,$offset=0){if(self::_isProtocolPath($filename))return call_user_func_array('file_get_contents',func_get_args());$path=self::NormalizePath($filename);$content=self::_getFileContent($path,TRUE);if($content===FALSE){self::Warning('',$filename,'file_get_contents');return FALSE;}else{return$content;}}public static function ParseIniFile($filename,$process_sections=FALSE,$scanner_mode=INI_SCANNER_NORMAL){$path=self::NormalizePath($filename);$content=self::_getFileContent($path,TRUE);if($content===FALSE){self::Warning('',$filename,'parse_ini_file');return FALSE;}else{return parse_ini_string($content,$process_sections,$scanner_mode);}}public static function FileExists($filename){$path=self::NormalizePath($filename);return isset(self::$Info[$path]);}public static function Filemtime($filename){$path=self::NormalizePath($filename);if(!isset(self::$Info[$path])){self::Warning("filemtime(): stat failed for $filename");return FALSE;}else{return self::$Info[$path]['mtime'];}}public static function IncludeStandard($path,$context=NULL){return self::_includeFile($path,$context,FALSE,'include');}}Packager_Php_Wrapper::Init();
+'/Var/Tmp/minified_css_2ec230d8dd5ce135d407ed58bdd89f0e.css'=>array('index'=>22,'mtime'=>1510831797,'size'=>10767,'store'=>'gzip'),
+'/Var/Tmp/minified_css_53bf53fb12afa393ed4e358fcc4a1dea.css'=>array('index'=>23,'mtime'=>1510831902,'size'=>10191,'store'=>'gzip'),
+'/Var/Tmp/minified_js_0a22c902c25a64e464ece951c7a3a78b.js'=>array('index'=>24,'mtime'=>1510831801,'size'=>14910,'store'=>'gzip'),
+'/Var/Tmp/minified_js_1b7cee0f91c0592097ba380c17de88ca.js'=>array('index'=>25,'mtime'=>1510831804,'size'=>173,'store'=>'gzip'),
+'/Var/Tmp/minified_js_227e5246fda513f342e38c4e53000327.js'=>array('index'=>26,'mtime'=>1510831904,'size'=>173,'store'=>'gzip'),
+'/Var/Tmp/minified_js_acd741cc5f1e772d165769e88965a7e3.js'=>array('index'=>27,'mtime'=>1510831801,'size'=>525,'store'=>'gzip'),
+'/Var/Tmp/minified_js_d778d95102e01b9a89be5b22bd955ae6.js'=>array('index'=>28,'mtime'=>1510831904,'size'=>14910,'store'=>'gzip'),
+'/Var/Tmp/minified_js_ef8a402a6566ba4d182e50e8128b57c7.js'=>array('index'=>29,'mtime'=>1510831925,'size'=>525,'store'=>'gzip'),
+'/vendor/mvccore/mvccore/src/MvcCore/debug.html'=>array('index'=>30,'mtime'=>1525959959,'size'=>1828,'store'=>'text'),
+'/{database}'=>array('index'=>31,'mtime'=>1526303104,'size'=>0,'store'=>'base64'),
+); // replaced automaticly in build process
+
+	/** @var int */
+	private static $_baseLinesCount = 3893; // replaced automaticly in build process
+
+	/** @var bool */
+	private static $_minifiedPhp = FALSE; // replaced automaticly in build process
+	
+	/** @var array */
+	private static $_contexts = array();
+	
+	/** @var bool */
+	private static $_closureRendering = TRUE;
+	
+	/** @var array */
+	private static $_currentFileSource = array();
+
+	/**
+	 * Prints backtrace in SplFileInfo wrapper exceptions and in DirectoryIterator wrapper exceptions
+	 * @return void
+	 */
+	public static function PrintBacktrace () {
+		echo '<pre>';
+		var_dump(debug_backtrace());
+		echo '</pre>';
+	}
+	// Packager_Php_Scripts_Completer::end(fields)
+
+	// Packager_Php_Scripts_Completer::start(Init)
+	/**
+	 * Static initialization for often used variables
+	 * 
+	 * @return void
+	 */
+	public static function Init () {
+		self::$ScriptFilename = str_replace('\\', '/', $_SERVER['SCRIPT_FILENAME']);
+		self::$BasePath = str_replace('\\', '/', __DIR__);
+		self::$BasePathLength = mb_strlen(self::$BasePath);
+		if (version_compare(PHP_VERSION, '5.4.0', "<")) {
+			self::$_closureRendering = FALSE;
+		}
+	}
+	// Packager_Php_Scripts_Completer::end(Init)
+	
+	// Packager_Php_Scripts_Completer::start(_includeFile)
+	/**
+	 * Evaluate static file content (mostly a template)
+	 * 
+	 * @param string  $path 
+	 * @param mixed   $context 
+	 * @param boolean $onceOnly 
+	 * @param string  $fn 
+	 * 
+	 * @return void|boolean|int|mixed
+	 */
+	private static function _includeFile ($path, & $context, $onceOnly, $fn = '') {
+		$path = self::NormalizePath($path);
+		if ($onceOnly && self::_getIsFileIncluded($path)) return;
+		if (!isset(self::$Info[$path])) {
+			self::Warning('', $path, $fn);
+			return FALSE;
+		} else {
+			return self::_includeFileWithRendering($path, $context, $onceOnly);
+		}
+	}
+	
+	/**
+	 * Get info if file has been included or not
+	 * 
+	 * @param string  $path 
+	 * 
+	 * @return boolean
+	 */
+	private static function _getIsFileIncluded ($path) {
+		return (
+			isset(self::$Info[$path]) && 
+			self::$Info[$path]['included']
+		) ? TRUE : FALSE;
+	}
+
+	/**
+	 * Evaluate static file content (mostly a template)
+	 * 
+	 * @param string  $path 
+	 * @param mixed   $context 
+	 * @param boolean $onceOnly 
+	 * 
+	 * @return boolean|int|mixed
+	 */
+	private static function _includeFileWithRendering ($path, & $context, $onceOnly) {
+		$store = self::$Info[$path]['store'];
+		$closureRendering = $store == 'template' && self::$_closureRendering;
+		$result = self::_renderFile($path, $context, $onceOnly, $closureRendering, $store);
+		if ($closureRendering) {
+			return $result;
+		} else {
+			echo $result;
+			return 1;
+		}
+	}
+
+	/**
+	 * Evaluate static file content (mostly a template)
+	 * Render file by calling closure code in PHP > 5.3 or render file with eval() and $this context replacing in PHP < 5.4
+	 * 
+	 * @param string  $path 
+	 * @param mixed   $context 
+	 * @param boolean $onceOnly 
+	 * @param boolean $closureRendering 
+	 * @param string  $store 
+	 * 
+	 * @return int|mixed|string
+	 */
+	private static function _renderFile ($path, & $context, $onceOnly, $closureRendering, $store) {
+		if ($closureRendering) {
+			$result = self::_callTemplateClosure($path, $context);
+		} else {
+			$result = self::_evalFile($path, $context, $store);
+		}
+		if ($onceOnly) self::_setFileIsIncluded($path);
+		return $result;
+	}
+	
+	/**
+	 * Evaluate static file content (mostly a template)
+	 * Render file by calling closure code in PHP > 5.3
+	 * 
+	 * @param string  $path 
+	 * @param mixed   $context 
+	 * 
+	 * @return int|mixed
+	 */
+	private static function _callTemplateClosure ($path, & $context) {
+		$templateClosure = self::_getFileContent($path, FALSE);
+		if (!is_null($context)) {
+			$templateClosure = $templateClosure->bindTo($context, $context);
+		}
+		return $templateClosure();
+	}
+	
+	/**
+	 * Evaluate static file content (mostly a template)
+	 * Render file with eval() and $this context replacing in PHP < 5.4
+	 * 
+	 * @param string  $path 
+	 * @param mixed   $context 
+	 * @param string  $store 
+	 * 
+	 * @return string
+	 */
+	private static function _evalFile ($path, & $context, $store) {
+		if ($store == 'template') {
+			$content = & self::_getStaticWithContext($path, $context, $store);
+		} else {
+			$content = self::_getFileContent($path, TRUE);
+		}
+		self::_addContext($context);
+		ob_start();
+		try {
+			eval(' ?'.'>' . $content . '<'.'?php ');
+		} catch (Exception $e) {
+			throw $e;
+		}
+		self::_removeContext();
+		return trim(ob_get_clean());
+	}
+
+	/**
+	 * Get static file content with replaced $this context variables if necessary
+	 * 
+	 * @param string  $path 
+	 * @param mixed   $context
+	 * 
+	 * @return string
+	 */
+	private static function _getStaticWithContext ($path, $context) {
+		if (is_null($context)) {
+			$templateClosure = self::_getFileContent($path, TRUE);
+			$content = self::_getTemplateClosureBody($templateClosure);
+		} else {
+			$content = & self::_getStaticWithContextAlreadyProcessed($path);
+			if (mb_strlen($content) === 0) {
+				$templateClosure = self::_getFileContent($path, TRUE);
+				$content = self::_getTemplateClosureBody($templateClosure);
+				// http://php.net/manual/en/language.variables.basics.php
+				$content = preg_replace(
+					"#([^\\\])(\\\$this)([^a-zA-Z0-9_\x7f-\xff])#im",
+					"$1".__CLASS__."::\$Context$3",
+					$content
+				);
+				$index = self::$Info[$path]['index'];
+				self::$NewContextContents[$index] = $content;
+			}
+		}
+		return $content;
+	}
+	
+	/**
+	 * Get closure function body from static files array
+	 * 
+	 * @param Closure $templateClosure
+	 * 
+	 * @return string
+	 */
+	private static function _getTemplateClosureBody (Closure $templateClosure) {
+		$reflection = new ReflectionFunction($templateClosure);
+		$startLine = $reflection->getStartLine() - 1;
+		$endLine = $reflection->getEndLine();
+		$length = $endLine - $startLine;
+		self::_setUpCurrentFileSource();
+		$functionSource = implode('', array_slice(self::$_currentFileSource, $startLine, $length));
+		$firstCloseTagPos = mb_strpos($functionSource, '?>') + 2;
+		$lastOpenTagPos = mb_strrpos($functionSource, '<?php');
+		$functionBodyLength = $lastOpenTagPos - $firstCloseTagPos;
+		$functionSource = mb_substr($functionSource, $firstCloseTagPos, $functionBodyLength);
+		return $functionSource;
+	}
+	
+	/**
+	 * Set up current file source array
+	 * 
+	 * @return void
+	 */
+	private static function _setUpCurrentFileSource () {
+		if (count(self::$_currentFileSource) === 0) {
+			self::$_currentFileSource = file(__FILE__);
+		}
+	}
+	
+	/**
+	 * Get static file content with replaced $this context variables already processed
+	 * 
+	 * @param string  $path 
+	 * 
+	 * @return string
+	 */
+	private static function _getStaticWithContextAlreadyProcessed ($path) {
+		$content = '';
+		if (isset(self::$Info[$path])) {
+			$index = self::$Info[$path]['index'];
+			if (isset(self::$NewContextContents[$index])) {
+				$content = & self::$NewContextContents[$index];
+			}
+		}
+		return $content;
+	}
+	
+	/**
+	 * Set up current context into contexts array to remember it after subtemplate has been rendered
+	 * 
+	 * @param mixed $context
+	 * 
+	 * @return void
+	 */
+	private static function _addContext ($context) {
+		self::$_contexts[] = $context;
+		self::$Context = $context;
+	}
+	
+	/**
+	 * Remove current context from contexts array and reset previous (remember any context after subtemplate has been rendered)
+	 * 
+	 * @return void
+	 */
+	private static function _removeContext () {
+		$contextsCount = count(self::$_contexts);
+		$newContext = NULL;
+		if ($contextsCount > 0) {
+			$contextsCount -= 1;
+			unset(self::$_contexts[$contextsCount]);
+			self::$_contexts = array_values(self::$_contexts);
+			if ($contextsCount > 0) {
+				$newContext = self::$_contexts[$contextsCount - 1];
+			}
+		}
+		self::$Context = $newContext;
+	}
+	
+	/**
+	 * Set info if file has been included or not
+	 * 
+	 * @param string  $path 
+	 * 
+	 * @return void
+	 */
+	private static function _setFileIsIncluded ($path) {
+		if (isset(self::$Info[$path])) {
+			self::$Info[$path]['included'] = 1;
+		} else {
+			self::$Info[$path] = array('included' => 1);
+		}
+	}
+	// Packager_Php_Scripts_Completer::end(_includeFile)
+	
+	// Packager_Php_Scripts_Completer::start(_getFileContent)
+	/**
+	 * Get static file content string (decode gzip record by default)
+	 * 
+	 * @param string  $path 
+	 * @param boolean $decodeGzip 
+	 * 
+	 * @return string
+	 */
+	private static function _getFileContent ($path, $decodeGzip = TRUE) {
+		if (!isset(self::$Info[$path])) return FALSE;
+		$record = self::$Info[$path];
+		$index = $record['index'];
+		if ($index == -1) {
+			return self::_getScript($record['lines']);
+		} else {
+			return self::_getStatic($record['store'], $index, $decodeGzip);
+		}
+	}
+
+	/**
+	 * Get php script content as part of result file
+	 * 
+	 * @param array $lines 
+	 * 
+	 * @return string
+	 */
+	private static function _getScript ($lines) {
+		self::_setUpCurrentFileSource();
+		$begin = self::$_baseLinesCount + $lines[0] - 1;
+		$end = $begin + $lines[1];
+		$r = "<?php\n";
+		$g = self::$_minifiedPhp ? "\n" : "";
+		for ($i = $begin, $l = $end; $i < $l; $i += 1) {
+			$r .= $g . self::$_currentFileSource[$i];
+		}
+		$r .= "\n?>";
+		return $r;
+	}
+
+	/**
+	 * Get static file content by store type and store index (decode gzip string if necessary)
+	 * 
+	 * @param string  $store 
+	 * @param int     $index 
+	 * @param boolean $decodeGzip 
+	 * 
+	 * @return string
+	 */
+	private static function _getStatic ($store, $index, $decodeGzip = TRUE) {
+		if ($store == 'template') {
+			return self::$Contents[$index];
+		} else if ($store == 'gzip') {
+			return $decodeGzip ? gzdecode(self::$Contents[$index]) : self::$Contents[$index] ;
+		} else if ($store == 'base64') {
+			return base64_decode(self::$Contents[$index]);
+		} else {
+			return self::$Contents[$index];
+		}
+	}
+	// Packager_Php_Scripts_Completer::end(_getFileContent)
+	
+	// Packager_Php_Scripts_Completer::start(NormalizePath)
+	/**
+	 * Normalize any path to stored relative path with normal slashes,
+	 * used only for internal purposes, not as php build-in function replacement.
+	 * 
+	 * @param string  $path 
+	 * 
+	 * @return string
+	 */
+	public static function NormalizePath ($path) {
+		$path = str_replace('\\', '/', $path);
+		if (mb_strpos($path, '/./') !== FALSE) {
+			$path = str_replace('/./', '/', $path);
+		}
+		if (mb_strpos($path, '/..') !== FALSE) {
+			while (true) {
+				$doubleDotPos = mb_strpos($path, "/..");
+				if ($doubleDotPos === FALSE) {
+					break;
+				} else {
+					$path1 = mb_substr($path, 0, $doubleDotPos);
+					$path2 = mb_substr($path, $doubleDotPos + 3);
+					$lastSlashPos = mb_strrpos($path1, '/');
+					$path1 = mb_substr($path1, 0, $lastSlashPos);
+					$path = $path1 . $path2;
+				}
+			}
+		}
+		if (mb_strpos($path, self::$BasePath) === 0) {
+			$path = mb_substr($path, self::$BasePathLength);
+		}
+		return str_replace('//', '/', $path);
+	}
+	// Packager_Php_Scripts_Completer::end(NormalizePath)
+	
+	// Packager_Php_Scripts_Completer::start(_isProtocolPath)
+	/**
+	 * Check if given path is protocol like:
+	 * http://..., https://..., php://...
+	 * 
+	 * @param string  $path 
+	 * 
+	 * @return bool
+	 */
+	public static function _isProtocolPath ($path) {
+		return preg_match("#^([a-z]*)\://(.*)#", $path) ? TRUE : FALSE;
+	}
+	// Packager_Php_Scripts_Completer::end(_isProtocolPath)
+	
+	// Packager_Php_Scripts_Completer::start(Warning)
+	/**
+	 * Generates php warning content in output.
+	 * 
+	 * @param string $msg 
+	 * @param string $path 
+	 * @param string $fn
+	 * 
+	 * @return void
+	 */
+	public static function Warning ($msg = '', $path = '', $fn = '') {
+		if (!$msg) $msg = "$fn($path): failed to open stream: No such file or directory";
+		trigger_error($msg, E_USER_WARNING);
+	}
+	// Packager_Php_Scripts_Completer::end(Warning)
+
+	// Packager_Php_Scripts_Completer::start(readfile)
+	/**
+	 * Send file content to output, add gzip http header 
+	 * if client accepts it and also if data are stored as gzip.
+	 * 
+	 * @param string   $filename
+	 * @param boolean  $use_include_path
+	 * @param resource $context
+	 * 
+	 * @return boolean|int
+	 */
+	public static function Readfile ($filename, $use_include_path = FALSE, $context = NULL) {
+		if (self::_isProtocolPath($filename)) return call_user_func_array('readfile', func_get_args());
+		$path = self::NormalizePath($filename);
+		$content = self::_getFileContent($path, FALSE);
+		if ($content === FALSE) {
+			self::Warning('', $filename, 'readfile');
+			return FALSE;
+		} else {
+			return self::_readfile($content, $path);
+		}
+	}
+
+	/**
+	 * 
+	 * Send file content to output, add gzip http header 
+	 * if client accepts it and also if data are stored as gzip.
+	 * 
+	 * @param string $content
+	 * @param string $path
+	 * 
+	 * @return int
+	 */
+	private static function _readfile (& $content, $path) {
+		$store = self::$Info[$path]['store'];
+		if ($store == 'gzip') {
+			if (strpos($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip') !== FALSE) {
+				header('Content-Encoding: gzip');
+			} else {
+				$content = gzdecode($content);
+			}
+		}
+		echo $content;
+		return self::$Info[$path]['size'];
+	}
+	// Packager_Php_Scripts_Completer::end(readfile)
+
+	// REMOVED: is_file
+
+	// Packager_Php_Scripts_Completer::start(is_dir)
+	/**
+	 * Tells whether the filename is a directory.
+	 * 
+	 * @param string   $filename
+	 * 
+	 * @return boolean
+	 */
+	public static function IsDir ($filename) {
+		$path = self::NormalizePath($filename);
+		if (isset(self::$Info[$path])) return TRUE;
+		$catched = FALSE;
+		foreach (self::$Info as $pathKey => & $item) {
+			if (strpos($pathKey, $path) === 0) {
+				$catched = TRUE;
+				break;
+			}
+		}
+		return $catched;
+	}
+	// Packager_Php_Scripts_Completer::end(is_dir)
+
+	// Packager_Php_Scripts_Completer::start(mkdir)
+	/**
+	 * Makes real directory.
+	 * 
+	 * @param string   $filename
+	 * @param int      $mode
+	 * @param bool     $recursive
+	 * @param resource $context
+	 * 
+	 * @return boolean
+	 */
+	public static function MkDir ($filename, $mode = 0777, $recursive = FALSE, $context = NULL) {
+		$path = self::NormalizePath($filename);
+		$r = FALSE;
+		if (!isset(self::$Info[$path])) {
+			if ($context !== NULL) {
+				$r = mkdir($filename, $mode, $recursive, $context);
+			} else {
+				$r = mkdir($filename, $mode, $recursive);
+			}
+			if ($r) self::_changeItself(
+				'/*____\\Packager_Php_Wrapper::$Info____*/',
+				"'".$path."'=>array('index'=>-1,'mtime'=>".time().",'size'=>0,'lines'=>array(0,0)),"
+			);
+		}
+		return $r;
+	}
+	// Packager_Php_Scripts_Completer::end(mkdir)
+	
+	// Packager_Php_Scripts_Completer::start(_changeItself)
+	/**
+	 * Change php file content itself - add new content after unique `$replacement`.
+	 * Do not put any new line chars into `$newContent`.
+	 * 
+	 * @param string $replacement
+	 * @param string $newContent
+	 * 
+	 * @return boolean
+	 */
+	private static function _changeItself ($replacement, $newContent) {
+		$oldSelf = self::$ScriptFilename;
+		$newSelf = $oldSelf . '.' . uniqid();
+		$oh = @fopen($oldSelf, 'r');
+		$nh = @fopen($newSelf, 'w+');
+		$r1 = FALSE;
+		if ($oh && $nh) {
+			$r1 = TRUE;
+			while (($ol = fgets($oh)) !== FALSE) {
+				$pos = mb_strpos($ol, $replacement);
+				if ($pos !== FALSE) {
+					$ol = mb_substr($ol, 0, $pos)
+						. $replacement
+						. $newContent
+						. mb_substr($ol, $pos + mb_strlen($replacement));
+				}
+				fwrite($nh, $ol);
+			}
+		}
+		@fclose($oh);
+		@fclose($nh);
+		if ($r1) {
+			$newOldSelf = $oldSelf . '.' . uniqid();
+			$r2 = rename($oldSelf, $newOldSelf);
+			$r3 = rename($newSelf, $oldSelf);
+			$r4 = unlink($newOldSelf);
+		}
+		return $r1 && $r2 && $r3 && $r4;
+	}
+	// Packager_Php_Scripts_Completer::end(_changeItself)
+	
+	// Packager_Php_Scripts_Completer::start(file_get_contents)
+	/**
+	 * Return file content string
+	 * 
+	 * @param string   $filename
+	 * @param boolean  $use_include_path
+	 * @param resource $context
+	 * @param int      $offset
+	 * @param int      $maxlen
+	 * 
+	 * @return string|bool
+	 */
+	public static function FileGetContents ($filename, $use_include_path = FALSE, $context = NULL, $offset = 0/*, $maxlen = NULL*/) {
+		if (self::_isProtocolPath($filename)) return call_user_func_array('file_get_contents', func_get_args());
+		$path = self::NormalizePath($filename);
+		$content = self::_getFileContent($path, TRUE);
+		if ($content === FALSE) {
+			self::Warning('', $filename, 'file_get_contents');
+			return FALSE;
+		} else {
+			return $content;
+		}
+	}
+	// Packager_Php_Scripts_Completer::end(file_get_contents)
+	
+	// Packager_Php_Scripts_Completer::start(parse_ini_file)
+	/**
+	 * Parse a configuration file
+	 * 
+	 * @param string  $filename 
+	 * @param boolean $process_sections 
+	 * @param int     $scanner_mode 
+	 * 
+	 * @return array|bool
+	 */
+	public static function ParseIniFile ($filename, $process_sections = FALSE, $scanner_mode = INI_SCANNER_NORMAL) {
+		$path = self::NormalizePath($filename);
+		$content = self::_getFileContent($path, TRUE);
+		if ($content === FALSE) {
+			self::Warning('', $filename, 'parse_ini_file');
+			return FALSE;
+		} else {
+			return parse_ini_string($content, $process_sections, $scanner_mode);
+		}
+	}
+	// Packager_Php_Scripts_Completer::end(parse_ini_file)
+	
+	// REMOVED: md5_file
+	
+	// REMOVED: simplexml_load_file
+	
+	// Packager_Php_Scripts_Completer::start(file_exists)
+	/**
+	 * Checks whether a file or directory exists)
+	 * 
+	 * @param string $filename 
+	 * 
+	 * @return bool
+	 */
+	public static function FileExists ($filename) {
+		$path = self::NormalizePath($filename);
+		return isset(self::$Info[$path]);
+	}
+	// Packager_Php_Scripts_Completer::end(file_exists)
+	
+	// Packager_Php_Scripts_Completer::start(filemtime)
+	/**
+	 * Gets file modification time
+	 * 
+	 * @param string $filename 
+	 * 
+	 * @return boolean|int
+	 */
+	public static function Filemtime ($filename) {
+		$path = self::NormalizePath($filename);
+		if (!isset(self::$Info[$path])) {
+			self::Warning("filemtime(): stat failed for $filename");
+			return FALSE;
+		} else {
+			return self::$Info[$path]['mtime'];
+		}
+	}
+	// Packager_Php_Scripts_Completer::end(filemtime)
+	
+	// REMOVED: filesize
+	
+	// REMOVED: require
+	
+	// Packager_Php_Scripts_Completer::start(include)
+	/**
+	 * include()
+	 * 
+	 * @param string $path 
+	 * 
+	 * @return mixed
+	 */
+	public static function IncludeStandard ($path, $context = NULL) {
+		return self::_includeFile($path, $context, FALSE, 'include');
+	}
+	// Packager_Php_Scripts_Completer::end(include)
+	
+	// REMOVED: require_once
+	
+	// REMOVED: include_once
+	
+}
+// Packager_Php_Scripts_Completer::start(Init)
+Packager_Php_Wrapper::Init();
+// Packager_Php_Scripts_Completer::end(Init)
+
+// REMOVED: DirectoryIterator
 \Packager_Php_Wrapper::$Contents[0]=<<<'PACKAGER_TEXT'
 [environments]
 development = 127.0.0.1
 
 [db]
 driver		= sqlite
-dbname		= /../.database/cdcol-sqlite.db
+database	= /../.databases/sqlite-cdcol.db
 
 ;driver		= mysql
 ;host		= 127.0.0.1
 ;username	= root
 ;password	= 1234
-;dbname		= cdcol
+;database		= cdcol
 
 ;driver		= mssql
 ;host		= 127.0.0.1
 ;username	= sa
 ;password	= 1234
-;dbname		= cdcol
+;database		= cdcol
+
+;driver		= pgsql
+;host		= 127.0.0.1
+;username	= postgres
+;database		= cdcol
 PACKAGER_TEXT;
 \Packager_Php_Wrapper::$Contents[1]=function(){ ?>
-<?php /** @var $this \MvcCore\View */?>
-<?php /** @var $this->SignOutForm \MvcCore\Ext\Auth\SignOutForm */?><?php if($this->SignOutForm):?>
-<?php echo $this->SignOutForm->RenderBegin();?><?php if($this->User):?>
-<span><?php echo $this->User->FullName;?></span>
-<?php endif;?><?php foreach($this->SignOutForm->Fields as&$field):?>
-<?php echo $field->Render();?>
-<?php endforeach;?><?php echo $this->SignOutForm->RenderEnd();?>
-<?php endif;?>
+<?php /** @var $this \MvcCore\View */ ?>
+<?php /** @var $this->SignOutForm \MvcCore\Ext\Auth\SignOutForm */ ?><?php if ($this->SignOutForm): ?>
+<?php echo $this->SignOutForm->RenderBegin(); ?><?php if ($this->User): ?>
+<span><?php echo $this->User->FullName; ?></span>
+<?php endif; ?><?php foreach ($this->SignOutForm->Fields as & $field): ?>
+<?php echo $field->Render(); ?>
+<?php endforeach; ?><?php echo $this->SignOutForm->RenderEnd(); ?>
+<?php endif; ?>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[2]=function(){ ?>
-<?php /** @var $this \MvcCore\View */?><!DOCTYPE HTML><html
+<?php /** @var $this \MvcCore\View */ ?><!DOCTYPE HTML><html
 lang="en-US"><head><meta
-charset="UTF-8" /><title><?php echo $this->Title;?></title><meta
+charset="UTF-8" /><title><?php echo $this->Title; ?></title><meta
 name="author" content="Tom FlÃ­dr <tomflidr(at)gmail(dot)com>" /><link
-rel="shortcut icon" href="<?php echo $this->AssetUrl('/static/img/favicon.ico');?>" />
-<?php ?><meta
+rel="shortcut icon" href="<?php echo $this->AssetUrl('/static/img/favicon.ico'); ?>" />
+<?php /* force render mode in newest IE, strictly do not use any back compatibility modes in MSIE browsers for this page */ ?><meta
 http-equiv="X-UA-Compatible" content="IE=edge" /><meta
 name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><meta
 name="apple-mobile-web-app-capable" content="yes" />
-<?php echo $this->Css('fixedHead')->Render();?>
-<?php echo $this->Js('fixedHead')->Render();?></head><body>
+<?php echo $this->Css('fixedHead')->Render(); ?>
+<?php echo $this->Js('fixedHead')->Render(); ?></head><body>
 <!--[if lt IE 9]><div
 class="filters"><![endif]-->
 <!--[if (gt IE 8)|!(IE)]><!--><div
 class="no-filters">
 <!--<![endif]--><div
 class="master-container">
-<?php echo $this->RenderLayout('./layout/sign-out-form');?><div
+<?php echo $this->RenderLayout('./layout/sign-out-form'); ?><div
 class="content">
-<?php echo $this->GetContent();?></div></div></div></body>
-<?php echo $this->Js('varFoot')->Render();?></html>
+<?php echo $this->GetContent(); ?></div></div></div></body>
+<?php echo $this->Js('varFoot')->Render(); ?></html>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[3]=function(){ ?>
-<?php /** @var $this \MvcCore\View */?><a
+<?php /** @var $this \MvcCore\View */ ?><a
 class="head-btn button button-green" href="<?php
-echo $this->Url(':Index');?>"><span><b>Back to list</b></span></a><h1>New album</h1><?php echo $this->DetailForm->Render();?>
+echo $this->Url(':Index');
+?>"><span><b>Back to list</b></span></a><h1>New album</h1><?php echo $this->DetailForm->Render(); ?>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[4]=function(){ ?>
 <a
 class="head-btn button button-green" href="<?php
-echo $this->Url(':Index');?>"><span><b>Back to list</b></span></a><h1>Edit album</h1><?php echo $this->DetailForm->Render();?>
+echo $this->Url(':Index');
+?>"><span><b>Back to list</b></span></a><h1>Edit album</h1><?php echo $this->DetailForm->Render(); ?>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[5]=function(){ ?>
-<?php /** @var $this \MvcCore\View */?>
-<?php /** @var $this->Albums \App\Models\Album[] */?><a
+<?php /** @var $this \MvcCore\View */ ?>
+<?php /** @var $this->Albums \App\Models\Album[] */ ?><a
 class="head-btn button button-green" href="<?php
-echo $this->Url(':Create');?>"><span><b>New album</b></span></a><h1>CD Collection</h1><?php if(!$this->Albums):?><p>No albums in database. To create, click to 'New Album' button.</p>
-<?php else:?><table
+echo $this->Url(':Create');
+?>"><span><b>New album</b></span></a><h1>CD Collection</h1><?php if (!$this->Albums): ?><p>No albums in database. To create, click to 'New Album' button.</p>
+<?php else: ?><table
 class="cd-collection-items"><thead><tr><th
 class="right">Id</th><th>Title</th><th>Interpret</th><th
 class="right">Year</th><th></th></tr></thead><tbody>
-<?php foreach($this->Albums as$id=>&$album):?><tr><td
-class="right"><?php echo $album->Id;?></td><td><a
+<?php foreach ($this->Albums as $id => $album): ?><tr><td
+class="right"><?php echo $album->Id; ?></td><td><a
 href="<?php
-echo $this->Url(':Edit',array("id"=>$album->Id,));?>">
-<?php echo $album->Title;?>
-</a></td><td><?php echo $album->Interpret;?></td><td
-class="right"><?php echo $album->Year;?></td><td
+echo $this->Url(':Edit', array(
+"id"	=> $album->Id,
+));
+?>">
+<?php echo $album->Title; ?>
+</a></td><td><?php echo $album->Interpret; ?></td><td
+class="right"><?php echo $album->Year; ?></td><td
 class="center"><form
 class="delete" action="<?php
-echo $this->Url(':Delete',array('absolute'=>TRUE));?>" method="post">
+echo $this->Url(':Delete', array('absolute' => TRUE));
+?>" method="post">
 <input
 type="hidden" name="<?php
-echo $this->CsrfName;?>" value="<?php
-echo $this->CsrfValue;?>" />
+echo $this->CsrfName;
+?>" value="<?php
+echo $this->CsrfValue;
+?>" />
 <input
-type="hidden" name="id" value="<?php echo $album->Id;?>" />
+type="hidden" name="id" value="<?php echo $album->Id; ?>" />
 <input
 type="submit" class="text-link" value="Delete" /></form></td></tr>
-<?php endforeach;?></tbody></table>
-<?php endif;?>
+<?php endforeach; ?></tbody></table>
+<?php endif; ?>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[6]=function(){ ?>
-<?php
-/** @var $this \MvcCore\View *//** @var $this->SingInForm \MvcCore\Ext\Auth\SignInForm */?><h1><?php echo $this->Title;?></h1><p>Use login: "admin" and password: "demo".</p>
-<?php echo $this->SignInForm->Render();?>
+<?php /** @var $this \MvcCore\View */ ?><h1>Oooops!</h1><p><?php echo $this->Title; ?></p><p><?php echo $this->Message; ?></p>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[7]=function(){ ?>
-<?php /** @var $this \MvcCore\View */?><h1>Oooops!</h1><p><?php echo $this->Title;?></p><p><?php echo $this->Message;?></p>
+<?php
+/** @var $this \MvcCore\View */
+/** @var $this->SingInForm \MvcCore\Ext\Auth\SignInForm */
+?><h1><?php echo $this->Title; ?></h1><p>Use login: "admin" and password: "demo".</p>
+<?php echo $this->SignInForm->Render(); ?>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[8]=<<<'PACKAGER_BIN'
 `  Ÿ_        ¼   LP/  €J  P        “       M¢~§                   M y r i a d   W e b   P r o    B o l d    V e r s i o n   0 0 1 . 0 1 4   & M y r i a d   W e b   P r o   B o l d     BSGP                 €8 ;ú ;ş 2ÍéŠÈxZWÉh[qJx"cºr,g,E÷&÷C‚ÜÄ¾Šöôü”¯@)Ø¨ÀY‹º‹PjlP¬6k]Mµ17 ş¸2k=ùães<\Ü‹Q‰¡ÑVğÍ†–“3¨£€üqbÍØñUòLõ
@@ -3078,6 +3813,14 @@ RuZİX‰#UÒ¨eMFD'…"®àèoÚrm{Ã¦“Ù‰›Nhà4°L¦ºCKşš<5Z3€òV9-)udí´×÷‰òäÆŞ¶µi
 á+ÍfÛr¢ŞÿºeÛİè‚%bÔØ¥8Eœ€-\Âš¿øMûªjÚèj¯õlÛ}gÇ2s9{øñ_Ûë±Y‘¹cµ¦o§ƒ…·U[A&f¼G‚ÃµÊ?œ¯UDË>ojJoÏo×Æuïßó	qè%”—¸ïVş"‰"œÿ$(¾5ş»´ªâÊé!9+~dù”Q'å@ÖC(•|Wp)(•Pz³çã|İ›&ª”8İ~êz£KÎ3UE‚kÏU{\ÚcOoCä€ÆĞ^T“I×b=àÉh#hWílOÛ•NÅ'òsØšn×©Á8ÜŒûüT)Lè*@/xë«'î¹NöIÇ0ò¦Šß ]â¾.¯;’ûl§£Fçª©Áp¦7Zílíìƒté;ö¾‡tcŞÈí±¦Ùò·rn|éõ¸ù>Î]/÷Ûí‹÷ÁŒ»¼R¿Y&ëQİ7ô6f_éÔw{ÛvY4hòÃ¿M»şÊq2¹B×®ki'›‰®dgN|+zv'òkÖóo¦|~äù]ˆbÏìfÓmÚŒüJø;ÙnÇ.´½™PöJæIäüü'oÙÿá”¯Ş²>%!%%‰™óaAI†Î>pí[©}nì×ûHI!vFâøó­kÁÏ¿·¶g©¦\Käí=¾åÿ¯rŞªß“]®{ kK;Ù±"Ù™Û›]Çq²?»´™Áì:Áì:‹½Ùu7»Ù¥²7¹*å›C“Kh%¹äÎz’K4Ğââë¾‰6GY;0Ã²»[ãädûÉÎÜŞ<“ı	x¤Í&àq|&àq\ìMÀc¸é¹ŞvH«KÓ{{³µòtğU(´’­2OÈVK³Ï¾†~2šî¼M+‘Ñfü¾¶újâ=å²×M¿ğ>ÏS¯÷XyÃÑD©Wª7n×İ·Á^O×ÿÃÜ'å*  
 PACKAGER_GZIP;
 \Packager_Php_Wrapper::$Contents[23]=<<<'PACKAGER_GZIP'
+‹      ÍY[o£F~GÚÿ@UI* `Çq‚µ»YUíÃ¾´}hUõa€ÁFã8YËÿ½g˜xÀY‡TU·kfæÜæœï\`¯~0¯J†X^…ey“œ•<™?\}0~âK;F!ŞÊ§,I_üó//4AÑox¹N=_”4ô×4½8wœ+ø#ÅU¢®²Štƒƒ‚’ÖÂ¦‚İ†%'u0aç—ãÉúñ,Áqò|~iÆ„fˆ]œã,ÀQ„#›8g/>¿´Œ·ëÚ8V´ˆå‚Så2ºÆã]>-ÏÚQÜk‚3DğN–+æçü$[%{I±ÜÙäwœ%ŸHŠøà":aï†‘e£ä@ò˜(9¾‡IË!œpŞoFÉ[2:ş3d¼*Ş=h8	ŒÆU»ã 4múÍŠe©èe›!ºLrß]ôë#¬Rëœ>a†¬å%`˜&ñ"Mrl¯„-3Ã™4&ùŠ}ïºx^(|\R²Î#ÿìîînç„)Ft[ıÖ³ÕÎÉPÉ0µC`D n7IÄVşÌu_8…g­1gğdò§]’kˆ~f6˜ñ¸UT1
+&ˆ‚¡¦pÅEQ’/}w‡¬.ïPÛIJ¨6uç®»¨x"
+®%9x<ÇRD‘1’ùXX’4‰Ìš)\Ód$Éáª;ä¯È¦òc®KøE!Kp×,IÖİLİ]!b+­ıüqâ}ê7Lœƒ%OI™0Õ|ó‡ÏîdÚÏ'Îw‘feÁßô÷ÜŒ¬în¾†d¦‡û*Ëhøg[ÇäÂëñxwá#‚Ò€ jPÌ`×]ğ´yL˜-M¦(JÖ¥?f;#_µÛ¥n—è6yªh4¤Ïv¹BÙøI^bfrçñÿ'¸6¿¤I—ºp­ê?g>»¬-=‰³<‘‘œÈW»äŞS˜ b $ ‘¬LfºÇ±& Š2×tMoÖ~³—m"g…Qd,ßÆ)AÌ§¼¤5çÆÊ«K%7ÒpMn„©-›¢Ïîq<Ï (‚—¦8äEÃ†ŒËJYç<×ı^{n²•eèm«¼Gi²ÌıÇ¬)n Ì˜õ(Nu¯^±âX^ûA/-Ä¼õ‹çª<±£h°•ZÃÏæaÄK‘,Lä®h»YÁ£?äpCQ±s0¥„nf×xıÑ:4—¬³CGJëÈW¸¤4Ràt%e‘¢?HIø¨›Õ¹†æQ’W=´¢]DÌb-±ÁÊpî”8¶jíXßÍ´´Å}È.{Ó¾Tï}«¬Š2¨q[:ªR.LÔ6Í­âÍ*;yœŞüÜ7Œ6ç­¸œŒ±“ü¾¯Ië›«yZÍ	-¢AÓ9ùâ0z5³©oÏƒ$¢Wƒ4²s·{®k~—d¡åL±‚€õrŞšx{ë]£*HU´º¾!UÒ¨%MzDÆ†»B!WìèÚtmGİ¦£9ğ›è¸ã4ƒ°L¦zKKşš<5Z3€òV9-*ueí´×Ï‰2rSo?Ú4s©ÍH¡¬êÛtfG­\5DšZ¨½b÷N¢(¨ó¼°²)È¶€Dk´Ş&ZbÍa’-¥ÇK§Èáõ¥¶Æi§ëşây·nvDqpUu©•_Ÿ—&'NRpMi6W’õİ¶-ÙîNçqÿF.Å)âàêÑ²KHÓšÅ›ºißT­¿m]­µŞm«ïÜXf%Gÿµ½™P;Rkhvª,Hø©9#È²ŒÏ?8» üUüâr«ZÔ¨Üés¢Ö Ìí¼£´p4­çúÏVC/˜¼T@/Ûø«$Špş?±â[ı«Ê¯³âG–F¹5P.d­ƒ2Èo_©rR›½¤çÛŞ4Q©Dtû¡ëM®9ÎTi\{¯²±G¥=õô2Dhµj6ëJ¬<mCß¦íÓy»Š©ö‰ü–¦»µ†jĞwÓ>=UF
+º
+Ğk¼tÇíÍ+÷ú\Gûª0L¼¹¢7H×¸ïæ“ëÛå1ÙÓù¤ÃÑ‰@µ5èîÉüN+¢í‚½œc&]»Ó¼·€nÊ‡´#Ò4WşVÌM¯½5oÃÜõôú¸Ü>ŸŒ¸ë%ñÛŞ‘e²^Õ3áÀÜbö•Nı$·…Åğ%?*ğ®hÚõŒ³Ùºu]K»Ùlt);{â;Ğ»+‘_ªŞÿ2åûë ï¯B|ğzg5»îèĞFäWÂß·§qÁí-³_P²L"ÿóŸ¿òqüùêêKRR’˜9+J2tñÀ¹ï%÷¥qœï3%…¸ı‰ã?ï]~şº·=KåZ"oŸğ=ÿ÷ËVxKv¹îM€n-ífÛÅ
+egïhv£äxvt™ÁìGÇ`v£âhv¡æ0»T@ö&WÅ|wjr	îQ’KŞ¬'¹Ä -_÷ÍHŒ9ÊÙ‰	†İİ'7ÛQP(;{Gp%Çp¤Ë&à8:pGp5=íí ´º4í ·7[+M'·BÁ=J¶J7¼"[-Í=ûúÙd~ğ6­xF›ñÇÆê›™÷šÈ^5ıÄÇ4Ï½ŞwbåGã¥^ª^¿İvß{E¼Î]ÿ)°WQË'  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[24]=<<<'PACKAGER_GZIP'
 ‹      ­[ësÛ¶–ÿŞ™ş2¦k“LËm·÷–«ë8I“4¯iÒ6­¬ÛI¢M‰^’òceıï{ÎÀ—h7İ¹_D ƒÎĞÑ£ÑQY‰*ÎË£,Ê£0eé,Ó•s^}ùÅ•(F§XéÇëUX¥ùÊÊì)„eo°Kà'°D‘¬—rU•¶—Æ+«"]%Ì÷«ÛK™Ç£`6™Û…¬Ö|è”¾óãÇ“ÉUR-¦Áìxîn¶¶‡£åª™ÑäêfÂÎ[±”å¥åÜgL×=_gÙ
 ê¡JuöôÁ©X¯"§+±=CHæPGC‹~õëU9—E^åØ×	ÒUtwgİÓÒ`"Z˜D€‰9qÄåevkU‹´¥+ {"ák\Ác'ÌW¡¨,é„"ËZÚö¶1„i-¦–bÖ‚ÙÕ¢È¯G+y=úµÏŠ"/,vÑ£ÃÑõBT# ¨*naƒFU>
 ä(È)¬]åÕ‰A&xÜ^éÏæN™¥¡ä±ß'•Û<ñ‘šéö÷­°yó»¶µÚôĞì[, œÓœğªJó£¬h‡~I#—µ^‡——VÓØzgüåj!‹´’ĞTvSÉT©'ãH\¦ŒÓÔÅ:¬òÂe­Æ‘ÿ\†¿ªL¼¨*¨È¸áF—™ãLIsM—2‹á~¿Àè2õd[³vœ¶ï‰\ˆ«4_ş†6öeü6¯ãf¹şæhUó§9¼,`Wİ¯i ÔG¹¼ÌD%}F¾™l´¶ j:6Õ}Bƒ	õHı	üfôÓoÒRÂÏœPœ@ŒGğ–åÀáĞAï/ËƒsV^ûû{ ğ«× ¥ûû‡Ç…³.eq’ p¬¼y¼ï¼}ö‘Ùûû;ŸGP'€{+7ÈÄê"gQÈªššKQ-p7¦{wïxk‹­Ë*_¦ÿ+?Ü®*qÓ¬$PK‰@ww°ò
@@ -3100,62 +3843,12311 @@ J|%!V%Ò“ñ½‰šäLıé"Í" Ä¨–,ÂUÂ—FPµåhmæ›q…W -¶[ş~—?£ÛïM{áí¡…äëëÉ„#çQb
 ™şÉ‘>üïÜsûFàêÃX:õÕ7÷­ÕvÀ7úÏ(sÀ%`[×Iî;}xï˜¯@tşÆÒçûNçÖŸwĞ"uô:OµØ­:óO+‘Å{@ *A%ó~Ï]²ŒŸ¯d÷r‰whÉã4“ôäa©Yô]ÎŞ„šoòÕØµóò¤0]ŠìW‘­¥…Ã×øçÁXoM7ş·ZM¦«½˜Y¿fnïùõYØAsíˆ·Egó¹Cùz­ê–æ6ºÆı¬5éÎ6_éç}aşmCÿ±	ãÏûà£ípÍ¬—+·ÙI>\•'¤òô³Fm}`»< ÓWÊâóHªÿGÔü!Èæx‹/¸M«©j[tu0Å;“E—˜üò¶¬är_úçå!ÑV‚†8àêÌ×=À\ï:İÄŸmr‚+RE!NÂØóaú‘HW—ëJñ6á_3©jâ;•şÁäøëo¾ıïïşñÏïOœ>}öü€çë
 :ø İM­¨ñoXéc3’Ñ×éxlonüºº¥¶§Æû4µA½uóÃ?|kïOn&Ïíq§éFUzÛ/4 j €ÀöşFkâå::  
 PACKAGER_GZIP;
-\Packager_Php_Wrapper::$Contents[24]=<<<'PACKAGER_GZIP'
+\Packager_Php_Wrapper::$Contents[25]=<<<'PACKAGER_GZIP'
 ‹      A
 ƒ0E÷…ŞÁ®’ˆ${Å•mWí!ÄLèˆL$3ÁñîU·ÿ}ŞseáXzÁÁì)’Ø‘‹Ò]/İÔ3Û;$ĞêDªZ_òõ;ú<AÕEbIy˜êiŒ¤Í*d;÷	H´i0hùÍƒ~!‹¹µ*“?µ^‚¥8æı·m¦Y|\l8jíÁÎîÿ}Ûc©   
 PACKAGER_GZIP;
-\Packager_Php_Wrapper::$Contents[25]=<<<'PACKAGER_GZIP'
+\Packager_Php_Wrapper::$Contents[26]=<<<'PACKAGER_GZIP'
+‹      A
+ƒ0E÷…ŞÁ®’ˆ${Å•mWí!ÄLèˆL$3ÁñîU·ÿ}ŞseáXzÁÁì)’Ø‘‹Ò]/İÔ3Û;$ĞêDªZ_òõ;ú<AÕEbIy˜êiŒ¤Í*d;÷	H´i0hùÍƒ~!‹¹µ*“?µ^‚¥8æı·m¦Y|\l8jíÁÎîÿ}Ûc©   
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[27]=<<<'PACKAGER_GZIP'
 ‹      uQËNÃ0¼Wê?¤½Ä.ÅkƒAPÊ‰Ç…â’uëÊ±+{İ‡ÿ7TH ÕÛÚÙ™‹IV¬P×Å:: X‡lRsS… îAi,'$ŸvsgúX£ó3mÚYÆ»må3å|dãêØ‚E±\ k¸;¼VËçªM2Ô”ó)eÚµ¼˜ÙÓ…»ÄU©¯L©Ïä%ï¨üƒ½é÷R+FwQ“7RÚ6°Q,oÀ BÎ¯Ï,‘¬ÆV£ü5
 ¼	ŸŸ»Är;Ûä4Gµ³Jû–o=d³=ÜŒ9ï
 bãûÖ”EòÿÆK½ÍTe”_ıâåp0ò}ğÎ¸‡RÂ‹=‚mfO®‰¦'òÆ•bSùä!Oñ°§ıÉ<¦TH¶É¹…]FåÔGOW4MÖÏMà7›#7ì	  
 PACKAGER_GZIP;
-\Packager_Php_Wrapper::$Contents[26]=<<<'PACKAGER_TEXT'
+\Packager_Php_Wrapper::$Contents[28]=<<<'PACKAGER_GZIP'
+‹      ­[ësÛ¶–ÿŞ™ş2¦k“LËm·÷–«ë8I“4¯iÒ6­¬ÛI¢M‰^’òceıï{ÎÀ—h7İ¹_D ƒÎĞÑ£ÑQY‰*ÎË£,Ê£0eé,Ó•s^}ùÅ•(F§XéÇëUX¥ùÊÊì)„eo°Kà'°D‘¬—rU•¶—Æ+«"]%Ì÷«ÛK™Ç£`6™Û…¬Ö|è”¾óãÇ“ÉUR-¦Áìxîn¶¶‡£åª™ÑäêfÂÎ[±”å¥åÜgL×=_gÙ
+ê¡JuöôÁ©X¯"§+±=CHæPGC‹~õëU9—E^åØ×	ÒUtwgİÓÒ`"Z˜D€‰9qÄåevkU‹´¥+ {"ák\Ác'ÌW¡¨,é„"ËZÚö¶1„i-¦–bÖ‚ÙÕ¢È¯G+y=úµÏŠ"/,vÑ£ÃÑõBT# ¨*naƒFU>
+ä(È)¬]åÕ‰A&xÜ^éÏæN™¥¡ä±ß'•Û<ñ‘šéö÷­°yó»¶µÚôĞì[, œÓœğªJó£¬h‡~I#—µ^‡——VÓØzgüåj!‹´’ĞTvSÉT©'ãH\¦ŒÓÔÅ:¬òÂe­Æ‘ÿ\†¿ªL¼¨*¨È¸áF—™ãLIsM—2‹á~¿Àè2õd[³vœ¶ï‰\ˆ«4_ş†6öeü6¯ãf¹şæhUó§9¼,`Wİ¯i ÔG¹¼ÌD%}F¾™l´¶ j:6Õ}Bƒ	õHı	üfôÓoÒRÂÏœPœ@ŒGğ–åÀáĞAï/ËƒsV^ûû{ ğ«× ¥ûû‡Ç…³.eq’ p¬¼y¼ï¼}ö‘Ùûû;ŸGP'€{+7ÈÄê"gQÈªššKQ-p7¦{wïxk‹­Ë*_¦ÿ+?Ü®*qÓ¬$PK‰@ww°ò
+kBâQ`G~0çĞ™Eso%~dXXlw‡·Z<³ FÜç63[­—,ZŠt¸“ÎTOIÅµ¾äQ­„HÕò×ac_‘'·È±‰Ì
+aiNy™¥ Îlrég ôñH+j/~œxñØ?¶7¡Íâ9jû=‹°‘¶½·‰ïƒµbÒ
+‰˜qtÀÆÁ˜Œ¢\–«ƒj$oÒ²Úcd2õgĞÀÙ^PHq±İJ_º[½IØBK%wwÌo­*y8`˜ô,Àu‘1‘:å"+à‹ĞY¯T9²È Ÿ¬ˆÔ§ÖèmB³ì^sJGéƒ*Ì/-°dÀÌø@½€jêâñ…·@Pc?œ-æ<F80>	 Ò‡J‹Ä‘SåÈ¼ÂZ6ÛúTn«©%™ZôfJxF´sŠ6&[qPÈqßÄ†Îy®hº±±µ&™Á[ŒPä}(Úö«fÆhDSÀ»co•¡ÁY”^æ±oè¥c±¥ú=¬A
+ ¢øİ:ç"¼T‚œ$İlù"r>KæÓ¥¯K–íZKh	[¤«vñ-·¶íeª›÷É‹7VÈ¾D9ÛŸ`‘4*àFû!<.ğ¡©ÅJÄ_96™dÍÚdê/[4€d…8pÜÒF!RtÒÙ`ßMxËÆ¢”DÀYYã®]©¯ˆOà›kX4Ó›Ò²#C€s<m¤i`;"XŞZâåFøİUËÉÒl:®PcF"Cow(o@‘W˜j§ç2/ËœtˆĞÅ‰rd¦á£´:€n2”e)Š[êC:¨öëF×iµ€ª8]ÈÛë¼ˆÀ¯} GaoF(\Ü²o<ÑóíÛl§ğ¥ÅĞ$ƒØ¤ÈA)¨ŠÆÑ…Šë¡±,üÎp—õ‡{³Ã.µ8KtGq†ØW, äuÎÁ* ÿ‚Şi¸’clyz	ˆWÏñ“@ÄÚjÕò„vzb#e¯Û-¤rßŞÃÉ õ•Ñ!Y:QêY’fµ÷&{hB’:ö'øÔÒ)×‚5ŸèF¡óQ¿ñvK”´’® a“D,,‰§‰•7Iúslo‘öuv5F#AÊ" ÌW”%ğuÛé¯¥¨s"@=ğı¤½€)l¿…Ä$sšÅÎO½ÅÊtıÔÓ×Êluu©¬Õlío8	¸=^‹É»G¤°{Zğ(ÈÃí©{Oà×'ĞË€ÌHHíÄ{èw ²$#ÅH•ç*~|Õè« ÷gr`‚6‡¿zp&²,÷™cÍx=4.Ê1º ã²ç‡]gè}‘^¡öXÊj‘G¤oÜÚ7BmùµŒFq‘/µX±’7õ»  ]Q“Fã.§ƒˆ¼¯]&-2!ù¹ÚÇ­Å#Dñ² Ô ƒü½v58Å$T‚…ãÄO™­-ô²!$Ş±J	Z%¤®‘=#"d2AˆµmKİ‡äÙ¶kæ!+	?KÄŒh:?Ëª1Fx.4Qg5…€LÛ5Òqi‚Í1¼XKÜôArµúôÁM¥¢
+.U-ñ¸œœé/P»µUü†|S+	<'tÅÎÑï^´XÏEë5Ûn¯y×gÎÂRLl˜²R%dŒÕão0[/ô»##ÖÒ®ù“-Ód"ŒÜ2À^ õ¨ÜâÏïµÀF!Ó"/ †Wúhwu¼ı­&{tŒ`ğCû˜Ğfm~–ŠŸ,V|tw§Œ-X,| ­/`¡Rúâs 5Z¸Aóïa¨mğâAÅot»VşdP@¹\€<´…!£À÷B)vö6)èÛî*ğ¼!¤¶Àş¤¶!Š Eô»–P±tÖÎšD½3‘6HnDÃGh=î™Ü„32ÆP²:˜»:ËÔqÑdã ²óÛš«›¹§³}g‚ë¿K/•«(nSt(Ğ-É›ôñş¾pŞQÒØšl¥^(UºıJâ»wîı	ª¡4²ĞB­&®>)
+q;‡.ïè½•z5A¹]Àìİô³/¶İdµ™f™Gë&QOGŞ\æEUN“,DF–Şö¾üâË/vÓùâ\Üô³ù'çíLxòÖ8±Š@ÒK£b€‹—ëÃ,Š &Å‚D÷
+ú3 W¬³ê…}Ì>ş,ÿg-KğÑƒ€ˆ¹ìÓ2{QU—ºqL©›T‡˜¬†vD$U)Â£›ÃëëëC `y¸.`cÃ<0ôdçe¾º<Ì^¼…€ ?Ô¯LuÂg¯ÚİtıK¢
+ju¯sÑÍŞw0ĞœËu¹€F³QØGS’¯>(lD£÷à('ëcì@îä#Ğ~=0B"«~à((*ÃÖÆç/ßòµLˆ~l=*„ÒÿÉaÇÌàYóÔp–ŞvJ"­"ı‰JÀCï”Èò<Šq1[Ş®BœÂrR«õZê`uc„x×ä4 >™³-/›>‚ƒZCƒqmÜŠ£(}t*´úB=¦NPhx¦÷À‡0o¡ÊDˆu•§Ñ£ÄhÊ˜Ù ^^C´PœŠ¢sI¬«\FKõe=‚^²Ÿ4ĞÚı–öiÜ!Ì—ÇªW!KuPîŞ1GİÍV ÎœX¥mõöbÕ–¯İöV)
+ü½½(iƒQÀH¾qn³PŠ –MjÎù#8bË?ôÃOAŸğÀ¯GU¹™g™Ä7‹•a‘^VLåƒßRò?õ:ŞPêa<¦s­CÆĞ@›V)›w,pŞkÓÌîÑKsµ†7–=fƒá2J16<ËËYTÀJÁº’@]b"¸ 	»&òà÷8¢ªD¸xvEkÈW°¦èU¼A¾‰--Û†…‡8²¨N¢sB÷zåJ•=Ãc®À¶]«?7m=èdõÄäŒˆ"šñu
+J|%!V%Ò“ñ½‰šäLıé"Í" Ä¨–,ÂUÂ—FPµåhmæ›q…W -¶[ş~—?£ÛïM{áí¡…äëëÉ„#çQbæ4BÅkNÒß?9ùò^ö®htÓbZwñ¤dğ:]Eùµ#¡"K8´3ßIôrıX~oİ.=GÚòç•«”Q¹4Ë](HÁÌş#ZDR˜|™_Éáp÷zÆÈMT
+Æ5¨ô#şÛÄ6oc«)RŞß[°äš8Å4ªµ^)‰•Aâ”~s#™ÉJÚM[ş±›h)C1%sEOz-lŸ¢TKiD_)AÕá•áS †V·DoéÊ`h&¦óµ)üŠzßîêÂ_Úè´.QÀ:¾õA¦6ÚßœŸÑKlHç˜. <Sx~†n°]ê·#ÎC]·üç¬¢Çîe˜ëC|¿]—§°¡>Õb(@UŞñ÷ß?nZ÷÷¿™L~hŞ§–êş¨UzÚËÅ­kuR-Wx £Š:8ÖŸÏêRâë|z˜£4Ê‡qGlÜÚoËíØf“´Q›ê!/… )W¡¼¨Úß×u ¾üÅ°qDGSSKø³¾îâ°‡Äj®Š&ª¤ĞæF<02)›ËtÿGySíŒ«Gò—³(7q`&jnÔ¬ú·öª•—Ñ²×ûûTüİÈÀ'T	ŸîŠş®½ÿ1¿YfípiU·Juş
+;cV´K‡µk.ºHõúû=„¾3Ë!ßKMæÑ5…úrÂ¹¸ÆÇ¸»ëµá"íikªq»½hu^TÓë…¨ØfuªUmùÅ[Ünv  ÿØäPbbc­ãÚèØ¶ÙõB[ÑÂEm¤X·ü«]Ì6[°¤Jup#U]ìñÁÓwoÀS—ÅCb#¤/âw‰ŸùRyßVÈ»1#"@â€#Î	Ğs%?©ÜboÒ°ÈË<®œOo^Ã´Ì6Ş>*”éĞ®CW0Ü÷‚ k$€ğîÆygÉ~kûÀùƒ`q"}XŒkÿiîíëûƒµŸ5*â¶º±to:—êO€ô;Ñµ‹.cäLxĞ!çÕ9íı±7%lÀ×î‹ß;ß9p'{•ßTbE{k¨RG½6)Ûìl·Ú“Y)GÍÅ•	İ²Ğ×)¢ÇÒ‹ğ:²×0gàå[oh¡X³ä@Ü·\»&nÔND7Â#:ªˆÔA
+æÉ*M²Şµˆ8wÓ+´±ıÅ¾ŠNştÀ]dSfdµzDq€Ú}¼gà÷6¼1nVh:úcDç)ø\/ó#Â£?òkT1ÜdûÌ®-‰ƒ1¸Í—-Ö9½FœwğŠ¨¨ğ=í|¼úğîíİ}õ“Õq§œP y	ïÛ+2´?›cğmVzu¢ZØòî¤úè"Íê(âÒøÖ¢«.]*0) ‹Î±1­"ÇÌgã°¦-Ğ·föQ-ÿÔ&®µ$ÿ^GĞ¤6'?€;;ØÑÍMPvt¶:á1_ğ/ñfììììf29<»9ÏnşCáûx~”ã›yåuŠ<^c¼	ön}Wµ¦
+¦ì`,êk0ÏÛ…3¡ÕlW@g®àNèmTõNeë	¬â¨Nœå ~ptüİà/c+ø¯~İÖ.Ñ‚%hÖ7áÍiùoTH¤Z
+¬ÈĞaêƒ Ï3)ÀÚêÏ¡Á|\ zjNp1umØPÔ»oÒä«÷²Á25à*Á¾Ì£æö^óÉXï	Ì.]BÜ~û²|e·n-¦:€UÛà‰š¹vàá¥Ëøñ…º~—(„yñSbŞ‡®ÁŸ±q¢¹‘3›n|Õb¾ÔóÎ èx#š†l ×Ê|œl“RÏ¿€±]6ÎìF%/”ˆı?‡ÑôozôoÙv‹zª“Wï‹S[E€ºûåã)+ü.EÙ˜C(«ÕöìçÚp*ØÊ1ûØkx‘¯‹’ZÜşpéjr4ØöA†ù*Rm°­§Â; ëürvVQ“äg+*®°S1ÆbAEˆåI:ÎÎØTQ%<Ì¡Â¦Ö]nÀÉ}ê…<­»yÂœ[Ç|I¿ÚwlëCtâ™X¾ïn,Dùîzõ^³r}ñ
+za·—~hÅÏÙm®bõ=ß_âUE<_6ÎF@´¨«EHÉÑ¿ggsîn¶gåüÑWGZAÕšéèìÌ9J8û³›:6û7B±:+æØ]U¬å],€)ïP2î§gÑØšºgÎYôÈBi&ŸÍgã³Ã9¶ØSoŞºüûÎ½ã6~U>:›Ùcì¢iÄ>öå•È,fÁv™¶qHYÓS*±MÙTs]_İÖ!,ír3ŞÛnÑ¸½í$´§#š4gG·®Œ«/‰7ˆËiÑeĞí6rùzµœ¡_Ãö ez•»„íµÍûõN²çÜ$Uw³¹3¤tîªpX Oóä¯ü¬–gî™t2xŠ NÂDA+ Æé®†¦ågÒ{òpĞ^gÚ†FëeÔT€ÃÿE	µ˜şü~)ÖWò"¿süƒvZ»)¤ïcÉî5où8ñ$š¼d5|	.Ä”H+k€‰‘w1ÒÎ—ŞÓ°ë²Ö„pı‘„›ãxşQ¦ÌñÔª±¦u5m‰¥Y`x×m·†3ĞÆ]Èajl	/0Åñæ=n<¿Öù•
+™şÉ‘>üïÜsûFàêÃX:õÕ7÷­ÕvÀ7úÏ(sÀ%`[×Iî;}xï˜¯@tşÆÒçûNçÖŸwĞ"uô:OµØ­:óO+‘Å{@ *A%ó~Ï]²ŒŸ¯d÷r‰whÉã4“ôäa©Yô]ÎŞ„šoòÕØµóò¤0]ŠìW‘­¥…Ã×øçÁXoM7ş·ZM¦«½˜Y¿fnïùõYØAsíˆ·Egó¹Cùz­ê–æ6ºÆı¬5éÎ6_éç}aşmCÿ±	ãÏûà£ípÍ¬—+·ÙI>\•'¤òô³Fm}`»< ÓWÊâóHªÿGÔü!Èæx‹/¸M«©j[tu0Å;“E—˜üò¶¬är_úçå!ÑV‚†8àêÌ×=À\ï:İÄŸmr‚+RE!NÂØóaú‘HW—ëJñ6á_3©jâ;•şÁäøëo¾ıïïşñÏïOœ>}öü€çë
+:ø İM­¨ñoXéc3’Ñ×éxlonüºº¥¶§Æû4µA½uóÃ?|kïOn&Ïíq§éFUzÛ/4 j €ÀöşFkâå::  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[29]=<<<'PACKAGER_GZIP'
+‹      uQËNÃ0¼Wê?¤½Ä.ÅkƒAPÊ‰Ç…â’uëÊ±+{İ‡ÿ7TH ÕÛÚÙ™‹IV¬P×Å:: X‡lRsS… îAi,'$ŸvsgúX£ó3mÚYÆ»må3å|dãêØ‚E±\ k¸;¼VËçªM2Ô”ó)eÚµ¼˜ÙÓ…»ÄU©¯L©Ïä%ï¨üƒ½é÷R+FwQ“7RÚ6°Q,oÀ BÎ¯Ï,‘¬ÆV£ü5
+¼	ŸŸ»Är;Ûä4Gµ³Jû–o=d³=ÜŒ9ï
+bãûÖ”EòÿÆK½ÍTe”_ıâåp0ò}ğÎ¸‡RÂ‹=‚mfO®‰¦'òÆ•bSùä!Oñ°§ıÉ<¦TH¶É¹…]FåÔGOW4MÖÏMà7›#7ì	  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[30]=<<<'PACKAGER_TEXT'
 <div id="mvccore-dumps"><div id="mvccore-dumps-items">%mvccoreDumps%</div><input id="mvccore-dumps-btn" type="button" value="Dumps(%mvccoreDumpsCount%)" /></div>
-<style>#mvccore-dumps{display:table;position:fixed;bottom:0;right:0;z-index:999999;margin:10px;overflow:auto;background:#e8e8e8;box-shadow:0 0 10px rgba(0,0,0,0.5);border-radius:5px;opacity:0;}#mvccore-dumps *{font-family:consolas,courier !important;}#mvccore-dumps-items .item{background:#fff;margin:5px 5px 0 5px;border-radius:3px;}#mvccore-dumps-items .title{background:#888;color:#fff;font-weight:bold;padding:5px;margin:0;}#mvccore-dumps-items .value{padding:10px;}#mvccore-dumps-items .value pre{margin:0;}#mvccore-dumps-items .value small.file{display:block;font-size:10px;color:#888;}#mvccore-dumps input{font-weight:bold;float:right;margin:5px;padding:2px 7px 2px 10px;}</style>
-<script>(function(){var a=/MSIE [5-8]/g.test(navigator.userAgent),b=document,c=window,d=b.getElementById("mvccore-dumps"),e=b.getElementById("mvccore-dumps-items"),f=b.getElementById("mvccore-dumps-btn"),g=a?"attachEvent":"addEventListener",h=d.style,k=e.style,m=d.offsetHeight,n=!0;function p(){if(n){var l=c.innerHeight-20;h.overflow=l>m?"hidden":"auto";h.height=Math.min(l,m)+"px"}}function q(){n?(k.display="none",h.height="auto"):k.display="block";n=!n}h.display="block";c[g]("resize",p);f[g]("click",q);p();%mvccoreDumpsClose%h.opacity=1})();</script>
+<style>#mvccore-dumps{display:table;position:fixed;bottom:0;right:0;z-index:999999;margin:10px;overflow:auto;background:#e8e8e8;box-shadow:0 0 10px rgba(0,0,0,0.5);border-radius:5px;opacity:0;}#mvccore-dumps *{font-family:consolas,courier !important;}#mvccore-dumps-items .item{background:#fff;margin:5px 5px 0 5px;border-radius:3px;white-space:pre-wrap;}#mvccore-dumps-items .title{background:#888;color:#fff;font-weight:bold;padding:5px;margin:0;}#mvccore-dumps-items .value{padding:0 3px 0 3px;overflow:auto;}#mvccore-dumps-items .value pre{margin:0;}#mvccore-dumps-items .value small.file{display:block;font-size:10px;color:#888;}#mvccore-dumps input{font-weight:bold;float:right;margin:5px;padding:2px 7px 2px 10px;}#mvccore-dumps a.editor{position:relative;top:1px;font-size:8px;white-space:nowrap;display:block;}#mvccore-dumps-items pre.xdebug-var-dump{padding:0px 7px 7px 7px;</style>
+<script>(function(){var a=/MSIE [5-8]/g.test(navigator.userAgent),i="getElementById",j="style",o="height",y="width",r="block",s="auto",t="display",x="px",v=20,b=document,c=window,d=b[i]("mvccore-dumps"),e=b[i]("mvccore-dumps-items"),f=b[i]("mvccore-dumps-btn"),g=a?"attachEvent":"addEventListener",h=d[j],k=e[j],m=d.offsetHeight,w=d.offsetWidth,n=!1,z=localStorage||{},_="mvccoreDumpsVisible";function p(){if(n){var l=c.innerHeight-v,u=c.innerWidth-v;h.overflow=l>m&&u<w?"hidden":s;h[o]=Math.min(l,m)+x;h[y]=Math.min(u,w)+x}}function q(a){var x=typeof(a),g=x=="boolean",i=x=="undefined";if(g)n=a;if(!g&&!i){n=!n;z[_]=n};n?k[t]=r:(k[t]="none",h[o]=s,h[y]=s);p()}n=z?z[_]==="true":n;h[t]=r;c[g]("resize",p);f[g]("click",q);p();%mvccoreDumpsClose%h.opacity=1})();</script>
 PACKAGER_TEXT;
+\Packager_Php_Wrapper::$Contents[31]='';
 }
-namespace MvcCore{class Tool{public static function GetDashedFromPascalCase($pascalCase=''){return strtolower(preg_replace("#([a-z])([A-Z])#","$1-$2",lcfirst($pascalCase)));}public static function GetPascalCaseFromDashed($dashed=''){$a=explode('/',$dashed);foreach($a as&$b)$b=ucfirst(str_replace('-','',ucwords($b,'-')));return implode('/',$a);}public static function GetUnderscoredFromPascalCase($pascalCase=''){return strtolower(preg_replace("#([a-z])([A-Z])#","$1_$2",lcfirst($pascalCase)));}public static function GetPascalCaseFromUnderscored($underscored=''){$a=explode('/',$underscored);foreach($a as&$b)$b=ucfirst(str_replace('_','',ucwords($b,'_')));return implode('/',$a);}public static function EncodeJson($data){$flags=JSON_HEX_TAG|JSON_HEX_APOS|JSON_HEX_QUOT|JSON_HEX_AMP|(defined('JSON_UNESCAPED_SLASHES')?JSON_UNESCAPED_SLASHES:0)|(defined('JSON_UNESCAPED_UNICODE')?JSON_UNESCAPED_UNICODE:0)|(defined('JSON_PRESERVE_ZERO_FRACTION')?JSON_PRESERVE_ZERO_FRACTION:0);$json=json_encode($data,$flags);if($errorCode=json_last_error()){throw new\Exception(json_last_error_msg(),$errorCode);}if(PHP_VERSION_ID<70100){$json=strtr($json,array("\xe2\x80\xa8"=>'\u2028',"\xe2\x80\xa9"=>'\u2029',));}return$json;}public static function DecodeJson(&$jsonStr){$result=(object)array('success'=>TRUE,'data'=>null,'errorData'=>array(),);$jsonData=@json_decode($jsonStr);$errorCode=json_last_error();if($errorCode==JSON_ERROR_NONE){$result->data=$jsonData;}else{$result->success=FALSE;$result->errorData=array(json_last_error_msg(),$errorCode);}return$result;}}}
-namespace MvcCore{class Route{/** @var string */public$Name='';/** @var string */public$Controller='';/** @var string */public$Action='';/** @var string */public$Pattern='';/** @var string */public$Reverse='';/** @var array */public$Params=array();public static function GetInstance($object){if(gettype($object)=='array'){return new static($object);}else{return new static((array)$object);}}public function __construct($nameOrConfig=NULL,$controller=NULL,$action=NULL,$pattern=NULL,$reverse=NULL,$params=array()){$args=func_get_args();if(count($args)==1&&gettype($args[0])=='array'){$data=(object)$args[0];$name=isset($data->name)?$data->name:'';$controller=isset($data->controller)?$data->controller:'';$action=isset($data->action)?$data->action:'';$pattern=isset($data->pattern)?$data->pattern:'';$reverse=isset($data->reverse)?$data->reverse:'';$params=isset($data->params)?$data->params:array();}else{list($name,$controller,$action,$pattern,$reverse,$params)=$args;}if(!$controller&&!$action&&strpos($name,':')!==FALSE){list($controller,$action)=explode(':',$name);}$this->Name=$name;$this->Controller=$controller;$this->Action=$action;$this->Pattern=$pattern;$this->Reverse=$reverse?$reverse:trim($pattern,'#^$');$this->Params=$params;}public function SetName($name){$this->Name=$name;return$this;}public function SetController($controller){$this->Controller=$controller;return$this;}public function SetAction($action){$this->Action=$action;return$this;}public function SetPattern($pattern){$this->Pattern=$pattern;return$this;}public function SetReverse($reverse){$this->Reverse=$reverse;return$this;}public function SetParams($params=array()){$this->Params=$params;return$this;}}}
-namespace MvcCore{class Response{const OK=200;const MOVED_PERMANENTLY=301;const SEE_OTHER=303;const NOT_FOUND=404;const INTERNAL_SERVER_ERROR=500;public static$CodeMessages=array(self::OK=>'OK',self::MOVED_PERMANENTLY=>'Moved Permanently',self::SEE_OTHER=>'See Other',self::NOT_FOUND=>'Not Found',self::INTERNAL_SERVER_ERROR=>'Internal Server Error',);/** @var int */public$Code=self::OK;/** @var array */public$Headers=array();/** @var string */public$Body='';public static function GetInstance($code=self::OK,$headers=array(),$body=''){$responseClass=\MvcCore::GetInstance()->GetResponseClass();return new$responseClass($code,$headers,$body);}public function __construct($code=self::OK,$headers=array(),$body=''){$this->Code=$code;$this->Headers=$headers;$this->Body=$body;}public function SetCode($code){$this->Code=$code;return$this;}public function SetHeader($name,$value){header($name.": ".$value);$this->Headers[$name]=$value;return$this;}public function SetBody(&$body){$this->Body=&$body;return$this;}public function PrependBody(&$body){$this->Body=$body.$this->Body;return$this;}public function AppendBody(&$body){$this->Body.=$body;return$this;}public function UpdateHeaders(){$rawHeaders=headers_list();$name='';$value='';foreach($rawHeaders as$rawHeader){$doubleDotPos=strpos($rawHeader,':');if($doubleDotPos!==FALSE){$name=trim(substr($rawHeader,0,$doubleDotPos));$value=trim(substr($rawHeader,$doubleDotPos+1));}else{$name=$rawHeader;$value='';}$this->Headers[$name]=$value;}}public function IsRedirect(){return isset($this->Headers['Location']);}public function IsHtmlOutput(){if(isset($this->Headers['Content-Type'])){$value=$this->Headers['Content-Type'];return strpos($value,'text/html')!==FALSE||strpos($value,'application/xhtml+xml')!==FALSE;}return FALSE;}public function Send(){if(!headers_sent()){$code=$this->Code;$status=isset(static::$CodeMessages[$code])?' '.static::$CodeMessages[$code]:'';header("HTTP/1.0 $code $status");foreach($this->Headers as$name=>$value){header($name.": ".$value);}$this->addTimeAndMemoryHeader();}echo $this->Body;}protected function addTimeAndMemoryHeader(){$mtBegin=\MvcCore::GetInstance()->GetMicrotime();$time=number_format((microtime(TRUE)-$mtBegin)*1000,1,'.',' ');$ram=function_exists('memory_get_peak_usage')?number_format(memory_get_peak_usage()/1000000,2,'.',' '):'n/a';header("X-MvcCore-Cpu-Ram: $time ms, $ram MB");}}}
-namespace MvcCore\Ext\Form\Core{class Exception extends\Exception{}}
-namespace MvcCore\Ext\View\Helpers{class Assets{const VERSION='4.0.0';const GROUP_NAME_DEFAULT='default';const FILE_MODIFICATION_DATE_FORMAT='Y-m-d_H-i-s';/** @var \MvcCore\View */protected$view;/** @var string */protected$actualGroupName='';/** @var string */protected$streamWrapper='';/** @var array */protected static$globalOptions=array('jsJoin'=>0,'jsMinify'=>0,'cssJoin'=>0,'cssMinify'=>0,'tmpDir'=>'/Var/Tmp','fileChecking'=>'filemtime','assetsUrl'=>NULL,);/** @var string */protected static$appRoot='';/** @var string */protected static$tmpDir='';/** @var string */protected static$basePath=NULL;/** @var boolean */protected static$logingAndExceptions=TRUE;/** @var boolean */protected static$fileChecking=FALSE;/** @var boolean */protected static$fileRendering=FALSE;/** @var boolean */protected static$assetsUrlCompletion=NULL;/** @var string */protected static$systemConfigHash='';public function __construct($view){$this->view=$view;$app=\MvcCore::GetInstance();$request=$app->GetRequest();self::$appRoot=$request->AppRoot;if(is_null(self::$basePath))self::$basePath=$request->BasePath;self::$logingAndExceptions=\MvcCore\Config::IsDevelopment();$mvcCoreCompiledMode=$app->GetCompiled();if(!$mvcCoreCompiledMode)self::$fileChecking=TRUE;if(!$mvcCoreCompiledMode||$mvcCoreCompiledMode=='SFU'){self::$fileRendering=TRUE;}if(is_null(self::$assetsUrlCompletion)){if($mvcCoreCompiledMode&&$mvcCoreCompiledMode!='PHP_STRICT_HDD'){self::$assetsUrlCompletion=TRUE;}else{self::$assetsUrlCompletion=FALSE;}}self::$systemConfigHash=md5(json_encode(self::$globalOptions));}public static function SetGlobalOptions($options=array()){self::$globalOptions=array_merge(self::$globalOptions,(array)$options);if(isset($options['assetsUrl'])&&!is_null($options['assetsUrl'])){self::$assetsUrlCompletion=(bool)$options['assetsUrl'];}}public static function SetAssetUrlCompletion($enable=TRUE){self::$assetsUrlCompletion=$enable;}public static function SetBasePath($basePath){self::$basePath=$basePath;}protected static function getFileImprint($fullPath){$fileChecking=self::$globalOptions['fileChecking'];if($fileChecking=='filemtime'){return\Packager_Php_Wrapper::Filemtime($fullPath);}else{return(string)call_user_func($fileChecking,$fullPath);}}public function __toString(){return$this->Render();}public function AssetUrl($path=''){$result='';if(self::$assetsUrlCompletion){$result='?controller=controller&action=asset&path='.$path;}else{$result='__RELATIVE_BASE_PATH__'.$path;}return$result;}public function CssJsFileUrl($path=''){$result='';if(self::$assetsUrlCompletion){$result=$this->view->AssetUrl($path);}else{$result=self::$basePath.$path;}return$result;}protected function getCtrlActionKey(){$requestParams=\MvcCore::GetInstance()->GetRequest()->Params;return$requestParams['controller'].'/'.$requestParams['action'];}protected function filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems($items){$itemsToRenderMinimized=array();$itemsToRenderSeparately=array();foreach($items as&$item){$itemArr=array_merge((array)$item,array());unset($itemArr['path']);if(isset($itemArr['render']))unset($itemArr['render']);if(isset($itemArr['external']))unset($itemArr['external']);$renderArrayKey=md5(json_encode($itemArr));if($itemArr['doNotMinify']){if(isset($itemsToRenderSeparately[$renderArrayKey])){$itemsToRenderSeparately[$renderArrayKey][]=$item;}else{$itemsToRenderSeparately[$renderArrayKey]=array($item);}}else{if(isset($itemsToRenderMinimized[$renderArrayKey])){$itemsToRenderMinimized[$renderArrayKey][]=$item;}else{$itemsToRenderMinimized[$renderArrayKey]=array($item);}}}return array($itemsToRenderMinimized,$itemsToRenderSeparately,);}protected function addFileModificationImprintToHrefUrl($url,$path){$questionMarkPos=strpos($url,'?');$separator=($questionMarkPos===FALSE)?'?':'&';$strippedUrl=$questionMarkPos!==FALSE?substr($url,$questionMarkPos):$url;$srcPath=$this->getAppRoot().substr($strippedUrl,strlen(self::$basePath));if(self::$globalOptions['fileChecking']=='filemtime'){$fileMTime=self::getFileImprint($srcPath);$url.=$separator.'_fmt='.date(self::FILE_MODIFICATION_DATE_FORMAT,(int)$fileMTime);}else{$url.=$separator.'_md5='.self::getFileImprint($srcPath);}return$url;}protected function getIndentString($indent=0){$indentStr='';if(is_numeric($indent)){$indInt=intval($indent);if($indInt>0){$i=0;while($i<$indInt){$indentStr.="\t";$i+=1;}}}else if(is_string($indent)){$indentStr=$indent;}return$indentStr;}protected function getAppRoot(){return self::$appRoot;}protected function getTmpDir(){if(!self::$tmpDir){$tmpDir=$this->getAppRoot().self::$globalOptions['tmpDir'];if(!\MvcCore::GetInstance()->GetCompiled()){if(!\Packager_Php_Wrapper::IsDir($tmpDir))mkdir($tmpDir,0777,TRUE);if(!is_writable($tmpDir)){try{@chmod($tmpDir,0777);}catch(Exception$e){throw new\Exception('['.__CLASS__.'] '.$e->getMessage());}}}self::$tmpDir=$tmpDir;}return self::$tmpDir;}protected function saveFileContent($fullPath='',&$fileContent=''){$streamWrapper='';$netteSafeStreamClass='\Nette\Utils\SafeStream';$netteSafeStreamProtocol='';$netteSafeStreamExists=class_exists($netteSafeStreamClass);if(self::$fileRendering){if($netteSafeStreamExists){$netteSafeStreamProtocol=constant($netteSafeStreamClass.'::PROTOCOL');(new\ReflectionMethod($netteSafeStreamClass,'register'))->invoke(NULL);$streamWrapper=$netteSafeStreamProtocol.'://';}}$fw=fopen($streamWrapper.$fullPath,'w');$index=0;$bufferLength=1048576;$buffer='';while($buffer=mb_substr($fileContent,$index,$bufferLength)){fwrite($fw,$buffer);$index+=$bufferLength;}fclose($fw);@chmod($fullPath,0766);if(self::$fileRendering){if($netteSafeStreamExists)stream_wrapper_unregister($netteSafeStreamProtocol);}}protected function log($msg='',$logType='debug'){if(self::$logingAndExceptions){\MvcCore\Debug::Log($msg,$logType);}}protected function exception($msg){if(self::$logingAndExceptions){throw new\Exception('['.get_class($this).'] '.$msg);}}protected function warning($msg){if(self::$logingAndExceptions){\MvcCore\Debug::BarDump('['.get_class($this).'] '.$msg,\MvcCore\Debug::DEBUG);}}protected function exceptionHandler(\Exception$e){if(self::$logingAndExceptions){\MvcCore\Debug::Exception($e);}}protected function getTmpFileFullPathByPartFilesInfo($filesGroupInfo=array(),$minify=FALSE,$extension=''){return implode('',array($this->getTmpDir(),'/'.($minify?'minified':'rendered').'_'.$extension.'_',md5(implode(',',$filesGroupInfo).'_'.$minify),'.'.$extension));}}}
-namespace App{class Bootstrap{public static function Init(){\MvcCore\Ext\Auth::GetInstance()->Init()->SetUserClass(\App\Models\User::class);\MvcCore\Router::GetInstance(array('Index:Index'=>array('pattern'=>"#^/$#",'reverse'=>'/',),'CdCollection:Index'=>array('pattern'=>"#^/albums$#",'reverse'=>'/albums',),'CdCollection:Create'=>array('pattern'=>"#^/create#",'reverse'=>'/create',),'CdCollection:Edit'=>array('pattern'=>"#^/edit/([0-9]*)#",'reverse'=>'/edit/{%id}','params'=>array('id'=>0,),),));}}}
-namespace MvcCore\Ext{class Auth{const VERSION='4.0.0';/** @var \MvcCore\Ext\Auth */protected static$instance=NULL;/** @var \MvcCore\Ext\Auth\Virtual\User */protected$user=NULL;/** @var \MvcCore\Ext\Auth\Virtual\Form */protected$form=NULL;/** @var \stdClass */protected$config=array('expirationSeconds'=>600,'userClass'=>'\User','controllerClass'=>'\Controller','signInFormClass'=>'\SignInForm','signOutFormClass'=>'\SignOutForm','signedInUrl'=>'','signedOutUrl'=>'','errorUrl'=>'','signInRoute'=>"#^/signin#",'signOutRoute'=>"#^/signout#",'passwordHashSalt'=>'S3F8OI2P3X6ER1F6XY2Q9ZCY','translator'=>NULL,);/** @var bool */protected$userInitialized=FALSE;public static function GetInstance(){if(is_null(static::$instance)){static::$instance=new static();}return static::$instance;}public function __construct(){foreach($this->config as$key=>&$value){if(strpos($key,'Class')!==FALSE){$value=__CLASS__.$value;}}$this->config=(object)$this->config;}public function&GetConfig(){return$this->config;}public function Configure($config=array()){foreach($config as$key=>$value){if(isset($this->config->$key)){if(strpos($key,'Class')!==FALSE){$this->_checkClass($value);}$this->config->$key=$value;}}return$this;}public function SetExpirationSeconds($expirationSeconds=600){$this->config->expirationSeconds=$expirationSeconds;return$this;}public function SetPasswordHashSalt($passwordHashSalt=''){$this->config->passwordHashSalt=$passwordHashSalt;return$this;}public function SetUserClass($userClass=''){$this->config->userClass=$this->_checkClass($userClass);return$this;}public function SetControllerClass($controllerClass=''){$this->config->controllerClass=$this->_checkClass($controllerClass);return$this;}public function SetSignInFormClass($signInFormClass=''){$this->config->signInFormClass=$this->_checkClass($signInFormClass);return$this;}public function SetSignOutFormClass($signOutFormClass=''){$this->config->signOutFormClass=$this->_checkClass($signOutFormClass);return$this;}public function SetTranslator(callable$translator=NULL){$this->config->translator=$translator;return$this;}public function SetSignedInUrl($signedInUrl=''){$this->config->signedInUrl=$signedInUrl;return$this;}public function SetSignedOutUrl($signedOutUrl=''){$this->config->signedOutUrl=$signedOutUrl;return$this;}public function SetErrorUrl($errorUrl=''){$this->config->errorUrl=$errorUrl;return$this;}public function SetSignInRoute($signInRoute=NULL){$this->config->signInRoute=$signInRoute;return$this;}public function SetSignOutRoute($signOutRoute=NULL){$this->config->signOutRoute=$signOutRoute;return$this;}public function IsAuthenticated(){return!is_null($this->GetUser());}public function&GetUser(){if(!$this->userInitialized&&is_null($this->user)){$userClass=$this->config->userClass;$this->user=$userClass::GetUserBySession();$this->userInitialized=TRUE;}return$this->user;}public function SetUser(\MvcCore\Ext\Auth\Virtual\User&$user){$this->user=$user;if(!is_null($user))$this->userInitialized=TRUE;return$this;}public function&GetForm(){if(is_null($this->form)){$controller=\MvcCore::GetInstance()->GetController();if($this->IsAuthenticated()){$this->form=new\MvcCore\Ext\Auth\SignOutForm($controller);$this->form->Action=\MvcCore::GetInstance()->Url($this->config->signOutRoute->Name);$this->form->SuccessUrl=$this->config->signedOutUrl;}else{$this->form=new\MvcCore\Ext\Auth\SignInForm($controller);$this->form->Action=\MvcCore::GetInstance()->Url($this->config->signInRoute->Name);$this->form->SuccessUrl=$this->config->signedInUrl;}$this->form->ErrorUrl=$this->config->errorUrl;$this->form->SetTranslator($this->config->translator);}return$this->form;}public function SetForm(&$form){$this->form=$form;return$this;}public function Init(){\MvcCore::AddPreRouteHandler(function(\MvcCore\Request&$request){$this->PrepareHandler($request);});return$this;}public function PrepareHandler(){$this->GetUser();$this->PrepareRoutes();$this->PrepareAdresses();$this->PrepareRouter();}public function PrepareRoutes(){$authControllerClass=&$this->config->controllerClass;if(strpos($authControllerClass,__CLASS__)===0){$authControllerClass='\\'.$authControllerClass;}$authenticated=$this->IsAuthenticated();if(!$authenticated&&is_string($this->config->signInRoute)){$this->config->signInRoute=\MvcCore\Route::GetInstance(array('name'=>"$authControllerClass:SignIn",'pattern'=>$this->config->signInRoute,));}if($authenticated&&is_string($this->config->signOutRoute)){$this->config->signOutRoute=\MvcCore\Route::GetInstance(array('name'=>"$authControllerClass:SignOut",'pattern'=>$this->config->signOutRoute,));}}public function PrepareAdresses(){$request=&\MvcCore::GetInstance()->GetRequest();if(!$this->config->signedInUrl)$this->config->signedInUrl=$request->FullUrl;if(!$this->config->signedOutUrl)$this->config->signedOutUrl=$request->FullUrl;if(!$this->config->errorUrl)$this->config->errorUrl=$request->FullUrl;}public function PrepareRouter(){if($this->IsAuthenticated()){\MvcCore\Router::GetInstance()->AddRoute($this->config->signOutRoute,TRUE);}else{\MvcCore\Router::GetInstance()->AddRoute($this->config->signInRoute,TRUE);}}private function _checkClass(&$className){if(!class_exists($className)){throw new\Exception("[".__CLASS__."] Configured class: '$className' doesn't exists.'");}return$className;}}}
-namespace MvcCore{class Session extends\ArrayObject{/** @var string */const SESSION_METADATA_KEY='__MC';/** @var string */protected$__name='default';/** @var bool */protected static$started=FALSE;/** @var array|\stdClass */protected static$meta=array();/** @var array */protected static$instances=array();public static function Start(){if(static::$started)return;if(!\MvcCore::GetInstance()->GetRequest()->IsAppRequest())return;$sessionNotStarted=function_exists('session_status')?session_status()==PHP_SESSION_NONE:session_id()=='';if($sessionNotStarted){session_start();static::setUpMeta();static::setUpData();}static::$started=TRUE;}protected static function setUpMeta(){$metaKey=static::SESSION_METADATA_KEY;$meta=array();if(isset($_SESSION[$metaKey])){$meta=@unserialize($_SESSION[$metaKey]);}if(!$meta){$meta=array('names'=>array(),'hoops'=>array(),'expirations'=>array(),);}static::$meta=(object)$meta;}protected static function setUpData(){$hoops=&static::$meta->hoops;$names=&static::$meta->names;$expirations=&static::$meta->expirations;foreach($hoops as$name=>$hoop){$hoops[$name]-=1;}$now=time();foreach($names as$name=>$one){$unset=array();if(isset($hoops[$name])){if($hoops[$name]<0)$unset[]='hoops';}if(isset($expirations[$name])){if($expirations[$name]<$now)$unset[]='expirations';}if($unset){$currentErrRepLevels=error_reporting();error_reporting(0);foreach($unset as$unsetKey){if(isset(static::$meta->$unsetKey)&&isset(static::$meta->$unsetKey[$name]))unset(static::$meta->$unsetKey[$name]);}error_reporting($currentErrRepLevels);unset($names[$name]);unset($_SESSION[$name]);}}}public static function Close(){register_shutdown_function(function(){foreach(static::$instances as&$instance){if(count($instance)===0)$instance->Destroy();}$metaKey=static::SESSION_METADATA_KEY;$_SESSION[$metaKey]=serialize(static::$meta);@session_write_close();});}public static function&GetNamespace($name='default'){if(!isset(static::$instances[$name])){static::$instances[$name]=new static($name);}return static::$instances[$name];}public function __construct($name='default'){if(!static::$started)static::Start();$this->__name=$name;static::$meta->names[$name]=1;if(!isset($_SESSION[$name]))$_SESSION[$name]=array();static::$instances[$name]=$this;}public function SetExpirationHoops($hoops){static::$meta->hoops[$this->__name]=$hoops;return$this;}public function SetExpirationSeconds($seconds){static::$meta->expirations[$this->__name]=time()+$seconds;return$this;}public function Destroy(){$name=$this->__name;$names=&static::$meta->names;$hoops=&static::$meta->hoops;$expirations=&static::$meta->expirations;$instances=&static::$instances;if(isset($names[$name]))unset($names[$name]);if(isset($hoops[$name]))unset($hoops[$name]);if(isset($expirations[$name]))unset($expirations[$name]);if(isset($_SESSION[$name]))unset($_SESSION[$name]);if(isset($instances[$name]))unset($instances[$name]);}public function __isset($key){return isset($_SESSION[$this->__name][$key]);}public function __unset($key){$name=$this->__name;if(isset($_SESSION[$name][$key]))unset($_SESSION[$name][$key]);}public function __get($key){$name=$this->__name;if(isset($_SESSION[$name][$key]))return$_SESSION[$name][$key];return NULL;}public function __set($key,$value){$_SESSION[$this->__name][$key]=$value;}public function count(){return count($_SESSION[$this->__name]);}}}
-namespace App\Views\Helpers{class JsonAttr{public function JsonAttr($object=NULL){return rawurlencode(\MvcCore\Tool::EncodeJson($object));}}}
-namespace MvcCore\Ext\View\Helpers{class Js extends Assets{const EXTERNAL_MIN_CACHE_TIME=86400;/** @var callable */public static$MinifyCallable=array('\JSMin','minify');/** @var array */protected static$scriptsGroupContainer=array();public function Js($groupName=self::GROUP_NAME_DEFAULT){$this->actualGroupName=$groupName;$this->_getScriptsGroupContainer($groupName);return$this;}public function Contains($path='',$async=FALSE,$defer=FALSE,$doNotMinify=FALSE){$result=FALSE;$scriptsGroup=&$this->_getScriptsGroupContainer($this->actualGroupName);foreach($scriptsGroup as&$item){if($item->path==$path){if($item->async==$async&&$item->defer==$defer&&$item->doNotMinify==$doNotMinify){$result=TRUE;break;}}}return$result;}public function AppendExternal($path='',$async=FALSE,$defer=FALSE,$doNotMinify=FALSE){return$this->Append($path,$async,$defer,$doNotMinify,TRUE);}public function PrependExternal($path='',$async=FALSE,$defer=FALSE,$doNotMinify=FALSE){return$this->Prepend($path,$async,$defer,$doNotMinify,TRUE);}public function OffsetExternal($index=0,$path='',$async=FALSE,$defer=FALSE,$doNotMinify=FALSE){return$this->Offset($index,$path,$async,$defer,$doNotMinify,TRUE);}public function Append($path='',$async=FALSE,$defer=FALSE,$doNotMinify=FALSE,$external=FALSE){$item=$this->_completeItem($path,$async,$defer,$doNotMinify,$external);$actialGroupItems=&$this->_getScriptsGroupContainer($this->actualGroupName);array_push($actialGroupItems,$item);return$this;}public function Prepend($path='',$async=FALSE,$defer=FALSE,$doNotMinify=FALSE,$external=FALSE){$item=$this->_completeItem($path,$async,$defer,$doNotMinify,$external);$actualGroupItems=&$this->_getScriptsGroupContainer($this->actualGroupName);array_unshift($actualGroupItems,$item);return$this;}public function Offset($index=0,$path='',$async=FALSE,$defer=FALSE,$doNotMinify=FALSE,$external=FALSE){$item=$this->_completeItem($path,$async,$defer,$doNotMinify,$external);$actialGroupItems=&$this->_getScriptsGroupContainer($this->actualGroupName);$newItems=array();$added=FALSE;foreach($actialGroupItems as$key=>&$groupItem){if($key==$index){$newItems[]=$item;$added=TRUE;}$newItems[]=$groupItem;}if(!$added)$newItems[]=$item;self::$scriptsGroupContainer[$this->getCtrlActionKey()][$this->actualGroupName]=$newItems;return$this;}private function&_getScriptsGroupContainer($name=''){$ctrlActionKey=$this->getCtrlActionKey();if(!isset(self::$scriptsGroupContainer[$ctrlActionKey])){self::$scriptsGroupContainer[$ctrlActionKey]=array();}if(!isset(self::$scriptsGroupContainer[$ctrlActionKey][$name])){self::$scriptsGroupContainer[$ctrlActionKey][$name]=array();}return self::$scriptsGroupContainer[$ctrlActionKey][$name];}private function _completeItem($path,$async,$defer,$doNotMinify,$external){if(self::$logingAndExceptions){if(!$path)$this->exception('Path to *.js can\'t be an empty string.');$duplication=$this->_isDuplicateScript($path);if($duplication)$this->warning("Script '$path' is already added in js group: '$duplication'.");}return(object)array('path'=>$path,'async'=>$async,'defer'=>$defer,'doNotMinify'=>$doNotMinify,'external'=>$external,);}private function _isDuplicateScript($path){$result='';$allGroupItems=&self::$scriptsGroupContainer[$this->getCtrlActionKey()];foreach($allGroupItems as$groupName=>$groupItems){foreach($groupItems as$item){if($item->path==$path){$result=$groupName;break;}}}return$result;}public function Render($indent=0){$actualGroupItems=&$this->_getScriptsGroupContainer($this->actualGroupName);if(count($actualGroupItems)===0)return'';$minify=(bool)self::$globalOptions['jsMinify'];$joinTogether=(bool)self::$globalOptions['jsJoin'];if($joinTogether){$result=$this->_renderItemsTogether($this->actualGroupName,$actualGroupItems,$indent,$minify);}else{$result=$this->_renderItemsSeparated($this->actualGroupName,$actualGroupItems,$indent,$minify);}return$result;}private function _renderItemsSeparated($actualGroupName='',$items=array(),$indent=0,$minify=FALSE){$indentStr=$this->getIndentString($indent);$resultItems=array();if(self::$fileRendering)$resultItems[]='<!-- js group begin: '.$actualGroupName.' -->';$appCompilation=\MvcCore::GetInstance()->GetCompiled();foreach($items as$item){if($item->external){$item->src=$this->CssJsFileUrl($this->_downloadFileToTmpAndGetNewHref($item,$minify));}else if($minify&&!$item->doNotMinify){$item->src=$this->CssJsFileUrl($this->_renderFileToTmpAndGetNewHref($item,$minify));}else{$item->src=$this->CssJsFileUrl($item->path);}if(!$appCompilation){$item->src=$this->addFileModificationImprintToHrefUrl($item->src,$item->path);}$resultItems[]=$this->_renderItemSeparated($item);}if(self::$fileRendering)$resultItems[]='<!-- js group end: '.$actualGroupName.' -->';return$indentStr.implode(PHP_EOL.$indentStr,$resultItems);}private function _renderFileToTmpAndGetNewHref($item,$minify=FALSE){$path=$item->path;$tmpFileName='/rendered_js_'.self::$systemConfigHash.'_'.trim(str_replace('/','_',$path),"_");$srcFileFullPath=$this->getAppRoot().$path;$tmpFileFullPath=$this->getTmpDir().$tmpFileName;if(self::$fileRendering){if(\Packager_Php_Wrapper::FileExists($srcFileFullPath)){$srcFileModDate=\Packager_Php_Wrapper::Filemtime($srcFileFullPath);}else{$srcFileModDate=1;}if(\Packager_Php_Wrapper::FileExists($tmpFileFullPath)){$tmpFileModDate=\Packager_Php_Wrapper::Filemtime($tmpFileFullPath);}else{$tmpFileModDate=0;}if($srcFileModDate!==FALSE&&$tmpFileModDate!==FALSE){if($srcFileModDate>$tmpFileModDate){$fileContent=\Packager_Php_Wrapper::FileGetContents($srcFileFullPath);if($minify){$fileContent=$this->_minify($fileContent,$path);}$this->saveFileContent($tmpFileFullPath,$fileContent);$this->log("Js file rendered ('$tmpFileFullPath').",'debug');}}}$tmpPath=substr($tmpFileFullPath,strlen($this->getAppRoot()));return$tmpPath;}private function _downloadFileToTmpAndGetNewHref($item,$minify=FALSE){$path=$item->path;$tmpFileFullPath=$this->getTmpDir().'/external_js_'.md5($path).'.js';if(self::$fileRendering){if(\Packager_Php_Wrapper::FileExists($tmpFileFullPath)){$cacheFileTime=\Packager_Php_Wrapper::Filemtime($tmpFileFullPath);}else{$cacheFileTime=0;}if(time()>$cacheFileTime+self::EXTERNAL_MIN_CACHE_TIME){while(TRUE){$newPath=$this->_getPossiblyRedirectedPath($path);if($newPath===$path){break;}else{$path=$newPath;}}$fr=fopen($path,'r');$fileContent='';$bufferLength=102400;$buffer='';while($buffer=fread($fr,$bufferLength)){$fileContent.=$buffer;}fclose($fr);if($minify){$fileContent=$this->_minify($fileContent,$path);}$this->saveFileContent($tmpFileFullPath,$fileContent);$this->log("External js file downloaded ('$tmpFileFullPath').",'debug');}}$tmpPath=substr($tmpFileFullPath,strlen($this->getAppRoot()));return$tmpPath;}private function _getPossiblyRedirectedPath($path=''){$fp=fopen($path,'r');$metaData=stream_get_meta_data($fp);foreach($metaData['wrapper_data']as$response){if(strtolower(substr($response,0,10))=='location: '){$path=substr($response,10);}}return$path;}private function _renderItemSeparated(\stdClass$item){$result='<script type="text/javascript"';if($item->async)$result.=' async="async"';if($item->async)$result.=' defer="defer"';if(!$item->external&&self::$fileChecking){$fullPath=$this->getAppRoot().$item->path;if(!\Packager_Php_Wrapper::FileExists($fullPath)){$this->log("File not found in CSS view rendering process ('$fullPath').",'error');}}$result.=' src="'.$item->src.'"></script>';return$result;}private function _minify(&$js,$path){$result='';if(!is_callable(static::$MinifyCallable)){$this->exception("Configured callable object for JS minification doesn't exist. "."Use: https://github.com/mrclay/minify -> /min/lib/JSMin.php");}try{$result=call_user_func(static::$MinifyCallable,$js);}catch(\Exception$e){$this->exception("Unable to minify javascript ('$path').");}return$result;}private function _renderItemsTogether($actualGroupName='',$items=array(),$indent,$minify=FALSE){list($itemsToRenderMinimized,$itemsToRenderSeparately)=$this->filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems($items);$indentStr=$this->getIndentString($indent);$resultItems=array();if(self::$fileRendering)$resultItems[]='<!-- js group begin: '.$actualGroupName.' -->';foreach($itemsToRenderSeparately as&$itemsToRender){$resultItems[]=$this->_renderItemsTogetherAsGroup($itemsToRender,FALSE);}foreach($itemsToRenderMinimized as&$itemsToRender){$resultItems[]=$this->_renderItemsTogetherAsGroup($itemsToRender,$minify);}if(self::$fileRendering)$resultItems[]=$indentStr.'<!-- js group end: '.$actualGroupName.' -->';return$indentStr.implode(PHP_EOL,$resultItems);}private function _renderItemsTogetherAsGroup($itemsToRender=array(),$minify=FALSE){$filesGroupInfo=array();foreach($itemsToRender as$item){if($item->external){$srcFileFullPath=$this->_downloadFileToTmpAndGetNewHref($item,$minify);$filesGroupInfo[]=$item->path.'?_'.self::getFileImprint($this->getAppRoot().$srcFileFullPath);}else{if(self::$fileChecking){$fullPath=$this->getAppRoot().$item->path;if(!\Packager_Php_Wrapper::FileExists($fullPath)){$this->exception("File not found in JS view rendering process ('$fullPath').");}$filesGroupInfo[]=$item->path.'?_'.self::getFileImprint($fullPath);}else{$filesGroupInfo[]=$item->path;}}}$tmpFileFullPath=$this->getTmpFileFullPathByPartFilesInfo($filesGroupInfo,$minify,'js');if(self::$fileRendering){if(!\Packager_Php_Wrapper::FileExists($tmpFileFullPath)){$resultContent='';foreach($itemsToRender as&$item){$srcFileFullPath=$this->getAppRoot().$item->path;if($item->external){$srcFileFullPath=$this->_downloadFileToTmpAndGetNewHref($item,$minify);$fileContent=\Packager_Php_Wrapper::FileGetContents($this->getAppRoot().$srcFileFullPath);}else if($minify){$fileContent=\Packager_Php_Wrapper::FileGetContents($srcFileFullPath);if($minify)$fileContent=$this->_minify($fileContent,$item->path);}else{$fileContent=\Packager_Php_Wrapper::FileGetContents($srcFileFullPath);}$resultContent.=PHP_EOL."/* ".$item->path." */".PHP_EOL.$fileContent.PHP_EOL;}$this->saveFileContent($tmpFileFullPath,$resultContent);$this->log("Js files group rendered ('$tmpFileFullPath').",'debug');}}$firstItem=array_merge((array)$itemsToRender[0],array());$pathToTmp=substr($tmpFileFullPath,strlen($this->getAppRoot()));$firstItem['src']=$this->CssJsFileUrl($pathToTmp);return$this->_renderItemSeparated((object)$firstItem);}}}
-namespace MvcCore\Ext\View\Helpers{class Css extends Assets{/** @var callable */public static$MinifyCallable=array('\Minify_CSS','minify');/** @var array */private static$_allowedMediaTypes=array('all','aural','braille','handheld','projection','print','screen','tty','tv',);/** @var $scriptsGroupContainer array */protected static$linksGroupContainer=array();public function Css($groupName=self::GROUP_NAME_DEFAULT){$this->actualGroupName=$groupName;$this->_getLinksGroupContainer($groupName);return$this;}public function Contains($path='',$media='all',$doNotMinify=FALSE){$result=FALSE;$linksGroup=&$this->_getLinksGroupContainer($this->actualGroupName);foreach($linksGroup as&$item){if($item->path==$path){if($item->media==$media&&$item->doNotMinify==$doNotMinify){$result=TRUE;break;}}}return$result;}public function AppendRendered($path='',$media='all',$doNotMinify=FALSE){return$this->Append($path,$media,TRUE,$doNotMinify);}public function PrependRendered($path='',$media='all',$doNotMinify=FALSE){return$this->Prepend($path,$media,TRUE,$doNotMinify);}public function OffsetSetRendered($index=0,$path='',$media='all',$doNotMinify=FALSE){return$this->OffsetSet($index,$path,$media,TRUE,$doNotMinify);}public function Append($path='',$media='all',$renderPhpTags=FALSE,$doNotMinify=FALSE){$item=$this->_completeItem($path,$media,$renderPhpTags,$doNotMinify);$currentGroupRecords=&$this->_getLinksGroupContainer($this->actualGroupName);array_push($currentGroupRecords,$item);return$this;}public function Prepend($path='',$media='all',$renderPhpTags=FALSE,$doNotMinify=FALSE){$item=$this->_completeItem($path,$media,$renderPhpTags,$doNotMinify);$currentGroupRecords=&$this->_getLinksGroupContainer($this->actualGroupName);array_unshift($currentGroupRecords,$item);return$this;}public function OffsetSet($index=0,$path='',$media='all',$renderPhpTags=FALSE,$doNotMinify=FALSE){$item=$this->_completeItem($path,$media,$renderPhpTags,$doNotMinify);$currentGroupRecords=&$this->_getLinksGroupContainer($this->actualGroupName);$newItems=array();$added=FALSE;foreach($currentGroupRecords as$key=>$groupItem){if($key==$index){$newItems[]=$item;$added=TRUE;}$newItems[]=$groupItem;}if(!$added)$newItems[]=$item;self::$linksGroupContainer[$this->getCtrlActionKey()][$this->actualGroupName]=$newItems;return$this;}private function _completeItem($path,$media,$render,$doNotMinify){if(self::$fileChecking){if(!$path)$this->exception('Path to *.css can\'t be an empty string.');if(!in_array($media,self::$_allowedMediaTypes))$this->exception('Media could be only values: '.implode(', ',self::$_allowedMediaTypes).'.');$duplication=$this->_isDuplicateStylesheet($path);if($duplication)$this->warning("Stylesheet '$path' is already added in css group: '$duplication'.");}return(object)array('path'=>$path,'media'=>$media,'render'=>$render,'doNotMinify'=>$doNotMinify,);}private function _isDuplicateStylesheet($path){$result='';$currentRecords=self::$linksGroupContainer[$this->getCtrlActionKey()];foreach($currentRecords as$groupName=>$groupItems){foreach($groupItems as$item){if($item->path==$path){$result=$groupName;break;}}}return$result;}public function Render($indent=0){$currentGroupRecords=&$this->_getLinksGroupContainer($this->actualGroupName);if(count($currentGroupRecords)===0)return'';$minify=(bool)self::$globalOptions['cssMinify'];$joinTogether=(bool)self::$globalOptions['cssJoin'];if($joinTogether){$result=$this->_renderItemsTogether($this->actualGroupName,$currentGroupRecords,$indent,$minify);}else{$result=$this->_renderItemsSeparated($this->actualGroupName,$currentGroupRecords,$indent,$minify);}return$result;}private function&_getLinksGroupContainer($name=''){$ctrlActionKey=$this->getCtrlActionKey();if(!isset(self::$linksGroupContainer[$ctrlActionKey])){self::$linksGroupContainer[$ctrlActionKey]=array();}if(!isset(self::$linksGroupContainer[$ctrlActionKey][$name])){self::$linksGroupContainer[$ctrlActionKey][$name]=array();}return self::$linksGroupContainer[$ctrlActionKey][$name];}private function _minify(&$css,$path){$result='';if(!is_callable(static::$MinifyCallable)){$this->exception("Configured callable object for CSS minification doesn't exist. ".'Use: https://github.com/mrclay/minify -> /min/lib/Minify/CSS.php');}try{$result=call_user_func(static::$MinifyCallable,$css);}catch(\Exception$e){$this->exception("Unable to minify stylesheet ('$path').");}return$result;}private function _renderItemsTogether($actualGroupName='',$items=array(),$indent=0,$minify=FALSE){list($itemsToRenderMinimized,$itemsToRenderSeparately)=$this->filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems($items);$indentStr=$this->getIndentString($indent);$resultItems=array();if(self::$fileRendering)$resultItems[]='<!-- css group begin: '.$actualGroupName.' -->';foreach($itemsToRenderSeparately as&$itemsToRender){$resultItems[]=$this->_renderItemsTogetherAsGroup($itemsToRender,$minify);}foreach($itemsToRenderMinimized as&$itemsToRender){$resultItems[]=$this->_renderItemsTogetherAsGroup($itemsToRender,$minify);}if(self::$fileRendering)$resultItems[]='<!-- css group end: '.$actualGroupName.' -->';return$indentStr.implode(PHP_EOL.$indentStr,$resultItems);}private function _renderItemsTogetherAsGroup($itemsToRender=array(),$minify=FALSE){$filesGroupInfo=array();foreach($itemsToRender as$item){if(self::$fileChecking){$fullPath=$this->getAppRoot().$item->path;if(!\Packager_Php_Wrapper::FileExists($fullPath)){$this->exception("File not found in CSS view rendering process ('$fullPath').");}$filesGroupInfo[]=$item->path.'?_'.self::getFileImprint($fullPath);}else{$filesGroupInfo[]=$item->path;}}$tmpFileFullPath=$this->getTmpFileFullPathByPartFilesInfo($filesGroupInfo,$minify,'css');if(self::$fileRendering){if(!\Packager_Php_Wrapper::FileExists($tmpFileFullPath)){$resultContent='';foreach($itemsToRender as&$item){$srcFileFullPath=$this->getAppRoot().$item->path;if($item->render){$fileContent=$this->_renderFile($srcFileFullPath);}else if($minify){$fileContent=\Packager_Php_Wrapper::FileGetContents($srcFileFullPath);}$fileContent=$this->_convertStylesheetPathsFromRelatives2TmpAbsolutes($fileContent,$item->path);if($minify)$fileContent=$this->_minify($fileContent,$item->path);$resultContent.=PHP_EOL."/* ".$item->path." */".PHP_EOL.$fileContent.PHP_EOL;}$this->saveFileContent($tmpFileFullPath,$resultContent);$this->log("Css files group rendered ('$tmpFileFullPath').",'debug');}}$firstItem=array_merge((array)$itemsToRender[0],array());$pathToTmp=substr($tmpFileFullPath,strlen($this->getAppRoot()));$firstItem['href']=$this->CssJsFileUrl($pathToTmp);return$this->_renderItemSeparated((object)$firstItem);}private function _renderFile($absolutePath){ob_start();try{\Packager_Php_Wrapper::IncludeStandard(($absolutePath),$this);}catch(\Exception$e){$this->exceptionHandler($e);}return ob_get_clean();}private function _convertStylesheetPathsFromRelatives2TmpAbsolutes(&$fullPathContent,$href){$lastHrefSlashPos=mb_strrpos($href,'/');if($lastHrefSlashPos===FALSE)return$fullPathContent;$stylesheetDirectoryRelative=mb_substr($href,0,$lastHrefSlashPos+1);$position=0;while($position<mb_strlen($fullPathContent)){$doubleDotsPos=mb_strpos($fullPathContent,'../',$position);if($doubleDotsPos===FALSE)break;$lastUrlBeginStrPos=mb_strrpos(mb_substr($fullPathContent,0,$doubleDotsPos),'url(');if($lastUrlBeginStrPos===FALSE){$position=$doubleDotsPos+3;continue;}$beginOfUrlBlockChars=mb_substr($fullPathContent,$lastUrlBeginStrPos+4,$doubleDotsPos-($lastUrlBeginStrPos+4));$beginOfUrlBlockChars=preg_replace("#[\./ \"'_\-]#","",$beginOfUrlBlockChars);if(mb_strlen($beginOfUrlBlockChars)>0){$position=$lastUrlBeginStrPos+4;continue;}$firstUrlEndStrPos=mb_strpos($fullPathContent,')',$doubleDotsPos);if($firstUrlEndStrPos===FALSE){$position=$doubleDotsPos+3;continue;}$endOfUrlBlockChars=mb_substr($fullPathContent,$doubleDotsPos+3,$firstUrlEndStrPos-($doubleDotsPos+3));$endOfUrlBlockChars=preg_replace("#[a-zA-Z\./ \"'_\-\?\&\#]#","",$endOfUrlBlockChars);if(mb_strlen($endOfUrlBlockChars)>0){$position=$firstUrlEndStrPos+1;continue;}$lastUrlBeginStrPos+=4;$urlSubStr=mb_substr($fullPathContent,$lastUrlBeginStrPos,$firstUrlEndStrPos-$lastUrlBeginStrPos);$firstStr=mb_substr($urlSubStr,0,1);$lastStr=mb_substr($urlSubStr,mb_strlen($urlSubStr)-1,1);if($firstStr==='"'&&$lastStr==='"'){$urlSubStr=mb_substr($urlSubStr,1,mb_strlen($urlSubStr)-2);$quote='"';}else if($firstStr==="'"&&$lastStr==="'"){$urlSubStr=mb_substr($urlSubStr,1,mb_strlen($urlSubStr)-2);$quote="'";}else{$quote='"';}$trimmedUrlSubStr=ltrim($urlSubStr,'./');$trimmedPartLength=mb_strlen($urlSubStr)-mb_strlen($trimmedUrlSubStr);$trimmedPart=trim(mb_substr($urlSubStr,0,$trimmedPartLength),'/');$subjectRestPath=trim(mb_substr($urlSubStr,$trimmedPartLength),'/');$urlFullBasePath=str_replace('\\','/',realpath($this->getAppRoot().$stylesheetDirectoryRelative.$trimmedPart));$urlFullPath=$urlFullBasePath.'/'.$subjectRestPath;$webPath=mb_substr($urlFullPath,mb_strlen($this->getAppRoot()));$webPath=$this->CssJsFileUrl($webPath);$fullPathContent=mb_substr($fullPathContent,0,$lastUrlBeginStrPos).$quote.$webPath.$quote.mb_substr($fullPathContent,$firstUrlEndStrPos);$position=$lastUrlBeginStrPos+mb_strlen($webPath)+3;}return str_replace('__RELATIVE_BASE_PATH__','../..',$fullPathContent);}private function _renderFileToTmpAndGetNewHref($item,$minify=FALSE){$path=$item->path;$tmpFileName='/rendered_css_'.self::$systemConfigHash.'_'.trim(str_replace('/','_',$path),"_");$srcFileFullPath=$this->getAppRoot().$path;$tmpFileFullPath=$this->getTmpDir().$tmpFileName;if(self::$fileRendering){if(\Packager_Php_Wrapper::FileExists($srcFileFullPath)){$srcFileModDate=\Packager_Php_Wrapper::Filemtime($srcFileFullPath);}else{$srcFileModDate=1;}if(\Packager_Php_Wrapper::FileExists($tmpFileFullPath)){$tmpFileModDate=\Packager_Php_Wrapper::Filemtime($tmpFileFullPath);}else{$tmpFileModDate=0;}if($srcFileModDate!==FALSE&&$tmpFileModDate!==FALSE){if($srcFileModDate>$tmpFileModDate){if($item->render){$fileContent=$this->_renderFile($srcFileFullPath);}else if($minify){$fileContent=\Packager_Php_Wrapper::FileGetContents($srcFileFullPath);}$fileContent=$this->_convertStylesheetPathsFromRelatives2TmpAbsolutes($fileContent,$path);if($minify)$fileContent=$this->_minify($fileContent,$item->path);$this->saveFileContent($tmpFileFullPath,$fileContent);$this->log("Css file rendered ('$tmpFileFullPath').",'debug');}}}$tmpPath=substr($tmpFileFullPath,strlen($this->getAppRoot()));return$tmpPath;}private function _renderItemSeparated(\stdClass$item){$result='<link rel="stylesheet"';if($item->media!=='all')$result.=' media="'.$item->media.'"';if(!$item->render&&self::$fileChecking){$fullPath=$this->getAppRoot().$item->path;if(!\Packager_Php_Wrapper::FileExists($fullPath)){$this->log("File not found in CSS view rendering process ('$fullPath').",'error');}}$result.=' href="'.$item->href.'" />';return$result;}private function _renderItemsSeparated($actualGroupName='',$items=array(),$indent=0,$minify=FALSE){$indentStr=$this->getIndentString($indent);$resultItems=array();if(self::$fileRendering)$resultItems[]='<!-- css group begin: '.$actualGroupName.' -->';$appCompilation=\MvcCore::GetCompiled();foreach($items as$item){if($item->render||($minify&&!$item->doNotMinify)){$item->href=$this->CssJsFileUrl($this->_renderFileToTmpAndGetNewHref($item,$minify));}else{$item->href=$this->CssJsFileUrl($item->path);}if(!$appCompilation){$item->href=$this->addFileModificationImprintToHrefUrl($item->href,$item->path);}$resultItems[]=$this->_renderItemSeparated($item);}if(self::$fileRendering)$resultItems[]='<!-- css group end: '.$actualGroupName.' -->';return$indentStr.implode(PHP_EOL.$indentStr,$resultItems);}}}
-namespace MvcCore\Ext\Form{class Button extends Core\Field{public$Type='button';public$Value='OK';public$RenderMode=\MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL;public$Accesskey=null;public static$Templates=array('control'=>'<button id="{id}" name="{name}" type="{type}"{attrs}>{value}</button>',);public function __construct(array$cfg=array()){parent::__construct($cfg);static::$Templates=(object)array_merge((array)parent::$Templates,(array)self::$Templates);}public function SetAccesskey($accesskey){$this->Accesskey=$accesskey;return$this;}public function OnAdded(\MvcCore\Ext\Form&$form){parent::OnAdded($form);if(!$this->Value){$clsName=get_class($this);throw new Core\Exception("No 'Value' defined for form field: '$clsName'.");}}public function SetUp(){parent::SetUp();if($this->Translate&&$this->Value){$this->Value=call_user_func($this->Form->Translator,$this->Value,$this->Form->Lang);}}public function RenderControl(){$attrsStr=$this->renderControlAttrsWithFieldVars(array('Accesskey',));return Core\View::Format(static::$Templates->control,array('id'=>$this->Id,'name'=>$this->Name,'type'=>$this->Type,'value'=>$this->Value,'attrs'=>$attrsStr?" $attrsStr":'',));}}}
-namespace MvcCore\Ext\Form\Core{abstract class Validator{/** @var \MvcCore\Ext\Form|\MvcCore\Ext\Form\Core\Base */protected$Form=NULL;/** @var \MvcCore\Controller|mixed */protected$Controller=NULL;/** @var bool */protected$Translate=FALSE;/** @var callable */protected$Translator=NULL;/** @var string */protected static$validatorsClassNameTemplate='\MvcCore\Ext\Form\Validators\{ValidatorName}';/** @var \MvcCore\Ext\Form\Core\Validator[]|mixed */protected static$instances=array();public static function Create($validatorName='',\MvcCore\Ext\Form\Core\Configuration&$form){if(!isset(static::$instances[$validatorName])){$localValidatorClassName=strpos($validatorName,'_')===FALSE&&strpos($validatorName,'\\')===FALSE;if($localValidatorClassName){$className=str_replace('{ValidatorName}',$validatorName,static::$validatorsClassNameTemplate);}else{$className=$validatorName;}static::$instances[$validatorName]=new$className($form);}return static::$instances[$validatorName];}public function __construct(\MvcCore\Ext\Form\Core\Configuration&$form){$this->Form=&$form;$this->Controller=&$form->Controller;$this->Translate=$form->Translate;if($this->Translate)$this->Translator=&$form->Translator;}public function Validate($submitValue,$fieldName,\MvcCore\Ext\Form\Core\Field&$field){return$submitValue;}protected function addError(\MvcCore\Ext\Form\Core\Field&$field,$msg='',callable$replaceCall=NULL){$replacing=!is_null($replaceCall);$label='';if($replacing)$label=$field->Label?$field->Label:$field->Name;if($this->Translate){$msg=call_user_func($this->Translator,$msg);if($replacing){$label=$field->Label?call_user_func($this->Translator,$field->Label):$field->Name;}}if($replacing){$msg=call_user_func($replaceCall,$msg,array($label));}$this->Form->AddError($msg,$field->Name);}}}
-namespace MvcCore{class Debug{const DEBUG='debug',INFO='info',WARNING='warning',ERROR='error',EXCEPTION='exception',CRITICAL='critical',JAVASCRIPT='javascript';/** @var string */public static$EmailRecepient='admin@localhost';/** @var mixed */public static$LogDirectory='/Var/Logs';/** @var boolean */protected static$development=NULL;/** @var array */protected static$handlers=array('timer'=>'timerHandler','dump'=>'dumpHandler','barDump'=>'dumpHandler','log'=>'dumpHandler','fireLog'=>'dumpHandler','exceptionHandler'=>'exceptionHandler','shutdownHandler'=>'ShutdownHandler',);/** @var array */protected static$dumps=array();/** @var array */protected static$timers=array();/** @var bool */protected static$originalDebugClass=TRUE;/** @var callable */public static$InitGlobalShortHands=array();public static function Init(){if(!is_null(static::$development))return;$app=\MvcCore::GetInstance();$configClass=$app->GetConfigClass();static::$development=$configClass::IsDevelopment();$cfg=$configClass::GetSystem();if(isset($cfg->debug)){$cfgDebug=&$cfg->debug;if(isset($cfgDebug->emailRecepient)){static::$EmailRecepient=$cfgDebug->emailRecepient;}if(isset($cfgDebug->logDirectory)){static::$LogDirectory=$cfgDebug->logDirectory;}}$scriptPath=str_replace('\\','/',$_SERVER['SCRIPT_FILENAME']);$lastSlas=strrpos($scriptPath,'/');$appRoot=substr($scriptPath,0,$lastSlas!==FALSE?$lastSlas:strlen($scriptPath));static::$LogDirectory=$appRoot.static::$LogDirectory;static::$originalDebugClass=$app->GetDebugClass()==__CLASS__;static::initLogDirectory(static::$LogDirectory);static::initHandlers();$initGlobalShortHandsHandler=static::$InitGlobalShortHands;$initGlobalShortHandsHandler(static::$LogDirectory);}protected static function initHandlers(){foreach(static::$handlers as$key=>$value){static::$handlers[$key]=array(__CLASS__,$value);}static::$handlers=(object)static::$handlers;register_shutdown_function(self::$handlers->shutdownHandler);}protected static function initLogDirectory($logDirectory){if(!\Packager_Php_Wrapper::IsDir($logDirectory))mkdir($logDirectory,0777,TRUE);if(!is_writable($logDirectory)){try{chmod($logDirectory,0777);}catch(Exception$e){die('['.static::class.'] '.$e->getMessage());}}}public static function Timer($name=NULL){return static::BarDump(call_user_func(static::$handlers->timer,$name),$name);}public static function Dump($value,$return=FALSE){if(static::$originalDebugClass){$args=func_get_args();$options=isset($args[2])?array('dieDumpCall'=>TRUE):array();if($return)$options['doNotStore']=TRUE;$options['backtraceIndex']=1;$result=static::dumpHandler($value,NULL,$options);}else{$result=call_user_func(static::$handlers->dump,$value,$return);}if($return)return$result;}public static function BarDump($value,$title=NULL,$options=array()){return call_user_func_array(static::$handlers->barDump,func_get_args());}public static function Log($value,$priority=self::INFO){$args=func_get_args();if(static::$originalDebugClass){$content=date('[Y-m-d H-i-s]')."\n".static::dumpHandler($value,NULL,array('doNotStore'=>TRUE,'backtraceIndex'=>1));$content=str_replace("\n","\n\t",$content)."\n";$fullPath=static::$LogDirectory.DIRECTORY_SEPARATOR.$priority.'.log';file_put_contents($fullPath,$content,FILE_APPEND);return$fullPath;}else{return call_user_func_array(static::$handlers->log,$args);}}public static function FireLog($message,$priority=self::DEBUG){$args=func_get_args();if(static::$originalDebugClass){$args=array($message,NULL,array('priority'=>$priority));}return call_user_func_array(static::$handlers->fireLog,$args);}public static function Exception($exception,$exit=TRUE){return call_user_func_array(static::$handlers->exceptionHandler,func_get_args());}public static function ShutdownHandler(){if(!count(static::$dumps))return;$dumps='';$dieDump=FALSE;foreach(static::$dumps as$values){$dumps.='<div class="item">';if(!is_null($values[1])){$dumps.='<pre class="title">'.$values[1].'</pre>';}$dumps.='<div class="value">'.$values[0].'</div></div>';if(isset($values[2]['dieDumpCall'])&&$values[2]['dieDumpCall'])$dieDump=TRUE;}$template=\Packager_Php_Wrapper::FileGetContents(dirname(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Debug.php').'/debug.html');echo  str_replace(array('%mvccoreDumps%','%mvccoreDumpsCount%','%mvccoreDumpsClose%'),array($dumps,count(static::$dumps),$dieDump?';':'q();'),$template);}protected static function timerHandler($name=NULL){$now=microtime(TRUE);if(is_null($name))return$now-\MvcCore::GetInstance()->GetMicrotime();$difference=isset(static::$timers[$name])?$now-static::$timers[$name]:0;static::$timers[$name]=$now;return$difference;}protected static function dumpHandler($var,$title=NULL,$options=array()){ob_start();var_dump($var);$content=preg_replace("#\</small\>\n#",'</small>',ob_get_clean(),1);$content=preg_replace("#\<small\>([^\>]*)\>#",'',$content,1);$backtraceIndex=isset($options['backtraceIndex'])?$options['backtraceIndex']:2;$backtrace=debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,$backtraceIndex+1);$originalPlace=(object)$backtrace[$backtraceIndex];$content='<small class="file">'.$originalPlace->file.':'.$originalPlace->line.'</small>'.$content;if(!isset($options['doNotStore']))static::$dumps[]=array($content,$title,$options);return$content;}protected static function exceptionHandler(\Exception$e,$exit=TRUE){throw$e;}}}namespace{\MvcCore\Debug::$InitGlobalShortHands=function(){function x($value,$title=NULL,$options=array()){return\MvcCore\Debug::BarDump($value,$title,$options);}function xx(){$args=func_get_args();foreach($args as$arg)\MvcCore\Debug::BarDump($arg);}function xxx($var=NULL,$title=NULL,$options=array()){$args=func_get_args();if(count($args)===0){throw new\Exception("Stopped.");}else{@header("Content-Type: text/html; charset=utf-8");foreach($args as$arg)\MvcCore\Debug::Dump($arg,FALSE,TRUE);}echo  ob_get_clean();die();}};}
-namespace MvcCore{class Config{const ENVIRONMENT_DEVELOPMENT='development';const ENVIRONMENT_BETA='beta';const ENVIRONMENT_ALPHA='alpha';const ENVIRONMENT_PRODUCTION='production';/** @var string */public static$SystemConfigPath='/%appPath%/config.ini';/** @var string */protected static$environment='';/** @var \stdClass|array|boolean */protected static$systemConfig=NULL;/** @var mixed */protected static$booleanValues=array('yes'=>TRUE,'no'=>FALSE,'true'=>TRUE,'false'=>FALSE,);/** @var array|\stdClass */protected$result=array();/** @var array */protected$objectTypes=array();public static function StaticInit(){if(!static::$environment){$serverAddress=static::getServerIp();$remoteAddress=static::getClientIp();if($serverAddress==$remoteAddress){static::$environment=static::ENVIRONMENT_DEVELOPMENT;}else{static::$environment=static::ENVIRONMENT_PRODUCTION;}}}public static function IsDevelopment(){return static::$environment==static::ENVIRONMENT_DEVELOPMENT;}public static function IsBeta(){return static::$environment==static::ENVIRONMENT_BETA;}public static function IsAlpha(){return static::$environment==static::ENVIRONMENT_ALPHA;}public static function IsProduction(){return static::$environment==static::ENVIRONMENT_PRODUCTION;}public static function GetEnvironment(){return static::$environment;}public static function SetEnvironment($environment=self::ENVIRONMENT_PRODUCTION){static::$environment=$environment;}public static function&GetSystem(){if(!static::$systemConfig){$systemConfigClass=\MvcCore::GetInstance()->GetConfigClass();$instance=new$systemConfigClass;static::$systemConfig=$instance->Load(str_replace('%appPath%',\MvcCore::GetInstance()->GetAppDir(),$systemConfigClass::$SystemConfigPath));}return static::$systemConfig;}protected static function getServerIp(){return isset($_SERVER['SERVER_ADDR'])?$_SERVER['SERVER_ADDR']:$_SERVER['LOCAL_ADDR'];}protected static function getClientIp(){return isset($_SERVER['HTTP_X_CLIENT_IP'])?$_SERVER['HTTP_X_CLIENT_IP']:$_SERVER['REMOTE_ADDR'];}public function&Load($configPath=''){$cfgFullPath=\MvcCore::GetInstance()->GetRequest()->AppRoot.$configPath;if(!\Packager_Php_Wrapper::FileExists($cfgFullPath))return FALSE;$rawIniData=\Packager_Php_Wrapper::ParseIniFile($cfgFullPath,TRUE);$environment=$this->detectEnvironmentBySystemConfig($rawIniData);if($rawIniData===FALSE)return FALSE;$iniData=$this->prepareIniDataToParse($rawIniData,$environment);$this->processIniData($iniData);foreach($this->objectTypes as&$objectType){if($objectType[0])$objectType[1]=(object)$objectType[1];}unset($this->objectTypes);return$this->result;}protected function&prepareIniDataToParse(&$rawIniData,$environment){$iniData=array();foreach($rawIniData as$keyOrSectionName=>$valueOrSectionValues){if(gettype($valueOrSectionValues)=='array'){if(strpos($keyOrSectionName,'>')!==FALSE){list($envNameLocal,$keyOrSectionName)=explode('>',str_replace(' ','',$keyOrSectionName));if($envNameLocal!==$environment)continue;}$sectionValues=array();foreach($valueOrSectionValues as$key=>$value)$sectionValues[$keyOrSectionName.'.'.$key]=$value;$iniData=array_merge($iniData,$sectionValues);}else{$iniData[$keyOrSectionName]=$valueOrSectionValues;}}return$iniData;}protected function detectEnvironmentBySystemConfig(array&$rawIni=array()){$environment='';if(isset($rawIni['environments'])){$environments=&$rawIni['environments'];$serverAddress=','.static::getServerIp().',';$serverComputerName=','.gethostname().',';foreach($environments as$environmentName=>$environmentComputerNamesOrIps){$environmentComputerNamesOrIps=','.$environmentComputerNamesOrIps.',';if(strpos($environmentComputerNamesOrIps,$serverAddress)!==FALSE||strpos($environmentComputerNamesOrIps,$serverComputerName)!==FALSE){$environment=$environmentName;break;}}}if($environment&&!static::$environment)static::SetEnvironment($environment);return$environment;}protected function processIniData(&$iniData){$this->objectTypes['']=array(1,&$this->result);foreach($iniData as$rawKey=>$rawValue){$current=&$this->result;$rawKeys=array();$lastRawKey=$rawKey;$lastDotPos=strrpos($rawKey,'.');if($lastDotPos!==FALSE){$rawKeys=explode('.',substr($rawKey,0,$lastDotPos));$lastRawKey=substr($rawKey,$lastDotPos+1);}$levelKey='';$prevLevelKey='';foreach($rawKeys as$key){$prevLevelKey=$levelKey;$levelKey.=($levelKey?'.':'').$key;if(!isset($current[$key])){$current[$key]=array();$this->objectTypes[$levelKey]=array(1,&$current[$key]);if($this->isKeyNumeric($key)&&isset($this->objectTypes[$prevLevelKey])){$this->objectTypes[$prevLevelKey][0]=0;}}$current=&$current[$key];}$typedValue=$this->getTypedValue($rawValue);if(isset($current[$lastRawKey])){$current[$lastRawKey][]=$typedValue;$this->objectTypes[$levelKey?$levelKey:$lastRawKey][0]=0;}else{if(gettype($current)!='array'){$current=array($current);$this->objectTypes[$levelKey]=array(0,&$current);}$current[$lastRawKey]=$typedValue;if($this->isKeyNumeric($lastRawKey))$this->objectTypes[$levelKey][0]=0;}}}protected function isKeyNumeric($rawKey){$numericRawKey=preg_replace("#[^0-9\-]#",'',$rawKey);return$numericRawKey==$rawKey;}protected function getTypedValue($rawValue){if(gettype($rawValue)=="array"){foreach($rawValue as$key=>$value){$rawValue[$key]=$this->getTypedValue($value);}return$rawValue;}else{$numericRawVal=preg_replace("#[^0-9\-\.]#",'',$rawValue);if($numericRawVal==$rawValue){return$this->getTypedValueFloatIpOrInt($rawValue);}else{return$this->getTypedValueBoolOrString($rawValue);}}}protected function getTypedValueFloatIpOrInt($rawValue){if(strpos($rawValue,'.')!==FALSE){if(substr_count($rawValue,'.')===1){return floatval($rawValue);}else{return$rawValue;}}else{$intVal=intval($rawValue);return(string)$intVal===$rawValue?$intVal:$rawValue;}}protected function getTypedValueBoolOrString($rawValue){$lowerRawValue=strtolower($rawValue);if(isset(static::$booleanValues[$lowerRawValue])){return static::$booleanValues[$lowerRawValue];}else{return trim($rawValue);}}}\MvcCore\Config::StaticInit();}
-namespace MvcCore{class Router{/** @var \MvcCore\Router */protected static$instance;/** @var \MvcCore\Request */protected$request;/** @var array */protected$routes=array();/** @var array */protected$urlRoutes=array();/** @var \MvcCore\Route */protected$currentRoute=NULL;/** @var bool */protected$routeToDefaultIfNotMatch=FALSE;public static function&GetInstance(array$routes=array()){if(!self::$instance){$routerClass=\MvcCore::GetInstance()->GetRouterClass();self::$instance=new$routerClass($routes);}return self::$instance;}public function __construct(array&$routes=array()){if($routes)$this->SetRoutes($routes);}public function SetRoutes(array$routes=array()){$this->routes=array();$this->AddRoutes($routes);return$this;}public function GetRoutes(){return$this->routes;}public function AddRoutes(array$routes=array(),$prepend=FALSE){if($prepend)$routes=array_reverse($routes);foreach($routes as$routeName=>&$route){$routeType=gettype($route);$numericKey=is_numeric($routeName);if($route instanceof\MvcCore\Route){if(!$numericKey){$route->Name=$routeName;}}else if($routeType=='array'){if(!$numericKey){$route['name']=$routeName;}}else if($routeType=='string'){$route=array('name'=>$routeName,'pattern'=>$route);}$this->AddRoute($route,$prepend);}return$this;}public function AddRoute($routeCfgOrRoute,$prepend=FALSE){if($routeCfgOrRoute instanceof\MvcCore\Route){$instance=&$routeCfgOrRoute;}else{$instance=\MvcCore\Route::GetInstance($routeCfgOrRoute);}if($prepend){$this->routes=array_merge(array($instance->Name=>$instance),$this->routes);}else{$this->routes[$instance->Name]=&$instance;}$this->urlRoutes[$instance->Name]=&$instance;$this->urlRoutes[$instance->Controller.':'.$instance->Action]=&$instance;return$this;}public function SetCurrentRoute($currentRoute){$this->currentRoute=$currentRoute;return$this;}public function&GetCurrentRoute(){return$this->currentRoute;}public function GetRouteToDefaultIfNotMatch(){return$this->routeToDefaultIfNotMatch;}public function SetRouteToDefaultIfNotMatch($enable=TRUE){$this->routeToDefaultIfNotMatch=$enable;return$this;}public function&Route(\MvcCore\Request&$request){$this->request=$request;$chars="a-zA-Z0-9\-_/";$controllerName=$request->GetParam('controller',$chars);$actionName=$request->GetParam('action',$chars);if($controllerName&&$actionName){$this->routeByControllerAndActionQueryString($controllerName,$actionName);}else{$this->routeByRewriteRoutes();}$requestParams=&$this->request->Params;list($defaultCtrl,$defaultAction)=\MvcCore::GetInstance()->GetDefaultControllerAndActionNames();foreach(array('controller'=>$defaultCtrl,'action'=>$defaultAction)as$mvcProperty=>$mvcValue){if(!isset($requestParams[$mvcProperty])||(isset($requestParams[$mvcProperty])&&strlen($requestParams[$mvcProperty])===0)){$requestParams[$mvcProperty]=\MvcCore\Tool::GetDashedFromPascalCase($mvcValue);}}if(!$this->currentRoute&&($this->request->Path=='/'||$this->routeToDefaultIfNotMatch)){$this->currentRoute=\MvcCore\Route::GetInstance(array('name'=>"$defaultCtrl:$defaultAction",'controller'=>$defaultCtrl,'action'=>$defaultAction,));}if($this->currentRoute){if(!$this->currentRoute->Controller){$this->currentRoute->Controller=\MvcCore\Tool::GetPascalCaseFromDashed($requestParams['controller']);}if(!$this->currentRoute->Action){$this->currentRoute->Action=\MvcCore\Tool::GetPascalCaseFromDashed($requestParams['action']);}}return$this->currentRoute;}public function Url($controllerActionOrRouteName='Index:Index',$params=array()){$result='';if(strpos($controllerActionOrRouteName,':')!==FALSE){list($ctrlPc,$actionPc)=explode(':',$controllerActionOrRouteName);$requestParams=$this->request->Params;if(!$ctrlPc)$ctrlPc=\MvcCore\Tool::GetPascalCaseFromDashed($requestParams['controller']);if(!$actionPc)$actionPc=\MvcCore\Tool::GetPascalCaseFromDashed($requestParams['action']);$controllerActionOrRouteName="$ctrlPc:$actionPc";}else if($controllerActionOrRouteName=='self'){$controllerActionOrRouteName=$this->currentRoute?$this->currentRoute->Name:':';$params=array_merge($this->request->Params,$params);unset($params['controller'],$params['action']);}$absolute=FALSE;if($params&&isset($params['absolute'])){$absolute=(bool)$params['absolute'];unset($params['absolute']);}if(isset($this->urlRoutes[$controllerActionOrRouteName])){$result=$this->urlByRoute($controllerActionOrRouteName,$params);}else{$result=$this->urlByQueryString($controllerActionOrRouteName,$params);}if($absolute)$result=$this->request->DomainUrl.$result;return$result;}protected function urlByQueryString($controllerActionOrRouteName,$params){list($contollerPascalCase,$actionPascalCase)=explode(':',$controllerActionOrRouteName);$controllerDashed=\MvcCore\Tool::GetDashedFromPascalCase($contollerPascalCase);$actionDashed=\MvcCore\Tool::GetDashedFromPascalCase($actionPascalCase);$result=$this->request->BasePath.$this->request->ScriptName."?controller=$controllerDashed&action=$actionDashed";if($params){$result.="&".http_build_query($params,"","&");}return$result;}protected function urlByRoute($controllerActionOrRouteName,$params){$route=$this->urlRoutes[$controllerActionOrRouteName];$result=$this->request->BasePath.rtrim($route->Reverse,'?&');$allParams=array_merge(is_array($route->Params)?$route->Params:array(),$params);foreach($allParams as$key=>$value){$paramKeyReplacement="{%$key}";if(mb_strpos($result,$paramKeyReplacement)===FALSE){$glue=(mb_strpos($result,'?')===FALSE)?'?':'&';$result.=$glue.http_build_query(array($key=>$value));}else{$result=str_replace($paramKeyReplacement,$value,$result);}}return$result;}protected function routeByControllerAndActionQueryString($controllerName,$actionName){list($controllerDashed,$controllerPascalCase)=static::completeControllerActionParam($controllerName);list($actionDashed,$actionPascalCase)=static::completeControllerActionParam($actionName);$this->currentRoute=\MvcCore\Route::GetInstance(array('name'=>"$controllerPascalCase:$actionPascalCase",'controller'=>$controllerPascalCase,'action'=>$actionPascalCase));$this->request->Params['controller']=$controllerDashed;$this->request->Params['action']=$actionDashed;}protected function routeByRewriteRoutes(){$requestPath=$this->request->Path;foreach($this->routes as&$route){preg_match_all($route->Pattern,$requestPath,$patternMatches);if(count($patternMatches)>0&&count($patternMatches[0])>0){$this->currentRoute=$route;$controllerName=isset($route->Controller)?$route->Controller:'';$routeParams=array('controller'=>\MvcCore\Tool::GetDashedFromPascalCase(str_replace(array('_','\\'),'/',$controllerName)),'action'=>\MvcCore\Tool::GetDashedFromPascalCase(isset($route->Action)?$route->Action:''),);preg_match_all("#{%([a-zA-Z0-9]*)}#",$route->Reverse,$reverseMatches);if(isset($reverseMatches[1])&&$reverseMatches[1]){$reverseMatchesNames=$reverseMatches[1];array_shift($patternMatches);foreach($reverseMatchesNames as$key=>$reverseKey){if(isset($patternMatches[$key])&&count($patternMatches[$key])){if(!isset($route->Params[$reverseKey]))$route->Params[$reverseKey]=NULL;$routeParams[$reverseKey]=$patternMatches[$key][0];}else{break;}}}$routeDefaultParams=isset($route->Params)?$route->Params:array();$this->request->Params=array_merge($routeDefaultParams,$routeParams,$this->request->Params);break;}}}protected static function completeControllerActionParam($dashed=''){$pascalCase='';$dashed=strlen($dashed)>0?strtolower($dashed):'default';$pascalCase=preg_replace_callback("#(\-[a-z])#",function($m){return strtoupper(substr($m[0],1));},$dashed);$pascalCase=preg_replace_callback("#(_[a-z])#",function($m){return strtoupper($m[0]);},$pascalCase);$pascalCase=ucfirst($pascalCase);return array($dashed,$pascalCase);}}}
-namespace MvcCore{class Request{const PROTOCOL_HTTP='http:';const PROTOCOL_HTTPS='https:';const METHOD_GET='GET';const METHOD_POST='POST';/** @var string */public$Lang='';/** @var string */public$Locale='';/** @var string */public$Protocol='';/** @var string */public$ServerName='';/** @var string */public$Host='';/** @var string */public$Port='';/** @var string */public$Path='';/** @var string */public$Query='';/** @var mixed */public$Fragment='';/** @var string */public$ScriptName='';/** @var string */public$AppRoot='';/** @var string */public$BasePath='';/** @var string */public$RequestPath='';/** @var string */public$DomainUrl='';/** @var string */public$BaseUrl='';/** @var string */public$RequestUrl='';/** @var string */public$FullUrl='';/** @var string */public$Method='';/** @var string */public$Referer='';/** @var array */public$Params=array();/** @var string */public$MediaSiteKey='';/** @var array */protected$serverGlobals=array();/** @var array */protected$getGlobals=array();/** @var array */protected$postGlobals=array();/** @var array */protected$indexScriptName='';/** @var mixed */protected$appRequest=-1;public static function GetInstance(array&$server,array&$get,array&$post){$requestClass=\MvcCore::GetInstance()->GetRequestClass();return new$requestClass($server,$get,$post);}public function __construct(array&$server,array&$get,array&$post){$this->serverGlobals=$server;$this->getGlobals=$get;$this->postGlobals=$post;$this->initMethod();$this->initScriptName();$this->initBasePath();$this->initProtocol();$this->initParsedUrlSegments();$this->initParams();$this->initAppRoot();$this->initPath();$this->initReferer();$this->initUrlCompositions();unset($this->serverGlobals,$this->getGlobals,$this->postGlobals);}public function __call($rawName,$arguments=array()){$nameBegin=strtolower(substr($rawName,0,3));$name=substr($rawName,3);if($nameBegin=='get'&&isset($this->$name)){return$this->$name;}else if($nameBegin=='set'){$this->$name=isset($arguments[0])?$arguments[0]:NULL;return$this;}else{throw new\Exception('['.__CLASS__."] No property with name '$name' defined.");}}public function __get($name){return isset($this->$name)?$this->$name:NULL;}public function __set($name,$value){$this->$name=$value;}public function SetParam($name="",$value=""){$this->Params[$name]=$value;return$this;}public function GetParam($name="",$pregReplaceAllowedChars="a-zA-Z0-9_/\-\.\@"){$result='';$params=$this->Params;if(isset($params[$name])){$rawValue=trim($params[$name]);if(mb_strlen($rawValue)>0){if(!$pregReplaceAllowedChars||$pregReplaceAllowedChars==".*"){$result=$rawValue;}else{$pattern="#[^".$pregReplaceAllowedChars."]#";$result=preg_replace($pattern,"",$rawValue);}}}return$result;}public function IsAppRequest(){if($this->appRequest==-1){$this->appRequest=1;$ctrl='controller';$action='action';if(isset($this->Params[$ctrl])&&isset($this->Params[$action])){if($this->Params[$ctrl]==$ctrl&&$this->Params[$action]=='asset'){$this->appRequest=0;}}}return(bool)$this->appRequest;}protected function initMethod(){$this->Method=strtoupper($this->serverGlobals['REQUEST_METHOD']);}protected function initScriptName(){$this->indexScriptName=str_replace('\\','/',$this->serverGlobals['SCRIPT_NAME']);$this->ScriptName='/'.substr($this->indexScriptName,strrpos($this->indexScriptName,'/')+1);}protected function initBasePath(){$lastSlashPos=mb_strrpos($this->indexScriptName,'/');if($lastSlashPos!==FALSE){$this->BasePath=mb_substr($this->indexScriptName,0,$lastSlashPos);}else{$this->BasePath='';}}protected function initProtocol(){$this->Protocol=static::PROTOCOL_HTTP;if(isset($this->serverGlobals['HTTPS'])&&strtolower($this->serverGlobals['HTTPS'])=='on'){$this->Protocol=static::PROTOCOL_HTTPS;}}protected function initParsedUrlSegments(){$absoluteUrl=$this->Protocol.'//'.$this->serverGlobals['HTTP_HOST'].$this->serverGlobals['REQUEST_URI'];$parsedUrl=parse_url($absoluteUrl);$keyUc='';foreach($parsedUrl as$key=>$value){$keyUc=ucfirst($key);if(isset($this->$keyUc)){$this->$keyUc=(string)$value;}}$this->ServerName=$this->serverGlobals['SERVER_NAME'];$this->Host=$this->serverGlobals['HTTP_HOST'];}protected function initParams(){$params=array_merge($this->getGlobals);if(strtoupper($this->serverGlobals['REQUEST_METHOD'])=='POST'){$postValues=array();if(count($this->postGlobals)>0){$postValues=$this->postGlobals;}else{$postValues=$this->initParamsCompletePostData();}$params=array_merge($params,$postValues);}$this->Params=$params;}private function initParamsCompletePostData(){$result=array();$rawPhpInput=\Packager_Php_Wrapper::FileGetContents('php://input');$decodedJsonResult=\MvcCore\Tool::DecodeJson($rawPhpInput);if($decodedJsonResult->success){$result=(array)$decodedJsonResult->data;}else{$rows=explode('&',$rawPhpInput);foreach($rows as$row){list($key,$value)=explode('=',$row);$result[$key]=$value;}}return$result;}protected function initAppRoot(){$indexFilePath=ucfirst(str_replace('\\','/',$this->serverGlobals['SCRIPT_FILENAME']));if(strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Request.php','phar://')===0){$appRootFullPath='phar://'.$indexFilePath;}else{$appRootFullPath=substr($indexFilePath,0,mb_strrpos($indexFilePath,'/'));}$this->AppRoot=str_replace('\\','/',$appRootFullPath);}protected function initPath(){$requestUrl=$this->serverGlobals['REQUEST_URI'];$path='/'.ltrim(mb_substr($requestUrl,mb_strlen($this->BasePath)),'/');if(mb_strpos($path,'?')!==FALSE)$path=mb_substr($path,0,mb_strpos($path,'?'));$this->Path=$path;}protected function initReferer(){$referer=isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:'';if($referer){$referer=filter_var($referer,FILTER_SANITIZE_URL);$this->Referer=$referer?$referer:'';}}protected function initUrlCompositions(){$this->RequestPath=$this->Path.(($this->Query)?'?'.$this->Query:'').$this->Fragment;$this->DomainUrl=$this->Protocol.'//'.$this->Host;$this->BaseUrl=$this->DomainUrl.$this->BasePath;$this->RequestUrl=$this->BaseUrl.$this->Path;$this->FullUrl=$this->RequestUrl.(($this->Query)?'?'.$this->Query:'');}}}
-namespace{
-class MvcCore{const VERSION='4.0.0';/** @var string */const COMPILED_PHP='PHP';/** @var string */const COMPILED_PHAR='PHAR';/** @var string */const COMPILED_SFU='SFU';/** @var string */const NOT_COMPILED='';/** @var MvcCore */protected static$instance;/** @var string */protected$compiled=null;/** @var int */protected$microtime=0;/** @var \MvcCore\Controller */protected$controller=NULL;/** @var \MvcCore\Request */protected$request;/** @var \MvcCore\Response */protected$response;/** @var \MvcCore\Router */protected$router=null;/** @var callable[] */protected$preRouteHandlers=array();/** @var callable[] */protected$preDispatchHandlers=array();/** @var callable[] */protected$postDispatchHandlers=array();/** @var string */protected$configClass='\MvcCore\Config';/** @var string */protected$sessionClass='\MvcCore\Session';/** @var string */protected$requestClass='\MvcCore\Request';/** @var string */protected$responseClass='\MvcCore\Response';/** @var string */protected$routerClass='\MvcCore\Router';/** @var string */protected$viewClass='\MvcCore\View';/** @var string */protected$debugClass='\MvcCore\Debug';/** @var string */protected$appDir='App';/** @var string */protected$controllersDir='Controllers';/** @var string */protected$viewsDir='Views';/** @var string */protected$defaultControllerName='Index';/** @var string */protected$defaultControllerDefaultActionName='Index';/** @var string */protected$defaultControllerErrorActionName='Error';/** @var string */protected$defaultControllerNotFoundActionName='NotFound';public static function StaticInit(){$instance=static::GetInstance();$instance->microtime=microtime(TRUE);if(is_null($instance->compiled)){$compiled=static::NOT_COMPILED;if(strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore.php','phar://')===0){$compiled=static::COMPILED_PHAR;}else if(class_exists('\Packager_Php_Wrapper')){$compiled=constant('\Packager_Php_Wrapper::FS_MODE');}$instance->compiled=$compiled;}}public static function&GetInstance(){if(!static::$instance)static::$instance=new static();return static::$instance;}public static function AddPreRouteHandler(callable$handler){static::GetInstance()->preRouteHandlers[]=$handler;}public static function AddPreDispatchHandler(callable$handler){static::GetInstance()->preDispatchHandlers[]=$handler;}public static function AddPostDispatchHandler(callable$handler){static::GetInstance()->postDispatchHandlers[]=$handler;}public static function SessionStart(){$sessionClass=\MvcCore::GetInstance()->sessionClass;$sessionClass::Start();}public function GetCompiled(){return$this->compiled;}public function GetRequestClass(){return$this->requestClass;}public function GetResponseClass(){return$this->responseClass;}public function GetRouterClass(){return$this->routerClass;}public function GetConfigClass(){return$this->configClass;}public function GetSessionClass(){return$this->sessionClass;}public function GetViewClass(){return$this->viewClass;}public function GetDebugClass(){return$this->debugClass;}public function GetMicrotime(){return$this->microtime;}public function GetRouter(){return$this->router;}public function&GetController(){return$this->controller;}public function&GetRequest(){return$this->request;}public function&GetResponse(){return$this->response;}public function GetAppDir(){return$this->appDir;}public function GetControllersDir(){return$this->controllersDir;}public function GetViewsDir(){return$this->viewsDir;}public function GetDefaultControllerAndActionNames(){return array($this->defaultControllerName,$this->defaultControllerDefaultActionName);}public function SetCompiled($compiled=''){$this->compiled=$compiled;return$this;}public function SetConfigClass($configClass){@class_exists($configClass);$this->configClass=$configClass;return$this;}public function SetSessionClass($sessionClass){@class_exists($sessionClass);$this->sessionClass=$sessionClass;return$this;}public function SetRequestClass($requestClass){@class_exists($requestClass);$this->requestClass=$requestClass;return$this;}public function SetResponseClass($responseClass){@class_exists($responseClass);$this->responseClass=$responseClass;return$this;}public function SetRouterClass($routerClass){@class_exists($routerClass);$this->routerClass=$routerClass;return$this;}public function SetViewClass($viewClass){@class_exists($viewClass);$this->viewClass=$viewClass;return$this;}public function SetDebugClass($debugClass){@class_exists($debugClass);$this->debugClass=$debugClass;return$this;}public function SetAppDir($appDir){$this->appDir=$appDir;return$this;}public function SetControllersDir($controllersDir){$this->controllersDir=$controllersDir;return$this;}public function SetViewsDir($viewsDir){$this->viewsDir=$viewsDir;return$this;}public function SetDefaultControllerName($defaultControllerName){$this->defaultControllerName=$defaultControllerName;return$this;}public function SetDefaultControllerDefaultActionName($defaultActionName){$this->defaultControllerDefaultActionName=$defaultActionName;return$this;}public function SetDefaultControllerErrorActionName($defaultControllerErrorActionName){$this->defaultControllerErrorActionName=$defaultControllerErrorActionName;return$this;}public function SetDefaultControllerNotFoundActionName($defaultControllerNotFoundActionName){$this->defaultControllerNotFoundActionName=$defaultControllerNotFoundActionName;return$this;}public function Run($singleFileUrl=FALSE){if($singleFileUrl)$this->compiled=static::COMPILED_SFU;return$this->process();}protected function process(){$this->request=\MvcCore\Request::GetInstance($_SERVER,$_GET,$_POST);$this->response=\MvcCore\Response::GetInstance();$debugClass=$this->debugClass;$debugClass::Init();if(!$this->processCustomHandlers($this->preRouteHandlers))return$this->Terminate();if(!$this->routeRequest())return$this->Terminate();if(!$this->processCustomHandlers($this->preDispatchHandlers))return$this->Terminate();if(!$this->DispatchMvcRequest($this->router->GetCurrentRoute()))return$this->Terminate();if(!$this->processCustomHandlers($this->postDispatchHandlers))return$this->Terminate();return$this->Terminate();}protected function routeRequest(){$routerClass=$this->routerClass;$this->router=$routerClass::GetInstance();try{$this->router->Route($this->request);return TRUE;}catch(\Exception$e){return$this->DispatchException($e);}}protected function processCustomHandlers(&$handlers=array()){if(!$this->IsAppRequest())return TRUE;$result=TRUE;foreach($handlers as$handler){if(is_callable($handler)){try{$handler($this->request,$this->response);}catch(\Exception$e){$this->DispatchException($e);$result=FALSE;break;}}}return$result;}public function DispatchMvcRequest(\MvcCore\Route&$route=NULL){if(is_null($route))return$this->DispatchException(new\Exception('No route for request',404));list($controllerNamePascalCase,$actionNamePascalCase)=array($route->Controller,$route->Action);$actionName=$actionNamePascalCase.'Action';$coreControllerName='\MvcCore\Controller';$requestParams=$this->request->Params;$viewScriptFullPath=\MvcCore\View::GetViewScriptFullPath(\MvcCore\View::$ScriptsDir,$requestParams['controller'].'/'.$requestParams['action']);if($controllerNamePascalCase=='Controller'){$controllerName=$coreControllerName;}else{$controllerName=$this->CompleteControllerName($controllerNamePascalCase);if(!class_exists($controllerName)){if(\Packager_Php_Wrapper::FileExists($viewScriptFullPath)){$controllerName=$coreControllerName;}}}return$this->DispatchControllerAction($controllerName,$actionName,$viewScriptFullPath,function(\Exception&$e){return$this->DispatchException($e);});}public function DispatchControllerAction($controllerClassFullName,$actionName,$viewScriptFullPath,callable$exceptionCallback){$this->controller=NULL;try{$this->controller=new$controllerClassFullName($this->request,$this->response);}catch(\Exception$e){return$this->DispatchException(new\ErrorException($e->getMessage(),404));}if(!method_exists($this->controller,$actionName)&&$controllerClassFullName!=='\MvcCore\Controller'){if(!\Packager_Php_Wrapper::FileExists($viewScriptFullPath)){$this->DispatchException(new\ErrorException("Controller '$controllerClassFullName' has not method '$actionName' "."or view doesn't exists in path: '$viewScriptFullPath'.",404));}}list($controllerNameDashed,$actionNameDashed)=array($this->request->Params['controller'],$this->request->Params['action']);try{$this->controller->Init();$this->controller->PreDispatch();if(method_exists($this->controller,$actionName))$this->controller->$actionName();$this->controller->Render($controllerNameDashed,$actionNameDashed);}catch(\Exception$e){return$exceptionCallback($e);}return TRUE;}public function Url($controllerActionOrRouteName='Index:Index',$params=array()){return\MvcCore\Router::GetInstance()->Url($controllerActionOrRouteName,$params);}public function Terminate(){$sessionClass=$this->sessionClass;$sessionClass::Close();$this->response->Send();exit;}public function DispatchException(\Exception$e){if(class_exists('\Packager_Php'))return FALSE;if($e->getCode()==404){\MvcCore\Debug::Log($e,\MvcCore\Debug::ERROR);$this->RenderNotFound($e->getMessage());}else if(\MvcCore\Config::IsDevelopment()){\MvcCore\Debug::Exception($e);}else{\MvcCore\Debug::Log($e,\MvcCore\Debug::EXCEPTION);$this->RenderError($e);}return FALSE;}public function RenderError(\Exception$e){$defaultCtrlFullName=$this->GetDefaultControllerIfHasAction($this->defaultControllerErrorActionName);$exceptionMessage=$e->getMessage();if($defaultCtrlFullName){$this->request->Params=array_merge($this->request->Params,array('code'=>500,'message'=>$exceptionMessage,'controller'=>\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerName),'action'=>\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerErrorActionName),));$this->DispatchControllerAction($defaultCtrlFullName,$this->defaultControllerErrorActionName."Action",'',function(\Exception&$e)use($exceptionMessage){\MvcCore\Debug::Log($e,\MvcCore\Debug::EXCEPTION);$this->RenderError500PlainText($exceptionMessage.PHP_EOL.PHP_EOL.$e->getMessage());});}else{$this->RenderError500PlainText($exceptionMessage);}}public function RenderNotFound($exceptionMessage=''){if(!$exceptionMessage)$exceptionMessage='Page not found.';$defaultCtrlFullName=$this->GetDefaultControllerIfHasAction($this->defaultControllerNotFoundActionName);if($defaultCtrlFullName){$this->request->Params=array_merge($this->request->Params,array('code'=>404,'message'=>$exceptionMessage,'controller'=>\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerName),'action'=>\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerNotFoundActionName),));$this->DispatchControllerAction($defaultCtrlFullName,$this->defaultControllerNotFoundActionName."Action",'',function(\Exception&$e){\MvcCore\Debug::Log($e,\MvcCore\Debug::EXCEPTION);$this->RenderError404PlainText();});}else{$this->RenderError404PlainText();}}public function RenderError500PlainText($text=''){if(!$text)$text='Internal Server Error.';$this->response=(new\MvcCore\Response(\MvcCore\Response::INTERNAL_SERVER_ERROR,array('Content-Type'=>'text/plain'),"Error 500:".PHP_EOL.PHP_EOL.$text));}public function RenderError404PlainText(){$this->response=(new\MvcCore\Response(\MvcCore\Response::NOT_FOUND,array('Content-Type'=>'text/plain'),'Error 404 â€“ Page Not Found.'));}public function GetDefaultControllerIfHasAction($actionName){$defaultControllerName=$this->CompleteControllerName($this->defaultControllerName);if(class_exists($defaultControllerName)&&method_exists($defaultControllerName,$actionName.'Action')){return$defaultControllerName;}return'';}public function CompleteControllerName($controllerNamePascalCase){$firstChar=substr($controllerNamePascalCase,0,1);if($firstChar=='\\')return$controllerNamePascalCase;return implode('\\',array($this->appDir,$this->controllersDir,$controllerNamePascalCase));}public function IsErrorDispatched(){$defaultCtrlName=\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerName);$errorActionName=\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerErrorActionName);$params=$this->request->Params;return$params['controller']==$defaultCtrlName&&$params['action']==$errorActionName;}public function IsNotFoundDispatched(){$defaultCtrlName=\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerName);$errorActionName=\MvcCore\Tool::GetDashedFromPascalCase($this->defaultControllerNotFoundActionName);$params=$this->request->Params;return$params['controller']==$defaultCtrlName&&$params['action']==$errorActionName;}public function IsAppRequest(){$params=$this->request->Params;$ctrlName=isset($params['controller'])?$params['controller']:'';if($ctrlName!='controller')return true;$actionName=isset($params['action'])?$params['action']:'';return$actionName!='asset';}}\MvcCore::StaticInit();
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once('IRoute.php');
+
+/**
+ * Responsibility - singleton, instancing all core classes and handling request.
+ * - Global store and managing singleton application instance.
+ * - Main application objects container (request, response, controller, etc.).
+ * - MvcCore compile mode managing (single file mode, php, phar, or no package).
+ * - Global store for all main core class names, to use them as modules,
+ *   to be changed any time (request class, response class, debug class, etc.).
+ * - Processing application run (`\MvcCore\Application::Run();`):
+ *   - Completing request and response.
+ *   - Calling pre/post handlers.
+ *   - Controller/action dispatching.
+ *   - Error handling and error responses.
+ */
+interface IApplication
+{
+	/***********************************************************************************
+	 *                       `\MvcCore\Application` - Constants                        *
+	 ***********************************************************************************/
+
+	/**
+	 * MvcCore - version:
+	 * Comparation by PHP function `version_compare();`.
+	 * @see http://php.net/manual/en/function.version-compare.php
+	 */
+	const VERSION = '5.0.0-alpha';
+	/**
+	 * MvcCore application mode describing that the application is compiled in <b>ONE BIG PHP FILE</b>.
+	 * In PHP app mode should be packed php files or any asset files - phtml templates, ini files
+	 * or any static files. Unknown asset files or binary files are included as binary or base64 string.
+	 * This mode has always best speed, because it shoud not work with hard drive if you don't want to.
+	 * Only with many or with large asset files, there may be greater demands on memory and processor,
+	 * which shouldn't be good for your application. Be aware to do that, if you have low memory limits.
+	 * Result application packed in PHP mode has special `\Packager_Php_Wrapper` class included
+	 * before any application content. This special class handles allowed file operations and assets
+	 * as binary or base64 encoded. Everything shoud be configured before PHP packing.
+	 * This mode has always four submodes started with PHP substring. All PHP package modes are:
+	 * - `\Packager_Php_Wrapper::PHP_PRESERVE_HDD`
+	 * - `\Packager_Php_Wrapper::PHP_PRESERVE_PACKAGE`
+	 * - `\Packager_Php_Wrapper::PHP_STRICT_HDD`
+	 * - `\Packager_Php_Wrapper::PHP_STRICT_PACKAGE`
+	 * So to check if app is in PHP package mode - check it by `substr();`.
+	 * @var string
+	 */
+	const COMPILED_PHP = 'PHP';
+
+	/**
+	 * MvcCore application mode describing that the application is compiled in <b>ONE BIG PHAR FILE</b>.
+	 * There could be any content included. But in this mode, there is no speed advantages, but it's
+	 * still good way to pack your app into single file tool for any web-hosting needs:-)
+	 * This mode has always lower speed then `PHP` mode above, because it fully emulates hard drive
+	 * for content of this file and it costs a time. But it has lower memory usage then `PHP` mode above.
+	 * @see http://php.net/manual/en/phar.creating.php
+	 * @var string
+	 */
+	const COMPILED_PHAR = 'PHAR';
+
+	/**
+	 * MvcCore application mode describing that the application is in <b>THE STATE BEFORE
+	 * THEIR OWN COMPILATION INTO `PHP` OR `PHAR`</b> archive. This mode is always used to generate final
+	 * javascript and css files into teporary directory to pack them later into result php/phar file.
+	 * Shortcut `SFU` means "Single File Url". Application running in this mode has to generate
+	 * single file urls in form: "index.php?..." and everithing has to work properly before
+	 * application will be compiled into PHP/PHAR package. Use this mode in index.php before
+	 * application compilation to generate and test everything necessary before app compilation by:
+	 * `\MvcCore\Application::GetInstance()->Run(TRUE);`
+	 * - `TRUE` means to switch application into temporary into SFU mode.
+	 * @var string
+	 */
+	const COMPILED_SFU = 'SFU';
+
+	/**
+	 * MvcCore application mode describing that the application is running as <b>STANDARD PHP PROJECT</b>
+	 * with many files on hard drive, using autoloading or anything else. It's also standard development mode.
+	 * @var string
+	 */
+	const NOT_COMPILED = '';
+
+
+	/***********************************************************************************
+	 *                      `\MvcCore\Application` - Static Calls                      *
+	 ***********************************************************************************/
+
+	/**
+	 * Returns singleton `\MvcCore\Application` instance as reference.
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public static function & GetInstance ();
+
+
+	/***********************************************************************************
+	 *                        `\MvcCore\Application` - Getters                         *
+	 ***********************************************************************************/
+
+	/**
+	 * Get if application is running as standard php project or as single file application.
+	 * It shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * @var string
+	 */
+	public function GetCompiled ();
+
+
+	/**
+	 * Get application config class implementing `\MvcCore\Interfaces\IConfig`.
+	 * Class to load and parse (system) config(s) and manage environment string.
+	 * @return string
+	 */
+	public function GetConfigClass ();
+
+	/**
+	 * Get application config class implementing `\MvcCore\Interfaces\IController`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * @return string
+	 */
+	public function GetControllerClass ();
+
+	/**
+	 * Get application debug class implementing `\MvcCore\Interfaces\IDebug`.
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * @return string
+	 */
+	public function GetDebugClass ();
+
+	/**
+	 * Get application request class implementing `\MvcCore\Interfaces\IRequest`.
+	 * Class to create describing HTTP request object.
+	 * @return string
+	 */
+	public function GetRequestClass ();
+
+	/**
+	 * Get application response class implementing `\MvcCore\Interfaces\IResponse`.
+	 * Class to create HTTP response object to store response headers and response content.
+	 * @return string
+	 */
+	public function GetResponseClass ();
+
+	/**
+	 * Get application route class implementing `\MvcCore\Interfaces\IRoute`.
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * @return string
+	 */
+	public function GetRouteClass ();
+
+	/**
+	 * Get application router class implementing `\MvcCore\Interfaces\IRouter`.
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * @return string
+	 */
+	public function GetRouterClass ();
+
+	/**
+	 * Get application session class implementing `\MvcCore\Interfaces\ISession`.
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * @return string
+	 */
+	public function GetSessionClass ();
+
+	/**
+	 * Get application tool class implementing `\MvcCore\Interfaces\ITool`.
+	 * Class to handle helper calls from MvcCore core modules.
+	 * @return string
+	 */
+	public function GetToolClass ();
+
+	/**
+	 * Get application view class implementing `\MvcCore\Interfaces\IView`.
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * @return string
+	 */
+	public function GetViewClass ();
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::$router;`.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & GetRouter ();
+
+	/**
+	 * Returns currently dispatched instance of protected `\MvcCore\Application::$controller;`.
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & GetController ();
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::$request;`.
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & GetRequest ();
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::response;`.
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & GetResponse ();
+
+	/**
+	 * Get application scripts and views directory name as `"App"` by default,
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetAppDir ();
+
+	/**
+	 * Get controllers directory name as `"Controllers"` by default, for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetControllersDir ();
+
+	/**
+	 * Get views directory name as `"views"` by default, for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetViewsDir ();
+
+	/**
+	 * Returns array with:
+	 * - `0 => "index"` - Default controller name, from protected `\MvcCore\Application::$defaultControllerName`.
+	 * - `1 => "index"` - Default action name, from protected `\MvcCore\Application::$defaultControllerDefaultActionName`.
+	 * @return string[]
+	 */
+	public function GetDefaultControllerAndActionNames ();
+
+
+	/***********************************************************************************
+	 *                        `\MvcCore\Application` - Setters                         *
+	 ***********************************************************************************/
+
+	/**
+	 * Set if application is running as standard php project or as single file application.
+	 * First param `$compiled` shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * Core configuration method.
+	 * @param string $compiled
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetCompiled ($compiled = '');
+
+
+	/**
+	 * Set application config class implementing `\MvcCore\Interfaces\IConfig`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * Core configuration method.
+	 * @param string $configClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetConfigClass ($configClass);
+
+	/**
+	 * Set application controller class implementing `\MvcCore\Interfaces\IController`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * Core configuration method.
+	 * @param string $controllerClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetControllerClass ($controllerClass);
+
+	/**
+	 * Set application debug class implementing `\MvcCore\Interfaces\IDebug`.
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * Core configuration method.
+	 * @param string $debugClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetDebugClass ($debugClass);
+
+	/**
+	 * Set application request class implementing `\MvcCore\Interfaces\IRequest`.
+	 * Class to create describing HTTP request object.
+	 * Core configuration method.
+	 * @param string $requestClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetRequestClass ($requestClass);
+
+	/**
+	 * Set application response class implementing `\MvcCore\Interfaces\IResponse`.
+	 * Class to create HTTP response object to store response headers and response content.
+	 * Core configuration method.
+	 * @param string $responseClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetResponseClass ($responseClass);
+
+	/**
+	 * Set application route class implementing `\MvcCore\Interfaces\IRoute`.
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * Core configuration method.
+	 * @param string $routerClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetRouteClass ($routerClass);
+
+	/**
+	 * Set application router class implementing `\MvcCore\Interfaces\IRouter`.
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * Core configuration method.
+	 * @param string $routerClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetRouterClass ($routerClass);
+
+	/**
+	 * Set application session class implementing `\MvcCore\Interfaces\ISession`.
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * Core configuration method.
+	 * @param string $sessionClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetSessionClass ($sessionClass);
+
+	/**
+	 * Set application tool class implementing `\MvcCore\Interfaces\ITool`.
+	 * Class to handle helper calls from MvcCore core modules.
+	 * Core configuration method.
+	 * @param string $toolClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetToolClass ($toolClass);
+
+	/**
+	 * Set application view class implementing `\MvcCore\Interfaces\IView`.
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * Core configuration method.
+	 * @param string $viewClass
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetViewClass ($viewClass);
+
+
+	/**
+	 * Set application scripts and views directory name (`"App"` by default),
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $appDir
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetAppDir ($appDir);
+
+	/**
+	 * Set controllers directory name (`"Controllers"` by default), for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $controllersDir
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetControllersDir ($controllersDir);
+
+	/**
+	 * Set views directory name (`"views"` by default), for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $viewsDir
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetViewsDir ($viewsDir);
+
+	/**
+	 * Set default controller name. `"Index"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerName
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetDefaultControllerName ($defaultControllerName);
+
+	/**
+	 * Set default controller default action name. `"Index"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultActionName
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetDefaultControllerDefaultActionName ($defaultActionName);
+
+	/**
+	 * Set default controller common error action name. `"Error"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerErrorActionName
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetDefaultControllerErrorActionName ($defaultControllerErrorActionName);
+
+	/**
+	 * Set default controller not found error action name. `"Not Found"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerNotFoundActionName
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & SetDefaultControllerNotFoundActionName ($defaultControllerNotFoundActionName);
+
+	/**
+	 * Add pre route handler into pre route handlers queue to process them after
+	 * every request has been completed into `\MvcCore\Request` describing object and before
+	 * every request will be routed by `\MvcCore\Router::Route();` call.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreRouteHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & AddPreRouteHandler (callable $handler, $priorityIndex = NULL);
+
+	/**
+	 * Add pre dispatch handler into pre dispatch handlers queue to process them after
+	 * every request has been routed by `\MvcCore\Router::Route();` call and before
+	 * every request will be dispatched by `\MvcCore\Controller::Dispatch();`, which triggers
+	 * methods `\MvcCore\Controller::Init();`, `\MvcCore\Controller::PreDispatch();` etc.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & AddPreDispatchHandler (callable $handler, $priorityIndex = NULL);
+
+	/**
+	 * Add post dispatch handler into post dispatch handlers queue to process them
+	 * before every request is terminated by `\MvcCore\Application::Terminate();`.
+	 * Every request terminated sooner has executed this post dispatch handlers queue.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPostDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function & AddPostDispatchHandler (callable $handler, $priorityIndex = NULL);
+
+
+	/***********************************************************************************
+	 *                   `\MvcCore\Application` - Normal Dispatching                   *
+	 ***********************************************************************************/
+
+	/**
+	 * Run application.
+	 * - 1. Complete and init:
+	 *      - `\MvcCore\Application::$compiled` flag.
+	 *      - Complete describing request object `\MvcCore\Request`.
+	 *      - Complete response storage object `\MvcCore\Response`.
+	 *      - Init debugging and logging by `\MvcCore\Debug::Init();`.
+	 * - 2. (Process pre-route handlers queue.)
+	 * - 3. Route request by your router or with `\MvcCore\Router::Route()` by default.
+	 * - 4. (Process pre-dispatch handlers queue.)
+	 * - 5. Dispatch controller lifecycle:
+	 *  	- Create and set up controller.
+	 *  	- Call `\MvcCore\Controller::Init()` and `\MvcCore\Controller::PreDispatch()`.
+	 *      - Call routed action method.
+	 *      - Call `\MvcCore\Controller::Render()` to render all views.
+	 * - 6. Terminate request:
+	 *      - (Process post-dispatch handlers queue.)
+	 *      - Write session in `register_shutdown_function()` handler.
+	 *      - Send response headers if possible and echo response body.
+	 * @param bool $singleFileUrl Set 'Single File Url' mode to `TRUE` to compile and test
+	 *                            all assets and everything before compilation processing.
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function Run ($singleFileUrl = FALSE);
+
+	/**
+	 * Starts a session, standardly called from `\MvcCore\Controller::Init();`.
+	 * But is shoud be called anytime sooner, for example in any pre request handler
+	 * to redesign request before MVC dispatching or anywhere else.
+	 * @return void
+	 */
+	public function SessionStart ();
+
+	/**
+	 * Route request by router obtained by default by calling:
+	 * `\MvcCore\Router::GetInstance();`.
+	 * Store requested route inside configured
+	 * router class to get it later by calling:
+	 * `\MvcCore\Router::GetCurrentRoute();`
+	 * @return bool
+	 */
+	public function RouteRequest ();
+
+	/**
+	 * Process pre-route, pre-request or post-dispatch
+	 * handlers queue by queue index. Call every handler in queue
+	 * in try catch mode to catch any exceptions to call:
+	 * `\MvcCore\Application::DispatchException($e);`.
+	 * @param callable[] $handlers
+	 * @return bool
+	 */
+	public function ProcessCustomHandlers (& $handlers = array());
+
+	/**
+	 * If controller class exists - try to dispatch controller,
+	 * if only view file exists - try to render targeted view file
+	 * with configured core controller instance (`\MvcCore\Controller` by default).
+	 * @param \MvcCore\Interfaces\IRoute &$route
+	 * @return bool
+	 */
+	public function DispatchRequestByRoute (\MvcCore\Interfaces\IRoute & $route = NULL);
+
+	/**
+	 * Dispatch controller by:
+	 * - By full class name and by action name
+	 * - Or by view script full path
+	 * Call exception callback if there is catched any
+	 * exception in controller lifecycle dispatching process
+	 * with first argument as catched exception.
+	 * @param string $ctrlClassFullName
+	 * @param string $actionName
+	 * @param string $viewScriptFullPath
+	 * @param callable $exceptionCallback
+	 * @return bool
+	 */
+	public function DispatchControllerAction (
+		$controllerClassFullName,
+		$actionName,
+		$viewScriptFullPath,
+		callable $exceptionCallback
+	);
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
+
+	/**
+	 * Terminate request.
+	 * The only place in application where is called `echo '....'` without output buffering.
+	 * - Process post-dispatch handlers queue.
+	 * - Write session throught registered handler into `register_shutdown_function()`.
+	 * - Send HTTP headers (if still possible).
+	 * - Echo response body.
+	 * This method is always called INTERNALLY after controller
+	 * lifecycle has been dispatched. But you can use it any
+	 * time sooner for custom purposes.
+	 * @return \MvcCore\Interfaces\IApplication
+	 */
+	public function Terminate ();
+
+
+	/***********************************************************************************
+	 *               `\MvcCore\Application` - Request Error Dispatching                *
+	 ***********************************************************************************/
+
+	/**
+	 * Dispatch catched exception:
+	 *	- If request is processing PHP package packing to determinate current script dependencies:
+	 *		- Do not log or render nothing.
+	 *	- If request is production mode:
+	 *		- Print exception in browser.
+	 *	- If request is not in development mode:
+	 *		- Log error and try to render error page by configured controller and error action:,
+	 *		  `\App\Controllers\Index::Error();` by default.
+	 * @param \Exception|string $exceptionOrMessage
+	 * @param int|NULL $code
+	 * @return bool
+	 */
+	public function DispatchException ($exceptionOrMessage, $code = NULL);
+
+	/**
+	 * Render error by configured default controller and error action,
+	 * `\App\Controllers\Index::Error();` by default.
+	 * If there is no controller/action like that or any other exception happends,
+	 * it's processed very simple plain text response with 500 http code.
+	 * @param \Exception $e
+	 * @return bool
+	 */
+	public function RenderError (\Exception $e);
+
+	/**
+	 * Render error by configured default controller and not found error action,
+	 * `\App\Controllers\Index::NotFound();` by default.
+	 * If there is no controller/action like that or any other exception happends,
+	 * it's processed very simple plain text response with 404 http code.
+	 * @param \Exception $e
+	 * @return bool
+	 */
+	public function RenderNotFound ($exceptionMessage = '');
+
+	/**
+	 * Prepare very simple response with internal server error (500)
+	 * as plain text response into `\MvcCore\Appication::$response`.
+	 * @param string $text
+	 * @return bool
+	 */
+	public function RenderError500PlainText ($text = '');
+
+	/**
+	 * Prepare very simple response with not found error (404)
+	 * as plain text response into `\MvcCore\Appication::$response`.
+	 * @param string $text
+	 * @return bool
+	 */
+	public function RenderError404PlainText ();
+
+
+	/***********************************************************************************
+	 *                     `\MvcCore\Application` - Helper Methods                     *
+	 ***********************************************************************************/
+
+	/**
+	 * Check if default application controller (`\App\Controllers\Index` by default) has specific action.
+	 * If default controller has specific action - return default controller full name, else empty string.
+	 * @param string $actionName
+	 * @return string
+	 */
+	public function GetDefaultControllerIfHasAction ($actionName);
+
+	/**
+	 * Complete standard MvcCore application controller full name in form:
+	 * `\App\Controllers\<$controllerNamePascalCase>`.
+	 * @param string $controllerNamePascalCase
+	 * @return string
+	 */
+	public function CompleteControllerName ($controllerNamePascalCase);
+
+	/**
+	 * Return `TRUE` if current request is default controller error action dispatching process.
+	 * @return bool
+	 */
+	public function IsErrorDispatched ();
+
+	/**
+	 * Return `TRUE` if current request is default controller not found error action dispatching process.
+	 * @return bool
+	 */
+	public function IsNotFoundDispatched ();
 }
-namespace MvcCore{class Controller{/** @var \MvcCore\Request */protected$request;/** @var \MvcCore\Response */protected$response;/** @var string */protected$controller='';/** @var string */protected$action='';/** @var boolean */protected$ajax=FALSE;/** @var \MvcCore\View */protected$view=NULL;/** @var string */protected$layout='layout';/** @var boolean */protected$viewEnabled=TRUE;/** @var string */protected static$staticPath='/static';/** @var string */protected static$tmpPath='/Var/Tmp';/** @var string */private static$_assetsMimeTypes=array('js'=>'text/javascript','css'=>'text/css','ico'=>'image/x-icon','gif'=>'image/gif','png'=>'image/png','jpg'=>'image/jpg','jpeg'=>'image/jpeg','bmp'=>'image/bmp','svg'=>'image/svg+xml','eot'=>'application/vnd.ms-fontobject','ttf'=>'font/truetype','otf'=>'font/opentype','woff'=>'application/x-font-woff',);public function __construct(\MvcCore\Request&$request=NULL,\MvcCore\Response&$response=NULL){$this->request=&$request;$this->controller=$request->Params['controller'];$this->action=$request->Params['action'];if($this->controller=='controller'&&$this->action=='asset'){$this->DisableView();return;}$this->response=&$response;if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])&&strtolower($_SERVER['HTTP_X_REQUESTED_WITH'])=='xmlhttprequest'){$this->ajax=TRUE;$this->DisableView();}}public function Init(){\MvcCore::SessionStart();}public function PreDispatch(){if($this->viewEnabled){$viewClass=\MvcCore::GetInstance()->GetViewClass();$this->view=new$viewClass($this);}}public function GetParam($name="",$pregReplaceAllowedChars="a-zA-Z0-9_/\-\.\@"){return$this->request->GetParam($name,$pregReplaceAllowedChars);}public function&GetRequest(){return$this->request;}public function SetRequest(\MvcCore\Request&$request){$this->request=$request;return$this;}public function&GetView(){return$this->view;}public function SetView(\MvcCore\View&$view){$this->view=$view;return$this;}public function GetLayout(){return$this->layout;}public function SetLayout($layout=''){$this->layout=$layout;return$this;}public function DisableView(){$this->viewEnabled=FALSE;}public function AssetAction(){$ext='';$path=$this->GetParam('path');$path='/'.ltrim(str_replace('..','',$path),'/');if(strpos($path,self::$staticPath)!==0&&strpos($path,self::$tmpPath)!==0){throw new\Exception("[".__CLASS__."] File path: '$path' is not allowed.",500);}$path=$this->request->AppRoot.$path;if(!\Packager_Php_Wrapper::FileExists($path)){throw new\Exception("[".__CLASS__."] File not found: '$path'.",404);}$lastDotPos=strrpos($path,'.');if($lastDotPos!==FALSE){$ext=substr($path,$lastDotPos+1);}if(isset(self::$_assetsMimeTypes[$ext])){header('Content-Type: '.self::$_assetsMimeTypes[$ext]);}header_remove('X-Powered-By');header('Vary: Accept-Encoding');$assetMTime=@\Packager_Php_Wrapper::Filemtime($path);if($assetMTime)header('Last-Modified: '.gmdate('D, d M Y H:i:s T',$assetMTime));\Packager_Php_Wrapper::Readfile($path);exit;}public function Render($controllerName='',$actionName=''){if($this->viewEnabled){if(!$controllerName)$controllerName=$this->request->params['controller'];if(!$actionName)$actionName=$this->request->params['action'];$controllerPath=str_replace(array('_','\\'),'/',$controllerName);$viewScriptPath=implode('/',array($controllerPath,$actionName));$actionResult=$this->view->RenderScript($viewScriptPath);$viewClass=\MvcCore::GetInstance()->GetViewClass();/** @var $layout \MvcCore\View */$layout=new$viewClass($this);$layout->SetUp($this->view);$outputResult=$layout->RenderLayoutAndContent($this->layout,$actionResult);unset($layout,$this->view);$this->HtmlResponse($outputResult);$this->DisableView();}}public function HtmlResponse($output=""){$contentTypeHeaderValue=strpos(\MvcCore\View::$Doctype,\MvcCore\View::DOCTYPE_XHTML)!==FALSE?'application/xhtml+xml':'text/html';$this->response->SetHeader('Content-Type',$contentTypeHeaderValue.'; charset=utf-8')->SetBody($output);}public function JsonResponse($data=array()){$output=\MvcCore\Tool::EncodeJson($data);$this->response->SetHeader('Content-Type','text/javascript; charset=utf-8')->SetHeader('Content-Length',strlen($output))->SetBody($output);}public function Url($controllerActionOrRouteName='Index:Index',$params=array()){return\MvcCore\Router::GetInstance()->Url($controllerActionOrRouteName,$params);}public function AssetUrl($path=''){return\MvcCore::GetInstance()->Url('Controller:Asset',array('path'=>$path));}public function RenderError($exceptionMessage=''){if(\MvcCore::GetInstance()->IsErrorDispatched())return;throw new\ErrorException($exceptionMessage?$exceptionMessage:"Server error: \n'".$this->request->FullUrl."'",500);}public function RenderNotFound(){if(\MvcCore::GetInstance()->IsNotFoundDispatched())return;throw new\ErrorException("Page not found: \n'".$this->request->FullUrl."'",404);}public function Terminate(){\MvcCore::GetInstance()->Terminate();}public static function Redirect($location='',$code=\MvcCore\Response::SEE_OTHER){\MvcCore::GetInstance()->GetResponse()->SetCode($code)->SetHeader('Location',$location);\MvcCore::GetInstance()->Terminate();}}}
-namespace MvcCore{class View{/** @var string */const DOCTYPE_HTML4='HTML4';/** @var string */const DOCTYPE_XHTML='XHTML';/** @var string */const DOCTYPE_HTML5='HTML5';/** @var string */const EXTENSION='.phtml';/** @var string */public static$Doctype=self::DOCTYPE_HTML5;/** @var string */public static$ScriptsDir='Scripts';/** @var string */public static$HelpersDir='Helpers';/** @var string */public static$LayoutsDir='Layouts';/** @var array */public static$HelpersClassBases=array();/** @var \MvcCore\Controller|mixed */public$Controller;/** @var string */private$_content='';/** @var array */private$_renderedFullPaths=array();/** @var string */protected static$originalyDeclaredProperties=array('Controller'=>1,'_content'=>1,'_renderedFullPaths'=>1,);/** @var array */private static$_helpers=array();public static function StaticInit(){$app=\MvcCore::GetInstance();static::$HelpersClassBases=array('\MvcCore\Ext\View\Helpers\\','\\'.implode('\\',array($app->GetAppDir(),$app->GetViewsDir(),static::$HelpersDir)).'\\',);}public static function AddHelpersClassBases(){$args=func_get_args();foreach($args as$arg){static::$HelpersClassBases[]='\\'.trim($arg,'\\').'\\';}}public static function GetViewScriptFullPath($typePath='',$corectedRelativePath=''){$app=\MvcCore::GetInstance();return implode('/',array($app->GetRequest()->AppRoot,$app->GetAppDir(),$app->GetViewsDir(),$typePath,$corectedRelativePath.\MvcCore\View::EXTENSION));}public function __construct(\MvcCore\Controller&$controller){$this->Controller=$controller;}public function SetUp(&$paramsInstance){$params=get_object_vars($paramsInstance);foreach($params as$key=>$value){if(isset(static::$originalyDeclaredProperties[$key]))continue;$this->$key=$value;}}public function GetContent(){return$this->_content;}public function GetController(){return$this->Controller;}public function RenderScript($relativePath=''){return$this->Render(static::$ScriptsDir,$relativePath);}public function RenderLayout($relativePath=''){return$this->Render(static::$LayoutsDir,$relativePath);}public function RenderLayoutAndContent($relativePath='',$content=''){$this->_content=$content;return$this->Render(static::$LayoutsDir,$relativePath);}public function Render($typePath='',$relativePath=''){if(!$typePath)$typePath=self::$ScriptsDir;$result='';$relativePath=$this->_correctRelativePath($this->Controller->GetRequest()->AppRoot,$typePath,$relativePath);$viewScriptFullPath=static::GetViewScriptFullPath($typePath,$relativePath);if(!\Packager_Php_Wrapper::FileExists($viewScriptFullPath)){throw new\Exception('['.__CLASS__."] Template not found in path: '$viewScriptFullPath'.");}$this->_renderedFullPaths[]=$viewScriptFullPath;ob_start();\Packager_Php_Wrapper::IncludeStandard(($viewScriptFullPath),$this);$result=ob_get_clean();array_pop($this->_renderedFullPaths);return$result;}public function Evaluate($content=''){ob_start();try{eval(' ?'.'>'.$content.'<'.'?php ');}catch(Exception$e){throw$e;}return ob_get_clean();}public function Url($controllerActionOrRouteName='Index:Index',$params=array()){return\MvcCore\Router::GetInstance()->Url($controllerActionOrRouteName,$params);}public function AssetUrl($path=''){return$this->Controller->AssetUrl($path);}public function __set($name,$value){if(isset(static::$originalyDeclaredProperties[$name])){throw new\Exception('['.__CLASS__."] It's not possible to change property: '$name' originaly declared in class ".__CLASS__.'.');}$this->$name=$value;}public function __call($method,$arguments){$result='';foreach(static::$HelpersClassBases as$helperClassBase){$className=$helperClassBase.ucfirst($method);if(class_exists($className)){if(isset(self::$_helpers[$method])&&get_class(self::$_helpers[$method])==$className){$instance=self::$_helpers[$method];$result=call_user_func_array(array($instance,$method),$arguments);}else{$instance=new$className($this);$result=call_user_func_array(array($instance,$method),$arguments);}break;}}return$result;}private function _correctRelativePath($appRoot,$typePath,$relativePath){$result=str_replace('\\','/',$relativePath);if(substr($relativePath,0,2)=='./'){$app=\MvcCore::GetInstance();$typedViewDirFullPath=implode('/',array($appRoot,$app->GetAppDir(),$app->GetViewsDir(),$typePath));$lastRenderedFullPath=$this->_renderedFullPaths[count($this->_renderedFullPaths)-1];$renderedRelPath=substr($lastRenderedFullPath,strlen($typedViewDirFullPath));$renderedRelPathLastSlashPos=strrpos($renderedRelPath,'/');if($renderedRelPathLastSlashPos!==FALSE){$result=substr($renderedRelPath,0,$renderedRelPathLastSlashPos+1).substr($relativePath,2);$result=ltrim($result,'/');}}return$result;}}View::StaticInit();}
-namespace MvcCore\Ext\Form{class Hidden extends Core\Field{public$Type='hidden';public$Validators=array('SafeString');}}
-namespace MvcCore\Ext{class Form extends Form\Core\Configuration{const VERSION='4.0.0';public function __construct(&$controller){$this->Controller=$controller;$baseLibPath=str_replace('\\','/',str_replace('\\','/',__DIR__).'/vendor/mvccore/ext-form/src/MvcCore/Ext'.'/Form');if(!$this->jsAssetsRootDir)$this->jsAssetsRootDir=$baseLibPath;if(!$this->cssAssetsRootDir)$this->cssAssetsRootDir=$baseLibPath;}public function __toString(){return$this->Render();}public function AddError($errorMsg,$fieldName=''){$errorMsgUtf8=iconv(mb_detect_encoding($errorMsg,mb_detect_order(),true),"UTF-8",$errorMsg);$newErrorRec=array(strip_tags($errorMsgUtf8));if($fieldName)$newErrorRec[]=$fieldName;$this->Errors[]=$newErrorRec;if($fieldName&&isset($this->Fields[$fieldName])){$this->Fields[$fieldName]->AddError($errorMsgUtf8);}$this->Result=Form::RESULT_ERRORS;return$this;}public function AddField(\MvcCore\Ext\Form\Core\Field$field){if(!$this->initialized)$this->Init();$field->OnAdded($this);$this->Fields[$field->Name]=$field;return$this;}public function AddFields(){if(!$this->initialized)$this->Init();$fields=func_get_args();foreach($fields as&$field){$this->AddField($field);}return$this;}public function UnsetEmptyData(){$dataKeys=array_keys($this->Data);for($i=0,$l=count($dataKeys);$i<$l;$i+=1){$dataKey=$dataKeys[$i];$dataValue=$this->Data[$dataKey];$dataValueType=gettype($dataValue);if($dataValueType=='array'){if(!$dataValue)unset($this->Data[$dataKey]);}else{if($dataValue==='')unset($this->Data[$dataKey]);}}return$this;}public function ClearSession(){$this->Data=array();Form\Core\Helpers::SetSessionData($this->Id,array());Form\Core\Helpers::SetSessionCsrf($this->Id,array());Form\Core\Helpers::SetSessionErrors($this->Id,array());}public function GetCsrf(){list($name,$value)=Form\Core\Helpers::GetSessionCsrf($this->Id);return(object)array('name'=>$name,'value'=>$value);}public function&GetField($fieldName=''){$result=NULL;if(isset($this->Fields[$fieldName]))$result=$this->Fields[$fieldName];return$result;}public function&GetFieldsByType($fieldType=''){$result=array();foreach($this->Fields as&$field){if($field->Type==$fieldType)$result[$field->Name]=$field;}return$result;}public function&GetFieldsByClass($fieldClassName='',$directTypesOnly=FALSE){$result=array();foreach($this->Fields as&$field){if(is_a($field,$fieldClassName)){if($directTypesOnly){if(is_subclass_of($field,$fieldClassName))continue;}$result[$field->Name]=$field;}}return$result;}public function&GetFirstFieldsByClass($fieldClassName='',$directTypesOnly=FALSE){$result=NULL;foreach($this->Fields as&$field){if(is_a($field,$fieldClassName)){if($directTypesOnly){if(is_subclass_of($field,$fieldClassName))continue;}$result=$field;break;}}return$result;}public function Init(){if($this->initialized)return$this;$this->initialized=1;if(!$this->Id){$clsName=get_class($this);throw new Form\Core\Exception("No form 'Id' property defined in: '$clsName'.");}if((is_null($this->Translate)||$this->Translate===TRUE)&&!is_null($this->Translator)){$this->Translate=TRUE;}else{$this->Translate=FALSE;}return$this;}public function Prepare(){if(!$this->initialized)$this->Init();if($this->initialized<2)$this->prepareRenderIfNecessary();}public function RedirectAfterSubmit(){if(!$this->initialized)$this->Init();$url="";if($this->Result===Form::RESULT_ERRORS){$url=$this->ErrorUrl;}else if($this->Result===Form::RESULT_SUCCESS){$url=$this->SuccessUrl;$this->Data=array();}else if($this->Result===Form::RESULT_NEXT_PAGE){$url=$this->NextStepUrl;$this->Data=array();}Form\Core\Helpers::SetSessionErrors($this->Id,$this->Errors);Form\Core\Helpers::SetSessionData($this->Id,$this->Data);$ctrl=$this->Controller;$ctrl::Redirect($url,303);}public function RemoveField($fieldName=''){if(!$this->initialized)$this->Init();if(isset($this->Fields[$fieldName]))unset($this->Fields[$fieldName]);return$this;}public function Render(){$this->prepareRenderIfNecessary();if($this->TemplatePath){$result=$this->View->RenderTemplate();}else{$result=$this->View->RenderNaturally();}$this->cleanUpRenderIfNecessary();return$result;}public function RenderContent(){$this->prepareRenderIfNecessary();return$this->View->RenderContent();}public function RenderErrors(){$this->prepareRenderIfNecessary();return$this->View->RenderErrors();}public function RenderBegin(){$this->prepareRenderIfNecessary();return$this->View->RenderBegin();}public function RenderEnd(){if(!$this->initialized)$this->Init();$result=$this->View->RenderEnd();$this->cleanUpRenderIfNecessary();return$result;}public function RenderCss(){if(!$this->Css)return'';$cssFiles=$this->completeAssets('css');$cssFilesContent='';$loadCssFilesContents=!is_callable($this->CssRenderer);foreach($cssFiles as$cssFile){$this->renderAssetFile($cssFilesContent,$this->CssRenderer,$loadCssFilesContents,$cssFile);}if(!$loadCssFilesContents)return'';return'<style type="text/css">'.$cssFilesContent.'</style>';}public function RenderJs(){if(!$this->Js)return'';$jsFiles=$this->completeAssets('js');$jsFilesContent='';$fieldsConstructors=array();$loadJsFilesContents=!is_callable($this->JsRenderer);if(!isset(self::$js[$this->JsBaseFile])){$this->JsBaseFile=$this->absolutizeAssetPath($this->JsBaseFile,'js');self::$js[$this->JsBaseFile]=TRUE;$this->renderAssetFile($jsFilesContent,$this->JsRenderer,$loadJsFilesContents,$this->JsBaseFile);}foreach($jsFiles as$jsFile){$this->renderAssetFile($jsFilesContent,$this->JsRenderer,$loadJsFilesContents,$jsFile);}foreach($this->Js as$item){$paramsStr=json_encode($item[2]);$paramsStr=mb_substr($paramsStr,1,mb_strlen($paramsStr)-2);$fieldsConstructors[]="new ".$item[1]."(".$paramsStr.")";}$result=$jsFilesContent."new MvcCoreForm("."document.getElementById('".$this->Id."'),"."[".implode(',',$fieldsConstructors)."]".")";if(class_exists('\MvcCore\View')&&strpos(\MvcCore\View::$Doctype,'XHTML')!==FALSE){$result='/* <![CDATA[ */'.$result.'/* ]]> */';}return'<script type="text/javascript">'.$result.'</script>';}public function SetUpCsrf(){$requestPath=$this->getRequestPath();$randomHash=bin2hex(openssl_random_pseudo_bytes(32));$nowTime=(string)time();$name='____'.sha1($this->Id.$requestPath.'name'.$nowTime.$randomHash);$value=sha1($this->Id.$requestPath.'value'.$nowTime.$randomHash);Form\Core\Helpers::SetSessionCsrf($this->Id,array($name,$value));return array($name,$value);}public function Submit($rawParams=array()){if(!$this->initialized)$this->Init();Form\Core\Helpers::ValidateMaxPostSizeIfNecessary($this);if(!$rawParams)$rawParams=$this->Controller->GetRequest()->Params;$this->ValidateCsrf($rawParams);$this->submitFields($rawParams);return array($this->Result,$this->Data,$this->Errors,);}public function ValidateCsrf($rawRequestParams=array()){$result=FALSE;$sessionCsrf=Form\Core\Helpers::GetSessionCsrf($this->Id);list($name,$value)=$sessionCsrf?$sessionCsrf:array(NULL,NULL);if(!is_null($name)&&!is_null($value)){if(isset($rawRequestParams[$name])&&$rawRequestParams[$name]===$value){$result=TRUE;}}if(!$result){$errorMsg=Form::$DefaultMessages[Form::CSRF];if($this->Translate){$errorMsg=call_user_func($this->Translator,$errorMsg);}$this->AddError($errorMsg);foreach(static::$csrfErrorHandlers as$handler){if(is_callable($handler)){$handler($this,$errorMsg);}}}return$result;}}}
-namespace MvcCore\Ext\Form\Core{use\MvcCore\Ext\Form;class Helpers{const CTRL_VIEW_PROVIDER_METHOD=0;const CTRL_VIEW_PROVIDER_PROPERTY=1;const SESSION_PROVIDER_INSTANCE=0;const SESSION_PROVIDER_STATIC=1;/** @var array */public static$ControllerViewProvider=array('type'=>self::CTRL_VIEW_PROVIDER_METHOD,'getter'=>'GetView',);/** @var array */public static$SessionProvider=array('type'=>self::SESSION_PROVIDER_STATIC,'callable'=>array(__CLASS__,'getSimpleSessionRecord'),'expirator'=>'','expiration'=>0,);/** @var \stdClass */protected static$sessionData=NULL;/** @var \stdClass */protected static$sessionCsrf=NULL;/** @var \stdClass */protected static$sessionErrors=NULL;/** @var array */protected static$sessionProviders=array('\MvcCore\Session'=>array('type'=>self::SESSION_PROVIDER_STATIC,'callable'=>array('\MvcCore\Session','GetNamespace'),'expirator'=>'SetExpirationSeconds','expiration'=>32872500,),'Zend_Session'=>array('type'=>self::SESSION_PROVIDER_INSTANCE,'class'=>'Zend_Session_Namespace','expirator'=>'setExpirationSeconds','expiration'=>32872500,),);public static function StaticInit(){foreach(static::$sessionProviders as$detectedClass=>&$configuration){if(class_exists($detectedClass)){static::$SessionProvider=$configuration;break;}}}public static function ValidateMaxPostSizeIfNecessary(\MvcCore\Ext\Form&$form){if(strtolower($form->Method)!='post')return;$maxSize=ini_get('post_max_size');if(empty($_SERVER['CONTENT_LENGTH'])){$form->AddError(sprintf(Form::$DefaultMessages[Form::EMPTY_CONTENT],$maxSize));$form->Result=Form::RESULT_ERRORS;}$units=array('k'=>10,'m'=>20,'g'=>30);if(isset($units[$ch=strtolower(substr($maxSize,-1))])){$maxSize<<=$units[$ch];}if($maxSize>0&&isset($_SERVER['CONTENT_LENGTH'])&&$maxSize<$_SERVER['CONTENT_LENGTH']){$form->AddError(sprintf(Form::$DefaultMessages[Form::MAX_POST_SIZE],$maxSize));$form->Result=Form::RESULT_ERRORS;}}public static function GetControllerView(&$controller){$result=NULL;$type=static::$ControllerViewProvider['type'];$getter=static::$ControllerViewProvider['getter'];if($type==self::CTRL_VIEW_PROVIDER_PROPERTY){$result=$controller->{$getter};}else if($type==self::CTRL_VIEW_PROVIDER_METHOD){$result=$controller->{$getter}();}return$result;}public static function GetSessionData($formId=''){$sessionData=&static::setUpSessionData();if($formId&&isset($sessionData->$formId)){$rawResult=$sessionData->$formId;return$rawResult;}else{return array();}}public static function GetSessionCsrf($formId=''){$sessionCsrf=&static::setUpSessionCsrf();if($formId&&isset($sessionCsrf->$formId)){$rawResult=$sessionCsrf->$formId;return$rawResult;}else{return array();}}public static function GetSessionErrors($formId=''){$sessionErrors=&static::setUpSessionErrors();if($formId&&isset($sessionErrors->$formId)){$rawResult=$sessionErrors->$formId;return$rawResult;}else{return array();}}public static function SetSessionData($formId='',$data=array()){$sessionData=&static::setUpSessionData();if($formId)$sessionData->$formId=$data;}public static function SetSessionCsrf($formId='',$csrf=array()){$sessionCsrf=&static::setUpSessionCsrf();if($formId)$sessionCsrf->$formId=$csrf;}public static function SetSessionErrors($formId='',$errors=array()){$sessionErrors=&static::setUpSessionErrors();if($formId)$sessionErrors->$formId=$errors;}protected static function&setUpSessionData(){if(static::$sessionData==NULL)static::$sessionData=static::getSessionNamespace('\MvcCore\Ext\Form\Data');return static::$sessionData;}protected static function&setUpSessionCsrf(){if(static::$sessionCsrf==NULL)static::$sessionCsrf=static::getSessionNamespace('\MvcCore\Ext\Form\Csrf');return static::$sessionCsrf;}protected static function&setUpSessionErrors(){if(self::$sessionErrors==NULL)static::$sessionErrors=static::getSessionNamespace('\MvcCore\Ext\Form\Errors');return self::$sessionErrors;}protected static function&getSessionNamespace($namespace){$result=new\stdClass;$type=static::$SessionProvider['type'];if($type==self::SESSION_PROVIDER_INSTANCE){$class=static::$SessionProvider['class'];$result=new$class($namespace);}else if($type==self::SESSION_PROVIDER_STATIC){$result=call_user_func(static::$SessionProvider['callable'],$namespace);}$expirator=static::$SessionProvider['expirator'];$expiration=static::$SessionProvider['expiration'];if($expirator&&$expiration)$result->$expirator($expiration);return$result;}protected static function&getSimpleSessionRecord($namespace){if(!(isset($_SESSION[$namespace])&&!is_null($_SESSION[$namespace]))){$_SESSION[$namespace]=new\stdClass;}return$_SESSION[$namespace];}}}
-namespace MvcCore\Ext\Form\Core{use\MvcCore\Ext\Form;class View extends\MvcCore\View{/** @var \MvcCore\Ext\Form */public$Form=null;/** @var \MvcCore\View|mixed */public$View=null;public function __construct(\MvcCore\Ext\Form&$form){$ctrl=&$form->Controller;if(class_exists('\MvcCore\Controller')&&$ctrl instanceof\MvcCore\Controller){parent::__construct($ctrl);}else{$this->Controller=&$ctrl;}$this->Form=&$form;$this->View=Helpers::GetControllerView($ctrl);}public function __call($method,$arguments){if(isset($this->Field)&&method_exists($this->Field,$method)){return call_user_func_array(array($this->Field,$method),$arguments);}else{return parent::__call($method,$arguments);}}public function RenderTemplate(){return$this->Render($this->Form->TemplateTypePath,$this->Form->TemplatePath);}public function RenderNaturally(){return$this->RenderBegin().$this->RenderErrors().$this->RenderContent().$this->RenderEnd();}public function RenderBegin(){$result="<form";$attrs=array();$form=&$this->Form;$formProperties=array('Id','Action','Method','Enctype');foreach($formProperties as$property){if($form->$property)$attrs[strtolower($property)]=$form->$property;}if($form->CssClass)$attrs['class']=$form->CssClass;foreach($form->Attributes as$key=>$value){if(!in_array($key,$formProperties))$attrs[$key]=$value;}$attrsStr=self::RenderAttrs($attrs);if($attrsStr)$result.=' '.$attrsStr;$result.='>';$result.=$this->RenderCsrf();return$result;}public function RenderCsrf(){list($name,$value)=$this->Form->SetUpCsrf();return'<input type="hidden" name="'.$name.'" value="'.$value.'" />';}public function GetCsrf(){return$this->Form->GetCsrf();}public function RenderErrors(){$result="";if($this->Form->Errors&&$this->Form->ErrorsRenderMode==Configuration::ERROR_RENDER_MODE_ALL_TOGETHER){$result.='<div class="errors">';foreach($this->Form->Errors as&$errorMessageAndFieldName){$errorMessage=$errorMessageAndFieldName[0];$fieldName=isset($errorMessageAndFieldName[1])?$errorMessageAndFieldName[1]:'';$result.='<div class="error '.$fieldName.'">'.$errorMessage.'</div>';}$result.='</div>';}return$result;}public function RenderContent(){$result="";$fieldRendered="";foreach($this->Form->Fields as&$field){$fieldRendered=$field->Render();if(!($field instanceof Form\Hidden)){$fieldRendered="<div>".$fieldRendered."</div>";}$result.=$fieldRendered;}return$result;}public function RenderEnd(){$result="</form>";if($this->Js)$result.=$this->Form->RenderJs();if($this->Css)$result.=$this->Form->RenderCss();return$result;}public static function Format($str='',array$args=array()){foreach($args as$key=>$value){$str=str_replace('{'.$key.'}',(string)$value,$str);}return$str;}public static function RenderAttrs(array$atrributes=array()){$result=array();foreach($atrributes as$attrName=>$attrValue){$result[]=$attrName.'="'.$attrValue.'"';}return implode(' ',$result);}}}
-namespace MvcCore\Ext\Form\Core{abstract class Field{/** @var string */public$Id='';/** @var string */public$Type='';/** @var string */public$Name='';/** @var string */public$Value='';/** @var string */public$Label='';/** @var string */public$LabelSide='left';/** @var bool */public$Required=null;/** @var bool */public$Readonly=FALSE;/** @var bool */public$Disabled=FALSE;/** @var bool */public$Translate=NULL;/** @var string */public$RenderMode=NULL;/** @var array */public$CssClasses=array();/** @var array */public$ControlAttrs=array();/** @var array */public$LabelAttrs=array();/** @var string[]|\Closure[] */public$Validators=array();/** @var string[] */public$Errors=array();/** @var string */public$TemplatePath='';/** @var \MvcCore\Ext\Form\Core\View */public$View=NULL;/** @var string */public$JsClass='';/** @var string */public$Js='';/** @var string */public$Css='';/** @var \MvcCore\Ext\Form */public$Form=NULL;/** @var array */public static$Templates=array('label'=>'<label for="{id}"{attrs}>{label}</label>','control'=>'<input id="{id}" name="{name}" type="{type}" value="{value}"{attrs} />','togetherLabelLeft'=>'<label for="{id}"{attrs}><span>{label}</span>{control}</label>','togetherLabelRight'=>'<label for="{id}"{attrs}>{control}<span>{label}</span></label>',);/** @var string[] */protected static$declaredProtectedProperties=array('Id','View','Form','Field',);public function SetName($name){$this->Name=$name;return$this;}public function SetType($type){$this->Type=$type;return$this;}public function SetLabel($label){$this->Label=$label;return$this;}public function SetLabelSide($labelSide='right'){$this->LabelSide=$labelSide;return$this;}public function SetRequired($required=TRUE){$this->Required=$required;return$this;}public function SetReadonly($readonly=TRUE){$this->Readonly=$readonly;return$this;}public function SetRenderMode($renderMode=\MvcCore\Ext\Form\Core\Configuration::FIELD_RENDER_MODE_LABEL_AROUND){$this->RenderMode=$renderMode;return$this;}public function SetValue($value){$this->Value=$value;return$this;}public function GetValue(){return$this->Value;}public function SetTranslate($translate=TRUE){$this->Translate=$translate;return$this;}public function SetDisabled($disabled){$this->Disabled=$disabled;return$this;}public function SetCssClasses($cssClasses){if(gettype($cssClasses)=='array'){$this->CssClasses=$cssClasses;}else{$this->CssClasses=explode(' ',(string)$cssClasses);}return$this;}public function AddCssClass($cssClass){$this->CssClasses[]=$cssClass;return$this;}public function SetControlAttrs($attrs=array()){$this->ControlAttrs=$attrs;return$this;}public function AddControlAttr($attr=array()){$this->ControlAttrs[]=$attr;return$this;}public function SetLabelAttrs($attrs=array()){$this->LabelAttrs=$attrs;return$this;}public function AddLabelAttr($attr=array()){$this->LabelAttrs[]=$attr;return$this;}public function SetValidators($validators=array()){$this->Validators=$validators;return$this;}public function AddValidators(){$args=func_get_args();foreach($args as$arg)$this->Validators[]=$arg;return$this;}public function SetTemplatePath($templatePath=''){$this->TemplatePath=$templatePath;return$this;}public function SetJsClass($jsClass){$this->JsClass=$jsClass;return$this;}public function SetJs($jsFullFile){$this->Js=$jsFullFile;return$this;}public function SetCss($cssFullFile){$this->Css=$cssFullFile;return$this;}public function AddError($errorText){$this->Errors[]=$errorText;return$this;}public function __construct($cfg=array()){static::$Templates=(object)static::$Templates;foreach($cfg as$key=>$value){$propertyName=ucfirst($key);if(in_array($propertyName,static::$declaredProtectedProperties)){$clsName=get_class($this);throw new\MvcCore\Ext\Form\Core\Exception("Property: '$propertyName' is protected, class: '$clsName'.");}else{$this->$propertyName=$value;}}}public function __set($name,$value){$this->$name=$value;}public function OnAdded(\MvcCore\Ext\Form&$form){if(!$this->Name){$clsName=get_class($this);throw new\MvcCore\Ext\Form\Core\Exception("No 'Name' defined for form field: '$clsName'.");}$this->Form=$form;$this->Id=implode(Configuration::HTML_IDS_DELIMITER,array($form->Id,$this->Name));$this->Required=is_null($this->Required)?$form->Required:$this->Required;}public function SetUp(){$form=$this->Form;$translator=$form->Translator;if(is_null($this->RenderMode)){$this->RenderMode=$form->FieldsDefaultRenderMode;}if((is_null($this->Translate)||$this->Translate===TRUE||$form->Translate)&&!is_null($translator)){$this->Translate=TRUE;}else{$this->Translate=FALSE;}if($this->Translate&&$this->Label){$this->Label=call_user_func($translator,$this->Label,$form->Lang);}}public function Render(){if($this->TemplatePath){return$this->RenderTemplate();}else{return$this->RenderNaturally();}}public function RenderTemplate(){$view=new View($this->Form);$this->Field=$this;$view->SetUp($this);return$view->Render($this->Form->TemplateTypePath,$this->TemplatePath);}public function RenderNaturally(){$result='';if($this->RenderMode==Configuration::FIELD_RENDER_MODE_NORMAL&&$this->Label){$result=$this->RenderLabelAndControl();}else if($this->RenderMode==Configuration::FIELD_RENDER_MODE_LABEL_AROUND&&$this->Label){$result=$this->RenderControlInsideLabel();}else if($this->RenderMode==Configuration::FIELD_RENDER_MODE_NO_LABEL||!$this->Label){$result=$this->RenderControl();$errors=$this->RenderErrors();if($this->Form->ErrorsRenderMode!==Configuration::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL){$result=$errors.$result;}else if($this->Form->ErrorsRenderMode!==Configuration::ERROR_RENDER_MODE_AFTER_EACH_CONTROL){$result.=$errors;}}return$result;}public function RenderLabelAndControl(){$result="";if($this->LabelSide=='left'){$result=$this->RenderLabel().$this->RenderControl();}else{$result=$this->RenderControl().$this->RenderLabel();}$errors=$this->RenderErrors();if($this->Form->ErrorsRenderMode==Configuration::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL){$result=$errors.$result;}else if($this->Form->ErrorsRenderMode==Configuration::ERROR_RENDER_MODE_AFTER_EACH_CONTROL){$result.=$errors;}return$result;}public function RenderControlInsideLabel(){if($this->RenderMode==Configuration::FIELD_RENDER_MODE_NO_LABEL)return$this->RenderControl();$attrsStr=$this->renderLabelAttrsWithFieldVars();$template=$this->LabelSide=='left'?static::$Templates->togetherLabelLeft:static::$Templates->togetherLabelRight;$result=$this->Form->View->Format($template,array('id'=>$this->Id,'label'=>$this->Label,'control'=>$this->RenderControl(),'attrs'=>$attrsStr?" $attrsStr":'',));$errors=$this->RenderErrors();if($this->Form->ErrorsRenderMode==Configuration::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL){$result=$errors.$result;}else if($this->Form->ErrorsRenderMode==Configuration::ERROR_RENDER_MODE_AFTER_EACH_CONTROL){$result.=$errors;}return$result;}public function RenderControl(){$attrsStr=$this->renderControlAttrsWithFieldVars();return$this->Form->View->Format(static::$Templates->control,array('id'=>$this->Id,'name'=>$this->Name,'type'=>$this->Type,'value'=>$this->Value,'attrs'=>$attrsStr?" $attrsStr":'',));}public function RenderLabel(){if($this->RenderMode==Configuration::FIELD_RENDER_MODE_NO_LABEL)return'';$attrsStr=$this->renderLabelAttrsWithFieldVars();return$this->Form->View->Format(static::$Templates->label,array('id'=>$this->Id,'label'=>$this->Label,'attrs'=>$attrsStr?" $attrsStr":'',));}public function RenderErrors(){$result="";if($this->Errors&&$this->Form->ErrorsRenderMode!==Configuration::ERROR_RENDER_MODE_ALL_TOGETHER){$result.='<span class="errors">';foreach($this->Errors as$key=>$errorMessage){$errorCssClass='error';if(isset($this->Fields[$key]))$errorCssClass.=" $key";$result.="<span class=\"$errorCssClass\">$errorMessage</span>";}$result.='</span>';}return$result;}protected function renderLabelAttrsWithFieldVars($fieldVars=array()){return$this->renderAttrsWithFieldVars($fieldVars,$this->LabelAttrs,$this->CssClasses);}protected function renderControlAttrsWithFieldVars($fieldVars=array()){return$this->renderAttrsWithFieldVars($fieldVars,$this->ControlAttrs,$this->CssClasses,TRUE);}protected function renderAttrsWithFieldVars($fieldVars=array(),$fieldAttrs=array(),$cssClasses=array(),$controlRendering=FALSE){$attrs=array();foreach($fieldVars as$fieldVar){if(!is_null($this->$fieldVar)){$attrName=\MvcCore\Tool::GetDashedFromPascalCase($fieldVar);$attrs[$attrName]=$this->$fieldVar;}}$boolFieldVars=array('Disabled','Readonly','Required');foreach($boolFieldVars as$fieldVar){if($this->$fieldVar){$attrName=lcfirst($fieldVar);if($controlRendering)$attrs[$attrName]=$attrName;$cssClasses[]=$attrName;}}$cssClasses[]=\MvcCore\Tool::GetDashedFromPascalCase($this->Name);$attrs['class']=implode(' ',$cssClasses);return View::RenderAttrs(array_merge($fieldAttrs,$attrs));}}}
-namespace MvcCore\Ext\Form\Core{use MvcCore\Ext\Form;abstract class Base{/** @var int */protected$initialized=0;/** @var array */protected static$js=array();/** @var array */protected static$css=array();/** @var string */protected$jsAssetsRootDir='';/** @var string */protected$cssAssetsRootDir='';/** @var array */protected static$csrfErrorHandlers=array();protected function absolutizeAssetPath($path='',$assetsKey=''){$assetsRootDir=$assetsKey=='js'?$this->jsAssetsRootDir:$this->cssAssetsRootDir;return str_replace(array('__MVCCORE_FORM_DIR__','\\'),array($assetsRootDir,'/'),$path);}protected function cleanUpRenderIfNecessary(){$this->Errors=array();Helpers::SetSessionErrors($this->Id,array());return$this;}protected function completeAssets($assetsKey=''){$files=array();$assetsKeyUcFirst=ucfirst($assetsKey);foreach($this->$assetsKeyUcFirst as$item){$files[$this->absolutizeAssetPath($item[0],$assetsKey)]=TRUE;}$files=array_keys($files);foreach($files as$key=>$file){if(isset(static::${$assetsKey}[$file])){unset($files[$key]);}else{static::${$assetsKey}[$file]=TRUE;}}return array_values($files);}protected function getRequestPath(){$requestUri=$_SERVER['REQUEST_URI'];$lastQuestionMark=mb_strpos($requestUri,'?');if($lastQuestionMark!==FALSE)$requestUri=mb_substr($requestUri,0,$lastQuestionMark);$protocol=(isset($_SERVER['HTTPS'])&&strtolower($_SERVER['HTTPS'])=='on')?'https:':'http:';return$protocol.'//'.$_SERVER['HTTP_HOST'].$requestUri;}protected function prepareRenderIfNecessary(){if($this->initialized==2)return$this;if(!$this->initialized)$this->Init();foreach($this->Fields as&$field){$field->SetUp();}$errors=Helpers::GetSessionErrors($this->Id);foreach($errors as&$errorMsgAndFieldName){if(!isset($errorMsgAndFieldName[1]))$errorMsgAndFieldName[1]='';list($errorMsg,$fieldName)=$errorMsgAndFieldName;$this->AddError($errorMsg,$fieldName);if(isset($this->Fields[$fieldName])){$fieldInstance=&$this->Fields[$fieldName];$fieldInstance->AddCssClass('error');if(method_exists($fieldInstance,'AddGroupCssClass')){$fieldInstance->AddGroupCssClass('error');}}}$data=Helpers::GetSessionData($this->Id);if($data)$this->SetDefaults($data);$this->View=new View($this);$this->View->SetUp($this);$this->initialized=2;return$this;}protected function renderAssetFile(&$content,&$renderer,$loadContent,$absPath){if($loadContent){$content.=trim(\Packager_Php_Wrapper::FileGetContents($absPath),"\n\r;").';';}else{call_user_func($renderer,new\Packager_Php_Wrapper_SplFileInfo($absPath));}}protected function submitField($fieldName,&$rawRequestParams,\MvcCore\Ext\Form\Core\Field&$field){$result=null;if(!$field->Validators){$submitValue=isset($rawRequestParams[$fieldName])?$rawRequestParams[$fieldName]:$field->GetValue();$result=$submitValue;}else{foreach($field->Validators as$validatorKey=>$validator){if($validatorKey>0){$submitValue=$result;}else{$submitValue=isset($rawRequestParams[$fieldName])?$rawRequestParams[$fieldName]:$field->GetValue();}if($validator instanceof\Closure){$safeValue=$validator($submitValue,$fieldName,$field,$this);}else{$validatorInstance=Validator::Create($validator,$this);$safeValue=$validatorInstance->Validate($submitValue,$fieldName,$field);}$result=$safeValue;}if(is_null($safeValue))$safeValue='';if(((gettype($safeValue)=='string'&&strlen($safeValue)===0)||(gettype($safeValue)=='array'&&count($safeValue)===0))&&$field->Required){$errorMsg=Configuration::$DefaultMessages[Configuration::REQUIRED];if($this->Translate){$errorMsg=call_user_func($this->Translator,$errorMsg);}$errorMsg=View::Format($errorMsg,array($field->Label?$field->Label:$fieldName));$this->AddError($errorMsg,$fieldName);}}return$result;}protected function submitFields($rawRequestParams=array()){foreach($this->Fields as$fieldName=>&$field){/** @var $field \MvcCore\Ext\Form\Core\Field */if($field->Readonly||$field->Disabled){$safeValue=$field->GetValue();}else{$safeValue=$this->submitField($fieldName,$rawRequestParams,$field);}if(is_null($safeValue))$safeValue='';$field->SetValue($safeValue);if(!($field instanceof Form\Button)){$this->Data[$fieldName]=$safeValue;}}Helpers::SetSessionErrors($this->Id,$this->Errors);Helpers::SetSessionData($this->Id,$this->Data);}}}
-namespace MvcCore\Ext\Form\Core{abstract class Configuration extends Base{const METHOD_GET='get';const METHOD_POST='post';const METHOD_HEAD='head';const METHOD_PUT='put';const METHOD_PATCH='patch';const METHOD_TRACE='trace';const METHOD_OPTIONS='options';const METHOD_CONNECT='connect';const METHOD_DELETE='delete';const ENCTYPE_URLENCODED='application/x-www-form-urlencoded';const ENCTYPE_MULTIPART='multipart/form-data';const ENCTYPE_PLAINTEXT='text/plain';const HTML_IDS_DELIMITER='_';const EQUAL=':equal',NOT_EQUAL=':notEqual',REQUIRED=':required',INVALID_FORMAT=':invalidFormat',INVALID_CHARS=':invalidChars',EMPTY_CONTENT=':empty',CSRF=':csrf',MIN_LENGTH=':minLength',MAX_LENGTH=':maxLength',LENGTH=':length',EMAIL=':email',URL=':url',NUMBER=':number',INTEGER=':integer',FLOAT=':float',DATE=':date',DATE_TO_LOW=':dateToLow',DATE_TO_HIGH=':dateToHigh',TIME=':time',TIME_TO_LOW=':timeToLow',TIME_TO_HIGH=':timeToHigh',DATETIME=':datetime',PHONE=':phone',ZIP_CODE=':zipCode',TAX_ID=':taxId',VAT_ID=':varId',GREATER=':greater',LOWER=':lower',RANGE=':range',MAX_FILE_SIZE=':fileSize',MAX_POST_SIZE=':maxPostSize',IMAGE=':image',MIME_TYPE=':mimeType',VALID=':valid',CHOOSE_MIN_OPTS=':chooseMinOpts',CHOOSE_MAX_OPTS=':chooseMaxOpts',CHOOSE_MIN_OPTS_BUBBLE=':chooseMinOptsBubble',CHOOSE_MAX_OPTS_BUBBLE=':chooseMaxOptsBubble';/** @var array */public static$DefaultMessages=array(self::EQUAL=>"Field '{0}' requires exact value: '{1}'.",self::NOT_EQUAL=>"Value for field '{0}' should not be '{1}'.",self::REQUIRED=>"Field '{0}' is required.",self::INVALID_FORMAT=>"Field '{0}' has invalid format ('{1}').",self::INVALID_CHARS=>"Field '{0}' contains invalid characters.",self::EMPTY_CONTENT=>"Sent data are empty.",self::CSRF=>"Form hash expired, please submit the form again.",self::MIN_LENGTH=>"Field '{0}' requires at least {1} characters.",self::MAX_LENGTH=>"Field '{0}' requires no more than {1} characters.",self::LENGTH=>"Field '{0}' requires a value between {1} and {2} characters long.",self::EMAIL=>"Field '{0}' requires a valid email address.",self::URL=>"Field '{0}' requires a valid URL.",self::NUMBER=>"Field '{0}' requires a valid number.",self::INTEGER=>"Field '{0}' requires a valid integer.",self::FLOAT=>"Field '{0}' requires a valid float number.",self::DATE=>"Field '{0}' requires a valid date format: '{1}'.",self::DATE_TO_LOW=>"Field '{0}' requires date higher or equal to '{1}'.",self::DATE_TO_HIGH=>"Field '{0}' requires date lower or equal to '{1}'.",self::TIME=>"Field '{0}' requires a valid time format: '00:00 - 23:59'.",self::TIME_TO_LOW=>"Field '{0}' requires time higher or equal to '{1}'.",self::TIME_TO_HIGH=>"Field '{0}' requires time lower or equal to '{1}'.",self::DATETIME=>"Field '{0}' requires a valid date time format: '{1}'.",self::PHONE=>"Field '{0}' requires a valid phone number.",self::ZIP_CODE=>"Field '{0}' requires a valid zip code.",self::TAX_ID=>"Field '{0}' requires a valid TAX ID.",self::VAT_ID=>"Field '{0}' requires a valid VAR ID.",self::GREATER=>"Field '{0}' requires a value greater than {1}.",self::LOWER=>"Field '{0}' requires a value lower than {1}.",self::RANGE=>"Field '{0}' requires a value between {1} and {2}.",self::MAX_FILE_SIZE=>"The size of the uploaded file can be up to {0} bytes.",self::MAX_POST_SIZE=>"The uploaded data exceeds the limit of {0} bytes.",self::IMAGE=>"The uploaded file has to be image in format JPEG, GIF or PNG.",self::MIME_TYPE=>"The uploaded file is not in the expected file format.",self::VALID=>"Field '{0}' requires a valid option.",self::CHOOSE_MIN_OPTS=>"Field '{0}' requires at least {1} chosen option(s) at minimal.",self::CHOOSE_MAX_OPTS=>"Field '{0}' requires {1} of the selected option(s) at maximum.",self::CHOOSE_MIN_OPTS_BUBBLE=>"Please select at least {0} options as minimal.",self::CHOOSE_MAX_OPTS_BUBBLE=>"Please select up to {0} options at maximum.",);const RESULT_ERRORS=0;const RESULT_SUCCESS=1;const RESULT_NEXT_PAGE=2;const FIELD_RENDER_MODE_NORMAL='normal';const FIELD_RENDER_MODE_NO_LABEL='no-label';const FIELD_RENDER_MODE_LABEL_AROUND='label-around';const ERROR_RENDER_MODE_ALL_TOGETHER='all-together';const ERROR_RENDER_MODE_BEFORE_EACH_CONTROL='before-each-control';const ERROR_RENDER_MODE_AFTER_EACH_CONTROL='after-each-control';/** @var \MvcCore\Controller|mixed */public$Controller=null;/** @var \MvcCore\Ext\Form\Core\View|mixed */public$View=NULL;/** @var string */public$Id='';/** @var string */public$Action='';/** @var string */public$Method=self::METHOD_POST;/** @var string */public$Enctype=self::ENCTYPE_URLENCODED;/** @var string */public$Lang='';/** @var string */public$Locale='';/** @var string */public$CssClass='';/** @var array */public$Attributes=array();/** @var string */public$SuccessUrl='';/** @var string */public$NextStepUrl='';/** @var string */public$ErrorUrl='';public$Result=self::RESULT_SUCCESS;/** @var bool */public$Translate=NULL;/** @var callable */public$Translator=NULL;/** @var bool */public$Required=FALSE;/** @var \MvcCore\Ext\Form\Core\Field[] */public$Fields=array();/** @var array */public$Data=array();/** @var array */public$Errors=array();/** @var string */public$FieldsDefaultRenderMode=self::FIELD_RENDER_MODE_NORMAL;/** @var string */public$ErrorsRenderMode=self::ERROR_RENDER_MODE_ALL_TOGETHER;/** @var string */public$TemplatePath='';/** @var string */public$TemplateTypePath='Scripts';/** @var array */public$Js=array();/** @var array */public$Css=array();/** @var string */public$JsBaseFile='__MVCCORE_FORM_DIR__/mvccore-form.js';/** @var callable */public$JsRenderer=NULL;/** @var callable */public$CssRenderer=NULL;public static function AddCsrfErrorHandler(callable$handler){static::$csrfErrorHandlers[]=$handler;}public function AddCss($cssFile=''){$this->Css[]=array($cssFile);return$this;}public function AddCssClass($cssClass=''){$this->CssClass.=(($this->CssClass)?' ':'').$cssClass;return$this;}public function AddJs($jsFile='',$jsClass='MvcCoreForm.FieldType',$jsConstructorParams=array()){$this->Js[]=array($jsFile,$jsClass,$jsConstructorParams);return$this;}public function SetAction($url=''){$this->Action=$url;return$this;}public function SetAttributes(array$attributes=array()){$this->Attributes=$attributes;return$this;}public function SetCss(array$cssFiles=array()){$this->Css=array();foreach($cssFiles as$item)$this->AddCss($item);return$this;}public function SetCssClass($cssClass=''){$this->CssClass=$cssClass;return$this;}public function SetCssRenderer(callable$cssRenderer){$this->CssRenderer=$cssRenderer;return$this;}public function SetDefaults(array$defaults=array(),$keysInsensitive=FALSE){if(!$this->initialized)$this->Init();$defaultsKeys=$keysInsensitive?','.implode(',',array_keys($defaults)).',':'';foreach($this->Fields as$fieldName=>&$field){if(isset($defaults[$fieldName])){$fieldValue=$defaults[$fieldName];}else if($keysInsensitive){$defaultsKeyPos=stripos($defaultsKeys,','.$fieldName.',');if($defaultsKeyPos===FALSE)continue;$defaultsKey=substr($defaultsKeys,$defaultsKeyPos+1,strlen($fieldName));$fieldValue=$defaults[$defaultsKey];}else{continue;}$field->SetValue($fieldValue);if($fieldValue)$this->Data[$fieldName]=$fieldValue;}return$this;}public function SetEnctype($enctype=''){$this->Enctype=$enctype;return$this;}public function SetErrorsRenderMode($errorsRenderMode=\MvcCore\Ext\Form::ERROR_RENDER_MODE_ALL_TOGETHER){$this->ErrorsRenderMode=$errorsRenderMode;return$this;}public function SetErrorUrl($url=''){$this->ErrorUrl=$url;return$this;}public function SetFieldsDefaultRenderMode($fieldsDefaultRenderMode=\MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL){$this->FieldsDefaultRenderMode=$fieldsDefaultRenderMode;return$this;}public function SetId($id=''){$this->Id=$id;return$this;}public function SetJs(array$jsFilesClassesAndConstructorParams=array()){$this->Js=array();foreach($jsFilesClassesAndConstructorParams as$item){$this->AddJs($item[0],$item[1],$item[2]);}return$this;}public function SetJsRenderer(callable$jsRenderer){$this->JsRenderer=$jsRenderer;return$this;}public function SetLang($lang=''){$this->Lang=$lang;return$this;}public function SetLocale($locale=''){$this->Locale=strtoupper($locale);return$this;}public function SetMethod($method=''){$this->Method=$method;return$this;}public function SetNextStepUrl($url=''){$this->NextStepUrl=$url;return$this;}public function SetRequired($required=TRUE){$this->Required=$required;return$this;}public function SetSuccessUrl($url=''){$this->SuccessUrl=$url;return$this;}public function SetTemplatePath($path=''){$this->TemplatePath=str_replace('\\','/',$path);return$this;}public function SetTemplateTypePath($typePath=''){$this->TemplateTypePath=str_replace('\\','/',$typePath);return$this;}public function SetTranslate($translate=TRUE){$this->Translate=$translate;return$this;}public function SetTranslator(callable$translator=null){$this->Translate=is_callable($translator);if($this->Translate){$this->Translator=$translator;}else{$this->Translator=NULL;}return$this;}}}
-namespace MvcCore\Ext\Auth\Virtual{class Form extends\MvcCore\Ext\Form{/** @var string */public$Id='authentication';/** @var string */public$Method=\MvcCore\Ext\Form::METHOD_POST;public function Init(){return parent::Init();}public function Submit($rawParams=array()){return parent::Submit($rawParams);}protected function addSuccessAndErrorUrlHiddens($successUrl='',$errorUrl=''){$this->AddField(new\MvcCore\Ext\Form\Hidden(array('name'=>'successUrl','value'=>$successUrl,'validators'=>array('Url'),)));$this->AddField(new\MvcCore\Ext\Form\Hidden(array('name'=>'errorUrl','value'=>$errorUrl,'validators'=>array('Url'),)));}}}
-namespace MvcCore\Ext\Form{class Number extends Core\Field{public$Type='number';public$Size=null;public$Min=null;public$Max=null;public$Step=null;public$Pattern=null;public$Wrapper='{control}';public$Validators=array('NumberField');public function SetSize($size){$this->Size=$size;return$this;}public function SetMin($min){$this->Min=$min;return$this;}public function SetMax($max){$this->Max=$max;return$this;}public function SetStep($step){$this->Step=$step;return$this;}public function SetPattern($pattern){$this->Pattern=$pattern;return$this;}public function SetWrapper($wrapper){$this->Wrapper=$wrapper;return$this;}public function RenderControl(){$attrsStr=$this->renderControlAttrsWithFieldVars(array('Size','Min','Max','Step','Pattern'));$result=Core\View::Format(static::$Templates->control,array('id'=>$this->Id,'name'=>$this->Name,'type'=>$this->Type,'value'=>$this->Value,'attrs'=>$attrsStr?" $attrsStr":'',));$wrapperReplacement='{control}';$wrapper=mb_strpos($wrapperReplacement,$this->Wrapper)!==FALSE?$this->Wrapper:$wrapperReplacement;return str_replace($wrapperReplacement,$result,$wrapper);}}}
-namespace MvcCore\Ext\Form{class Text extends Core\Field{public$Type='text';public$Placeholder=null;public$Size=null;public$Maxlength=null;public$Pattern=null;public$Autocomplete=null;public$Validators=array('SafeString');public function SetPlaceholder($placeholder){$this->Placeholder=$placeholder;return$this;}public function SetSize($size){$this->Size=$size;return$this;}public function SetMaxlength($maxlength){$this->Maxlength=$maxlength;return$this;}public function SetPattern($pattern){$this->Pattern=$pattern;return$this;}public function SetAutocomplete($autocomplete){$this->Autocomplete=$autocomplete;return$this;}public function OnAdded(\MvcCore\Ext\Form&$form){parent::OnAdded($form);if($this->Pattern&&!in_array('Pattern',$this->Validators)){$this->Validators[]='Pattern';}if($this->Maxlength&&!in_array('Maxlength',$this->Validators)){$this->Validators[]='Maxlength';}}public function SetUp(){parent::SetUp();$form=$this->Form;if($this->Translate&&$this->Placeholder){$this->Placeholder=call_user_func($form->Translator,$this->Placeholder,$form->Lang);}}public function RenderControl(){$attrsStr=$this->renderControlAttrsWithFieldVars(array('Maxlength','Size','Placeholder','Pattern','Autocomplete'));return Core\View::Format(static::$Templates->control,array('id'=>$this->Id,'name'=>$this->Name,'type'=>$this->Type,'value'=>$this->Value,'attrs'=>$attrsStr?" $attrsStr":'',));}}}
-namespace MvcCore\Ext\Auth{use\MvcCore\Ext\Auth,\MvcCore\Ext\Form;class SignOutForm extends Virtual\Form{/** @var string */public$CssClass='sign-out';/** @var \MvcCore\Ext\Auth\Virtual\User */public$User=NULL;public function Init(){parent::Init();$cfg=Auth::GetInstance()->GetConfig();$this->addSuccessAndErrorUrlHiddens($cfg->signedInUrl,$cfg->errorUrl);$this->AddField(new Form\SubmitButton(array('name'=>'send','value'=>'Log Out','cssClasses'=>array('button'),)));$this->User=Auth::GetInstance()->GetUser();return$this;}public function Submit($rawParams=array()){parent::Submit();if($this->Result===Form::RESULT_SUCCESS){$userClass=Auth::GetInstance()->GetConfig()->userClass;$userClass::ClearFromSession();}$this->SuccessUrl=$this->Data['successUrl'];$this->ErrorUrl=$this->Data['errorUrl'];return array($this->Result,$this->Data,$this->Errors);}}}
-namespace MvcCore\Ext\Auth{use\MvcCore\Ext\Auth,\MvcCore\Ext\Form;class SignInForm extends Virtual\Form{/** @var string */public$CssClass='sign-in';public function Init(){parent::Init();$cfg=Auth::GetInstance()->GetConfig();$this->addSuccessAndErrorUrlHiddens($cfg->signedInUrl,$cfg->errorUrl);$this->AddField(new Form\Text(array('name'=>'username','placeholder'=>'User',)));$this->AddField(new Form\Password(array('name'=>'password','placeholder'=>'Password',)));$this->AddField(new Form\SubmitButton(array('name'=>'send','value'=>'Sign In','cssClasses'=>array('button'),)));$params=\MvcCore::GetInstance()->GetRequest()->Params;$sourceUrl=isset($params['sourceUrl'])?$params['sourceUrl']:'';$sourceUrl=filter_var($sourceUrl,FILTER_VALIDATE_URL);$this->AddField(new Form\Hidden(array('name'=>'sourceUrl','value'=>$sourceUrl,)));return$this;}public function Submit($rawParams=array()){parent::Submit();$userClass=Auth::GetInstance()->GetConfig()->userClass;if($this->Result===Form::RESULT_SUCCESS){$user=$userClass::Authenticate($this->Data['username'],$this->Data['password']);if(is_null($user)){$this->AddError('User name or password is incorrect.');}else{$userClass::StoreInSession($user);}}$data=(object)$this->Data;$this->SuccessUrl=$data->sourceUrl?urldecode($data->sourceUrl):$data->successUrl;$this->ErrorUrl=$data->errorUrl;if($this->Result!==Form::RESULT_SUCCESS){sleep(3);}return array($this->Result,$this->Data,$this->Errors);}}}
-namespace MvcCore\Ext\Form{class Password extends Text{public$Type='password';}}
-namespace MvcCore\Ext\Form{class SubmitButton extends Button{public$Type='submit';public$Value='Submit';}}
-namespace MvcCore\Ext\Form\Core{abstract class FieldGroup extends Field{/** @var string */public$Type='';/** @var array */public$Value=array();/** @var array */public$Options=array();/** @var string[] */public$GroupCssClasses=array();/** @var string[] */public$GroupLabelAttrs=array();/** @var array|\stdClass */public static$Templates=array('label'=>'<label for="{id}"{attrs}>{label}</label>','control'=>'<input id="{id}" name="{name}" type="{type}" value="{value}"{checked}{attrs} />','togetherLabelLeft'=>'<label for="{id}"{attrs}><span>{label}</span>{control}</label>','togetherLabelRight'=>'<label for="{id}"{attrs}>{control}<span>{label}</span></label>',);public function SetOptions($options){$this->Options=$options;return$this;}/** @var string|string[] */public function SetGroupCssClasses($cssClasses){if(gettype($cssClasses)=='array'){$this->GroupCssClasses=$cssClasses;}else{$this->GroupCssClasses=explode(' ',(string)$cssClasses);}return$this;}/** @var string|string[] */public function AddGroupCssClass($cssClasses){if(gettype($cssClasses)=='array'){$groupCssClasses=$cssClasses;}else{$groupCssClasses=explode(' ',(string)$cssClasses);}$this->GroupCssClasses=array_merge($this->GroupCssClasses,$groupCssClasses);return$this;}/** @var string[] */public function SetGroupLabelAttrs($attrs=array()){$this->GroupLabelAttrs=$attrs;return$this;}/** @var string[] */public function AddGroupLabelAttr($attr=array()){$this->GroupLabelAttrs=array_merge($this->GroupLabelAttrs,$attr);return$this;}public function OnAdded(\MvcCore\Ext\Form&$form){parent::OnAdded($form);if(!$this->Options){$clsName=get_class($this);throw new\MvcCore\Ext\Form\Core\Exception("No 'Options' defined for form field: '$clsName'.");}}public function SetUp(){parent::SetUp();if(!$this->Translate)return;$lang=$this->Form->Lang;$translator=$this->Form->Translator;foreach($this->Options as$key=>$value){if(gettype($value)=='string'){if($value)$this->Options[$key]=call_user_func($translator,(string)$value,$lang);}else if(gettype($value)=='array'){$optObj=(object)$value;$text=isset($optObj->text)?$optObj->text:$key;if($text){$this->Options[$key]['text']=call_user_func($translator,(string)$text,$lang);}}}}public function RenderNaturally(){$result='';if($this->Label&&($this->RenderMode==\MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL||$this->RenderMode==\MvcCore\Ext\Form::FIELD_RENDER_MODE_LABEL_AROUND)){$result=$this->RenderLabelAndControl();}else if($this->RenderMode==\MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL||!$this->Label){$result=$this->RenderControl();$errors=$this->RenderErrors();if($this->Form->ErrorsRenderMode==\MvcCore\Ext\Form::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL){$result=$errors.$result;}else if($this->Form->ErrorsRenderMode==\MvcCore\Ext\Form::ERROR_RENDER_MODE_AFTER_EACH_CONTROL){$result.=$errors;}}return$result;}public function RenderControlInsideLabel(){if($this->RenderMode==\MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL)return$this->RenderControl();$attrsStr=$this->renderAttrsWithFieldVars(array(),$this->GroupLabelAttrs,$this->GroupCssClasses,TRUE);$template=$this->LabelSide=='left'?static::$Templates->togetherLabelLeft:static::$Templates->togetherLabelRight;$result=View::Format($template,array('id'=>$this->Id,'label'=>$this->Label,'control'=>$this->RenderControl(),'attrs'=>$attrsStr?" $attrsStr":'',));$errors=$this->RenderErrors();if($this->Form->ErrorsRenderMode==\MvcCore\Ext\Form::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL){$result=$errors.$result;}else if($this->Form->ErrorsRenderMode==\MvcCore\Ext\Form::ERROR_RENDER_MODE_AFTER_EACH_CONTROL){$result.=$errors;}return$result;}public function RenderControl(){$result='';foreach($this->Options as$key=>$value){$result.=$this->RenderControlItem($key,$value);}return$result;}public function RenderLabel(){if($this->RenderMode==\MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL)return'';$attrsStr=$this->renderAttrsWithFieldVars(array(),$this->GroupLabelAttrs,$this->GroupCssClasses);return View::Format(static::$Templates->label,array('id'=>$this->Id,'label'=>$this->Label,'attrs'=>$attrsStr?" $attrsStr":'',));}public function RenderControlItem($key,$option){$result='';$itemControlId=implode(\MvcCore\Ext\Form::HTML_IDS_DELIMITER,array($this->Form->Id,$this->Name,$key));list($itemLabelText,$labelAttrsStr,$controlAttrsStr)=$this->renderControlItemCompleteAttrsClassesAndText($key,$option);$checked=FALSE;if(gettype($this->Value)=='array'){$checked=in_array($key,$this->Value);}else{$checked=$this->Value===$key;}$itemControl=View::Format(static::$Templates->control,array('id'=>$itemControlId,'name'=>$this->Name,'type'=>$this->Type,'value'=>$key,'checked'=>$checked?' checked="checked"':'','attrs'=>$controlAttrsStr?" $controlAttrsStr":'',));if($this->RenderMode==\MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL){$itemLabel=View::Format(static::$Templates->label,array('id'=>$itemControlId,'label'=>$itemLabelText,'attrs'=>$labelAttrsStr?" $labelAttrsStr":'',));$result=($this->LabelSide=='left')?$itemControl.$itemLabel:$itemLabel.$itemControl;}else if($this->RenderMode==\MvcCore\Ext\Form::FIELD_RENDER_MODE_LABEL_AROUND){$result=View::Format(static::$Templates->{'togetherLabel'.(($this->LabelSide=='left')?'Right':'Left')},array('id'=>$itemControlId,'label'=>$itemLabelText,'control'=>$itemControl,'attrs'=>$labelAttrsStr?" $labelAttrsStr":'',));}return$result;}protected function renderControlItemCompleteAttrsClassesAndText($key,$option){$optionType=gettype($option);$labelAttrsStr='';$controlAttrsStr='';$itemLabelText='';$originalRequired=$this->Required;if($this->Type=='checkbox')$this->Required=FALSE;if($optionType=='string'){$itemLabelText=$option?$option:$key;$labelAttrsStr=$this->renderLabelAttrsWithFieldVars();$controlAttrsStr=$this->renderControlAttrsWithFieldVars();}else if($optionType=='array'){$itemLabelText=$option['text']?$option['text']:$key;$attrsArr=$this->ControlAttrs;$classArr=$this->CssClasses;if(isset($option['attrs'])&&gettype($option['attrs'])=='array'){$attrsArr=array_merge($this->ControlAttrs,$option['attrs']);}if(isset($option['class'])){$classArrParam=array();if(gettype($option['class'])=='array'){$classArrParam=$option['class'];}else if(gettype($option['class'])=='string'){$classArrParam=explode(' ',$option['class']);}foreach($classArrParam as$clsValue)if($clsValue)$classArr[]=$clsValue;}$labelAttrsStr=$this->renderAttrsWithFieldVars(array(),$attrsArr,$classArr);$controlAttrsStr=$this->renderAttrsWithFieldVars(array(),$attrsArr,$classArr,TRUE);}if($this->Type=='checkbox')$this->Required=$originalRequired;return array($itemLabelText,$labelAttrsStr,$controlAttrsStr);}}}
-namespace MvcCore\Ext\Form{class SubmitInput extends Core\Field{public$Type='submit';public$Value='Submit';public$RenderMode=\MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL;public$Accesskey=null;public$Validators=array();public function SetAccesskey($accesskey){$this->Accesskey=$accesskey;return$this;}public function OnAdded(\MvcCore\Ext\Form&$form){parent::OnAdded($form);if(!$this->Value){$clsName=get_class($this);throw new Core\Exception("No 'Value' defined for form field: '$clsName'.");}}public function SetUp(){parent::SetUp();if($this->Translate&&$this->Value){$this->Value=call_user_func($this->Form->Translator,$this->Value,$this->Form->Lang);}}public function RenderControl(){$attrsStr=$this->renderControlAttrsWithFieldVars(array('Accesskey',));return Core\View::Format(static::$Templates->control,array('id'=>$this->Id,'name'=>$this->Name,'type'=>$this->Type,'value'=>$this->Value,'attrs'=>$attrsStr?" $attrsStr":'',));}}}
-namespace MvcCore{abstract class Model{/** @var array */protected static$connectionArguments=array('4D'=>array('dsn'=>'{driver}:host={host};charset=UTF-8','auth'=>TRUE,'fileDb'=>FALSE,'options'=>array(),),'firebird'=>array('dsn'=>'{driver}:host={host};dbname={dbname};charset=UTF8','auth'=>TRUE,'fileDb'=>TRUE,'options'=>array()),'ibm'=>array('dsn'=>'ibm:DRIVER={IBM DB2 ODBC DRIVER};DATABASE={dbname};HOSTNAME={host};PORT={port};PROTOCOL=TCPIP;','auth'=>TRUE,'fileDb'=>FALSE,'options'=>array(),),'informix'=>array('dsn'=>'{driver}:host={host};service={service};database={dbname};server={server};protocol={protocol};EnableScrollableCursors=1','auth'=>TRUE,'fileDb'=>FALSE,'options'=>array(),),'mysql'=>array('dsn'=>'{driver}:host={host};dbname={dbname}','auth'=>TRUE,'fileDb'=>FALSE,'options'=>array('\PDO::ATTR_EMULATE_PREPARES'=>FALSE,'\PDO::MYSQL_ATTR_MULTI_STATEMENTS'=>TRUE,'\PDO::MYSQL_ATTR_INIT_COMMAND'=>"SET NAMES 'UTF8'",),),'sqlite'=>array('dsn'=>'{driver}:{dbname}','auth'=>FALSE,'fileDb'=>TRUE,'options'=>array(),),'sqlsrv'=>array('dsn'=>'{driver}:Server={host};Database={dbname}','auth'=>TRUE,'fileDb'=>FALSE,'options'=>array(),),'default'=>array('dsn'=>'{driver}:host={host};dbname={dbname}','auth'=>TRUE,'fileDb'=>FALSE,'options'=>array(),),);/** @var int */protected static$connectionIndex=-1;/** @var array */protected static$connections=array();/** @var array */protected static$instances=array();/** @var array */protected static$configs=array();/** @var bool */protected$autoInit=TRUE;/** @var \PDO */protected$db;/** @var \stdClass */protected$cfg;/** @var \MvcCore\Model */protected$resource;public function GetValues($getNullValues=FALSE,$includeInheritProperties=TRUE,$publicOnly=TRUE){$data=array();$systemProperties=array('autoInit'=>1,'db'=>1,'cfg'=>1,'resource'=>1);$modelClassName=get_class($this);$classReflector=new\ReflectionClass($modelClassName);$properties=$publicOnly?$classReflector->getProperties(\ReflectionProperty::IS_PUBLIC):$classReflector->getProperties();foreach($properties as$property){if(!$includeInheritProperties&&$property->class!=$modelClassName)continue;$propertyName=$property->name;if(isset($systemProperties[$propertyName]))continue;if(!$getNullValues&&is_null($this->$propertyName))continue;$data[$propertyName]=$this->$propertyName;}return$data;}public function SetUp($data=array(),$keysInsensitive=FALSE,$includeInheritProperties=TRUE,$publicOnly=TRUE){$modelClassName=get_class($this);$classReflector=new\ReflectionClass($modelClassName);$properties=$publicOnly?$classReflector->getProperties(\ReflectionProperty::IS_PUBLIC):$classReflector->getProperties();$dataKeys=$keysInsensitive?','.implode(',',array_keys($data)).',':'';foreach($properties as$property){if(!$includeInheritProperties&&$property->class!=$modelClassName)continue;$propertyName=$property->name;if(isset($data[$propertyName])){$value=$data[$propertyName];}else if($keysInsensitive){$dataKeyPos=stripos($dataKeys,','.$propertyName.',');if($dataKeyPos===FALSE)continue;$dataKey=substr($dataKeys,$dataKeyPos+1,strlen($propertyName));$value=$data[$dataKey];}else{continue;}if(preg_match('/@var\s+([^\s]+)/',$property->getDocComment(),$matches)){list(,$type)=$matches;settype($value,$type);}$this->$propertyName=$value;}return$this;}public static function GetInstance(){$className=get_called_class();$args=func_get_args();$instanceIndex=md5($className.'_'.serialize($args));if(!isset(self::$instances[$instanceIndex])){$reflectionClass=new\ReflectionClass($className);$instance=$reflectionClass->newInstanceArgs($args);self::$instances[$instanceIndex]=$instance;}return self::$instances[$instanceIndex];}public static function GetResource($args=array(),$modelClassName='',$resourceClassPath='\Resource'){$result=NULL;if(!$modelClassName)$modelClassName=get_called_class();if(strpos($modelClassName,'\Resource')===FALSE){$resourceClassName=$modelClassName.$resourceClassPath;if(class_exists($resourceClassName)){$result=call_user_func_array(array($resourceClassName,'GetInstance'),$args);}}return$result;}public function __construct($connectionIndex=-1){if($this->autoInit)$this->Init($connectionIndex);}public function Init($connectionIndex=-1){$this->db=static::GetDb($connectionIndex);$this->cfg=static::GetCfg($connectionIndex);$this->resource=static::GetResource(array(),get_class($this));}public static function GetDb($connectionIndex=-1){if(!isset(static::$connections[$connectionIndex])){static::loadConfigs();if($connectionIndex==-1)$connectionIndex=static::$connectionIndex;if($connectionIndex==-1)$connectionIndex=self::$connectionIndex;$cfg=static::GetCfg($connectionIndex);$conArgs=(object)self::$connectionArguments[isset(self::$connectionArguments[$cfg->driver])?$cfg->driver:'default'];$connection=NULL;if($conArgs->fileDb){$appRoot=\MvcCore::GetInstance()->GetRequest()->AppRoot;if(strpos($appRoot,'phar://')!==FALSE){$lastSlashPos=strrpos($appRoot,'/');$appRoot=substr($appRoot,7,$lastSlashPos-7);}$cfg->dbname=realpath($appRoot.$cfg->dbname);}$dsn=$conArgs->dsn;foreach($cfg as$key=>$value)$dsn=str_replace('{'.$key.'}',$value,$dsn);if($conArgs->auth){$connection=new\PDO($dsn,$cfg->username,$cfg->password,$conArgs->options);}else{$connection=new\PDO($dsn);}static::$connections[$connectionIndex]=$connection;}return static::$connections[$connectionIndex];}public static function GetCfg($connectionIndex=-1){static::loadConfigs();if($connectionIndex==-1)$connectionIndex=static::$connectionIndex;if($connectionIndex==-1)$connectionIndex=self::$connectionIndex;$baseType=gettype(static::$configs);if($baseType=='array'&&isset(static::$configs[$connectionIndex])){return static::$configs[$connectionIndex];}else if($baseType=='object'&&isset(static::$configs->$connectionIndex)){return static::$configs->$connectionIndex;}else{return static::$configs;}}protected static function loadConfigs(){if(empty(static::$configs)){$cfg=\MvcCore\Config::GetSystem();if($cfg===FALSE){$cfgPath=\MvcCore\Config::$SystemConfigPath;throw new\Exception('['.__CLASS__."] System config.ini not found in '$cfgPath'.");}if(!isset($cfg->db)){throw new\Exception('['.__CLASS__."] No [db] section and no records matched 'db.*' found in system config.ini.");}$cfgType=gettype($cfg->db);if($cfgType=='array'&&isset($cfg->db['defaultDbIndex'])){self::$connectionIndex=$cfg->db['defaultDbIndex'];}else if($cfgType=='object'&&isset($cfg->db->defaultDbIndex)){self::$connectionIndex=$cfg->db->defaultDbIndex;}static::$configs=$cfg->db;}}public function __call($rawName,$arguments=array()){$nameBegin=strtolower(substr($rawName,0,3));$name=substr($rawName,3);if($nameBegin=='get'&&isset($this->$name)){return$this->$name;}else if($nameBegin=='set'){$this->$name=isset($arguments[0])?$arguments[0]:NULL;return$this;}else{throw new\Exception('['.__CLASS__."] No property with name '$name' defined.");}}public function __set($name,$value){$this->$name=$value;}public function __get($name){return(isset($this->$name))?$this->$name:null;}}}
-namespace MvcCore\Ext\Auth\Virtual{class User extends\MvcCore\Model{/** @var int */public$Id=NULL;/** @var string */public$UserName='';/** @var string */public$FullName='';/** @var string */public$PasswordHash='';public static function GetUserBySession(){return NULL;}public static function Authenticate($username='',$password=''){return NULL;}public static function StoreInSession($uniqueUserName=''){}public static function ClearFromSession(){}public static function GetPasswordHash($password=''){return sha1(crypt((string)$password,\MvcCore\Ext\Auth::GetInstance()->GetConfig()->passwordHashSalt));}}}
-namespace App\Models{class Album extends\MvcCore\Model{/** @var int */public$Id;/** @var string */public$Title;/** @var string */public$Interpret;/** @var int */public$Year;public static function GetAll(){$rawData=self::GetDb()->query("
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Application{
+
+//include_once(__DIR__.'/../Request.php');
+//include_once(__DIR__.'/../Response.php');
+//include_once(__DIR__.'/../Debug.php');
+//include_once(__DIR__.'/../Session.php');
+//include_once(__DIR__.'/../Router.php');
+//include_once(__DIR__.'/../View.php');
+//include_once(__DIR__.'/../Controller.php');
+//include_once(__DIR__.'/../Config.php');
+
+/**
+ * Trait as partial class for `\MvcCore\Application`:
+ * - Processing application run (`\MvcCore\Application::Run();`):
+ *   - Completing request and response.
+ *   - Calling pre/post handlers.
+ *   - Controller/action dispatching.
+ *   - Error handling and error responses.
+ */
+trait Dispatching
+{
+	/***********************************************************************************
+	 *                   `\MvcCore\Application` - Normal Dispatching                   *
+	 ***********************************************************************************/
+
+	/**
+	 * Run application.
+	 * - 1. Complete and init:
+	 *      - `\MvcCore\Application::$compiled` flag.
+	 *      - Complete describing request object `\MvcCore\Request`.
+	 *      - Complete response storage object `\MvcCore\Response`.
+	 *      - Init debugging and logging by `\MvcCore\Debug::Init();`.
+	 * - 2. (Process pre-route handlers queue.)
+	 * - 3. Route request by your router or with `\MvcCore\Router::Route()` by default.
+	 * - 4. (Process pre-dispatch handlers queue.)
+	 * - 5. Dispatch controller lifecycle:
+	 *  	- Create and set up controller.
+	 *  	- Call `\MvcCore\Controller::Init()` and `\MvcCore\Controller::PreDispatch()`.
+	 *      - Call routed action method.
+	 *      - Call `\MvcCore\Controller::Render()` to render all views.
+	 * - 6. Terminate request:
+	 *      - (Process post-dispatch handlers queue.)
+	 *      - Write session in `register_shutdown_function()` handler.
+	 *      - Send response headers if possible and echo response body.
+	 * @param bool $singleFileUrl Set 'Single File Url' mode to `TRUE` to compile and test
+	 *                            all assets and everything before compilation processing.
+	 * @return \MvcCore\Application
+	 */
+	public function Run ($singleFileUrl = FALSE) {
+		if ($singleFileUrl) $this->SetCompiled(static::COMPILED_SFU);
+		$this->GetRequest(); // triggers creation
+		$this->GetResponse();// triggers creation
+		$debugClass = $this->debugClass;
+		$debugClass::Init();
+		if (!$this->ProcessCustomHandlers($this->preRouteHandlers))			return $this->Terminate();
+		if (!$this->RouteRequest())											return $this->Terminate();
+		if (!$this->ProcessCustomHandlers($this->preDispatchHandlers))		return $this->Terminate();
+		if (!$this->DispatchRequestByRoute($this->router->GetCurrentRoute()))	return $this->Terminate();
+		// Post-dispatch handlers processing moved to: `$this->Terminate();` to process them every time.
+		// if (!$this->processCustomHandlers($this->postDispatchHandlers))	return $this->Terminate();
+		return $this->Terminate();
+	}
+
+	/**
+	 * Starts a session, standardly called from `\MvcCore\Controller::Init();`.
+	 * But is shoud be called anytime sooner, for example in any pre request handler
+	 * to redesign request before MVC dispatching or anywhere else.
+	 * @return void
+	 */
+	public function SessionStart () {
+		$sessionClass = $this->sessionClass;
+		$sessionClass::Start();
+	}
+
+	/**
+	 * Route request by router obtained by default by calling:
+	 * `\MvcCore\Router::GetInstance();`.
+	 * Store requested route inside configured
+	 * router class to get it later by calling:
+	 * `\MvcCore\Router::GetCurrentRoute();`
+	 * @return bool
+	 */
+	public function RouteRequest () {
+		try {
+			// `GetRouter()` method triggers creating
+			$this->GetRouter()->Route();
+			return TRUE;
+		} catch (\Exception $e) {
+			return $this->DispatchException($e);
+		}
+	}
+
+	/**
+	 * Process pre-route, pre-request or post-dispatch
+	 * handlers queue by queue index. Call every handler in queue
+	 * in try catch mode to catch any exceptions to call:
+	 * `\MvcCore\Application::DispatchException($e);`.
+	 * @param callable[] $handlers
+	 * @return bool
+	 */
+	public function ProcessCustomHandlers (& $handlers = array()) {
+		if ($this->request->IsInternalRequest() === TRUE) return TRUE;
+		$result = TRUE;
+		foreach ($handlers as $handlersRecord) {
+			list ($handler, $isClosure) = $handlersRecord;
+			try {
+				if ($isClosure) {
+					$handler($this->request, $this->response);
+				} else {
+					call_user_func($handler, $req, $res);
+				}
+			} catch (\Exception $e) {
+				$this->DispatchException($e);
+				$result = FALSE;
+				break;
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * If controller class exists - try to dispatch controller,
+	 * if only view file exists - try to render targeted view file
+	 * with configured core controller instance (`\MvcCore\Controller` by default).
+	 * @param \MvcCore\Route $route
+	 * @return bool
+	 */
+	public function DispatchRequestByRoute (\MvcCore\Interfaces\IRoute & $route = NULL) {
+		if ($route === NULL) return $this->DispatchException('No route for request', 404);
+		list ($ctrlPc, $actionPc) = array($route->GetController(), $route->GetAction());
+		$actionName = $actionPc . 'Action';
+		$viewClass = $this->viewClass;
+		$viewScriptFullPath = $viewClass::GetViewScriptFullPath(
+			$viewClass::$ScriptsDir,
+			$this->request->GetControllerName() . '/' . $this->request->GetActionName()
+		);
+		if ($ctrlPc == 'Controller') {
+			$controllerName = $this->controllerClass;
+		} else {
+			// `App_Controllers_<$ctrlPc>`
+			$controllerName = $this->CompleteControllerName($ctrlPc);
+			if (!class_exists($controllerName)) {
+				// if controller doesn't exists - check if at least view exists
+				if (\Packager_Php_Wrapper::FileExists($viewScriptFullPath)) {
+					// if view exists - change controller name to core controller, if not let it go to exception
+					$controllerName = $this->controllerClass;
+				} else {
+					return $this->DispatchException("Controller class `$controllerName` doesn't exist.", 404);
+				}
+			}
+		}
+		return $this->DispatchControllerAction(
+			$controllerName,
+			$actionName,
+			$viewScriptFullPath,
+			function (\Exception & $e) {
+				return $this->DispatchException($e);
+			}
+		);
+	}
+
+	/**
+	 * Dispatch controller by:
+	 * - By full class name and by action name
+	 * - Or by view script full path
+	 * Call exception callback if there is catched any
+	 * exception in controller lifecycle dispatching process
+	 * with first argument as catched exception.
+	 * @param string $ctrlClassFullName
+	 * @param string $actionName
+	 * @param string $viewScriptFullPath
+	 * @param callable $exceptionCallback
+	 * @return bool
+	 */
+	public function DispatchControllerAction (
+		$ctrlClassFullName,
+		$actionName,
+		$viewScriptFullPath,
+		callable $exceptionCallback
+	) {
+		/** @var $controller \MvcCore\Controller */
+		$controller = NULL;
+		try {
+			$controller = $ctrlClassFullName::GetInstance()
+				->SetApplication($this)
+				->SetRequest($this->request)
+				->SetResponse($this->response)
+				->SetRouter($this->router);
+		} catch (\Exception $e) {
+			return $this->DispatchException($e->getMessage(), 404);
+		}
+		if (!method_exists($controller, $actionName) && $ctrlClassFullName !== $this->controllerClass) {
+			if (!\Packager_Php_Wrapper::FileExists($viewScriptFullPath)) {
+				$appRoot = $this->request->GetAppRoot();
+				$viewScriptPath = mb_strpos($viewScriptFullPath, $appRoot) === FALSE
+					? $viewScriptFullPath
+					: mb_substr($viewScriptFullPath, mb_strlen($appRoot));
+				return $this->DispatchException(
+					"Controller class `$ctrlClassFullName` has not method `$actionName` \n"
+					."or view doesn't exists: `$viewScriptPath`.",
+					404
+				);
+			}
+		}
+		$this->controller = & $controller;
+		try {
+			$controller->Dispatch($actionName);
+		} catch (\Exception $e) {
+			return $exceptionCallback($e);
+		}
+		return TRUE;
+	}
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array()) {
+		return $this->router->Url($controllerActionOrRouteName, $params);
+	}
+
+	/**
+	 * Terminate request.
+	 * The only place in application where is called `echo '....'` without output buffering.
+	 * - Process post-dispatch handlers queue.
+	 * - Write session throught registered handler into `register_shutdown_function()`.
+	 * - Send HTTP headers (if still possible).
+	 * - Echo response body.
+	 * This method is always called INTERNALLY after controller
+	 * lifecycle has been dispatched. But you can use it any
+	 * time sooner for custom purposes.
+	 * @return \MvcCore\Application
+	 */
+	public function Terminate () {
+		$this->processCustomHandlers($this->postDispatchHandlers);
+		$sessionClass = $this->sessionClass;
+		$sessionClass::Close();
+		$this->response->Send(); // headers (if still possible) and echo
+		// exit; // Why to force exit? What if we want to do something more?
+		return $this;
+	}
+
+
+	/***********************************************************************************
+	 *               `\MvcCore\Application` - Request Error Dispatching                *
+	 ***********************************************************************************/
+
+	/**
+	 * Dispatch catched exception:
+	 *	- If request is processing PHP package packing to determinate current script dependencies:
+	 *		- Do not log or render nothing.
+	 *	- If request is production mode:
+	 *		- Print exception in browser.
+	 *	- If request is not in development mode:
+	 *		- Log error and try to render error page by configured controller and error action:,
+	 *		  `\App\Controllers\Index::Error();` by default.
+	 * @param \Exception|string $exceptionOrMessage
+	 * @param int|NULL $code
+	 * @return bool
+	 */
+	public function DispatchException ($exceptionOrMessage, $code = NULL) {
+		if (class_exists('\Packager_Php')) return FALSE; // packing process
+		$exception = NULL;
+		if ($exceptionOrMessage instanceof \Exception) {
+			$exception = $exceptionOrMessage;
+		} else {
+			try {
+				if ($code === NULL) throw new \Exception($exceptionOrMessage);
+				throw new \ErrorException($exceptionOrMessage, $code);
+			} catch (\Exception $e) {
+				$exception = $e;
+			}
+		}
+		$debugClass = $this->debugClass;
+		$configClass = $this->configClass;
+		if ($exception->getCode() == 404) {
+			$debugClass::Log($exception->getMessage().": ".$this->request->GetFullUrl(), \MvcCore\Interfaces\IDebug::INFO);
+			return $this->RenderNotFound($exception->getMessage());
+		} else if ($configClass::IsDevelopment(TRUE)) {
+			$debugClass::Exception($exception);
+			return FALSE;
+		} else {
+			$debugClass::Log($exception, \MvcCore\Interfaces\IDebug::EXCEPTION);
+			return $this->RenderError($exception);
+		}
+	}
+
+	/**
+	 * Render error by configured default controller and error action,
+	 * `\App\Controllers\Index::Error();` by default.
+	 * If there is no controller/action like that or any other exception happends,
+	 * it's processed very simple plain text response with 500 http code.
+	 * @param \Exception $e
+	 * @return bool
+	 */
+	public function RenderError (\Exception $e) {
+		$defaultCtrlFullName = $this->GetDefaultControllerIfHasAction(
+			$this->defaultControllerErrorActionName
+		);
+		$exceptionMessage = $e->getMessage();
+		if ($defaultCtrlFullName) {
+			$toolClass = $this->toolClass;
+			$debugClass = $this->debugClass;
+			$viewClass = $this->viewClass;
+			$ctrlNameDc = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
+			$actionNameDc = $toolClass::GetDashedFromPascalCase($this->defaultControllerErrorActionName);
+			$newParams = array_merge($this->request->GetParams(''), array(
+				'code'		=> 500,
+				'message'	=> $exceptionMessage,
+				'controller'=> $ctrlNameDc,
+				'action'	=> $actionNameDc,
+			));
+			$this->request->SetParams($newParams)
+				->SetControllerName($ctrlNameDc)
+				->SetActionName($actionNameDc);
+			$this->response->SetCode(500);
+			return $this->DispatchControllerAction(
+				$defaultCtrlFullName,
+				$this->defaultControllerErrorActionName . "Action",
+				$viewClass::GetViewScriptFullPath(
+					$viewClass::$ScriptsDir, $ctrlNameDc . '/' . $actionNameDc
+				),
+				function (\Exception & $e) use ($exceptionMessage, $debugClass) {
+					$debugClass::Log($e, \MvcCore\Interfaces\IDebug::EXCEPTION);
+					$this->RenderError500PlainText($exceptionMessage . PHP_EOL . PHP_EOL . $e->getMessage());
+				}
+			);
+		} else {
+			return $this->RenderError500PlainText($exceptionMessage);
+		}
+	}
+
+	/**
+	 * Render error by configured default controller and not found error action,
+	 * `\App\Controllers\Index::NotFound();` by default.
+	 * If there is no controller/action like that or any other exception happends,
+	 * it's processed very simple plain text response with 404 http code.
+	 * @param \Exception $e
+	 * @return bool
+	 */
+	public function RenderNotFound ($exceptionMessage = '') {
+		if (!$exceptionMessage) $exceptionMessage = 'Page not found.';
+		$defaultCtrlFullName = $this->GetDefaultControllerIfHasAction(
+			$this->defaultControllerNotFoundActionName
+		);
+		if ($defaultCtrlFullName) {
+			$toolClass = $this->toolClass;
+			$debugClass = $this->debugClass;
+			$viewClass = $this->viewClass;
+			$ctrlNameDc = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
+			$actionNameDc = $toolClass::GetDashedFromPascalCase($this->defaultControllerNotFoundActionName);
+			$newParams = array_merge($this->request->GetParams(''), array(
+				'code'		=> 404,
+				'message'	=> $exceptionMessage,
+				'controller'=> $ctrlNameDc,
+				'action'	=> $actionNameDc,
+			));
+			$this->request->SetParams($newParams)
+				->SetControllerName($ctrlNameDc)
+				->SetActionName($actionNameDc);
+			$this->response->SetCode(404);
+			return $this->DispatchControllerAction(
+				$defaultCtrlFullName,
+				$this->defaultControllerNotFoundActionName . "Action",
+				$viewClass::GetViewScriptFullPath(
+					$viewClass::$ScriptsDir, $ctrlNameDc . '/' . $actionNameDc
+				),
+				function (\Exception & $e) use ($exceptionMessage, $debugClass) {
+					$debugClass::Log($e, \MvcCore\Interfaces\IDebug::EXCEPTION);
+					$this->RenderError404PlainText($exceptionMessage);
+				}
+			);
+		} else {
+			return $this->RenderError404PlainText($exceptionMessage);
+		}
+	}
+
+	/**
+	 * Prepare very simple response with internal server error (500)
+	 * as plain text response into `\MvcCore\Appication::$response`.
+	 * @param string $text
+	 * @return bool
+	 */
+	public function RenderError500PlainText ($text = '') {
+		$htmlResponse = FALSE;
+		$responseClass = $this->responseClass;
+		$configClass = $this->configClass;
+		if (!$configClass::IsDevelopment(TRUE)) {
+			$text = 'Error 500: Internal Server Error.';
+		} else {
+			$obContent = ob_get_clean();
+			if (mb_strlen($obContent) > 0)
+				$htmlResponse = mb_strpos($obContent, '<') !== FALSE && mb_strpos($obContent, '>') !== FALSE;
+			if ($htmlResponse) {
+				$text = '<pre><big>Error 500</big>: '.PHP_EOL.PHP_EOL.$text.'</pre>'.$obContent;
+			} else {
+				$text = 'Error 500: '.PHP_EOL.PHP_EOL.$text.$obContent;
+			}
+		}
+		$this->response = $responseClass::GetInstance(
+			\MvcCore\Interfaces\IResponse::INTERNAL_SERVER_ERROR,
+			array('Content-Type' => $htmlResponse ? 'text/html' : 'text/plain'),
+			$text
+		);
+		return TRUE;
+	}
+
+	/**
+	 * Prepare very simple response with not found error (404)
+	 * as plain text response into `\MvcCore\Appication::$response`.
+	 * @param string $text
+	 * @return bool
+	 */
+	public function RenderError404PlainText ($text = '') {
+		$htmlResponse = FALSE;
+		$responseClass = $this->responseClass;
+		$configClass = $this->configClass;
+		if (!$configClass::IsDevelopment(TRUE)) {
+			$text = 'Error 404: Page not found.';
+		} else {
+			$obContent = ob_get_clean();
+			if (mb_strlen($obContent) > 0)
+				$htmlResponse = mb_strpos($obContent, '<') !== FALSE && mb_strpos($obContent, '>') !== FALSE;
+			if ($htmlResponse) {
+				$text = '<pre><big>Error 404</big>: '.PHP_EOL.PHP_EOL.$text.'</pre>'.$obContent;
+			} else {
+				$text = 'Error 404: '.PHP_EOL.PHP_EOL.$text.$obContent;
+			}
+		}
+		$this->response = $responseClass::GetInstance(
+			\MvcCore\Interfaces\IResponse::NOT_FOUND,
+			array('Content-Type' => $htmlResponse ? 'text/html' : 'text/plain'),
+			$text
+		);
+		return TRUE;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Application{
+
+/**
+ * Trait as partial class for `\MvcCore\Application`:
+ * - Main application objects container (request, response, controller, etc.).
+ * - MvcCore compile mode managing (single file mode, php, phar, or no package).
+ * - Global store for all main core class names, to use them as modules,
+ *   to be changed any time (request class, response class, debug class, etc.).
+ */
+trait GettersSetters
+{
+	/***********************************************************************************
+	 *                       `\MvcCore\Application` - Properties                       *
+	 ***********************************************************************************/
+
+	/**
+	 * Application instance for current request. Singleton instance storrage.
+	 * @var \MvcCore\Application
+	 */
+	protected static $instance;
+
+	/**
+	 * Describes if application is running as standard php project or as single file application.
+	 * It shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * @var string
+	 */
+	protected $compiled = NULL;
+
+	/**
+	 * Top most parent controller instance currently dispatched by application.
+	 * @var \MvcCore\Controller
+	 */
+	protected $controller = NULL;
+
+	/**
+	 * Request object - parsed uri, query params, app paths...
+	 * @var \MvcCore\Request
+	 */
+	protected $request = NULL;
+
+	/**
+	 * Response object - storrage for response headers and rendered body.
+	 * @var \MvcCore\Response
+	 */
+	protected $response = NULL;
+
+	/**
+	 * Application http router to route request and build url addresses.
+	 * @var \MvcCore\Router
+	 */
+	protected $router = NULL;
+
+
+	/**
+	 * Pre route custom closure calls storrage.
+	 * Every item in this array has to be array with `callable`
+	 * and `boolean` if `callable` is closure instance.
+	 * Params in callable should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreRouteHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @var \array[]
+	 */
+	protected $preRouteHandlers = array();
+
+	/**
+	 * Pre dispatch custom calls storrage.
+	 * Every item in this array has to be array with `callable`
+	 * and `boolean` if `callable` is closure instance.
+	 * Params in `callable` should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @var \array[]
+	 */
+	protected $preDispatchHandlers = array();
+
+	/**
+	 * Post dispatch custom calls storrage.
+	 * Every item in this array has to be array with `callable`
+	 * and `boolean` if `callable` is closure instance.
+	 * Params in `callable` should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPostDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @var \array[]
+	 */
+	protected $postDispatchHandlers = array();
+
+
+	/**
+	 * Class to load and parse (system) config(s) and manage environment string.
+	 * @var string
+	 */
+	protected $configClass = '\MvcCore\Config';
+
+	/**
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * @var string
+	 */
+	protected $controllerClass = '\MvcCore\Controller';
+
+	/**
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * @var string
+	 */
+	protected $debugClass = '\MvcCore\Debug';
+
+	/**
+	 * Class to create describing HTTP request object.
+	 * @var string
+	 */
+	protected $requestClass = '\MvcCore\Request';
+
+	/**
+	 * Class to create HTTP response object to store response headers and response content.
+	 * @var string
+	 */
+	protected $responseClass = '\MvcCore\Response';
+
+	/**
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * @var string
+	 */
+	protected $routeClass = '\MvcCore\Route';
+
+	/**
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * @var string
+	 */
+	protected $routerClass = '\MvcCore\Router';
+
+	/**
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * @var string
+	 */
+	protected $sessionClass = '\MvcCore\Session';
+
+	/**
+	 * Class to handle helper calls from MvcCore core modules.
+	 * @var string
+	 */
+	protected $toolClass = '\MvcCore\Tool';
+
+	/**
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * @var string
+	 */
+	protected $viewClass = '\MvcCore\View';
+
+
+	/**
+	 * Application scripts and views directory name as `"App"` by default,
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * @var string
+	 */
+	protected $appDir = 'App';
+
+	/**
+	 * Controllers directory name as `"Controllers"` by default, for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @var string
+	 */
+	protected $controllersDir = 'Controllers';
+
+	/**
+	 * Views directory name as `"views"` by default, for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @var string
+	 */
+	protected $viewsDir = 'Views';
+
+
+	/**
+	 * Default controller name, `"Index"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerName = 'Index';
+
+	/**
+	 * Default controller default action name, `"Index"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerDefaultActionName = 'Index';
+
+	/**
+	 * Default controller error action name, `"Error"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerErrorActionName = 'Error';
+
+	/**
+	 * Default controller not found error action name, `"NotFound"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerNotFoundActionName = 'NotFound';
+
+
+	/***********************************************************************************
+	 *                        `\MvcCore\Application` - Getters                         *
+	 ***********************************************************************************/
+
+	/**
+	 * Get if application is running as standard php project or as single file application.
+	 * It shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * @return string
+	 */
+	public function GetCompiled () {
+		if ($this->compiled === NULL) {
+			$compiled = static::NOT_COMPILED;
+			if (strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Application/GettersSetters.php', 'phar://') === 0) {
+				$compiled = static::COMPILED_PHAR;
+			} else if (class_exists('\Packager_Php_Wrapper')) {
+				$compiled = constant('\Packager_Php_Wrapper::FS_MODE');
+			}
+			$this->compiled = $compiled;
+		}
+		return $this->compiled;
+	}
+
+
+	/**
+	 * Get application config class implementing `\MvcCore\Interfaces\IConfig`.
+	 * Class to load and parse (system) config(s) and manage environment string.
+	 * @return string
+	 */
+	public function GetConfigClass () {
+		return $this->configClass;
+	}
+
+	/**
+	 * Get application controller class implementing `\MvcCore\Interfaces\IController`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * @return string
+	 */
+	public function GetControllerClass () {
+		return $this->controllerClass;
+	}
+
+	/**
+	 * Get application debug class implementing `\MvcCore\Interfaces\IDebug`.
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * @return string
+	 */
+	public function GetDebugClass () {
+		return $this->debugClass;
+	}
+
+	/**
+	 * Get application request class implementing `\MvcCore\Interfaces\IRequest`.
+	 * Class to create describing HTTP request object.
+	 * @return string
+	 */
+	public function GetRequestClass () {
+		return $this->requestClass;
+	}
+
+	/**
+	 * Get application response class implementing `\MvcCore\Interfaces\IResponse`.
+	 * Class to create HTTP response object to store response headers and response content.
+	 * @return string
+	 */
+	public function GetResponseClass () {
+		return $this->responseClass;
+	}
+
+	/**
+	 * Get application route class implementing `\MvcCore\Interfaces\IRoute`.
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * @return string
+	 */
+	public function GetRouteClass () {
+		return $this->routeClass;
+	}
+
+	/**
+	 * Get application router class implementing `\MvcCore\Interfaces\IRouter`.
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * @return string
+	 */
+	public function GetRouterClass () {
+		return $this->routerClass;
+	}
+
+	/**
+	 * Get application session class implementing `\MvcCore\Interfaces\ISession`.
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * @return string
+	 */
+	public function GetSessionClass () {
+		return $this->sessionClass;
+	}
+
+	/**
+	 * Get application tool class implementing `\MvcCore\Interfaces\ITool`.
+	 * Class to handle helper calls from MvcCore core modules.
+	 * @return string
+	 */
+	public function GetToolClass () {
+		return $this->toolClass;
+	}
+
+	/**
+	 * Get application view class implementing `\MvcCore\Interfaces\IView`.
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * @return string
+	 */
+	public function GetViewClass () {
+		return $this->viewClass;
+	}
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::$router;`.
+	 * @return \MvcCore\Router
+	 */
+	public function & GetRouter () {
+		if ($this->router === NULL) {
+			$routerClass = $this->routerClass;
+			$this->router = $routerClass::GetInstance()->SetRequest($this->GetRequest());
+		}
+		return $this->router;
+	}
+
+	/**
+	 * Returns currently dispatched instance of protected `\MvcCore\Application::$controller;`.
+	 * @return \MvcCore\Controller
+	 */
+	public function & GetController () {
+		return $this->controller;
+	}
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::$request;`.
+	 * @return \MvcCore\Request
+	 */
+	public function & GetRequest () {
+		if ($this->request === NULL) {
+			$requestClass = $this->requestClass;
+			$this->request = $requestClass::GetInstance($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
+		}
+		return $this->request;
+	}
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::response;`.
+	 * @return \MvcCore\Response
+	 */
+	public function & GetResponse () {
+		if ($this->response === NULL) {
+			$responseClass = $this->responseClass;
+			$this->response = $responseClass::GetInstance();
+		}
+		return $this->response;
+	}
+
+	/**
+	 * Get application scripts and views directory name as `"App"` by default,
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetAppDir () {
+		return $this->appDir;
+	}
+
+	/**
+	 * Get controllers directory name as `"Controllers"` by default, for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetControllersDir () {
+		return $this->controllersDir;
+	}
+
+	/**
+	 * Get views directory name as `"views"` by default, for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetViewsDir () {
+		return $this->viewsDir;
+	}
+
+	/**
+	 * Returns array with:
+	 * - `0 => "index"` - Default controller name, from protected `\MvcCore\Application::$defaultControllerName`.
+	 * - `1 => "index"` - Default action name, from protected `\MvcCore\Application::$defaultControllerDefaultActionName`.
+	 * @return string[]
+	 */
+	public function GetDefaultControllerAndActionNames () {
+		return array($this->defaultControllerName, $this->defaultControllerDefaultActionName);
+	}
+
+
+	/***********************************************************************************
+	 *                        `\MvcCore\Application` - Setters                         *
+	 ***********************************************************************************/
+
+	/**
+	 * Set if application is running as standard php project or as single file application.
+	 * First param `$compiled` shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * Core configuration method.
+	 * @param string $compiled
+	 * @return \MvcCore\Application
+	 */
+	public function & SetCompiled ($compiled = '') {
+		$this->compiled = $compiled;
+		return $this;
+	}
+
+
+	/**
+	 * Set application config class implementing `\MvcCore\Interfaces\IConfig`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * Core configuration method.
+	 * @param string $configClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetConfigClass ($configClass) {
+		return $this->setCoreClass($configClass, 'configClass', 'MvcCore\Interfaces\IConfig');
+	}
+
+	/**
+	 * Set application controller class implementing `\MvcCore\Interfaces\IController`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * Core configuration method.
+	 * @param string $controllerClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetControllerClass ($controllerClass) {
+		return $this->setCoreClass($controllerClass, 'configClass', 'MvcCore\Interfaces\IController');
+	}
+
+	/**
+	 * Set application debug class implementing `\MvcCore\Interfaces\IDebug`.
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * Core configuration method.
+	 * @param string $debugClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDebugClass ($debugClass) {
+		return $this->setCoreClass($debugClass, 'debugClass', 'MvcCore\Interfaces\IDebug');
+	}
+
+	/**
+	 * Set application request class implementing `\MvcCore\Interfaces\IRequest`.
+	 * Class to create describing HTTP request object.
+	 * Core configuration method.
+	 * @param string $requestClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetRequestClass ($requestClass) {
+		return $this->setCoreClass($requestClass, 'requestClass', 'MvcCore\Interfaces\IRequest');
+	}
+
+	/**
+	 * Set application response class implementing `\MvcCore\Interfaces\IResponse`.
+	 * Class to create HTTP response object to store response headers and response content.
+	 * Core configuration method.
+	 * @param string $responseClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetResponseClass ($responseClass) {
+		return $this->setCoreClass($responseClass, 'responseClass', 'MvcCore\Interfaces\IResponse');
+	}
+
+	/**
+	 * Set application route class implementing `\MvcCore\Interfaces\IRoute`.
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * Core configuration method.
+	 * @param string $routeClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetRouteClass ($routeClass) {
+		return $this->setCoreClass($routeClass, 'routerClass', 'MvcCore\Interfaces\IRoute');
+	}
+
+	/**
+	 * Set application router class implementing `\MvcCore\Interfaces\IRouter`.
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * Core configuration method.
+	 * @param string $routerClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetRouterClass ($routerClass) {
+		return $this->setCoreClass($routerClass, 'routerClass', 'MvcCore\Interfaces\IRouter');
+	}
+
+	/**
+	 * Set application session class implementing `\MvcCore\Interfaces\ISession`.
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * Core configuration method.
+	 * @param string $sessionClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetSessionClass ($sessionClass) {
+		return $this->setCoreClass($sessionClass, 'sessionClass', 'MvcCore\Interfaces\ISession');
+	}
+
+	/**
+	 * Set application tool class implementing `\MvcCore\Interfaces\ITool`.
+	 * Class to handle helper calls from MvcCore core modules.
+	 * Core configuration method.
+	 * @param string $toolClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetToolClass ($toolClass) {
+		return $this->setCoreClass($toolClass, 'toolClass', 'MvcCore\Interfaces\ITool');
+	}
+
+	/**
+	 * Set application view class implementing `\MvcCore\Interfaces\IView`.
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * Core configuration method.
+	 * @param string $viewClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetViewClass ($viewClass) {
+		return $this->setCoreClass($viewClass, 'viewClass', 'MvcCore\Interfaces\IView');
+	}
+
+
+	/**
+	 * Set application scripts and views directory name (`"App"` by default),
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $appDir
+	 * @return \MvcCore\Application
+	 */
+	public function & SetAppDir ($appDir) {
+		$this->appDir = $appDir;
+		return $this;
+	}
+
+	/**
+	 * Set controllers directory name (`"Controllers"` by default), for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $controllersDir
+	 * @return \MvcCore\Application
+	 */
+	public function & SetControllersDir ($controllersDir) {
+		$this->controllersDir = $controllersDir;
+		return $this;
+	}
+
+	/**
+	 * Set views directory name (`"views"` by default), for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $viewsDir
+	 * @return \MvcCore\Application
+	 */
+	public function & SetViewsDir ($viewsDir) {
+		$this->viewsDir = $viewsDir;
+		return $this;
+	}
+
+	/**
+	 * Set default controller name. `"Index"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerName ($defaultControllerName) {
+		$this->defaultControllerName = $defaultControllerName;
+		return $this;
+	}
+
+	/**
+	 * Set default controller default action name. `"Index"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultActionName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerDefaultActionName ($defaultActionName) {
+		$this->defaultControllerDefaultActionName = $defaultActionName;
+		return $this;
+	}
+
+	/**
+	 * Set default controller common error action name. `"Error"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerErrorActionName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerErrorActionName ($defaultControllerErrorActionName) {
+		$this->defaultControllerErrorActionName = $defaultControllerErrorActionName;
+		return $this;
+	}
+
+	/**
+	 * Set default controller not found error action name. `"Not Found"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerNotFoundActionName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerNotFoundActionName ($defaultControllerNotFoundActionName) {
+		$this->defaultControllerNotFoundActionName = $defaultControllerNotFoundActionName;
+		return $this;
+	}
+
+	/**
+	 * Add pre route handler into pre route handlers queue to process them after
+	 * every request has been completed into `\MvcCore\Request` describing object and before
+	 * every request will be routed by `\MvcCore\Router::Route();` call.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreRouteHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	public function & AddPreRouteHandler (callable $handler, $priorityIndex = NULL) {
+		if (!is_callable($handler)) throw new \InvalidArgumentException(
+			"[".__CLASS__."] Pre route handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
+		);
+		return $this->setHandler($this->preRouteHandlers, $handler, $priorityIndex);
+	}
+
+	/**
+	 * Add pre dispatch handler into pre dispatch handlers queue to process them after
+	 * every request has been routed by `\MvcCore\Router::Route();` call and before
+	 * every request will be dispatched by `\MvcCore\Controller::Dispatch();`, which triggers
+	 * methods `\MvcCore\Controller::Init();`, `\MvcCore\Controller::PreDispatch();` etc.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	public function & AddPreDispatchHandler (callable $handler, $priorityIndex = NULL) {
+		if (!is_callable($handler)) throw new \InvalidArgumentException(
+			"[".__CLASS__."] Pre dispatch handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
+		);
+		return $this->setHandler($this->preDispatchHandlers, $handler, $priorityIndex);
+	}
+
+	/**
+	 * Add post dispatch handler into post dispatch handlers queue to process them
+	 * before every request is terminated by `\MvcCore\Application::Terminate();`.
+	 * Every request terminated sooner has executed this post dispatch handlers queue.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPostDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	public function & AddPostDispatchHandler (callable $handler, $priorityIndex = NULL) {
+		if (!is_callable($handler)) throw new \InvalidArgumentException(
+			"[".__CLASS__."] Post dispatch handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
+		);
+		return $this->setHandler($this->postDispatchHandlers, $handler, $priorityIndex);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Application{
+
+//include_once(__DIR__.'/../Tools.php');
+
+/**
+ * Trait as partial class for `\MvcCore\Application`:
+ * - Helper methods for normal requests and error requests dispatching.
+ * - Helper methods for core classes configuration.
+ */
+trait Helpers
+{
+	/***********************************************************************************
+	 *                     `\MvcCore\Application` - Helper Methods                     *
+	 ***********************************************************************************/
+
+	/**
+	 * Check if default application controller (`\App\Controllers\Index` by default) has specific action.
+	 * If default controller has specific action - return default controller full name, else empty string.
+	 * @param string $actionName
+	 * @return string
+	 */
+	public function GetDefaultControllerIfHasAction ($actionName) {
+		$defaultControllerName = $this->CompleteControllerName($this->defaultControllerName);
+		if (class_exists($defaultControllerName) && method_exists($defaultControllerName, $actionName.'Action')) {
+			return $defaultControllerName;
+		}
+		return '';
+	}
+
+	/**
+	 * Complete standard MvcCore application controller full name in form:
+	 * `\App\Controllers\<$controllerNamePascalCase>`.
+	 * @param string $controllerNamePascalCase
+	 * @return string
+	 */
+	public function CompleteControllerName ($controllerNamePascalCase) {
+		$firstChar = substr($controllerNamePascalCase, 0, 1);
+		if ($firstChar == '\\') return str_replace('/', '\\', $controllerNamePascalCase);
+		return '\\' . implode('\\', array(
+			$this->appDir,
+			$this->controllersDir,
+			str_replace('/', '\\', $controllerNamePascalCase)
+		));
+	}
+
+	/**
+	 * Return `TRUE` if current request is default controller error action dispatching process.
+	 * @return bool
+	 */
+	public function IsErrorDispatched () {
+		$toolClass = $this->toolClass;
+		$defaultCtrlName = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
+		$errorActionName = $toolClass::GetDashedFromPascalCase($this->defaultControllerErrorActionName);
+		return $this->request->GetControllerName() == $defaultCtrlName &&
+			$this->request->GetActionName() == $errorActionName;
+	}
+
+	/**
+	 * Return `TRUE` if current request is default controller not found error action dispatching process.
+	 * @return bool
+	 */
+	public function IsNotFoundDispatched () {
+		$toolClass = $this->toolClass;
+		$defaultCtrlName = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
+		$errorActionName = $toolClass::GetDashedFromPascalCase($this->defaultControllerNotFoundActionName);
+		return $this->request->GetControllerName() == $defaultCtrlName &&
+			$this->request->GetActionName() == $errorActionName;
+	}
+
+	/**
+	 * Set core class name only if given class string implements
+	 * given core interface, else thrown an exception.
+	 * @param string $newCoreClassName
+	 * @param string $coreClassVar
+	 * @param string $coreClassInterface
+	 * @throws \Exception
+	 * @return \MvcCore\Application
+	 */
+	protected function & setCoreClass ($newCoreClassName, $coreClassVar, $coreClassInterface) {
+		if (call_user_func(array($this->toolClass, 'CheckClassInterface'), $newCoreClassName, $coreClassInterface))
+			$this->$coreClassVar = $newCoreClassName;
+		return $this;
+	}
+
+	/**
+	 * Set preroute, predispatch or post dispatche handler under specific priority index.
+	 * @param array $handlers Application handlers collection reference.
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	protected function & setHandler (array & $handlers, callable $handler, $priorityIndex = NULL) {
+		$reflection = new \ReflectionFunction($handler);
+		$isClosure = $reflection->isClosure();
+		if ($priorityIndex === NULL) {
+			$handlers[] = array($handler, $isClosure);
+		} else {
+			if (isset($handlers[$priorityIndex])) {
+				array_splice($handlers, $priorityIndex, 0, array($handler, $isClosure));
+			} else {
+				$handlers[$priorityIndex] = array($handler, $isClosure);
+			}
+		}
+		return $this;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once('IRequest.php');
+//include_once('IResponse.php');
+//include_once('IModel.php');
+//include_once('IView.php');
+//include_once('ISession.php');
+
+/**
+ * Responsibility - controller lifecycle - data preparing, rendering, response completing.
+ * - Controller lifecycle dispatching:
+ *   - Handling setup methods after creation from application core dispatching.
+ *   - Calling lifecycle methods (`\MvcCore\Controller::Dispatch();`):
+ *     - `\MvcCore\Controller::Init();`
+ *     - `\MvcCore\Controller::PreDispatch();`
+ *     - Calling routed controller action.
+ *     - `\MvcCore\Controller::Render();`
+ * - Rendering or no-rendering customization.
+ * - HTTP responses and redirects managing and customization.
+ * - Basic error responses rendering.
+ * - Customization for request termination to write
+ *   and close session, sending response etc.
+ *
+ * Template methods (necessary to call parent at method begin):
+ * - `Init()`
+ *   - Called after controller is created.
+ *   - Session start.
+ *   - Auto initialization for sub controllers.
+ *   - All internal variables initialized, except `\MvcCore\Controller::$view`.
+ * - `PreDispatch()`
+ *   - Called after `Init()`, before every controller action.
+ *   - `\MvcCore\Controller::$view` property initialization.
+ * - `Render()`
+ *   - Called after dispatching action has been called.
+ *   - `Controller:Action` view rendering responsibility and response completition.
+ *
+ * Important methods:
+ * - `Url()` - proxy method to build url by configured routes.
+ * - `GetParam()` - proxy method to read and clean request param values.
+ * - `AddChildController()` - method to register child controller (navigations, etc.)
+ *
+ * Internal methods and actions:
+ * - `Render()`
+ *   - Called internally in lifecycle dispatching,
+ *     but it's possible to use it for custom purposes.
+ * - `Terminate()`
+ *   - Called internally after lifecycle dispatching,
+ *     but it's possible to use it for custom purposes.
+ * - `Dispatch()`
+ *   - Processing whole controller and subcontrollers lifecycle.
+ * - `AssetAction()`
+ *   - Handling internal MvcCore HTTP requests
+ *     to get assets from packed application package.
+ */
+interface IController
+{
+	/**
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore::DispatchControllerAction()` before controller is dispatched,
+	 * or always called in `\MvcCore\Controller::autoInitMembers();` in base controller initialization.
+	 * This is place where to customize any controller creation process,
+	 * before it's created by MvcCore framework to dispatch it.
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public static function GetInstance ();
+
+	/**
+	 * Dispatching controller life cycle by given action.
+	 * This is INTERNAL, not TEMPLATE method, internally
+	 * called in `\MvcCore::DispatchControllerAction();`.
+	 * Call this imediatelly after calling controller methods:
+	 * - `\MvcCore\Controller::__construct()`
+	 * - `\MvcCore\Controller::SetApplication($application)`
+	 * - `\MvcCore\Controller::SetRequest($request)`
+	 * - `\MvcCore\Controller::SetResponse($response)`
+	 * - `\MvcCore\Controller::SetRouter($router)`
+	 * This function automaticly complete (throught controller lifecycle)
+	 * protected `\MvcCore\Response` object with response headers and content,
+	 * which you can send to client browser by method
+	 * `\MvcCore\Controller::Terminate()` or which you can store
+	 * anywhere in cache to use it later etc.
+	 * @param string $actionName PHP code action name in PascalCase.
+	 *							 This value is used to call your desired function
+	 *							 in controller without any change.
+	 * @return void
+	 */
+	public function Dispatch ($actionName = "IndexAction");
+
+	/**
+	 * TEMPLATE method. Call `parent::Init();` at the method very beginning.
+	 * Application controllers initialization.
+	 * This is best time to initialize language, locale, session etc.
+	 * There is also called auto initialization processing - instance creation
+	 * on each controller class member imlementing `\MvcCore\Interfaces\IController`
+	 * and marked in doc comments as `@autoinit`.
+	 * then there is of course called `\MvcCore\Controller::Init();` method on each
+	 * automaticly created subcontroller.
+	 * @return void
+	 */
+	public function Init ();
+
+	/**
+	 * TEMPLATE method. Call `parent::PreDispatch();` at the method very beginning.
+	 * Application pre render common action - always used in application controllers.
+	 * This is best time to define any common properties or common view properties,
+	 * which are the same for multiple actions in controller etc.
+	 * There is also called `\MvcCore\Controller::PreDispatch();` method on each subcontroller.
+	 * @return void
+	 */
+	public function PreDispatch ();
+
+	/**
+	 * Get param value from `$_GET` or `$_POST` or `php://input`,
+	 * filtered by characters defined in second argument throught `preg_replace()`.
+	 * Place into second argument only char groups you want to keep.
+	 * @param string $name
+	 * @param string $pregReplaceAllowedChars
+	 * @return string
+	 */
+	public function GetParam ($name = "", $pregReplaceAllowedChars = "a-zA-Z0-9_/\-\.\@");
+
+	/**
+	 * Get current application singleton instance object as reference.
+	 * @return \MvcCore\Application
+	 */
+	public function & GetApplication ();
+
+	/**
+	 * Sets up `\MvcCore\Application` singleton object.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore::DispatchControllerAction()` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation.
+	 * @param \MvcCore\Application $application
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetApplication (\MvcCore\Interfaces\IApplication & $application);
+
+	/**
+	 * Get current application request object as reference.
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & GetRequest ();
+
+	/**
+	 * Sets up `\MvcCore\Request` object and other protected properties.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore::DispatchControllerAction();` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation
+	 * to set up following controller properties:
+	 * - `\MvcCore\Controller::$request`
+	 * - `\MvcCore\Controller::$response`
+	 * - `\MvcCore\Controller::$router`
+	 * - `\MvcCore\Controller::$controllerName`
+	 * - `\MvcCore\Controller::$actionName`
+	 * - `\MvcCore\Controller::$ajax`
+	 * @param \MvcCore\Interfaces\IRequest $request
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & SetRequest (\MvcCore\Interfaces\IRequest & $request);
+
+	/**
+	 * Get current application response object as reference.
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & GetResponse ();
+
+	/**
+	 * Sets up `\MvcCore\Response` object.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore::DispatchControllerAction()` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation.
+	 * @param \MvcCore\Interfaces\IResponse $response
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & SetResponse (\MvcCore\Interfaces\IResponse & $response);
+
+	/**
+	 * Get current application router object as reference.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & GetRouter ();
+
+	/**
+	 * Sets up `\MvcCore\Router` object.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore::DispatchControllerAction()` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation.
+	 * @param \MvcCore\Interfaces\IRouter $router
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & SetRouter (\MvcCore\Interfaces\IRouter & $router);
+
+	/**
+	 * Boolean about AJAX request.
+	 * `TRUE` if request is requested from browser by `XmlHttpRequest` object
+	 * with http header: `X-Requested-With: AnyJavascriptFrameworkName`, `FALSE` otherwise.
+	 * @return boolean
+	 */
+	public function IsAjax ();
+
+	/**
+	 * Boolean about disabled or enabled rendering wrapper layout view around at last.
+	 * @return bool
+	 */
+	public function IsViewEnabled ();
+
+	/**
+	 * Get user model instance. Template method.
+	 * @return \MvcCore\Interfaces\IModel
+	 */
+	public function & GetUser ();
+
+	/**
+	 * Set user model instance. Template method.
+	 * @param \MvcCore\Interfaces\IModel $user
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetUser (& $user);
+
+	/**
+	 * Return current controller view object if any.
+	 * Before `\MvcCore\Controller::PreDispatch();` is called
+	 * in controller lifecycle, this property will be still `NULL`.
+	 * @return \MvcCore\Interfaces\IView|NULL
+	 */
+	public function & GetView ();
+
+	/**
+	 * Set current controller view object.
+	 * @param \MvcCore\Interfaces\IView $view
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & SetView (\MvcCore\Interfaces\IView & $view);
+
+	/**
+	 * Get layout name to render html wrapper around rendered action view.
+	 * Example: `"front" | "admin" | "account"...`.
+	 * @return string
+	 */
+	public function GetLayout ();
+
+	/**
+	 * Set layout name to render html wrapper around rendered action view.
+	 * Example: `"front" | "admin" | "account"...`.
+	 * @param string $layout
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & SetLayout ($layout = '');
+
+	/**
+	 * Disable layout view rendering (rendering html wrapper around rendered action view).
+	 * This method is always called internally before
+	 * `\MvcCore\Controller::Init();` for all AJAX requests.
+	 * @return void
+	 */
+	public function DisableView ();
+
+	/**
+	 * - Register child controller to process dispatching on it later.
+	 * - This method is always called INTERNALLY, but you can use it for custom purposes.
+	 * - This method automaticly assigns into child controller(s) properties from parent:
+	 *   - `\Mvccore\Controller::$_parentController`
+	 *   - `\Mvccore\Controller::$request`
+	 *   - `\Mvccore\Controller::$response`
+	 *   - `\MvcCore\Controller::$router`
+	 *   - `\Mvccore\Controller::$layout`
+	 *   - `\Mvccore\Controller::$viewEnabled`
+	 *   - `\Mvccore\Controller::$user`
+	 * @param \MvcCore\Interfaces\IController &$controller
+	 * @param string|int $index
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function AddChildController (\MvcCore\Interfaces\IController & $controller, $index = NULL);
+
+	/**
+	 * Get parent controller instance if any.
+	 * Method for child controllers. This method returns
+	 * `NULL` for top most parent controller instance.
+	 * @return \MvcCore\Interfaces\IController|NULL
+	 */
+	public function GetParentController ();
+
+	/**
+	 * Get all child controllers array, indexed by
+	 * subcontroller property string name or by
+	 * custom string name or by custom numeric index.
+	 * @return \MvcCore\Interfaces\IController[]
+	 */
+	public function GetChildControllers ();
+
+	/**
+	 * Get child controller at specific index.
+	 * Subcontroller index should be string by parent controller
+	 * property name or custom string name or numeric index.
+	 * @param string|int $index
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function GetChildController ($index = NULL);
+
+	/**
+	 * Return small assets content with proper headers
+	 * in single file application mode and immediately exit.
+	 * @throws \Exception If file path is not allowed (500) or file not found (404).
+	 * @return void
+	 */
+	public function AssetAction ();
+
+	/**
+	 * - This method is called INTERNALLY in lifecycle dispatching process,
+	 *   but you can use it sooner or in any different time for custom render purposes.
+	 * - Render prepared controller/action view in path by default:
+	 * `"/App/Views/Scripts/<ctrl-dashed-name>/<action-dashed-name>.phtml"`.
+	 * - If controller has no other parent controller, render layout view aroud action view.
+	 * - For top most parent controller - store rendered action and layout view in response object and return empty string.
+	 * - For child controller - return rendered action view as string.
+	 * @param string $controllerDashedName
+	 * @param string $actionDashedName
+	 * @return string
+	 */
+	public function Render ($controllerDashedName = '', $actionDashedName = '');
+
+	/**
+	 * Store rendered HTML output inside `\MvcCore\Controller::$response`
+	 * to send into client browser later in `MvcCore::Terminate();`.
+	 * @param string $output
+	 * @param bool $terminate
+	 * @return void
+	 */
+	public function HtmlResponse ($output = "", $terminate = TRUE);
+
+	/**
+	 * Serialize any PHP value into `JSON string` and store
+	 * it inside `\MvcCore\Controller::$response` to send it
+	 * into client browser later in `MvcCore::Terminate();`.
+	 * @param mixed $data
+	 * @param bool  $terminate
+	 * @return void
+	 */
+	public function JsonResponse ($data = NULL, $terminate = TRUE);
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
+
+	/**
+	 * Return asset path or single file mode url for small assets
+	 * handled by internal controller action `"Controller:Asset"`.
+	 * @param string $path
+	 * @return string
+	 */
+	public function AssetUrl ($path = '');
+
+		/**
+	 * Render error controller and error action
+	 * for any dispatch exception or error as
+	 * rendered html response or as plain text response.
+	 * @param string $exceptionMessage
+	 * @return void
+	 */
+	public function RenderError ($exceptionMessage = '');
+
+	/**
+	 * Render not found controller and not found action
+	 * for any dispatch exception with code 404 as
+	 * rendered html response or as plain text response.
+	 * @return void
+	 */
+	public function RenderNotFound ();
+
+	/**
+	 * Terminate request.
+	 * - Send headers if possible.
+	 * - Echo response body.
+	 * - Write session.
+	 * This method is always called INTERNALLY after controller
+	 * lifecycle has been dispatched. But you can use it any
+	 * time sooner for custom purposses.
+	 * This method is only shortcut for: `\MvcCore\Application::GetInstance()->Terminate();`.
+	 * @return void
+	 */
+	public function Terminate ();
+
+	/**
+	 * Return session namespace instance by configured session class name.
+	 * This method is only shortcut for `\MvcCore\Session::GetNamespace($name)`;
+	 * @param string $name
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public static function & GetSessionNamespace ($name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME);
+
+	/**
+	 * Redirect client browser to another place by `"Location: ..."`
+	 * header and call `\MvcCore\Application::GetInstance()->Terminate();`.
+	 * @param string $location
+	 * @param int    $code
+	 * @return void
+	 */
+	public static function Redirect ($location = '', $code = \MvcCore\Interfaces\IResponse::SEE_OTHER);
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once('IController.php');
+
+/**
+ * Core view:
+ * - Static storage for
+ *   - commonly used doctype
+ *   - common views extension
+ *   - common directories names containing view scripts
+ *   - common views helpers namespaces
+ * - It's possible to use this class for any controller, subcontroller or form.
+ * - View prerender preparing and rendering.
+ * - View helpers management on demand:
+ *   - Creating by predefined class namespaces.
+ *   - global static helpers instances storage and repeatable calling.
+ * - Views sub scripts relative path solving in:
+ *   `<?php $this->renderScript('./any-subdirectory/script-to-render.php'); ?>`
+ * - `Url()` - proxy method from `\MvcCore\Router` targeting to configured router.
+ * - `AssetUrl()` - proxy method from `\MvcCore\Controller`.
+ * - Magic calls:
+ *   - __call() - To handler any view helper, if no helper found - exception thrown.
+ *   - __set() - To set anything from controller to get it back in view.
+ *   - __get() - To get anything in view previously initialized from controller.
+ * - Optional direct code evaluation.
+ * - No special view language implemented.
+ *   - Why to use such stupid things, if we have configured `short_open_tags` by default? `<?=...?>`
+ *
+ * MvcCore view helpers:
+ * @method MvcCore\Ext\View\Helpers\Css Css($groupName = self::GROUP_NAME_DEFAULT) Get css helper instance by group name ("mvccore/ext-view-helper-assets").
+ * @method MvcCore\Ext\View\Helpers\Js Js($groupName = self::GROUP_NAME_DEFAULT) Get js helper instance by group name ("mvccore/ext-view-helper-assets").
+ * @method string FormatDateTime($dateTimeOrTimestamp = NULL, $dateTypeOrFormatMask = NULL, $timeType = NULL, $timeZone = NULL, $calendar = NULL) Format given datetime by `Intl` extension or by `strftime()` as fallback ("mvccore/ext-view-helper-formatdatetime").
+ * @method string FormatNumber($number = 0.0, $decimals = 0, $dec_point = NULL , $thousands_sep = NULL) ("mvccore/ext-view-helper-formatnumber")
+ * @method string FormatMoney($number = 0.0, $decimals = 0, $dec_point = NULL , $thousands_sep = NULL) ("mvccore/ext-view-helper-formatmoney")
+ */
+interface IView
+{
+	/**
+	 * View output document type HTML4.
+	 * @var string
+	 */
+	const DOCTYPE_HTML4 = 'HTML4';
+
+	/**
+	 * View output document type XHTML.
+	 * @var string
+	 */
+	const DOCTYPE_XHTML = 'XHTML';
+
+	/**
+	 * View output document type HTML5.
+	 * @var string
+	 */
+	const DOCTYPE_HTML5 = 'HTML5';
+
+	/**
+	 * Static initialization to complete
+	 * `static::$HelpersClassesNamespaces` by application configuration.
+	 * @return void
+	 */
+	public static function StaticInit ();
+
+	/**
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore\Controller::PreDispatch()`.
+	 * This is place where to customize any view creation process,
+	 * before it's created by MvcCore framework to fill and render it.
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public static function GetInstance ();
+
+	/**
+	 * Add view helpers classes namespace(s),
+	 * Example: `\MvcCore\View::AddHelpersClassNamespaces('\Any\Other\ViewHelpers\Place\', '...');`.
+	 * @param string $helperNamespace,... View helper classes namespace(s)
+	 * @return void
+	 */
+	public static function AddHelpersClassNamespaces (/*...$helperNamespace*/);
+
+	/**
+	 * Get view script full path by internal application configuration,
+	 * by `$typePath` param and by `$corectedRelativePath` param.
+	 * @param string $typePath Usually `"Layouts"` or `"Scripts"`.
+	 * @param string $corectedRelativePath
+	 * @return string
+	 */
+	public static function GetViewScriptFullPath ($typePath = '', $corectedRelativePath = '');
+
+	/**
+	 * Set controller instance.
+	 * @param \MvcCore\Interfaces\IController $controller
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public function & SetController (\MvcCore\Interfaces\IController & $controller);
+
+	/**
+	 * Get controller instance as reference.
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & GetController ();
+
+	/**
+	 * Set up all from given view object variables store into current store,
+	 * if there is any already existing key - overwrite it.
+	 * @param \MvcCore\Interfaces\IView $view
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public function & SetValues (\MvcCore\Interfaces\IView & $view);
+
+	/**
+	 * Return rendered controller/action template content as reference.
+	 * @return string
+	 */
+	public function & GetContent ();
+
+	/**
+	 * Get currently rendered view file full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetCurrentViewFullPath ();
+
+	/**
+	 * Get currently rendered view file directory full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetCurrentViewDirectory ();
+
+	/**
+	 * Get currently rendered parent view file full path.
+	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
+	 * method to render sub-view file (actual view file) or it could be any view file
+	 * from parent controller or if current controller has no parent controller,
+	 * it could be layout view script full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetParentViewFullPath ();
+
+	/**
+	 * Get currently rendered parent view file directory full path.
+	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
+	 * method to render sub-view file (actual view file) or it could be any view file
+	 * from parent controller or if current controller has no parent controller,
+	 * it could be layout view script full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetParentViewDirectory ();
+
+	/**
+	 * Render controller/action template script and return it's result as reference.
+	 * @param string $relativePath
+	 * @return string
+	 */
+	public function & RenderScript ($relativePath = '');
+
+	/**
+	 * Render layout template script and return it's result as reference.
+	 * @param string $relativePath
+	 * @return string
+	 */
+	public function & RenderLayout ($relativePath = '');
+
+	/**
+	 * Render layout template script and return it's result
+	 * as reference with inner rendered content.
+	 * @param string $relativePatht.
+	 * @param string $content
+	 * @return string
+	 */
+	public function & RenderLayoutAndContent ($relativePath = '', $content = '');
+
+	/**
+	 * Render controller template and all necessary layout
+	 * templates and return rendered result as reference.
+	 * @param string $typePath
+	 * @param string $relativePath
+	 * @throws \Exception
+	 * @return string
+	 */
+	public function & Render ($typePath = '', $relativePath = '');
+
+	/**
+	 * Evaluate given code as PHP code by `eval()` in current view context,
+	 * any `$this` keyword will be used as current view context.
+	 * Returned result is content from output buffer as reference.
+	 * @param string $content
+	 * @return string
+	 */
+	public function Evaluate ($content = '');
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
+
+	/**
+	 * Return asset path or single file mode url for small assets
+	 * handled by internal controller action `"Controller:Asset"`.
+	 * @param string $path
+	 * @return string
+	 */
+	public function AssetUrl ($path = '');
+
+	/**
+	 * Try to get view helper.
+	 * If view helper doesn't exist in global helpers store - create new helper instance.
+	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
+	 * @param string $helperName View helper method name in pascal case.
+	 * @throws \InvalidArgumentException If view doesn't exist in configured namespaces.
+	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed View helper instance.
+	 */
+	public function & GetHelper ($helperName);
+
+	/**
+	 * Set view helper for current template or for all templates globaly by default.
+	 * If view helper already exist in global helpers store - it's overwritten.
+	 * @param string $helperName View helper method name in pascal case.
+	 * @param \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed $instance View helper instance.
+	 * @param bool $forAllTemplates register this helper instance for all rendered views in the future.
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public function & SetHelper ($helperName, & $instance, $forAllTemplates = TRUE);
+
+	/**
+	 * Set any value into view context internal store
+	 * except system keys declared in `static::$originalyDeclaredProperties`.
+	 * @param string $name
+	 * @param mixed $value
+	 * @throws \Exception
+	 * @return bool
+	 */
+	public function __set ($name, $value);
+
+	/**
+	 * Get any value from view context internal store
+	 * except system keys declared in `static::$originalyDeclaredProperties`.
+	 * @param string $name
+	 * @throws \Exception
+	 * @return mixed
+	 */
+	public function __get ($name);
+
+	/**
+	 * Get if any value from view context internal store exists
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @return bool
+	 */
+	public function __isset ($name);
+
+	/**
+	 * Unset any value from view context internal store
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @return void
+	 */
+	public function __unset ($name);
+
+	/**
+	 * Try to call view helper.
+	 * If view helper doesn't exist in global helpers store - create new helper instance.
+	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
+	 * Then call it's public method named in the same way as helper and return result
+	 * as it is, without any conversion. So then there could be called any other helper method if whole helper instance is returned.
+	 * @param string $method
+	 * @param mixed $arguments
+	 * @return string|mixed
+	 */
+	public function __call ($method, $arguments);
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+class Exception extends \Exception { 
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once(__DIR__.'/../Config.php');
+
+/**
+ * Responsibility - static members for connections and by configuration,
+ *                  instances members for active record pattern.
+ * - Reading `db` section from system `config.ini` file.
+ * - Database `\PDO` connecting by config settings and index.
+ * - Instance loaded variables initializing.
+ * - Instance initialized values reading.
+ * - Virtual calls/sets and gets handling.
+ */
+interface IModel
+{
+	/**
+	 * Collect all model class public and inherit field values into array.
+	 * @param boolean $getNullValues			If `TRUE`, include also values with `NULL`s, by default - `FALSE`.
+	 * @param boolean $includeInheritProperties If `TRUE`, include only fields from current model class and from parent classes.
+	 * @param boolean $publicOnly               If `TRUE`, include only public model fields.
+	 * @return array
+	 */
+	public function GetValues (
+		$getNullValues = FALSE,
+		$includeInheritProperties = TRUE,
+		$publicOnly = TRUE
+	);
+
+	/**
+	 * Set up given `$data` items into `$this` instance context
+	 * as typed properties by PHP doc comments, as properties
+	 * with the same names as `$data` array keys. Case sesitively by default.
+	 * Do not set any `$data` items, which are not declared in `$this` context.
+	 * @param array   $data                     Collection with data to set up
+	 * @param boolean $keysInsensitive			If `TRUE`, set up properties from `$data` with case insensivity.
+	 * @param boolean $includeInheritProperties If `TRUE`, include only fields from current model class and from parent classes.
+	 * @param boolean $publicOnly               If `TRUE`, include only public model fields.
+	 * @return \MvcCore\Interfaces\IModel
+	 */
+	public function & SetUp (
+		$data = array(),
+		$keysInsensitive = FALSE,
+		$includeInheritProperties = TRUE,
+		$publicOnly = TRUE
+	);
+
+	/**
+	 * Returns (or creates and holds) instance from local store.
+	 * @param mixed $arg,... unlimited OPTIONAL variables to pass into model `__construct()` method.
+	 * @return \MvcCore\Interfaces\IModel
+	 */
+	public static function GetInstance (/* $arg1, $arg2, $arg, ... */);
+
+	/**
+	 * Returns (or creates if necessary) model resource instance.
+	 * @param array  $args              Values array with variables to pass into resource `__construct()` method.
+	 * @param string $modelClassPath
+	 * @param string $resourceClassPath
+	 * @return \MvcCore\Interfaces\IModel
+	 */
+	public static function GetResource (
+		$args = array(),
+		$modelClassName = '',
+		$resourceClassPath = '\Resource'
+	);
+
+	/**
+	 * Initialize `$this->config`, `$this->db` and `$this->resource` properties.
+	 * If no `$connectionName` specified by first argument, return connection
+	 * config by connection name defined first in `static::$connectionName`
+	 * and if there is nothing, return connection config by connection name
+	 * defined in `\MvcCore\Model::$connectionName`.
+	 * @param string|int|NULL $connectionName Optional. If not set, there is used value from `static::$connectionName`.
+	 * @return void
+	 */
+	public function Init ($connectionName = NULL);
+
+	/**
+	 * Returns `\PDO` database connection by connection name/index,
+	 * usually by system ini config values (cached by local store)
+	 * or create new connection of no connection cached.
+	 * @param string|int|array|NULL $connectionNameOrConfig
+	 * @return \PDO
+	 */
+	public static function GetDb ($connectionNameOrConfig = NULL);
+
+	/**
+	 * Get all known database connection config records as indexed/named array with `\stdClass` objects.
+	 * Keys in array are connection config names/indexes and `\stdClass` values are config values.
+	 * @return \stdClass[]
+	 */
+	public static function & GetConfigs ();
+
+	/**
+	 * Set all known configuration at once, optionaly set default connection name/index.
+	 * Example:
+	 *	`\MvcCore\Model::SetConfigs(array(
+	 *		// connection name: 'mysql-cdcol':
+	 *		'mysql-cdcol'	=> array(
+	 *			'driver'	=> 'mysql',
+	 *			'host'		=> 'localhost',
+	 *			'user'		=> 'root',
+	 *			'password'	=> '1234',
+	 *			'database'	=> 'cdcol',
+	 *		),
+	 *		// connection name: 'mssql-tests':
+	 *		'mssql-tests' => array(
+	 *			'driver'	=> 'mssql',
+	 *			'host'		=> '.\SQLEXPRESS',
+	 *			'user'		=> 'sa',
+	 *			'password'	=> '1234',
+	 *			'database'	=> 'tests',
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Model::SetConfigs(array(
+	 *		// connection index: 0:
+	 *		array(
+	 *			'driver'	=> 'mysql',
+	 *			'host'		=> 'localhost',
+	 *			'user'		=> 'root',
+	 *			'password'	=> '1234',
+	 *			'database'	=> 'cdcol',
+	 *		),
+	 *		// connection index: 1:
+	 *		array(
+	 *			'driver'	=> 'mssql',
+	 *			'host'		=> '.\SQLEXPRESS',
+	 *			'user'		=> 'sa',
+	 *			'password'	=> '1234',
+	 *			'database'	=> 'tests',
+	 *		)
+	 *	);`
+	 * @param \stdClass[]|array[] $configs Configuration array with `\stdClass` objects or arrays with configuration data.
+	 * @return bool
+	 */
+	public static function SetConfigs (array $configs = array());
+
+	/**
+	 * Returns database connection config by connection index (integer)
+	 * or by connection name (string) as `\stdClass` (cached by local store).
+	 * @param int|string|NULL $connectionName
+	 * @return \stdClass
+	 */
+	public static function & GetConfig ($connectionName = NULL);
+
+	/**
+	 * Set configuration array with optional connection name/index.
+	 * If there is array key `name` or `index` inside config `array` or `\stdClass`,
+	 * it's value is used for connection name or index or there is no param `$connectionName` defined.
+	 * Example:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'name'		=> 'mysql-cdcol',
+	 *		'driver'	=> 'mysql',		'host'		=> 'localhost',
+	 *		'user'		=> 'root',		'password'	=> '1234',		'database' => 'cdcol',
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'index'		=> 0,
+	 *		'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *		'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *		'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *	), 'mysql-cdcol');`
+	 * or:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *		'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *	), 0);`
+	 * @param \stdClass[]|array[] $config
+	 * @param string|int|NULL $connectionName
+	 * @return string|int
+	 */
+	public static function SetConfig (array $config = array(), $connectionName = NULL);
+
+	/**
+	 * Sets any custom property `"PropertyName"` by `\MvcCore\Interfaces\IModel::SetPropertyName("value")`,
+	 * which is not necessary to define previously or gets previously defined
+	 * property `"PropertyName"` by `\MvcCore\Interfaces\IModel::GetPropertyName();`.
+	 * Throws exception if no property defined by get call
+	 * or if virtual call begins with anything different from `Set` or `Get`.
+	 * This method returns custom value for get and `\MvcCore\Interfaces\IModel` instance for set.
+	 * @param string $rawName
+	 * @param array  $arguments
+	 * @throws \Exception
+	 * @return mixed|\MvcCore\Interfaces\IModel
+	 */
+	public function __call ($rawName, $arguments = array());
+
+	/**
+	 * Set any custom property, not necessary to previously defined.
+	 * @param string $name
+	 * @param mixed  $value
+	 * @throws \InvalidArgumentException If name is `"autoInit" || "db" || "config" || "resource"`
+	 * @return bool
+	 */
+	public function __set ($name, $value);
+
+	/**
+	 * Get any custom property, not necessary to previously defined,
+	 * if property is not defined, NULL is returned.
+	 * @param string $name
+	 * @throws \InvalidArgumentException If name is `"autoInit" || "db" || "config" || "resource"`
+	 * @return mixed
+	 */
+	public function __get ($name);
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\View\Helpers{
+
+/**
+ * Responsibility - better view helper setup.
+ * - Everytine, when there is necessary to create view helper, there is called
+ *   `\MvcCore\Ext\View\Helpers\IHelper::GetInstance();` method in `\Mvccore\View`.
+ *   All view helpers are stored inside `\Mvccore\View` and they are created only once.
+ *   But if you need to configure view helper anytime before, you can use this method
+ *   for singleton instancing to configure anything staticly anytime before.
+ * - Everytime, when currently rendered view object is changed (action view, layout view,
+ *   subcontroller view...), there is called `\MvcCore\Ext\View\Helpers\IHelper::SetView($view);`
+ *   method giving currently rendered view object. From this object, you can get properties
+ *   for better view helper processing like application object, controller, request or response object.
+ */
+interface IHelper
+{
+	/**
+	 * Create view helper instance, everytime new instance or singleton instance, it's up to you.
+	 * @return \MvcCore\Ext\View\Helpers\IHelper
+	 */
+	public static function & GetInstance ();
+
+	/**
+	 * Set currently rendered view instance every time this helper
+	 * is called and the rendered view instance is changed.
+	 * This method sets these protected object references:
+	 * - `AbstractHelper::$view` as `\MvcCore\View|\MvcCore\Interfaces\IView`
+	 * - `AbstractHelper::$controller` as `\MvcCore\Controller|\MvcCore\Interfaces\IController`
+	 * - `AbstractHelper::$request` as `\MvcCore\Request|\MvcCore\Interfaces\IRequest`
+	 * - `AbstractHelper::$response` as `\MvcCore\Response|\MvcCore\Interfaces\IResponse`
+	 * @param \MvcCore\View|\MvcCore\Interfaces\IView $view
+	 * @return \MvcCore\Ext\View\Helpers\IHelper
+	 */
+	public function & SetView (\MvcCore\Interfaces\IView & $view);
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+/**
+ * Responsibility - static helpers for core classes inheritance, string conversions and JSON.
+ * - Static translation functions (supports containing folder or file path):
+ *   - `"dashed-case"		=> "PascalCase"`
+ *   - `"PascalCase"		=> "dashed-case"`
+ *   - `"unserscore_case"	=> "PascalCase"`
+ *   - `"PascalCase"		=> "unserscore_case"`
+ * - Static functions to safely encode/decode JSON.
+ * - Static functions to get client/server IPs.
+ * - Static function to check core classes inheritance.
+ */
+interface ITool
+{
+	/**
+	 * Convert all strings `"from" => "to"`:
+	 * - `"MyCustomValue"				=> "my-custom-value"`
+	 * - `"MyCustom/Value/InsideFolder"	=> "my-custom/value/inside-folder"`
+	 * @param string $pascalCase
+	 * @return string
+	 */
+	public static function GetDashedFromPascalCase ($pascalCase = '');
+
+	/**
+	 * Convert all string `"from" => "to"`:
+	 * - `"my-custom-value"					=> "MyCustomValue"`
+	 * - `"my-custom/value/inside-folder"	=> "MyCustom/Value/InsideFolder"`
+	 * @param string $dashed
+	 * @return string
+	 */
+	public static function GetPascalCaseFromDashed ($dashed = '');
+
+	/**
+	 * Convert all string `"from" => "to"`:
+	 * - `"MyCutomValue"				=> "my_custom_value"`
+	 * - `"MyCutom/Value/InsideFolder"	=> "my_custom/value/inside_folder"`
+	 * @param string $pascalCase
+	 * @return string
+	 */
+	public static function GetUnderscoredFromPascalCase ($pascalCase = '');
+
+	/**
+	 * Convert all string `"from" => "to"`:
+	 * - `"my_custom_value"					=> "MyCutomValue"`
+	 * - `"my_custom/value/inside_folder"	=> "MyCutom/Value/InsideFolder"`
+	 * @param string $underscored
+	 * @return string
+	 */
+	public static function GetPascalCaseFromUnderscored ($underscored = '');
+
+	/**
+	 * Safely encode json string from php value.
+	 * @param mixed $data
+	 * @throws \Exception
+	 * @return string
+	 */
+	public static function EncodeJson (& $data);
+
+	/**
+	 * Safely decode json string into php `stdClass/array`.
+	 * Result has always keys:
+	 * - `"success"`	- decoding boolean success
+	 * - `"data"`		- decoded json data as stdClass/array
+	 * - `"errorData"`	- array with possible decoding error message and error code
+	 * @param string $jsonStr
+	 * @return object
+	 */
+	public static function DecodeJson (& $jsonStr);
+
+	/**
+	 * Check if given class implements given interface, else throw an exception.
+	 * @param string $testClassName
+	 * @param string $interfaceName
+	 * @throws \Exception
+	 * @return boolean
+	 */
+	public static function CheckClassInterface ($testClassName, $interfaceName);
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once(__DIR__.'/../Application.php');
+
+/**
+ * Responsibility - reading config file(s), detecting environment in system config.
+ * - Config file(s) reading:
+ *   - Reading any `config.ini` file by relative path.
+ *   - Parsing and typing ini data into `stdClass|array` by key types or typing
+ *     ini values into `int|float|bool|string` for all other detected primitives.
+ * - Environment management:
+ *   - Simple environment name detection by comparing server and client ip.
+ *   - Environment name detection by config records about computer name or ip.
+ */
+interface IConfig
+{
+	const ENVIRONMENT_DEVELOPMENT = 'development';
+	const ENVIRONMENT_BETA = 'beta';
+	const ENVIRONMENT_ALPHA = 'alpha';
+	const ENVIRONMENT_PRODUCTION = 'production';
+
+	/**
+	 * Return `TRUE` if environment is `"development"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsDevelopment ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Return `TRUE` if environment is `"beta"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsBeta ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Return `TRUE` if environment is `"alpha"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsAlpha ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Return `TRUE` if environment is `"production"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsProduction ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Get environment name as string,
+	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
+	 * @return string
+	 */
+	public static function GetEnvironment ();
+
+	/**
+	 * Set environment name as string,
+	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
+	 * @param string $environment
+	 * @return string
+	 */
+	public static function SetEnvironment ($environment = \MvcCore\Interfaces\IConfig::ENVIRONMENT_PRODUCTION);
+
+	/**
+	 * This is INTERNAL method.
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore\Config::GetSystem()` before system config is loaded.
+	 * This is place where to customize any config creation process,
+	 * before it's created by MvcCore framework.
+	 * @return \MvcCore\Config
+	 */
+	public static function & GetInstance ();
+
+	/**
+	 * Get system config ini file as `stdClass`es and `array`s,
+	 * placed by default in: `"/App/config.ini"`.
+	 * @return \stdClass|array|boolean
+	 */
+	public static function & GetSystem ();
+
+	/**
+	 * Load ini file and return parsed configuration or `FALSE` in failure.
+	 * - Second environment value setup:
+	 *   - Only if `$systemConfig` param is defined as `TRUE`.
+	 *   - By defined IPs or computer names in ini `[environments]` section.
+	 * - Load only sections for current environment name.
+	 * - Retype all `raw string` values into `array`, `float`, `int` or `boolean` types.
+	 * - Retype whole values level into `\stdClass`, if there are no numeric keys.
+	 * @param string $configPath
+	 * @param bool   $systemConfig
+	 * @return array|boolean
+	 */
+	public function & Load ($configPath = '');
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+/**
+ * Responsibility - any devel and logging messages and exceptions printing and logging.
+ * - Printing any variable in content body.
+ * - Printing any variable in browser debug bar.
+ * - Catched exceptions printing.
+ * - Any variables and catched exceptions file logging.
+ * - Time printing.
+ */
+interface IDebug
+{
+	/**
+	 * Logging levels and file names.
+	 */
+	const
+		DEBUG = 'debug',
+		INFO = 'info',
+		WARNING = 'warning',
+		ERROR = 'error',
+		EXCEPTION = 'exception',
+		CRITICAL = 'critical',
+		JAVASCRIPT = 'javascript';
+
+	/**
+	 * Initialize debugging and logging, once only.
+	 * @param bool $forceDevelopmentMode If defined as `TRUE` or `FALSE`,
+	 *                                   debug mode will be set not by config but by this value.
+	 * @return void
+	 */
+	public static function Init ();
+
+	/**
+	 * Starts/stops stopwatch.
+	 * @param  string $name Time pointer name.
+	 * @return float        Elapsed seconds.
+	 */
+	public static function Timer ($name = NULL);
+
+	/**
+	 * Dumps information about any variable in readable format and return it.
+	 * In non-development mode - store dumped variable in `debug.log`.
+	 * @param  mixed  $value	Variable to dump.
+	 * @param  bool   $return	Return output instead of printing it.
+	 * @param  bool   $exit		`TRUE` for last dump call by `xxx();` method to dump and `exit;`.
+	 * @return mixed			Variable itself or dumped variable string.
+	 */
+	public static function Dump ($value, $return = FALSE, $exit = FALSE);
+
+	/**
+	 * Dump any variable with output buffering in browser debug bar.
+	 * In non-development mode - store dumped variable in `debug.log`.
+	 * Return printed variable as string.
+	 * @param  mixed	$value		Variable to dump.
+	 * @param  string	$title		Optional title.
+	 * @param  array	$options	Dumper options.
+	 * @return mixed				Variable itself.
+	 */
+	public static function BarDump ($value, $title = NULL, $options = array());
+
+	/**
+	 * Logs any message or exception with log datetime, in `*.log` file
+	 * by given log level, in configured logging directory.
+	 * @param  string|\Exception|\Throwable	$value
+	 * @param  string						$priority
+	 * @return string						Logging filename fullpath.
+	 */
+	public static function Log ($value, $priority = \MvcCore\Interfaces\IDebug::INFO);
+
+	/**
+	 * Sends given `$value` into FireLogger console.
+	 * @param	mixed	$value	Message to log.
+	 * @param	string	$priority	Priority.
+	 * @return	bool				Was successful?
+	 */
+	public static function FireLog ($value, $priority = \MvcCore\Interfaces\IDebug::DEBUG);
+
+	/**
+	 * Print catched exception in browser.
+	 * In non-development mode - store dumped exception in `exception.log`.
+	 * @param \Exception|\Error|\Throwable|array $exception
+	 * @param bool $exit
+	 * @return void
+	 */
+	public static function Exception ($exception, $exit = TRUE);
+
+	/**
+	 * Print all stored dumps at the end of sended response body as browser debug bar.
+	 * This function is called from registered shutdown handler by
+	 * `register_shutdown_function()` from `\MvcCore\Debug::initHandlers();`.
+	 * @return void
+	 */
+	public static function ShutdownHandler ();
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once(__DIR__.'/../Application.php');
+
+/**
+ * Responsibility - request description - url and params inputs parsing and cleaning.
+ * - Linear request url parsing from referenced `$_SERVER` global variable
+ *   (as constructor argument) into local properties, describing url sections.
+ * - Params reading from referenced `$_GET` and `$_POST` global variables
+ *   (as constructor arguments) or reading data from direct PHP
+ *   input `"php://input"` (as encoded JSON data or as query string).
+ * - Headers cleaning and reading by `getallheaders()` or from referenced `$_SERVER['HTTP_...']`.
+ * - Cookies cleaning and reading from referenced `$_COOKIE['...']`.
+ * - Uploaded files by wrapped referenced `$_FILES` global array.
+ * - Primitive values cleaning or array recursive cleaning by called
+ *	 developer rules from params array, headers array and cookies array.
+ */
+interface IRequest
+{
+	/**
+	 * Non-secured HTTP protocol (`http:`).
+	 */
+	const PROTOCOL_HTTP = 'http:';
+
+	/**
+	 * Secured HTTP(s) protocol (`https:`).
+	 */
+	const PROTOCOL_HTTPS = 'https:';
+
+	/**
+	 * Retrieves the information or entity that is identified by the URI of the request.
+	 */
+	const METHOD_GET = 'GET';
+
+	/**
+	 * Posts a new entity as an addition to a URI.
+	 */
+	const METHOD_POST = 'POST';
+
+	/**
+	 * Replaces an entity that is identified by a URI.
+	 */
+	const METHOD_PUT = 'PUT';
+
+	/**
+	 * Requests that a specified URI be deleted.
+	 */
+	const METHOD_DELETE = 'DELETE';
+
+	/**
+	 * Retrieves the message headers for the information or entity that is identified by the URI of the request.
+	 */
+	const METHOD_HEAD = 'HEAD';
+
+	/**
+	 * Represents a request for information about the communication options available on the request/response chain identified by the Request-URI.
+	 */
+	const METHOD_OPTIONS = 'OPTIONS';
+
+	/**
+	 * Requests that a set of changes described in the request entity be applied to the resource identified by the Request- URI.
+	 */
+	const METHOD_PATCH = 'PATCH';
+
+
+	/**
+	 * Static factory to get everytime new instance of http request object.
+	 * Global variables for constructor arguments (`$_SERVER`, `$_GET`, `$_POST`...)
+	 * should be changed to any arrays with any values and injected here to get
+	 * different request object then currently called real request object.
+	 * For example to create fake request object for testing purposes
+	 * or for non-real request rendering into request output cache.
+	 * @param array $server
+	 * @param array $get
+	 * @param array $post
+	 * @param array $cookie
+	 * @param array $files
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public static function GetInstance (
+		array & $server = array(),
+		array & $get = array(),
+		array & $post = array(),
+		array & $cookie = array(),
+		array & $files = array()
+	);
+
+
+	/**
+	 * Get one of the global data collections stored as protected properties inside request object.
+	 * Example:
+	 *  // to get global `$_GET` with raw values:
+	 *  `$globalGet = $request->GetGlobalCollection('get');`
+	 * @param string $type
+	 * @return array
+	 */
+	public function & GetGlobalCollection ($type);
+
+	/**
+	 * Set directly all raw http headers without any conversion at once.
+	 * Header name(s) as array keys should be in standard format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param array $headers
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetHeaders (array & $headers = array());
+
+	/**
+	 * Get directly all raw http headers at once (with/without conversion).
+	 * If headers are not initialized, initialize headers by
+	 * `getallheaders()` or from `$_SERVER['HTTP_...']`.
+	 * Headers are returned as `key => value` array, headers keys are
+	 * in standard format like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return array
+	 */
+	public function & GetHeaders ();
+
+	/**
+	 * Set directly raw http header value without any conversion.
+	 * Header name should be in standard format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetHeader ($name = "", $value = "");
+
+	/**
+	 * Get http header value filtered by "rule to keep defined characters only",
+	 * defined in second argument (by `preg_replace()`). Place into second argument
+	 * only char groups you want to keep. Header has to be in format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string $name Http header string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetHeader (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	);
+
+
+	/**
+	 * Set directly all raw parameters without any conversion at once.
+	 * @param array $params
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetParams (array & $params = array());
+
+	/**
+	 * Get directly all raw parameters at once (with/without conversion).
+	 * If any defined char groups in `$pregReplaceAllowedChars`, there will be returned
+	 * all params filtered by given rule in `preg_replace()`.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return array
+	 */
+	public function & GetParams ($pregReplaceAllowedChars = array('#\<\>#', ''));
+
+	/**
+	 * Set directly raw parameter value without any conversion.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetParam ($name = "", $value = "");
+
+	/**
+	 * Get param value from `$_GET`, `$_POST` or `php://input`, filtered by
+	 * "rule to keep defined characters only", defined in second argument (by `preg_replace()`).
+	 * Place into second argument only char groups you want to keep.
+	 * @param string $name Parametter string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetParam (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	);
+
+
+	/**
+	 * Set directly whole raw global `$_FILES` without any conversion at once.
+	 * @param array $files
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetFiles (array & $files = array());
+
+	/**
+	 * Return reference to configured global `$_FILES`
+	 * or reference to any other testing array representing it.
+	 * @return array
+	 */
+	public function & GetFiles ();
+
+	/**
+	 * Set file item into global `$_FILES` without any conversion at once.
+	 * @param string $file
+	 * @param array $data
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetFile ($file = '', $data = array());
+
+	/**
+	 * Return item by file name from referenced global `$_FILES`
+	 * or reference to any other testing array item representing it.
+	 * @return array
+	 */
+	public function GetFile ($file = '');
+
+
+	/**
+	 * Set directly whole raw global `$_COOKIE` without any conversion at once.
+	 * @param array $cookies
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetCookies (array & $cookies = array());
+
+	/**
+	 * Return reference to configured global `$_COOKIE`
+	 * or reference to any other testing array representing it.
+	 * @return array
+	 */
+	public function & GetCookies ();
+
+	/**
+	 * Set raw request cookie into referenced global `$_COOKIE` without any conversion.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetCookie ($name = "", $value = "");
+
+	/**
+	 * Get request cookie value from referenced global `$_COOKIE` variable,
+	 * filtered by characters defined in second argument throught `preg_replace()`.
+	 * Place into second argument only char groups you want to keep.
+	 * @param string $name Cookie string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetCookie (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	);
+
+
+	/**
+	 * Initialize all possible protected values from all globals,
+	 * including all http headers, all params and application inputs.
+	 * This method is not recomanded to use in production mode, it's
+	 * designed mostly for development purposes, to see in one moment,
+	 * what could be inside request after calling any getter method.
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & InitAll ();
+
+	/**
+	 * Return `TRUE` boolean flag if request targets `Controller:Asset`.
+	 * @return bool
+	 */
+	public function IsInternalRequest ();
+
+	/**
+	 * Set cleaned requested controller name into `\MvcCore\Request::$controllerName;`
+	 * and into `\MvcCore\Request::$Params['controller'];`.
+	 * @param string $controllerName
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetControllerName ($controllerName);
+
+	/**
+	 * Return cleaned requested controller name from `\MvcCore\Request::$Params['controller'];`.
+	 * @return string
+	 */
+	public function GetControllerName ();
+
+	/**
+	 * Set cleaned requested controller name into `\MvcCore\Request::$actionName;`
+	 * and into `\MvcCore\Request::$Params['action'];`.
+	 * @param string $actionName
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & SetActionName ($actionName);
+
+	/**
+	 * Return cleaned requested action name from `\MvcCore\Request::$Params['action'];`.
+	 * @return string
+	 */
+	public function GetActionName ();
+
+	/**
+	 * Set language international code.
+	 * Use this lang storage by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	public function & SetLang ($lang);
+
+	/**
+	 * Get language international code, lowercase, not used by default.
+	 * To use this variable - install  `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	public function GetLang ();
+
+	/**
+	 * Set country/locale code, uppercase.
+	 * Use this locale storage by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
+	 */
+	public function & SetLocale ($locale);
+
+	/**
+	 * Get country/locale code, uppercase, not used by default.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
+	 */
+	public function GetLocale ();
+
+	/**
+	 * Set media site key - `"full" | "tablet" | "mobile"`.
+	 * Use this media site key storage by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	public function & SetMediaSiteKey ($mediaSiteKey);
+
+	/**
+	 * Get media site key - `"full" | "tablet" | "mobile"`.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCoreExt\Router\Media`
+	 * Or use this variable by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	public function GetMediaSiteKey ();
+
+	/**
+	 * Sets any custom property `"PropertyName"` by `\MvcCore\Request::SetPropertyName("value")`,
+	 * which is not necessary to define previously or gets previously defined
+	 * property `"PropertyName"` by `\MvcCore\Request::GetPropertyName();`.
+	 * Throws exception if no property defined by get call or if virtual call
+	 * begins with anything different from 'Set' or 'Get'.
+	 * This method returns custom value for get and `\MvcCore\Request` instance for set.
+	 * @param string $name
+	 * @param array  $arguments
+	 * @throws \InvalidArgumentException
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function __call ($name, $arguments = array());
+
+	/**
+	 * Universal getter, if property not defined, `NULL` is returned.
+	 * @param string $name
+	 * @return mixed
+	 */
+	public function __get ($name);
+
+	/**
+	 * Universal setter, if property not defined, it's automaticly declarated.
+	 * @param string $name
+	 * @param mixed	 $value
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function __set ($name, $value);
+
+
+	/**
+	 * Php requested script name path from application root.
+	 * Example: `"/index.php"`
+	 * @return string
+	 */
+	public function GetScriptName ();
+
+	/**
+	 * Get application root path on hard drive.
+	 * Example: `"C:/www/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetAppRoot ();
+
+	/**
+	 * Get uppercased http method from global `$_SERVER['REQUEST_METHOD']`.
+	 * Example: `"GET" | "POST" | "PUT" | "HEAD"...`
+	 * @return string
+	 */
+	public function GetMethod ();
+
+	/**
+	 * Get base app directory path after domain,
+	 * if application is placed in domain subdirectory.
+	 * Example:
+	 * - full url:  `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * - base path: `"/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetBasePath ();
+
+	/**
+	 * Get http protocol string.
+	 * Example: `"http:" | "https:"`
+	 * @return string
+	 */
+	public function GetProtocol ();
+
+	/**
+	 * Get `TRUE` if http protocol is `"https:"`.
+	 * @return bool
+	 */
+	public function IsSecure ();
+
+	/**
+	 * Get referer url if any, safely readed by:
+	 * `filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);`
+	 * Example: `"http://foreing.domain.com/path/where/is/link/to/?my=app"`
+	 * @return string
+	 */
+	public function GetReferer ();
+
+	/**
+	 * Get timestamp of the start of the request, with microsecond precision.
+	 * @return float
+	 */
+	public function GetMicrotime ();
+
+	/**
+	 * Get application server name - domain without any port.
+	 * Example: `"localhost"`
+	 * @return string
+	 */
+	public function GetServerName ();
+
+	/**
+	 * Get application host with port if there is any.
+	 * Example: `"localhost:88"`
+	 * @return string
+	 */
+	public function GetHost ();
+
+	/**
+	 * Get http port parsed by `parse_url()`.
+	 * Example: `"88"`
+	 * @return string
+	 */
+	public function GetPort ();
+
+	/**
+	 * Get requested path in from application root (if `mod_rewrite` enabled), never with query string.
+	 * Example: `"/products/page/2"`
+	 * @return string
+	 */
+	public function GetPath ();
+
+	/**
+	 * Get uri query string without question mark.
+	 * Example: `"param-1=value-1&param-2=value-2&param-3[]=value-3-a&param-3[]=value-3-b"`
+	 * @return string
+	 */
+	public function GetQuery ();
+
+	/**
+	 * Get request path after domain with possible query string
+	 * Example: `"/requested/path/after/app/root?with=possible&query=string"`
+	 * @return string
+	 */
+	public function GetRequestPath ();
+
+	/**
+	 * Get url to requested domain and possible port.
+	 * Example: `"https://domain.com" | "http://domain:88"` if any port.
+	 * @return string
+	 */
+	public function GetDomainUrl ();
+
+	/**
+	 * Get base url to application root.
+	 * Example: `"http://domain:88/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetBaseUrl ();
+
+	/**
+	 * Get request url including scheme, domain, port, path, without any query string
+	 * Example: "`http://localhost:88/my/development/direcotry/www/requested/path/after/domain"`
+	 * @return string
+	 */
+	public function GetRequestUrl ();
+
+	/**
+	 * Get request url including scheme, domain, port, path and with query string
+	 * Example: `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * @return string
+	 */
+	public function GetFullUrl ();
+
+	/**
+	 * Get uri fragment parsed by `parse_url()` including hash.
+	 * Example: `"#any-sublink-path"`
+	 * @return string
+	 */
+	public function GetFragment ();
+
+	/**
+	 * Get server IP from `$_SERVER` global variable.
+	 * @return string
+	 */
+	public function GetServerIp ();
+
+	/**
+	 * Get client IP from `$_SERVER` global variable.
+	 * @return string
+	 */
+	public function GetClientIp ();
+
+	/**
+	 * Get `TRUE` if request is requested on the background
+	 * with usual Javascript HTTP header containing:
+	 * `X-Requested-With: AnyJsFrameworkName`.
+	 * @return bool
+	 */
+	public function IsAjax ();
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+/**
+ * Responsibility - completing all information for response - headers (cookies) and content.
+ * - HTTP response wrapper carrying response headers and response body.
+ * - PHP `setcookie` function wrapper to complete default values such domain or http only etc.
+ * - Sending response at application terminate process by `\MvcCore\Interfaces\IResponse::Send();`.
+ * - Completing MvcCore performance header at response end.
+ */
+interface IResponse
+{
+	const OK = 200;
+	const MOVED_PERMANENTLY = 301;
+	const SEE_OTHER = 303;
+	const NOT_FOUND = 404;
+	const INTERNAL_SERVER_ERROR = 500;
+
+	/**
+	 * No singleton, get everytime new instance of configured HTTP response
+	 * class in `\MvcCore\Application::GetInstance()->GetResponseClass();`.
+	 * @param int		$code
+	 * @param array		$headers
+	 * @param string	$body
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public static function GetInstance (
+		$code = \MvcCore\Interfaces\IResponse::OK,
+		$headers = array(),
+		$body = ''
+	);
+
+	/**
+	 * Set HTTP response code.
+	 * @param int $code `200 | 301 | 404`
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & SetCode ($code);
+
+	/**
+	 * Get HTTP response code.
+	 * @return int `200 | 301 | 404`
+	 */
+	public function GetCode ();
+
+	/**
+	 * Set multiple HTTP response headers as `key => value` array.
+	 * All given headers are automaticly merged with previously setted headers.
+	 * If you change second argument to true, all previous request object and PHP
+	 * headers are removed and given headers will be only headers for output.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Type` header, if contains any `charset=...`.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Encoding` header.
+	 * Example: `$request->SetHeader(array('Content-Type' => 'text/plain; charset=utf-8'));`
+	 * @param array $headers
+	 * @param bool $cleanAllPrevious `FALSE` by default. If `TRUE`, all previous headers
+	 *								 set by PHP `header()` or by this object will be removed.
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & SetHeaders (array $headers = array());
+
+	/**
+	 * Set HTTP response header.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Type` header, if contains any `charset=...`.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Encoding` header.
+	 * Example: `$request->SetHeader('Content-Type', 'text/plain; charset=utf-8');`
+	 * @param string $name
+	 * @param string $value
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & SetHeader ($name, $value);
+
+	/**
+	 * Get HTTP response header by name.
+	 * Example: `$request->GetHeader('Content-Type'); // returns 'text/plain; charset=utf-8'`
+	 * @param string $name
+	 * @return string|NULL
+	 */
+	public function GetHeader ($name);
+
+	/**
+	 * Get if response has any HTTP response header by given `$name`.
+	 * Example:
+	 *	`$request->GetHeader('Content-Type'); // returns TRUE if there is header 'Content-Type'
+	 *	`$request->GetHeader('content-type'); // returns FALSE if there is header 'Content-Type'
+	 * @param string $name
+	 * @return bool
+	 */
+	public function HasHeader ($name);
+
+	/**
+	 * Set HTTP response content encoding.
+	 * Example: `$response->SetEncoding('utf-8');`
+	 * @param string $encoding
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & SetEncoding ($encoding = 'utf-8');
+
+	/**
+	 * Get HTTP response content encoding.
+	 * Example: `$response->GetEncoding(); // returns 'utf-8'`
+	 * @return string|NULL
+	 */
+	public function GetEncoding ();
+
+	/**
+	 * Set HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & SetBody ($body);
+
+	/**
+	 * Prepend HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & PrependBody ($body);
+
+	/**
+	 * Append HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Interfaces\IResponse
+	 */
+	public function & AppendBody ($body);
+
+	/**
+	 * Get HTTP response body.
+	 * @return string|NULL
+	 */
+	public function & GetBody ();
+
+	/**
+	 * Consolidate all headers from PHP response
+	 * by calling `headers_list()` into local headers list.
+	 * @return void
+	 */
+	public function UpdateHeaders ();
+
+	/**
+	 * Return if response has any redirect `"Location: ..."` header inside.
+	 * @return bool
+	 */
+	public function IsRedirect ();
+
+	/**
+	 * Returns if response has any `text/html` or `application/xhtml+xml`
+	 * substring in `Content-Type` header.
+	 * @return bool
+	 */
+	public function IsHtmlOutput ();
+
+	/**
+	 * `TRUE` if headers or body has been sent.
+	 * @return bool
+	 */
+	public function IsSent ();
+
+	/**
+	 * Send all http headers and send response body.
+	 * @return void
+	 */
+	public function Send ();
+
+	/**
+	 * Send a cookie.
+	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
+	 * @param string $value       The value of the cookie. This value is stored on the clients computer; do not store sensitive information.
+	 * @param int    $lifetime    Life time in seconds to expire. 0 means "until the browser is closed".
+	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
+	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
+	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
+	 * @param bool   $httpOnly    HTTP only cookie, `TRUE` by default.
+	 * @throws \RuntimeException  If HTTP headers have been sent.
+	 * @return bool               True if cookie has been set.
+	 */
+	public function SetCookie (
+		$name, $value,
+		$lifetime = 0, $path = '/',
+		$domain = NULL, $secure = NULL, $httpOnly = TRUE
+	);
+
+	/**
+	 * Delete cookie - set value to empty string and
+	 * set expiration to "until the browser is closed".
+	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
+	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
+	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
+	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
+	 * @throws \RuntimeException  If HTTP headers have been sent.
+	 * @return bool               True if cookie has been set.
+	 */
+	public function DeleteCookie ($name, $path = '/', $domain = NULL, $secure = NULL);
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+/**
+ * Responsibility - describing request(s) to match and reversely build url addresses.
+ * - Describing request to match it (read more about properties).
+ * - Matching request by given request object, see `\MvcCore\Route::Matches()`.
+ * - Completing url address by given params array, see `\MvcCore\Route::Url()`.
+ *
+ * Main Properties:
+ * - `$Pattern`
+ *   Required, if you have not configured `\MvcCore\Route::$match` and
+ *   `\MvcCore\Route::$reverse` property instead. Very basic URL address
+ *   form to match and parse rewrited params by it. Address to parse
+ *   and prepare `\MvcCore\Route::$match` property and `\MvcCore\Route::$reverse`
+ *   property. automaticly in `\MvcCore\Route::Prepare();` call.
+ * - `$Match`
+ *   Required together with `\MvcCore\Route::$reverse` property, if you
+ *   have not configured `\MvcCore\Route::$pattern` property instead.
+ *   This property is always used to match request by `\MvcCore\Request::Path`
+ *   by classic PHP regualar expression matching by `preg_match_all();`.
+ * - `$Reverse`
+ *   Required together with `\MvcCore\Route::$match` property, if you
+ *   have not configured `\MvcCore\Route::$pattern` property instead.
+ *   This property is always used to complete url address by called params
+ *   array and by this string with rewrite params replacements inside.
+ * - `$Controller`
+ *   Required, if there is no `controller` param inside `\MvcCore\Route::$pattern`
+ *   or inside `\MvcCore\Route::$match property`. Controller class name to dispatch
+ *   in pascal case form, namespaces and including slashes as namespace delimiters.
+ * - `$Action`
+ *   Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+ *   or inside `\MvcCore\Route::$match property`. Public method in controller
+ *   in pascal case form, but in controller named as `public function <CoolName>Action () {...`.
+ * - `$Name`
+ *   Not required, if you want to create url addresses always by `Controller:Action`
+ *   named records. It could be any string, representing route custom name to
+ *   complete url address by that name inside your application.
+ * - `$Defaults`
+ *   Not required, matched route params default values and query params default values.
+ *   Last entry in array may be used for property `\MvcCore\Route::$LastPatternParam`
+ *   describing last rewrited param inside match pattern to be automaticly trimmed
+ *   from right side for possible address trailing slash in route matched moment.
+ * - `$Constraints`
+ *   not required, array with param names and their custom regular expression
+ *   matching rules. If no constraint string for any param defined, there is used
+ *   for all rewrited params default constraint rule to match everything except next slash.
+ *   Default static property for matching rule shoud be changed here:
+ *   - by default: `\MvcCore\Route::$DefaultConstraint = '[^/]*';`
+ */
+interface IRoute
+{
+	/**
+	 * Create every time new route instance, no singleton managing!
+	 * Called usually from core methods:
+	 * - `\MvcCore\Router::AddRoutes();`
+	 * - `\MvcCore\Router::AddRoute();`
+	 * - `\MvcCore\Router::routeByControllerAndActionQueryString();`
+	 * This method is the best place where to implement custom
+	 * route initialization for core.
+	 * First argument should be configuration array or
+	 * route pattern value to parse into match and reverse patterns.
+	 * Example:
+	 * `new Route(array(
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 * ));`
+	 * or:
+	 * `new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 * );`
+	 * or:
+	 * `new Route(array(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 * ));`
+	 * @param $patternOrConfig	string|array	Required, configuration array or route pattern value to parse into match and reverse patterns.
+	 * @param $controllerAction	string			Optional, controller and action name in pascale case like: `"Photogallery:List"`.
+	 * @param $defaults			string			Optional, default param values like: `array("name" => "default-name", "page" => 1)`.
+	 * @param $constraints		array			Optional, params regex constraints for regular expression match fn no `"match"` record in configuration array as first argument defined.
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public static function GetInstance ($object);
+
+	/**
+	 * Get route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @return string|NULL
+	 */
+	public function GetPattern ();
+
+	/**
+	 * Set route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @param string $pattern
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetPattern ($pattern);
+
+	/**
+	 * Get route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @return string|NULL
+	 */
+	public function GetMatch ();
+
+	/**
+	 * Set route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @param string $match
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetMatch ($match);
+
+	/**
+	 * Get route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @return string|NULL
+	 */
+	public function GetReverse ();
+
+	/**
+	 * Set route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @param string $reverse
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetReverse ($reverse);
+
+	/**
+	 * Get route name. It's your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @return string
+	 */
+	public function GetName ();
+
+	/**
+	 * Set route name. Not required. It's your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @param string $name
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetName ($name);
+
+	/**
+	 * Get controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @return string
+	 */
+	public function GetController ();
+
+	/**
+	 * Set controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @param string $controller
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetController ($controller);
+
+	/**
+	 * Get action name to call it in controller dispatch processing, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @return string
+	 */
+	public function GetAction ();
+
+	/**
+	 * Set action name to call it in controller dispatch processing, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @param string $action
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetAction ($action);
+
+	/**
+	 * Get target controller name and controller action name
+	 * together in one setter, in pascal case, separated by colon.
+	 * There are also controller namespace definition posibilities as
+	 * in `\MvcCore\Route::GetController();` getter method.
+	 *
+	 * Example: `"Products:List"`
+	 * @return string
+	 */
+	public function GetControllerAction ();
+
+	/**
+	 * Set target controller name and controller action name
+	 * together in one setter, in pascal case, separated by colon.
+	 * There are also controller namespace definition posibilities as
+	 * in `\MvcCore\Route::SetController();` setter method.
+	 *
+	 * Example: `"Products:List"`
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetControllerAction ($controllerAction);
+
+	/**
+	 * Get route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example:
+	 *  `array(
+	 *      "name"  => "default-name",
+	 *      "color" => "red"
+	 *  );`.
+	 * @return array
+	 */
+	public function & GetDefaults ();
+
+	/**
+	 * Set route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example:
+	 *  `array(
+	 *      "name"  => "default-name",
+	 *      "color" => "red"
+	 *  );`.
+	 * @param array $defaults
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetDefaults ($defaults = array());
+
+	/**
+	 * Get array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @return array
+	 */
+	public function & GetConstraints ();
+
+	/**
+	 * Set array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @param array $constraints
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetConstraints ($constraints = array());
+
+	/**
+	 * Return array of matched params, with matched controller and action names,
+	 * if route matches request `\MvcCore\Request::$Path` property by `preg_match_all()`.
+	 *
+	 * This method is usually called in core request routing process
+	 * from `\MvcCore\Router::Route();` method and it's submethods.
+	 *
+	 * @param string $requestPath
+	 * @return array Matched and params array, keys are matched
+	 *				 params or controller and action params.
+	 */
+	public function Matches (& $requestPath);
+
+	/**
+	 * Complete route url by given params array and route
+	 * internal reverse replacements pattern string.
+	 * If there are more given params in first argument
+	 * than count of replacement places in reverse pattern,
+	 * then create url with query string params after reverse
+	 * pattern, containing that extra record(s) value(s).
+	 *
+	 * Example:
+	 *	Input (`$params`):
+	 *		`array(
+	 *			"name"		=> "cool-product-name",
+	 *			"color"		=> "blue",
+	 *			"variants"	=> array("L", "XL"),
+	 *		);`
+	 *	Input (`\MvcCore\Route::$reverse`):
+	 *		`"/products-list/<name>/<color*>"`
+	 *	Output:
+	 *		`"/products-list/cool-product-name/blue?variant[]=L&amp;variant[]=XL"`
+	 * @param array $params
+	 * @param array $cleanedGetRequestParams Request query params with escaped chars: `<` and `>`.;
+	 * @return string
+	 */
+	public function Url (& $params, & $cleanedGetRequestParams);
+
+	/**
+	 * Initialize all possible protected values (`match`, `reverse` etc...)
+	 * This method is not recomanded to use in production mode, it's
+	 * designed mostly for development purposes, to see what could be inside route.
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & InitAll ();
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once('IRequest.php');
+//include_once('IRoute.php');
+
+/**
+ * Responsibility - singleton, routes instancing, request routing and url building.
+ * - Application router singleton instance managing.
+ * - Global storage for all configured routes.
+ *	 - Instancing all route(s) from application start
+ *	   configuration somewhere in `Bootstrap` class.
+ * - Global storage for currently matched route.
+ * - Matching proper route object in `\MvcCore\Router::Route();`
+ *   by `\MvcCore\Request::$Path`, always called from core in
+ *   `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+ * - Application url addresses completing:
+ *   - Into `mod_rewrite` form by configured route instances.
+ *   - Into `index.php?` + query string form, containing
+ *     `controller`, `action` and all other params.
+ */
+interface IRouter
+{
+	/**
+	 * Get singleton instance of `\MvcCore\Router` stored always here.
+	 * Optionaly set routes as first argument.
+	 * Create proper router instance type at first time by
+	 * configured class name in `\MvcCore\Application` singleton.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
+	 *													 keys are route names or route
+	 *													 `Controller::Action` definitions.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public static function & GetInstance ($routes = array());
+
+	/**
+	 * Clear all possible previously configured routes
+	 * and set new given request routes again.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
+	 *													 keys are route names or route
+	 *													 `Controller::Action` definitions.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & SetRoutes ($routes = array());
+
+	/**
+	 * Append or prepend new request routes.
+	 * If there is no name configured in route array configuration,
+	 * set route name by given `$routes` array key, if key is not numeric.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
+	 *											 keys are route names or route
+	 *											 `Controller::Action` definitions.
+	 * @param bool $prepend Optional, if `TRUE`, all given routes will
+	 *						be prepended from the last to the first in
+	 *						given list, not appended.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & AddRoutes (array $routes = array(), $prepend = FALSE);
+
+	/**
+	 * Append or prepend new request route.
+	 * Set up route by route name into `\MvcCore\Router::$routes` array
+	 * to route incoming request and also set up route by route name and
+	 * by `Controller:Action` combination into `\MvcCore\Router::$urlRoutes`
+	 * array to build url addresses.
+	 *
+	 * Route could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
+	 *		"name"		=> "Products:List",
+	 *		"pattern"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
+	 *		"name"				=> "products_list",
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *	));`
+	 * @param \MvcCore\Interfaces\IRoute|array $route Route instance or
+	 *												  route config array.
+	 * @param bool $prepend
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & AddRoute ($route, $prepend = FALSE);
+
+	/**
+	 * Get all configured route(s) as `\MvcCore\Route` instances.
+	 * Keys in returned array are route names, values are route objects.
+	 * @return \MvcCore\Interfaces\IRoute[]
+	 */
+	public function & GetRoutes ();
+
+	/**
+	 * Get `\MvcCore\Request` object as reference, used internally for:
+	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
+	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & GetRequest ();
+
+	/**
+	 * Sets up `\MvcCore\Request` object as reference to use it internally for:
+	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
+	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+	 * @param \MvcCore\Interfaces\IRequest $request
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & SetRequest (\MvcCore\Interfaces\IRequest & $request);
+
+	/**
+	 * Set matched route instance for given request object
+	 * into `\MvcCore\Route::Route($request);` method. Currently
+	 * matched route is always assigned internally in that method.
+	 * @param \MvcCore\Interfaces\IRoute $currentRoute
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & SetCurrentRoute (\MvcCore\Interfaces\IRoute $currentRoute);
+
+	/**
+	 * Get matched route instance reference for given request object
+	 * into `\MvcCore\Route::Route($request);` method. Currently
+	 * matched route is always assigned internally in that method.
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & GetCurrentRoute ();
+
+	/**
+	 * Get `TRUE` if request has to be automaticly dispatched as default
+	 * `Index:Index` route, if there was no route matching current request.
+	 * Default protected property value: `FALSE`.
+	 * @param bool $enable
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function GetRouteToDefaultIfNotMatch ();
+
+	/**
+	 * Set `TRUE` if request has to be automaticly dispatched as default
+	 * `Index:Index` route, if there was no route matching current request.
+	 * Default protected property value: `FALSE`.
+	 * @param bool $enable
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetRouteToDefaultIfNotMatch ($enable = TRUE);
+
+	/**
+	 * Route current application request by configured routes list or by query string data.
+	 * - If there is strictly defined `controller` and `action` value in query string,
+	 *   route request by given values, add new route and complete new empty
+	 *   `\MvcCore\Router::$currentRoute` route with `controller` and `action` values from query string.
+	 * - If there is no strictly defined `controller` and `action` value in query string,
+	 *   go throught all configured routes and try to find matching route:
+	 *   - If there is catched any matching route:
+	 *     - Set up `\MvcCore\Router::$currentRoute`.
+	 *     - Reset `\MvcCore\Request::$params` again with with default route params,
+	 *       with request params itself and with params parsed from matching process.
+	 * - If there is no route matching the request and also if the request is targeting homepage
+	 *   or there is no route matching the request and also if the request is targeting something
+	 *   else and also router is configured to route to default controller and action if no route
+	 *   founded, complete `\MvcCore\Router::$currentRoute` with new empty automaticly created route
+	 *   targeting default controller and action by configuration in application instance (`Index:Index`)
+	 *   and route type create by configured `\MvcCore\Application::$routeClass` class name.
+	 * - Return completed `\MvcCore\Router::$currentRoute` or NULL.
+	 *
+	 * This method is always called from core routing by:
+	 * - `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & Route ();
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+/**
+ * Responsibility - session data management - starting, writing and expirations.
+ * - Safe start (only once)
+ *   - By `\MvcCore\Interfaces\ISession::Start()`
+ *     - Called by `\MvcCore\Application::GetInstance()->SessionStart();`
+ *	     - Called by `\MvcCore\Controller::Init();`.
+ * - Session writing and closing at request end:
+ *   - In `\MvcCore\Interfaces\ISession::Close()`
+ *     - Called over `register_shutdown_function()`
+ *       from `\MvcCore::Terminate();`
+ * - Session namespaces management:
+ *   - Variables expiration by seconds.
+ *   - Variables expiration by request hoops.
+ */
+interface ISession
+{
+	/**
+	 * Metadata key in `$_SESSION` storrage.
+	 * @var string
+	 */
+	const SESSION_METADATA_KEY = '__MC';
+
+	/**
+	 * Default session namespace name.
+	 * @var string
+	 */
+	const DEFAULT_NAMESPACE_NAME = 'default';
+
+	/**
+	 * Session safe start only once.
+	 * - called by `\MvcCore\Application::GetInstance()->SessionStart();`
+	 *   - called by `\MvcCore\Controller::Init();`
+	 * It's free to call this function anywhere sooner for custom purposes,
+	 * for example in `Bootstrap.php` by: `\MvcCore\Application::GetInstance()->SessionStart();`
+	 * @return void
+	 */
+	public static function Start ();
+
+	/**
+	 * Get unix epoch for current request session start moment.
+	 * @return int
+	 */
+	public static function GetSessionStartTime ();
+
+	/**
+	 * Get session metadata about session namespaces.
+	 * This method is used for debuging purposses.
+	 * @return \stdClass
+	 */
+	public static function GetSessionMetadata ();
+
+	/**
+	 * Write and close session in `\MvcCore::Terminate();`.
+	 * Serialize all metadata and call php function to write session into php session storrage.
+	 * (HDD, Redis, database, etc., depends on php configuration).
+	 * @return void
+	 */
+	public static function Close ();
+
+	/**
+	 * Get new or existing MvcCore session namespace instance.
+	 * @param string $name
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public static function & GetNamespace ($name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME);
+
+	/**
+	 * Set MvcCore session namespace expiration by page request(s) count.
+	 * @param int $hoops
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public function & SetExpirationHoops ($hoops);
+
+	/**
+	 * Set MvcCore session namespace expiration by expiration seconds.
+	 * @param int $seconds
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public function & SetExpirationSeconds ($seconds);
+
+	/**
+	 * Destroy whole session namespace in `$_SESSION` storrage
+	 * and internal static storrages.
+	 * @return void
+	 */
+	public function Destroy ();
+
+	/**
+	 * Destroy all existing session namespaces in `$_SESSION` storrage
+	 * and internal static storrages, destroy whole PHP session.
+	 * @return void
+	 */
+	public static function DestroyAll ();
+
+	/**
+	 * Magic function triggered by: `isset(\MvcCore\Interfaces\ISession->key);`.
+	 * @param string $key
+	 * @return bool
+	 */
+	public function __isset ($key);
+
+	/**
+	 * Magic function triggered by: `unset(\MvcCore\Interfaces\ISession->key);`.
+	 * @param string $key
+	 * @return void
+	 */
+	public function __unset ($key);
+
+	/**
+	 * Magic function triggered by: `$value = \MvcCore\Interfaces\ISession->key;`.
+	 * @param string $key
+	 * @return mixed
+	 */
+	public function __get ($key);
+
+	/**
+	 * Magic function triggered by: `\MvcCore\Interfaces\ISession->key = "value";`.
+	 * @param string $key
+	 * @param mixed $value
+	 * @return void
+	 */
+	public function __set ($key, $value);
+
+	/**
+	 * Magic `\ArrayObject` function triggered by: `count(\MvcCore\Interfaces\ISession);`.
+	 * @return int
+	 */
+	public function count ();
+}
+}
+namespace App{
+
+class Bootstrap
+{
+	public static function Init () {
+
+		$app = \MvcCore\Application::GetInstance();
+
+		// patch core to use extended debug class
+		if (FALSE) {
+			\MvcCore\Ext\Debug\Tracy::$Editor = 'MSVS2017';
+			$app->SetDebugClass(\MvcCore\Ext\Debug\Tracy::class);
+		}
+
+		// Initialize authentication service extension and set custom user class
+		\MvcCore\Ext\Auth::GetInstance()->Init()->SetUserClass(\App\Models\User::class);
+
+		// set up application routes without custom names, defined basicly as Controller::Action
+		\MvcCore\Router::GetInstance(array(
+			'Index:Index'			=> '/',
+			'CdCollection:Index'	=> '/albums',
+			'CdCollection:Create'	=> '/create',
+			'CdCollection:Edit'	=> array(
+				'pattern'			=> "/edit/<id>",
+				'constraints'		=> array(
+					'id' => '\d'
+				),
+			),
+		));
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext{
+
+class Auth {
+	/**
+	 * MvcCore Extension - Auth - version:
+	 * Comparation by PHP function version_compare();
+	 * @see http://php.net/manual/en/function.version-compare.php
+	 */
+	const VERSION = '5.0.0-alpha';
+	/**
+	 * Singleton instance of authentication extension service.
+	 * @var \MvcCore\Ext\Auth
+	 */
+	protected static $instance = NULL;
+	/**
+	 * User model isntace or null if user is not authenticated in session.
+	 * @var \MvcCore\Ext\Auth\Virtual\User
+	 */
+	protected $user = NULL;
+	/**
+	 * If user is authenticated in session, there is scompleted
+	 * sign in form, else there is sign out form.
+	 * @var \MvcCore\Ext\Auth\Virtual\Form
+	 */
+	protected $form = NULL;
+	/**
+	 * Authentication configuration, there is possible to change
+	 * any configuration option ne by one by any setter method
+	 * multiple values or by \MvcCore\Ext\Auth::GetInstance()->Configure([...]) method.
+	 * Config array is retyped to stdClass in __constructor().
+	 * @var \stdClass
+	 */
+	protected $config = array(
+		'expirationSeconds'	=> 600, // 10 minutes
+		'userClass'			=> '\User',
+		'controllerClass'	=> '\Controller',
+		'signInFormClass'	=> '\SignInForm',
+		'signOutFormClass'	=> '\SignOutForm',
+		'signedInUrl'		=> '',
+		'signedOutUrl'		=> '',
+		'errorUrl'			=> '',
+		'signInRoute'		=> array('match' => '#^/signin#', 'reverse' => '/signin'),
+		'signOutRoute'		=> array('match' => '#^/signout#', 'reverse' => '/signout'),
+		'passwordHashSalt'	=> 'S3F8OI2P3X6ER1F6XY2Q9ZCY',
+		'translator'		=> NULL,
+	);
+	/**
+	 * If true, authentication service allready try to load
+	 * user from session and authentication detection os not
+	 * necessary to run again. False by default.
+	 * @var bool
+	 */
+	protected $userInitialized = FALSE;
+
+	/**
+	 * Return singleton instance. If instance exists, return existing instance,
+	 * if not, create new Auth service instance, store it and return it.
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public static function GetInstance () {
+		if (is_null(static::$instance)) {
+			static::$instance = new static();
+		}
+		return static::$instance;
+	}
+	/**
+	 * Create new Auth service instance.
+	 * For each configuration item- check if it is class definition
+	 * and if it is, complete whole class definition.
+	 */
+	public function __construct () {
+		foreach ($this->config as $key => & $value) {
+			if (strpos($key, 'Class') !== FALSE) {
+				$value = __CLASS__ . $value;
+			}
+		}
+		$this->config = (object) $this->config;
+	}
+	/**
+	 * Return configuration object.
+	 * @return \stdClass
+	 */
+	public function & GetConfig () {
+		return $this->config;
+	}
+	/**
+	 * Set up authorization service configuration.
+	 * Each array key must have key by default configuration item.
+	 * If configuration item is class, it's checked if it exists.
+	 * @param array $config
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function Configure ($config = array()) {
+		foreach ($config as $key => $value) {
+			if (isset($this->config->$key)) {
+				if (strpos($key, 'Class') !== FALSE) {
+					$this->_checkClass($value);
+				}
+				$this->config->$key = $value;
+			}
+		}
+		return $this;
+	}
+	/**
+	 * Set authorization expiration seconds, 10 minutes by default.
+	 * @param int $expirationSeconds
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetExpirationSeconds ($expirationSeconds = 600) {
+		$this->config->expirationSeconds = $expirationSeconds;
+		return $this;
+	}
+	/**
+	 * Set user's passwords hash salt, put here any string, every request the same.
+	 * @param string $passwordHashSalt
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetPasswordHashSalt ($passwordHashSalt = '') {
+		$this->config->passwordHashSalt = $passwordHashSalt;
+		return $this;
+	}
+	/**
+	 * Set authorization service user class
+	 * to get store username from session stored from previous
+	 * requests for 10 minutes by default, by sign in action to compare
+	 * sender credentials with any user from your custom place
+	 * and by sign out action to remove username from session.
+	 * It has to extend \MvcCore\Ext\Auth\Virtual\User.
+	 * @param string $userClass
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetUserClass ($userClass = '') {
+		$this->config->userClass = $this->_checkClass($userClass);
+		return $this;
+	}
+	/**
+	 * Set authorization service controller class
+	 * to handle signin and signout actions,
+	 * it has to extend \MvcCore\Ext\Auth\Virtual\Controller.
+	 * @param string $controllerClass
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetControllerClass ($controllerClass = '') {
+		$this->config->controllerClass = $this->_checkClass($controllerClass);
+		return $this;
+	}
+	/**
+	 * Set authorization service sign in form class,
+	 * to create, render and submit sign in user.
+	 * it has to implement \MvcCore\Ext\Auth\Virtual\Form.
+	 * @param string $signInFormClass
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetSignInFormClass ($signInFormClass = '') {
+		$this->config->signInFormClass = $this->_checkClass($signInFormClass);
+		return $this;
+	}
+	/**
+	 * Set authorization service sign out form class,
+	 * to create, render and submit sign out user.
+	 * it has to implement \MvcCore\Ext\Auth\Virtual\Form.
+	 * @param string $signInFormClass
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetSignOutFormClass ($signOutFormClass = '') {
+		$this->config->signOutFormClass = $this->_checkClass($signOutFormClass);
+		return $this;
+	}
+	/**
+	 * Set translator callable if you want to translate
+	 * sign in and sign out forms labels, placeholders and error messages.
+	 * @param callable $translator
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetTranslator (callable $translator = NULL) {
+		$this->config->translator = $translator;
+		return $this;
+	}
+	/**
+	 * Set url to redirect user after sign in process was successfull.
+	 * By default signed in url is the same as current request url,
+	 * internaly configured by default authentication service pre request handler.
+	 * @param string $signedInUrl
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetSignedInUrl ($signedInUrl ='') {
+		$this->config->signedInUrl = $signedInUrl;
+		return $this;
+	}
+	/**
+	 * Set url to redirect user after sign out process was successfull.
+	 * By default signed out url is the same as current request url,
+	 * internaly configured by default authentication service pre request handler.
+	 * @param string $signedOutUrl
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetSignedOutUrl ($signedOutUrl ='') {
+		$this->config->signedOutUrl = $signedOutUrl;
+		return $this;
+	}
+	/**
+	 * Set url to redirect user after sign in or sign out process was
+	 * not successfull. By default signed in/out error url is the same as
+	 * current request url, internaly configured by default
+	 * authentication service pre request handler.
+	 * @param string $errorUrl
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetErrorUrl ($errorUrl ='') {
+		$this->config->errorUrl = $errorUrl;
+		return $this;
+	}
+	/**
+	 * Set sign in route, where to navigate user browser after
+	 * user clicks on submit button in sign in form and
+	 * where to run authentication process.
+	 * Route shoud be any pattern string without any groups,
+	 * or route configuration array/stdClass or \MvcCore\Route
+	 * instance. Sign in route is prepended before all routes
+	 * in default service preroute handler.
+	 * @param string|array|\MvcCore\Interfaces\IRoute $signInRoute
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetSignInRoute ($signInRoute = NULL) {
+		$this->config->signInRoute = $signInRoute;
+		return $this;
+	}
+	/**
+	 * Set sign out route, where to navigate user browser after
+	 * user clicks on submit button in sign out form and
+	 * where to run deauthentication process.
+	 * Route shoud be any pattern string without any groups,
+	 * or route configuration array/stdClass or \MvcCore\Route
+	 * instance. Sign out route is prepended before all routes
+	 * in default service preroute handler.
+	 * @param string|array|\MvcCore\Interfaces\IRoute $signInRoute
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetSignOutRoute ($signOutRoute = NULL) {
+		$this->config->signOutRoute = $signOutRoute;
+		return $this;
+	}
+	/**
+	 * Return TRUE if user is authenticated/signed in.
+	 * If user is not loaded yet, load the user internaly by $auth->GetUser();
+	 * to start session and try to load user by session username record.
+	 * @return bool
+	 */
+	public function IsAuthenticated () {
+		return !is_null($this->GetUser());
+	}
+	/**
+	 * Get authenticated user instance reference or null if user is not authenticated.
+	 * If user is not loaded yet, load the user internaly by $auth->GetUser();
+	 * to start session and try to load user by session username record.
+	 * @return \MvcCore\Ext\Auth\Virtual\User
+	 */
+	public function & GetUser () {
+		if (!$this->userInitialized && is_null($this->user)) {
+			$userClass = $this->config->userClass;
+			$this->user = $userClass::GetUserBySession();
+			$this->userInitialized = TRUE;
+		}
+		return $this->user;
+	}
+	/**
+	 * Set user instance by you custom external authorization service.
+	 * If user instance is not null, set internal $auth->userInitialized property
+	 * to TRUE to not load user internaly again.
+	 * @param \MvcCore\Ext\Auth\Virtual\User $user
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetUser (\MvcCore\Ext\Auth\Virtual\User & $user) {
+		$this->user = $user;
+		if (!is_null($user)) $this->userInitialized = TRUE;
+		return $this;
+	}
+	/**
+	 * Return completed signin/signout form instance.
+	 * Form instance completiion is processed only once,
+	 * created instance is stored in $auth->form property.
+	 * This method is always called by you, your application
+	 * to set form into you custom template to render it for user.
+	 * If user is not authenticated, sign in form is returned and
+	 * if user is authenticated, opposite sign out form is returned.
+	 * @return \MvcCore\Ext\Auth\SignInForm|\MvcCore\Ext\Auth\SignOutForm|mixed
+	 */
+	public function & GetForm () {
+		if (is_null($this->form)) {
+			$controller = \MvcCore\Application::GetInstance()->GetController();
+			if ($this->IsAuthenticated()) {
+				$this->form = new \MvcCore\Ext\Auth\SignOutForm($controller);
+				$this->form->Action = \MvcCore\Application::GetInstance()->Url($this->config->signOutRoute->GetName());
+				$this->form->SuccessUrl = $this->config->signedOutUrl;
+			} else {
+				$this->form = new \MvcCore\Ext\Auth\SignInForm($controller);
+				$this->form->Action = \MvcCore\Application::GetInstance()->Url($this->config->signInRoute->GetName());
+				$this->form->SuccessUrl = $this->config->signedInUrl;
+			}
+			$this->form->ErrorUrl = $this->config->errorUrl;
+			$this->form->SetTranslator($this->config->translator);
+		}
+		return $this->form;
+	}
+	/**
+	 * Set sign in/sign out form instance.
+	 * Use this method only if you need sometimes to
+	 * complete different form to render.
+	 * @param \MvcCore\Ext\Auth\Virtual\Form $form
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function SetForm (& $form) {
+		$this->form = $form;
+		return $this;
+	}
+	/**
+	 * Initialize necessary authentication service handlers.
+	 * Call this method always in Bootstrap before request is routed by:
+	 * MvcCore\Ext\Auth::GetInstance()->Init();
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function Init () {
+		// add sing in or sing out forms routes, complete form success and error addresses
+		\MvcCore\Application::GetInstance()
+			->AddPreRouteHandler(function (\MvcCore\Interfaces\IRequest & $request) {
+				$this->PrepareHandler($request);
+			});
+		return $this;
+	}
+	/**
+	 * Process necessary operations before request is routed.
+	 * This method is called internaly by default and it's called
+	 * by \MvcCore pre route handler initialized in $auth->Init(); method.
+	 *
+	 * - Try to load user by stored session username from previous requests.
+	 *
+	 * - If controller class begins with substring containing this
+	 *   authentication class name, then it is obvious that controller
+	 *   has to have in route definition full class name defined by slash
+	 *   character in class name begin - so correct this controller class
+	 *   name if necessary to set up routes properly immediately on lines bellow.
+	 * - If configured singin/out routes are still strings only, create
+	 *   from those strings new \MvcCore\Route instances into the same config
+	 *   place to add them into router immediately on lines bellow.
+	 *
+	 * - Set up sign in form success url, sign out form success url and error
+	 *   url for both ign in/out forms, as current request url by default.
+	 *   If any url is configured already, nothing is changed.
+	 *
+	 * - Set up sign in or sign out route into router, only route which
+	 *   is currently by authenticated/not authenticated user necessary
+	 *   to process in $router->Route() processing.
+	 * @return void
+	 */
+	public function PrepareHandler () {
+		$this->GetUser();
+		$this->PrepareRoutes();
+		$this->PrepareAdresses();
+		$this->PrepareRouter();
+	}
+	/**
+	 * Second prepare handler internal method:
+	 * - If controller class begins with substring containing this
+	 *   authentication class name, then it is obvious that controller
+	 *   has to have in route definition full class name defined by slash
+	 *   character in class name begin - so correct this controller class
+	 *   name if necessary to set up routes properly immediately on lines bellow.
+	 * - If configured singin/out routes are still strings only, create
+	 *   from those strings new \MvcCore\Route instances into the same config
+	 *   place to add them into router immediately on lines bellow.
+	 * @return void
+	 */
+	public function PrepareRoutes () {
+		$authControllerClass = & $this->config->controllerClass;
+		if (strpos($authControllerClass, __CLASS__) === 0) {
+			$authControllerClass = '\\'.$authControllerClass;
+		}
+		$authenticated = $this->IsAuthenticated();
+		if (!$authenticated)
+			$this->prepareConfiguredRoute($authControllerClass, 'signInRoute');
+		if ($authenticated)
+			$this->prepareConfiguredRoute($authControllerClass, 'signOutRoute');
+	}
+	/**
+	 * Third prepare handler internal method:
+	 * - Set up sign in form success url, sign out form success url and error
+	 *   url for both ign in/out forms, as current request url by default.
+	 *   If any url is configured already, nothing is changed.
+	 * @return void
+	 */
+	public function PrepareAdresses () {
+		$request = & \MvcCore\Application::GetInstance()->GetRequest();
+		if (!$this->config->signedInUrl)	$this->config->signedInUrl = $request->FullUrl;
+		if (!$this->config->signedOutUrl)	$this->config->signedOutUrl = $request->FullUrl;
+		if (!$this->config->errorUrl)		$this->config->errorUrl = $request->FullUrl;
+	}
+	/**
+	 * Fourth prepare handler internal method:
+	 * - Set up sign in or sign out route into router, only route which
+	 *   is currently by authenticated/not authenticated user necessary
+	 *   to process in $router->Route() processing.
+	 * @return void
+	 */
+	public function PrepareRouter () {
+		if ($this->IsAuthenticated()) {
+			\MvcCore\Router::GetInstance()->AddRoute(
+				$this->config->signOutRoute, TRUE
+			);
+		} else {
+			\MvcCore\Router::GetInstance()->AddRoute(
+				$this->config->signInRoute, TRUE
+			);
+		}
+	}
+
+	/**
+	 * Prepare configured route record into route instance if record is string or array.
+	 * @param string $authControllerClass
+	 * @param string $configRouteKey
+	 * @return void
+	 */
+	protected function prepareConfiguredRoute ($authControllerClass, $configRouteKey) {
+		$route = & $this->config->$configRouteKey;
+		if (!is_string($route) && !is_array($route)) return;
+		$routeClass = \MvcCore\Application::GetInstance()->GetRouteClass();
+		$routeInitData = array('name' => $authControllerClass . ':SignIn');
+		$this->config->$configRouteKey = $routeClass::GetInstance(
+			gettype($route) == 'array'
+				? array_merge($route, $routeInitData)
+				: array_merge(array('pattern' => $route), $routeInitData)
+		);
+	}
+	/**
+	 * Check if configured class exists and thrown exception if not.
+	 * @param string $className
+	 * @throws \Exception
+	 * @return string
+	 */
+	private function _checkClass (& $className) {
+		if (!class_exists($className)) {
+			throw new \Exception("[".__CLASS__."] Configured class: '$className' doesn't exists.'");
+		}
+		return $className;
+	}
+
+
+}
+}
+namespace App\Views\Helpers{
+
+class JsonAttr
+{
+	/**
+	 * Convert any php value to json format, which is available to use in html attribute
+	 * @param $object mixed
+	 * @return string
+	 */
+	public function JsonAttr ($object = NULL) {
+		return rawurlencode(\MvcCore\Tool::EncodeJson($object));
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__.'/Interfaces/IController.php');
+//include_once(__DIR__.'/Interfaces/ISession.php');
+//include_once(__DIR__.'/Interfaces/IResponse.php');
+//include_once('Application.php');
+//include_once('Tool.php');
+//include_once('View.php');
+//include_once('Request.php');
+//include_once('Response.php');
+//include_once('Router.php');
+//include_once('Request.php');
+
+/**
+ * Responsibility - controller lifecycle - data preparing, rendering, response completing.
+ * - Controller lifecycle dispatching:
+ *   - Handling setup methods after creation from application core dispatching.
+ *   - Calling lifecycle methods (`\MvcCore\Controller::Dispatch();`):
+ *     - `\MvcCore\Controller::Init();`
+ *     - `\MvcCore\Controller::PreDispatch();`
+ *     - Calling routed controller action.
+ *     - `\MvcCore\Controller::Render();`
+ * - Rendering or no-rendering customization.
+ * - HTTP responses and redirects managing and customization.
+ * - Basic error responses rendering.
+ * - Customization for request termination to write
+ *   and close session, sending response etc.
+ *
+ * Template methods (necessary to call parent at method begin):
+ * - `Init()`
+ *   - Called after controller is created.
+ *   - Session start.
+ *   - Auto initialization for sub controllers.
+ *   - All internal variables initialized, except `\MvcCore\Controller::$view`.
+ * - `PreDispatch()`
+ *   - Called after `Init()`, before every controller action.
+ *   - `\MvcCore\Controller::$view` property initialization.
+ * - `Render()`
+ *   - Called after dispatching action has been called.
+ *   - `Controller:Action` view rendering responsibility and response completition.
+ *
+ * Important methods:
+ * - `Url()` - proxy method to build url by configured routes.
+ * - `GetParam()` - proxy method to read and clean request param values.
+ * - `AddChildController()` - method to register child controller (navigations, etc.)
+ *
+ * Internal methods and actions:
+ * - `Render()`
+ *   - Called internally in lifecycle dispatching,
+ *     but it's possible to use it for custom purposes.
+ * - `Terminate()`
+ *   - Called internally after lifecycle dispatching,
+ *     but it's possible to use it for custom purposes.
+ * - `Dispatch()`
+ *   - Processing whole controller and subcontrollers lifecycle.
+ * - `AssetAction()`
+ *   - Handling internal MvcCore HTTP requests
+ *     to get assets from packed application package.
+ */
+class Controller implements Interfaces\IController
+{
+	/**
+	 * Reference to `\MvcCore\Application` singleton object.
+	 * @var \MvcCore\Application|\MvcCore\Interfaces\IApplication
+	 */
+	protected $application;
+
+	/**
+	 * Request object - parsed uri, query params, app paths...
+	 * @var \MvcCore\Request|\MvcCore\Interfaces\IRequest
+	 */
+	protected $request;
+
+	/**
+	 * Response object - storrage for response headers and rendered body.
+	 * @var \MvcCore\Response|\MvcCore\Interfaces\IResponse
+	 */
+	protected $response;
+
+	/**
+	 * Application router object - reference storrage for application router to crate url addresses.
+	 * @var \MvcCore\Router|\MvcCore\Interfaces\IRouter
+	 */
+	protected $router;
+
+	/**
+	 * Requested controller name - `"dashed-controller-name"`.
+	 * @var string
+	 */
+	protected $controllerName = '';
+
+	/**
+	 * Requested action name - `"dashed-action-name"`.
+	 * @var string
+	 */
+	protected $actionName = '';
+
+	/**
+	 * Boolean about AJAX request.
+	 * `TRUE` if request is requested from browser by `XmlHttpRequest` object
+	 * with http header: `X-Requested-With: AnyJavascriptFrameworkName`, `FALSE` otherwise.
+	 * @var boolean
+	 */
+	protected $ajax = FALSE;
+
+	/**
+	 * Class store object for view properties.
+	 * Before `\MvcCore\Controller::PreDispatch();` is called
+	 * in controller lifecycle, this property will be still `NULL`.
+	 * @var \MvcCore\View|\MvcCore\Interfaces\IView
+	 */
+	protected $view = NULL;
+
+	/**
+	 * Layout name to render html wrapper around rendered action view.
+	 * @var string
+	 */
+	protected $layout = 'layout';
+
+	/**
+	 * Boolean about disabled or enabled rendering wrapper layout view around at last.
+	 * @var boolean
+	 */
+	protected $viewEnabled = TRUE;
+
+	/**
+	 * User model instance. Template property.
+	 * @var \MvcCore\Model
+	 */
+	protected $user = NULL;
+
+	/**
+	 * Controller lifecycle state:
+	 * - 0 => Controller has been created.
+	 * - 1 => Controller has been initialized.
+	 * - 2 => Controller has been pre-dispatched.
+	 * - 3 => controller has been action dispatched.
+	 * - 4 => Controller has been rendered.
+	 * @var int
+	 */
+	protected $dispatchState = 0;
+
+	/**
+	 * Parent controller instance if any.
+	 * @var \MvcCore\Controller|NULL
+	 */
+	private $_parentController = NULL;
+
+	/**
+	 * Registered sub-controller(s) instances.
+	 * @var \MvcCore\Controller[]
+	 */
+	private $_childControllers = array();
+
+	/**
+	 * Path to all static files - css, js, imgs and fonts.
+	 * @var string
+	 */
+	protected static $staticPath = '/static';
+
+	/**
+	 * Path to temporary directory with generated css and js files.
+	 * @var string
+	 */
+	protected static $tmpPath = '/Var/Tmp';
+
+	/**
+	 * All asset mime types possibly called throught `\MvcCore\Controller::AssetAction();`.
+	 * @var string
+	 */
+	private static $_assetsMimeTypes = array(
+		'js'	=> 'text/javascript',
+		'css'	=> 'text/css',
+		'ico'	=> 'image/x-icon',
+		'gif'	=> 'image/gif',
+		'png'	=> 'image/png',
+		'jpg'	=> 'image/jpg',
+		'jpeg'	=> 'image/jpeg',
+		'bmp'	=> 'image/bmp',
+		'svg'	=> 'image/svg+xml',
+		'eot'	=> 'application/vnd.ms-fontobject',
+		'ttf'	=> 'font/truetype',
+		'otf'	=> 'font/opentype',
+		'woff'	=> 'application/x-font-woff',
+	);
+
+	/**
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore\Application::DispatchControllerAction()` before controller is dispatched,
+	 * or always called in `\MvcCore\Controller::autoInitMembers();` in base controller initialization.
+	 * This is place where to customize any controller creation process,
+	 * before it's created by MvcCore framework to dispatch it.
+	 * @return \MvcCore\Controller
+	 */
+	public static function GetInstance () {
+		return new static();
+	}
+
+	/**
+	 * Dispatching controller life cycle by given action.
+	 * This is INTERNAL, not TEMPLATE method, internally
+	 * called in `\MvcCore::DispatchControllerAction();`.
+	 * Call this imediatelly after calling controller methods:
+	 * - `\MvcCore\Controller::__construct()`
+	 * - `\MvcCore\Controller::SetApplication($application)`
+	 * - `\MvcCore\Controller::SetRequest($request)`
+	 * - `\MvcCore\Controller::SetResponse($response)`
+	 * - `\MvcCore\Controller::SetRouter($router)`
+	 * This function automaticly complete (throught controller lifecycle)
+	 * protected `\MvcCore\Response` object with response headers and content,
+	 * which you can send to client browser by method
+	 * `\MvcCore\Controller::Terminate()` or which you can store
+	 * anywhere in cache to use it later etc.
+	 * @param string $actionName PHP code action name in PascalCase.
+	 *							 This value is used to call your desired function
+	 *							 in controller without any change.
+	 * @return void
+	 */
+	public function Dispatch ($actionName = "IndexAction") {
+		// \MvcCore\Debug::Timer('dispatch');
+		$this->Init();
+		if ($this->dispatchState < 1) $this->dispatchState = 1;
+		// \MvcCore\Debug::Timer('dispatch');
+		$this->PreDispatch();
+		if ($this->dispatchState < 2) $this->dispatchState = 2;
+		// \MvcCore\Debug::Timer('dispatch');
+		if (method_exists($this, $actionName)) $this->$actionName();
+		if ($this->dispatchState < 3) $this->dispatchState = 3;
+		// \MvcCore\Debug::Timer('dispatch');
+		$this->Render(
+			$this->controllerName,	// dashed ctrl name
+			$this->actionName		// dashed action name
+		);
+		// \MvcCore\Debug::Timer('dispatch');
+	}
+
+	/**
+	 * Application controllers initialization.
+	 * This is best time to initialize language, locale, session etc.
+	 * There is also called auto initialization processing - instance creation
+	 * on each controller class member imlementing `\MvcCore\Interfaces\IController`
+	 * and marked in doc comments as `@autoinit`.
+	 * then there is of course called `\MvcCore\Controller::Init();` method on each
+	 * automaticly created subcontroller.
+	 * @return void
+	 */
+	public function Init () {
+		$this->application->SessionStart();
+		$this->autoInitProperties();
+		foreach ($this->_childControllers as $controller) {
+			$controller->Init();
+			$controller->dispatchState = 1;
+		}
+	}
+
+	/**
+	 * Initialize all members implementing `\MvcCore\Interfaces\IController` marked
+	 * in doc comments as `@autoinit` into `\MvcCore\Controller::$controllers` array
+	 * and into member property itself. This method is always called inside
+	 * `\MvcCore\Controller::Init();` method, after session has been started.
+	 * @return void
+	 */
+	protected function autoInitProperties () {
+		$type = new \ReflectionClass($this);
+		/** @var $props \ReflectionProperty[] */
+		$props = $type->getProperties(
+			\ReflectionProperty::IS_PUBLIC |
+			\ReflectionProperty::IS_PROTECTED |
+			\ReflectionProperty::IS_PRIVATE
+		);
+		$toolsClass = $this->application->GetToolClass();
+		foreach ($props as $prop) {
+			$docComment = $prop->getDocComment();
+			if (mb_strpos($docComment, '@autoinit') === FALSE) continue;
+			$pos = mb_strpos($docComment, '@var ');
+			if ($pos === FALSE) continue;
+			$docComment = str_replace(array("\r","\n","\t", "*/"), " ", mb_substr($docComment, $pos + 5));
+			$pos = mb_strpos($docComment, ' ');
+			if ($pos === FALSE) continue;
+			$className = trim(mb_substr($docComment, 0, $pos));
+			if (!@class_exists($className)) continue;
+			if (!$toolsClass::CheckClassInterface($className, 'MvcCore\Interfaces\IController')) continue;
+			$instance = $className::GetInstance();
+			$this->AddChildController($instance, $prop->getName());
+			$prop->setValue($this, $instance);
+		}
+	}
+
+	/**
+	 * Application pre render common action - always used in application controllers.
+	 * This is best time to define any common properties or common view properties,
+	 * which are the same for multiple actions in controller etc.
+	 * There is also called `\MvcCore\Controller::PreDispatch();` method on each subcontroller.
+	 * @return void
+	 */
+	public function PreDispatch () {
+		if ($this->dispatchState == 0) $this->Init();
+		if ($this->viewEnabled) {
+			$viewClass = $this->application->GetViewClass();
+			$this->view = $viewClass::GetInstance()->SetController($this);
+		}
+		foreach ($this->_childControllers as $controller) {
+			$controller->PreDispatch();
+			$controller->dispatchState = 2;
+		}
+	}
+
+	/**
+	 * Get param value from `$_GET` or `$_POST` or `php://input`,
+	 * filtered by characters defined in second argument throught `preg_replace()`.
+	 * Place into second argument only char groups you want to keep.
+	 * Shortcut for: `\MvcCore\Request::GetParam();`
+	 * @param string $name
+	 * @param string $pregReplaceAllowedChars
+	 * @return string
+	 */
+	public function GetParam ($name = "", $pregReplaceAllowedChars = "a-zA-Z0-9_/\-\.\@") {
+		return $this->request->GetParam($name, $pregReplaceAllowedChars);
+	}
+
+	/**
+	 * Get current application singleton instance object as reference.
+	 * @return \MvcCore\Application
+	 */
+	public function & GetApplication () {
+		return $this->application;
+	}
+
+	/**
+	 * Sets up `\MvcCore\Application` singleton object.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore\Application::DispatchControllerAction()` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation.
+	 * @param \MvcCore\Application $application
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetApplication (\MvcCore\Interfaces\IApplication & $application) {
+		$this->application = & $application;
+		return $this;
+	}
+
+	/**
+	 * Get current application request object as reference.
+	 * @return \MvcCore\Request
+	 */
+	public function & GetRequest () {
+		return $this->request;
+	}
+
+	/**
+	 * Sets up `\MvcCore\Request` object and other protected properties.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore\Application::DispatchControllerAction();` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation
+	 * to set up following controller properties:
+	 * - `\MvcCore\Controller::$request`
+	 * - `\MvcCore\Controller::$response`
+	 * - `\MvcCore\Controller::$router`
+	 * - `\MvcCore\Controller::$controllerName`
+	 * - `\MvcCore\Controller::$actionName`
+	 * - `\MvcCore\Controller::$ajax`
+	 * @param \MvcCore\Request|\MvcCore\Interfaces\IRequest $request
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetRequest (\MvcCore\Interfaces\IRequest & $request) {
+		/** @var $request \MvcCore\Request */
+		$this->request = & $request;
+		$this->controllerName = $request->GetControllerName();
+		$this->actionName = $request->GetActionName();
+		$this->ajax = $request->IsAjax();
+		if ($this->ajax || (
+			$this->controllerName == 'controller' && $this->actionName == 'asset'
+		)) $this->DisableView();
+		return $this;
+	}
+
+	/**
+	 * Get current application response object as reference.
+	 * @return \MvcCore\Response
+	 */
+	public function & GetResponse () {
+		return $this->response;
+	}
+
+	/**
+	 * Sets up `\MvcCore\Response` object.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore::DispatchControllerAction()` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation.
+	 * @param \MvcCore\Response $response
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetResponse (\MvcCore\Interfaces\IResponse & $response) {
+		$this->response = & $response;
+		return $this;
+	}
+
+	/**
+	 * Get current application router object as reference.
+	 * @return \MvcCore\Router
+	 */
+	public function & GetRouter () {
+		return $this->router;
+	}
+
+	/**
+	 * Sets up `\MvcCore\Router` object.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore::DispatchControllerAction()` before controller is dispatched.
+	 * Usually call this as soon as possible after controller creation.
+	 * @param \MvcCore\Router $router
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetRouter (\MvcCore\Interfaces\IRouter & $router) {
+		$this->router = & $router;
+		return $this;
+	}
+
+	/**
+	 * Boolean about AJAX request.
+	 * `TRUE` if request is requested from browser by `XmlHttpRequest` object
+	 * with http header: `X-Requested-With: AnyJavascriptFrameworkName`, `FALSE` otherwise.
+	 * @return boolean
+	 */
+	public function IsAjax () {
+		return $this->ajax;
+	}
+
+	/**
+	 * Boolean about disabled or enabled rendering wrapper layout view around at last.
+	 * @return bool
+	 */
+	public function IsViewEnabled () {
+		return $this->viewEnabled;
+	}
+
+	/**
+	 * Get user model instance. Template method.
+	 * @return \MvcCore\Model
+	 */
+	public function & GetUser () {
+		return $this->user;
+	}
+	/**
+	 * Set user model instance. Template method.
+	 * @param \MvcCore\Model $user
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetUser (& $user) {
+		$this->user = $user;
+		return $this;
+	}
+
+	/**
+	 * Return current controller view object if any.
+	 * Before `\MvcCore\Controller::PreDispatch();` is called
+	 * in controller lifecycle, this property will be still `NULL`.
+	 * @return \MvcCore\View|NULL
+	 */
+	public function & GetView () {
+		return $this->view;
+	}
+
+	/**
+	 * Set current controller view object.
+	 * @param \MvcCore\View $view
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetView (\MvcCore\Interfaces\IView & $view) {
+		$this->view = $view;
+		return $this;
+	}
+
+	/**
+	 * Get layout name to render html wrapper around rendered action view.
+	 * Example: `"front" | "admin" | "account"...`.
+	 * @return string
+	 */
+	public function GetLayout () {
+		return $this->layout;
+	}
+
+	/**
+	 * Set layout name to render html wrapper around rendered action view.
+	 * Example: `"front" | "admin" | "account"...`.
+	 * @param string $layout
+	 * @return \MvcCore\Controller
+	 */
+	public function & SetLayout ($layout = '') {
+		$this->layout = $layout;
+		return $this;
+	}
+
+	/**
+	 * Disable layout view rendering (rendering html wrapper around rendered action view).
+	 * This method is always called internally before
+	 * `\MvcCore\Controller::Init();` for all AJAX requests.
+	 * @return void
+	 */
+	public function DisableView () {
+		$this->viewEnabled = FALSE;
+	}
+
+	/**
+	 * - Register child controller to process dispatching on it later.
+	 * - This method is always called INTERNALLY, but you can use it for custom purposes.
+	 * - This method automaticly assigns into child controller(s) properties from parent:
+	 *   - `\Mvccore\Controller::$_parentController`
+	 *   - `\Mvccore\Controller::$request`
+	 *   - `\Mvccore\Controller::$response`
+	 *   - `\MvcCore\Controller::$router`
+	 *   - `\Mvccore\Controller::$layout`
+	 *   - `\Mvccore\Controller::$viewEnabled`
+	 *   - `\Mvccore\Controller::$user`
+	 * @param \MvcCore\Controller &$controller
+	 * @param string|int $index
+	 * @return \MvcCore\Controller
+	 */
+	public function AddChildController (\MvcCore\Interfaces\IController & $controller, $index = NULL) {
+		if (!in_array($controller, $this->_childControllers)) {
+			if ($index === NULL) {
+				$this->_childControllers[] = & $controller;
+			} else {
+				$this->_childControllers[$index] = & $controller;
+			}
+			$controller->_parentController = & $this;
+			$controller->layout = $this->layout;
+			$controller->viewEnabled = $this->IsViewEnabled();
+			$controller
+				->SetApplication($this->application)
+				->SetRouter($this->router)
+				->SetRequest($this->request)
+				->SetResponse($this->response)
+				->SetUser($this->user);
+		}
+		return $this;
+	}
+
+	/**
+	 * Get parent controller instance if any.
+	 * Method for child controllers. This method returns
+	 * `NULL` for top most parent controller instance.
+	 * @return \MvcCore\Controller|NULL
+	 */
+	public function GetParentController () {
+		return $this->_parentController;
+	}
+
+	/**
+	 * Get all child controllers array, indexed by
+	 * subcontroller property string name or by
+	 * custom string name or by custom numeric index.
+	 * @return \MvcCore\Controller[]
+	 */
+	public function GetChildControllers () {
+		return $this->_childControllers;
+	}
+
+	/**
+	 * Get child controller at specific index.
+	 * Subcontroller index should be string by parent controller
+	 * property name or custom string name or numeric index.
+	 * @param string|int $index
+	 * @return \MvcCore\Controller
+	 */
+	public function GetChildController ($index = NULL) {
+		return $this->_childControllers[$index];
+	}
+
+	/**
+	 * Return small assets content with proper headers
+	 * in single file application mode and immediately exit.
+	 * @throws \Exception If file path is not allowed (500) or file not found (404).
+	 * @return void
+	 */
+	public function AssetAction () {
+		$ext = '';
+		$path = $this->GetParam('path', 'a-zA-Z0-9_\-\/\.');
+		$path = '/' . ltrim(str_replace('..', '', $path), '/');
+		if (
+			strpos($path, static::$staticPath) !== 0 &&
+			strpos($path, static::$tmpPath) !== 0
+		) {
+			throw new \ErrorException("[".__CLASS__."] File path: '$path' is not allowed.", 500);
+		}
+		$path = $this->request->GetAppRoot() . $path;
+		if (!\Packager_Php_Wrapper::FileExists($path)) {
+			throw new \ErrorException("[".__CLASS__."] File not found: '$path'.", 404);
+		}
+		$lastDotPos = strrpos($path, '.');
+		if ($lastDotPos !== FALSE) {
+			$ext = substr($path, $lastDotPos + 1);
+		}
+		if (isset(self::$_assetsMimeTypes[$ext])) {
+			header('Content-Type: ' . self::$_assetsMimeTypes[$ext]);
+		}
+		header_remove('X-Powered-By');
+		header('Vary: Accept-Encoding');
+		$assetMTime = @\Packager_Php_Wrapper::Filemtime($path);
+		if ($assetMTime) header('Last-Modified: ' . gmdate('D, d M Y H:i:s T', $assetMTime));
+		\Packager_Php_Wrapper::Readfile($path);
+		exit;
+	}
+
+	/**
+	 * - This method is called INTERNALLY in lifecycle dispatching process,
+	 *   but you can use it sooner or in any different time for custom render purposes.
+	 * - Render prepared controller/action view in path by default:
+	 * `"/App/Views/Scripts/<ctrl-dashed-name>/<action-dashed-name>.phtml"`.
+	 * - If controller has no other parent controller, render layout view aroud action view.
+	 * - For top most parent controller - store rendered action and layout view in response object and return empty string.
+	 * - For child controller - return rendered action view as string.
+	 * @param string $controllerOrActionNameDashed
+	 * @param string $actionNameDashed
+	 * @return string
+	 */
+	public function Render ($controllerOrActionNameDashed = NULL, $actionNameDashed = NULL) {
+		if ($this->dispatchState == 0) $this->Init();
+		if ($this->dispatchState == 1) $this->PreDispatch();
+		if ($this->dispatchState < 4 && $this->viewEnabled) {
+			$currentCtrlIsTopMostParent = $this->_parentController === NULL;
+			// set up values
+			if (!$currentCtrlIsTopMostParent) {
+				$this->view->SetValues($this->_parentController->GetView());
+			}
+			foreach ($this->_childControllers as $ctrlKey => $childCtrl) {
+				if (!is_numeric($ctrlKey) && !isset($this->view->$ctrlKey))
+					$this->view->$ctrlKey = $childCtrl;
+			}
+			// complete paths
+			$viewScriptPath = $this->renderGetViewScriptPath($controllerOrActionNameDashed, $actionNameDashed);
+			// render content string
+			$actionResult = $this->view->RenderScript($viewScriptPath);
+			if ($currentCtrlIsTopMostParent) {
+				// create top most parent layout view, set up and render to outputResult
+				$viewClass = $this->application->GetViewClass();
+				/** @var $layout \MvcCore\View */
+				$layout = $viewClass::GetInstance()->SetController($this)->SetValues($this->view);
+				$outputResult = $layout->RenderLayoutAndContent($this->layout, $actionResult);
+				unset($layout, $this->view);
+				// set up response only
+				$this->HtmlResponse($outputResult);
+			} else {
+				// return response
+				$this->dispatchState = 4;
+				return $actionResult;
+			}
+		}
+		$this->dispatchState = 4;
+		return '';
+	}
+
+	/**
+	 * Complete view script path by given controller and action or only by given action rendering arguments.
+	 * @param string $controllerOrActionNameDashed
+	 * @param string $actionNameDashed
+	 * @return string
+	 */
+	protected function renderGetViewScriptPath ($controllerOrActionNameDashed = NULL, $actionNameDashed = NULL) {
+		$currentCtrlIsTopMostParent = $this->_parentController === NULL;
+		if ($actionNameDashed !== NULL) { // if action defined - take first argument controller
+			$controllerNameDashed = $controllerOrActionNameDashed;
+		} else { // if no action defined - we need to complete controller dashed name
+			if ($currentCtrlIsTopMostParent) { // if controller is tom most one - take routed controller name
+				$controllerNameDashed = $this->controllerName;
+			} else {
+				// if controller is child controller - translate classs name
+				// without default controllers directory into dashed name
+				$ctrlsDefaultNamespace = $this->application->GetAppDir() . '\\' . $this->application->GetControllersDir();
+				$currentCtrlClassName = get_class($this);
+				if (mb_strpos($currentCtrlClassName, $ctrlsDefaultNamespace) === 0)
+					$currentCtrlClassName = mb_substr($currentCtrlClassName, mb_strlen($ctrlsDefaultNamespace) + 1);
+				$currentCtrlClassName = str_replace('\\', '/', $currentCtrlClassName);
+				$toolClass = $this->application->GetToolClass();
+				$controllerNameDashed = $toolClass::GetDashedFromPascalCase($currentCtrlClassName);
+			}
+			if ($controllerOrActionNameDashed !== NULL) {
+				$actionNameDashed = $controllerOrActionNameDashed;
+			} else {
+				if ($currentCtrlIsTopMostParent) {// if controller is top most parent - use routed action name
+					$actionNameDashed = $this->actionName;
+				} else {// if no action name defined - use default action name from core - usually `index`
+					$defaultCtrlAction = $this->application->GetDefaultControllerAndActionNames();
+					$actionNameDashed = $defaultCtrlAction[1];
+				}
+			}
+		}
+		$controllerPath = str_replace(array('_', '\\'), '/', $controllerNameDashed);
+		return implode('/', array($controllerPath, $actionNameDashed));
+	}
+
+	/**
+	 * Store rendered HTML output inside `\MvcCore\Controller::$response`
+	 * to send into client browser later in `MvcCore::Terminate();`.
+	 * @param string $output
+	 * @param bool $terminate
+	 * @return void
+	 */
+	public function HtmlResponse ($output = '', $terminate = FALSE) {
+		$viewClass = $this->application->GetViewClass();
+		$contentTypeHeaderValue = strpos(
+			$viewClass::$Doctype, \MvcCore\Interfaces\IView::DOCTYPE_XHTML
+		) !== FALSE ? 'application/xhtml+xml' : 'text/html' ;
+		if (!$this->response->HasHeader('Content-Type'))
+			$this->response->SetHeader('Content-Type', $contentTypeHeaderValue);
+		$this->response
+			->SetCode(\MvcCore\Interfaces\IResponse::OK)
+			->SetBody($output);
+		if ($terminate) $this->Terminate();
+	}
+
+	/**
+	 * Serialize any PHP value into `JSON string` and store
+	 * it inside `\MvcCore\Controller::$response` to send it
+	 * into client browser later in `MvcCore::Terminate();`.
+	 * @param mixed $data
+	 * @param bool  $terminate
+	 * @return void
+	 */
+	public function JsonResponse ($data = NULL, $terminate = FALSE) {
+		$toolClass = $this->application->GetToolClass();
+		$output = $toolClass::EncodeJson($data);
+		if (!$this->response->HasHeader('Content-Type'))
+			$this->response->SetHeader('Content-Type', 'text/javascript');
+		$this->response
+			->SetCode(\MvcCore\Interfaces\IResponse::OK)
+			->SetHeader('Content-Length', strlen($output))
+			->SetBody($output);
+		if ($terminate) $this->Terminate();
+	}
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array()) {
+		return $this->router->Url($controllerActionOrRouteName, $params);
+	}
+
+	/**
+	 * Return asset path or single file mode url for small assets
+	 * handled by internal controller action `"Controller:Asset"`.
+	 * @param string $path
+	 * @return string
+	 */
+	public function AssetUrl ($path = '') {
+		return $this->router->Url('Controller:Asset', array('path' => $path));
+	}
+
+	/**
+	 * Render error controller and error action
+	 * for any dispatch exception or error as
+	 * rendered html response or as plain text response.
+	 * @param string $exceptionMessage
+	 * @return void
+	 */
+	public function RenderError ($exceptionMessage = '') {
+		if ($this->application->IsErrorDispatched()) return;
+		throw new \ErrorException(
+			$exceptionMessage ? $exceptionMessage :
+			"Server error: \n'" . $this->request->FullUrl . "'",
+			500
+		);
+	}
+
+	/**
+	 * Render not found controller and not found action
+	 * for any dispatch exception with code 404 as
+	 * rendered html response or as plain text response.
+	 * @return void
+	 */
+	public function RenderNotFound () {
+		if ($this->application->IsNotFoundDispatched()) return;
+		throw new \ErrorException(
+			"Page not found: \n'" . $this->request->FullUrl . "'", 404
+		);
+	}
+
+	/**
+	 * Terminate request.
+	 * - Send headers if possible.
+	 * - Echo response body.
+	 * - Write session.
+	 * This method is always called INTERNALLY after controller
+	 * lifecycle has been dispatched. But you can use it any
+	 * time sooner for custom purposses.
+	 * This method is only shortcut for: `\MvcCore\Application::GetInstance()->Terminate();`.
+	 * @return void
+	 */
+	public function Terminate () {
+		$this->application->Terminate();
+	}
+
+	/**
+	 * Return session namespace instance by configured session class name.
+	 * This method is only shortcut for `\MvcCore\Session::GetNamespace($name)`;
+	 * @param string $name
+	 * @return \MvcCore\Session
+	 */
+	public static function & GetSessionNamespace ($name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME) {
+		$sessionClass = \MvcCore\Application::GetInstance()->GetSessionClass();
+		return $sessionClass::GetNamespace($name);
+	}
+
+	/**
+	 * Redirect client browser to another place by `"Location: ..."`
+	 * header and call `\MvcCore\Application::GetInstance()->Terminate();`.
+	 * @param string $location
+	 * @param int    $code
+	 * @return void
+	 */
+	public static function Redirect ($location = '', $code = \MvcCore\Interfaces\IResponse::SEE_OTHER) {
+		$app = \MvcCore\Application::GetInstance();
+		$app->GetResponse()
+			->SetCode($code)
+			->SetHeader('Location', $location);
+		$app->Terminate();
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/IModel.php');
+//include_once('Config.php');
+
+/**
+ * Responsibility - static members for connections and by configuration,
+ *                  instances members for active record pattern.
+ * - Reading `db` section from system `config.ini` file.
+ * - Database `\PDO` connecting by config settings and index.
+ * - Instance loaded variables initializing.
+ * - Instance initialized values reading.
+ * - Virtual calls/sets and gets handling.
+ */
+class Model implements Interfaces\IModel {
+	/**
+	 * `\PDO` connection arguments.
+	 *
+	 * If you need to reconfigure connection string for any other special
+	 * `\PDO` database implementation or you specific needs, patch this array
+	 * in extended application base model class in base `__construct()` method by:
+	 *	 `static::$connectionArguments = array_merge(static::$connectionArguments, array(...));`
+	 * or by:
+	 *	 `static::$connectionArguments['driverName']['dsn'] = '...';`
+	 *
+	 * Every key in this field is driver name, so you can use usual `\PDO` drivers:
+	 * - `mysql`, `sqlite`, `sqlsrv` (mssql), `firebird`, `ibm`, `informix`, `4D`
+	 * Following drivers shoud be used with defaults, no connection args from here are necessary:
+	 * - `oci`, `pgsql`, `cubrid`, `sysbase`, `dblib`
+	 *
+	 * Every value in this configuration field shoud be defined as:
+	 * - `dsn`		- connection query as first `\PDO` contructor argument
+	 *				  with database config replacements.
+	 * - `auth`		- if required to use database credentials for connecting or not.
+	 * - `fileDb`	- if database if file database or not.
+	 * - `options`	. any additional arguments array or empty array.
+	 * @var array
+	 */
+	protected static $connectionArguments = array(
+		'4D'			=> array(
+			'dsn'		=> '{driver}:host={host};charset=UTF-8',
+			'auth'		=> TRUE,
+			'fileDb'	=> FALSE,
+			'options'	=> array(),
+		),
+		'firebird'		=> array(
+			'dsn'		=> '{driver}:host={host};dbname={database};charset=UTF8',
+			'auth'		=> TRUE,
+			'fileDb'	=> TRUE,
+			'options'	=> array()
+		),
+		'ibm'			=> array(
+			'dsn'		=> 'ibm:DRIVER={IBM DB2 ODBC DRIVER};DATABASE={database};HOSTNAME={host};PORT={port};PROTOCOL=TCPIP;',
+			'auth'		=> TRUE,
+			'fileDb'	=> FALSE,
+			'options'	=> array(),
+		),
+		'informix'		=> array(
+			'dsn'		=> '{driver}:host={host};service={service};database={database};server={server};protocol={protocol};EnableScrollableCursors=1',
+			'auth'		=> TRUE,
+			'fileDb'	=> FALSE,
+			'options'	=> array(),
+		),
+		'mysql'			=> array(
+			'dsn'		=> '{driver}:host={host};dbname={database}',
+			'auth'		=> TRUE,
+			'fileDb'	=> FALSE,
+			'options'	=> array(
+				'\PDO::ATTR_EMULATE_PREPARES'		=> FALSE, // let params inserting on database
+				'\PDO::MYSQL_ATTR_MULTI_STATEMENTS'	=> TRUE,
+				'\PDO::MYSQL_ATTR_INIT_COMMAND'		=> "SET NAMES 'UTF8'",
+			),
+		),
+		'sqlite'		=> array(
+			'dsn'		=> '{driver}:{database}',
+			'auth'		=> FALSE,
+			'fileDb'	=> TRUE,
+			'options'	=> array(),
+		),
+		'sqlsrv'		=> array(
+			'dsn'		=> '{driver}:Server={host};Database={database}',
+			'auth'		=> TRUE,
+			'fileDb'	=> FALSE,
+			'options'	=> array(),
+		),
+		'default'		=> array(
+			'dsn'		=> '{driver}:host={host};dbname={database}',
+			'auth'		=> TRUE,
+			'fileDb'	=> FALSE,
+			'options'	=> array(),
+		),
+	);
+
+	/**
+	 * Default database connection name/index, in config ini defined in section `db.default = name`.
+	 * In extended classes - use this for connection name/index of current model if different.
+	 * @var string|int|NULL
+	 */
+	protected static $connectionName = NULL;
+
+	/**
+	 * `\PDO` connections array, keyed by connection indexes from system config.
+	 * @var \PDO[]
+	 */
+	protected static $connections = array();
+
+	/**
+	 * Instance of current class, if there is necessary to use it as singleton.
+	 * @var \MvcCore\Model[]|\MvcCore\Interfaces\IModel[]
+	 */
+	protected static $instances = array();
+
+	/**
+	 * System config sections array with `\stdClass` objects, keyed by connection indexes.
+	 * @var \stdClass[]
+	 */
+	protected static $configs = NULL;
+
+	/**
+	 * Automaticly initialize config, db connection and resource class.
+	 * @var bool
+	 */
+	protected $autoInit = TRUE;
+
+	/**
+	 * `\PDO` instance.
+	 * @var \PDO
+	 */
+	protected $db;
+
+	/**
+	 * System config section for database under called connection index in constructor.
+	 * @var \stdClass
+	 */
+	protected $config;
+
+	/**
+	 * Resource model class with SQL statements.
+	 * @var \MvcCore\Model|\MvcCore\Interfaces\IModel
+	 */
+	protected $resource;
+
+	/**
+	 * Originaly declared internal model properties to protect their
+	 * possible overwriting by `__set()` or `__get()` magic methods.
+	 * @var array
+	 */
+	protected static $protectedProperties = array(
+		'autoInit'	=> 1,
+		'db'		=> 1,
+		'config'	=> 1,
+		'resource'	=> 1,
+	);
+
+	/**
+	 * Collect all model class public and inherit field values into array.
+	 * @param boolean $getNullValues			If `TRUE`, include also values with `NULL`s, by default - `FALSE`.
+	 * @param boolean $includeInheritProperties If `TRUE`, include only fields from current model class and from parent classes.
+	 * @param boolean $publicOnly               If `TRUE`, include only public model fields.
+	 * @return array
+	 */
+	public function GetValues ($getNullValues = FALSE, $includeInheritProperties = TRUE, $publicOnly = TRUE) {
+		$data = array();
+		$modelClassName = get_class($this);
+		$classReflector = new \ReflectionClass($modelClassName);
+		$properties = $publicOnly ? $classReflector->getProperties(\ReflectionProperty::IS_PUBLIC) : $classReflector->getProperties();
+		foreach ($properties as $property) {
+			if (!$includeInheritProperties && $property->class != $modelClassName) continue;
+			$propertyName = $property->name;
+			if (isset(static::$protectedProperties[$propertyName])) continue;
+			if (!$getNullValues && $this->$propertyName === NULL) continue;
+			$data[$propertyName] = $this->$propertyName;
+		}
+		return $data;
+	}
+
+	/**
+	 * Set up given `$data` items into `$this` instance context
+	 * as typed properties by PHP doc comments, as properties
+	 * with the same names as `$data` array keys. Case sesitively by default.
+	 * Do not set any `$data` items, which are not declared in `$this` context.
+	 * @param array   $data                     Collection with data to set up
+	 * @param boolean $keysInsensitive			If `TRUE`, set up properties from `$data` with case insensivity.
+	 * @param boolean $includeInheritProperties If `TRUE`, include only fields from current model class and from parent classes.
+	 * @param boolean $publicOnly               If `TRUE`, include only public model fields.
+	 * @return \MvcCore\Model|\MvcCore\Interfaces\IModel
+	 */
+	public function & SetUp ($data = array(), $keysInsensitive = FALSE, $includeInheritProperties = TRUE, $publicOnly = TRUE) {
+		$modelClassName = get_class($this);
+		$classReflector = new \ReflectionClass($modelClassName);
+		$properties = $publicOnly ? $classReflector->getProperties(\ReflectionProperty::IS_PUBLIC) : $classReflector->getProperties();
+		$dataKeys = $keysInsensitive ? ','.implode(',', array_keys($data)).',' : '' ;
+		foreach ($properties as $property) {
+			if (!$includeInheritProperties && $property->class != $modelClassName) continue;
+			$propertyName = $property->name;
+			if (isset($data[$propertyName])) {
+				$value = $data[$propertyName];
+			} else if ($keysInsensitive) {
+				// try to search with not case sensitively same property name
+				$dataKeyPos = stripos($dataKeys, ','.$propertyName.',');
+				if ($dataKeyPos === FALSE) continue;
+				$dataKey = substr($dataKeys, $dataKeyPos + 1, strlen($propertyName));
+				$value = $data[$dataKey];
+			} else {
+				continue;
+			}
+			if (preg_match('/@var\s+([^\s]+)/', $property->getDocComment(), $matches)) {
+				list(, $type) = $matches;
+				settype($value, $type);
+			}
+			$this->$propertyName = $value;
+		}
+		return $this;
+	}
+
+	/**
+	 * Returns (or creates and holds) instance from local store.
+	 * @param mixed $arg,... unlimited OPTIONAL variables to pass into model `__construct()` method.
+	 * @return \MvcCore\Model|\MvcCore\Interfaces\IModel
+	 */
+	public static function GetInstance (/* $arg1, $arg2, $arg, ... */) {
+		// get `"ClassName"` string from this call: `ClassName::GetInstance();`
+		$className = get_called_class();
+		$args = func_get_args();
+		$instanceIndex = md5($className . '_' . serialize($args));
+		if (!isset(self::$instances[$instanceIndex])) {
+			$reflectionClass = new \ReflectionClass($className);
+			$instance = $reflectionClass->newInstanceArgs($args);
+			self::$instances[$instanceIndex] = $instance;
+		}
+		return self::$instances[$instanceIndex];
+	}
+
+	/**
+	 * Returns (or creates if necessary) model resource instance.
+	 * @param array  $args              Values array with variables to pass into resource `__construct()` method.
+	 * @param string $modelClassPath
+	 * @param string $resourceClassPath
+	 * @return \MvcCore\Model|\MvcCore\Interfaces\IModel
+	 */
+	public static function GetResource ($args = array(), $modelClassName = '', $resourceClassPath = '\Resource') {
+		$result = NULL;
+		if (!$modelClassName) $modelClassName = get_called_class();
+		// do not create resource instance in resource class (if current class name doesn't end with '_Resource' substring):
+		if (strpos($modelClassName, '\Resource') === FALSE) {
+			$resourceClassName = $modelClassName . $resourceClassPath;
+			// do not create resource instance if resource class doesn't exist:
+			if (class_exists($resourceClassName)) {
+				$result = call_user_func_array(array($resourceClassName, 'GetInstance'), $args);
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Automaticly initialize `$this-config`, `$this->db` and `$this->resource` properties
+	 * if local protected property `$this->autoInit` is still `TRUE` (`TRUE` as default in `\MvcCore\Model`).
+	 * @param string|int|NULL $connectionName Optional. If not set, there is used value from `static::$connectionName`.
+	 * @return void
+	 */
+	public function __construct ($connectionName = NULL) {
+		if ($this->autoInit) $this->Init($connectionName);
+	}
+
+	/**
+	 * Initialize `$this->config`, `$this->db` and `$this->resource` properties.
+	 * If no `$connectionName` specified by first argument, return connection
+	 * config by connection name defined first in `static::$connectionName`
+	 * and if there is nothing, return connection config by connection name
+	 * defined in `\MvcCore\Model::$connectionName`.
+	 * @param string|int|NULL $connectionName Optional. If not set, there is used value from `static::$connectionName`.
+	 * @return void
+	 */
+	public function Init ($connectionName = NULL) {
+		if ($connectionName === NULL) $connectionName = static::$connectionName;
+		if ($connectionName === NULL) $connectionName = self::$connectionName;
+		$this->db = static::GetDb($connectionName);
+		$this->config = static::GetConfig($connectionName);
+		$this->resource = static::GetResource(array(), get_class($this));
+	}
+
+	/**
+	 * Returns `\PDO` database connection by connection name/index,
+	 * usually by system ini config values (cached by local store)
+	 * or create new connection of no connection cached.
+	 * @param string|int|array|NULL $connectionNameOrConfig
+	 * @return \PDO
+	 */
+	public static function GetDb ($connectionNameOrConfig = NULL) {
+		if (gettype($connectionNameOrConfig) == 'array') {
+			// if first argument is database connection configuration - set it up and return new connection name
+			if (static::$configs === NULL) static::loadConfigs(FALSE);
+			$connectionName = static::SetConfig($connectionNameOrConfig);
+		} else {
+			// if no connection index specified, try to get from class or from base model
+			if (static::$configs === NULL) static::loadConfigs(TRUE);
+			$connectionName = $connectionNameOrConfig;
+			if ($connectionName == NULL) $connectionName = static::$connectionName;
+			if ($connectionName == NULL) $connectionName = self::$connectionName;
+		}
+		// if no connection exists under connection name key - connect to database
+		if (!isset(static::$connections[$connectionName])) {
+			// get system config 'db' data
+			// and get predefined constructor arguments by driver value from config
+			$cfg = static::GetConfig($connectionName);
+			if ($cfg === NULL)
+				$cfg = current(static::$configs); // if still nothing - take first database record
+			$conArgs = (object) self::$connectionArguments[isset(self::$connectionArguments[$cfg->driver]) ? $cfg->driver : 'default'];
+			$connection = NULL;
+			// If database is filesystem based, complete app root and extend
+			// relative path in $cfg->dbname to absolute path
+			if ($conArgs->fileDb) {
+				$appRoot = \MvcCore\Application::GetInstance()->GetRequest()->GetAppRoot();
+				if (strpos($appRoot, 'phar://') !== FALSE) {
+					$lastSlashPos = strrpos($appRoot, '/');
+					$appRoot = substr($appRoot, 7, $lastSlashPos - 7);
+				}
+				$cfg->database = str_replace('\\', '/', realpath($appRoot . $cfg->database));
+			}
+			// Process connection string (dsn) with config replacements
+			$dsn = $conArgs->dsn;
+			foreach ((array) $cfg as $key => $value)
+				$dsn = str_replace('{'.$key.'}', $value, $dsn);
+			// If database required user and password credentials,
+			// connect with wull arguments count or only with one (sqllite only)
+			if ($conArgs->auth) {
+				$connection = new \PDO($dsn, $cfg->user, $cfg->password, $conArgs->options);
+			} else {
+				$connection = new \PDO($dsn);
+			}
+			// store new connection under config index for all other model classes
+			static::$connections[$connectionName] = $connection;
+		}
+		return static::$connections[$connectionName];
+	}
+
+	/**
+	 * Get all known database connection config records as indexed/named array with `\stdClass` objects.
+	 * Keys in array are connection config names/indexes and `\stdClass` values are config values.
+	 * @return \stdClass[]
+	 */
+	public static function & GetConfigs () {
+		if (static::$configs === NULL) static::loadConfigs(TRUE);
+		return static::$configs;
+	}
+
+	/**
+	 * Set all known configuration at once, optionaly set default connection name/index.
+	 * Example:
+	 *	`\MvcCore\Model::SetConfigs(array(
+	 *		// connection name: 'mysql-cdcol':
+	 *		'mysql-cdcol'	=> array(
+	 *			'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *			'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *		),
+	 *		// connection name: 'mssql-tests':
+	 *		'mssql-tests' => array(
+	 *			'driver'	=> 'mssql',	'host' => '.\SQLEXPRESS',
+	 *			'user'		=> 'sa',	'password' => '1234', 'database' => 'tests',
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Model::SetConfigs(array(
+	 *		// connection index: 0:
+	 *		array(
+	 *			'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *			'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *		),
+	 *		// connection index: 1:
+	 *		array(
+	 *			'driver'	=> 'mssql',	'host' => '.\SQLEXPRESS',
+	 *			'user'		=> 'sa',	'password' => '1234', 'database' => 'tests',
+	 *		)
+	 *	);`
+	 * @param \stdClass[]|array[] $configs Configuration array with `\stdClass` objects or arrays with configuration data.
+	 * @return bool
+	 */
+	public static function SetConfigs (array $configs = array(), $defaultConnectionName = NULL) {
+		static::$configs = array();
+		foreach ($configs as $key => $value) static::$configs[$key] = (object) $value;
+		static::$configs = & $configs;
+		if ($defaultConnectionName !== NULL) self::$defaultConnectionName = $defaultConnectionName;
+		return TRUE;
+	}
+
+	/**
+	 * Returns database connection config by connection index (integer)
+	 * or by connection name (string) as `\stdClass` (cached by local store).
+	 * @param int|string|NULL $connectionName
+	 * @return \stdClass
+	 */
+	public static function & GetConfig ($connectionName = NULL) {
+		if (static::$configs === NULL) static::loadConfigs(TRUE);
+		return static::$configs[$connectionName];
+	}
+
+	/**
+	 * Set configuration array with optional connection name/index.
+	 * If there is array key `name` or `index` inside config `array` or `\stdClass`,
+	 * it's value is used for connection name or index or there is no param `$connectionName` defined.
+	 * Example:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'name'		=> 'mysql-cdcol',
+	 *		'driver'	=> 'mysql',		'host'		=> 'localhost',
+	 *		'user'		=> 'root',		'password'	=> '1234',		'database' => 'cdcol',
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'index'		=> 0,
+	 *		'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *		'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *		'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *	), 'mysql-cdcol');`
+	 * or:
+	 *	`\MvcCore\Model::SetConfig(array(
+	 *		'driver'	=> 'mysql',	'host'		=> 'localhost',
+	 *		'user'		=> 'root',	'password'	=> '1234',		'database' => 'cdcol',
+	 *	), 0);`
+	 * @param \stdClass[]|array[] $config
+	 * @param string|int|NULL $connectionName
+	 * @return string|int
+	 */
+	public static function SetConfig (array $config = array(), $connectionName = NULL) {
+		if (static::$configs === NULL) static::loadConfigs(FALSE);
+		if ($connectionName === NULL) {
+			if (isset($config['name'])) {
+				$connectionName = $config['name'];
+			} else if (isset($config['index'])) {
+				$connectionName = $config['index'];
+			}
+		}
+		if ($connectionName === NULL) {
+			$configNumericKeys = array_filter(array_keys(static::$configs), 'is_numeric');
+			if ($configNumericKeys) {
+				sort($configNumericKeys);
+				$connectionName = $configNumericKeys[count($configNumericKeys) - 1] + 1; // last + 1
+			} else {
+				$connectionName = 0;
+			}
+		}
+		static::$configs[$connectionName] = (object) $config;
+		return $connectionName;
+	}
+
+	/**
+	 * Initializes configuration data from system config if any
+	 * into local `static::$configs` array, keyed by connection name or index.
+	 * @throws \Exception
+	 * @return void
+	 */
+	protected static function loadConfigs ($throwExceptionIfNoSysConfig = TRUE) {
+		$configClass = \MvcCore\Application::GetInstance()->GetConfigClass();
+		$systemCfg = $configClass::GetSystem();
+		if ($systemCfg === FALSE && $throwExceptionIfNoSysConfig) throw new \Exception(
+			"[".__CLASS__."] System config.ini not found in '" . $configClass::$SystemConfigPath . "'."
+		);
+		if (!isset($systemCfg->db) && $throwExceptionIfNoSysConfig) throw new \Exception(
+			"[".__CLASS__."] No [db] section and no records matched 'db.*' found in system config.ini."
+		);
+		$systemCfgDb = & $systemCfg->db;
+		$cfgType = gettype($systemCfgDb);
+		$configs = array();
+		$defaultConnectionName = NULL;
+		// db.default - default connection index for models, where is no connection name/index defined inside class.
+		if ($cfgType == 'array') {
+			// multiple connections defined, indexed by some numbers, maybe default connection specified.
+			if (isset($systemCfgDb['defaultName'])) $defaultConnectionName = $systemCfgDb['defaultName'];
+			foreach ($systemCfgDb as $key => $value) {
+				if ($key == 'defaultName') continue;
+				$configs[$key] = (object) $value;
+			}
+		} else if ($cfgType == 'object') {
+			// Multiple connections defined or single connection defined:
+			// - Single connection defined - `$systemCfg->db` contains directly record for `driver`.
+			// - Multiple connections defined - indexed by strings, maybe default connection specified.
+			if (isset($systemCfgDb->defaultName)) $defaultConnectionName = $systemCfgDb->defaultName;
+			if (isset($systemCfgDb->driver)) {
+				$configs[0] = $systemCfgDb;
+			} else {
+				foreach ($systemCfgDb as $key => $value) {
+					if ($key == 'defaultName') continue;
+					$configs[$key] = (object) $value;
+				}
+			}
+		}
+		if ($defaultConnectionName !== NULL) {
+			if ($configs) {
+				reset($configs);
+				$defaultConnectionName = key($configs);
+			}
+			if (!isset($configs[$defaultConnectionName])) throw new \Exception(
+				"[".__CLASS__."] No default connection name '$defaultConnectionName' found in 'db.*' section in system config.ini."
+			);
+			self::$connectionName = $defaultConnectionName;
+		}
+		static::$configs = & $configs;
+	}
+
+	/**
+	 * Sets any custom property `"PropertyName"` by `\MvcCore\Interfaces\IModel::SetPropertyName("value")`,
+	 * which is not necessary to define previously or gets previously defined
+	 * property `"PropertyName"` by `\MvcCore\Interfaces\IModel::GetPropertyName();`.
+	 * Throws exception if no property defined by get call
+	 * or if virtual call begins with anything different from `Set` or `Get`.
+	 * This method returns custom value for get and `\MvcCore\Interfaces\IModel` instance for set.
+	 * @param string $rawName
+	 * @param array  $arguments
+	 * @throws \InvalidArgumentException If `strtolower($rawName)` doesn't begin with `"get"` or with `"set"`.
+	 * @return mixed|\MvcCore\Model|\MvcCore\Interfaces\IModel
+	 */
+	public function __call ($rawName, $arguments = array()) {
+		$nameBegin = strtolower(substr($rawName, 0, 3));
+		$name = substr($rawName, 3);
+		if ($nameBegin == 'get' && isset($this->$name)) {
+			return $this->$name;
+		} else if ($nameBegin == 'set') {
+			$this->$name = isset($arguments[0]) ? $arguments[0] : NULL;
+			return $this;
+		} else {
+			throw new \InvalidArgumentException('['.__CLASS__."] No property with name '$name' defined.");
+		}
+	}
+
+	/**
+	 * Set any custom property, not necessary to previously defined.
+	 * @param string $name
+	 * @param mixed  $value
+	 * @throws \InvalidArgumentException If name is `"autoInit" || "db" || "config" || "resource"`
+	 * @return bool
+	 */
+	public function __set ($name, $value) {
+		if (isset(static::$protectedProperties[$name])) {
+			throw new \InvalidArgumentException(
+				'['.__CLASS__."] It's not possible to change property: '$name' originaly declared in class ".__CLASS__.'.'
+			);
+		}
+		return $this->$name = $value;
+	}
+
+	/**
+	 * Get any custom property, not necessary to previously defined,
+	 * if property is not defined, NULL is returned.
+	 * @param string $name
+	 * @throws \InvalidArgumentException If name is `"autoInit" || "db" || "config" || "resource"`
+	 * @return mixed
+	 */
+	public function __get ($name) {
+		if (isset(static::$protectedProperties[$name])) {
+			throw new \InvalidArgumentException(
+				'['.__CLASS__."] It's not possible to get property: '$name' originaly declared in class ".__CLASS__.'.'
+			);
+		}
+		return (isset($this->$name)) ? $this->$name : null;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\View\Helpers{
+
+/**
+ * Responsibility - better view helper setup.
+ * - Everytine, when there is necessary to create view helper, there is called
+ *   `\MvcCore\Ext\View\Helpers\IHelper::GetInstance();` method in `\Mvccore\View`.
+ *   All view helpers are stored inside `\Mvccore\View` and they are created only once.
+ *   But if you need to configure view helper anytime before, you can use this method
+ *   for singleton instancing to configure anything staticly anytime before.
+ * - Everytime, when currently rendered view object is changed (action view, layout view,
+ *   subcontroller view...), there is called `\MvcCore\Ext\View\Helpers\IHelper::SetView($view);`
+ *   method giving currently rendered view object. From this object, you can get properties
+ *   for better view helper processing like application object, controller, request or response object.
+ */
+abstract class AbstractHelper implements \MvcCore\Ext\View\Helpers\IHelper
+{
+	/**
+	 * MvcCore Extension - View Helper - Line Breaks - version:
+	 * Comparation by PHP function version_compare();
+	 * @see http://php.net/manual/en/function.version-compare.php
+	 */
+	const VERSION = '5.0.0-alpha';
+
+	protected static $instance = null;
+	/**
+	 * Currently rendered view instance reference.
+	 * Everytime, when there is rendered different view script,
+	 * this view property is changed by method `\MvcCore\Ext\View\Helpers\AbstractHelper::SetView();`.
+	 * @var \MvcCore\View|\MvcCore\Interfaces\IView
+	 */
+	protected $view = NULL;
+
+	/**
+	 * Currently used controller instance reference for currently rendered view script.
+	 * Everytime, when there is rendered different view script,
+	 * this controller and also view property is changed by method `\MvcCore\Ext\View\Helpers\AbstractHelper::SetView();`.
+	 * @var \MvcCore\Controller|\MvcCore\Interfaces\IController
+	 */
+	protected $controller = NULL;
+
+	/**
+	 * Current request object reference from used controller.
+	 * @var \MvcCore\Request|\MvcCore\Interfaces\IRequest
+	 */
+	protected $request = NULL;
+
+	/**
+	 * Current response object reference from used controller.
+	 * @var \MvcCore\Response|\MvcCore\Interfaces\IResponse
+	 */
+	protected $response = NULL;
+
+	/**
+	 * Create view helper instance as singleton.
+	 * To configure view helper instance, create it by this method
+	 * in your base controller in `PreDispatch();` method.
+	 * After this singleton instance is created, then you can configure
+	 * anything you want.
+	 *
+	 * Example:
+	 *	// somewhere in base controller:
+	 *	`\MvcCore\Ext\View\Helpers\LineBreaks::GetInstance()
+	 *		->SetView($this->view)
+	 *		->SetAnythingElseBeforeRendering(...);`
+	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper
+	 */
+	public static function & GetInstance () {
+		if (!static::$instance) static::$instance = new static();
+		return static::$instance;
+	}
+
+	/**
+	 * Set currently rendered view instance every time this helper
+	 * is called and the rendered view instance is changed.
+	 * This method sets these protected object references:
+	 * - `AbstractHelper::$view` as `\MvcCore\View|\MvcCore\Interfaces\IView`
+	 * - `AbstractHelper::$controller` as `\MvcCore\Controller|\MvcCore\Interfaces\IController`
+	 * - `AbstractHelper::$request` as `\MvcCore\Request|\MvcCore\Interfaces\IRequest`
+	 * - `AbstractHelper::$response` as `\MvcCore\Response|\MvcCore\Interfaces\IResponse`
+	 * @param \MvcCore\View|\MvcCore\Interfaces\IView $view
+	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper
+	 */
+	public function & SetView (\MvcCore\Interfaces\IView & $view) {
+		$this->view = & $view;
+		$this->controller = & $view->GetController();
+		$this->request = & $this->controller->GetRequest();
+		$this->response = & $this->controller->GetResponse();
+		return $this;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/ITool.php');
+
+/**
+ * Responsibility - static helpers for core classes inheritance, string conversions and JSON.
+ * - Static translation functions (supports containing folder or file path):
+ *   - `"dashed-case"		=> "PascalCase"`
+ *   - `"PascalCase"		=> "dashed-case"`
+ *   - `"unserscore_case"	=> "PascalCase"`
+ *   - `"PascalCase"		=> "unserscore_case"`
+ * - Static functions to safely encode/decode JSON.
+ * - Static functions to get client/server IPs.
+ * - Static function to check core classes inheritance.
+ */
+class Tool implements Interfaces\ITool
+{
+	/**
+	 * Convert all strings `"from" => "to"`:
+	 * - `"MyCustomValue"				=> "my-custom-value"`
+	 * - `"MyCustom/Value/InsideFolder"	=> "my-custom/value/inside-folder"`
+	 * @param string $pascalCase
+	 * @return string
+	 */
+	public static function GetDashedFromPascalCase ($pascalCase = '') {
+		return strtolower(preg_replace("#([a-z])([A-Z])#", "$1-$2", lcfirst($pascalCase)));
+	}
+
+	/**
+	 * Convert all string `"from" => "to"`:
+	 * - `"my-custom-value"					=> "MyCustomValue"`
+	 * - `"my-custom/value/inside-folder"	=> "MyCustom/Value/InsideFolder"`
+	 * @param string $dashed
+	 * @return string
+	 */
+	public static function GetPascalCaseFromDashed ($dashed = '') {
+		$a = explode('/', $dashed);
+		foreach ($a as & $b) $b = ucfirst(str_replace('-', '', ucwords($b, '-')));
+		return implode('/', $a);
+	}
+
+	/**
+	 * Convert all string `"from" => "to"`:
+	 * - `"MyCutomValue"				=> "my_custom_value"`
+	 * - `"MyCutom/Value/InsideFolder"	=> "my_custom/value/inside_folder"`
+	 * @param string $pascalCase
+	 * @return string
+	 */
+	public static function GetUnderscoredFromPascalCase ($pascalCase = '') {
+		return strtolower(preg_replace("#([a-z])([A-Z])#", "$1_$2", lcfirst($pascalCase)));
+	}
+
+	/**
+	 * Convert all string `"from" => "to"`:
+	 * - `"my_custom_value"					=> "MyCutomValue"`
+	 * - `"my_custom/value/inside_folder"	=> "MyCutom/Value/InsideFolder"`
+	 * @param string $underscored
+	 * @return string
+	 */
+	public static function GetPascalCaseFromUnderscored ($underscored = '') {
+		$a = explode('/', $underscored);
+		foreach ($a as & $b) $b = ucfirst(str_replace('_', '', ucwords($b, '_')));
+		return implode('/', $a);
+	}
+
+	/**
+	 * Safely encode json string from php value.
+	 * @param mixed $data
+	 * @throws \Exception
+	 * @return string
+	 */
+	public static function EncodeJson (& $data) {
+		$flags = JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP |
+			(defined('JSON_UNESCAPED_SLASHES') ? JSON_UNESCAPED_SLASHES : 0) |
+			(defined('JSON_UNESCAPED_UNICODE') ? JSON_UNESCAPED_UNICODE : 0) |
+			(defined('JSON_PRESERVE_ZERO_FRACTION') ? JSON_PRESERVE_ZERO_FRACTION : 0);
+		$json = json_encode($data, $flags);
+		if ($errorCode = json_last_error()) {
+			throw new \RuntimeException("[".__CLASS__."] ".json_last_error_msg(), $errorCode);
+		}
+		if (PHP_VERSION_ID < 70100) {
+			$json = strtr($json, array(
+				"\xe2\x80\xa8" => '\u2028',
+				"\xe2\x80\xa9" => '\u2029',
+			));
+		}
+		return $json;
+	}
+
+	/**
+	 * Safely decode json string into php `stdClass/array`.
+	 * Result has always keys:
+	 * - `"success"`	- decoding boolean success
+	 * - `"data"`		- decoded json data as stdClass/array
+	 * - `"errorData"`	- array with possible decoding error message and error code
+	 * @param string $jsonStr
+	 * @return object
+	 */
+	public static function DecodeJson (& $jsonStr) {
+		$result = (object) array(
+			'success'	=> TRUE,
+			'data'		=> null,
+			'errorData'	=> array(),
+		);
+		$jsonData = @json_decode($jsonStr);
+		$errorCode = json_last_error();
+		if ($errorCode == JSON_ERROR_NONE) {
+			$result->data = $jsonData;
+		} else {
+			$result->success = FALSE;
+			$result->errorData = array(json_last_error_msg(), $errorCode);
+		}
+		return $result;
+	}
+
+	/**
+	 * Check if given class implements given interface, else throw an exception.
+	 * @param string $testClassName
+	 * @param string $interfaceName
+	 * @param bool $throwException
+	 * @throws \Exception
+	 * @return boolean
+	 */
+	public static function CheckClassInterface ($testClassName, $interfaceName, $throwException = TRUE) {
+		if (in_array($interfaceName, (new \ReflectionClass($testClassName))
+			->getInterfaceNames())) return TRUE;
+		if (!$throwException) return FALSE;
+		throw new \InvalidArgumentException(
+			"[".__CLASS__."] Class '$testClassName' doesn't implement interface '$interfaceName'."
+		);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/IRequest.php');
+//include_once('Tool.php');
+//include_once('Application.php');
+
+/**
+ * Responsibility - request description - url and params inputs parsing and cleaning.
+ * - Linear request url parsing from referenced `$_SERVER` global variable
+ *   (as constructor argument) into local properties, describing url sections.
+ * - Params reading from referenced `$_GET` and `$_POST` global variables
+ *   (as constructor arguments) or reading data from direct PHP
+ *   input `"php://input"` (as encoded JSON data or as query string).
+ * - Headers cleaning and reading by `getallheaders()` or from referenced `$_SERVER['HTTP_...']`.
+ * - Cookies cleaning and reading from referenced `$_COOKIE['...']`.
+ * - Uploaded files by wrapped referenced `$_FILES` global array.
+ * - Primitive values cleaning or array recursive cleaning by called
+ *	 developer rules from params array, headers array and cookies array.
+ */
+class Request implements Interfaces\IRequest
+{
+	/**
+	 * Language international code, lowercase, not used by default.
+	 * To use this variable - install  `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	protected $lang				= NULL;
+
+	/**
+	 * Country/locale code, uppercase, not used by default.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
+	 */
+	protected $locale			= NULL;
+
+	/**
+	 * Media site key - `"full" | "tablet" | "mobile"`.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCoreExt\Router\Media`
+	 * Or use this variable by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	protected $mediaSiteKey = '';
+
+	/**
+	 * Http protocol: `"http:" | "https:"`
+	 * Example: `"http:"`
+	 * @var string|NULL
+	 */
+	protected $protocol			= NULL;
+
+	/**
+	 * `TRUE` if http protocol is `"https:"`
+	 * @var bool|NULL
+	 */
+	protected $secure			= NULL;
+
+	/**
+	 * Application server name - domain without any port.
+	 * Example: `"localhost"`
+	 * @var string|NULL
+	 */
+	protected $serverName		= NULL;
+
+	/**
+	 * Application host with port if there is any.
+	 * Example: `"localhost:88"`
+	 * @var string|NULL
+	 */
+	protected $host				= NULL;
+
+	/**
+	 * Http port defined in requested url if any, parsed by `parse_url().
+	 * Empty string if there is no port number in requested address.`.
+	 * Example: `"88" | ""`
+	 * @var string|NULL
+	 */
+	protected $port				= NULL;
+
+	/**
+	 * Requested path in from application root (if `mod_rewrite` enabled), never with query string.
+	 * Example: `"/products/page/2"`
+	 * @var string|NULL
+	 */
+	protected $path				= NULL;
+
+	/**
+	 * Uri query string without question mark.
+	 * Example: `"param-1=value-1&param-2=value-2&param-3[]=value-3-a&param-3[]=value-3-b"`
+	 * @var string|NULL
+	 */
+	protected $query			= NULL;
+
+	/**
+	 * Uri fragment parsed by `parse_url()` including hash.
+	 * Example: `"#any-sublink-path"`
+	 * @var string|NULL
+	 */
+	protected $fragment			= NULL;
+
+	/**
+	 * `TRUE` if request is requested from browser by `XmlHttpRequest` object
+	 * with http header: `X-Requested-With: AnyJavascriptFrameworkName`, `FALSE` otherwise.
+	 * @var bool|null
+	 */
+	protected $ajax				= NULL;
+
+	/**
+	 * Php requested script name path from application root.
+	 * Example: `"/index.php"`
+	 * @var string|NULL
+	 */
+	protected $scriptName		= NULL;
+
+	/**
+	 * Application root path on hard drive.
+	 * Example: `"C:/www/my/development/direcotry/www"`
+	 * @var string|NULL
+	 */
+	protected $appRoot			= NULL;
+
+	/**
+	 * Base app directory path after domain, if application is placed in domain subdirectory
+	 * Example:
+	 * - full url:  `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * - base path: `"/my/development/direcotry/www"`
+	 * @var string|NULL
+	 */
+	protected $basePath			= NULL;
+
+	/**
+	 * Request path after domain with possible query string
+	 * Example: `"/requested/path/after/app/root?with=possible&query=string"`
+	 * @var string|NULL
+	 */
+	protected $requestPath		= NULL;
+
+	/**
+	 * Url to requested domain and possible port.
+	 * Example: `"https://domain.com" | "http://domain:88"` if any port.
+	 * @var string|NULL
+	 */
+	protected $domainUrl		= NULL;
+
+	/**
+	 * Base url to application root.
+	 * Example: `"http://domain:88/my/development/direcotry/www"`
+	 * @var string|NULL
+	 */
+	protected $baseUrl			= NULL;
+
+	/**
+	 * Request url including scheme, domain, port, path, without any query string
+	 * Example: "`http://localhost:88/my/development/direcotry/www/requested/path/after/domain"`
+	 * @var string|NULL
+	 */
+	protected $requestUrl		= NULL;
+
+	/**
+	 * Request url including scheme, domain, port, path and with query string
+	 * Example: `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * @var string|NULL
+	 */
+	protected $fullUrl			= NULL;
+
+	/**
+	 * Http method (uppercase) - `GET`, `POST`, `PUT`, `HEAD`...
+	 * Example: `"GET"`
+	 * @var string|NULL
+	 */
+	protected $method			= NULL;
+
+	/**
+	 * Referer url if any, safely readed by:
+	 * `filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);`
+	 * Example: `"http://foreing.domain.com/path/where/is/link/to/?my=app"`
+	 * @var string|NULL
+	 */
+	protected $referer			= NULL;
+
+	/**
+	 * Server ip address string.
+	 * @var string|NULL
+	 */
+	protected $serverIp			= NULL;
+
+	/**
+	 * Client ip address string.
+	 * @var string|NULL
+	 */
+	protected $clientIp			= NULL;
+
+	/**
+	 * Timestamp of the start of the request, with microsecond precision.
+	 * @var float
+	 */
+	protected $microtime		= NULL;
+
+	/**
+	 * All raw http headers without any conversion, initialized by
+	 * `getallheaders()` or from `$_SERVER['HTTP_...']`.
+	 * Headers are `key => value` array, headers keys are
+	 * in standard format like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @var array|NULL
+	 */
+	protected $headers			= NULL;
+
+	/**
+	 * Raw request params array, with keys defined in route or by query string,
+	 * always with controller and action keys completed by router.
+	 * Do not read this `$Params` array directly, read it's values by:
+	 * `\MvcCore\Request::GetParam($paramName, $allowedChars, $defaultValueIfNull, $targetType);`.
+	 * Example:
+	 *	`\MvcCore\Request:$Params = array(
+	 *		"controller"	=> "default",
+	 *		"action"		=> "default",
+	 *		"username"		=> "' OR 1=1;-- ",	// be carefull for this content with raw (danger) value!
+	 *	);`
+	 *	// Do not read `$Params` array directly,
+	 *	// to get safe param value use:
+	 *	`\MvcCore\Request::GetParam("username", "a-zA-Z0-9_");` // return `OR` string without danger chars.
+	 * @var array|NULL
+	 */
+	protected $params			= NULL;
+
+	/**
+	 * Request flag if request targets internal package asset or not,
+	 * - 0 => Means request is `Controller:Asset` call for internal package asset.
+	 * - 1 => Means request is classic application request.
+	 * @var bool|NULL
+	 */
+	protected $appRequest		= NULL;
+
+	/**
+	 * Cleaned input param `"controller"`, containing only chars: `"a-zA-Z0-9\-_/"`.
+	 * @var string
+	 */
+	protected $controllerName	= NULL;
+
+	/**
+	 * Cleaned input param `"action"`, containing only chars: `"a-zA-Z0-9\-_/"`.
+	 * @var string
+	 */
+	protected $actionName		= NULL;
+
+	/**
+	 * Content of referenced `$_SERVER` global variable.
+	 * @var array
+	 */
+	protected $globalServer	= array();
+
+	/**
+	 * Content of referenced `$_GET` global variable.
+	 * @var array
+	 */
+	protected $globalGet		= array();
+
+	/**
+	 * Content of referenced `$_POST` global variable.
+	 * @var array
+	 */
+	protected $globalPost		= array();
+
+	/**
+	 * Content of referenced `$_COOKIE` global variable.
+	 * @var array
+	 */
+	protected $globalCookies	= array();
+
+	/**
+	 * Content of referenced `$_FILES` global variable.
+	 * @var array
+	 */
+	protected $globalFiles		= array();
+
+	/**
+	 * Static factory to get everytime new instance of http request object.
+	 * Global variables for constructor arguments (`$_SERVER`, `$_GET`, `$_POST`...)
+	 * should be changed to any arrays with any values and injected here to get
+	 * different request object then currently called real request object.
+	 * For example to create fake request object for testing purposes
+	 * or for non-real request rendering into request output cache.
+	 * @param array $server
+	 * @param array $get
+	 * @param array $post
+	 * @param array $cookie
+	 * @param array $files
+	 * @return \MvcCore\Request
+	 */
+	public static function GetInstance (
+		array & $server = array(),
+		array & $get = array(),
+		array & $post = array(),
+		array & $cookie = array(),
+		array & $files = array()
+	) {
+		$requestClass = \MvcCore\Application::GetInstance()->GetRequestClass();
+		return new $requestClass($server, $get, $post, $cookie, $files);
+	}
+
+
+	/**
+	 * Create new instance of http request object.
+	 * Global variables for constructor arguments (`$_SERVER`, `$_GET`, `$_POST`...)
+	 * should be changed to any arrays with any values and injected here to get
+	 * different request object then currently called real request object.
+	 * For example to create fake request object for testing purposes
+	 * or for non-real request rendering into request output cache.
+	 * @param array $server
+	 * @param array $get
+	 * @param array $post
+	 * @param array $cookie
+	 * @param array $files
+	 * @return \MvcCore\Request
+	 */
+	public function __construct (
+		array & $server = array(),
+		array & $get = array(),
+		array & $post = array(),
+		array & $cookie = array(),
+		array & $files = array()
+	) {
+		$this->globalServer = & $server;
+		$this->globalGet = & $get;
+		$this->globalPost = & $post;
+		$this->globalCookies = & $cookie;
+		$this->globalFiles = & $files;
+	}
+
+	/**
+	 * Get one of the global data collections stored as protected properties inside request object.
+	 * Example:
+	 *  // to get global `$_GET` with raw values:
+	 *  `$globalGet = $request->GetGlobalCollection('get');`
+	 * @param string $type
+	 * @return array
+	 */
+	public function & GetGlobalCollection ($type) {
+		$collection = 'global'.ucfirst(strtolower($type));
+		return $this->$collection;
+	}
+
+	/**
+	 * Set directly all raw http headers without any conversion at once.
+	 * Header name(s) as array keys should be in standard format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param array $headers
+	 * @return \MvcCore\Request
+	 */
+	public function & SetHeaders (array & $headers = array()) {
+		$this->headers = & $headers;
+		return $this;
+	}
+
+	/**
+	 * Get directly all raw http headers at once (with/without conversion).
+	 * If headers are not initialized, initialize headers by
+	 * `getallheaders()` or from `$_SERVER['HTTP_...']`.
+	 * Headers are returned as `key => value` array, headers keys are
+	 * in standard format like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return array
+	 */
+	public function & GetHeaders ($pregReplaceAllowedChars = array('#\<\>#', '')) {
+		if ($this->headers === NULL) $this->initHeaders();
+		if ($pregReplaceAllowedChars === '' || $pregReplaceAllowedChars === '.*') return $this->headers;
+		$cleanedHeaders = array();
+		foreach ($this->headers as $key => & $value) {
+			$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+			$cleanedHeaders[$cleanedKey] = $this->GetHeader($key, $pregReplaceAllowedChars);
+		}
+		return $cleanedHeaders;
+	}
+
+	/**
+	 * Set directly raw http header value without any conversion.
+	 * Header name should be in standard format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Request
+	 */
+	public function & SetHeader ($name = "", $value = "") {
+		if ($this->headers === NULL) $this->initHeaders();
+		$this->headers[$name] = $value;
+		return $this;
+	}
+
+	/**
+	 * Get http header value filtered by "rule to keep defined characters only",
+	 * defined in second argument (by `preg_replace()`). Place into second argument
+	 * only char groups you want to keep. Header has to be in format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string $name Http header string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetHeader (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if ($this->headers === NULL) $this->initHeaders();
+		return $this->getParamFromCollection(
+			$this->headers, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
+		);
+	}
+
+
+	/**
+	 * Set directly all raw parameters without any conversion at once.
+	 * @param array $params
+	 * @return \MvcCore\Request
+	 */
+	public function & SetParams (array & $params = array()) {
+		$this->params = & $params;
+		return $this;
+	}
+
+	/**
+	 * Get directly all raw parameters at once (with/without conversion).
+	 * If any defined char groups in `$pregReplaceAllowedChars`, there will be returned
+	 * all params filtered by given rule in `preg_replace()`.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return array
+	 */
+	public function & GetParams ($pregReplaceAllowedChars = array('#\<\>#', '')) {
+		if ($this->params === NULL) $this->initParams();
+		if ($pregReplaceAllowedChars === '') return $this->params;
+		$cleanedParams = array();
+		foreach ($this->params as $key => & $value) {
+			$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+			$cleanedParams[$cleanedKey] = $this->GetParam($key, $pregReplaceAllowedChars);
+		}
+		return $cleanedParams;
+	}
+
+	/**
+	 * Set directly raw parameter value without any conversion.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Request
+	 */
+	public function & SetParam ($name = "", $value = "") {
+		if ($this->params === NULL) $this->initParams();
+		$this->params[$name] = $value;
+		return $this;
+	}
+
+	/**
+	 * Get param value from `$_GET`, `$_POST` or `php://input`, filtered by
+	 * "rule to keep defined characters only", defined in second argument (by `preg_replace()`).
+	 * Place into second argument only char groups you want to keep.
+	 * @param string $name Parametter string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetParam (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if ($this->params === NULL) $this->initParams();
+		return $this->getParamFromCollection(
+			$this->params, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
+		);
+	}
+
+
+	/**
+	 * Set directly whole raw global `$_FILES` without any conversion at once.
+	 * @param array $files
+	 * @return \MvcCore\Request
+	 */
+	public function & SetFiles (array & $files = array()) {
+		$this->globalFiles = & $files;
+		return $this;
+	}
+
+	/**
+	 * Return reference to configured global `$_FILES`
+	 * or reference to any other testing array representing it.
+	 * @return array
+	 */
+	public function & GetFiles () {
+		return $this->globalFiles;
+	}
+
+	/**
+	 * Set file item into global `$_FILES` without any conversion at once.
+	 * @param string $file
+	 * @param array $data
+	 * @return \MvcCore\Request
+	 */
+	public function & SetFile ($file = '', $data = array()) {
+		$this->globalFiles[$file] = $data;
+		return $this;
+	}
+
+	/**
+	 * Return item by file name from referenced global `$_FILES`
+	 * or reference to any other testing array item representing it.
+	 * @return array
+	 */
+	public function GetFile ($file = '') {
+		if (isset($this->globalFiles[$file])) return $this->globalFiles[$file];
+		return array();
+	}
+
+
+	/**
+	 * Set directly whole raw global `$_COOKIE` without any conversion at once.
+	 * @param array $cookies
+	 * @return \MvcCore\Request
+	 */
+	public function & SetCookies (array & $cookies = array()) {
+		$this->globalCookies = & $cookies;
+		return $this;
+	}
+
+	/**
+	 * Return reference to configured global `$_COOKIE`
+	 * or reference to any other testing array representing it.
+	 * @return array
+	 */
+	public function & GetCookies () {
+		return $this->globalCookies;
+	}
+
+	/**
+	 * Set raw request cookie into referenced global `$_COOKIE` without any conversion.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Request
+	 */
+	public function & SetCookie ($name = "", $value = "") {
+		$this->globalCookies[$name] = $value;
+		return $this;
+	}
+
+	/**
+	 * Get request cookie value from referenced global `$_COOKIE` variable,
+	 * filtered by characters defined in second argument throught `preg_replace()`.
+	 * Place into second argument only char groups you want to keep.
+	 * @param string $name Cookie string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetCookie (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		return $this->getParamFromCollection(
+			$this->globalCookies, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
+		);
+	}
+
+
+	/**
+	 * Initialize all possible protected values from all globals,
+	 * including all http headers, all params and application inputs.
+	 * This method is not recomanded to use in production mode, it's
+	 * designed mostly for development purposes, to see in one moment,
+	 * what could be inside request after calling any getter method.
+	 * @return \MvcCore\Request
+	 */
+	public function & InitAll () {
+		$this->GetScriptName();
+		$this->GetAppRoot();
+		$this->GetMethod();
+		$this->GetBasePath();
+		$this->GetProtocol();
+		$this->IsSecure();
+		$this->GetServerName();
+		$this->GetHost();
+		$this->GetRequestPath();
+		$this->GetFullUrl();
+		$this->GetReferer();
+		$this->GetMicrotime();
+		$this->IsAjax();
+		if ($this->port === NULL) $this->initUrlSegments();
+		if ($this->headers === NULL) $this->initHeaders();
+		if ($this->params === NULL) $this->initParams();
+		$this->GetServerIp();
+		$this->GetClientIp();
+		return $this;
+	}
+
+	/**
+	 * Return `TRUE` boolean flag if request targets `Controller:Asset`.
+	 * @return bool
+	 */
+	public function IsInternalRequest () {
+		if ($this->appRequest === NULL) {
+			$ctrl = $this->GetControllerName();
+			$action = $this->GetActionName();
+			if ($ctrl !== NULL && $action !== NULL) {
+				$this->appRequest = FALSE;
+				if ($ctrl === 'controller' && $action === 'asset')
+					$this->appRequest = TRUE;
+			}
+		}
+		return $this->appRequest;
+	}
+
+	/**
+	 * Set cleaned requested controller name into `\MvcCore\Request::$controllerName;`
+	 * and into `\MvcCore\Request::$Params['controller'];`.
+	 * @param string $controllerName
+	 * @return \MvcCore\Request
+	 */
+	public function & SetControllerName ($controllerName) {
+		$this->controllerName = $controllerName;
+		$this->params['controller'] = $controllerName;
+		return $this;
+	}
+
+	/**
+	 * Return cleaned requested controller name from `\MvcCore\Request::$Params['controller'];`.
+	 * @return string
+	 */
+	public function GetControllerName () {
+		if ($this->controllerName === NULL) {
+			if (isset($this->globalGet['controller']))
+				$this->controllerName = $this->GetParam('controller', 'a-zA-Z0-9\-_/', '', 'string');
+		}
+		return $this->controllerName;
+	}
+
+	/**
+	 * Set cleaned requested controller name into `\MvcCore\Request::$actionName;`
+	 * and into `\MvcCore\Request::$Params['action'];`.
+	 * @param string $actionName
+	 * @return \MvcCore\Request
+	 */
+	public function & SetActionName ($actionName) {
+		$this->actionName = $actionName;
+		$this->params['action'] = $actionName;
+		return $this;
+	}
+
+	/**
+	 * Return cleaned requested action name from `\MvcCore\Request::$Params['action'];`.
+	 * @return string
+	 */
+	public function GetActionName () {
+		if ($this->actionName === NULL) {
+			if (isset($this->globalGet['action']))
+				$this->actionName = $this->GetParam('action', 'a-zA-Z0-9\-_', '', 'string');
+		}
+		return $this->actionName;
+	}
+
+	/**
+	 * Set language international code.
+	 * Use this lang storage by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	public function & SetLang ($lang) {
+		$this->lang = $lang;
+		return $this;
+	}
+
+	/**
+	 * Get language international code, lowercase, not used by default.
+	 * To use this variable - install  `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	public function GetLang () {
+		if ($this->lang === NULL) $this->initLangAndLocale();
+		return $this->lang;
+	}
+
+	/**
+	 * Set country/locale code, uppercase.
+	 * Use this locale storage by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
+	 */
+	public function & SetLocale ($locale) {
+		$this->locale = $locale;
+		return $this;
+	}
+
+	/**
+	 * Get country/locale code, uppercase, not used by default.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
+	 */
+	public function GetLocale () {
+		if ($this->locale === NULL) $this->initLangAndLocale();
+		return $this->locale;
+	}
+
+	/**
+	 * Set media site key - `"full" | "tablet" | "mobile"`.
+	 * Use this media site key storage by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	public function & SetMediaSiteKey ($mediaSiteKey) {
+		$this->mediaSiteKey = $mediaSiteKey;
+		return $this;
+	}
+
+	/**
+	 * Get media site key - `"full" | "tablet" | "mobile"`.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCoreExt\Router\Media`
+	 * Or use this variable by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	public function GetMediaSiteKey () {
+		return $this->mediaSiteKey;
+	}
+
+
+	/**
+	 * Sets any custom property `"PropertyName"` by `\MvcCore\Request::SetPropertyName("value")`,
+	 * which is not necessary to define previously or gets previously defined
+	 * property `"PropertyName"` by `\MvcCore\Request::GetPropertyName();`.
+	 * Throws exception if no property defined by get call or if virtual call
+	 * begins with anything different from 'Set' or 'Get'.
+	 * This method returns custom value for get and `\MvcCore\Request` instance for set.
+	 * @param string $name
+	 * @param array  $arguments
+	 * @throws \InvalidArgumentException
+	 * @return mixed|\MvcCore\Request
+	 */
+	public function __call ($name, $arguments = array()) {
+		$nameBegin = strtolower(substr($name, 0, 3));
+		$prop = substr($name, 3);
+		if ($nameBegin == 'get' && isset($this->$prop)) {
+			return $this->$prop;
+		} else if ($nameBegin == 'set') {
+			$this->$prop = isset($arguments[0]) ? $arguments[0] : NULL;
+			return $this;
+		} else {
+			throw new \InvalidArgumentException('['.__CLASS__."] No property with name '$prop' defined.");
+		}
+	}
+
+	/**
+	 * Universal getter, if property not defined, `NULL` is returned.
+	 * @param string $name
+	 * @return mixed
+	 */
+	public function __get ($name) {
+		return isset($this->$name) ? $this->$name : NULL ;
+	}
+
+	/**
+	 * Universal setter, if property not defined, it's automaticly declarated.
+	 * @param string $name
+	 * @param mixed	 $value
+	 * @return \MvcCore\Request
+	 */
+	public function __set ($name, $value) {
+		$this->$name = $value;
+		return $this;
+	}
+
+
+	/**
+	 * Php requested script name path from application root.
+	 * Example: `"/index.php"`
+	 * @return string
+	 */
+	public function GetScriptName () {
+		if ($this->scriptName === NULL) $this->initScriptNameAndBasePath();
+		return $this->scriptName;
+	}
+
+	/**
+	 * Get application root path on hard drive.
+	 * Example: `"C:/www/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetAppRoot () {
+		if ($this->appRoot === NULL) {
+			// ucfirst - cause IIS has lower case drive name here - different from __DIR__ value
+			$indexFilePath = ucfirst(str_replace(array('\\', '//'), '/', $this->globalServer['SCRIPT_FILENAME']));
+			if (strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Request.php', 'phar://') === 0) {
+				$this->appRoot = 'phar://' . $indexFilePath;
+			} else {
+				$this->appRoot = substr($indexFilePath, 0, mb_strrpos($indexFilePath, '/'));
+			}
+		}
+		return $this->appRoot;
+	}
+
+	/**
+	 * Get uppercased http method from global `$_SERVER['REQUEST_METHOD']`.
+	 * Example: `"GET" | "POST" | "PUT" | "HEAD"...`
+	 * @return string
+	 */
+	public function GetMethod () {
+		if ($this->method === NULL) {
+			$this->method = strtoupper($this->globalServer['REQUEST_METHOD']);
+		}
+		return $this->method;
+	}
+
+	/**
+	 * Get base app directory path after domain,
+	 * if application is placed in domain subdirectory.
+	 * Example:
+	 * - full url:  `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * - base path: `"/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetBasePath () {
+		if ($this->basePath === NULL) $this->initScriptNameAndBasePath();
+		return $this->basePath;
+	}
+
+	/**
+	 * Get http protocol string.
+	 * Example: `"http:" | "https:"`
+	 * @return string
+	 */
+	public function GetProtocol () {
+		if ($this->protocol === NULL) {
+			$this->protocol = (
+				isset($this->globalServer['HTTPS']) &&
+				strtolower($this->globalServer['HTTPS']) == 'on'
+			)
+				? static::PROTOCOL_HTTPS
+				: static::PROTOCOL_HTTP;
+		}
+		return $this->protocol;
+	}
+
+	/**
+	 * Get `TRUE` if http protocol is `"https:"`.
+	 * @return bool
+	 */
+	public function IsSecure () {
+		if ($this->secure === NULL)
+			$this->secure = $this->GetProtocol() == static::PROTOCOL_HTTPS;
+		return $this->secure;
+	}
+
+	/**
+	 * Get referer url if any, safely readed by:
+	 * `filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);`
+	 * Example: `"http://foreing.domain.com/path/where/is/link/to/?my=app"`
+	 * @return string
+	 */
+	public function GetReferer () {
+		if ($this->referer === NULL) {
+			$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+			if ($referer) $referer = filter_var($referer, FILTER_SANITIZE_URL) ?: '';
+			$this->referer = $referer;
+		}
+		return $this->referer;
+	}
+
+	/**
+	 * Get timestamp of the start of the request, with microsecond precision.
+	 * @return float
+	 */
+	public function GetMicrotime () {
+		if ($this->microtime === NULL) $this->microtime = $this->globalServer['REQUEST_TIME_FLOAT'];
+		return $this->microtime;
+	}
+
+	/**
+	 * Get application server name - domain without any port.
+	 * Example: `"localhost"`
+	 * @return string
+	 */
+	public function GetServerName () {
+		if ($this->serverName === NULL) $this->serverName = $this->globalServer['SERVER_NAME'];
+		return $this->serverName;
+	}
+
+	/**
+	 * Get application host with port if there is any.
+	 * Example: `"localhost:88"`
+	 * @return string
+	 */
+	public function GetHost () {
+		if ($this->host === NULL) $this->host = $this->globalServer['HTTP_HOST'];
+		return $this->host;
+	}
+
+	/**
+	 * Http port defined in requested url if any, parsed by `parse_url().
+	 * Empty string if there is no port number in requested address.`.
+	 * Example: `"88" | ""`
+	 * @return string
+	 */
+	public function GetPort () {
+		if ($this->port === NULL) $this->initUrlSegments();
+		return $this->port;
+	}
+
+	/**
+	 * Get requested path in from application root (if `mod_rewrite` enabled), never with query string.
+	 * Example: `"/products/page/2"`
+	 * @return string
+	 */
+	public function GetPath () {
+		if ($this->path === NULL) $this->initUrlSegments();
+		return $this->path;
+	}
+
+	/**
+	 * Get uri query string without question mark.
+	 * Example: `"param-1=value-1&param-2=value-2&param-3[]=value-3-a&param-3[]=value-3-b"`
+	 * @return string
+	 */
+	public function GetQuery () {
+		if ($this->query === NULL) $this->initUrlSegments();
+		return $this->query;
+	}
+
+	/**
+	 * Get request path after domain with possible query string
+	 * Example: `"/requested/path/after/app/root?with=possible&query=string"`
+	 * @return string
+	 */
+	public function GetRequestPath () {
+		if ($this->requestPath === NULL) {
+			$query = $this->GetQuery();
+			$this->requestPath = $this->GetPath() . ($query ? '?' . $query : '') . $this->GetFragment();
+		}
+		return $this->requestPath;
+	}
+
+	/**
+	 * Get url to requested domain and possible port.
+	 * Example: `"https://domain.com" | "http://domain:88"` if any port.
+	 * @return string
+	 */
+	public function GetDomainUrl () {
+		if ($this->domainUrl === NULL) $this->domainUrl = $this->GetProtocol() . '//' . $this->GetHost();
+		return $this->domainUrl;
+	}
+
+	/**
+	 * Get base url to application root.
+	 * Example: `"http://domain:88/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetBaseUrl () {
+		if ($this->baseUrl === NULL) $this->baseUrl = $this->GetDomainUrl() . $this->GetBasePath();
+		return $this->baseUrl;
+	}
+
+	/**
+	 * Get request url including scheme, domain, port, path, without any query string
+	 * Example: "`http://localhost:88/my/development/direcotry/www/requested/path/after/domain"`
+	 * @return string
+	 */
+	public function GetRequestUrl () {
+		if ($this->requestUrl === NULL) $this->requestUrl = $this->GetBaseUrl() . $this->GetPath();
+		return $this->requestUrl;
+	}
+
+	/**
+	 * Get request url including scheme, domain, port, path and with query string
+	 * Example: `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * @return string
+	 */
+	public function GetFullUrl () {
+		if ($this->fullUrl === NULL) {
+			$query = $this->GetQuery();
+			$this->fullUrl = $this->GetRequestUrl() . ($query ? '?' . $query : '') . $this->GetFragment();
+		}
+		return $this->fullUrl;
+	}
+
+	/**
+	 * Get uri fragment parsed by `parse_url()` including hash.
+	 * Example: `"#any-sublink-path"`
+	 * @return string
+	 */
+	public function GetFragment () {
+		if ($this->fragment === NULL) $this->initUrlSegments();
+		return $this->fragment;
+	}
+
+	/**
+	 * Get server IP from `$_SERVER` global variable.
+	 * @return string
+	 */
+	public function GetServerIp () {
+		if ($this->serverIp === NULL) {
+			$this->serverIp = (isset($this->globalServer['SERVER_ADDR'])
+				? $this->globalServer['SERVER_ADDR']
+				: (isset($this->globalServer['LOCAL_ADDR'])
+					? $this->globalServer['LOCAL_ADDR']
+					: ''));
+		}
+		return $this->serverIp;
+	}
+
+	/**
+	 * Get client IP from `$_SERVER` global variable.
+	 * @return string
+	 */
+	public function GetClientIp () {
+		if ($this->clientIp === NULL) {
+			$this->clientIp = (isset($this->globalServer['REMOTE_ADDR'])
+				? $this->globalServer['REMOTE_ADDR']
+				: (isset($this->globalServer['HTTP_X_CLIENT_IP'])
+					? $this->globalServer['HTTP_X_CLIENT_IP']
+					: ''));
+		}
+		return $this->clientIp;
+	}
+
+	/**
+	 * Get `TRUE` if request is requested on the background
+	 * with usual Javascript HTTP header containing:
+	 * `X-Requested-With: AnyJsFrameworkName`.
+	 * @return bool
+	 */
+	public function IsAjax () {
+		if ($this->ajax === NULL) {
+			$this->ajax = (
+				isset($this->globalServer['HTTP_X_REQUESTED_WITH']) &&
+				strlen($this->globalServer['HTTP_X_REQUESTED_WITH']) > 0
+			);
+		}
+		return $this->ajax;
+	}
+
+	/**
+	 * Parse list of comma separated language tags and sort it by the
+	 * quality value from `$this->globalServer['HTTP_ACCEPT_LANGUAGE']`.
+	 * @param string[] $languagesList
+	 * @return array
+	 */
+	public static function ParseHttpAcceptLang ($languagesList) {
+		$languages = array();
+		$languageRanges = explode(',', trim($languagesList));
+		foreach ($languageRanges as $languageRange) {
+			$regExpResult = preg_match(
+				"/(\*|[a-zA-Z0-9]{1,8}(?:-[a-zA-Z0-9]{1,8})*)(?:\s*;\s*q\s*=\s*(0(?:\.\d{0,3})|1(?:\.0{0,3})))?/",
+				trim($languageRange),
+				$match
+			);
+			if ($regExpResult) {
+				$priority = isset($match[2])
+					? (string) floatval($match[2])
+					: '1.0';
+				if (!isset($languages[$priority])) $languages[$priority] = array();
+				$langOrLangWithLocale = str_replace('-', '_', $match[1]);
+				$delimiterPos = strpos($langOrLangWithLocale, '_');
+				if ($delimiterPos !== FALSE) {
+					$languages[$priority][] = array(
+						strtolower(substr($langOrLangWithLocale, 0, $delimiterPos)),
+						strtoupper(substr($langOrLangWithLocale, $delimiterPos + 1))
+					);
+				} else {
+					$languages[$priority][] = array(
+						strtolower($langOrLangWithLocale),
+						NULL
+					);
+				}
+			}
+		}
+		krsort($languages);
+		reset($languages);
+		return $languages;
+	}
+
+
+	/**
+	 * Initialize url segments parsed by `parse_url()`
+	 * php method: port, path, query and fragment.
+	 * @return void
+	 */
+	protected function initUrlSegments () {
+		$absoluteUrl = $this->GetProtocol() . '//'
+			. $this->globalServer['HTTP_HOST']
+			. $this->globalServer['REQUEST_URI'];
+		$parsedUrl = parse_url($absoluteUrl);
+		$this->port = isset($parsedUrl['port']) ? $parsedUrl['port'] : '';
+		$this->path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
+		$this->path = mb_substr($this->path, mb_strlen($this->GetBasePath()));
+		$this->query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
+		$this->fragment = isset($parsedUrl['fragment']) ? $parsedUrl['fragment'] : '';
+	}
+
+	/**
+	 * Init raw http headers by `getallheaders()` or from `$_SERVER['HTTP_...']`.
+	 * Headers has to be `key => value` array, headers keys in standard format
+	 * like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @return void
+	 */
+	protected function initHeaders () {
+		if (function_exists('getallheaders')) {
+			$headers = getallheaders();
+		} else {
+			$headers = array();
+			foreach ($this->globalServer as $name => $value) {
+				if (substr($name, 0, 5) == 'HTTP_') {
+					$headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+				} else if ($name == "CONTENT_TYPE") {
+					$headers["Content-Type"] = $value;
+				} else if ($name == "CONTENT_LENGTH") {
+					$headers["Content-Length"] = $value;
+				}
+			}
+		}
+		$this->headers = $headers;
+	}
+
+	/**
+	 * Initialize params from global `$_GET` and (global `$_POST` or direct `php://input`).
+	 * @return void
+	 */
+	protected function initParams () {
+		$params = array_merge($this->globalGet);
+		if ($this->GetMethod() == self::METHOD_POST) {
+			$postValues = array();
+			if (count($this->globalPost) > 0) {
+				$postValues = $this->globalPost;
+			} else {
+				$postValues = $this->initParamsCompletePostData();
+			}
+			$params = array_merge($params, $postValues);
+		}
+		$this->params = $params;
+	}
+
+	/**
+	 * Read and return direct php `POST` input from `php://input`.
+	 * @return array
+	 */
+	protected function initParamsCompletePostData () {
+		$result = array();
+		$rawPhpInput = \Packager_Php_Wrapper::FileGetContents('php://input');
+		$decodedJsonResult = \MvcCore\Tool::DecodeJson($rawPhpInput);
+		if ($decodedJsonResult->success) {
+			$result = (array) $decodedJsonResult->data;
+		} else {
+			$rows = explode('&', $rawPhpInput);
+			foreach ($rows as $row) {
+				list($key, $value) = explode('=', $row);
+				$result[$key] = $value;
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Get param value from given collection (`$_GET`, `$_POST`, `php://input` or http headers),
+	 * filtered by characters defined in second argument throught `preg_replace()`.
+	 * Place into second argument only char groups you want to keep.
+	 * @param array $collection Array with request params or array with request headers.
+	 * @param string $name Parametter string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	protected function getParamFromCollection (
+		& $paramsCollection = array(),
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if (!isset($paramsCollection[$name])) return NULL;
+		if (gettype($paramsCollection[$name]) == 'array') {
+			$result = array();
+			$paramsCollection = $paramsCollection[$name];
+			foreach ($paramsCollection as $key => & $value) {
+				$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+				$result[$cleanedKey] = $this->getParamItem(
+					$value, $pregReplaceAllowedChars, $ifNullValue, $targetType
+				);
+			}
+			return $result;
+		} else {
+			return $this->getParamItem(
+				$paramsCollection[$name], $pregReplaceAllowedChars, $ifNullValue, $targetType
+			);
+		}
+	}
+
+	/**
+	 * Get filtered param or header value for characters defined as second argument to use them in `preg_replace()`.
+	 * @param string|string[]|NULL $rawValue
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	protected function getParamItem (
+		& $rawValue = NULL,
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if ($rawValue === NULL) {
+			// if there is NULL in target collection
+			if ($targetType === NULL) return $ifNullValue;
+			$result = is_scalar($ifNullValue) ? $ifNullValue : clone $ifNullValue;
+			settype($result, $targetType);
+			return $result;
+		} else {
+			// if there is not NULL in target collection
+			$rawValue = trim($rawValue);
+			if (mb_strlen($rawValue) === 0) {
+				// if value after trim is empty string, return empty string (retyped if necessary)
+				$result = "";
+				if ($targetType === NULL) return $result;
+				settype($result, $targetType);
+				return $result;
+			} else if ($pregReplaceAllowedChars == '.*') {
+				// if there is something in target collection and all chars are allowed
+				$result = $rawValue;
+				if ($targetType === NULL) return $result;
+				settype($result, $targetType);
+				return $result;
+			} else if (gettype($rawValue) == 'array') {
+				// if there is something in target collection and it's an array
+				$result = array();
+				foreach ((array) $rawValue as $key => & $value) {
+					$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+					$result[$cleanedKey] = $this->getParamItem(
+						$value, $pregReplaceAllowedChars, $ifNullValue, $targetType
+					);
+				}
+				return $result;
+			} else {
+				// if there is something in target collection and it's not an array
+				$result = $this->cleanParamValue($rawValue, $pregReplaceAllowedChars);
+				if ($targetType === NULL) return $result;
+				settype($result, $targetType);
+				return $result;
+			}
+		}
+	}
+
+	/**
+	 * Clean param value by given list of allowed chars or by given `preg_replace()` pattern and reverse.
+	 * @param string $rawValue
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return string
+	 */
+	protected function cleanParamValue ($rawValue, $pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:") {
+		if (is_array($pregReplaceAllowedChars)) {
+			return preg_replace($pregReplaceAllowedChars[0], $pregReplaceAllowedChars[1], $rawValue);
+		} else {
+			return preg_replace("#[^" . $pregReplaceAllowedChars . "]#", "", $rawValue);
+		}
+	}
+
+	/**
+	 * Init script name from `$_SERVER['SCRIPT_NAME']` and request base path.
+	 * @return void
+	 */
+	protected function initScriptNameAndBasePath () {
+		$this->basePath = '';
+		$this->scriptName = str_replace('\\', '/', $this->globalServer['SCRIPT_NAME']);
+		$lastSlashPos = mb_strrpos($this->scriptName, '/');
+		if ($lastSlashPos !== 0) {
+			$redirectUrl = isset($this->globalServer['REDIRECT_URL']) ? $this->globalServer['REDIRECT_URL'] : '';
+			$redirectUrlLength = mb_strlen($redirectUrl);
+			$requestUri = $this->globalServer['REQUEST_URI'];
+			$questionMarkPos = mb_strpos($requestUri, '?');
+			if ($questionMarkPos !== FALSE) $requestUri = mb_substr($requestUri, 0, $questionMarkPos);
+			if ($redirectUrlLength === 0 || ($redirectUrlLength > 0 && $redirectUrl === $requestUri)) {
+				$this->basePath = mb_substr($this->scriptName, 0, $lastSlashPos);
+				$this->scriptName = '/' . mb_substr($this->scriptName, $lastSlashPos + 1);
+			} else {
+				// request was redirected by Apache `mod_rewrite` with `DPI` flag:
+				$requestUriPosInRedirectUri = mb_strrpos($redirectUrl, $requestUri);
+				$apacheRedirectedPath = mb_substr($redirectUrl, 0, $requestUriPosInRedirectUri);
+				$this->scriptName = mb_substr($this->scriptName, mb_strlen($apacheRedirectedPath));
+				$lastSlashPos = mb_strrpos($this->scriptName, '/');
+				$this->basePath = mb_substr($this->scriptName, 0, $lastSlashPos);
+			}
+		} else {
+			$this->scriptName = '/' . mb_substr($this->scriptName, $lastSlashPos + 1);
+		}
+	}
+
+	protected function initLangAndLocale () {
+		$rawUaLanguages = $this->globalServer['HTTP_ACCEPT_LANGUAGE'];
+		if (extension_loaded('Intl')) {
+			$langAndLocaleStr = \locale_accept_from_http($rawUaLanguages);
+			$langAndLocaleArr = $langAndLocaleStr !== NULL
+				? explode('_', $langAndLocaleStr)
+				: array(NULL, NULL);
+		} else {
+			$languagesAndLocales = static::ParseHttpAcceptLang($rawUaLanguages);
+			$langAndLocaleArr = current($languagesAndLocales);
+			if (gettype($langAndLocaleArr) == 'array') $langAndLocaleArr = current($langAndLocaleArr);
+		}
+		list($this->lang, $this->locale) = $langAndLocaleArr;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/IResponse.php');
+
+use \MvcCore\Interfaces\IResponse;
+
+/**
+ * Responsibility - completing all information for response - headers (cookies) and content.
+ * - HTTP response wrapper carrying response headers and response body.
+ * - PHP `setcookie` function wrapper to complete default values such domain or http only etc.
+ * - Sending response at application terminate process by `\MvcCore\Interfaces\IResponse::Send();`.
+ * - Completing MvcCore performance header at response end.
+ */
+class Response implements Interfaces\IResponse
+{
+	public static $CodeMessages = array(
+		IResponse::OK						=> 'OK',
+		IResponse::MOVED_PERMANENTLY		=> 'Moved Permanently',
+		IResponse::SEE_OTHER				=> 'See Other',
+		IResponse::NOT_FOUND				=> 'Not Found',
+		IResponse::INTERNAL_SERVER_ERROR	=> 'Internal Server Error',
+	);
+
+	/**
+	 * Response HTTP code.
+	 * Example: `200 | 301 | 404`
+	 * @var int|NULL
+	 */
+	protected $code = NULL;
+
+	/**
+	 * Response HTTP headers as `key => value` array.
+	 * Example:
+	 *	`array(
+	 *		'Content-Type'		=> 'text/html',
+	 *		'Content-Encoding'	=> 'utf-8'
+	 *	);`
+	 * @var \string[]
+	 */
+	protected $headers = array();
+
+	/**
+	 * Response content encoding.
+	 * Example: `"utf-8" | "windows-1250" | "ISO-8859-2"`
+	 * @var \string|NULL
+	 */
+	protected $encoding = NULL;
+
+	/**
+	 * Response HTTP body.
+	 * Example: `"<!DOCTYPE html><html lang="en"><head><meta ..."`
+	 * @var \string|NULL
+	 */
+	protected $body = NULL;
+
+	/**
+	 * `TRUE` if headers or body has been sent.
+	 * @var bool
+	 */
+	protected $sent = FALSE;
+
+
+	/**
+	 * No singleton, get everytime new instance of configured HTTP response
+	 * class in `\MvcCore\Application::GetInstance()->GetResponseClass();`.
+	 * @param int		$code
+	 * @param array		$headers
+	 * @param string	$body
+	 * @return \MvcCore\Response
+	 */
+	public static function GetInstance (
+		$code = \MvcCore\Interfaces\IResponse::OK,
+		$headers = array(),
+		$body = ''
+	) {
+		$responseClass = \MvcCore\Application::GetInstance()->GetResponseClass();
+		return new $responseClass($code, $headers, $body);
+	}
+
+	/**
+	 * Create new HTTP response instance.
+	 * @param int		$code
+	 * @param array		$headers
+	 * @param string	$body
+	 * @return \MvcCore\Response
+	 */
+	public function __construct (
+		$code = \MvcCore\Interfaces\IResponse::OK,
+		$headers = array(),
+		$body = ''
+	) {
+		$this->code = $code;
+		$this->headers = $headers;
+		$this->body = $body;
+	}
+
+	/**
+	 * Set HTTP response code.
+	 * @param int $code
+	 * @return \MvcCore\Response
+	 */
+	public function & SetCode ($code) {
+		$this->code = $code;
+		http_response_code($code);
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response code.
+	 * @return int
+	 */
+	public function GetCode () {
+		if ($this->code === NULL) {
+			$phpCode = http_response_code();
+			$this->code = $phpCode === FALSE ? static::OK : $phpCode;
+		}
+		return $this->code;
+	}
+
+	/**
+	 * Set multiple HTTP response headers as `key => value` array.
+	 * All given headers are automaticly merged with previously setted headers.
+	 * If you change second argument to true, all previous request object and PHP
+	 * headers are removed and given headers will be only headers for output.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Type` header, if contains any `charset=...`.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Encoding` header.
+	 * Example: `$request->SetHeader(array('Content-Type' => 'text/plain; charset=utf-8'));`
+	 * @param array $headers
+	 * @param bool $cleanAllPrevious `FALSE` by default. If `TRUE`, all previous headers
+	 *								 set by PHP `header()` or by this object will be removed.
+	 * @return \MvcCore\Response
+	 */
+	public function & SetHeaders (array $headers = array(), $cleanAllPrevious = FALSE) {
+		if ($cleanAllPrevious) {
+			$this->UpdateHeaders();
+			foreach ($this->headers as $name => $value) header_remove($name);
+			$this->headers = array();
+		}
+		foreach ($headers as $name => $value) {
+			$this->SetHeader($name, $value);
+		}
+		return $this;
+	}
+
+	/**
+	 * Set HTTP response header.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Type` header, if contains any `charset=...`.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Encoding` header.
+	 * Example: `$request->SetHeader('Content-Type', 'text/plain; charset=utf-8');`
+	 * @param string $name
+	 * @param string $value
+	 * @return \MvcCore\Response
+	 */
+	public function & SetHeader ($name, $value) {
+		header($name . ": " . $value);
+		$this->headers[$name] = $value;
+		if ($name === 'Content-Type') {
+			$charsetPos = strpos($value, 'charset');
+			if ($charsetPos !== FALSE) {
+				$equalPos = strpos($value, '=', $charsetPos);
+				if ($equalPos !== FALSE) $this->SetEncoding(
+					trim(substr($value, $equalPos + 1))
+				);
+			}
+		}
+		if ($name === 'Content-Encoding') $this->encoding = $value;
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response header by name. If header dowsn't exists, null is returned.
+	 * Example: `$request->GetHeader('Content-Type'); // returns 'text/plain; charset=utf-8'`
+	 * @param string $name
+	 * @return string|NULL
+	 */
+	public function GetHeader ($name) {
+		return isset($this->headers[$name]) ? $this->headers[$name] : NULL;
+	}
+
+	/**
+	 * Get if response has any HTTP response header by given `$name`.
+	 * Example:
+	 *	`$request->GetHeader('Content-Type'); // returns TRUE if there is header 'Content-Type'
+	 *	`$request->GetHeader('content-type'); // returns FALSE if there is header 'Content-Type'
+	 * @param string $name
+	 * @return bool
+	 */
+	public function HasHeader ($name) {
+		return isset($this->headers[$name]);
+	}
+
+	/**
+	 * Set HTTP response content encoding.
+	 * Example: `$response->SetEncoding('utf-8');`
+	 * @param string $encoding
+	 * @return \MvcCore\Response
+	 */
+	public function & SetEncoding ($encoding = 'utf-8') {
+		$this->encoding = $encoding;
+		$this->headers['Content-Encoding'] = $encoding;
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response content encoding.
+	 * Example: `$response->GetEncoding(); // returns 'utf-8'`
+	 * @return string|NULL
+	 */
+	public function GetEncoding () {
+		return $this->encoding;
+	}
+
+	/**
+	 * Set HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Response
+	 */
+	public function & SetBody ($body) {
+		$this->body = & $body;
+		return $this;
+	}
+
+	/**
+	 * Prepend HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Response
+	 */
+	public function & PrependBody ($body) {
+		$this->body = $body . $this->body;
+		return $this;
+	}
+
+	/**
+	 * Append HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Response
+	 */
+	public function & AppendBody ($body) {
+		$this->body .= $body;
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response body.
+	 * @return string|NULL
+	 */
+	public function & GetBody () {
+		return $this->body;
+	}
+
+	/**
+	 * Consolidate all headers from PHP response
+	 * by calling `headers_list()` into local headers list.
+	 * @return void
+	 */
+	public function UpdateHeaders () {
+		$rawHeaders = headers_list();
+		$name = '';
+		$value = '';
+		foreach ($rawHeaders as $rawHeader) {
+			$doubleDotPos = strpos($rawHeader, ':');
+			if ($doubleDotPos !== FALSE) {
+				$name = trim(substr($rawHeader, 0, $doubleDotPos));
+				$value = trim(substr($rawHeader, $doubleDotPos + 1));
+			} else {
+				$name = $rawHeader;
+				$value = '';
+			}
+  			$this->headers[$name] = $value;
+		}
+	}
+
+	/**
+	 * Return if response has any redirect `"Location: ..."` header inside.
+	 * @return bool
+	 */
+	public function IsRedirect () {
+		return isset($this->headers['Location']);
+	}
+
+	/**
+	 * Returns if response has any `text/html` or `application/xhtml+xml` 
+	 * substring in `Content-Type` header.
+	 * @return bool
+	 */
+	public function IsHtmlOutput () {
+		if (isset($this->headers['Content-Type'])) {
+			$value = $this->headers['Content-Type'];
+			return strpos($value, 'text/html') !== FALSE || strpos($value, 'application/xhtml+xml') !== FALSE;
+		}
+		return FALSE;
+	}
+
+	/**
+	 * `TRUE` if headers or body has been sent.
+	 * @return bool
+	 */
+	public function IsSent () {
+		return $this->sent || headers_sent();
+	}
+
+	/**
+	 * Send all HTTP headers and send response body.
+	 * @return void
+	 */
+	public function Send () {
+		if ($this->IsSent()) return;
+		$code = $this->GetCode();
+		$status = isset(static::$CodeMessages[$code]) ? ' ' . static::$CodeMessages[$code] : '';
+		if (!isset($this->headers['Content-Encoding'])) {
+			if (!$this->encoding) $this->encoding = 'utf-8';
+			$this->headers['Content-Encoding'] = $this->encoding;
+		}
+		header("HTTP/1.0 $code $status");
+		foreach ($this->headers as $name => $value) {
+			if ($name == 'Content-Type') {
+				$charsetMatched = FALSE;
+				$charsetPos = strpos($value, 'charset');
+				if ($charsetPos !== FALSE) {
+					$equalPos = strpos($value, '=', $charsetPos);
+					if ($equalPos !== FALSE) $charsetMatched = TRUE;
+				}
+				if (!$charsetMatched) $value .= ';charset=' . $this->encoding;
+			}
+			header($name . ": " . $value);
+		}
+		$this->addTimeAndMemoryHeader();
+		echo $this->body;
+		$this->sent = TRUE;
+	}
+
+	/**
+	 * Send a cookie.
+	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
+	 * @param string $value       The value of the cookie. This value is stored on the clients computer; do not store sensitive information.
+	 * @param int    $lifetime    Life time in seconds to expire. 0 means "until the browser is closed".
+	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
+	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
+	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
+	 * @param bool   $httpOnly    HTTP only cookie, `TRUE` by default.
+	 * @throws \RuntimeException  If HTTP headers have been sent.
+	 * @return bool               True if cookie has been set.
+	 */
+	public function SetCookie (
+		$name, $value,
+		$lifetime = 0, $path = '/',
+		$domain = NULL, $secure = NULL, $httpOnly = TRUE
+	) {
+		if ($this->IsSent()) throw new \RuntimeException(
+			"[".__CLASS__."] Cannot set cookie after HTTP headers have been sent."
+		);
+		$request = \MvcCore\Application::GetInstance()->GetRequest();
+		return setcookie(
+			$name, $value,
+			$lifetime === 0 ? 0 : time() + $lifetime,
+			$path,
+			$domain === NULL ? $request->GetServerName() : $domain,
+			$secure === NULL ? $request->IsSecure() : $secure,
+			$httpOnly
+		);
+	}
+
+	/**
+	 * Delete cookie - set value to empty string and
+	 * set expiration to "until the browser is closed".
+	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
+	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
+	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
+	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
+	 * @throws \RuntimeException  If HTTP headers have been sent.
+	 * @return bool               True if cookie has been set.
+	 */
+	public function DeleteCookie ($name, $path = '/', $domain = NULL, $secure = NULL) {
+		return $this->SetCookie($name, '', 0, $path, $domain, $secure);
+	}
+
+	/**
+	 * Add CPU and RAM usage header at HTML/JSON response end.
+	 * @return void
+	 */
+	protected function addTimeAndMemoryHeader () {
+		$mtBegin = \MvcCore\Application::GetInstance()->GetRequest()->GetMicrotime();
+		$time = number_format((microtime(TRUE) - $mtBegin) * 1000, 1, '.', ' ');
+		$ram = function_exists('memory_get_peak_usage') ? number_format(memory_get_peak_usage() / 1000000, 2, '.', ' ') : 'n/a';
+		header("X-MvcCore-Cpu-Ram: $time ms, $ram MB");
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/IRoute.php');
+
+/**
+ * Responsibility - describing request(s) to match and reversely build url addresses.
+ * - Describing request to match it (read more about properties).
+ * - Matching request by given request object, see `\MvcCore\Route::Matches()`.
+ * - Completing url address by given params array, see `\MvcCore\Route::Url()`.
+ *
+ * Main Properties:
+ * - `$Pattern`
+ *   Required, if you have not configured `\MvcCore\Route::$match` and
+ *   `\MvcCore\Route::$reverse` property instead. Very basic URL address
+ *   form to match and parse rewrited params by it. Address to parse
+ *   and prepare `\MvcCore\Route::$match` property and `\MvcCore\Route::$reverse`
+ *   property. automaticly in `\MvcCore\Route::Prepare();` call.
+ * - `$Match`
+ *   Required together with `\MvcCore\Route::$reverse` property, if you
+ *   have not configured `\MvcCore\Route::$pattern` property instead.
+ *   This property is always used to match request by `\MvcCore\Request::Path`
+ *   by classic PHP regualar expression matching by `preg_match_all();`.
+ * - `$Reverse`
+ *   Required together with `\MvcCore\Route::$match` property, if you
+ *   have not configured `\MvcCore\Route::$pattern` property instead.
+ *   This property is always used to complete url address by called params
+ *   array and by this string with rewrite params replacements inside.
+ * - `$Controller`
+ *   Required, if there is no `controller` param inside `\MvcCore\Route::$pattern`
+ *   or inside `\MvcCore\Route::$match property`. Controller class name to dispatch
+ *   in pascal case form, namespaces and including slashes as namespace delimiters.
+ * - `$Action`
+ *   Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+ *   or inside `\MvcCore\Route::$match property`. Public method in controller
+ *   in pascal case form, but in controller named as `public function <CoolName>Action () {...`.
+ * - `$Name`
+ *   Not required, if you want to create url addresses always by `Controller:Action`
+ *   named records. It could be any string, representing route custom name to
+ *   complete url address by that name inside your application.
+ * - `$Defaults`
+ *   Not required, matched route params default values and query params default values.
+ *   Last entry in array may be used for property `\MvcCore\Route::$lastPatternParam`
+ *   describing last rewrited param inside match pattern to be automaticly trimmed
+ *   from right side for possible address trailing slash in route matched moment.
+ * - `$Constraints`
+ *   not required, array with param names and their custom regular expression
+ *   matching rules. If no constraint string for any param defined, there is used
+ *   for all rewrited params default constraint rule to match everything except next slash.
+ *   Default static property for matching rule shoud be changed here:
+ *   - by default: `\MvcCore\Route::$DefaultConstraint = '[^/]*';`
+ */
+class Route implements Interfaces\IRoute
+{
+	/**
+	 * Default constraint used for all rewrited params, if no
+	 * constraint for rewrited param has been specified.
+	 * configured as `"[^/]*"` by default. This value means:
+	 * - "Any character(s) in any length, except next slash."
+	 * @var string
+	 */
+	public static $DefaultConstraint = '[^/]*';
+
+	/**
+	 * Route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @var string|NULL
+	 */
+	protected $pattern		= NULL;
+
+	/**
+	 * Route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @var string|NULL
+	 */
+	protected $match		= NULL;
+
+	/**
+	 * Route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @var string|NULL
+	 */
+	protected $reverse		= NULL;
+
+	/**
+	 * Not required. Route name is your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @var string
+	 */
+	protected $name		= '';
+
+	/**
+	 * Controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @var string
+	 */
+	protected $controller	= '';
+
+	/**
+	 * Action name to call in controller dispatching, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match property`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @var string
+	 */
+	protected $action		= '';
+
+	/**
+	 * Route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example: `array("name" => "default-name", "color" => "red",);`.
+	 * @var array
+	 */
+	protected $defaults		= array();
+
+	/**
+	 * Array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @var array
+	 */
+	protected $constraints		= array();
+
+	/**
+	 * Optional, param name, which has to be also inside `\MvcCore\Route::$pattern` or
+	 * inside `\MvcCore\Route::$match` or inside `\MvcCore\Route::$reverse` pattern property
+	 * as the last one. And after it's value, there could be only trailing slash or nothing
+	 * (pattern end). This trailing slash param definition automaticly trims this last param
+	 * value for right trailing slash when route is matched.
+	 *
+	 * This property is automaticly completed by method `\MvcCore\Route::initMatch()`,
+	 * when there is parsed `\MvcCore\Route::$pattern` string into `\MvcCore\Route::$match` property
+	 * or it is automaticly completed by method `\MvcCore\Route::initReverse()`, when
+	 * there is parsed `\MvcCore\Route::$reverse` string into `\MvcCore\Route::$reverseParams`
+	 * array to build url addresses.
+	 *
+	 * @var string|NULL
+	 */
+	protected $lastPatternParam = NULL;
+
+	/**
+	 * Array with strings, containing all reverse pattern params, parsed automaticly
+	 * by method `\MvcCore\Route::initMatchm();` if necessary or by method
+	 * `\MvcCore\Route::initReverse();` after it's necessary
+	 * to complete url address string in method `\MvcCore\Route::Url();`.
+	 * @var string[]|NULL
+	 */
+	protected $reverseParams = NULL;
+
+
+	/**
+	 * Create every time new route instance, no singleton managing!
+	 * Called usually from core methods:
+	 * - `\MvcCore\Router::AddRoutes();`
+	 * - `\MvcCore\Router::AddRoute();`
+	 * - `\MvcCore\Router::routeByControllerAndActionQueryString();`
+	 * This method is the best place where to implement custom
+	 * route initialization for core.
+	 * First argument should be configuration array or
+	 * route pattern value to parse into match and reverse patterns.
+	 * Example:
+	 * `new Route(array(
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 * ));`
+	 * or:
+	 * `new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 * );`
+	 * or:
+	 * `new Route(array(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 * ));`
+	 * @param $patternOrConfig	string|array	Required, configuration array or route pattern value to parse into match and reverse patterns.
+	 * @param $controllerAction	string			Optional, controller and action name in pascale case like: `"Photogallery:List"`.
+	 * @param $defaults			string			Optional, default param values like: `array("name" => "default-name", "page" => 1)`.
+	 * @param $constraints		array			Optional, params regex constraints for regular expression match fn no `"match"` record in configuration array as first argument defined.
+	 * @return \MvcCore\Route
+	 */
+	public static function GetInstance (
+		$patternOrConfig = NULL,
+		$controllerAction = NULL,
+		$defaults = array(),
+		$constraints = array()
+	) {
+		return (new \ReflectionClass(get_called_class()))
+			->newInstanceArgs(func_get_args());
+	}
+
+	/**
+	 * Create new route instance.
+	 * First argument should be configuration array or
+	 * route pattern value to parse into match and reverse patterns.
+	 * Example:
+	 * `new Route(array(
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 * ));`
+	 * or:
+	 * `new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 * );`
+	 * or:
+	 * `new Route(array(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 * ));`
+	 * @param $patternOrConfig	string|array	Required, configuration array or route pattern value to parse into match and reverse patterns.
+	 * @param $controllerAction	string			Optional, controller and action name in pascale case like: `"Photogallery:List"`.
+	 * @param $defaults			array			Optional, default param values like: `array("name" => "default-name", "page" => 1)`.
+	 * @param $constraints		array			Optional, params regex constraints for regular expression match fn no `"match"` record in configuration array as first argument defined.
+	 * @return \MvcCore\Route
+	 */
+	public function __construct (
+		$patternOrConfig = NULL,
+		$controllerAction = NULL,
+		$defaults = array(),
+		$constraints = array()
+	) {
+		$args = func_get_args();
+		$argsCount = count($args);
+		if ($argsCount === 0) return $this;
+		if (gettype($patternOrConfig) == 'array') {
+			$data = (object) $patternOrConfig;
+			$this->name = isset($data->name) ? $data->name : '';
+			if (isset($data->controllerAction)) {
+				list($this->controller, $this->action) = explode(':', $data->controllerAction);
+			} else {
+				$this->controller = isset($data->controller) ? $data->controller : '';
+				$this->action = isset($data->action) ? $data->action : '';
+			}
+			$this->pattern = isset($data->pattern) ? $data->pattern : NULL;
+			$this->match = isset($data->match) ? $data->match : NULL;
+			$this->reverse = isset($data->reverse) ? $data->reverse : NULL;
+			$this->defaults = isset($data->defaults) ? $data->defaults : array();
+			$this->constraints = isset($data->constraints) ? $data->constraints : array();
+		} else {
+			$this->pattern = $patternOrConfig;
+			list($this->controller, $this->action) = explode(':', $controllerAction);
+			$this->name = '';
+			$this->match = NULL;
+			$this->reverse = NULL;
+			$this->defaults = $defaults;
+			$this->constraints = $constraints;
+		}
+		if (!$this->controller && !$this->action && strpos($this->name, ':') !== FALSE) {
+			list($this->controller, $this->action) = explode(':', $this->name);
+		}
+	}
+
+	/**
+	 * Get route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @return string|NULL
+	 */
+	public function GetPattern () {
+		return $this->pattern;
+	}
+
+	/**
+	 * Set route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @param string $pattern
+	 * @return \MvcCore\Route
+	 */
+	public function & SetPattern ($pattern) {
+		$this->pattern = $pattern;
+		return $this;
+	}
+
+	/**
+	 * Get route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @return string|NULL
+	 */
+	public function GetMatch () {
+		return $this->match;
+	}
+
+	/**
+	 * Set route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @param string $match
+	 * @return \MvcCore\Route
+	 */
+	public function & SetMatch ($match) {
+		$this->match = $match;
+		return $this;
+	}
+
+	/**
+	 * Get route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @return string|NULL
+	 */
+	public function GetReverse () {
+		return $this->reverse;
+	}
+
+	/**
+	 * Set route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @param string $reverse
+	 * @return \MvcCore\Route
+	 */
+	public function & SetReverse ($reverse) {
+		$this->reverse = $reverse;
+		return $this;
+	}
+
+	/**
+	 * Get route name. It's your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @return string
+	 */
+	public function GetName () {
+		return $this->name;
+	}
+
+	/**
+	 * Set route name. Not required. It's your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @param string $name
+	 * @return \MvcCore\Route
+	 */
+	public function & SetName ($name) {
+		$this->name = $name;
+		return $this;
+	}
+
+	/**
+	 * Get controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @return string
+	 */
+	public function GetController () {
+		return $this->controller;
+	}
+
+	/**
+	 * Set controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @param string $controller
+	 * @return \MvcCore\Route
+	 */
+	public function & SetController ($controller) {
+		$this->controller = $controller;
+		return $this;
+	}
+
+	/**
+	 * Get action name to call it in controller dispatch processing, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @return string
+	 */
+	public function GetAction () {
+		return $this->action;
+	}
+
+	/**
+	 * Set action name to call it in controller dispatch processing, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @param string $action
+	 * @return \MvcCore\Route
+	 */
+	public function & SetAction ($action) {
+		$this->action = $action;
+		return $this;
+	}
+
+	/**
+	 * Get target controller name and controller action name
+	 * together in one setter, in pascal case, separated by colon.
+	 * There are also controller namespace definition posibilities as
+	 * in `\MvcCore\Route::GetController();` getter method.
+	 *
+	 * Example: `"Products:List"`
+	 * @return string
+	 */
+	public function GetControllerAction () {
+		return $this->controller . ':' . $this->action;
+	}
+
+	/**
+	 * Set target controller name and controller action name
+	 * together in one setter, in pascal case, separated by colon.
+	 * There are also controller namespace definition posibilities as
+	 * in `\MvcCore\Route::SetController();` setter method.
+	 *
+	 * Example: `"Products:List"`
+	 * @return \MvcCore\Route
+	 */
+	public function & SetControllerAction ($controllerAction) {
+		list($this->controller, $this->action) = explode(':', $controllerAction);
+		return $this;
+	}
+
+	/**
+	 * Get route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example:
+	 *  `array(
+	 *      "name"  => "default-name",
+	 *      "color" => "red"
+	 *  );`.
+	 * @return array
+	 */
+	public function & GetDefaults () {
+		return $this->defaults;
+	}
+
+	/**
+	 * Set route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example:
+	 *  `array(
+	 *      "name"  => "default-name",
+	 *      "color" => "red"
+	 *  );`.
+	 * @param array $defaults
+	 * @return \MvcCore\Route
+	 */
+	public function & SetDefaults ($defaults = array()) {
+		$this->defaults = $defaults;
+		return $this;
+	}
+
+	/**
+	 * Get array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @return array
+	 */
+	public function & GetConstraints () {
+		return $this->constraints;
+	}
+
+	/**
+	 * Set array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @param array $constraints
+	 * @return \MvcCore\Route
+	 */
+	public function & SetConstraints ($constraints = array()) {
+		$this->constraints = $constraints;
+		return $this;
+	}
+
+	/**
+	 * Return array of matched params, with matched controller and action names,
+	 * if route matches request `\MvcCore\Request::$Path` property by `preg_match_all()`.
+	 *
+	 * This method is usually called in core request routing process
+	 * from `\MvcCore\Router::Route();` method and it's submethods.
+	 *
+	 * @param string $requestPath
+	 * @return array Matched and params array, keys are matched
+	 *				 params or controller and action params.
+	 */
+	public function Matches (& $requestPath) {
+		$matchedParams = array();
+		if ($this->match === NULL) $this->initMatch();
+		preg_match_all($this->match, $requestPath, $matchedValues, PREG_OFFSET_CAPTURE);
+		if (isset($matchedValues[0]) && count($matchedValues[0])) {
+			$controllerName = $this->controller ?: '';
+			$toolClass = \MvcCore\Application::GetInstance()->GetToolClass();
+			$matchedParams = array(
+				'controller'	=>	$toolClass::GetDashedFromPascalCase(str_replace(array('_', '\\'), '/', $controllerName)),
+				'action'		=>	$toolClass::GetDashedFromPascalCase($this->action ?: ''),
+			);
+			array_shift($matchedValues); // first item is always matched whole `$request->GetPath()` string.
+			$index = 0;
+			$matchedKeys = array_keys($matchedValues);
+			$matchedKeysCount = count($matchedKeys) - 1;
+			while ($index < $matchedKeysCount) {
+				$matchedKey = $matchedKeys[$index];
+				$matchedValue = $matchedValues[$matchedKey];
+				// if captured offset value is the same like in next matched record - skip next matched record:
+				if (isset($matchedKeys[$index + 1])) {
+					$nextKey = $matchedKeys[$index + 1];
+					$nextValue = $matchedValues[$nextKey];
+					if ($matchedValue[0][1] === $nextValue[0][1]) $index += 1;
+				}
+				// 1 line bellow is only for route debug panel, only for cases when you
+				// forget to define current rewrite param, this defines null value by default
+				if (!isset($this->defaults[$matchedKey])) $this->defaults[$matchedKey] = NULL;
+				$matchedParams[$matchedKey] = $matchedValue[0][0];
+				$index += 1;
+			}
+			if ($this->lastPatternParam === NULL) $this->initReverse();
+			if (isset($matchedParams[$this->lastPatternParam])) {
+				$matchedParams[$this->lastPatternParam] = rtrim($matchedParams[$this->lastPatternParam], '/');
+			}
+		}
+		return $matchedParams;
+	}
+
+	/**
+	 * Complete route url by given params array and route
+	 * internal reverse replacements pattern string.
+	 * If there are more given params in first argument
+	 * than count of replacement places in reverse pattern,
+	 * then create url with query string params after reverse
+	 * pattern, containing that extra record(s) value(s).
+	 *
+	 * Example:
+	 *	Input (`$params`):
+	 *		`array(
+	 *			"name"		=> "cool-product-name",
+	 *			"color"		=> "blue",
+	 *			"variants"	=> array("L", "XL"),
+	 *		);`
+	 *	Input (`\MvcCore\Route::$reverse`):
+	 *		`"/products-list/<name>/<color*>"`
+	 *	Output:
+	 *		`"/products-list/cool-product-name/blue?variant[]=L&amp;variant[]=XL"`
+	 * @param array $params
+	 * @param array $cleanedGetRequestParams Request query params with escaped chars: `<` and `>`.;
+	 * @return string
+	 */
+	public function Url (& $params, & $cleanedGetRequestParams) {
+		if ($this->reverseParams === NULL) $this->initReverse();
+		$result = $this->reverse;
+		$givenParamsKeys = array_merge(array(), $params);
+		foreach ($this->reverseParams as $paramName) {
+			$paramKeyReplacement = '<'.$paramName.'>';
+			$paramValue = (
+				isset($params[$paramName])
+					? $params[$paramName]
+					: (isset($cleanedGetRequestParams[$paramName])
+						? $cleanedGetRequestParams[$paramName]
+						: (isset($this->defaults[$paramName])
+							? $this->defaults[$paramName]
+							: ''))
+			);
+			$result = str_replace($paramKeyReplacement, $paramValue, $result);
+			unset($givenParamsKeys[$paramName]);
+		}
+		if ($givenParamsKeys)
+			$result .= ($this->reverseParams ? '&amp;' : '?')
+				. http_build_query($givenParamsKeys);
+		return $result;
+	}
+
+	/**
+	 * Initialize `\MvcCore\Router::$Match` property (and `\MvcCore\Router::$lastPatternParam`
+	 * property) from `\MvcCore\Router::$Pattern`, optionaly initialize
+	 * `\MvcCore\Router::$Reverse` property if there is nothing inside.
+	 * - Add backslashes for all special regex chars excluding `<` and `>` chars.
+	 * - Parse all `<param>` occurrances in pattern into statistics array `$matchPatternParams`.
+	 * - Complete from the statistic array the match property and if there no reverse property,
+	 *   complete also reverse property.
+	 * This method is usually called in core request routing process from
+	 * `\MvcCore\Router::Matches();` method.
+	 * @return void
+	 */
+	public function initMatch () {
+		// if there is no match regular expression - parse `\MvcCore\Route::\$Pattern`
+		// and compile `\MvcCore\Route::\$Match` regular expression property.
+		if (mb_strlen($this->pattern) === 0) throw new \LogicException(
+			"[".__CLASS__."] Route configuration property `\MvcCore\Route::\$Pattern` is missing "
+			."to parse it and complete property(ies) `\MvcCore\Route::\$Match` (and `\MvcCore\Route::\$Reverse`) correctly."
+		);
+		// escape all regular expression special characters before parsing except `<` and `>`:
+		$matchPattern = addcslashes($this->pattern, "#[](){}-?!=^$.+|:\\");
+		// parse all presented `<param>` occurances in `$pattern` argument:
+		$matchPatternParams = $this->parsePatternParams($matchPattern);
+		// compile match regular expression from parsed params and custom constraints:
+		if ($this->reverse === NULL) {
+			list($this->match, $this->reverse) = $this->compileMatchAndReversePattern(
+				$matchPattern, $matchPatternParams, TRUE
+			);
+		} else {
+			list($this->match, $reverse) = $this->compileMatchAndReversePattern(
+				$matchPattern, $matchPatternParams, FALSE
+			);
+		}
+	}
+
+	/**
+	 * Initialize all possible protected values (`match`, `reverse` etc...)
+	 * This method is not recomanded to use in production mode, it's
+	 * designed mostly for development purposes, to see what could be inside route.
+	 * @return \MvcCore\Route|\MvcCore\Interfaces\IRoute
+	 */
+	public function & InitAll () {
+		if ($this->match === NULL) $this->initMatch();
+		if ($this->lastPatternParam === NULL) $this->initReverse();
+		if ($this->reverseParams === NULL) $this->initReverse();
+		return $this;
+	}
+
+	/**
+	 * Internal method for `\MvcCore\Route::initMatch();` processing,
+	 * always called from `\MvcCore\Router::Matches();` request routing.
+	 *
+	 * Go throught given route pattern value and try to search for
+	 * any url param occurances inside, like `<name>` or `<color*>`.
+	 * Return and array with describing records for each founded param.
+	 * Example:
+	 *	Input (`$match`):
+	 *		`"/products-list/<name>/<color*>"`
+	 *	Output:
+	 *		`array(
+	 *			array(
+	 *				"name",		// param name
+	 *				"<name>",	// param name for regex match pattern
+	 *				15,			// `"<name>"` occurance position
+	 *				6,			// `"<name>"` string length
+	 *				FALSE		// greedy param star flag
+	 *			),
+	 *			array(
+	 *				"color",	// param name
+	 *				"<color>",	// param name for regex match pattern
+	 *				22,			// `"<color*>"` occurance position
+	 *				8,			// `"<color*>"` string length
+	 *				TRUE		// greedy param star flag
+	 *			)
+	 *		);
+	 * @param string $match Route pattern with escaped all special regex characters except `<` and `>`.
+	 * @throws \LogicException Thrown, when founded any other param after greedy param.
+	 * @return array[] Statistics about founded params occurances.
+	 */
+	protected function & parsePatternParams (& $match) {
+		$matched = array();
+		$index = 0;
+		$matchLength = mb_strlen($match);
+		$greedyCatched = FALSE;
+		while ($index < $matchLength) {
+			$openPos = mb_strpos($match, '<', $index);
+			if ($openPos === FALSE) break;
+			$closePos = mb_strpos($match, '>', $openPos);
+			if ($closePos === FALSE) break;
+			$closePos += 1;
+			$index = $closePos;
+			$length = $closePos - $openPos;
+			$paramName = mb_substr($match, $openPos + 1, $length - 2);
+			$greedy = mb_strpos($paramName, '*');
+			if ($greedy) {
+				if ($greedyCatched) throw new \LogicException(
+					"[".__CLASS__."] Route could have greedy `<param_name*>` with star "
+					."to include slashes only as the very last parameter."
+				);
+				$greedyCatched = TRUE;
+				$paramName = str_replace('*', '', $paramName);
+			}
+			$matched[] = array($paramName, '<'.$paramName.'>', $openPos, $length, $greedy);
+		}
+		return $matched;
+	}
+
+	/**
+	 * Internal method for `\MvcCore\Route::initMatch();` processing,
+	 * always called from `\MvcCore\Router::Matches();` request routing.
+	 *
+	 * Compile and return value for `\MvcCore\Route::$match` pattern,
+	 * (optionaly by `$compileReverse` also for `\MvcCore\Route::$reverse`)
+	 * from escaped `\MvcCore\Route::$pattern` and given params statistics
+	 * and from configured route constraints for regular expression:
+	 * - If pattern starts with slash `/`, set automaticly into
+	 *   result regular expression start rule (`#^/...`).
+	 * - If there is detected trailing slash in match pattern,
+	 *   set automaticly into result regular expression end rule
+	 *   for trailing slash `...(?=/$|$)#` or just only end rule `...$#`.
+	 * - If there is detected any last param with possible trailing slash
+	 *   after, complete `\MvcCore\Route::$lastPatternParam` property
+	 *   by this detected param name.
+	 *
+	 * Example:
+	 *	Input (`$matchPattern`):
+	 *		`"/products-list/<name>/<color*>"`
+	 *	Input (`$matchPatternParams`):
+	 *		`array(
+	 *			array(
+	 *				"name",		// param name
+	 *				"<name>",	// param name for regex match pattern
+	 *				15,			// `"<name>"` occurance position
+	 *				6,			// `"<name>"` string length
+	 *				FALSE		// greedy param star flag
+	 *			),
+	 *			array(
+	 *				"color",	// param name
+	 *				"<color>",	// param name for regex match pattern
+	 *				22,			// `"<color*>"` occurance position
+	 *				8,			// `"<color*>"` string length
+	 *				TRUE		// greedy param star flag
+	 *			)
+	 *		);`
+	 *	Input (`$compileReverse`):
+	 *		`TRUE`
+	 *	Input (`$this->constraints`):
+	 *		`array(
+	 *			"name"	=> "[^/]*",
+	 *			"color"	=> "[a-z]*",
+	 *		);`
+	 *	Output:
+	 *		`array(
+	 *		    "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		    "/products-list/<name>/<color>"
+	 *		)`
+	 * @param string $matchPattern
+	 * @param array[] $matchPatternParams
+	 * @return string[]
+	 */
+	protected function compileMatchAndReversePattern (& $matchPattern, & $matchPatternParams, $compileReverse) {
+		$constraints = $this->constraints;
+		$defaultConstraint = static::$DefaultConstraint;
+		$trailingSlash = FALSE;
+		$reverse = '';
+		if ($matchPatternParams) {
+			$match = mb_substr($matchPattern, 0, $matchPatternParams[0][2]);
+			if ($compileReverse) {
+				$reverse = $match;
+				$this->reverseParams = array();
+			}
+			foreach ($matchPatternParams as $i => $matchPatternParam) {
+				list($paramName, $matchedParamName, $index, $length, $greedy) = $matchPatternParam;
+				$customConstraint = isset($constraints[$paramName]);
+				if (!$customConstraint && $greedy) $defaultConstraint = '.*';
+				if (isset($matchPatternParams[$i + 1])) {
+					// if there is next matched param:
+					$nextItemStart = $matchPatternParams[$i + 1][2];
+					$start = $index + $length;
+					$urlPartBeforeNext = mb_substr($matchPattern, $start, $nextItemStart - $start);
+					$urlPartBeforeNextReverse = $urlPartBeforeNext;
+				} else {
+					// else if this param is the last one:
+					$urlPartBeforeNext = mb_substr($matchPattern, $index + $length);
+					$urlPartBeforeNextReverse = $urlPartBeforeNext;
+					// if there is nothing more in url or just only a slash char `/`:
+					if ($urlPartBeforeNext == '' || $urlPartBeforeNext == '/') {
+						$trailingSlash = TRUE;
+						$this->lastPatternParam = $paramName;
+						$urlPartBeforeNext = '';
+					};
+				}
+				$constraint = $customConstraint
+					? $constraints[$paramName]
+					: $defaultConstraint;
+				$match .= '(?' . $matchedParamName . $constraint . ')' . $urlPartBeforeNext;
+				if ($compileReverse) {
+					$reverse .= $matchedParamName . $urlPartBeforeNextReverse;
+					$this->reverseParams[] = $paramName;
+				}
+			}
+			$matchPattern = $match;
+		} else {
+			if ($matchPattern == '/') {
+				$reverse = '/';
+				$this->reverseParams = array();
+			} else {
+				$lengthWithoutLastChar = mb_strlen($matchPattern) - 1;
+				if (mb_strrpos($matchPattern, '/') === $lengthWithoutLastChar) {
+					$matchPattern = mb_substr($matchPattern, 0, $lengthWithoutLastChar);
+					$trailingSlash = TRUE;
+				}
+				if ($compileReverse) {
+					$reverse = $this->pattern;
+					$this->reverseParams = array();
+				} else {
+					$reverse = '';
+				}
+			}
+		}
+		return array(
+			'#'
+			. (mb_strpos($matchPattern, '/') === 0 ? '^' : '')
+			. $matchPattern
+			. ($trailingSlash ? '(?=/$|$)' : '$')
+			. '#',
+			$reverse
+		);
+	}
+
+	/**
+	 * Internal method, always called from `\MvcCore\Router::Matches();` request routing,
+	 * when route has been matched and when there is still no `\MvcCore\Route::$reverseParams`
+	 * defined (`NULL`). It means that matched route has been defined by match and reverse
+	 * patterns, because there was no pattern property parsing to prepare values bellow before.
+	 * @return void
+	 */
+	protected function initReverse () {
+		$index = 0;
+		$reverse = & $this->reverse;
+		if ($this->reverse == NULL && $this->pattern !== NULL)
+			return $this->initMatch();
+		$reverseParams = array();
+		$closePos = -1;
+		$paramName = '';
+		while (TRUE) {
+			$openPos = mb_strpos($reverse, '<', $index);
+			if ($openPos === FALSE) break;
+			$openPosPlusOne = $openPos + 1;
+			$closePos = mb_strpos($reverse, '<', $openPosPlusOne);
+			if ($closePos === FALSE) break;
+			$paramName = mb_substr($reverse, $openPosPlusOne, $closePos - $openPosPlusOne);
+			$reverseParams[] = $paramName;
+		}
+		$this->reverseParams = $reverseParams;
+		// Init `\MvcCore\Route::$lastPatternParam`.
+		// Init that property only if this function is
+		// called from `\MvcCore\Route::Matches()`, after current route has been matched
+		// and also when there were configured for this route `\MvcCore\Route::$match`
+		// value and `\MvcCore\Route::$reverse` value together:
+		if ($this->lastPatternParam === NULL && $paramName) {
+			$reverseLengthMinusTwo = mb_strlen($reverse) - 2;
+			$lastCharIsSlash = mb_substr($reverse, $reverseLengthMinusTwo, 1) == '/';
+			$closePosPlusOne = $closePos + 1;
+			if ($closePosPlusOne === $reverseLengthMinusTwo + 1 || ($lastCharIsSlash && $closePosPlusOne === $reverseLengthMinusTwo)) {
+				$this->lastPatternParam = $paramName;
+			}
+		}
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/ISession.php');
+//include_once('Application.php');
+//include_once('Request.php');
+
+/**
+ * Responsibility - session data management - starting, writing and expirations.
+ * - Safe start (only once)
+ *   - By `\MvcCore\Interfaces\ISession::Start()`
+ *     - Called by `\MvcCore\Application::GetInstance()->SessionStart();`
+ *	     - Called by `\MvcCore\Controller::Init();`.
+ * - Session writing and closing at request end:
+ *   - In `\MvcCore\Interfaces\ISession::Close()`
+ *     - Called over `register_shutdown_function()`
+ *       from `\MvcCore::Terminate();`
+ * - Session namespaces management:
+ *   - Variables expiration by seconds.
+ *   - Variables expiration by request hoops.
+ */
+class Session extends \ArrayObject implements Interfaces\ISession
+{
+
+	/**
+	 * Default session namespace name.
+	 * @var string
+	 */
+	protected $__name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME;
+
+	/**
+	 * Static boolean about if session has been allready started or not.
+	 * @var bool
+	 */
+	protected static $started = FALSE;
+
+	/**
+	 * Metadata array or stdClass with all MvcCore namespaces metadata information:
+	 * - `"names"`			=> array with all presented records names
+	 * - `"hoops"`			=> array with all records and their page requests count to expire
+	 * - `"expirations"`	=> array with all records expiration times
+	 * This metadata arrays are decoded from `$_SESSION` storrage only once at in session start.
+	 * @var array|\stdClass
+	 */
+	protected static $meta = array();
+
+	/**
+	 * Array of created `\MvcCore\Interfaces\ISession` instances,
+	 * keys in this array storrage are session namespaces names.
+	 * @var \MvcCore\Interfaces\ISession[]
+	 */
+	protected static $instances = array();
+
+	/**
+	 * Unix epoch for current request session start moment.
+	 * @var int
+	 */
+	protected static $sessionStartTime = 0;
+
+	/**
+	 * Session safe start only once.
+	 * - called by `\MvcCore\Application::GetInstance()->SessionStart();`
+	 *   - called by `\MvcCore\Controller::Init();`
+	 * It's free to call this function anywhere sooner for custom purposes,
+	 * for example in `Bootstrap.php` by: `\MvcCore\Application::GetInstance()->SessionStart();`
+	 * @return void
+	 */
+	public static function Start (& $session = array()) {
+		if (static::$started) return;
+		if (\MvcCore\Application::GetInstance()->GetRequest()->IsInternalRequest() === TRUE) return;
+		$sessionNotStarted = function_exists('session_status')
+			? session_status() == PHP_SESSION_NONE
+			: session_id() == '' ;
+		if ($sessionNotStarted) {
+			session_start();
+			static::$sessionStartTime = time();
+			static::setUpMeta();
+			static::setUpData();
+		}
+		static::$started = TRUE;
+	}
+
+	/**
+	 * Get unix epoch for current request session start moment.
+	 * This method is used for debuging purposses.
+	 * @return int
+	 */
+	public static function GetSessionStartTime () {
+		return static::$sessionStartTime;
+	}
+
+	/**
+	 * Get session metadata about session namespaces.
+	 * This method is used for debuging purposses.
+	 * @return \stdClass
+	 */
+	public static function GetSessionMetadata () {
+		return static::$meta;
+	}
+
+	/**
+	 * Set up MvcCore session namespaces metadata
+	 * about namespaces names, hoops and expirations.
+	 * Called only once at session start by `\MvcCore\Interfaces\ISession::Start();`.
+	 * @return void
+	 */
+	protected static function setUpMeta () {
+		$metaKey = static::SESSION_METADATA_KEY;
+		$meta = array();
+		if (isset($_SESSION[$metaKey]))
+			$meta = @unserialize($_SESSION[$metaKey]);
+		if (!$meta)
+			$meta = array(
+				'names'			=> array(),
+				'hoops'			=> array(),
+				'expirations'	=> array(),
+			);
+		$meta = (object) $meta;
+		static::$meta = & $meta;
+	}
+
+	/**
+	 * Set up namespaces data - only if data has not been expired yet,
+	 * if data has been expired, unset data from
+	 * `\MvcCore\Interfaces\ISession::$meta` and `$_SESSION` storrage.
+	 * Called only once at session start by `\MvcCore\Interfaces\ISession::Start();`.
+	 * @return void
+	 */
+	protected static function setUpData () {
+		$hoops = & static::$meta->hoops;
+		$names = & static::$meta->names;
+		$expirations = & static::$meta->expirations;
+		foreach ($hoops as $name => $hoop) {
+			$hoops[$name] -= 1;
+		}
+		foreach ($names as $name => $one) {
+			$unset = array();
+			if (isset($hoops[$name])) {
+				if ($hoops[$name] < 0) $unset[] = 'hoops';
+			}
+			if (isset($expirations[$name])) {
+				if ($expirations[$name] < static::$sessionStartTime) $unset[] = 'expirations';
+			}
+			if ($unset) {
+				$currentErrRepLevels = error_reporting();
+				error_reporting(0);
+				foreach ($unset as $unsetKey) {
+					if (isset(static::$meta->$unsetKey) && isset(static::$meta->$unsetKey[$name]))
+						unset(static::$meta->$unsetKey[$name]);
+				}
+				error_reporting($currentErrRepLevels);
+				unset($names[$name]);
+				unset($_SESSION[$name]);
+			}
+		}
+	}
+
+	/**
+	 * Write and close session in `\MvcCore::Terminate();`.
+	 * Serialize all metadata and call php function to write session into php session storrage.
+	 * (HDD, Redis, database, etc., depends on php configuration).
+	 * @return void
+	 */
+	public static function Close () {
+		register_shutdown_function(function () {
+			foreach (static::$instances as & $instance)
+				if (count((array) $_SESSION[$instance->__name]) === 0)
+					// if there is nothing in namespace - destroy it. It's useless.
+					$instance->Destroy();
+			$metaKey = static::SESSION_METADATA_KEY;
+			$_SESSION[$metaKey] = serialize(static::$meta);
+			@session_write_close();
+		});
+	}
+
+	/**
+	 * Get new or existing MvcCore session namespace instance.
+	 * @param string $name
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public static function & GetNamespace (
+		$name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME
+	) {
+		if (!isset(static::$instances[$name])) {
+			static::$instances[$name] = new static($name);
+		}
+		return static::$instances[$name];
+	}
+
+	/**
+	 * Get new or existing MvcCore session namespace instance.
+	 * @param string $name
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public function __construct ($name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME) {
+		if (!static::$started) static::Start();
+		$this->__name = $name;
+		static::$meta->names[$name] = 1;
+		if (!isset($_SESSION[$name])) $_SESSION[$name] = array();
+		static::$instances[$name] = $this;
+	}
+
+	/**
+	 * Set MvcCore session namespace expiration by page request(s) count.
+	 * @param int $hoops
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public function & SetExpirationHoops ($hoops) {
+		static::$meta->hoops[$this->__name] = $hoops;
+		return $this;
+	}
+
+	/**
+	 * Set MvcCore session namespace expiration by expiration seconds.
+	 * @param int $seconds
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public function & SetExpirationSeconds ($seconds) {
+		static::$meta->expirations[$this->__name] = static::$sessionStartTime + $seconds;
+		return $this;
+	}
+
+	/**
+	 * Destroy whole session namespace in `$_SESSION` storrage
+	 * and internal static storrages.
+	 * @return void
+	 */
+	public function Destroy () {
+		$name = $this->__name;
+		$names = & static::$meta->names;
+		$hoops = & static::$meta->hoops;
+		$expirations = & static::$meta->expirations;
+		$instances = & static::$instances;
+		if (isset($names[$name])) unset($names[$name]);
+		if (isset($hoops[$name])) unset($hoops[$name]);
+		if (isset($expirations[$name])) unset($expirations[$name]);
+		if (isset($_SESSION[$name])) unset($_SESSION[$name]);
+		if (isset($instances[$name])) unset($instances[$name]);
+	}
+
+	/**
+	 * Destroy all existing session namespaces in `$_SESSION` storrage
+	 * and internal static storrages, destroy whole PHP session.
+	 * @return void
+	 */
+	public static function DestroyAll () {
+		session_destroy();
+		$_SESSION = NULL;
+		static::$started = false;
+		$response = \MvcCore\Application::GetInstance()->GetResponse();
+		if (!$response->IsSent()) {
+			$params = session_get_cookie_params();
+			$response->DeleteCookie(
+				session_name(),
+				$params['path'],
+				$params['domain'],
+				$params['secure']
+			);
+		}
+	}
+
+	/**
+	 * Magic function triggered by: `isset(\MvcCore\Interfaces\ISession->key);`.
+	 * @param string $key
+	 * @return bool
+	 */
+	public function __isset ($key) {
+		return isset($_SESSION[$this->__name][$key]);
+	}
+
+	/**
+	 * Magic function triggered by: `unset(\MvcCore\Interfaces\ISession->key);`.
+	 * @param string $key
+	 * @return void
+	 */
+	public function __unset ($key) {
+		$name = $this->__name;
+		if (isset($_SESSION[$name][$key])) unset($_SESSION[$name][$key]);
+	}
+
+	/**
+	 * Magic function triggered by: `$value = \MvcCore\Interfaces\ISession->key;`.
+	 * @param string $key
+	 * @return mixed
+	 */
+	public function __get ($key) {
+		$name = $this->__name;
+		if (isset($_SESSION[$name][$key])) return $_SESSION[$name][$key];
+		return NULL;
+	}
+
+	/**
+	 * Magic function triggered by: `\MvcCore\Interfaces\ISession->key = "value";`.
+	 * @param string $key
+	 * @param mixed $value
+	 * @return void
+	 */
+	public function __set ($key, $value) {
+		$_SESSION[$this->__name][$key] = $value;
+	}
+
+	/**
+	 * Magic `\ArrayObject` function triggered by: `count(\MvcCore\Interfaces\ISession);`.
+	 * @return int
+	 */
+	public function count () {
+		return count((array) $_SESSION[$this->__name]);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__.'/Interfaces/IRouter.php');
+//include_once(__DIR__.'/Application.php');
+//include_once('Request.php');
+//include_once('Route.php');
+//include_once('Tool.php');
+
+/**
+ * Responsibility - singleton, routes instancing, request routing and url building.
+ * - Application router singleton instance managing.
+ * - Global storage for all configured routes.
+ *	 - Instancing all route(s) from application start
+ *	   configuration somewhere in `Bootstrap` class.
+ * - Global storage for currently matched route.
+ * - Matching proper route object in `\MvcCore\Router::Route();`
+ *   by `\MvcCore\Request::$Path`, always called from core in
+ *   `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+ * - Application url addresses completing:
+ *   - Into `mod_rewrite` form by configured route instances.
+ *   - Into `index.php?` + query string form, containing
+ *     `controller`, `action` and all other params.
+ */
+class Router implements Interfaces\IRouter
+{
+	/**
+	 * Current `\MvcCore\Router` singleton instance storage.
+	 * @var \MvcCore\Router
+	 */
+	protected static $instance;
+
+	/**
+	 * Internally used `\MvcCore\Request` request object reference for:
+	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
+	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
+	 * @var \MvcCore\Request|\MvcCore\Interfaces\IRequest|NULL
+	 */
+	protected $request = NULL;
+
+	/**
+	 * Global application route instances store to match request.
+	 * Keys are route(s) names, values are `\MvcCore\Route` instances.
+	 * @var \MvcCore\Route[]|\MvcCore\Interfaces\IRoute[]
+	 */
+	protected $routes = array();
+
+	/**
+	 * Global application route instances store to complete url addresses.
+	 * Keys are route(s) names and `Controller:Action` combinations,
+	 * values are `\MvcCore\Route` instances.
+	 * @var \MvcCore\Route[]
+	 */
+	protected $urlRoutes = array();
+
+	/**
+	 * Matched route by `\MvcCore\Router::Match();` processing or NULL if no match.
+	 * By this route, there is created and dispatched controller lifecycle by core.
+	 * @var \MvcCore\Route|\MvcCore\Interfaces\IRoute
+	 */
+	protected $currentRoute = NULL;
+
+	/**
+	 * `TRUE` if request has to be automaticly dispatched as default
+	 * `Index:Index` route, if there was no route matching current request
+	 * and if request was not `/` (homepage) but `/something-more`.
+	 * Default value: `FALSE`.
+	 * @var bool
+	 */
+	protected $routeToDefaultIfNotMatch = FALSE;
+
+	/**
+	 * All cleaned request params for chars to prevent XSS atacks.
+	 * @var array|NULL
+	 */
+	protected $cleanedRequestParams = NULL;
+
+	/**
+	 * Reference to singleton instance in `\MvcCore\Application::GetInstance();`.
+	 * @var \MvcCore\Application|NULL
+	 */
+	private static $_app = NULL;
+
+	/**
+	 * Reference to `\MvcCore\Application::GetInstance()->GetRouterClass();`.
+	 * @var string|NULL
+	 */
+	private static $_routerClass = NULL;
+
+	/**
+	 * Reference to `\MvcCore\Application::GetInstance()->GetRouteClass();`.
+	 * @var string|NULL
+	 */
+	private static $_routeClass = NULL;
+
+	/**
+	 * Reference to `\MvcCore\Application::GetInstance()->GetToolClass();`.
+	 * @var string|NULL
+	 */
+	private static $_toolClass = NULL;
+
+
+	/**
+	 * Get singleton instance of `\MvcCore\Router` stored always here.
+	 * Optionaly set routes as first argument.
+	 * Create proper router instance type at first time by
+	 * configured class name in `\MvcCore\Application` singleton.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Route[]|array $routes Keyed array with routes,
+	 *										 keys are route names or route
+	 *										`Controller::Action` definitions.
+	 * @return \MvcCore\Router
+	 */
+	public static function & GetInstance ($routes = array()) {
+		if (!static::$instance) {
+			/** @var $app \MvcCore\Application */
+			$app = & \MvcCore\Application::GetInstance();
+			self::$_routeClass = $app->GetRouteClass();
+			self::$_toolClass = $app->GetToolClass();
+			$routerClass = $app->GetRouterClass();
+			self::$_routerClass = & $routerClass;
+			self::$_app = & $app;
+			static::$instance = new $routerClass($routes);
+		}
+		return static::$instance;
+	}
+
+	/**
+	 * Create router as every time new instance,
+	 * no singleton instance management here.
+	 * optionaly set routes as first argument.
+	 * If there is no name configured in route array configuration,
+	 * set route name by given `$routes` array key, if key is not numeric.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`new \MvcCore\Router(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`new \MvcCore\Router(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`new \MvcCore\Router(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`new \MvcCore\Router(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Route[]|array $routes Keyed array with routes,
+	 *										 keys are route names or route
+	 *										`Controller::Action` definitions.
+	 * @return \MvcCore\Router
+	 */
+	public function __construct ($routes = array()) {
+		if ($routes) $this->SetRoutes($routes);
+	}
+
+	/**
+	 * Clear all possible previously configured routes
+	 * and set new given request routes again.
+	 * If there is no name configured in route array configuration,
+	 * set route name by given `$routes` array key, if key is not numeric.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Route[]|array $routes Keyed array with routes,
+	 *										 keys are route names or route
+	 *										`Controller::Action` definitions.
+	 * @return \MvcCore\Router
+	 */
+	public function & SetRoutes ($routes = array()) {
+		$this->routes = array();
+		$this->AddRoutes($routes);
+		return $this;
+	}
+
+	/**
+	 * Append or prepend new request routes.
+	 * If there is no name configured in route array configuration,
+	 * set route name by given `$routes` array key, if key is not numeric.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Route[]|array $routes Keyed array with routes,
+	 *										 keys are route names or route
+	 *										 `Controller::Action` definitions.
+	 * @param bool $prepend	Optional, if `TRUE`, all given routes will
+	 *						be prepended from the last to the first in
+	 *						given list, not appended.
+	 * @return \MvcCore\Router
+	 */
+	public function & AddRoutes (array $routes = array(), $prepend = FALSE) {
+		if ($prepend) $routes = array_reverse($routes);
+		$routeClass = self::$_routeClass;
+		foreach ($routes as $routeName => & $route) {
+			$routeType = gettype($route);
+			$numericKey = is_numeric($routeName);
+			if ($route instanceof \MvcCore\Interfaces\IRoute) {
+				if (!$numericKey) $route->SetName($routeName);
+				$this->AddRoute($route, $prepend);
+			} else if ($routeType == 'array') {
+				if (!$numericKey) $route['name'] = $routeName;
+				$this->AddRoute($routeClass::GetInstance($route), $prepend);
+			} else if ($routeType == 'string') {
+				// route name is always Controller:Action
+				$this->AddRoute($routeClass::GetInstance(array(
+					'name'		=> $routeName,
+					'pattern'	=> $route
+				)), $prepend);
+			} else {
+				throw new \InvalidArgumentException (
+					"[".__CLASS__."] Route is not possible to assign (key: \"$routeName\", value: " . json_encode($route) . ")."
+				);
+			}
+		}
+		return $this;
+	}
+
+	/**
+	 * Append or prepend new request route.
+	 * Set up route by route name into `\MvcCore\Router::$routes` array
+	 * to route incoming request and also set up route by route name and
+	 * by `Controller:Action` combination into `\MvcCore\Router::$urlRoutes`
+	 * array to build url addresses.
+	 *
+	 * Route could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
+	 *		"name"		=> "Products:List",
+	 *		"pattern"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
+	 *		"name"				=> "products_list",
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *	));`
+	 * @param \MvcCore\Route|\MvcCore\Interfaces\IRoute|array $route Route instance or
+	 *																 route config array.
+	 * @param bool $prepend	Optional, if `TRUE`, given route will
+	 *						be prepended, not appended.
+	 * @return \MvcCore\Router
+	 */
+	public function & AddRoute ($route, $prepend = FALSE) {
+		if ($route instanceof \MvcCore\Interfaces\IRoute) {
+			$instance = & $route;
+		} else {
+			$routeClass = self::$_routeClass;
+			$instance = $routeClass::GetInstance($route);
+		}
+		$routeName = $instance->GetName();
+		if ($prepend) {
+			$this->routes = array_merge(array($routeName => $instance), $this->routes);
+		} else {
+			$this->routes[$routeName] = & $instance;
+		}
+		$this->urlRoutes[$routeName] = & $instance;
+		$this->urlRoutes[$instance->GetControllerAction()] = & $instance;
+		return $this;
+	}
+
+	/**
+	 * Get all configured route(s) as `\MvcCore\Route` instances.
+	 * Keys in returned array are route names, values are route objects.
+	 * @return \MvcCore\Route[]
+	 */
+	public function & GetRoutes () {
+		return $this->routes;
+	}
+
+	/**
+	 * Get `\MvcCore\Request` object as reference, used internally for:
+	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
+	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
+	 * @return \MvcCore\Request
+	 */
+	public function & GetRequest () {
+		return $this->request;
+	}
+
+	/**
+	 * Sets up `\MvcCore\Request` object as reference to use it internally for:
+	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
+	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+	 * @param \MvcCore\Request $request
+	 * @return \MvcCore\Router
+	 */
+	public function & SetRequest (\MvcCore\Interfaces\IRequest & $request) {
+		$this->request = & $request;
+		return $this;
+	}
+
+	/**
+	 * Set matched route instance for given request object
+	 * into `\MvcCore\Route::Route();` method. Currently matched
+	 * route is always assigned internally in that method.
+	 * @param \MvcCore\Route $currentRoute
+	 * @return \MvcCore\Router
+	 */
+	public function & SetCurrentRoute (\MvcCore\Interfaces\IRoute $currentRoute) {
+		$this->currentRoute = $currentRoute;
+		return $this;
+	}
+
+	/**
+	 * Get matched route instance reference for given request object
+	 * into `\MvcCore\Route::Route($request);` method. Currently
+	 * matched route is always assigned internally in that method.
+	 * @return \MvcCore\Route
+	 */
+	public function & GetCurrentRoute () {
+		return $this->currentRoute;
+	}
+
+	/**
+	 * Get `TRUE` if request has to be automaticly dispatched as default
+	 * `Index:Index` route, if there was no route matching current request
+	 * and if request was not `/` (homepage) but `/something-more`.
+	 * Default protected property value: `FALSE`.
+	 * @param bool $enable
+	 */
+	public function GetRouteToDefaultIfNotMatch () {
+		return $this->routeToDefaultIfNotMatch;
+	}
+
+	/**
+	 * Set `TRUE` if request has to be automaticly dispatched as default
+	 * `Index:Index` route, if there was no route matching current request
+	 * and if request was not `/` (homepage) but `/something-more`.
+	 * Default protected property value: `FALSE`.
+	 * @param bool $enable
+	 */
+	public function & SetRouteToDefaultIfNotMatch ($enable = TRUE) {
+		$this->routeToDefaultIfNotMatch = $enable;
+		return $this;
+	}
+
+	/**
+	 * Route current application request by configured routes list or by query string data.
+	 * - If there is strictly defined `controller` and `action` value in query string,
+	 *   route request by given values, add new route and complete new empty
+	 *   `\MvcCore\Router::$currentRoute` route with `controller` and `action` values from query string.
+	 * - If there is no strictly defined `controller` and `action` value in query string,
+	 *   go throught all configured routes and try to find matching route:
+	 *   - If there is catched any matching route:
+	 *     - Set up `\MvcCore\Router::$currentRoute`.
+	 *     - Reset `\MvcCore\Request::$params` again with with default route params,
+	 *       with request params itself and with params parsed from matching process.
+	 * - If there is no route matching the request and also if the request is targeting homepage
+	 *   or there is no route matching the request and also if the request is targeting something
+	 *   else and also router is configured to route to default controller and action if no route
+	 *   founded, complete `\MvcCore\Router::$currentRoute` with new empty automaticly created route
+	 *   targeting default controller and action by configuration in application instance (`Index:Index`)
+	 *   and route type create by configured `\MvcCore\Application::$routeClass` class name.
+	 * - Return completed `\MvcCore\Router::$currentRoute` or NULL.
+	 *
+	 * This method is always called from core routing by:
+	 * - `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+	 * @return \MvcCore\Route
+	 */
+	public function & Route () {
+		$request = & $this->request;
+		$requestCtrlName = $request->GetControllerName();
+		$requestActionName = $request->GetActionName();
+		if ($requestCtrlName && $requestActionName) {
+			$this->routeByControllerAndActionQueryString($requestCtrlName, $requestActionName);
+		} else {
+			$this->routeByRewriteRoutes($requestCtrlName, $requestActionName);
+		}
+		if ($this->currentRoute === NULL && (
+			($request->GetPath() == '/' || $request->GetPath() == $request->GetScriptName()) ||
+			$this->routeToDefaultIfNotMatch
+		)) {
+			$routeClass = self::$_routeClass;
+			list($dfltCtrl, $dftlAction) = self::$_app->GetDefaultControllerAndActionNames();
+			$this->currentRoute = $routeClass::GetInstance()
+				->SetName("$dfltCtrl:$dftlAction")
+				->SetController($dfltCtrl)
+				->SetAction($dftlAction);
+			$toolClass = static::$_toolClass;
+			$this->request
+				->SetControllerName($toolClass::GetDashedFromPascalCase($dfltCtrl))
+				->SetActionName($toolClass::GetDashedFromPascalCase($dftlAction));
+		}
+		return $this->currentRoute;
+	}
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array()) {
+		$result = '';
+		$request = & $this->request;
+		if ($this->cleanedRequestParams == NULL) $this->initCleanedRequestParams();
+		if (strpos($controllerActionOrRouteName, ':') !== FALSE) {
+			list($ctrlPc, $actionPc) = explode(':', $controllerActionOrRouteName);
+			if (!$ctrlPc) {
+				$toolClass = self::$_toolClass;
+				$ctrlPc = $toolClass::GetPascalCaseFromDashed($request->GetControllerName());
+			}
+			if (!$actionPc) {
+				$toolClass = self::$_toolClass;
+				$actionPc = $toolClass::GetPascalCaseFromDashed($request->GetActionName());
+			}
+			$controllerActionOrRouteName = "$ctrlPc:$actionPc";
+		} else if ($controllerActionOrRouteName == 'self') {
+			$controllerActionOrRouteName = $this->currentRoute
+				? $this->currentRoute->GetName()
+				: ':';
+			$params = array_merge($this->cleanedRequestParams, $params);
+			unset($params['controller'], $params['action']);
+		}
+		$absolute = FALSE;
+		if ($params && isset($params['absolute'])) {
+			$absolute = (bool) $params['absolute'];
+			unset($params['absolute']);
+		}
+		if (isset($this->urlRoutes[$controllerActionOrRouteName])) {
+			$result = $this->urlByRoute($this->urlRoutes[$controllerActionOrRouteName], $params);
+		} else {
+			$result = $this->urlByQueryString($controllerActionOrRouteName, $params);
+		}
+		if ($absolute) $result = $request->GetDomainUrl() . $result;
+		return $result;
+	}
+
+	/**
+	 * Complete url with all params in query string.
+	 * Example: `"/application/base-bath/index.php?controller=ctrlName&amp;action=actionName&amp;name=cool-product-name&amp;color=blue"`
+	 * @param string $controllerActionOrRouteName
+	 * @param array  $params
+	 * @return string
+	 */
+	protected function urlByQueryString ($controllerActionOrRouteName, $params) {
+		$toolClass = self::$_toolClass;
+		list($ctrlPc, $actionPc) = explode(':', $controllerActionOrRouteName);
+		$result = $this->request->GetBasePath() . $this->request->GetScriptName()
+			. '?controller=' . $toolClass::GetDashedFromPascalCase($ctrlPc)
+			. '&amp;action=' . $toolClass::GetDashedFromPascalCase($actionPc);
+		if ($params) $result .= '&amp;' . http_build_query($params, '', '&amp;');
+		return $result;
+	}
+
+	/**
+	 * Complete url by route instance reverse info.
+	 * Example:
+	 *	Input (`\MvcCore\Route::$Reverse`):
+	 *		`"/products-list/<name>/<color>"`
+	 *	Input ($params):
+	 *		`array(
+	 *			"name"		=> "cool-product-name",
+	 *			"color"		=> "red",
+	 *			"variant"	=> array("L", "XL"),
+	 *		);`
+	 *	Output:
+	 *		`/application/base-bath/products-list/cool-product-name/blue?variant[]=L&amp;variant[]=XL"`
+	 * @param \MvcCore\Route &$route
+	 * @param array  $params
+	 * @return string
+	 */
+	protected function urlByRoute (& $route, $params) {
+		return $this->request->GetBasePath() . $route->Url($params, $this->cleanedRequestParams);
+	}
+
+	/**
+	 * Complete current route in `\MvcCore\Router::$currentRoute`
+	 * and it's params by query string data. If missing `controller`
+	 * or if missing `action` param, use configured default controller and default action name.
+	 * @param string $controllerName
+	 * @param string $actionName
+	 * @return void
+	 */
+	protected function routeByControllerAndActionQueryString ($requestCtrlName, $requestActionName) {
+		$toolClass = self::$_toolClass;
+		$routeClass = self::$_routeClass;
+		list($ctrlDfltName, $actionDfltName) = self::$_app->GetDefaultControllerAndActionNames();
+		$controllerPc = $toolClass::GetPascalCaseFromDashed($requestCtrlName ?: $ctrlDfltName);
+		$actionPc = $toolClass::GetPascalCaseFromDashed($requestActionName ?: $actionDfltName);
+		$this->currentRoute = $routeClass::GetInstance()
+			->SetName('default')
+			->SetController($controllerPc)
+			->SetAction($actionPc);
+		$this->AddRoute($this->currentRoute, TRUE);
+		$this->request
+			->SetControllerName($toolClass::GetDashedFromPascalCase($controllerPc))
+			->SetActionName($toolClass::GetDashedFromPascalCase($actionPc));
+	}
+
+	/**
+	 * Complete `\MvcCore\Router::$currentRoute` and request params by defined routes.
+	 * Go throught all configured routes and try to find matching route.
+	 * If there is catched any matching route - reset `\MvcCore\Request::$params`
+	 * with default route params, with params itself and with params parsed from matching process.
+	 * @param string $controllerName
+	 * @param string $actionName
+	 * @return void
+	 */
+	protected function routeByRewriteRoutes ($requestCtrlName, $requestActionName) {
+		$request = & $this->request;
+		$requestPath = $request->GetPath();
+		/** @var $route \MvcCore\Route */
+		foreach ($this->routes as & $route) {
+			if ($matchedParams = $route->Matches($requestPath)) {
+				$this->currentRoute = & $route;
+				$routeDefaultParams = $route->GetDefaults() ?: array();
+				$newParams = array_merge($routeDefaultParams, $request->GetParams(''), $matchedParams);
+				$request->SetParams($newParams);
+				break;
+			}
+		}
+		if ($this->currentRoute !== NULL) {
+			$toolClass = self::$_toolClass;
+			$routeCtrl = $route->GetController();
+			$routeAction = $route->GetAction();
+			if (!$routeCtrl || !$routeAction) {
+				list($ctrlDfltName, $actionDfltName) = self::$_app->GetDefaultControllerAndActionNames();
+				if (!$routeCtrl)
+					$route->SetController(
+						$requestCtrlName 
+							? $toolClass::GetPascalCaseFromDashed($requestCtrlName) 
+							: $ctrlDfltName
+					);
+				if (!$routeAction)
+					$route->SetAction(
+						$requestActionName 
+							? $toolClass::GetPascalCaseFromDashed($requestActionName) 
+							: $actionDfltName
+						);
+			}
+			$request
+				->SetControllerName($toolClass::GetDashedFromPascalCase($route->GetController()))
+				->SetActionName($toolClass::GetDashedFromPascalCase($route->GetAction()));
+		}
+	}
+
+	/**
+	 * Go throught all query string params and prepare, escape all chars (`<` and `>`)
+	 * to prevent any XSS attacks, when there is used request params to automaticly complete
+	 * remaining param values in url address building process.
+	 * @return void
+	 */
+	protected function initCleanedRequestParams () {
+		$cleanedRequestParams = array();
+		$request = & $this->request;
+		$charsToReplace = array('<' => '&lt;', '>' => '&gt;');
+		$globalGet = & $request->GetGlobalCollection('get');
+		foreach ($globalGet as $rawName => $rawValue) {
+			$paramName = strtr($rawName, $charsToReplace);
+			$cleanedRequestParams[$paramName] = strtr($rawValue, $charsToReplace);
+		}
+		$this->cleanedRequestParams = $cleanedRequestParams;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore {
+
+	//include_once(__DIR__ . '/Interfaces/IDebug.php');
+	//include_once('Application.php');
+	//include_once('Config.php');
+
+	/**
+	 * Responsibility - any devel and logging messages and exceptions printing and logging.
+	 * - Printing any variable in content body.
+	 * - Printing any variable in browser debug bar.
+	 * - Catched exceptions printing.
+	 * - Any variables and catched exceptions file logging.
+	 * - Time printing.
+	 */
+	class Debug implements Interfaces\IDebug
+	{
+		/**
+		 * Email recepient to send information about exceptions or errors,
+		 * `"admin@localhost"` by default.
+		 * @var string
+		 */
+		public static $EmailRecepient = 'admin@localhost';
+
+		/**
+		 * Relative path from app root to store any log information,
+		 * `"/Var/Logs"` by default.
+		 * @var string
+		 */
+		public static $LogDirectory = '/Var/Logs';
+
+		/**
+		 * Initialize global development shorthands.
+		 * @var callable
+		 */
+		public static $InitGlobalShortHands = array();
+
+		/**
+		 * Semaphore to execute `\MvcCore\Debug::Init();` method only once.
+		 * `TRUE` if development, `FALSE` if anything else.
+		 * @var boolean
+		 */
+		protected static $development = NULL;
+
+		/**
+		 * Debuging and loging handlers, this should be customized in extended class.
+		 * @var array
+		 */
+		protected static $handlers = array(
+			'timer'				=> 'timerHandler',
+			'dump'				=> 'dumpHandler',
+			'barDump'			=> 'dumpHandler',
+			'log'				=> 'dumpHandler',
+			'fireLog'			=> 'dumpHandler',
+			'exceptionHandler'	=> 'exceptionHandler',
+			'shutdownHandler'	=> 'ShutdownHandler',
+		);
+
+		/**
+		 * Store for printed dumps by output buffering to send it at response end.
+		 * @var array
+		 */
+		protected static $dumps = array();
+
+		/**
+		 * Store timers start points.
+		 * @var array
+		 */
+		protected static $timers = array();
+
+		/**
+		 * `TRUE` for cofigured debug class as `\MvcCore\Debug`,
+		 * `FALSE` for any other configured extension.
+		 * @var bool
+		 */
+		protected static $originalDebugClass = TRUE;
+
+		/**
+		 * `TRUE` if debug class is MvcCore original debug class and
+		 * if logs directory has been already initialized.
+		 * @var bool
+		 */
+		protected static $logDirectoryInitialized = FALSE;
+
+		/**
+		 * Reference to singleton instance in `\MvcCore\Application::GetInstance();`.
+		 * @var \MvcCore\Application
+		 */
+		protected static $app;
+
+		/**
+		 * Reference to `\MvcCore\Application::GetInstance()->GetRequest()->GetMicrotime();`.
+		 * @var float
+		 */
+		protected static $requestBegin;
+
+		/**
+		 * Initialize debugging and logging, once only.
+		 * @param bool $forceDevelopmentMode If defined as `TRUE` or `FALSE`,
+		 *                                   debug mode will be set not by config but by this value.
+		 * @return void
+		 */
+		public static function Init ($forceDevelopmentMode = NULL) {
+			if (static::$development !== NULL) return;
+
+			static::$app = & \MvcCore\Application::GetInstance();
+			static::$requestBegin = static::$app->GetRequest()->GetMicrotime();
+
+			if (gettype($forceDevelopmentMode) == 'boolean') {
+				static::$development = $forceDevelopmentMode;
+			} else {
+				$configClass = static::$app->GetConfigClass();
+				static::$development = $configClass::IsDevelopment(TRUE);
+			}
+
+			// do not initialize log directory here every time, initialize log
+			//directory only if there is necessary to log something - later.
+
+			static::$originalDebugClass = ltrim(static::$app->GetDebugClass(), '\\') == __CLASS__;
+			static::initHandlers();
+			$initGlobalShortHandsHandler = static::$InitGlobalShortHands;
+			$initGlobalShortHandsHandler(static::$development);
+		}
+
+		/**
+		 * Starts/stops stopwatch.
+		 * @param  string $name Time pointer name.
+		 * @return float        Elapsed seconds.
+		 */
+		public static function Timer ($name = NULL) {
+			return static::BarDump(
+				call_user_func(static::$handlers['timer'], $name),
+				$name,
+				array('backtraceIndex' => 3)
+			);
+		}
+
+		/**
+		 * Dumps information about any variable in readable format and return it.
+		 * In non-development mode - store dumped variable in `debug.log`.
+		 * @param  mixed  $value	Variable to dump.
+		 * @param  bool   $return	Return output instead of printing it.
+		 * @param  bool   $exit		`TRUE` for last dump call by `xxx();` method to dump and `exit;`.
+		 * @return mixed			Variable itself or dumped variable string.
+		 */
+		public static function Dump ($value, $return = FALSE, $exit = FALSE) {
+			if (static::$originalDebugClass) {
+				$options = array('store' => FALSE, 'backtraceIndex' => 1);
+				if ($exit) $options['lastDump'] = TRUE;
+				$dumpedValue = static::dumpHandler($value, NULL, $options);
+			} else {
+				$dumpedValue = @call_user_func(static::$handlers['dump'], $value, $return);
+			}
+			if ($return) return $dumpedValue;
+			if (static::$development) {
+				echo $dumpedValue;
+			} else {
+				static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::DEBUG);
+			}
+			return $value;
+		}
+
+		/**
+		 * Dump any variable with output buffering in browser debug bar.
+		 * In non-development mode - store dumped variable in `debug.log`.
+		 * Return printed variable as string.
+		 * @param  mixed	$value		Variable to dump.
+		 * @param  string	$title		Optional title.
+		 * @param  array	$options	Dumper options.
+		 * @return mixed				Variable itself.
+		 */
+		public static function BarDump ($value, $title = NULL, $options = array()) {
+			if (static::$originalDebugClass) {
+				if (!isset($options['backtraceIndex'])) $options['backtraceIndex'] = 1;
+				$options['store'] = static::$development;
+				$dumpedValue = static::dumpHandler($value, $title, $options);
+			} else {
+				$dumpedValue = @call_user_func_array(static::$handlers['barDump'], func_get_args());
+			}
+			if (!static::$development) {
+				static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::DEBUG);
+			}
+			return $value;
+		}
+
+		/**
+		 * Logs any message or exception with log datetime, in `*.log` file
+		 * by given log level, in configured logging directory.
+		 * @param  string|\Exception|\Throwable	$value
+		 * @param  string						$priority
+		 * @return string						Logging filename fullpath.
+		 */
+		public static function Log ($value, $priority = \MvcCore\Interfaces\IDebug::INFO) {
+			if (static::$originalDebugClass) {
+				$dumpedValue = static::dumpHandler(
+					$value, NULL, array('store' => FALSE, 'backtraceIndex' => 1)
+				);
+				return static::storeLogRecord($dumpedValue, $priority);
+			} else {
+				return @call_user_func_array(static::$handlers['log'], func_get_args());
+			}
+		}
+
+		/**
+		 * Sends given `$value` into FireLogger console.
+		 * @param	mixed	$value	Message to log.
+		 * @param	string	$priority	Priority.
+		 * @return	bool				Was successful?
+		 */
+		public static function FireLog ($value, $priority = \MvcCore\Interfaces\IDebug::DEBUG) {
+			// TODO: implement simple firelog
+			$args = func_get_args();
+			if (static::$originalDebugClass) {
+				$args = array($value, NULL, array('priority' => $priority));
+			}
+			return call_user_func_array(static::$handlers['fireLog'], $args);
+		}
+
+		/**
+		 * Print catched exception in browser.
+		 * In non-development mode - store dumped exception in `exception.log`.
+		 * @param \Exception|\Error|\Throwable|array $exception
+		 * @param bool $exit
+		 * @return void
+		 */
+		public static function Exception ($exception, $exit = TRUE) {
+			if (static::$originalDebugClass) {
+				$dumpedValue = static::dumpHandler(
+					$exception, NULL, array('store' => !$exit, 'backtraceIndex' => 1)
+				);
+				if (static::$development) {
+					echo $dumpedValue;
+				} else {
+					static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::EXCEPTION);
+				}
+			} else {
+				@call_user_func_array(static::$handlers['exceptionHandler'], func_get_args());
+			}
+		}
+
+		/**
+		 * Print all stored dumps at the end of sended response body as browser debug bar.
+		 * This function is called from registered shutdown handler by
+		 * `register_shutdown_function()` from `\MvcCore\Debug::initHandlers();`.
+		 * @return void
+		 */
+		public static function ShutdownHandler () {
+			$error = error_get_last();
+			if (isset($error['type'])) static::Exception($error);
+			$dumpsCount = count(self::$dumps);
+			if (!$dumpsCount) return;
+			$app = \MvcCore\Application::GetInstance();
+			$appRoot = $app->GetRequest()->GetAppRoot();
+			$response = $app->GetResponse();
+			if ($response->HasHeader('Content-Type') && !$response->IsHtmlOutput()) return;
+			$dumps = '';
+			$lastDump = FALSE;
+			foreach (self::$dumps as $values) {
+				$options = $values[2];
+				$dumps .= '<div class="item">';
+				if ($values[1] !== NULL) {
+					$dumps .= '<pre class="title">'.$values[1].'</pre>';
+				}
+				$file = $options['file'];
+				$line = $options['line'];
+				$displayedFile = str_replace('\\', '/', $file);
+				if (strpos($displayedFile, $appRoot) === 0) {
+					$displayedFile = substr($displayedFile, strlen($appRoot));
+				}
+				$link = '<a class="editor" href="editor://open/?file='
+					.rawurlencode($file).'&amp;line='.$line.'">'
+						.$displayedFile.':'.$line
+					.'</a>';
+				$dumps .= '<div class="value">'
+					.preg_replace("#\[([^\]]*)\]=>([^\n]*)\n(\s*)#", "[$1] => ",
+						str_replace("<required>","&lt;required&gt;",$link.$values[0])
+					)
+					.'</div></div>';
+				if (isset($values[2]['lastDump']) && $values[2]['lastDump']) $lastDump = TRUE;
+			}
+			$template = \Packager_Php_Wrapper::FileGetContents(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore'.'/debug.html');
+			echo str_replace(
+				array('%mvccoreDumps%', '%mvccoreDumpsCount%', '%mvccoreDumpsClose%'),
+				array($dumps, count(self::$dumps), $lastDump ? 'q(!0);' : 'q();'),
+				$template
+			);
+		}
+
+		/**
+		 * Starts/stops stopwatch.
+		 * @param  string  Name.
+		 * @return float   Elapsed seconds.
+		 */
+		protected static function timerHandler ($name = NULL) {
+			$now = microtime(TRUE);
+			if ($name === NULL) return $now - static::$requestBegin;
+			$difference = round((isset(static::$timers[$name]) ? $now - static::$timers[$name] : 0) * 1000) / 1000;
+			static::$timers[$name] = $now;
+			return $difference;
+		}
+
+		/**
+		 * Dump any variable as string with output buffering,
+		 * store result for printing later. Return printed variable string.
+		 * @param  mixed	$value		Variable to dump.
+		 * @param  string	$title		Optional title.
+		 * @param  array	$options	Dumper options.
+		 * @return string
+		 */
+		protected static function dumpHandler ($value, $title = NULL, $options = array()) {
+			ob_start();
+			var_dump($value);
+			// format xdebug first small element with file:
+			$content = preg_replace("#\</small\>\n#", '</small>', ob_get_clean(), 1);
+			$content = preg_replace("#\<small\>([^\>]*)\>#", '', $content, 1);
+			$backtraceIndex = isset($options['backtraceIndex']) ? $options['backtraceIndex'] : 2 ;
+			$backtrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $backtraceIndex + 1);
+			$originalPlace = (object) $backtrace[$backtraceIndex];
+			$options['file'] = $originalPlace->file;
+			$options['line'] = $originalPlace->line;
+			if ($options['store']) self::$dumps[] = array($content, $title, $options);
+			return $content;
+		}
+
+		/**
+		 * Store given log record in text file.
+		 * Return full path where the message has been writen.
+		 * @param mixed $value
+		 * @param string $priority
+		 * @return string
+		 */
+		protected static function storeLogRecord ($value, $priority) {
+			$content = date('[Y-m-d H-i-s]') . "\n" . $value;
+			$content = preg_replace("#\n(\s)#", "\n\t$1", $content) . "\n";
+			if (!static::$logDirectoryInitialized) static::initLogDirectory();
+			$fullPath = static::$LogDirectory . '/' . $priority . '.log';
+			if (!\Packager_Php_Wrapper::IsDir(static::$LogDirectory)) {
+				\Packager_Php_Wrapper::MkDir(static::$LogDirectory);
+				if (!is_writable(static::$LogDirectory)) {
+					try {
+						chmod(static::$LogDirectory, 0777);
+					} catch (\Exception $e) {
+						die('['.__CLASS__.'] ' . $e->getMessage());
+					}
+				}
+			}
+			file_put_contents($fullPath, $content, FILE_APPEND);
+			return $fullPath;
+		}
+
+		/**
+		 * Initialize debuging and logging handlers.
+		 * @return void
+		 */
+		protected static function initHandlers () {
+			$className = get_called_class();
+			foreach (static::$handlers as $key => $value) {
+				static::$handlers[$key] = array($className, $value);
+			}
+			register_shutdown_function(static::$handlers['shutdownHandler']);
+		}
+
+		/**
+		 * If log directory doesn't exist, create new directory - relative from app root.
+		 * @param string $logDirAbsPath Absolute directory path.
+		 * @return void
+		 */
+		protected static function initLogDirectory () {
+			if (static::$logDirectoryInitialized) return;
+			$configClass = static::$app->GetConfigClass();
+			$cfg = $configClass::GetSystem();
+			$logDirRelPath = static::$LogDirectory;
+			if ($cfg !== FALSE && isset($cfg->debug)) {
+				$cfgDebug = & $cfg->debug;
+				if (isset($cfgDebug->emailRecepient))
+					static::$EmailRecepient = $cfgDebug->emailRecepient;
+				if (isset($cfgDebug->logDirectory))
+					$logDirRelPath = $cfgDebug->logDirectory; // relative path from app root
+			}
+
+			$scriptFilename = $_SERVER['SCRIPT_FILENAME'];
+			$scriptPath = php_sapi_name() == 'cli'
+				? str_replace('\\', '/', getcwd()) . '/' . $scriptFilename
+				: str_replace('\\', '/', $scriptFilename);
+			$lastSlashPos = strrpos($scriptPath, '/');
+			$appRoot = substr($scriptPath, 0, $lastSlashPos !== FALSE ? $lastSlashPos : strlen($scriptPath));
+			$logDirAbsPath = $appRoot . $logDirRelPath;
+			static::$LogDirectory = $logDirAbsPath;
+
+			if (!\Packager_Php_Wrapper::IsDir($logDirAbsPath)) \Packager_Php_Wrapper::MkDir($logDirAbsPath, 0777, TRUE);
+			if (!is_writable($logDirAbsPath)) {
+				try {
+					chmod($logDirAbsPath, 0777);
+				} catch (\Exception $e) {
+					die('['.__CLASS__.'] ' . $e->getMessage());
+				}
+			}
+
+			static::$logDirectoryInitialized = TRUE;
+		}
+	}
+}
+
+namespace {
+	\MvcCore\Debug::$InitGlobalShortHands = function ($development) {
+		/**
+		 * Dump any variable with output buffering in browser debug bar,
+		 * store result for printing later. Return printed variable as string.
+		 * @param  mixed	$value		Variable to dump.
+		 * @param  string	$title		Optional title.
+		 * @param  array	$options	Dumper options.
+		 * @return mixed				Variable itself.
+		 */
+		function x ($value, $title = NULL, $options = array()) {
+			$options['backtraceIndex'] = 2;
+			return \MvcCore\Debug::BarDump($value, $title, $options);
+		}
+		/**
+		 * Dumps multiple variables with output buffering in browser debug bar.
+		 * store result for printing later.
+		 * @param  ...mixed  Variables to dump.
+		 * @return void
+		 */
+		function xx () {
+			$args = func_get_args();
+			foreach ($args as $arg) \MvcCore\Debug::BarDump($arg, NULL, array('backtraceIndex' => 2));
+		}
+		if ($development) {
+			/**
+			 * Dump variables and die. If no variable, throw stop exception.
+			 * @param  ...mixed  $args	Variables to dump.
+			 * @throws \Exception
+			 * @return void
+			 */
+			function xxx (/*...$args*/) {
+				$args = func_get_args();
+				if (count($args) === 0) {
+					throw new \ErrorException('Stopped.', 500);
+				} else {
+					\MvcCore\Application::GetInstance()->GetResponse()->SetHeader('Content-Type', 'text/html');
+					@header('Content-Type: text/html');
+					echo '<pre><code>';
+					foreach ($args as $arg) {
+						$dumpedArg = \MvcCore\Debug::Dump($arg, TRUE, TRUE);
+						echo preg_replace("#\[([^\]]*)\]=>([^\n]*)\n(\s*)#", "[$1] => ", $dumpedArg);
+						echo '</code></pre>';
+					}
+				}
+				exit;
+			}
+		} else {
+			/**
+			 * Log variables and die. If no variable, throw stop exception.
+			 * @param  ...mixed  $args	Variables to dump.
+			 * @throws \Exception
+			 * @return void
+			 */
+			function xxx (/*...$args*/) {
+				$args = func_get_args();
+				if (count($args) > 0)
+					foreach ($args as $arg)
+						\MvcCore\Debug::Log($arg, \MvcCore\Interfaces\IDebug::DEBUG);
+				echo 'Error 500 - Stopped.';
+				exit;
+			}
+		}
+	};
+}
+namespace App\Controllers{
+
+use \MvcCore\Ext\Form,
+	\MvcCore\Ext\Auth;
+
+class Base extends \MvcCore\Controller
+{
+	/** @var \MvcCore\Ext\Auth\Virtual\User */
+	protected $user = null;
+
+	public function Init() {
+		parent::Init();
+		$this->user = Auth::GetInstance()->GetUser();
+		Form::AddCsrfErrorHandler(function (Form & $form, $errorMsg) {
+			Auth\User::ClearFromSession();
+			self::Redirect($this->Url(
+				'Index:Index',
+				array('absolute' => TRUE, 'sourceUrl'	=> urlencode($form->ErrorUrl))
+			));
+		});
+	}
+	public function PreDispatch () {
+		parent::PreDispatch();
+		if ($this->viewEnabled) {
+			$this->_preDispatchSetUpAuth();
+			$this->_preDispatchSetUpBundles();
+		}
+	}
+	private function _preDispatchSetUpAuth () {
+		// init user in view
+		$this->view->User = $this->user;
+		// customize sign out form if necessary, set it into view
+		$signOutForm = NULL;
+		if ($this->user) {
+			/** @var $signOutForm \MvcCore\Ext\Auth\SignOutForm */
+			$signOutForm = Auth::GetInstance()->GetForm()
+				// initialize fields
+				->Init()
+				// set signed out url to homepage
+				->SetDefaults(array(
+					'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
+				));
+			$signOutForm
+				// replace sign out <button> tag to sign out <input> tag
+				->RemoveField(
+					$signOutForm->GetFirstFieldsByClass(Form\SubmitButton::class)->Name
+				)
+				->AddField(new Form\SubmitInput(array(
+					'name'		=> 'send',
+					'value'		=> 'Sign Out',
+					'cssClasses'=> array('text-link')
+				))
+			);
+		}
+		$this->view->SignOutForm = $signOutForm;
+	}
+	private function _preDispatchSetUpBundles () {
+		\MvcCore\Ext\View\Helpers\Assets::SetGlobalOptions(array(
+				'cssMinify'	=> 1,
+				'cssJoin'	=> 1,
+				'jsMinify'	=> 1,
+				'jsJoin'	=> 1,
+			));
+		$static = self::$staticPath;
+		$this->view->Css('fixedHead')
+			->AppendRendered($static . '/css/fonts.css')
+			->AppendRendered($static . '/css/all.css')
+			->AppendRendered($static . '/css/button.css');
+		$this->view->Js('fixedHead')
+			->Append($static . '/js/libs/class.min.js')
+			->Append($static . '/js/libs/ajax.min.js')
+			->Append($static . '/js/libs/Module.js');
+		$this->view->Js('varFoot')
+			->Append($static . '/js/Front.js');
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\View\Helpers{
+
+class Assets extends AbstractHelper
+{
+	/**
+	 * MvcCore Extension - View Helper - Assets - version:
+	 * Comparation by PHP function version_compare();
+	 * @see http://php.net/manual/en/function.version-compare.php
+	 */
+	const VERSION = '5.0.0-alpha';
+
+	/**
+	 * Default link group name
+	 * @const string
+	 */
+	const GROUP_NAME_DEFAULT   = 'default';
+
+	/**
+	 * Date format for ?_fmd param timestamp in admin development mode
+	 * @const string
+	 */
+	const FILE_MODIFICATION_DATE_FORMAT = 'Y-m-d_H-i-s';
+
+	/**
+	 * Simple app view object
+	 * @var \MvcCore\View
+	 */
+	protected $view;
+
+	/**
+	 * Called $_linksGroupContainer index throw helper function Css() or Js()
+	 * @var string
+	 */
+	protected $actualGroupName = '';
+
+	/**
+	 * Stream wrapper for actual file save operations (http://php.net/stream_wrapper_register)
+	 * @var string
+	 */
+	protected $streamWrapper = '';
+
+	/**
+	 * Global options about joining and minifying which
+	 * can bee overwrited by single settings throw calling
+	 * for eeample: append() method as another param.
+	 * All possible options and meanings:
+	 * - jsJoin			- boolean	- join JS files in JS group together into single file in tmp dir
+	 * - jsMinify		- boolean	- minify JS file in any group by default (it's possible to override for each file)
+	 * - cssJoin		- boolean	- join CSS files in CSS group together into single file in tmp dir
+	 * - cssMinify		- boolean	- minify CSS file in any group by default (it's possible to override for each file)
+	 * - tmpDir			- string	- relative path to temporary dir from application document root, by default: '/Var/Tmp'
+	 * - fileChecking	- string	- php function names: md5_file | filemtime (filemtime is not working for PHAR packages,
+	 *								  for PHAR packages use slower 'md5_file' value)
+	 * - assetsUrl		- boolean	- strictly enable or disable special packge assets url completion in form:
+	 *								  '?controller=controller&action=asset&path=...', by default, this switch is
+	 *								  automaticly detected by application comple mode. In every compile mode except
+	 *								  development mode and strict hdd mode is this switch configured internaly to true.
+	 * @var array
+	 */
+	protected static $globalOptions = array(
+		'jsJoin'		=> 0,
+		'jsMinify'		=> 0,
+		'cssJoin'		=> 0,
+		'cssMinify'		=> 0,
+		'tmpDir'		=> '/Var/Tmp',
+		'fileChecking'	=> 'filemtime',
+		'assetsUrl'		=> NULL,
+	);
+
+	/**
+	 * Application root directory from request object
+	 * @var string
+	 */
+	protected static $appRoot = NULL;
+
+	/**
+	 * Relative path to store joined and minified files
+	 * from application root directory.
+	 * @var string
+	 */
+	protected static $tmpDir = NULL;
+
+	/**
+	 * Base not compiled url path from localhost if necessary
+	 * @var string
+	 */
+	protected static $basePath = NULL;
+
+	/**
+	 * If true, all messages are logged on hard drive,
+	 * all exceptions are thrown.
+	 * @var boolean
+	 */
+	protected static $logingAndExceptions = TRUE;
+
+	/**
+	 * If true, all assets sources existences are checked
+	 * @var boolean
+	 */
+	protected static $fileChecking = FALSE;
+
+	/**
+	 * If true, all temporary files are rendered
+	 * @var boolean
+	 */
+	protected static $fileRendering = FALSE;
+
+	/**
+	 * If true, method AssetUrl in all css files returns
+	 * to: 'index.php?controller=controller&action=asset&path=...'.
+	 * @var boolean
+	 */
+	protected static $assetsUrlCompletion = NULL;
+
+	/**
+	 * Hash completed as md5(json_encode()) from self::$globalOptions
+	 * @var string
+	 */
+	protected static $systemConfigHash = '';
+
+	/**
+	 * Insert a \MvcCore\View in each helper constructing
+	 * @param \MvcCore\View|\MvcCore\Interfaces\IView $view
+	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper
+	 */
+	public function & SetView (\MvcCore\Interfaces\IView & $view) {
+		parent::SetView($view);
+
+		if (self::$appRoot === NULL) self::$appRoot = $this->request->GetAppRoot();
+		if (self::$basePath === NULL) self::$basePath = $this->request->GetBasePath();
+		$configClass = $view->GetController()->GetApplication()->GetConfigClass();
+		self::$logingAndExceptions = $configClass::IsDevelopment(TRUE);
+		$mvcCoreCompiledMode = $this->controller->GetApplication()->GetCompiled();
+
+		// file checking is true only for classic development mode, not for single file mode
+		if (!$mvcCoreCompiledMode) self::$fileChecking = TRUE;
+
+		// file rendering is true for classic development state, SFU app mode
+		if (!$mvcCoreCompiledMode || $mvcCoreCompiledMode == 'SFU') {
+			self::$fileRendering = TRUE;
+		}
+
+		if (is_null(self::$assetsUrlCompletion)) {
+			// set url adresses complatition to true by default for:
+			// - vsechny package mody mimo PHP_STRICT_HDD a mimo development
+			if ($mvcCoreCompiledMode && $mvcCoreCompiledMode != 'PHP_STRICT_HDD') {
+				self::$assetsUrlCompletion = TRUE;
+			} else {
+				self::$assetsUrlCompletion = FALSE;
+			}
+		}
+
+		self::$systemConfigHash = md5(json_encode(self::$globalOptions));
+
+		return $this;
+	}
+
+	/**
+	 * Set global static options about minifying and joining together
+	 * which can bee overwrited by single settings throw calling for
+	 * example: append() method as another param.
+	 *
+	 * @see \MvcCore\Ext\View\Helpers\Assets::$globalOptions
+	 * @param array $options whether or not to auto escape output
+	 * @return void
+	 */
+	public static function SetGlobalOptions ($options = array()) {
+		self::$globalOptions = array_merge(self::$globalOptions, (array) $options);
+		if (isset($options['assetsUrl']) && !is_null($options['assetsUrl'])) {
+			self::$assetsUrlCompletion = (bool) $options['assetsUrl'];
+		}
+	}
+
+	/**
+	 * Strictly enable/disable assets url completing in form
+	 * '?controller=controller&action=asset&path=...'. Use this
+	 * method only for cases, when you want to pack your application
+	 * and you want to have all url adresses to css/js/fonts and
+	 * images directly to hard drive.
+	 * @param bool $enable
+	 * @return void
+	 */
+	public static function SetAssetUrlCompletion ($enable = TRUE) {
+		self::$assetsUrlCompletion = $enable;
+	}
+
+	/**
+	 * Set global static $basePath to load assets from
+	 * any static cdn domain or any other place.
+	 * @param string $basePath
+	 * @return void
+	 */
+	public static function SetBasePath ($basePath) {
+		self::$basePath = $basePath;
+	}
+
+	/**
+	 * Returns file modification imprint by global settings -
+	 * by md5_file() or by filemtime() - always as a string
+	 * @param string $fullPath
+	 * @return string
+	 */
+	protected static function getFileImprint ($fullPath) {
+		$fileChecking = self::$globalOptions['fileChecking'];
+		if ($fileChecking == 'filemtime') {
+			return \Packager_Php_Wrapper::Filemtime($fullPath);
+		} else {
+			return (string) call_user_func($fileChecking, $fullPath);
+		}
+	}
+
+	/**
+	 * Render assets group.
+	 * @return string
+	 */
+	public function __toString () {
+		return $this->Render();
+	}
+
+	/**
+	 * Completes font or image file url inside CSS/JS file content.
+	 *
+	 * If application compile mode is in development state or packed in strict hdd mode,
+	 * there is generated standard url with \MvcCore\Request::$BasePath (current app location)
+	 * plus called $path param. Because those application compile modes presume by default,
+	 * that those files are placed beside php code on hard drive.
+	 *
+	 * If application compile mode is in php preserve package, php preserve hdd,
+	 * php strict package or in single file url mode, there is generated url by \MvcCore
+	 * in form: '?controller=controller&action=asset&path=...'.
+	 *
+	 * Feel free to change this css/js file url completion to any custom way.
+	 * There could be typically only: "$result = self::$basePath . $path;",
+	 * but if you want to complete url for assets on hard drive or
+	 * to any other cdn place, use \MvcCore\Ext\View\Helpers\Assets::SetBasePath($cdnBasePath);
+	 *
+	 * @param  string $path relative path from application document root with slash in begin
+	 * @return string
+	 */
+	public function AssetUrl ($path = '') {
+		$result = '';
+		if (self::$assetsUrlCompletion) {
+			// for \MvcCore\Application::GetInstance()->GetCompiled() equal to: 'PHAR', 'SFU', 'PHP_STRICT_PACKAGE', 'PHP_PRESERVE_PACKAGE', 'PHP_PRESERVE_HDD'
+			$result = '?controller=controller&action=asset&path=' . $path;
+		} else {
+			// for \MvcCore\Application::GetInstance()->GetCompiled(), by default equal to: '' (development), 'PHP_STRICT_HDD'
+			//$result = self::$basePath . $path;
+			$result = '__RELATIVE_BASE_PATH__' . $path;
+		}
+		return $result;
+	}
+
+	/**
+	 * Completes CSS or JS file url.
+	 *
+	 * If application compile mode is in development state or packed in strict hdd mode,
+	 * there is generated standard url with \MvcCore\Request->GetBasePath() (current app location)
+	 * plus called $path param. Because those application compile modes presume by default,
+	 * that those files are placed beside php code on hard drive.
+	 *
+	 * If application compile mode is in php preserve package, php preserve hdd,
+	 * php strict package or in single file url mode, there is generated url by \MvcCore
+	 * in form: 'index.php?controller=controller&action=asset&path=...'.
+	 *
+	 * Feel free to change this css/js file url completion to any custom way.
+	 * There could be typically only: "$result = self::$basePath . $path;",
+	 * but if you want to complete url for assets on hard drive or
+	 * to any other cdn place, use \MvcCore\Ext\View\Helpers\Assets::SetBasePath($cdnBasePath);
+	 *
+	 * @param  string $path relative path from application document root with slash in begin
+	 * @return string
+	 */
+	public function CssJsFileUrl ($path = '') {
+		$result = '';
+		if (self::$assetsUrlCompletion) {
+			// for \MvcCore\Application::GetInstance()->GetCompiled() equal to: 'PHAR', 'SFU', 'PHP_STRICT_PACKAGE', 'PHP_PRESERVE_PACKAGE', 'PHP_PRESERVE_HDD'
+			$result = $this->view->AssetUrl($path);
+		} else {
+			// for \MvcCore\Application::GetInstance()->GetCompiled() equal to: '' (development), 'PHP_STRICT_HDD'
+			$result = self::$basePath . $path;
+		}
+		return $result;
+	}
+
+	/**
+	 * Get request params controller/action combination string
+	 * @return string
+	 */
+	protected function getCtrlActionKey () {
+		$requestParams = \MvcCore\Application::GetInstance()->GetRequest()->GetParams();
+		return $requestParams['controller'] . '/' . $requestParams['action'];
+	}
+
+	/**
+	 * Look for every item to render if there is any 'doNotMinify' record to render item separately
+	 * @param array $items
+	 * @return array[] $itemsToRenderMinimized $itemsToRenderSeparately
+	 */
+	protected function filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems ($items) {
+		$itemsToRenderMinimized = array();
+		$itemsToRenderSeparately = array(); // some configurations is not possible to render together and minimized
+		// go for every item to complete existing combinations in attributes
+		foreach ($items as & $item) {
+			$itemArr = array_merge((array) $item, array());
+			unset($itemArr['path']);
+			if (isset($itemArr['render'])) unset($itemArr['render']);
+			if (isset($itemArr['external'])) unset($itemArr['external']);
+			$renderArrayKey = md5(json_encode($itemArr));
+			if ($itemArr['doNotMinify']) {
+				if (isset($itemsToRenderSeparately[$renderArrayKey])) {
+					$itemsToRenderSeparately[$renderArrayKey][] = $item;
+				} else {
+					$itemsToRenderSeparately[$renderArrayKey] = array($item);
+				}
+			} else {
+				if (isset($itemsToRenderMinimized[$renderArrayKey])) {
+					$itemsToRenderMinimized[$renderArrayKey][] = $item;
+				} else {
+					$itemsToRenderMinimized[$renderArrayKey] = array($item);
+				}
+			}
+		}
+		return array(
+			$itemsToRenderMinimized,
+			$itemsToRenderSeparately,
+		);
+	}
+
+	/**
+	 * Add to href url file modification param by original file
+	 * @param  string $url
+	 * @param  string $path
+	 * @return string
+	 */
+	protected function addFileModificationImprintToHrefUrl ($url, $path) {
+		$questionMarkPos = strpos($url, '?');
+		$separator = ($questionMarkPos === FALSE) ? '?' : '&';
+		$strippedUrl = $questionMarkPos !== FALSE ? substr($url, $questionMarkPos) : $url ;
+		$srcPath = $this->getAppRoot() . substr($strippedUrl, strlen(self::$basePath));
+		if (self::$globalOptions['fileChecking'] == 'filemtime') {
+			$fileMTime = self::getFileImprint($srcPath);
+			$url .= $separator . '_fmt=' . date(
+				self::FILE_MODIFICATION_DATE_FORMAT,
+				(int)$fileMTime
+			);
+		} else {
+			$url .= $separator . '_md5=' . self::getFileImprint($srcPath);
+		}
+		return $url;
+	}
+
+	/**
+	 * Get indent string
+	 * @param string|int $indent
+	 * @return string
+	 */
+	protected function getIndentString($indent = 0) {
+		$indentStr = '';
+		if (is_numeric($indent)) {
+			$indInt = intval($indent);
+			if ($indInt > 0) {
+				$i = 0;
+				while ($i < $indInt) {
+					$indentStr .= "\t";
+					$i += 1;
+				}
+			}
+		} else if (is_string($indent)) {
+			$indentStr = $indent;
+		}
+		return $indentStr;
+	}
+
+	/**
+	 * Return and store application document root from controller view request object
+	 * @return string
+	 */
+	protected function getAppRoot() {
+		return self::$appRoot;
+	}
+
+	/**
+	 * Return and store application document root from controller view request object
+	 * @throws \Exception
+	 * @return string
+	 */
+	protected function getTmpDir() {
+		if (!self::$tmpDir) {
+			$tmpDir = $this->getAppRoot() . self::$globalOptions['tmpDir'];
+			if (!\MvcCore\Application::GetInstance()->GetCompiled()) {
+				if (!\Packager_Php_Wrapper::IsDir($tmpDir)) \Packager_Php_Wrapper::MkDir($tmpDir, 0777, TRUE);
+				if (!is_writable($tmpDir)) {
+					try {
+						@chmod($tmpDir, 0777);
+					} catch (\Exception $e) {
+						throw new \Exception('['.__CLASS__.'] ' . $e->getMessage());
+					}
+				}
+			}
+			self::$tmpDir = $tmpDir;
+		}
+		return self::$tmpDir;
+	}
+
+	/**
+	 * Save atomicly file content in full path by 1 MB to not overflow any memory limits
+	 * @param string $fullPath
+	 * @param string $fileContent
+	 * @return void
+	 */
+	protected function saveFileContent ($fullPath = '', & $fileContent = '') {
+		$streamWrapper = '';
+		// https://github.com/nette/safe-stream/blob/master/src/SafeStream/SafeStream.php
+		$netteSafeStreamClass = '\Nette\Utils\SafeStream';
+		$netteSafeStreamProtocol = '';
+		$netteSafeStreamExists = class_exists($netteSafeStreamClass);
+		if (self::$fileRendering) {
+			if ($netteSafeStreamExists) {
+				$netteSafeStreamProtocol = constant($netteSafeStreamClass.'::PROTOCOL');
+				(new \ReflectionMethod($netteSafeStreamClass, 'register'))->invoke(NULL);
+				$streamWrapper = $netteSafeStreamProtocol . '://';
+			}
+		}
+		$fw = fopen($streamWrapper . $fullPath, 'w');
+		$index = 0;
+		$bufferLength = 1048576; // 1 MB
+		$buffer = '';
+		while ($buffer = mb_substr($fileContent, $index, $bufferLength)) {
+			fwrite($fw, $buffer);
+			$index += $bufferLength;
+		}
+		fclose($fw);
+		@chmod($fullPath, 0766);
+		if (self::$fileRendering) {
+			if ($netteSafeStreamExists) stream_wrapper_unregister($netteSafeStreamProtocol);
+		}
+	}
+
+	/**
+	 * Log any render messages with optional log file name
+	 * @param string $msg
+	 * @param string $logType
+	 * @return void
+	 */
+	protected function log ($msg = '', $logType = 'debug') {
+		if (self::$logingAndExceptions) {
+			\MvcCore\Debug::Log($msg, $logType);
+		}
+	}
+
+	/**
+	 * Throw exception with given message with actual helper class name before
+	 * @param string $msg
+	 * @throws \Exception text by given message
+	 * @return void
+	 */
+	protected function exception ($msg) {
+		if (self::$logingAndExceptions) {
+			throw new \Exception('[' . get_class($this) . '] ' . $msg);
+		}
+	}
+
+	/**
+	 * Throw exception with given message with actual helper class name before
+	 * @param string $msg
+	 * @return void
+	 */
+	protected function warning ($msg) {
+		if (self::$logingAndExceptions) {
+			\MvcCore\Debug::BarDump('[' . get_class($this) . '] ' . $msg, \MvcCore\Debug::DEBUG);
+		}
+	}
+
+	/**
+	 * Render given exception
+	 * @param \Exception $e
+	 * @return void
+	 */
+	protected function exceptionHandler (\Exception $e) {
+		if (self::$logingAndExceptions) {
+			\MvcCore\Debug::Exception($e);
+		}
+	}
+
+	/**
+	 * Complete items group tmp directory file name by group source files info
+	 * @param array   $filesGroupInfo
+	 * @param boolean $minify
+	 * @return string
+	 */
+	protected function getTmpFileFullPathByPartFilesInfo ($filesGroupInfo = array(), $minify = FALSE, $extension = '') {
+		return implode('', array(
+			$this->getTmpDir(),
+			'/' . ($minify ? 'minified' : 'rendered') . '_' . $extension . '_',
+			md5(implode(',', $filesGroupInfo) . '_' . $minify),
+			'.' . $extension
+		));
+	}
+
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth\Virtual{
+
+class User extends \MvcCore\Model {
+
+	/** @var int */
+	public $Id = NULL;
+
+	/** @var string */
+	public $UserName = '';
+
+	/** @var string */
+	public $FullName = '';
+
+	/** @var string */
+	public $PasswordHash = '';
+
+	/**
+	 * Try to get user model instance from
+	 * any place by session username record
+	 * if there is any or return null.
+	 * @return \MvcCore\Ext\Auth\User|null
+	 */
+	public static function GetUserBySession () {
+		return NULL;
+	}
+
+	/**
+	 * Get user instance if the username exists and hashed password is the same
+	 * @param string $username
+	 * @param string $password
+	 * @return \MvcCore\Ext\Auth\User|null
+	 */
+	public static function Authenticate ($username = '', $password = '') {
+		return NULL;
+	}
+
+	/**
+	 * Set up unique user name in session namespace
+	 * @param string $uniqueUserName
+	 * @return void
+	 */
+	public static function StoreInSession ($uniqueUserName = '') {
+	}
+
+	/**
+	 * Clear unique user name from session
+	 * @return void
+	 */
+	public static function ClearFromSession () {
+	}
+
+	/**
+	 * Get any password hash with salt by Auth extension configuration
+	 * @param string $password
+	 * @return string
+	 */
+	public static function GetPasswordHash ($password = '') {
+		return sha1(crypt(
+			(string) $password, 
+			\MvcCore\Ext\Auth::GetInstance()->GetConfig()->passwordHashSalt /*. $_SERVER['SERVER_NAME']*/
+		));
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth\Virtual{
+
+class Controller extends \MvcCore\Controller {
+	/**
+	 * Authentication form submit action to sign in.
+	 * Routed by route configured by:
+	 * MvcCore\Ext\Auth::GetInstance()->SetSignInRoute();
+	 * @return void
+	 */
+	public function SignInAction () {
+	}
+	/**
+	 * Authentication form submit action to sign out.
+	 * Routed by route configured by:
+	 * MvcCore\Ext\Auth::GetInstance()->SetSignOutRoute();
+	 * @return void
+	 */
+	public function SignOutAction () {
+	}
+}
+}
+namespace App\Models{
+
+class Album extends \MvcCore\Model
+{
+	/** @var int */
+	public $Id;
+	/** @var string */
+	public $Title;
+	/** @var string */
+	public $Interpret;
+	/** @var int */
+	public $Year;
+
+	/**
+	 * Get all albums in database as array, keyed by $album->Id.
+	 * @return \MvcCore\Model[]
+	 */
+	public static function GetAll () {
+		$rawData = self::GetDb()->query("
 			SELECT
 				c.id AS Id,
 				c.title AS Title,
@@ -3163,7 +16155,22 @@ namespace App\Models{class Album extends\MvcCore\Model{/** @var int */public$Id;
 				c.year AS Year
 			FROM 
 				cds AS c
-		")->fetchAll(\PDO::FETCH_ASSOC);$result=array();foreach($rawData as$rawItem){$item=(new self)->SetUp($rawItem);$result[$item->Id]=$item;}return$result;}public static function GetById($id){$select=self::GetDb()->prepare("
+		")->fetchAll(\PDO::FETCH_ASSOC);
+		$result = array();
+		foreach ($rawData as $rawItem) {
+			$item = (new self)->SetUp($rawItem);
+			$result[$item->Id] = $item;
+		}
+		return $result;
+	}
+
+	/**
+	 * Get single album instance by given id or null if no record by id in database.
+	 * @param int $id
+	 * @return \MvcCore\Model|null
+	 */
+	public static function GetById ($id) {
+		$select = self::GetDb()->prepare("
 			SELECT
 				c.id AS Id,
 				c.title AS Title,
@@ -3173,12 +16180,52 @@ namespace App\Models{class Album extends\MvcCore\Model{/** @var int */public$Id;
 				cds as c 
 			WHERE
 				c.id = :id
-		");$select->execute(array(":id"=>$id,));$data=$select->fetch(\PDO::FETCH_ASSOC);if($data){return(new self)->SetUp($data);}return NULL;}public function Delete(){$update=$this->db->prepare("
+		");
+        $select->execute(array(
+            ":id" => $id,
+        ));
+        $data = $select->fetch(\PDO::FETCH_ASSOC);
+		if ($data) {
+			return (new self)->SetUp($data);
+		}
+		return NULL;
+    }
+
+	/**
+	 * Delete database row by album Id. Return affected rows count.
+	 * @return bool
+	 */
+	public function Delete () {
+		$update = $this->db->prepare("
 			DELETE FROM
 				cds
 			WHERE
 				id = :id
-		");return$update->execute(array(":id"=>$this->Id,));}public function Save(){if(isset($this->Id)){$this->update();}else{$this->Id=$this->insert();}return$this->Id;}protected function update(){$update=$this->db->prepare("
+		");
+        return $update->execute(array(
+            ":id"	=> $this->Id,
+        ));
+	}
+	/**
+	 * Update album with completed Id or insert new one if no Id defined.
+	 * Return Id as result.
+	 * @return int
+	 */
+	public function Save () {
+		if (isset($this->Id)) {
+			$this->update();
+		} else {
+			$this->Id = $this->insert();
+		}
+		return $this->Id;
+    }
+
+	/**
+	 * Update all public defined properties.
+	 * @return bool
+	 */
+	protected function update () {
+		$update = $this->db->prepare("
 			UPDATE
 				cds
 			SET
@@ -3187,31 +16234,6805 @@ namespace App\Models{class Album extends\MvcCore\Model{/** @var int */public$Id;
 				title = :title
 			WHERE
 				id = :id
-		");return$update->execute(array(":interpret"=>$this->Interpret,":year"=>$this->Year,":title"=>$this->Title,":id"=>$this->Id,));}protected function insert(){$columnsSql=array();$params=array();$newValues=$this->GetValues();foreach($newValues as$key=>&$value){$keyUnderscored=\MvcCore\Tool::GetUnderscoredFromPascalCase($key);$columnsSql[]=$keyUnderscored;$params[$keyUnderscored]=$value;}$insertCommand=$this->db->prepare('INSERT INTO cds ('.implode(',',$columnsSql).')
-			 VALUES (:'.implode(', :',$columnsSql).')');$insertCommand->execute($params);return(int)$this->db->lastInsertId();}}}
-namespace App\Controllers{use\MvcCore\Ext\Form,\MvcCore\Ext\Auth;class Base extends\MvcCore\Controller{/** @var \MvcCore\Ext\Auth\Virtual\User */protected$user=null;public function Init(){parent::Init();$this->user=Auth::GetInstance()->GetUser();Form::AddCsrfErrorHandler(function(Form&$form,$errorMsg){Auth\User::ClearFromSession();self::Redirect($this->Url('Index:Index',array('absolute'=>TRUE,'sourceUrl'=>urlencode($form->ErrorUrl))));});}public function PreDispatch(){parent::PreDispatch();if($this->viewEnabled){$this->_preDispatchSetUpAuth();$this->_preDispatchSetUpBundles();}}private function _preDispatchSetUpAuth(){$this->view->User=$this->user;$signOutForm=NULL;if($this->user){/** @var $signOutForm \MvcCore\Ext\Auth\SignOutForm */$signOutForm=Auth::GetInstance()->GetForm()->Init()->SetDefaults(array('successUrl'=>$this->Url('Index:Index',array('absolute'=>TRUE))));$signOutForm->RemoveField($signOutForm->GetFirstFieldsByClass(Form\SubmitButton::class)->Name)->AddField(new Form\SubmitInput(array('name'=>'send','value'=>'Sign Out','cssClasses'=>array('text-link'))));}$this->view->SignOutForm=$signOutForm;}private function _preDispatchSetUpBundles(){\MvcCore\Ext\View\Helpers\Assets::SetGlobalOptions(array('cssMinify'=>1,'cssJoin'=>1,'jsMinify'=>1,'jsJoin'=>1,));$static=self::$staticPath;$this->view->Css('fixedHead')->AppendRendered($static.'/css/fonts.css')->AppendRendered($static.'/css/all.css')->AppendRendered($static.'/css/button.css');$this->view->Js('fixedHead')->Append($static.'/js/libs/class.min.js')->Append($static.'/js/libs/ajax.min.js')->Append($static.'/js/libs/Module.js');$this->view->Js('varFoot')->Append($static.'/js/Front.js');}}}
-namespace MvcCore\Ext\Auth{class User extends Virtual\User{/** @var bool */protected$autoInit=FALSE;/** @var \MvcCore\Session */protected static$session=NULL;public static function GetUserBySession(){$result=NULL;$session=static::getSession();if(!isset($session->uname))return$result;$cfg=\MvcCore\Config::GetSystem();$allCredentials=$cfg->credentials;foreach($allCredentials as&$credentials){if($credentials->username===$session->uname){$result=new static();$result->setUp(array('UserName'=>$credentials->username,'FullName'=>$credentials->fullname,));break;}}return$result;}public static function Authenticate($uniqueUserName='',$password=''){$result=NULL;$hashedPassword=static::GetPasswordHash($password);$cfg=\MvcCore\Config::GetSystem();$allCredentials=$cfg->credentials;foreach($allCredentials as&$credentials){if($credentials->username===$uniqueUserName){if($credentials->password===$hashedPassword){$result=new static();$result->setUp(array('UserName'=>$credentials->username,'FullName'=>$credentials->fullname,));}break;}}return$result;}public static function StoreInSession($user=NULL){static::GetSession()->uname=$user->UserName;}public static function ClearFromSession(){static::GetSession()->Destroy();}protected static function&getSession(){if(is_null(static::$session)){\MvcCore::SessionStart();static::$session=\MvcCore\Session::GetNamespace(__CLASS__);static::$session->SetExpirationSeconds(\MvcCore\Ext\Auth::GetInstance()->GetConfig()->expirationSeconds);}return static::$session;}}}
-namespace MvcCore\Ext\Auth\Virtual{class Controller extends\MvcCore\Controller{public function SignInAction(){}public function SignOutAction(){}}}
-namespace App\Models{class User extends\MvcCore\Ext\Auth\User{/** @var int */public$Id;public$UserName='';public$PasswordHash='';public$FullName='';public static function GetUserBySession(){$session=static::getSession();if(isset($session->uname)){return self::GetByUserName($session->uname);}return NULL;}public static function Authenticate($uniqueUserName='',$password=''){$hashedPassword=static::GetPasswordHash($password);$user=self::GetByUserName($uniqueUserName);if($user&&$user->PasswordHash===$hashedPassword){return$user;}return NULL;}public static function GetByUserName($userName){$select=self::getDb()->prepare("
+		");
+        return $update->execute(array(
+			":interpret"	=> $this->Interpret,
+            ":year"			=> $this->Year,
+            ":title"		=> $this->Title,
+            ":id"			=> $this->Id,
+        ));
+	}
+
+	/**
+	 * Insert only filled values, return new album id.
+	 * @return int
+	 */
+	protected function insert() {
+		$columnsSql = array();
+		$params = array();
+		$newValues = $this->GetValues();
+		foreach ($newValues as $key => & $value) {
+			$keyUnderscored = \MvcCore\Tool::GetUnderscoredFromPascalCase($key);
+			$columnsSql[] = $keyUnderscored;
+			$params[$keyUnderscored] = $value;
+		}
+		$insertCommand = $this->db->prepare(
+			'INSERT INTO cds (' . implode(',', $columnsSql) . ')
+			 VALUES (:' . implode(', :', $columnsSql) . ')'
+		);
+		$insertCommand->execute($params);
+		return (int) $this->db->lastInsertId();
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth{
+
+class User extends Virtual\User {
+
+	/** @var bool */
+	protected $autoInit = FALSE;
+
+	/** @var \MvcCore\Session */
+	protected static $session = NULL;
+
+	/**
+	 * Try to get user model instance from
+	 * any place by session username record
+	 * if there is any or return null.
+	 * @return \MvcCore\Ext\Auth\User|null
+	 */
+	public static function GetUserBySession () {
+		$result = NULL;
+		$session = static::getSession();
+		if (!isset($session->uname)) return $result;
+		$cfg = \MvcCore\Config::GetSystem();
+		$allCredentials = $cfg->credentials;
+		foreach ($allCredentials as & $credentials) {
+			if ($credentials->username === $session->uname) {
+				$result = new static();
+				$result->setUp(array(
+					'UserName'	=> $credentials->username,
+					'FullName'	=> $credentials->fullname,
+				));
+				break;
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Get user instance if the username exists and hashed password is the same
+	 * @param string $username
+	 * @param string $password
+	 * @return \MvcCore\Ext\Auth\User|null
+	 */
+	public static function Authenticate ($uniqueUserName = '', $password = '') {
+		$result = NULL;
+		$hashedPassword = static::GetPasswordHash($password);
+		$cfg = \MvcCore\Config::GetSystem();
+		$allCredentials = $cfg->credentials;
+		foreach ($allCredentials as & $credentials) {
+			if ($credentials->username === $uniqueUserName) {
+				if ($credentials->password === $hashedPassword) {
+					$result = new static();
+					$result->setUp(array(
+						'UserName'	=> $credentials->username,
+						'FullName'	=> $credentials->fullname,
+					));
+				}
+				break;
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Set up unique user name in session namespace
+	 * @param \MvcCore\Ext\Auth\User $user
+	 * @return void
+	 */
+	public static function StoreInSession ($user = NULL) {
+		static::GetSession()->uname = $user->UserName;
+	}
+
+	/**
+	 * Clear unique user name from session
+	 * @return void
+	 */
+	public static function ClearFromSession () {
+		static::GetSession()->Destroy();
+	}
+
+	/**
+	 * Get session to get/set/clear username,
+	 * is session is not started - start the session.
+	 * @return \MvcCore\Session
+	 */
+	protected static function & getSession () {
+		if (is_null(static::$session)) {
+			$app = \MvcCore\Application::GetInstance();
+			$app->SessionStart(); // start session if not started or do nothing if session has been started already
+			$sessionClass = $app->GetSessionClass();
+			static::$session = $sessionClass::GetNamespace(__CLASS__);
+			static::$session->SetExpirationSeconds(
+				\MvcCore\Ext\Auth::GetInstance()->GetConfig()->expirationSeconds
+			);
+		}
+		return static::$session;
+	}
+}
+}
+namespace App\Controllers{
+
+use \MvcCore\Ext\Form;
+
+class Index extends Base
+{
+	public function IndexAction () {
+		if ($this->user instanceof \App\Models\User)
+			self::Redirect($this->Url('CdCollection:Index'));
+		$this->view->Title = 'CD Collection';
+		$this->view->User = $this->user;
+		$this->view->SignInForm = $this->getSignInFormCustomized();
+	}
+	public function NotFoundAction(){
+		$this->ErrorAction();
+	}
+	public function ErrorAction(){
+		$code = $this->response->GetCode();
+		$message = $this->request->GetParam('message', '\\a-zA-Z0-9_;, /\-\@\:');
+		$message = preg_replace('#`([^`]*)`#', '<code>$1</code>', $message);
+		$message = str_replace("\n", '<br />', $message);
+		$this->view->Title = "Error $code";
+		$this->view->Message = $message;
+		$this->Render('error');
+	}
+
+	protected function getSignInFormCustomized () {
+		// customize sign in form
+		/** @var $signInForm \MvcCore\Ext\Auth\SignInForm */
+		$signInForm = \MvcCore\Ext\Auth::GetInstance()->GetForm()
+			// initialize fields
+			->Init()
+			// set signed in url to albums list
+			->SetDefaults(array(
+				'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
+			));
+		// remove username label and create input placeholder text
+		$signInForm->GetFirstFieldsByClass(Form\Text::class, TRUE)
+			->SetLabel('')->SetPlaceholder('login');
+		// remove password label and create input placeholder text
+		$signInForm->GetFirstFieldsByClass(Form\Password::class)
+			->SetLabel('')->SetPlaceholder('password');
+		// get submit button and customize submit button inner code
+		$signInFormSubmitBtn = $signInForm->GetFirstFieldsByClass(Form\SubmitButton::class);
+		$signInFormSubmitBtn->AddCssClass('button-green')->SetValue(
+			'<span><b>' . $signInFormSubmitBtn->GetValue() . '</b></span>'
+		);
+		return $signInForm;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\View\Helpers{
+
+class Css extends Assets
+{
+	protected static $instance = null;
+	/**
+	 * Array with full class name and public method accepted as first param css code and returning minified code
+	 * @var callable
+	 */
+	public static $MinifyCallable = array('\Minify_CSS', 'minify');
+
+	/**
+	 * Allowed media types for <link> tag
+	 * @var array
+	 */
+	private static $_allowedMediaTypes = array('all','aural','braille','handheld','projection','print','screen','tty','tv',);
+
+	/**
+	 * Array with all defined files to create specific link tags
+	 * @var $scriptsGroupContainer array
+	 */
+	protected static $linksGroupContainer = array();
+
+	/**
+	 * View Helper Method, returns current object instance.
+	 * @return \MvcCore\Ext\View\Helpers\Css
+	 */
+	public function Css ($groupName = self::GROUP_NAME_DEFAULT) {
+		$this->actualGroupName = $groupName;
+		$this->_getLinksGroupContainer($groupName);
+		return $this;
+	}
+
+	/**
+	 * Check if stylesheet is already presented in stylesheets group
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $doNotMinify
+	 * @return bool
+	 */
+	public function Contains ($path = '', $media = 'all', $doNotMinify = FALSE) {
+		$result = FALSE;
+		$linksGroup = & $this->_getLinksGroupContainer($this->actualGroupName);
+		foreach ($linksGroup as & $item) {
+			if ($item->path == $path) {
+				if ($item->media == $media && $item->doNotMinify == $doNotMinify) {
+					$result = TRUE;
+					break;
+				}
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Append stylesheet after all group stylesheets for later render process with php tags executing in given file
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Css
+	 */
+	public function AppendRendered($path = '', $media = 'all', $doNotMinify = FALSE) {
+		return $this->Append($path, $media, TRUE, $doNotMinify);
+	}
+
+	/**
+	 * Prepend stylesheet before all group stylesheets for later render process with php tags executing in given file
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $renderPhpTags
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Css
+	 */
+	public function PrependRendered($path = '', $media = 'all', $doNotMinify = FALSE) {
+		return $this->Prepend($path, $media, TRUE, $doNotMinify);
+	}
+
+	/**
+	 * Add stylesheet into given index of stylesheets group array for later render process with php tags executing in given file
+	 * @param  int     $index
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $renderPhpTags
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Css
+	 */
+	public function OffsetSetRendered($index = 0, $path = '', $media = 'all', $doNotMinify = FALSE) {
+		return $this->OffsetSet($index, $path, $media, TRUE, $doNotMinify);
+	}
+
+	/**
+	 * Append stylesheet after all group stylesheets for later render process
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $renderPhpTags
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Css
+	 */
+	public function Append($path = '', $media = 'all', $renderPhpTags = FALSE, $doNotMinify = FALSE) {
+		$item = $this->_completeItem($path, $media, $renderPhpTags, $doNotMinify);
+		$currentGroupRecords = & $this->_getLinksGroupContainer($this->actualGroupName);
+		array_push($currentGroupRecords, $item);
+		return $this;
+	}
+
+	/**
+	 * Prepend stylesheet before all group stylesheets for later render process
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $renderPhpTags
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Css
+	 */
+	public function Prepend($path = '', $media = 'all', $renderPhpTags = FALSE, $doNotMinify = FALSE) {
+		$item = $this->_completeItem($path, $media, $renderPhpTags, $doNotMinify);
+		$currentGroupRecords = & $this->_getLinksGroupContainer($this->actualGroupName);
+		array_unshift($currentGroupRecords, $item);
+		return $this;
+	}
+
+	/**
+	 * Add stylesheet into given index of group stylesheets array for later render process
+	 * @param  int     $index
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $renderPhpTags
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Css
+	 */
+	public function OffsetSet ($index = 0, $path = '', $media = 'all', $renderPhpTags = FALSE, $doNotMinify = FALSE) {
+		$item = $this->_completeItem($path, $media, $renderPhpTags, $doNotMinify);
+		$currentGroupRecords = & $this->_getLinksGroupContainer($this->actualGroupName);
+		$newItems = array();
+		$added = FALSE;
+		foreach ($currentGroupRecords as $key => $groupItem) {
+			if ($key == $index) {
+				$newItems[] = $item;
+				$added = TRUE;
+			}
+			$newItems[] = $groupItem;
+		}
+		if (!$added) $newItems[] = $item;
+		self::$linksGroupContainer[$this->getCtrlActionKey()][$this->actualGroupName] = $newItems;
+		return $this;
+	}
+
+	/**
+	 * Create data item to store for render process
+	 * @param  string  $path
+	 * @param  string  $media
+	 * @param  boolean $render
+	 * @param  boolean $doNotMinify
+	 * @return \stdClass
+	 */
+	private function _completeItem ($path, $media, $render, $doNotMinify) {
+		if (self::$fileChecking) {
+			if (!$path) $this->exception('Path to *.css can\'t be an empty string.');
+			if (!in_array($media, self::$_allowedMediaTypes)) $this->exception('Media could be only values: ' . implode(', ', self::$_allowedMediaTypes) . '.');
+			$duplication = $this->_isDuplicateStylesheet($path);
+			if ($duplication) $this->warning("Stylesheet '$path' is already added in css group: '$duplication'.");
+		}
+		return (object) array(
+			'path'			=> $path,
+			'media'			=> $media,
+			'render'		=> $render,
+			'doNotMinify'	=> $doNotMinify,
+		);
+	}
+
+	/**
+	 * Is the linked stylesheet duplicate?
+	 * @param  string $path
+	 * @return string
+	 */
+	private function _isDuplicateStylesheet ($path) {
+		$result = '';
+		$currentRecords = self::$linksGroupContainer[$this->getCtrlActionKey()];
+		foreach ($currentRecords as $groupName => $groupItems) {
+			foreach ($groupItems as $item) {
+				if ($item->path == $path) {
+					$result = $groupName;
+					break;
+				}
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Render link elements as html code with links to original files or temporary rendered files.
+	 * @param int $indent
+	 * @return string
+	 */
+	public function Render ($indent = 0) {
+		$currentGroupRecords = & $this->_getLinksGroupContainer($this->actualGroupName);
+		if (count($currentGroupRecords) === 0) return '';
+		$minify = (bool)self::$globalOptions['cssMinify'];
+		$joinTogether = (bool)self::$globalOptions['cssJoin'];
+		if ($joinTogether) {
+			$result = $this->_renderItemsTogether(
+				$this->actualGroupName,
+				$currentGroupRecords,
+				$indent,
+				$minify
+			);
+		} else {
+			$result = $this->_renderItemsSeparated(
+				$this->actualGroupName,
+				$currentGroupRecords,
+				$indent,
+				$minify
+			);
+		}
+		return $result;
+	}
+
+	/**
+	 * Get actualy dispatched controller/action group name.
+	 * @param string $name
+	 * @return array
+	 */
+	private function & _getLinksGroupContainer ($name = '') {
+		$ctrlActionKey = $this->getCtrlActionKey();
+		if (!isset(self::$linksGroupContainer[$ctrlActionKey])) {
+			self::$linksGroupContainer[$ctrlActionKey] = array();
+		}
+		if (!isset(self::$linksGroupContainer[$ctrlActionKey][$name])) {
+			self::$linksGroupContainer[$ctrlActionKey][$name] = array();
+		}
+		return self::$linksGroupContainer[$ctrlActionKey][$name];
+	}
+
+	/**
+	 * Minify stylesheet string and return minified result.
+	 * @param string $css
+	 * @param string $path
+	 * @return string
+	 */
+	private function _minify (& $css, $path) {
+		$result = '';
+		if (!is_callable(static::$MinifyCallable)) {
+			$this->exception(
+				"Configured callable object for CSS minification doesn't exist. "
+				.'Use: https://github.com/mrclay/minify -> /min/lib/Minify/CSS.php'
+			);
+		}
+		try {
+			$result = call_user_func(static::$MinifyCallable, $css);
+		} catch (\Exception $e) {
+			$this->exception("Unable to minify stylesheet ('$path').");
+		}
+		return $result;
+	}
+
+	/**
+	 * Render data items as one <link> html tag or all another <link> html tags after with files which is not possible to minify.
+	 * @param string  $actualGroupName
+	 * @param array   $items
+	 * @param int     $indent
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsTogether ($actualGroupName = '', $items = array(), $indent = 0, $minify = FALSE) {
+		// some configurations is not possible to render together and minimized
+		list($itemsToRenderMinimized, $itemsToRenderSeparately) = $this->filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems($items);
+
+		$indentStr = $this->getIndentString($indent);
+		$resultItems = array();
+		if (self::$fileRendering) $resultItems[] = '<!-- css group begin: ' . $actualGroupName . ' -->';
+
+		// process array with groups, which are not possible to minimize
+		foreach ($itemsToRenderSeparately as & $itemsToRender) {
+			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, $minify);
+		}
+
+		// process array with groups to minimize
+		foreach ($itemsToRenderMinimized as & $itemsToRender) {
+			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, $minify);
+		}
+
+		if (self::$fileRendering) $resultItems[] = '<!-- css group end: ' . $actualGroupName . ' -->';
+
+		return $indentStr . implode(PHP_EOL . $indentStr, $resultItems);
+	}
+
+	/**
+	 * Render all items in group together, when application is compiled, do not check source files and changes.
+	 * @param array   $itemsToRender
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsTogetherAsGroup ($itemsToRender = array(), $minify = FALSE) {
+
+		// complete tmp filename by source filenames and source files modification times
+		$filesGroupInfo = array();
+		foreach ($itemsToRender as $item) {
+			if (self::$fileChecking) {
+				$fullPath = $this->getAppRoot() . $item->path;
+				if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
+					$this->exception("File not found in CSS view rendering process ('$fullPath').");
+				}
+				$filesGroupInfo[] = $item->path . '?_' . self::getFileImprint($fullPath);
+			} else {
+				$filesGroupInfo[] = $item->path;
+			}
+		}
+		$tmpFileFullPath = $this->getTmpFileFullPathByPartFilesInfo($filesGroupInfo, $minify, 'css');
+
+		// check, if the rendered, together completed and minimized file is in tmp cache already
+		if (self::$fileRendering) {
+			if (!\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				// load all items and join them together
+				$resultContent = '';
+				foreach ($itemsToRender as & $item) {
+					$srcFileFullPath = $this->getAppRoot() . $item->path;
+					if ($item->render) {
+						$fileContent = $this->_renderFile($srcFileFullPath);
+					} else if ($minify) {
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+					}
+					$fileContent = $this->_convertStylesheetPathsFromRelatives2TmpAbsolutes(
+						$fileContent, $item->path
+					);
+					if ($minify) $fileContent = $this->_minify($fileContent, $item->path);
+					$resultContent .= PHP_EOL . "/* " . $item->path . " */" . PHP_EOL . $fileContent . PHP_EOL;
+				}
+				// save completed tmp file
+				$this->saveFileContent($tmpFileFullPath, $resultContent);
+				$this->log("Css files group rendered ('$tmpFileFullPath').", 'debug');
+			}
+		}
+
+		// complete <link> tag with tmp file path in $tmpFileFullPath variable
+		$firstItem = array_merge((array) $itemsToRender[0], array());
+		$pathToTmp = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		$firstItem['href'] = $this->CssJsFileUrl($pathToTmp);
+		return $this->_renderItemSeparated((object) $firstItem);
+	}
+
+	/**
+	 * Render css file by absolute path as php file and return rendered result as string
+	 * @param string $absolutePath
+	 * @return string
+	 */
+	private function _renderFile ($absolutePath) {
+		ob_start();
+		try {
+			\Packager_Php_Wrapper::IncludeStandard(($absolutePath), $this);
+		} catch (\Exception $e) {
+			$this->exceptionHandler($e);
+		}
+		return ob_get_clean();
+	}
+
+	/**
+	 * Converts all relative paths in all css rules to absolute paths with \MvcCore Url structures
+	 * @param mixed $fullPathContent css file full path
+	 * @param mixed $href css file href value
+	 * @return string
+	 *
+	 */
+	private function _convertStylesheetPathsFromRelatives2TmpAbsolutes (& $fullPathContent, $href) {
+		$lastHrefSlashPos = mb_strrpos($href, '/');
+		if ($lastHrefSlashPos === FALSE) return $fullPathContent;
+		$stylesheetDirectoryRelative = mb_substr($href, 0, $lastHrefSlashPos + 1);
+
+		// process content for all double dots
+		$position = 0;
+		while ($position < mb_strlen($fullPathContent)) {
+			$doubleDotsPos = mb_strpos($fullPathContent, '../', $position);
+			if ($doubleDotsPos === FALSE) break;
+
+			// make sure that double dot string is in url('') or url("") block
+
+			// try to find first occurance of url(" backwards
+			$lastUrlBeginStrPos = mb_strrpos(mb_substr($fullPathContent, 0, $doubleDotsPos), 'url(');
+			if ($lastUrlBeginStrPos === FALSE) {
+				$position = $doubleDotsPos + 3;
+				continue;
+			}
+
+			// then check if between that are only [\./ ]
+			$beginOfUrlBlockChars = mb_substr($fullPathContent, $lastUrlBeginStrPos + 4, $doubleDotsPos - ($lastUrlBeginStrPos + 4));
+			$beginOfUrlBlockChars = preg_replace("#[\./ \"'_\-]#", "", $beginOfUrlBlockChars);
+			if (mb_strlen($beginOfUrlBlockChars) > 0) {
+				$position = $lastUrlBeginStrPos + 4;
+				continue;
+			}
+
+			// try to find first occurance of ")
+			$firstUrlEndStrPos = mb_strpos($fullPathContent, ')', $doubleDotsPos);
+			if ($firstUrlEndStrPos === FALSE) {
+				$position = $doubleDotsPos + 3;
+				continue;
+			}
+
+			// then check of between that are only [a-zA-Z\./ ]
+			$endOfUrlBlockChars = mb_substr($fullPathContent, $doubleDotsPos + 3, $firstUrlEndStrPos - ($doubleDotsPos + 3));
+			$endOfUrlBlockChars = preg_replace("#[a-zA-Z\./ \"'_\-\?\&\#]#", "", $endOfUrlBlockChars);
+			if (mb_strlen($endOfUrlBlockChars) > 0) {
+				$position = $firstUrlEndStrPos + 1;
+				continue;
+			}
+
+			// if it is not the Url block, shift the position and continue
+
+			// replace relative path to absolute path
+			$lastUrlBeginStrPos += 4;
+			$urlSubStr = mb_substr($fullPathContent, $lastUrlBeginStrPos, $firstUrlEndStrPos - $lastUrlBeginStrPos);
+
+			// get double or single quotes or no quotes
+			$firstStr = mb_substr($urlSubStr, 0, 1);
+			$lastStr = mb_substr($urlSubStr, mb_strlen($urlSubStr) - 1, 1);
+			if ($firstStr === '"' && $lastStr === '"') {
+				$urlSubStr = mb_substr($urlSubStr, 1, mb_strlen($urlSubStr) - 2);
+				$quote = '"';
+			} else if ($firstStr === "'" && $lastStr === "'") {
+				$urlSubStr = mb_substr($urlSubStr, 1, mb_strlen($urlSubStr) - 2);
+				$quote = "'";
+			} else {
+				$quote = '"';
+			}
+
+			// translate relative to web absolute path
+			$trimmedUrlSubStr = ltrim($urlSubStr, './');
+			$trimmedPartLength = mb_strlen($urlSubStr) - mb_strlen($trimmedUrlSubStr);
+			$trimmedPart = trim(mb_substr($urlSubStr, 0, $trimmedPartLength), '/');
+			$subjectRestPath = trim(mb_substr($urlSubStr, $trimmedPartLength), '/');
+
+			$urlFullBasePath = str_replace('\\', '/', realpath($this->getAppRoot() . $stylesheetDirectoryRelative . $trimmedPart));
+			$urlFullPath = $urlFullBasePath . '/' . $subjectRestPath;
+
+			// complete stylesheet new path
+			$webPath = mb_substr($urlFullPath, mb_strlen($this->getAppRoot()));
+			$webPath = $this->CssJsFileUrl($webPath);
+
+			// replace the url part
+			$fullPathContent = mb_substr($fullPathContent, 0, $lastUrlBeginStrPos)
+				. $quote . $webPath . $quote
+				. mb_substr($fullPathContent, $firstUrlEndStrPos);
+
+			// shift the position property
+			$position = $lastUrlBeginStrPos + mb_strlen($webPath) + 3;
+		}
+
+		return str_replace('__RELATIVE_BASE_PATH__', '../..', $fullPathContent);
+	}
+
+	/**
+	 * Render css file by path as php file and store result in tmp directory and return new href value
+	 * @param \stdClass $item
+	 * @param boolean  $minify
+	 * @return string
+	 */
+	private function _renderFileToTmpAndGetNewHref ($item, $minify = FALSE) {
+		$path = $item->path;
+		$tmpFileName = '/rendered_css_' . self::$systemConfigHash . '_' . trim(str_replace('/', '_', $path), "_");
+		$srcFileFullPath = $this->getAppRoot() . $path;
+		$tmpFileFullPath = $this->getTmpDir() . $tmpFileName;
+		if (self::$fileRendering) {
+			if (\Packager_Php_Wrapper::FileExists($srcFileFullPath)) {
+				$srcFileModDate = \Packager_Php_Wrapper::Filemtime($srcFileFullPath);
+			} else {
+				$srcFileModDate = 1;
+			}
+			if (\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				$tmpFileModDate = \Packager_Php_Wrapper::Filemtime($tmpFileFullPath);
+			} else {
+				$tmpFileModDate = 0;
+			}
+			if ($srcFileModDate !== FALSE && $tmpFileModDate !== FALSE) {
+				if ($srcFileModDate > $tmpFileModDate) {
+					if ($item->render) {
+						$fileContent = $this->_renderFile($srcFileFullPath);
+					} else if ($minify) {
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+					}
+					$fileContent = $this->_convertStylesheetPathsFromRelatives2TmpAbsolutes($fileContent, $path);
+					if ($minify) $fileContent = $this->_minify($fileContent, $item->path);
+					$this->saveFileContent($tmpFileFullPath, $fileContent);
+					$this->log("Css file rendered ('$tmpFileFullPath').", 'debug');
+				}
+			}
+		}
+		$tmpPath = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		return $tmpPath;
+	}
+
+	/**
+	 * Create HTML link element from data item
+	 * @param  \stdClass $item
+	 * @return string
+	 */
+	private function _renderItemSeparated (\stdClass $item) {
+		$result = '<link rel="stylesheet"';
+		if ($item->media !== 'all') $result .= ' media="' . $item->media . '"';
+		if (!$item->render && self::$fileChecking) {
+			$fullPath = $this->getAppRoot() . $item->path;
+			if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
+				$this->log("File not found in CSS view rendering process ('$fullPath').", 'error');
+			}
+		}
+		$result .= ' href="' . $item->href . '" />';
+		return $result;
+	}
+
+	/**
+	 * Render data items as separated <link> html tags
+	 * @param string  $actualGroupName
+	 * @param array   $items
+	 * @param int     $indent
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsSeparated ($actualGroupName = '', $items = array(), $indent = 0, $minify = FALSE) {
+		$indentStr = $this->getIndentString($indent);
+		$resultItems = array();
+		if (self::$fileRendering) $resultItems[] = '<!-- css group begin: ' . $actualGroupName . ' -->';
+		$appCompilation = \MvcCore\Application::GetInstance()->GetCompiled();
+		foreach ($items as $item) {
+			if ($item->render || ($minify && !$item->doNotMinify)) {
+				$item->href = $this->CssJsFileUrl($this->_renderFileToTmpAndGetNewHref($item, $minify));
+			} else {
+				$item->href = $this->CssJsFileUrl($item->path);
+			}
+			if (!$appCompilation) {
+				$item->href = $this->addFileModificationImprintToHrefUrl($item->href, $item->path);
+			}
+			$resultItems[] = $this->_renderItemSeparated($item);
+		}
+		if (self::$fileRendering) $resultItems[] = '<!-- css group end: ' . $actualGroupName . ' -->';
+		return $indentStr . implode(PHP_EOL . $indentStr, $resultItems);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\View\Helpers{
+
+class Js extends Assets
+{
+	protected static $instance = null;
+	/**
+	 * Whatever Expires header is send over http protocol,
+	 * minimal cache time for external files will be one
+	 * day from last download
+	 * @const integer
+	 */
+	const EXTERNAL_MIN_CACHE_TIME = 86400;
+
+	/**
+	 * Array with full class name and public method accepted as first param javascript code and returning minified code
+	 * @var callable
+	 */
+	public static $MinifyCallable = array('\JSMin', 'minify');
+
+	/**
+	 * Array with all defined files to create specific script tags
+	 * @var array
+	 */
+	protected static $scriptsGroupContainer = array();
+
+	/**
+	 * View Helper Method, returns current object instance.
+	 * @param  string $groupName string identifier
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Js ($groupName = self::GROUP_NAME_DEFAULT) {
+		$this->actualGroupName = $groupName;
+		$this->_getScriptsGroupContainer($groupName);
+		return $this;
+	}
+
+	/**
+	 * Check if script is already presented in scripts group
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return bool
+	 */
+	public function Contains ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		$result = FALSE;
+		$scriptsGroup = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		foreach ($scriptsGroup as & $item) {
+			if ($item->path == $path) {
+				if ($item->async == $async && $item->defer == $defer && $item->doNotMinify == $doNotMinify) {
+					$result = TRUE;
+					break;
+				}
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Append script after all group scripts for later render process with downloading external content
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function AppendExternal ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		return $this->Append($path, $async, $defer, $doNotMinify, TRUE);
+	}
+
+	/**
+	 * Prepend script before all group scripts for later render process with downloading external content
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function PrependExternal ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		return $this->Prepend($path, $async, $defer, $doNotMinify, TRUE);
+	}
+
+	/**
+	 * Add script into given index of scripts group array for later render process with downloading external content
+	 * @param  integer $index
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function OffsetExternal ($index = 0, $path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		return $this->Offset($index, $path, $async, $defer, $doNotMinify, TRUE);
+	}
+
+	/**
+	 * Append script after all group scripts for later render process
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Append ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
+		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
+		$actialGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		array_push($actialGroupItems, $item);
+		return $this;
+	}
+
+	/**
+	 * Prepend script before all group scripts for later render process
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Prepend ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
+		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
+		$actualGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		array_unshift($actualGroupItems, $item);
+		return $this;
+	}
+
+	/**
+	 * Add script into given index of scripts group array for later render process
+	 * @param  integer $index
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Offset ($index = 0, $path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
+		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
+		$actialGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		$newItems = array();
+		$added = FALSE;
+		foreach ($actialGroupItems as $key => & $groupItem) {
+			if ($key == $index) {
+				$newItems[] = $item;
+				$added = TRUE;
+			}
+			$newItems[] = $groupItem;
+		}
+		if (!$added) $newItems[] = $item;
+		self::$scriptsGroupContainer[$this->getCtrlActionKey()][$this->actualGroupName] = $newItems;
+		return $this;
+	}
+
+	/**
+	 * Get actualy dispatched controller/action group name
+	 * @param string $name
+	 * @return array
+	 */
+	private function & _getScriptsGroupContainer ($name = '') {
+		$ctrlActionKey = $this->getCtrlActionKey();
+		if (!isset(self::$scriptsGroupContainer[$ctrlActionKey])) {
+			self::$scriptsGroupContainer[$ctrlActionKey] = array();
+		}
+		if (!isset(self::$scriptsGroupContainer[$ctrlActionKey][$name])) {
+			self::$scriptsGroupContainer[$ctrlActionKey][$name] = array();
+		}
+		return self::$scriptsGroupContainer[$ctrlActionKey][$name];
+	}
+
+	/**
+	 * Create data item to store for render process
+	 * @param  string  $path
+	 * @param  string  $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \stdClass
+	 */
+	private function _completeItem ($path, $async, $defer, $doNotMinify, $external) {
+		if (self::$logingAndExceptions) {
+			if (!$path) $this->exception('Path to *.js can\'t be an empty string.');
+			$duplication = $this->_isDuplicateScript($path);
+			if ($duplication) $this->warning("Script '$path' is already added in js group: '$duplication'.");
+		}
+		return (object) array(
+			'path'			=> $path,
+			'async'			=> $async,
+			'defer'			=> $defer,
+			'doNotMinify'	=> $doNotMinify,
+			'external'		=> $external,
+		);
+	}
+
+	/**
+	 * Is the linked script duplicate?
+	 * @param  string $path
+	 * @return string
+	 */
+	private function _isDuplicateScript ($path) {
+		$result = '';
+		$allGroupItems = & self::$scriptsGroupContainer[$this->getCtrlActionKey()];
+		foreach ($allGroupItems as $groupName => $groupItems) {
+			foreach ($groupItems as $item) {
+				if ($item->path == $path) {
+					$result = $groupName;
+					break;
+				}
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Render script elements as html code with links to original files or temporary downloaded files
+	 * @param  int $indent
+	 * @return string
+	 */
+	public function Render ($indent = 0) {
+		$actualGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		if (count($actualGroupItems) === 0) return '';
+		$minify = (bool)self::$globalOptions['jsMinify'];
+		$joinTogether = (bool)self::$globalOptions['jsJoin'];
+		if ($joinTogether) {
+			$result = $this->_renderItemsTogether(
+				$this->actualGroupName,
+				$actualGroupItems,
+				$indent,
+				$minify
+			);
+		} else {
+			$result = $this->_renderItemsSeparated(
+				$this->actualGroupName,
+				$actualGroupItems,
+				$indent,
+				$minify
+			);
+		}
+		return $result;
+	}
+
+	/**
+	 * Render data items as separated <script> html tags
+	 * @param string  $actualGroupName
+	 * @param array   $items
+	 * @param int     $indent
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsSeparated ($actualGroupName = '', $items = array(), $indent = 0, $minify = FALSE) {
+		$indentStr = $this->getIndentString($indent);
+		$resultItems = array();
+		if (self::$fileRendering) $resultItems[] = '<!-- js group begin: ' . $actualGroupName . ' -->';
+		$appCompilation = \MvcCore\Application::GetInstance()->GetCompiled();
+		foreach ($items as $item) {
+			if ($item->external) {
+				$item->src = $this->CssJsFileUrl($this->_downloadFileToTmpAndGetNewHref($item, $minify));
+			} else if ($minify && !$item->doNotMinify) {
+				$item->src = $this->CssJsFileUrl($this->_renderFileToTmpAndGetNewHref($item, $minify));
+			} else {
+				$item->src = $this->CssJsFileUrl($item->path);
+			}
+			if (!$appCompilation) {
+				/*if ($item->external) {
+					$tmpOrSrcPath = substr($item->src, strlen(self::$basePath));
+				} else {
+					$tmpOrSrcPath = $item->src;
+				}*/
+				$item->src = $this->addFileModificationImprintToHrefUrl($item->src, $item->path);
+			}
+			$resultItems[] = $this->_renderItemSeparated($item);
+		}
+		if (self::$fileRendering) $resultItems[] = '<!-- js group end: ' . $actualGroupName . ' -->';
+		return $indentStr . implode(PHP_EOL . $indentStr, $resultItems);
+	}
+
+	/**
+	 * Render js file by path and store result in tmp directory and return new href value
+	 * @param \stdClass $item
+	 * @param boolean  $minify
+	 * @return string
+	 */
+	private function _renderFileToTmpAndGetNewHref ($item, $minify = FALSE) {
+		$path = $item->path;
+		$tmpFileName = '/rendered_js_' . self::$systemConfigHash . '_' . trim(str_replace('/', '_', $path), "_");
+		$srcFileFullPath = $this->getAppRoot() . $path;
+		$tmpFileFullPath = $this->getTmpDir() . $tmpFileName;
+		if (self::$fileRendering) {
+			if (\Packager_Php_Wrapper::FileExists($srcFileFullPath)) {
+				$srcFileModDate = \Packager_Php_Wrapper::Filemtime($srcFileFullPath);
+			} else {
+				$srcFileModDate = 1;
+			}
+			if (\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				$tmpFileModDate = \Packager_Php_Wrapper::Filemtime($tmpFileFullPath);
+			} else {
+				$tmpFileModDate = 0;
+			}
+			if ($srcFileModDate !== FALSE && $tmpFileModDate !== FALSE) {
+				if ($srcFileModDate > $tmpFileModDate) {
+					$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+					if ($minify) {
+						$fileContent = $this->_minify($fileContent, $path);
+					}
+					$this->saveFileContent($tmpFileFullPath, $fileContent);
+					$this->log("Js file rendered ('$tmpFileFullPath').", 'debug');
+				}
+			}
+		}
+		$tmpPath = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		return $tmpPath;
+	}
+
+	/**
+	 * Download js file by path and store result in tmp directory and return new href value
+	 * @param \stdClass $item
+	 * @param boolean  $minify
+	 * @return string
+	 */
+	private function _downloadFileToTmpAndGetNewHref ($item, $minify = FALSE) {
+		$path = $item->path;
+		$tmpFileFullPath = $this->getTmpDir() . '/external_js_' . md5($path) . '.js';
+		if (self::$fileRendering) {
+			if (\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				$cacheFileTime = \Packager_Php_Wrapper::Filemtime($tmpFileFullPath);
+			} else {
+				$cacheFileTime = 0;
+			}
+			if (time() > $cacheFileTime + self::EXTERNAL_MIN_CACHE_TIME) {
+				while (TRUE) {
+					$newPath = $this->_getPossiblyRedirectedPath($path);
+					if ($newPath === $path) {
+						break;
+					} else {
+						$path = $newPath;
+					}
+				}
+				$fr = fopen($path, 'r');
+				$fileContent = '';
+				$bufferLength = 102400; // 100 KB
+				$buffer = '';
+				while ($buffer = fread($fr, $bufferLength)) {
+					$fileContent .= $buffer;
+				}
+				fclose($fr);
+				if ($minify) {
+					$fileContent = $this->_minify($fileContent, $path);
+				}
+				$this->saveFileContent($tmpFileFullPath, $fileContent);
+				$this->log("External js file downloaded ('$tmpFileFullPath').", 'debug');
+			}
+		}
+		$tmpPath = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		return $tmpPath;
+	}
+
+	/**
+	 * If there is any redirection in external content path - get redirect path
+	 * @param string $path
+	 * @return string
+	 */
+	private function _getPossiblyRedirectedPath ($path = '') {
+		$fp = fopen($path, 'r');
+		$metaData = stream_get_meta_data($fp);
+		foreach ($metaData['wrapper_data'] as $response) {
+			// Were we redirected? */
+			if (strtolower(substr($response, 0, 10)) == 'location: ') {
+				// update $src with where we were redirected to
+				$path = substr($response, 10);
+			}
+		}
+		return $path;
+	}
+
+	/**
+	 * Create HTML script element from data item
+	 * @param  \stdClass $item
+	 * @return string
+	 */
+	private function _renderItemSeparated (\stdClass $item) {
+		$result = '<script type="text/javascript"';
+		if ($item->async) $result .= ' async="async"';
+		if ($item->async) $result .= ' defer="defer"';
+		if (!$item->external && self::$fileChecking) {
+			$fullPath = $this->getAppRoot() . $item->path;
+			if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
+				$this->log("File not found in CSS view rendering process ('$fullPath').", 'error');
+			}
+		}
+		$result .= ' src="' . $item->src . '"></script>';
+		return $result;
+	}
+
+	/**
+	 * Minify javascript string and return minified result
+	 * @param string $js
+	 * @param string $path
+	 * @return string
+	 */
+	private function _minify (& $js, $path) {
+		$result = '';
+		if (!is_callable(static::$MinifyCallable)) {
+			$this->exception(
+				"Configured callable object for JS minification doesn't exist. "
+				."Use: https://github.com/mrclay/minify -> /min/lib/JSMin.php"
+			);
+		}
+		try {
+			$result = call_user_func(static::$MinifyCallable, $js);
+		} catch (\Exception $e) {
+			$this->exception("Unable to minify javascript ('$path').");
+		}
+		return $result;
+	}
+
+	/**
+	 * Render data items as one <script> html tag or all another <script> html tags after with files which is not possible to minify.
+	 * @param string  $actualGroupName
+	 * @param array   $items
+	 * @param int     $indent
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsTogether ($actualGroupName = '', $items = array(), $indent, $minify = FALSE) {
+
+		// some configurations is not possible to render together and minimized
+		list($itemsToRenderMinimized, $itemsToRenderSeparately) = $this->filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems($items);
+
+		$indentStr = $this->getIndentString($indent);
+		$resultItems = array();
+		if (self::$fileRendering) $resultItems[] = '<!-- js group begin: ' . $actualGroupName . ' -->';
+
+		// process array with groups, which are not possible to minimize
+		foreach ($itemsToRenderSeparately as & $itemsToRender) {
+			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, FALSE);
+		}
+
+		// process array with groups to minimize
+		foreach ($itemsToRenderMinimized as & $itemsToRender) {
+			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, $minify);
+		}
+
+		if (self::$fileRendering) $resultItems[] = $indentStr . '<!-- js group end: ' . $actualGroupName . ' -->';
+
+		return $indentStr . implode(PHP_EOL, $resultItems);
+	}
+
+	/**
+	 * Render all items in group together, when application is compiled, do not check source files and changes.
+	 * @param array   $itemsToRender
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsTogetherAsGroup ($itemsToRender = array(), $minify = FALSE) {
+
+		// complete tmp filename by source filenames and source files modification times
+		$filesGroupInfo = array();
+		foreach ($itemsToRender as $item) {
+			if ($item->external) {
+				$srcFileFullPath = $this->_downloadFileToTmpAndGetNewHref($item, $minify);
+				$filesGroupInfo[] = $item->path . '?_' . self::getFileImprint($this->getAppRoot() . $srcFileFullPath);
+			} else {
+				if (self::$fileChecking) {
+					$fullPath = $this->getAppRoot() . $item->path;
+					if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
+						$this->exception("File not found in JS view rendering process ('$fullPath').");
+					}
+					$filesGroupInfo[] = $item->path . '?_' . self::getFileImprint($fullPath);
+				} else {
+					$filesGroupInfo[] = $item->path;
+				}
+			}
+		}
+		$tmpFileFullPath = $this->getTmpFileFullPathByPartFilesInfo($filesGroupInfo, $minify, 'js');
+
+		// check, if the rendered, together completed and minimized file is in tmp cache already
+		if (self::$fileRendering) {
+			if (!\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				// load all items and join them together
+				$resultContent = '';
+				foreach ($itemsToRender as & $item) {
+					$srcFileFullPath = $this->getAppRoot() . $item->path;
+					if ($item->external) {
+						$srcFileFullPath = $this->_downloadFileToTmpAndGetNewHref($item, $minify);
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($this->getAppRoot() . $srcFileFullPath);
+					} else if ($minify) {
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+						if ($minify) $fileContent = $this->_minify($fileContent, $item->path);
+					} else {
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+					}
+					$resultContent .= PHP_EOL . "/* " . $item->path . " */" . PHP_EOL . $fileContent . PHP_EOL;
+				}
+				// save completed tmp file
+				$this->saveFileContent($tmpFileFullPath, $resultContent);
+				$this->log("Js files group rendered ('$tmpFileFullPath').", 'debug');
+			}
+		}
+
+		// complete <link> tag with tmp file path in $tmpFileFullPath variable
+		$firstItem = array_merge((array) $itemsToRender[0], array());
+		$pathToTmp = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		$firstItem['src'] = $this->CssJsFileUrl($pathToTmp);
+
+		return $this->_renderItemSeparated((object) $firstItem);
+	}
+}
+}
+namespace App\Controllers{
+
+use \App\Models,
+	\MvcCore\Ext\Form;
+
+class CdCollection extends Base
+{
+	/** @var \App\Models\Album */
+	protected $album;
+    /**
+	 * Initialize this controller, before prdispatching and before every action
+	 * executing in current controller. This method is template method - so
+	 * it's necessary to call parent method at the beginning.
+	 */
+	public function Init(){
+		parent::Init();
+		// if user is not authorized, redirect to homepage and exit
+		if (!$this->user) {
+			self::Redirect($this->Url(
+				'Index:Index', array('sourceUrl' => urlencode($this->request->Referer))
+			));
+		}
+	}
+    /**
+     * Pre execute every action in current controller. This method
+	 * is template method - so it's necessary to call parent method at the beginning.
+     */
+    public function PreDispatch() {
+        parent::PreDispatch();
+		// if there is any 'id' param in $_GET or $_POST,
+		// try to load album model instance from database
+		$id = $this->GetParam("id", "0-9");
+		if (strlen($id) > 0) {
+			$this->album = Models\Album::GetById(intval($id));
+			if (!$this->album) $this->renderNotFound();
+		}
+    }
+    /**
+	 * Load all album items, create virtual delete form
+	 * to initialize and manage CSRF tokens only once, not
+	 * for every album row and add supporting js file
+	 * to initialize javascript in delete post forms
+	 * created multiple times in view only.
+	 * @return void
+     */
+    public function IndexAction () {
+		$this->view->Title = 'CD Collection';
+		$this->view->Albums = Models\Album::GetAll();
+		/** @var $abstractForm \MvcCore\Ext\Form */
+		list($this->view->CsrfName, $this->view->CsrfValue)
+			= $this->getVirtualDeleteForm()->SetUpCsrf();
+		$this->view->Js('varFoot')
+			->Prepend(self::$staticPath . '/js/List.js');
+    }
+    /**
+	 * Create form for new album without hidden id input.
+	 * @return void
+     */
+    public function CreateAction () {
+		$this->view->Title = 'New album';
+		$this->view->DetailForm = $this->getCreateEditForm(FALSE);
+    }
+    /**
+     * Load previously saved album data,
+	 * create edit form with hidden id input
+	 * and set form defaults with album values.
+	 * @return void
+     */
+    public function EditAction () {
+		$this->view->Title = 'Edit album - ' . $this->album->Title;
+		$this->view->DetailForm = $this->getCreateEditForm(TRUE)
+			->SetDefaults($this->album->GetValues(), TRUE);
+    }
+    /**
+     * Submit action data fro create and edit form.
+	 * @return void
+     */
+    public function SubmitAction () {
+		$detailForm = $this->getCreateEditForm();
+		if (!$this->album) {
+			$this->album = new Models\Album();
+			$detailForm->SetErrorUrl($this->Url(':Create', array('absolute' => TRUE)));
+		} else {
+			$detailForm->SetErrorUrl($this->Url(':Edit', array('id' => $this->album->Id, 'absolute' => TRUE)));
+		}
+		$detailForm->Submit();
+		$detailForm->UnsetEmptyData();
+		if ($detailForm->Result) {
+			$this->album->SetUp($detailForm->Data, TRUE)->Save();
+		}
+		$detailForm->RedirectAfterSubmit();
+    }
+    /**
+	 * Delete album by sended id param, if sended CSRF tokens
+	 * are the same as tokens in session, tokens are managed
+	 * by virtual delete form, initialized only once, not for all album rows.
+	 * @return void
+     */
+    public function DeleteAction () {
+		if ($this->getVirtualDeleteForm()->ValidateCsrf($_POST)) {
+			$this->album->Delete();
+		}
+		self::Redirect($this->Url(':Index'));
+    }
+	/**
+	 * Create form for create album and edit album
+	 * @return \MvcCore\Ext\Form
+	 */
+	protected function getCreateEditForm ($editForm = TRUE) {
+		$form = (new Form($this))
+			->SetId('detail')
+			->SetMethod(Form::METHOD_POST)
+			->SetAction($this->Url(':Submit'))
+			->SetSuccessUrl($this->Url(':Index', array('absolute' => TRUE)))
+			->SetFieldsDefaultRenderMode(
+				Form::FIELD_RENDER_MODE_LABEL_AROUND
+			);
+		if ($editForm) {
+			$id = (new Form\Hidden)
+				->SetName('id')
+				->AddValidators('NumberField');
+			$form->AddField($id);
+		}
+		$title = (new Form\Text)
+			->SetName('title')
+			->SetLabel('Title:')
+			->SetSize(200)
+			->SetRequired()
+			->SetAutocomplete('off');
+		$interpret = (new Form\Text)
+			->SetName('interpret')
+			->SetLabel('Interpret:')
+			->SetSize(200)
+			->SetRequired()
+			->SetAutocomplete('off');
+		$year = (new Form\Number)
+			->SetName('year')
+			->SetLabel('Year:')
+			->SetSize(4);
+		$send = (new Form\SubmitButton)
+			->SetName('send')
+			->SetCssClasses('button-green')
+			->SetValue('<span><b>Save</b></span>');
+		return $form->AddFields($title, $interpret, $year, $send);
+	}
+	/**
+	 * Create empty form where to store CSRF tokens
+	 * @return \MvcCore\Ext\Form|mixed
+	 */
+	protected function getVirtualDeleteForm () {
+		return (new Form($this))
+			->SetId('delete')
+			// set error url, where to redirect if CSRF
+			// are wrong, see App_Controller_Base::Init()
+			->SetErrorUrl(
+				$this->Url('Index:Index', array('absolute' => TRUE))
+			);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth{
+
+class Controller extends Virtual\Controller {
+	/**
+	 * Authentication form submit action to sign in.
+	 * Routed by route configured by:
+	 * MvcCore\Ext\Auth::GetInstance()->SetSignInRoute();
+	 * @return void
+	 */
+	public function SignInAction () {
+		/** @var $form \MvcCore\Ext\Auth\SignInForm */
+		$form = \MvcCore\Ext\Auth::GetInstance()->GetForm();
+		list ($result, $data, $errors) = $form->Submit();
+		if ($result !== \MvcCore\Ext\Form::RESULT_SUCCESS) {
+			// here you can count bad login requests
+			// to ban danger user for some time or anything else...
+
+		}
+		$form->ClearSession(); // to remove all submited data from session
+		$form->RedirectAfterSubmit();
+	}
+	/**
+	 * Authentication form submit action to sign out.
+	 * Routed by route configured by:
+	 * MvcCore\Ext\Auth::GetInstance()->SetSignOutRoute();
+	 * @return void
+	 */
+	public function SignOutAction () {
+		/** @var $form \MvcCore\Ext\Auth\SignOutForm */
+		$form = \MvcCore\Ext\Auth::GetInstance()->GetForm();
+		/*list ($result, $data, $errors) = */$form->Submit();
+		$form->ClearSession(); // to remove all submited data from session
+		$form->RedirectAfterSubmit();
+	}
+}
+}
+namespace App\Controllers{
+
+class System extends Base
+{
+	public function JsErrorsLogAction () {
+		$this->DisableView();
+		if (\MvcCore\Config::IsProduction()) return;
+		$keys = array(
+			'message'=>1,
+			'uri'		=> 1,
+			'file'		=> 1,
+			'line'		=> 0,
+			'column'	=> 0,
+			'callstack'	=> 1,
+			'browser'	=> 1,
+			'platform'	=> 0,
+		);
+		$data = array();
+		foreach ($keys as $key => $hex) {
+			$param = $this->GetParam($key);
+			if ($hex) $param = self::_hexToStr($param);
+			$param = preg_replace("#[^a-zA-Z0-9/\&\(\)\[\]\.\'\"%\#\$]#", "", $param);
+			$data[$key] = $param;
+		}
+		$msg = json_encode($data);
+		\MvcCore\Debug::Log($msg, \MvcCore\Debug::JAVASCRIPT);
+	}
+	private static function _hexToStr ($hex) {
+		$string='';
+		for ($i = 0; $i < strlen($hex) - 1; $i += 2){
+			$string .= chr(hexdec($hex[$i].$hex[$i+1]));
+		}
+		return $string;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__.'/Interfaces/IApplication.php');
+//include_once(__DIR__.'/Application/GettersSetters.php');
+//include_once(__DIR__.'/Application/Dispatching.php');
+//include_once(__DIR__.'/Application/Helpers.php');
+
+/**
+ * Responsibility - singleton, instancing all core classes and handling request.
+ * - Global store and managing singleton application instance.
+ * - Main application objects container (request, response, controller, etc.).
+ * - MvcCore compile mode managing (single file mode, php, phar, or no package).
+ * - Global store for all main core class names, to use them as modules,
+ *   to be changed any time (request class, response class, debug class, etc.).
+ * - Processing application run (`\MvcCore\Application::Run();`):
+ *   - Completing request and response.
+ *   - Calling pre/post handlers.
+ *   - Controller/action dispatching.
+ *   - Error handling and error responses.
+ */
+class Application implements \MvcCore\Interfaces\IApplication
+{
+	/**
+	 * Include traits with
+	 * - Application properties, getters and setters methods.
+	 * - Application normal requests and error requests dispatching methods.
+	 * - Application helper methods.
+	 * Traits in PHP is the only option, how to get something
+	 * analogicly the same as partial classes C#.
+	 */
+	use \MvcCore\Application\GettersSetters;
+	use \MvcCore\Application\Dispatching;
+	use \MvcCore\Application\Helpers;
+
+	/***********************************************************************************
+	 *                      `\MvcCore\Application` - Static Calls                      *
+	 ***********************************************************************************/
+
+	/**
+	 * Returns singleton `\MvcCore\Application` instance as reference.
+	 * @return \MvcCore\Application
+	 */
+	public static function & GetInstance () {
+		if (!static::$instance) static::$instance = new static();
+		return static::$instance;
+	}
+}
+}
+namespace App\Models{
+
+class User extends \MvcCore\Ext\Auth\User
+{
+	/** @var int */
+	public $Id;
+	public $UserName = '';
+	public $PasswordHash = '';
+	public $FullName = '';
+
+	public static function GetUserBySession () {
+		$session = static::getSession();
+		if (isset($session->uname)) {
+			return self::GetByUserName($session->uname);
+		}
+		return NULL;
+	}
+
+	public static function Authenticate ($uniqueUserName = '', $password = '') {
+		$hashedPassword = static::GetPasswordHash($password);
+		$user = self::GetByUserName($uniqueUserName);
+		if ($user && $user->PasswordHash === $hashedPassword) {
+			return $user;
+		}
+		return NULL;
+	}
+
+	public static function GetByUserName ($userName) {
+		$select = self::getDb()->prepare("
 			SELECT
 				u.id AS Id,
 				u.user_name AS UserName,
 				u.password_hash AS PasswordHash,
 				u.full_name AS FullName
 			FROM
-				users as u
+				users AS u
 			WHERE
 				u.user_name = :user_name
-		");$select->execute(array(":user_name"=>$userName,));if($data=$select->fetch(\PDO::FETCH_ASSOC)){return(new self())->setUp($data);}return NULL;}}}
-namespace App\Controllers{use\App\Models,\MvcCore\Ext\Form;class CdCollection extends Base{/** @var \App\Models\Album */protected$album;public function Init(){parent::Init();if(!$this->user){self::Redirect($this->Url('Index:Index',array('sourceUrl'=>urlencode($this->request->Referer))));}}public function PreDispatch(){parent::PreDispatch();$id=$this->GetParam("id","0-9");if(strlen($id)>0){$this->album=Models\Album::GetById(intval($id));if(!$this->album)$this->renderNotFound();}}public function IndexAction(){$this->view->Title='CD Collection';$this->view->Albums=Models\Album::GetAll();/** @var $abstractForm \MvcCore\Ext\Form */list($this->view->CsrfName,$this->view->CsrfValue)=$this->getVirtualDeleteForm()->SetUpCsrf();$this->view->Js('varFoot')->Prepend(self::$staticPath.'/js/List.js');}public function CreateAction(){$this->view->Title='New album';$this->view->DetailForm=$this->getCreateEditForm(FALSE);}public function EditAction(){$this->view->Title='Edit album - '.$this->album->Title;$this->view->DetailForm=$this->getCreateEditForm(TRUE)->SetDefaults($this->album->GetValues(),TRUE);}public function SubmitAction(){$detailForm=$this->getCreateEditForm();if(!$this->album){$this->album=new Models\Album();$detailForm->SetErrorUrl($this->Url(':Create',array('absolute'=>TRUE)));}else{$detailForm->SetErrorUrl($this->Url(':Edit',array('id'=>$this->album->Id,'absolute'=>TRUE)));}$detailForm->Submit();$detailForm->UnsetEmptyData();if($detailForm->Result){$this->album->SetUp($detailForm->Data,TRUE)->Save();}$detailForm->RedirectAfterSubmit();}public function DeleteAction(){if($this->getVirtualDeleteForm()->ValidateCsrf($_POST)){$this->album->Delete();}self::Redirect($this->Url(':Index'));}protected function getCreateEditForm($editForm=TRUE){$form=(new Form($this))->SetId('detail')->SetMethod(Form::METHOD_POST)->SetAction($this->Url(':Submit'))->SetSuccessUrl($this->Url(':Index',array('absolute'=>TRUE)))->SetFieldsDefaultRenderMode(Form::FIELD_RENDER_MODE_LABEL_AROUND);if($editForm){$id=(new Form\Hidden)->SetName('id')->AddValidators('NumberField');$form->AddField($id);}$title=(new Form\Text)->SetName('title')->SetLabel('Title:')->SetSize(200)->SetRequired()->SetAutocomplete('off');$interpret=(new Form\Text)->SetName('interpret')->SetLabel('Interpret:')->SetSize(200)->SetRequired()->SetAutocomplete('off');$year=(new Form\Number)->SetName('year')->SetLabel('Year:')->SetSize(4);$send=(new Form\SubmitButton)->SetName('send')->SetCssClasses('button-green')->SetValue('<span><b>Save</b></span>');return$form->AddFields($title,$interpret,$year,$send);}protected function getVirtualDeleteForm(){return(new Form($this))->SetId('delete')->SetErrorUrl($this->Url('Index:Index',array('absolute'=>TRUE)));}}}
-namespace App\Controllers{use\MvcCore\Ext\Form;class Index extends Base{public function IndexAction(){if($this->user instanceof\App\Models\User){self::Redirect($this->Url('CdCollection:'));}$this->view->Title='CD Collection';$this->view->User=$this->user;$this->view->SignInForm=$this->getSignInFormCustomized();}public function NotFoundAction(){$this->view->Title="Error 404 - requested page not found.";$this->view->Message=$this->request->Params['message'];}protected function getSignInFormCustomized(){/** @var $signInForm \MvcCore\Ext\Auth\SignInForm */$signInForm=\MvcCore\Ext\Auth::GetInstance()->GetForm()->Init()->SetDefaults(array('successUrl'=>$this->Url('CdCollection:',array('absolute'=>TRUE)),));$signInForm->GetFirstFieldsByClass(Form\Text::class,TRUE)->SetLabel('')->SetPlaceholder('login');$signInForm->GetFirstFieldsByClass(Form\Password::class)->SetLabel('')->SetPlaceholder('password');$signInFormSubmitBtn=$signInForm->GetFirstFieldsByClass(Form\SubmitButton::class);$signInFormSubmitBtn->AddCssClass('button-green')->SetValue('<span><b>'.$signInFormSubmitBtn->GetValue().'</b></span>');return$signInForm;}}}
-namespace MvcCore\Ext\Auth{class Controller extends Virtual\Controller{public function SignInAction(){/** @var $form \MvcCore\Ext\Auth\SignInForm */$form=\MvcCore\Ext\Auth::GetInstance()->GetForm();list($result,$data,$errors)=$form->Submit();if($result!==\MvcCore\Ext\Form::RESULT_SUCCESS){}$form->ClearSession();$form->RedirectAfterSubmit();}public function SignOutAction(){/** @var $form \MvcCore\Ext\Auth\SignOutForm */$form=\MvcCore\Ext\Auth::GetInstance()->GetForm();$form->Submit();$form->ClearSession();$form->RedirectAfterSubmit();}}}
-namespace App\Controllers{class System extends Base{public function JsErrorsLogAction(){$this->DisableView();if(\MvcCore\Config::IsProduction())return;$keys=array('message'=>1,'uri'=>1,'file'=>1,'line'=>0,'column'=>0,'callstack'=>1,'browser'=>1,'platform'=>0,);$data=array();foreach($keys as$key=>$hex){$param=$this->GetParam($key);if($hex)$param=self::_hexToStr($param);$param=preg_replace("#[^a-zA-Z0-9/\&\(\)\[\]\.\'\"%\#\$]#","",$param);$data[$key]=$param;}$msg=json_encode($data);\MvcCore\Debug::Log($msg,\MvcCore\Debug::JAVASCRIPT);}private static function _hexToStr($hex){$string='';for($i=0;$i<strlen($hex)-1;$i+=2){$string.=chr(hexdec($hex[$i].$hex[$i+1]));}return$string;}}}
-namespace MvcCore\Ext\Form\Validators{use MvcCore\Ext\Form,MvcCore\Ext\Form\Core;class NumberField extends Core\Validator{public function Validate($submitValue,$fieldName,\MvcCore\Ext\Form\Core\Field&$field){$submitValue=trim((string)$submitValue);$intValueStr=preg_replace("#[^0-9]#",'',$submitValue);$floatValueStr=preg_replace("#[^0-9\.]#",'',str_replace(',','.',$submitValue));$errorMsgKeyCommon='';$errorMsgKey='';if(strlen($intValueStr)===0){if($field->Required)$errorMsgKey=Form::NUMBER;$safeValue='';}else{if($floatValueStr===$intValueStr){$safeValue=intval($intValueStr);$errorMsgKeyCommon=Form::INTEGER;}else{$safeValue=floatval($intValueStr);$errorMsgKeyCommon=Form::FLOAT;}$errorMsgKey='';if(isset($this->Min)&&!is_null($field->Min)){if($safeValue<$field->Min){$errorMsgKey=!is_null($this->Max)?Form::RANGE:Form::GREATER;}}if(isset($this->Max)&&!is_null($this->Max)){if($safeValue>$field->Max){$errorMsgKey=!is_null($this->Min)?Form::RANGE:Form::LOWER;}}if(isset($this->Pattern)&&!is_null($this->Pattern)){preg_match("#^".$this->Pattern."$#",(string)$safeValue,$matches);if(!$matches){$errorMsgKey=$errorMsgKeyCommon;}}}if(mb_strlen($safeValue)!==mb_strlen($submitValue)||$errorMsgKey){$errorMsgKey=$errorMsgKey?$errorMsgKey:$errorMsgKeyCommon;$errorReplacements=array();if($errorMsgKey==Form::RANGE){$errorReplacements[]=$field->Min;$errorReplacements[]=$field->Max;}else if($errorMsgKey==Form::GREATER){$errorReplacements[]=$field->Min;}else if($errorMsgKey==Form::LOWER){$errorReplacements[]=$field->Max;}$this->addError($field,Form::$DefaultMessages[$errorMsgKey],function($msg,$args)use(&$errorReplacements){$args=array_merge($args,$errorReplacements);return Core\View::Format($msg,$args);});}return$safeValue;}}}
-namespace MvcCore\Ext\Form\Validators{use MvcCore\Ext\Form,MvcCore\Ext\Form\Core;class SafeString extends Core\Validator{public function Validate($submitValue,$fieldName,\MvcCore\Ext\Form\Core\Field&$field){$submitValue=trim($submitValue);$cleanedValue=strtr($submitValue,array("\x00"=>'',"\x08"=>'',"\x10"=>'',"\x18"=>'',"\x01"=>'',"\x09"=>'',"\x11"=>'',"\x19"=>'',"\x02"=>'',"\x0A"=>'',"\x12"=>'',"\x1A"=>'',"\x03"=>'',"\x0B"=>'',"\x13"=>'',"\x1B"=>'',"\x04"=>'',"\x0C"=>'',"\x14"=>'',"\x1C"=>'',"\x05"=>'',"\x0D"=>'',"\x15"=>'',"\x1D"=>'',"\x06"=>'',"\x0E"=>'',"\x16"=>'',"\x1E"=>'',"\x07"=>'',"\x0F"=>'',"\x17"=>'',"\x1F"=>'',));if(mb_strlen($cleanedValue)!==mb_strlen($submitValue)){$this->addError($field,Form::$DefaultMessages[Form::INVALID_CHARS],function($msg,$args){return Core\View::Format($msg,$args);});}$safeValue=strtr($cleanedValue,array("'"=>'&#39;','"'=>'&quot;','`'=>"&#96;",'<'=>"&lt;",'>'=>"&gt;",'\\'=>"&#92;",'='=>"&#61;",'^'=>"&#94;",'|'=>"&#124;",'&'=>"&amp;",'~'=>"&#126;",));return$safeValue;}}}
-namespace MvcCore\Ext\Form\Validators{use MvcCore\Ext\Form,MvcCore\Ext\Form\Core;class Maxlength extends Core\Validator{public function Validate($submitValue,$fieldName,\MvcCore\Ext\Form\Core\Field&$field){$submitValue=trim($submitValue);if(isset($field->Maxlength)&&!is_null($field->Maxlength)&&$field->Maxlength>0){$safeValue=mb_substr($submitValue,0,$field->Maxlength);}else{$safeValue=$submitValue;}if(mb_strlen($safeValue)!==mb_strlen($submitValue)){$this->addError($field,Form::$DefaultMessages[Form::MAX_LENGTH],function($msg,$args)use(&$field){$args[]=$field->Maxlength;return Core\View::Format($msg,$args);});}return$safeValue;}}}
-namespace MvcCore\Ext\Form\Validators{use MvcCore\Ext\Form,MvcCore\Ext\Form\Core;class Integer extends Core\Validator{public function Validate($submitValue,$fieldName,\MvcCore\Ext\Form\Core\Field&$field){$submitValue=trim($submitValue);$safeValue=preg_replace("#[^0-9]#",'',$submitValue);if(mb_strlen($safeValue)!==mb_strlen($submitValue)){$this->addError($field,Form::$DefaultMessages[Form::INTEGER],function($msg,$args){return Core\View::Format($msg,$args);});}return$safeValue;}}}
-namespace MvcCore\Ext\Form\Validators{use MvcCore\Ext\Form,MvcCore\Ext\Form\Core;class Url extends Core\Validator{public function Validate($submitValue,$fieldName,\MvcCore\Ext\Form\Core\Field&$field){$submitValue=trim($submitValue);$safeValue=filter_var($submitValue,FILTER_VALIDATE_URL);$safeValue=$safeValue===FALSE?'':$safeValue;if(mb_strlen($safeValue)!==mb_strlen($submitValue)){$this->addError($field,Form::$DefaultMessages[Form::URL],function($msg,$args){return Core\View::Format($msg,$args);});}return$safeValue;}}}
+		");
+		$select->execute(array(
+			":user_name" => $userName,
+		));
+		if ($data = $select->fetch(\PDO::FETCH_ASSOC)) {
+			return (new self())->setUp($data);
+		}
+		return NULL;
+    }
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+// because of static init
+//include_once(__DIR__ . '/Interfaces/IView.php');
+
+/**
+ * Core view:
+ * - Static storage for
+ *   - commonly used doctype
+ *   - common views extension
+ *   - common directories names containing view scripts
+ *   - common views helpers namespaces
+ * - It's possible to use this class for any controller, subcontroller or form.
+ * - View prerender preparing and rendering.
+ * - View helpers management on demand:
+ *   - Creating by predefined class namespaces.
+ *   - global static helpers instances storage and repeatable calling.
+ * - Views sub scripts relative path solving in:
+ *   `<?php $this->renderScript('./any-subdirectory/script-to-render.php'); ?>`
+ * - `Url()` - proxy method from `\MvcCore\Router` targeting to configured router.
+ * - `AssetUrl()` - proxy method from `\MvcCore\Controller`.
+ * - Magic calls:
+ *   - __call() - To handler any view helper, if no helper found - exception thrown.
+ *   - __set() - To set anything from controller to get it back in view.
+ *   - __get() - To get anything in view previously initialized from controller.
+ * - Optional direct code evaluation.
+ * - No special view language implemented.
+ *   - Why to use such stupid things, if we have configured `short_open_tags` by default? `<?=...?>`
+ */
+class View implements Interfaces\IView
+{
+	/**
+	 * View script files extenion. Default value: `".phtml"`.
+	 * For read & write.
+	 * @var string
+	 */
+	public static $Extension = '.phtml';
+
+	/**
+	 * Document type to send proper optinal headers or anything else.
+	 * Possible values:
+	 * - `\MvcCore\Interfaces\IView::DOCTYPE_HTML4`
+	 * - `\MvcCore\Interfaces\IView::DOCTYPE_XHTML`
+	 * - `\MvcCore\Interfaces\IView::DOCTYPE_HTML5`
+	 * @var string
+	 */
+	public static $Doctype = self::DOCTYPE_HTML5;
+
+	/**
+	 * Controller/action templates directory placed by default inside `"/App/Views"` directory.
+	 * Default value: `"Scripts"`. For read & write.
+	 * @var string
+	 */
+	public static $ScriptsDir = 'Scripts';
+
+	/**
+	 * Views helpers directory placed by default inside `"/App/Views"` directory.
+	 * Default value: `"Helpers"`. For read & write.
+	 * @var string
+	 */
+	public static $HelpersDir = 'Helpers';
+
+	/**
+	 * Layout templates directory placed by default inside `"/App/Views"` directory.
+	 * Default value: `"Layouts"`. For read & write.
+	 * @var string
+	 */
+	public static $LayoutsDir = 'Layouts';
+
+	/**
+	 * MvcCore extension class name for view helpers.
+	 * Helpers view implementing this interface could have better setup.
+	 * @var string
+	 */
+	public static $HelpersInterfaceClassName = 'MvcCore\Ext\View\Helpers\IHelper';
+
+	/**
+	 * Helpers classes namespaces, where are all configured view helpers placed.
+	 * For read & write.
+	 * @var array
+	 */
+	public static $HelpersClassesNamespaces = array(
+		/*'\MvcCore\Ext\View\Helpers\'*/
+	);
+
+	/**
+	 * Controller instance.
+	 * @var \MvcCore\Controller|\MvcCore\Interfaces\IController
+	 */
+	private $_controller = NULL;
+
+	/**
+	 * Rendered content.
+	 * @var string
+	 */
+	private $_content = '';
+
+	/**
+	 * Variables store, setted (always from controller)
+	 * throught `__set()` magic function.
+	 * @var array
+	 */
+	private $_store = array();
+
+	/**
+	 * Helpers instances storrage for current view instance.
+	 * Keys in array are helper method names.
+	 * Every view has it's own helpers storrage to recognize
+	 * if helper has been already used inside current view or not.
+	 * @var array
+	 */
+	private $_helpers = array();
+
+	/**
+	 * Currently rendered php/html file path(s).
+	 * @var array
+	 */
+	private $_renderedFullPaths = array();
+
+	/**
+	 * Originaly declared internal view properties to protect their
+	 * possible overwriting by `__set()` or `__get()` magic methods.
+	 * @var array
+	 */
+	protected static $protectedProperties = array(
+		'_controller'		=> 1,
+		'_store'			=> 1,
+		'_helpers'			=> 1,
+		'_content'			=> 1,
+		'_renderedFullPaths'=> 1,
+	);
+
+	/**
+	 * Global helpers instances storrage.
+	 * Keys in array are helper method names.
+	 * These helpers instances are used for all views.
+	 * @var array
+	 */
+	private static $_globalHelpers = array();
+
+	/**
+	 * Cached base full path for repeat method calls `\MvcCore\View::GetViewScriptFullPath();`.
+	 * @var string
+	 */
+	private static $_viewScriptsFullPathBase = NULL;
+
+	/**
+	 * Reference to singleton instance in `\MvcCore\Application::GetInstance();`.
+	 * @var \MvcCore\Application|NULL
+	 */
+	private static $_app = NULL;
+
+	/**
+	 * Reference to `\MvcCore\Application::GetInstance()->GetToolClass();`.
+	 * @var string|NULL
+	 */
+	private static $_toolClass = NULL;
+
+	/**
+	 * Static initialization to complete
+	 * `static::$HelpersClassesNamespaces` by application configuration.
+	 * @return void
+	 */
+	public static function StaticInit () {
+		self::$_app = & \MvcCore\Application::GetInstance();
+		self::$_toolClass = self::$_app->GetToolClass();
+		static::$HelpersClassesNamespaces = array(
+			'\MvcCore\Ext\View\Helpers\\',
+			// and '\App\Views\Helpers\' by default:
+			'\\' . implode('\\', array(
+				self::$_app->GetAppDir(),
+				self::$_app->GetViewsDir(),
+				static::$HelpersDir
+			)) . '\\',
+		);
+	}
+
+	/**
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore\Controller::PreDispatch()`.
+	 * This is place where to customize any view creation process,
+	 * before it's created by MvcCore framework to fill and render it.
+	 * @return \MvcCore\View
+	 */
+	public static function GetInstance () {
+		return new static();
+	}
+
+	/**
+	 * Add view helpers classes namespace(s),
+	 * Example: `\MvcCore\View::AddHelpersClassNamespaces('\Any\Other\ViewHelpers\Place\', '...');`.
+	 * @param string $helperNamespace,... View helper classes namespace(s)
+	 * @return void
+	 */
+	public static function AddHelpersClassNamespaces (/*...$helperNamespace*/) {
+		$args = func_get_args();
+		foreach ($args as $arg) {
+			static::$HelpersClassesNamespaces[] = '\\' . trim($arg, '\\') . '\\';
+		}
+	}
+
+	/**
+	 * Get view script full path by internal application configuration,
+	 * by `$typePath` param and by `$corectedRelativePath` param.
+	 * @param string $typePath Usually `"Layouts"` or `"Scripts"`.
+	 * @param string $corectedRelativePath
+	 * @return string
+	 */
+	public static function GetViewScriptFullPath ($typePath = '', $corectedRelativePath = '') {
+		if (self::$_viewScriptsFullPathBase === NULL) self::_initViewScriptsFullPathBase();
+		return implode('/', array(
+			self::$_viewScriptsFullPathBase,
+			$typePath,
+			$corectedRelativePath . static::$Extension
+		));
+	}
+
+	/**
+	 * Set controller instance.
+	 * @param \MvcCore\Controller $controller
+	 * @return \MvcCore\View
+	 */
+	public function & SetController (\MvcCore\Interfaces\IController & $controller) {
+		$this->_controller = $controller;
+		return $this;
+	}
+
+	/**
+	 * Get controller instance as reference.
+	 * @return \MvcCore\Controller
+	 */
+	public function & GetController () {
+		return $this->_controller;
+	}
+
+	/**
+	 * Set up all from given view object variables store into current store,
+	 * if there is any already existing key - overwrite it.
+	 * @param \MvcCore\View $view
+	 * @return \MvcCore\View
+	 */
+	public function & SetValues (\MvcCore\Interfaces\IView & $view) {
+		$this->_store = array_merge($this->_store, $view->_store);
+		return $this;
+	}
+
+	/**
+	 * Return rendered controller/action template content as reference.
+	 * @return string
+	 */
+	public function & GetContent () {
+		return $this->_content;
+	}
+
+	/**
+	 * Get currently rendered view file full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetCurrentViewFullPath () {
+		$result = NULL;
+		$count = count($this->_renderedFullPaths);
+		if ($count > 0)
+			$result = $this->_renderedFullPaths[$count - 1];
+		return $result;
+	}
+
+	/**
+	 * Get currently rendered view file directory full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetCurrentViewDirectory () {
+		$result = $this->GetCurrentViewFullPath();
+		$lastSlashPos = mb_strrpos($result, '/');
+		if ($lastSlashPos !== FALSE) {
+			$result = mb_substr($result, 0, $lastSlashPos);
+		}
+		return $result;
+	}
+
+	/**
+	 * Get currently rendered parent view file full path.
+	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
+	 * method to render sub-view file (actual view file) or it could be any view file
+	 * from parent controller or if current controller has no parent controller,
+	 * it could be layout view script full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetParentViewFullPath () {
+		$result = NULL;
+		$count = count($this->_renderedFullPaths);
+		if ($count > 1) {
+			$result = $this->_renderedFullPaths[$count - 2];
+		} else {
+			$controller = $this->_controller;
+			$parentCtrl = $controller->GetParentController();
+			if ($parentCtrl !== NULL) {
+				while (TRUE) {
+					$parentCtrlView = $parentCtrl->GetView();
+					if ($parentCtrlView === NULL) {
+						$parentCtrl->GetParentController();
+						if ($parentCtrl === NULL) break;
+					}
+					$result = $parentCtrlView->GetCurrentViewFullPath();
+					if ($result !== NULL) break;
+				}
+			}
+			if ($result === NULL) {
+				$relativePath = $this->_correctRelativePath(static::$LayoutsDir, $controller->GetLayout());
+				return static::GetViewScriptFullPath(static::$LayoutsDir, $relativePath);
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Get currently rendered parent view file directory full path.
+	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
+	 * method to render sub-view file (actual view file) or it could be any view file
+	 * from parent controller or if current controller has no parent controller,
+	 * it could be layout view script full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetParentViewDirectory () {
+		$result = $this->GetParentViewFullPath();
+		$lastSlashPos = mb_strrpos($result, '/');
+		if ($lastSlashPos !== FALSE) {
+			$result = mb_substr($result, 0, $lastSlashPos);
+		}
+		return $result;
+	}
+
+	/**
+	 * Render controller/action template script and return it's result as reference.
+	 * @param string $relativePath
+	 * @return string
+	 */
+	public function & RenderScript ($relativePath = '') {
+		return $this->Render(static::$ScriptsDir, $relativePath);
+	}
+
+	/**
+	 * Render layout template script and return it's result as reference.
+	 * @param string $relativePath
+	 * @return string
+	 */
+	public function & RenderLayout ($relativePath = '') {
+		return $this->Render(static::$LayoutsDir, $relativePath);
+	}
+
+	/**
+	 * Render layout template script and return it's result
+	 * as reference with inner rendered content.
+	 * @param string $relativePatht.
+	 * @param string $content
+	 * @return string
+	 */
+	public function & RenderLayoutAndContent ($relativePath = '', $content = '') {
+		$this->_content = $content;
+		return $this->Render(static::$LayoutsDir, $relativePath);
+	}
+
+	/**
+	 * Render controller template and all necessary layout
+	 * templates and return rendered result as reference.
+	 * @param string $typePath
+	 * @param string $relativePath
+	 * @throws \Exception
+	 * @return string
+	 */
+	public function & Render ($typePath = '', $relativePath = '') {
+		if (!$typePath) $typePath = static::$ScriptsDir;
+		$result = '';
+		$relativePath = $this->_correctRelativePath(
+			$typePath, $relativePath
+		);
+		$viewScriptFullPath = static::GetViewScriptFullPath($typePath, $relativePath);
+		if (!\Packager_Php_Wrapper::FileExists($viewScriptFullPath)) {
+			throw new \InvalidArgumentException('['.__CLASS__."] Template not found in path: '$viewScriptFullPath'.");
+		}
+		$this->_renderedFullPaths[] = $viewScriptFullPath;
+		ob_start();
+		\Packager_Php_Wrapper::IncludeStandard(($viewScriptFullPath), $this);
+		$result = ob_get_clean();
+		array_pop($this->_renderedFullPaths); // unset last
+		return $result;
+	}
+
+	/**
+	 * Evaluate given code as PHP code by `eval()` in current view context,
+	 * any `$this` keyword will be used as current view context.
+	 * Returned result is content from output buffer as reference.
+	 * @param string $content
+	 * @return string
+	 */
+	public function & Evaluate ($content = '') {
+		ob_start();
+		try {
+			eval(' ?'.'>'.$content.'<'.'?php ');
+		} catch (\Exception $e) {
+			throw $e;
+		}
+		return ob_get_clean();
+	}
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array()) {
+		return $this->_controller->GetRouter()->Url($controllerActionOrRouteName, $params);
+	}
+
+	/**
+	 * Return asset path or single file mode url for small assets
+	 * handled by internal controller action `"Controller:Asset"`.
+	 * @param string $path
+	 * @return string
+	 */
+	public function AssetUrl ($path = '') {
+		return $this->_controller->AssetUrl($path);
+	}
+
+	/**
+	 * Try to get view helper.
+	 * If view helper doesn't exist in global helpers store - create new helper instance.
+	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
+	 * @param string $helperName View helper method name in pascal case.
+	 * @throws \InvalidArgumentException If view doesn't exist in configured namespaces.
+	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed View helper instance.
+	 */
+	public function & GetHelper ($helperName) {
+		$setUpViewAgain = FALSE;
+		$implementsIHelper = FALSE;
+		$instance = NULL;
+		if (isset($this->_helpers[$helperName])) {
+			$instance = & $this->_helpers[$helperName];
+		} else if (isset(self::$_globalHelpers[$helperName])) {
+			$globalHelpersRecord = & self::$_globalHelpers[$helperName];
+			$instance = & $globalHelpersRecord[0];
+			$implementsIHelper = $globalHelpersRecord[1];
+			$setUpViewAgain = TRUE;
+		} else {
+			$helperFound = FALSE;
+			$toolClass = self::$_toolClass;
+			$helpersInterface = static::$HelpersInterfaceClassName;
+			foreach (static::$HelpersClassesNamespaces as $helperClassBase) {
+				$className = $helperClassBase . ucfirst($helperName);
+				if (class_exists($className)) {
+					$helperFound = TRUE;
+					$setUpViewAgain = TRUE;
+					if ($toolClass::CheckClassInterface($className, $helpersInterface, FALSE)) {
+						$implementsIHelper = TRUE;
+						$instance = & $className::GetInstance();
+					} else {
+						$instance = new $className();
+					}
+					self::$_globalHelpers[$helperName] = array(& $instance, $implementsIHelper);
+					break;
+				}
+			}
+			if (!$helperFound) throw new \InvalidArgumentException(
+				"[".__CLASS__."] View helper method '$helperName' is not possible to handle by any configured view helper "
+				." (View helper namespaces: '".implode("', '", static::$HelpersClassesNamespaces)."')."
+			);
+		}
+		if ($setUpViewAgain) {
+			if ($implementsIHelper) $instance->SetView($this);
+			$this->_helpers[$helperName] = & $instance;
+		}
+		return $instance;
+	}
+
+	/**
+	 * Set view helper for current template or for all templates globaly by default.
+	 * If view helper already exist in global helpers store - it's overwritten.
+	 * @param string $helperName View helper method name in pascal case.
+	 * @param \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed $instance View helper instance.
+	 * @param bool $forAllTemplates register this helper instance for all rendered views in the future.
+	 * @return \MvcCore\View|\MvcCore\Interfaces\IView
+	 */
+	public function & SetHelper ($helperName, & $instance, $forAllTemplates = TRUE) {
+		$implementsIHelper = FALSE;
+		if ($forAllTemplates) {
+			$toolClass = self::$_toolClass;
+			$helpersInterface = static::$HelpersInterfaceClassName;
+			$className = get_class($instance);
+			$implementsIHelper = $toolClass::CheckClassInterface($className, $helpersInterface, FALSE);
+			self::$_globalHelpers[$helperName] = array(& $instance, $implementsIHelper);
+		}
+		$this->_helpers[$helperName] = & $instance;
+		if ($implementsIHelper) $instance->SetView($this);
+		return $this;
+	}
+
+	/**
+	 * Set any value into view context internal store
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @param mixed $value
+	 * @throws \Exception
+	 * @return bool
+	 */
+	public function __set ($name, $value) {
+		if (isset(static::$protectedProperties[$name])) {
+			throw new \InvalidArgumentException(
+				'['.__CLASS__."] It's not possible to change property: '$name' originaly declared in class ".__CLASS__.'.'
+			);
+		}
+		return $this->_store[$name] = & $value;
+	}
+
+	/**
+	 * Get any value from view context internal store
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @throws \Exception
+	 * @return mixed
+	 */
+	public function __get ($name) {
+		if (isset(static::$protectedProperties[$name])) {
+			throw new \InvalidArgumentException(
+				'['.__CLASS__."] It's not possible to get internal private property: '$name' in class ".__CLASS__.'.'
+			);
+		}
+		return isset($this->_store[$name]) ? $this->_store[$name] : NULL;
+	}
+
+	/**
+	 * Get if any value from view context internal store exists
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @return bool
+	 */
+	public function __isset ($name) {
+		if (isset(static::$protectedProperties[$name])) return TRUE;
+		return isset($this->_store[$name]);
+	}
+
+	/**
+	 * Unset any value from view context internal store
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @return void
+	 */
+	public function __unset ($name) {
+		if (isset(static::$protectedProperties[$name])) {
+			throw new \InvalidArgumentException(
+				'['.__CLASS__."] It's not possible to unset internal private property: '$name' in class ".__CLASS__.'.'
+			);
+		}
+		if (isset($this->_store[$name]))
+			unset($this->_store[$name]);
+	}
+
+	/**
+	 * Try to call view helper.
+	 * If view helper doesn't exist in global helpers store - create new helper instance.
+	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
+	 * Then call it's public method named in the same way as helper and return result
+	 * as it is, without any conversion. So then there could be called any other helper method if whole helper instance is returned.
+	 * @param string $method View helper method name in pascal case.
+	 * @param mixed $arguments View helper method arguments.
+	 * @throws \InvalidArgumentException If view doesn't exist in configured namespaces.
+	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|string|mixed View helper string result or view helper instance or any other view helper result type.
+	 */
+	public function __call ($method, $arguments) {
+		$result = '';
+		$instance = & $this->GetHelper($method);
+		if (method_exists($instance, $method)) {
+			$result = call_user_func_array(array($instance, $method), $arguments);
+		} else {
+			throw new \InvalidArgumentException(
+				"[".__CLASS__."] View helper instance '".get_class($instance)."' has no method '$method'."
+			);
+		}
+		return $result;
+	}
+
+	/**
+	 * If relative path declared in view starts with `"./anything/else.phtml"`,
+	 * then change relative path to correct `"./"` context and return full path.
+	 * @param string $typePath
+	 * @param string $relativePath
+	 * @return string full path
+	 */
+	private function _correctRelativePath ($typePath, $relativePath) {
+		$result = str_replace('\\', '/', $relativePath);
+		if (substr($relativePath, 0, 2) == './') {
+			if (self::$_viewScriptsFullPathBase === NULL) self::_initViewScriptsFullPathBase();
+			$typedViewDirFullPath = implode('/', array(
+				self::$_viewScriptsFullPathBase, $typePath
+			));
+			$lastRenderedFullPath = $this->_renderedFullPaths[count($this->_renderedFullPaths) - 1];
+			$renderedRelPath = substr($lastRenderedFullPath, strlen($typedViewDirFullPath));
+			$renderedRelPathLastSlashPos = strrpos($renderedRelPath, '/');
+			if ($renderedRelPathLastSlashPos !== FALSE) {
+				$result = substr($renderedRelPath, 0, $renderedRelPathLastSlashPos + 1).substr($relativePath, 2);
+				$result = ltrim($result, '/');
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Init view scripts full class string for methods:
+	 * - `\MvcCore\View::GetViewScriptFullPath();`
+	 * - `\MvcCore\View::_correctRelativePath();`
+	 * @return void
+	 */
+	private static function _initViewScriptsFullPathBase () {
+		self::$_viewScriptsFullPathBase = implode('/', array(
+			self::$_app->GetRequest()->GetAppRoot(),
+			self::$_app->GetAppDir(),
+			self::$_app->GetViewsDir()
+		));
+	}
+}
+View::StaticInit();
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+
+
+// because of static init
+//include_once(__DIR__ . '/Interfaces/IConfig.php');
+
+/**
+ * Responsibility - reading config file(s), detecting environment in system config.
+ * - Config file(s) reading:
+ *   - Reading any `config.ini` file by relative path.
+ *   - Parsing and typing ini data into `stdClass|array` by key types or typing
+ *     ini values into `int|float|bool|string` for all other detected primitives.
+ * - Environment management:
+ *   - Simple environment name detection by comparing server and client ip.
+ *   - Environment name detection by config records about computer name or ip.
+ */
+class Config implements Interfaces\IConfig
+{
+	/**
+	 * System config relative path from app root.
+	 * This value could be changed to any value at the very application start.
+	 * @var string
+	 */
+	public static $SystemConfigPath = '/%appPath%/config.ini';
+
+	/**
+	 * Environment name. Usual values:
+	 * - `"development"`
+	 * - `"beta"`
+	 * - `"alpha"`
+	 * - `"production"`
+	 * @var string|NULL
+	 */
+	protected static $environment = NULL;
+
+	/**
+	 * System config object placed by default in: `"/App/config.ini"`.
+	 * @var \stdClass|array|boolean
+	 */
+	protected static $systemConfig = NULL;
+
+	/**
+	 * Ini file values to convert into booleans.
+	 * @var mixed
+	 */
+	protected static $booleanValues = array(
+		'yes'	=> TRUE,
+		'no'	=> FALSE,
+		'true'	=> TRUE,
+		'false'	=> FALSE,
+	);
+
+	/**
+	 * Reference to singleton instance in `\MvcCore\Application::GetInstance();`.
+	 * @var \MvcCore\Application
+	 */
+	private static $_app;
+
+	/**
+	 * Reference to `\MvcCore\Application::GetInstance()->GetRequest()->GetAppRoot();`.
+	 * @var string
+	 */
+	private static $_appRoot;
+
+	/**
+	 * Temporary variable used when ini file is parsed and loaded
+	 * to store complete result to return.
+	 * @var array|\stdClass|bool
+	 */
+	protected $result = FALSE;
+
+	/**
+	 * Temporary variable used when ini file is parsed and loaded,
+	 * to store information about final retyping. Keys are addresses
+	 * into result level to be retyped or not, values are arrays.
+	 * First index in values is boolean to define if result level will
+	 * be retyped into `\stdClass` or not, second index in values is reference
+	 * link to object retyped at the end or not.
+	 * @var array
+	 */
+	protected $objectTypes = array();
+
+	/**
+	 * Return `TRUE` if environment is `"development"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsDevelopment ($autoloadSystemConfig = FALSE) {
+		return static::GetEnvironment($autoloadSystemConfig) === static::ENVIRONMENT_DEVELOPMENT;
+	}
+
+	/**
+	 * Return `TRUE` if environment is `"beta"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsBeta ($autoloadSystemConfig = FALSE) {
+		return static::GetEnvironment($autoloadSystemConfig) === static::ENVIRONMENT_BETA;
+	}
+
+	/**
+	 * Return `TRUE` if environment is `"alpha"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsAlpha ($autoloadSystemConfig = FALSE) {
+		return static::GetEnvironment($autoloadSystemConfig) === static::ENVIRONMENT_ALPHA;
+	}
+
+	/**
+	 * Return `TRUE` if environment is `"production"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsProduction ($autoloadSystemConfig = FALSE) {
+		return static::GetEnvironment($autoloadSystemConfig) === static::ENVIRONMENT_PRODUCTION;
+	}
+
+	/**
+	 * Get environment name as string,
+	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
+	 * @return string
+	 */
+	public static function GetEnvironment ($autoloadSystemConfig = FALSE) {
+		if ($autoloadSystemConfig)
+			if (static::GetSystem() === FALSE) static::initEnvironmentByIps();
+		else
+			static::initEnvironmentByIps();
+		return static::$environment;
+	}
+
+	/**
+	 * Set environment name as string,
+	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
+	 * @param string $environment
+	 * @return string
+	 */
+	public static function SetEnvironment ($environment = \MvcCore\Interfaces\IConfig::ENVIRONMENT_PRODUCTION) {
+		static::$environment = $environment;
+	}
+
+	/**
+	 * This is INTERNAL method.
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore\Config::GetSystem()` before system config is loaded.
+	 * This is place where to customize any config creation process,
+	 * before it's created by MvcCore framework.
+	 * @return \MvcCore\Config
+	 */
+	public static function & GetInstance () {
+		$instance = new static();
+		return $instance;
+	}
+
+	/**
+	 * Get system config ini file as `stdClass`es and `array`s,
+	 * placed by default in: `"/App/config.ini"`.
+	 * @return \stdClass|array|boolean
+	 */
+	public static function & GetSystem () {
+		if (!static::$systemConfig) {
+			$app = & \MvcCore\Application::GetInstance();
+			$systemConfigClass = $app->GetConfigClass();
+			$instance = $systemConfigClass::GetInstance();
+			static::$systemConfig = $instance->Load(str_replace(
+				'%appPath%',
+				$app->GetAppDir(),
+				$systemConfigClass::$SystemConfigPath
+			), TRUE);
+		}
+		return static::$systemConfig;
+	}
+
+	/**
+	 * Load ini file and return parsed configuration or `FALSE` in failure.
+	 * - Second environment value setup:
+	 *   - Only if `$systemConfig` param is defined as `TRUE`.
+	 *   - By defined IPs or computer names in ini `[environments]` section.
+	 * - Load only sections for current environment name.
+	 * - Retype all `raw string` values into `array`, `float`, `int` or `boolean` types.
+	 * - Retype whole values level into `\stdClass`, if there are no numeric keys.
+	 * @param string $configPath
+	 * @param bool   $systemConfig
+	 * @return array|boolean
+	 */
+	public function & Load ($configPath = '', $systemConfig = FALSE) {
+		$cfgFullPath = \MvcCore\Application::GetInstance()->GetRequest()->GetAppRoot() . $configPath;
+		if (!\Packager_Php_Wrapper::FileExists($cfgFullPath)) return $this->result;
+		$rawIniData = \Packager_Php_Wrapper::ParseIniFile($cfgFullPath, TRUE);
+		if ($rawIniData === FALSE) return $this->result;
+		$this->result = array();
+		$environment = $systemConfig
+			? $this->detectEnvironmentBySystemConfig($rawIniData)
+			: static::$environment;
+		$iniData = $this->prepareIniDataToParse($rawIniData, $environment);
+		$this->processIniData($iniData);
+		foreach ($this->objectTypes as & $objectType) {
+			if ($objectType[0]) $objectType[1] = (object) $objectType[1];
+		}
+		unset($this->objectTypes);
+		return $this->result;
+	}
+
+	/**
+	 * First environment value setup - by server and client ip address.
+	 * @return void
+	 */
+	protected static function initEnvironmentByIps () {
+		if (static::$environment === NULL) {
+			$request = & \MvcCore\Application::GetInstance()->GetRequest();
+			$serverAddress = $request->GetServerIp();
+			$remoteAddress = $request->GetClientIp();
+			if ($serverAddress == $remoteAddress) {
+				static::$environment = static::ENVIRONMENT_DEVELOPMENT;
+			} else {
+				static::$environment = static::ENVIRONMENT_PRODUCTION;
+			}
+		}
+	}
+
+	/**
+	 * Align all raw ini data to single level array,
+	 * filtered for only current environment data items.
+	 * @param array  $rawIniData
+	 * @param string $environment
+	 * @return array
+	 */
+	protected function & prepareIniDataToParse (array & $rawIniData, $environment) {
+		$iniData = array();
+		foreach ($rawIniData as $keyOrSectionName => $valueOrSectionValues) {
+			if (gettype($valueOrSectionValues) == 'array') {
+				if (strpos($keyOrSectionName, '>') !== FALSE) {
+					list($envNameLocal, $keyOrSectionName) = explode('>', str_replace(' ', '', $keyOrSectionName));
+					if ($envNameLocal !== $environment) continue;
+				}
+				$sectionValues = array();
+				foreach ($valueOrSectionValues as $key => $value) $sectionValues[$keyOrSectionName.'.'.$key] = $value;
+				$iniData = array_merge($iniData, $sectionValues);
+			} else {
+				$iniData[$keyOrSectionName] = $valueOrSectionValues;
+			}
+		}
+		return $iniData;
+	}
+
+	/**
+	 * Detect environment name in system config
+	 * to load proper config sections later.
+	 * @param array $rawIni
+	 * @return string|NULL
+	 */
+	protected function detectEnvironmentBySystemConfig (array & $rawIni = array()) {
+		$environment = NULL;
+		if (isset($rawIni['environments'])) {
+			$environments = & $rawIni['environments'];
+			$serverAddress = ','.\MvcCore\Application::GetInstance()->GetRequest()->GetServerIp().',';
+			$serverComputerName = ','.gethostname().',';
+			foreach ($environments as $environmentName => $environmentComputerNamesOrIps) {
+				$environmentComputerNamesOrIps = ','.$environmentComputerNamesOrIps.',';
+				if (
+					strpos($environmentComputerNamesOrIps, $serverAddress) !== FALSE ||
+					strpos($environmentComputerNamesOrIps, $serverComputerName) !== FALSE
+				) {
+					$environment = $environmentName;
+					break;
+				}
+			}
+		}
+		if ($environment && !static::$environment) static::SetEnvironment($environment);
+		return static::$environment;
+	}
+
+	/**
+	 * Process single level array with dotted keys into tree structure
+	 * and complete object type switches about tree records
+	 * to set final `\stdClass`es or `array`s.
+	 * @param array $iniData
+	 * @return void
+	 */
+	protected function processIniData (array & $iniData) {
+		$this->objectTypes[''] = array(1, & $this->result);
+		foreach ($iniData as $rawKey => $rawValue) {
+			$current = & $this->result;
+			// prepare keys to build levels and configure stdClass/array types
+			$rawKeys = array();
+			$lastRawKey = $rawKey;
+			$lastDotPos = strrpos($rawKey, '.');
+			if ($lastDotPos !== FALSE) {
+				$rawKeys = explode('.', substr($rawKey, 0, $lastDotPos));
+				$lastRawKey = substr($rawKey, $lastDotPos + 1);
+			}
+			// prepare levels structure and configure stdClass or array type change where necessary
+			$levelKey = '';
+			$prevLevelKey = '';
+			foreach ($rawKeys as $key) {
+				$prevLevelKey = $levelKey;
+				$levelKey .= ($levelKey ? '.' : '') . $key;
+				if (!isset($current[$key])) {
+					$current[$key] = array();
+					$this->objectTypes[$levelKey] = array(1, & $current[$key]); // object type switch -> object by default
+					if ($this->isKeyNumeric($key) && isset($this->objectTypes[$prevLevelKey])) {
+						$this->objectTypes[$prevLevelKey][0] = 0; // object type switch -> set array of it was object
+					}
+				}
+				$current = & $current[$key];
+			}
+			// set up value into levels structure and confgure type into array if necessary
+			$typedValue = $this->getTypedValue($rawValue);
+			if (isset($current[$lastRawKey])) {
+				$current[$lastRawKey][] = $typedValue;
+				$this->objectTypes[$levelKey ? $levelKey : $lastRawKey][0] = 0; // object type switch -> set array
+			} else {
+				if (gettype($current) != 'array') {
+					$current = array($current);
+					$this->objectTypes[$levelKey] = array(0, & $current); // object type switch -> set array
+				}
+				$current[$lastRawKey] = $typedValue;
+				if ($this->isKeyNumeric($lastRawKey)) $this->objectTypes[$levelKey][0] = 0; // object type switch -> set array
+			}
+		}
+	}
+
+	/**
+	 * Return `TRUE` if `$rawKey` is numeric.
+	 * @param string $rawKey
+	 * @return bool
+	 */
+	protected function isKeyNumeric ($rawKey) {
+		$numericRawKey = preg_replace("#[^0-9\-]#", '', $rawKey);
+		return $numericRawKey == $rawKey;
+	}
+
+	/**
+	 * Retype raw ini value into `array` with retyped it's own values or
+	 * retype raw ini value into `float`, `int` or `string`.
+	 * @param string|array $rawValue
+	 * @return array|float|int|string
+	 */
+	protected function getTypedValue ($rawValue) {
+		if (gettype($rawValue) == "array") {
+			foreach ($rawValue as $key => $value) {
+				$rawValue[$key] = $this->getTypedValue($value);
+			}
+			return $rawValue; // array
+		} else {
+			$numericRawVal = preg_replace("#[^0-9\-\.]#", '', $rawValue);
+			if ($numericRawVal == $rawValue) {
+				return $this->getTypedValueFloatIpOrInt($rawValue);
+			} else {
+				return $this->getTypedValueBoolOrString($rawValue);
+			}
+		}
+	}
+
+	/**
+	 * Retype raw ini value into `float`, `IP` or `int`.
+	 * @param string $rawValue
+	 * @return float|string|int
+	 */
+	protected function getTypedValueFloatIpOrInt ($rawValue) {
+		if (strpos($rawValue, '.') !== FALSE) {
+			if (substr_count($rawValue, '.') === 1) {
+				return floatval($rawValue); // float
+			} else {
+				return $rawValue; // ip
+			}
+		} else {
+			$intVal = intval($rawValue); // int or string if integer is too high (more then PHP max/min: 2147483647/-2147483647)
+			return (string) $intVal === $rawValue ? $intVal : $rawValue;
+		}
+	}
+
+	/**
+	 * Retype raw ini value into `bool` or `string`.
+	 * @param string $rawValue
+	 * @return bool|string
+	 */
+	protected function getTypedValueBoolOrString ($rawValue) {
+		$lowerRawValue = strtolower($rawValue);
+		if (isset(static::$booleanValues[$lowerRawValue])) {
+			return static::$booleanValues[$lowerRawValue]; // bool
+		} else {
+			return trim($rawValue); // string
+		}
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form{
+
+//require_once('Core/View.php');
+//require_once('Core/Exception.php');
+
+class Button extends Core\Field
+{
+	public $Type = 'button'; // submit | reset | button
+	public $Value = 'OK';
+	public $RenderMode = \MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL;
+	public $Accesskey = null;
+	public static $Templates = array(
+		'control'	=> '<button id="{id}" name="{name}" type="{type}"{attrs}>{value}</button>',
+	);
+	public function __construct(array $cfg = array()) {
+		parent::__construct($cfg);
+		static::$Templates = (object) array_merge((array)parent::$Templates, (array)self::$Templates);
+	}
+	public function SetAccesskey ($accesskey) {
+		$this->Accesskey = $accesskey;
+		return $this;
+	}
+	public function OnAdded (\MvcCore\Ext\Form & $form) {
+		parent::OnAdded($form);
+		if (!$this->Value) {
+			$clsName = get_class($this);
+						throw new Core\Exception("No 'Value' defined for form field: '$clsName'.");
+		}
+	}
+	public function SetUp () {
+		parent::SetUp();
+		if ($this->Translate && $this->Value) {
+			$this->Value = call_user_func($this->Form->Translator, $this->Value, $this->Form->Lang);
+		}
+	}
+	public function RenderControl () {
+		$attrsStr = $this->renderControlAttrsWithFieldVars(
+			array('Accesskey',)
+		);
+				return Core\View::Format(static::$Templates->control, array(
+			'id'		=> $this->Id, 
+			'name'		=> $this->Name, 
+			'type'		=> $this->Type,
+			'value'		=> $this->Value,
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+
+
+
+abstract class Validator
+{
+	/** @var \MvcCore\Ext\Form|\MvcCore\Ext\Form\Core\Base */
+	protected $Form = NULL;
+
+	/** @var \MvcCore\Controller|mixed */
+	protected $Controller = NULL;
+
+	/** @var bool */
+	protected $Translate = FALSE;
+	
+	/** @var callable */
+	protected $Translator = NULL;
+
+	/** @var string */
+	protected static $validatorsClassNameTemplate = '\MvcCore\Ext\Form\Validators\{ValidatorName}';
+
+	/** @var \MvcCore\Ext\Form\Core\Validator[]|mixed */
+	protected static $instances = array();
+
+	/**
+	 * Create new validator instance by validator class name end if necessary,
+	 * if validator instance for this name exists, previous instance is returned.
+	 * @param \MvcCore\Ext\Form $form submitting simple form instance
+	 * @param string $validatorName validator class name end
+	 * @throws Exception
+	 * @return \MvcCore\Ext\Form\Core\Validator[]|mixed
+	 */
+	public static function Create (\MvcCore\Ext\Form\Core\Configuration & $form, $validatorName = '') {
+		if (!isset(static::$instances[$validatorName])) {
+			$localValidatorClassName = strpos($validatorName, '_') === FALSE && strpos($validatorName, '\\') === FALSE;
+			if ($localValidatorClassName) {
+				// if not any full class name - it's built in validator
+				$className = str_replace('{ValidatorName}', $validatorName, static::$validatorsClassNameTemplate);
+			} else {
+				$className = $validatorName;
+			}
+			static::$instances[$validatorName] = new $className($form);
+		}
+		return static::$instances[$validatorName];
+	}
+	/**
+	 * Create new validator instance.
+	 * @param \MvcCore\Ext\Form $form 
+	 */
+	public function __construct (\MvcCore\Ext\Form\Core\Configuration & $form) {
+		$this->Form = & $form;
+		$this->Controller = & $form->Controller;
+		$this->Translate = $form->Translate;
+		if ($this->Translate) $this->Translator = & $form->Translator;
+	}
+	/**
+	 * Validation template method.
+	 * In your validator implementation, check submitted value 
+	 * by validator specific rules and if there is any error, call
+	 * $form->AddError with translated or not translated error message.
+	 * Return safe submitted value as result.
+	 * @param string|array					$submitValue 
+	 * @param string						$fieldName 
+	 * @param \MvcCore\Ext\Form\Core\Field	$field
+	 * @return string|array					safe submitted value
+	 */
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+		return $submitValue;
+	}
+
+	protected function addError (\MvcCore\Ext\Form\Core\Field & $field, $msg = '', callable $replaceCall = NULL) {
+		$replacing = !is_null($replaceCall);
+		$label = '';
+		if ($replacing) $label = $field->Label ? $field->Label : $field->Name;
+		if ($this->Translate) {
+			$msg = call_user_func($this->Translator, $msg);
+			if ($replacing) {
+				$label = $field->Label ? call_user_func($this->Translator, $field->Label) : $field->Name;
+			}
+		}
+		if ($replacing) {
+			$msg = call_user_func($replaceCall, $msg, array($label));
+		}
+		$this->Form->AddError(
+			$msg, $field->Name
+		);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form{
+
+
+
+class Hidden extends Core\Field
+{
+	public $Type = 'hidden';
+	public $Validators = array('SafeString');
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext{
+
+//require_once('Form/Core/Exception.php');
+//require_once('Form/Core/Helpers.php');
+//require_once('Form/Core/View.php');
+
+class Form extends Form\Core\Configuration
+{
+	/**
+	 * MvcCore Extension - Form - version:
+	 * Comparation by PHP function version_compare();
+	 * @see http://php.net/manual/en/function.version-compare.php
+	 */
+	const VERSION = '4.3.1';
+
+	/* public methods ************************************************************************/
+	/**
+	 * Create \MvcCore\Ext\Form instance.
+	 * Please don't forget to configure at least $form->Id, $form->Action,
+	 * any control to work with and finaly any button:submit/input:submit
+	 * to submit the form to any url defined in $form->Action.
+	 * @param \MvcCore\Controller|mixed $controller
+	 */
+	public function __construct (/*\MvcCore\Controller*/ & $controller) {
+		$this->Controller = $controller;
+		$baseLibPath = str_replace('\\', '/', str_replace('\\','/',__DIR__).'/vendor/mvccore/ext-form/src/MvcCore/Ext' . '/Form');
+		if (!$this->jsAssetsRootDir) $this->jsAssetsRootDir = $baseLibPath;
+		if (!$this->cssAssetsRootDir) $this->cssAssetsRootDir = $baseLibPath;
+	}
+	/**
+	 * Rendering process alias.
+	 * @see \MvcCore\Ext\Form::Render();
+	 * @return string
+	 */
+	public function __toString () {
+		return $this->Render();
+	}
+	/**
+	 * Add form submit error and switch form result to zero - error state.
+	 * @param string $errorMsg
+	 * @param string $fieldName optional
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function AddError ($errorMsg, $fieldName = '') {
+		$errorMsgUtf8 = iconv(
+			mb_detect_encoding($errorMsg, mb_detect_order(), true),
+			"UTF-8",
+			$errorMsg
+		);
+		$newErrorRec = array(strip_tags($errorMsgUtf8));
+		if ($fieldName) $newErrorRec[] = $fieldName;
+		$this->Errors[] = $newErrorRec;
+		if ($fieldName && isset($this->Fields[$fieldName])) {
+			$this->Fields[$fieldName]->AddError($errorMsgUtf8);
+		}
+		$this->Result = Form::RESULT_ERRORS;
+		return $this;
+	}
+	/**
+	 * Add configured form field instance.
+	 * @param \MvcCore\Ext\Form\Core\Field $field
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function AddField (\MvcCore\Ext\Form\Core\Field $field) {
+		if (!$this->initialized) $this->Init();
+		$field->OnAdded($this);
+		$this->Fields[$field->Name] = $field;
+		return $this;
+	}
+	/**
+	 * Add multiple configured form field instances,
+	 * function have infinite params with new field instances.
+	 * @param \MvcCore\Ext\Form\Core\Field $fields,... Any \MvcCore\Ext\Form field instance to add into form
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function AddFields () {
+		if (!$this->initialized) $this->Init();
+		$fields = func_get_args();
+		foreach ($fields as & $field) {
+			$this->AddField($field);
+		}
+		return $this;
+	}
+	/**
+	 * Unset submitted $form->Data records wchid are empty string or empty array.
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function UnsetEmptyData () {
+		$dataKeys = array_keys($this->Data);
+		for ($i = 0, $l = count($dataKeys); $i < $l; $i += 1) {
+			$dataKey = $dataKeys[$i];
+			$dataValue = $this->Data[$dataKey];
+			$dataValueType = gettype($dataValue);
+			if ($dataValueType == 'array') {
+				if (!$dataValue) unset($this->Data[$dataKey]);
+			} else {
+				if ($dataValue === '') unset($this->Data[$dataKey]);
+			}
+		}
+		return $this;
+	}
+	/**
+	 * Clear all session records for this form by form id.
+	 * Data sended from last submit, any csrf tokens and any errors.
+	 * @return void
+	 */
+	public function ClearSession () {
+		$this->Data = array();
+				Form\Core\Helpers::SetSessionData($this->Id, array());
+		Form\Core\Helpers::SetSessionCsrf($this->Id, array());
+		Form\Core\Helpers::SetSessionErrors($this->Id, array());
+	}
+	/**
+	 * Return current cross site request forgery hidden
+	 * input name and it's value as stdClass.
+	 * Result stdClass elements has keys 'name' and 'value'.
+	 * @return \stdClass
+	 */
+	public function GetCsrf () {
+				list($name, $value) = Form\Core\Helpers::GetSessionCsrf($this->Id);
+		return (object) array('name' => $name, 'value' => $value);
+	}
+	/**
+	 * Return form field instance by form field name if it exists, else return null;
+	 * @param string $fieldName
+	 * @return \MvcCore\Ext\Form\Core\Field|null
+	 */
+	public function & GetField ($fieldName = '') {
+		$result = NULL;
+		if (isset($this->Fields[$fieldName])) $result = $this->Fields[$fieldName];
+		return $result;
+	}
+	/**
+	 * Return form field instances by field type string
+	 * @param string $fieldType
+	 * @return \MvcCore\Ext\Form\Core\Field[]
+	 */
+	public function & GetFieldsByType ($fieldType = '') {
+		$result = array();
+		foreach ($this->Fields as & $field) {
+			if ($field->Type == $fieldType) $result[$field->Name] = $field;
+		}
+		return $result;
+	}
+	/**
+	 * Return form field instances by field class name
+	 * compared by 'is_a($field, $fieldClassName)' check
+	 * @param string $fieldClassName
+	 * @param bool   $directTypesOnly Get only instances created directly from called type, no extended instances
+	 * @return \MvcCore\Ext\Form\Core\Field[]
+	 */
+	public function & GetFieldsByClass ($fieldClassName = '', $directTypesOnly = FALSE) {
+		$result = array();
+		foreach ($this->Fields as & $field) {
+			if (is_a($field, $fieldClassName)) {
+				if ($directTypesOnly) {
+					if (is_subclass_of($field, $fieldClassName)) continue;
+				}
+				$result[$field->Name] = $field;
+			}
+		}
+		return $result;
+	}
+	/**
+	 * Return first catched form field instance by field class name
+	 * compared by 'is_a($field, $fieldClassName)' check
+	 * @param string $fieldClassName
+	 * @param bool   $directTypesOnly Get only instances created directly from called type, no extended instances
+	 * @return \MvcCore\Ext\Form\Core\Field|null
+	 */
+	public function & GetFirstFieldsByClass ($fieldClassName = '', $directTypesOnly = FALSE) {
+		$result = NULL;
+		foreach ($this->Fields as & $field) {
+			if (is_a($field, $fieldClassName)) {
+				if ($directTypesOnly) {
+					if (is_subclass_of($field, $fieldClassName)) continue;
+				}
+				$result = $field;
+				break;
+			}
+		}
+		return $result;
+	}
+	/**
+	 * Initialize the form, check if we are initialized or not and do it only once,
+	 * check if any form id exists and initialize translation boolean for better field initializations.
+	 * This is template method. To define any fields in custom \MvcCore\Ext\Form class extension,
+	 * do it in Init method and call parent method as first line inside your custom Init method.
+	 * @throws \MvcCore\Ext\Form\Core\Exception
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function Init () {
+		if ($this->initialized) return $this;
+		$this->initialized = 1;
+		if (!$this->Id) {
+			$clsName = get_class($this);
+						throw new Form\Core\Exception("No form 'Id' property defined in: '$clsName'.");
+		}
+		if ((is_null($this->Translate) || $this->Translate === TRUE) && !is_null($this->Translator)) {
+			$this->Translate = TRUE;
+		} else {
+			$this->Translate = FALSE;
+		}
+		return $this;
+	}
+	/**
+	 * Prepare form and it's fields for rendering.
+	 * This function is called automaticly by rendering process if necessary.
+	 * But if you need to operate with fields in your controller before rendering
+	 * with real session values and initialized session errors, you can call this
+	 * method anytime to prepare form for rendering and operate with anything inside.
+	 * @return void
+	 */
+	public function Prepare () {
+		if (!$this->initialized) $this->Init();
+		if ($this->initialized < 2) $this->prepareRenderIfNecessary();
+	}
+	/**
+	 * After every custom $form->Submit(); function implementation is at the end,
+	 * call this function to redirect user by configured success/error/next step address
+	 * into final place and store everything into session.
+	 * @return void
+	 */
+	public function RedirectAfterSubmit () {
+		if (!$this->initialized) $this->Init();
+				$url = "";
+		if ($this->Result === Form::RESULT_ERRORS) {
+			$url = $this->ErrorUrl;
+		} else if ($this->Result === Form::RESULT_SUCCESS) {
+			$url = $this->SuccessUrl;
+			$this->Data = array();
+		} else if ($this->Result === Form::RESULT_NEXT_PAGE) {
+			$url = $this->NextStepUrl;
+			$this->Data = array();
+		}
+		Form\Core\Helpers::SetSessionErrors($this->Id, $this->Errors);
+		Form\Core\Helpers::SetSessionData($this->Id, $this->Data);
+		$ctrl = $this->Controller;
+		$ctrl::Redirect($url, 303);
+	}
+	/**
+	 * Remove configured form field instance by field name.
+	 * @param string $fieldName
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function RemoveField ($fieldName = '') {
+		if (!$this->initialized) $this->Init();
+		if (isset($this->Fields[$fieldName])) unset($this->Fields[$fieldName]);
+		return $this;
+	}
+	/**
+	 * Rendering process.
+	 * - if forms is not initialized, there is automaticly
+	 *   called $form->Init(); method
+	 * - if form is not prepared for rendering, there is
+	 *   automaticly called $form->prepareForRendering(); method
+	 * - create new form view instance and set up the view with local
+	 *   context variables
+	 * - render form naturaly or by custom template
+	 * - clean session errors, because errors shoud be rendered
+	 *   only once, only when it's used and it is now in rendering process
+	 * @return string
+	 */
+	public function Render () {
+		$this->prepareRenderIfNecessary();
+		if ($this->TemplatePath) {
+			$result = $this->View->RenderTemplate();
+		} else {
+			$result = $this->View->RenderNaturally();
+		}
+		$this->cleanUpRenderIfNecessary();
+		return $result;
+	}
+	/**
+	 * Render form content.
+	 * Go through all $form->Fields and call $field->Render(); on every field
+	 * and put it into an empty <div> element. Render each field in full possible
+	 * way - naturaly by label configuration with possible errors configured beside
+	 * or with custom field template.
+	 * @return string
+	 */
+	public function RenderContent () {
+		$this->prepareRenderIfNecessary();
+		return $this->View->RenderContent();
+	}
+	/**
+	 * Render form errors.
+	 * If form is configured to render all errors together at form beginning,
+	 * this function completes all form errors into div.errors with div.error elements
+	 * inside containing each single errors message.
+	 * @return string
+	 */
+	public function RenderErrors () {
+		$this->prepareRenderIfNecessary();
+		return $this->View->RenderErrors();
+	}
+	/**
+	 * Render form begin.
+	 * Render opening <form> tag and hidden input with csrf tokens.
+	 * @return string
+	 */
+	public function RenderBegin () {
+		$this->prepareRenderIfNecessary();
+		return $this->View->RenderBegin();
+	}
+	/**
+	 * Render form end.
+	 * Render html closing </form> tag and supporting javascript and css files
+	 * if is form not using external js/css renderers.
+	 * @return string
+	 */
+	public function RenderEnd () {
+		if (!$this->initialized) $this->Init();
+		$result = $this->View->RenderEnd();
+		$this->cleanUpRenderIfNecessary();
+		return $result;
+	}
+	/**
+	 * Render all supporting css files directly
+	 * as <style> tag content inside html template
+	 * called usualy right after form end tag
+	 *	or
+	 * render all supporting css files by external
+	 * css assets renderer to add only links to html head
+	 * linked to external css source files.
+	 * @return string
+	 */
+	public function RenderCss () {
+		if (!$this->Css) return '';
+		$cssFiles = $this->completeAssets('css');
+		$cssFilesContent = '';
+		$loadCssFilesContents = !is_callable($this->CssRenderer);
+		foreach ($cssFiles as $cssFile) {
+			$this->renderAssetFile($cssFilesContent, $this->CssRenderer, $loadCssFilesContents, $cssFile);
+		}
+		if (!$loadCssFilesContents) return '';
+		return '<style type="text/css">'.$cssFilesContent.'</style>';
+	}
+	/**
+	 * Render all supporting js files directly
+	 * as <script> tag content inside html template
+	 * called usualy right after form end tag
+	 *	or
+	 * render all supporting javascript files by external
+	 * assets renderer to add only scripts to html head
+	 * linked to external script source files. But there is still created
+	 * one <script> tag right after form tag end with supporting javascripts
+	 * initializations by rendered form fieds options, names, counts, values etc...
+	 * @return string
+	 */
+	public function RenderJs () {
+		if (!$this->Js) return '';
+		$jsFiles = $this->completeAssets('js');
+		$jsFilesContent = '';
+		$fieldsConstructors = array();
+		$loadJsFilesContents = !is_callable($this->JsRenderer);
+		if (!isset(self::$js[$this->JsBaseFile])) {
+			$this->JsBaseFile = $this->absolutizeAssetPath($this->JsBaseFile, 'js');
+			self::$js[$this->JsBaseFile] = TRUE;
+			$this->renderAssetFile($jsFilesContent, $this->JsRenderer, $loadJsFilesContents, $this->JsBaseFile);
+		}
+		foreach ($jsFiles as $jsFile) {
+			$this->renderAssetFile($jsFilesContent, $this->JsRenderer, $loadJsFilesContents, $jsFile);
+		}
+		foreach ($this->Js as $item) {
+			$paramsStr = json_encode($item[2]);
+			$paramsStr = mb_substr($paramsStr, 1, mb_strlen($paramsStr) - 2);
+			$fieldsConstructors[] = "new " . $item[1] . "(" . $paramsStr . ")";
+		}
+		$result = $jsFilesContent."new MvcCoreForm("
+			."document.getElementById('".$this->Id."'),"
+			."[".implode(',', $fieldsConstructors)."]"
+		.")";
+				if (class_exists('\MvcCore\View') && strpos(\MvcCore\View::$Doctype, 'XHTML') !== FALSE) {
+			$result = '/* <![CDATA[ */' . $result . '/* ]]> */';
+		}
+		return '<script type="text/javascript">' . $result . '</script>';
+	}
+	/**
+	 * Create new fresh cross site request forgery tokens,
+	 * store them into session under $form->Id and return them.
+	 * @return string[]
+	 */
+	public function SetUpCsrf () {
+		$requestPath = $this->getRequestPath();
+		$randomHash = bin2hex(openssl_random_pseudo_bytes(32));
+		$nowTime = (string)time();
+		$name = '____'.sha1($this->Id . $requestPath . 'name' . $nowTime . $randomHash);
+		$value = sha1($this->Id . $requestPath . 'value' . $nowTime . $randomHash);
+				Form\Core\Helpers::SetSessionCsrf($this->Id, array($name, $value));
+		return array($name, $value);
+	}
+	/**
+	 * Process standard low level submit process.
+	 * If no params passed as first argument, all params from \MvcCore request object are used.
+	 * - if fields are not initialized - initialize them by calling $form->Init();
+	 * - check max post size by php configuration if form is posted
+	 * - check cross site request forgery tokens with session tokens
+	 * - process all field values and their validators and call $form->AddError() where necessary
+	 *	 AddError method automaticly switch $form->Result property to zero - 0 means error submit result
+	 * Return array with form result, safe values by validators and errors.
+	 * @param array $rawParams optional
+	 * @return array array($form->Result, $form->Data, $form->Errors);
+	 */
+	public function Submit ($rawParams = array()) {
+		if (!$this->initialized) $this->Init();
+				Form\Core\Helpers::ValidateMaxPostSizeIfNecessary($this);
+		if (!$rawParams) $rawParams = $this->Controller->GetRequest()->GetParams();
+		$this->ValidateCsrf($rawParams);
+		$this->submitFields($rawParams);
+		return array(
+			$this->Result,
+			$this->Data,
+			$this->Errors,
+		);
+	}
+	/**
+	 * Check cross site request forgery sended tokens from user with session tokens.
+	 * If tokens are diferent, add form error and process csrf error handlers queue.
+	 * @param array $rawRequestParams
+	 * @return bool
+	 */
+	public function ValidateCsrf ($rawRequestParams = array()) {
+		$result = FALSE;
+				$sessionCsrf = Form\Core\Helpers::GetSessionCsrf($this->Id);
+		list($name, $value) = $sessionCsrf ? $sessionCsrf : array(NULL, NULL);
+		if (!is_null($name) && !is_null($value)) {
+			if (isset($rawRequestParams[$name]) && $rawRequestParams[$name] === $value) {
+				$result = TRUE;
+			}
+		}
+		if (!$result) {
+			$errorMsg = Form::$DefaultMessages[Form::CSRF];
+			if ($this->Translate) {
+				$errorMsg = call_user_func($this->Translator, $errorMsg);
+			}
+			$this->AddError($errorMsg);
+			foreach (static::$csrfErrorHandlers as $handler) {
+				if (is_callable($handler)) {
+					$handler($this, $errorMsg);
+				}
+			}
+		}
+		return $result;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+
+use \MvcCore\Ext\Form;
+
+class Helpers
+{
+	const CTRL_VIEW_PROVIDER_METHOD = 0;
+	const CTRL_VIEW_PROVIDER_PROPERTY = 1;
+
+	const SESSION_PROVIDER_INSTANCE = 0;
+	const SESSION_PROVIDER_STATIC = 1;
+
+	/**
+	 * Cofiguration how to get view object from controller object
+	 * @var array
+	 */
+	public static $ControllerViewProvider = array(
+		'type'		=> self::CTRL_VIEW_PROVIDER_METHOD,
+		'getter'	=> 'GetView',
+	);
+	/**
+	 * Basic $_SESSION array as session service configuration.
+	 * @var array
+	 */
+	public static $SessionProvider = array(
+		'type'		=> self::SESSION_PROVIDER_STATIC,
+		'callable'	=> array(__CLASS__, 'getSimpleSessionRecord'),
+		'expirator'	=> '',
+		'expiration'=> 0,
+	);
+
+	/**
+	 * Forms default values storage.
+	 * @var \stdClass
+	 */
+	protected static $sessionData = NULL;
+	/**
+	 * Forms cross site request forgery protecting hashes storage.
+	 * @var \stdClass
+	 */
+	protected static $sessionCsrf = NULL;
+	/**
+	 * Forms error messages storage.
+	 * @var \stdClass
+	 */
+	protected static $sessionErrors = NULL;
+	/**
+	 * Session services configurations by existing classes as keys
+	 * @var array
+	 */
+	protected static $sessionProviders = array(
+		'\MvcCore\Session'	=> array(
+			'type'			=> self::SESSION_PROVIDER_STATIC,
+			'callable'		=> array('\MvcCore\Session', 'GetNamespace'),
+			'expirator'		=> 'SetExpirationSeconds',
+			'expiration'	=> 32872500, // (60 * 60 * 24 * 365.25) -> year
+		),
+		'Zend_Session'		=> array(
+			'type'			=> self::SESSION_PROVIDER_INSTANCE,
+			'class'			=> 'Zend_Session_Namespace',
+			'expirator'		=> 'setExpirationSeconds',
+			'expiration'	=> 32872500, // (60 * 60 * 24 * 365.25) -> year
+		),
+	);
+
+	/**
+	 * Static initialization - called at the class end.
+	 * @return void
+	 */
+	public static function StaticInit () {
+		foreach (static::$sessionProviders as $detectedClass => & $configuration) {
+			if (class_exists($detectedClass)) {
+				static::$SessionProvider = $configuration;
+				break;
+			}
+		}
+	}
+
+	/* common helpers ********************************************************************/
+
+	public static function ValidateMaxPostSizeIfNecessary(\MvcCore\Ext\Form & $form) {
+		if (strtolower($form->Method) != 'post') return;
+		$maxSize = ini_get('post_max_size');
+		if (empty($_SERVER['CONTENT_LENGTH'])) {
+			$form->AddError(
+				sprintf(Form::$DefaultMessages[Form::EMPTY_CONTENT], $maxSize)
+			);
+			$form->Result = Form::RESULT_ERRORS;
+		}
+		$units = array('k' => 10, 'm' => 20, 'g' => 30);
+		if (isset($units[$ch = strtolower(substr($maxSize, -1))])) {
+			$maxSize <<= $units[$ch];
+		}
+		if ($maxSize > 0 && isset($_SERVER['CONTENT_LENGTH']) && $maxSize < $_SERVER['CONTENT_LENGTH']) {
+			$form->AddError(
+				sprintf(Form::$DefaultMessages[Form::MAX_POST_SIZE], $maxSize)
+			);
+			$form->Result = Form::RESULT_ERRORS;
+		}
+	}
+
+	/* controller -> view ************************************************************/
+
+	/**
+	 * Get view object from controller object by local configuration.
+	 * @param \MvcCore\Controller|mixed $controller
+	 * @return \MvcCore\View|mixed
+	 */
+	public static function GetControllerView (/*\MvcCore\Controller*/ & $controller) {
+		$result = NULL;
+		$type = static::$ControllerViewProvider['type'];
+		$getter = static::$ControllerViewProvider['getter'];
+		if ($type == self::CTRL_VIEW_PROVIDER_PROPERTY) {
+			$result = $controller->{$getter};
+		} else if ($type == self::CTRL_VIEW_PROVIDER_METHOD) {
+			$result = $controller->{$getter}();
+		}
+		return $result;
+	}
+
+	/* session ***********************************************************************/
+
+	/**
+	 * Get form default values by form id.
+	 * @param string $formId 
+	 * @return array
+	 */
+	public static function GetSessionData ($formId = '') {
+		$sessionData = & static::setUpSessionData();
+		if ($formId && isset($sessionData->$formId)) {
+			$rawResult = $sessionData->$formId;
+			return $rawResult;
+		} else {
+			return array();
+		}
+	}
+	/**
+	 * Get form cross site request forgery protecting hashes as array by form id.
+	 * @param string $formId
+	 * @return array
+	 */
+	public static function GetSessionCsrf ($formId = '') {
+		$sessionCsrf = & static::setUpSessionCsrf();
+		if ($formId && isset($sessionCsrf->$formId)) {
+			$rawResult = $sessionCsrf->$formId;
+			return $rawResult;
+		} else {
+			return array();
+		}
+	}
+	/**
+	 * Get form error messages by form id, if there are any keys in array,
+	 * keys are representing form field names. If there are no keys, messages
+	 * have common meaning for whole form.
+	 * @param string $formId
+	 * @return array
+	 */
+    public static function GetSessionErrors ($formId = '') {
+		$sessionErrors = & static::setUpSessionErrors();
+		if ($formId && isset($sessionErrors->$formId)) {
+			$rawResult = $sessionErrors->$formId;
+			return $rawResult;
+		} else {
+			return array();
+		}
+	}
+	/**
+	 * Set form default values by form id into session.
+	 * @param string $formId 
+	 * @param array $data 
+	 */
+	public static function SetSessionData ($formId = '', $data = array()) {
+		$sessionData = & static::setUpSessionData();
+		if ($formId) $sessionData->$formId = $data;
+	}
+	/**
+	 * Set form cross site request forgery values by form id into session.
+	 * @param string $formId
+	 * @param array $data
+	 */
+	public static function SetSessionCsrf ($formId = '', $csrf = array()) {
+		$sessionCsrf = & static::setUpSessionCsrf();
+		if ($formId) $sessionCsrf->$formId = $csrf;
+	}
+	/**
+	 * Set form error messages by form id into session.
+	 * @param string $formId
+	 * @param array $data
+	 */
+	public static function SetSessionErrors ($formId = '', $errors = array()) {
+		$sessionErrors = & static::setUpSessionErrors();
+		if ($formId) $sessionErrors->$formId = $errors;
+	}
+
+	/***********************************************************************************/
+
+	protected static function & setUpSessionData () {
+		if (static::$sessionData == NULL) static::$sessionData = static::getSessionNamespace('\MvcCore\Ext\Form\Data');
+		return static::$sessionData;
+	}
+	protected static function & setUpSessionCsrf () {
+		if (static::$sessionCsrf == NULL) static::$sessionCsrf = static::getSessionNamespace('\MvcCore\Ext\Form\Csrf');
+		return static::$sessionCsrf;
+	}
+	protected static function & setUpSessionErrors () {
+		if (self::$sessionErrors == NULL) static::$sessionErrors = static::getSessionNamespace('\MvcCore\Ext\Form\Errors');
+		return self::$sessionErrors;
+	}
+	protected static function & getSessionNamespace ($namespace) {
+		$result = new \stdClass;
+		$type = static::$SessionProvider['type'];
+		if ($type == self::SESSION_PROVIDER_INSTANCE) {
+			$class = static::$SessionProvider['class'];
+			$result = new $class($namespace);
+		} else if ($type == self::SESSION_PROVIDER_STATIC) {
+			$result = call_user_func(static::$SessionProvider['callable'], $namespace);
+		}
+		$expirator = static::$SessionProvider['expirator'];
+		$expiration = static::$SessionProvider['expiration'];
+		// do not use hoops
+		// TODO: why?
+		// $result->SetExpirationHoops(1);
+		if ($expirator && $expiration) $result->$expirator($expiration);
+		return $result;
+	}
+	protected static function & getSimpleSessionRecord ($namespace) {
+		if (!(isset($_SESSION[$namespace]) && !is_null($_SESSION[$namespace]))) {
+			$_SESSION[$namespace] = new \stdClass;
+		}
+		return $_SESSION[$namespace];
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+//require_once('MvcCore/View.php');
+
+//require_once('Helpers.php');
+//require_once('Configuration.php');
+
+use \MvcCore\Ext\Form;
+
+class View extends \MvcCore\View
+{
+	/**
+	 * @var \MvcCore\Ext\Form
+	 */
+	public $Form = null;
+	/**
+	 * @var \MvcCore\View|mixed
+	 */
+	public $View = null;
+
+    /**
+     * Form View Constructor, extending \MvcCore\View
+	 * @param \MvcCore\Ext\Form $form
+     */
+    public function __construct (\MvcCore\Ext\Form & $form) {
+		$ctrl = & $form->Controller;
+		if (class_exists('\MvcCore\Controller') && $ctrl instanceof \MvcCore\Controller) {
+			//parent::__construct();
+		} else {
+			$this->Controller = & $ctrl;
+		}
+		$this->Form = & $form;
+				$this->View = Helpers::GetControllerView($ctrl);
+	}
+	/**
+	 * Call public field method if exists under called name or try to call any parent view helper.
+	 * @param string $method
+	 * @param mixed  $arguments
+	 * @return mixed
+	 */
+	public function __call ($method, $arguments) {
+		if (isset($this->Field) && method_exists($this->Field, $method)) {
+			return call_user_func_array(array($this->Field, $method), $arguments);
+		} else {
+			return parent::__call($method, $arguments);
+		}
+	}
+	/**
+	 * Render configured form template.
+	 * @return string
+	 */
+	public function RenderTemplate () {
+		return $this->Render($this->Form->TemplateTypePath, $this->Form->TemplatePath);
+	}
+	/**
+	 * Render form naturaly by cycles inside php scripts.
+	 * All form fields will be rendered inside empty <div> elements.
+	 * @return string
+	 */
+	public function RenderNaturally () {
+		return $this->RenderBegin() . $this->RenderErrors() . $this->RenderContent() . $this->RenderEnd();
+	}
+	/**
+	 * Render form begin.
+	 * Render opening <form> tag and hidden input with csrf tokens.
+	 * @return string
+	 */
+	public function RenderBegin () {
+		$result = "<form";
+		$attrs = array();
+		$form = & $this->Form;
+		$formProperties = array('Id', 'Action', 'Method', 'Enctype');
+		foreach ($formProperties as $property) {
+			if ($form->$property) $attrs[strtolower($property)] = $form->$property;
+		}
+		if ($form->CssClass) $attrs['class'] = $form->CssClass;
+		foreach ($form->Attributes as $key => $value) {
+			if (!in_array($key, $formProperties)) $attrs[$key] = $value;
+		}
+		$attrsStr = self::RenderAttrs($attrs);
+		if ($attrsStr) $result .= ' ' . $attrsStr;
+		$result .= '>';
+		$result .= $this->RenderCsrf();
+		return $result;
+	}
+	/**
+	 * Render hidden input with CSRF tokens.
+	 * This method is not necessary to call, it's
+	 * called internaly by $form->View->RenderBegin();
+	 * @return string
+	 */
+	public function RenderCsrf () {
+		list ($name, $value) = $this->Form->SetUpCsrf();
+		return '<input type="hidden" name="'.$name.'" value="'.$value.'" />';
+	}
+	/**
+	 * Return current cross site request forgery hidden
+	 * input name and it's value as stdClass.
+	 * Result stdClass elements has keys 'name' and 'value'.
+	 * @return \stdClass
+	 */
+	public function GetCsrf () {
+		return $this->Form->GetCsrf();
+	}
+	/**
+	 * Render form errors.
+	 * If form is configured to render all errors together at form beginning,
+	 * this function completes all form errors into div.errors with div.error elements
+	 * inside containing each single errors message.
+	 * @return string
+	 */
+	public function RenderErrors () {
+		$result = "";
+				if ($this->Form->Errors && $this->Form->ErrorsRenderMode == Configuration::ERROR_RENDER_MODE_ALL_TOGETHER) {
+			$result .= '<div class="errors">';
+			foreach ($this->Form->Errors as & $errorMessageAndFieldName) {
+				$errorMessage = $errorMessageAndFieldName[0];
+				$fieldName = isset($errorMessageAndFieldName[1]) ? $errorMessageAndFieldName[1] : '' ;
+				$result .= '<div class="error ' . $fieldName . '">'.$errorMessage.'</div>';
+			}
+			$result .= '</div>';
+		}
+		return $result;
+	}
+	/**
+	 * Render form content.
+	 * Go through all $form->Fields and call $field->Render(); on every field
+	 * and put it into an empty <div> element. Render each field in full possible
+	 * way - naturaly by label configuration with possible errors configured beside
+	 * or with custom field template.
+	 * @return string
+	 */
+	public function RenderContent () {
+		$result = "";
+		$fieldRendered = "";
+		foreach ($this->Form->Fields as & $field) {
+			$fieldRendered = $field->Render();
+						if (!($field instanceof Form\Hidden)) {
+				$fieldRendered = "<div>".$fieldRendered."</div>";
+			}
+			$result .= $fieldRendered;
+		}
+		return $result;
+	}
+	/**
+	 * Render form end.
+	 * Render html closing </form> tag and supporting javascript and css files
+	 * if is form not using external js/css renderers.
+	 * @return string
+	 */
+	public function RenderEnd () {
+		$result = "</form>";
+		if ($this->Js) $result .= $this->Form->RenderJs();
+		if ($this->Css) $result .= $this->Form->RenderCss();
+		return $result;
+	}
+	/**
+	 * Format string function.
+	 * @param string $str template with replacements like {0}, {1}, {anyStringKey}...
+	 * @param array $args each value under it's index is replaced as
+	 *					  string representation by replacement in form {arrayKey}
+	 * @return string
+	 */
+	public static function Format ($str = '', array $args = array()) {
+		foreach ($args as $key => $value) {
+			$str = str_replace('{'.$key.'}', (string)$value, $str);
+		}
+		return $str;
+	}
+	/**
+	 * Render content of html tag attributes by key/value array.
+	 * @param array $atrributes
+	 * @return string
+	 */
+	public static function RenderAttrs (array $atrributes = array()) {
+		$result = array();
+		foreach ($atrributes as $attrName => $attrValue) {
+			$result[] = $attrName.'="'.$attrValue.'"';
+		}
+		return implode(' ', $result);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+//require_once('Exception.php');
+//require_once('View.php');
+
+abstract class Field
+{
+	/**
+	 * Form control html id
+	 * @var string
+	 */
+	public $Id = '';
+	/**
+	 * Form control type, usually used in <input type=""> 
+	 * attr value, but unique type accross all form field types.
+	 * @var string
+	 */
+	public $Type = '';
+	/**
+	 * Form control specific name, server as key in submitting process
+	 * where is sended it's used completed value.
+	 * @requires
+	 * @var string
+	 */
+	public $Name = '';
+	/**
+	 * Form control value.
+	 * @var string
+	 */
+	public $Value = '';
+	/**
+	 * Form control label visible text, text only.
+	 * @var string
+	 */
+	public $Label = '';
+	/**
+	 * Location where to render <label> element.
+	 * 'left' by default.
+	 * @var string
+	 */
+	public $LabelSide = 'left'; // right | left
+	/**
+	 * Form control attribute required, determinating 
+	 * if controll will be required to complete by user.
+	 * @var bool
+	 */
+	public $Required = null;
+	/**
+	 * Form control attribute readonly, determinating
+	 * if controll will be readonly to not completed by user,
+	 * and readonly by submitting process - so only session value will be used.
+	 * @var bool
+	 */
+	public $Readonly = FALSE;
+	/**
+	 * Form control attribute disabled, determinating
+	 * if controll will be disabled to not completed by user,
+	 * and disabled by submitting process - so only session value will be used.
+	 * @var bool
+	 */
+	public $Disabled = FALSE;
+	/**
+	 * Boolean telling if field will be translated or not.
+	 * If nothing is configured as boolean, $field->Form->Translate values is used.
+	 * If $field->Translate is TRUE, translated are placeholders, label texts and error messages.
+	 * @var bool
+	 */
+	public $Translate = NULL;
+	/**
+	 * Control/label rendering mode, defined in form by defaut as: 'normal'.
+	 * Normal means label will be rendered before control, only for checkbox 
+	 * and radio buttons labels will be rendered after controls.
+	 * Another possible values are 'no-label' and 'label-around'.
+	 * Use \MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL, \MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL and
+	 * \MvcCore\Ext\Form::FIELD_RENDER_MODE_LABEL_AROUND.
+	 * @var string
+	 */
+	public $RenderMode = NULL;
+	/**
+	 * Html element css class string value, more classes separated by space.
+	 * @var array
+	 */
+	public $CssClasses = array();
+	/**
+	 * Collection with html <input> element additional attributes by array keys/values.
+	 * @var array
+	 */
+	public $ControlAttrs = array();
+	/**
+	 * Collection with html <label> element additional attributes by array keys/values.
+	 * @var array
+	 */
+	public $LabelAttrs = array();
+	/**
+	 * List of validator classes end-names or list of closure functions
+	 * accepting arguments: $submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field
+	 * and returning safe value as result. Closure function should call 
+	 * $field->Form->AddError() internaly if necessary and submitted value is not correct.
+	 * All validator classes are located in directory: /Form/Validators/...
+	 * For validator class \MvcCore\Ext\Form\Validators\Numeric is necessary only tu set 'Numeric'.
+	 * @var string[]|\Closure[]
+	 */
+	public $Validators = array();
+	/**
+	 * Field instance errors for rendering process.
+	 * @var string[]
+	 */
+	public $Errors = array();
+	/**
+	 * Field relative template path without .phtml extension, 
+	 * empty string by default to render field naturaly.
+	 * If there is configured any path, relative from directory /App/Views/Scripts,
+	 * field is rendered by custom template.
+	 * @var string
+	 */
+	public $TemplatePath = '';
+	/**
+	 * Form field view, object container with variables from local context to render in template.
+	 * Created automaticly inside \MvcCore\Ext\Form\Core\Field before field rendering process.
+	 * @var \MvcCore\Ext\Form\Core\View
+	 */
+	public $View = NULL;
+	/**
+	 * Supporting javascript full class name.
+	 * @var string
+	 */
+	public $JsClass = '';
+	/**
+	 * Supporting javascript file relative path.
+	 * Replacement '__MVCCORE_FORM_DIR__' is in rendering process 
+	 * replaced by \MvcCore\Ext\Form library root dir or by any other
+	 * reconfigured value from $this->Form->jsAssetsRootDir;
+	 * @var string
+	 */
+	public $Js = '';
+	/**
+	 * Supporting css file relative path.
+	 * Replacement '__MVCCORE_FORM_DIR__' is in rendering process
+	 * replaced by \MvcCore\Ext\Form library root dir or by any other
+	 * reconfigured value from $this->Form->cssAssetsRootDir;
+	 * @var string
+	 */
+	public $Css = '';
+	/**
+	 * Form instance where current fields is placed.
+	 * @var \MvcCore\Ext\Form
+	 */
+	public $Form = NULL;
+	/**
+	 * Core rendering templates storrage.
+	 * Those templates are used in form natural rendering process, form custom
+	 * template rendering process, natural field rendering process but not
+	 * by custom field rendering process.
+	 * @var array
+	 */
+	public static $Templates = array(
+		'label'				=> '<label for="{id}"{attrs}>{label}</label>',
+		'control'			=> '<input id="{id}" name="{name}" type="{type}" value="{value}"{attrs} />',
+		'togetherLabelLeft'	=> '<label for="{id}"{attrs}><span>{label}</span>{control}</label>',
+		'togetherLabelRight'=> '<label for="{id}"{attrs}>{control}<span>{label}</span></label>',
+	);
+	/**
+	 * Local $this context properties which is not possible 
+	 * to configure throught constructor config array.
+	 * @var string[]
+	 */
+	protected static $declaredProtectedProperties = array(
+		'Id', 'View', 'Form', 'Field',
+	);
+
+
+	/* setters and getters ********************************************************************/
+
+	/**
+	 * Set field name, used to identify submitting value.
+	 * @requires
+	 * @param string $name 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetName ($name) {
+		$this->Name = $name;
+		return $this;
+	}
+	/**
+	 * Set input type like: 'text', 'number', 'range'...
+	 * @param string $type
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetType ($type) {
+		$this->Type = $type;
+		return $this;
+	}
+	/**
+	 * Set control label visible text.
+	 * Translation will be processed internaly inside 
+	 * Simpleform before rendering process by $this->Form->Translator();
+	 * @param string $label
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetLabel ($label) {
+		$this->Label = $label;
+		return $this;
+	}
+	/**
+	 * Set label side - location where label will be rendered.
+	 * By default $this->LabelSide is configured to 'left'.
+	 * If you want to reconfigure it to different side, 
+	 * next possible value is 'right'.
+	 * @param string $labelSide
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetLabelSide ($labelSide = 'right') {
+		$this->LabelSide = $labelSide;
+		return $this;
+	}
+	/**
+	 * Set required boolean if field will be 
+	 * required to complete by user for submit.
+	 * @param bool $required 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetRequired ($required = TRUE) {
+		$this->Required = $required;
+		return $this;
+	}
+	/**
+	 * Set read only boolean if field will be
+	 * read only, not possible to complete by user for submit,
+	 * result value will be used from session.
+	 * @param bool $readonly 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetReadonly ($readonly = TRUE) {
+		$this->Readonly = $readonly;
+		return $this;
+	}
+	/**
+	 * Set field render mode to render label normaly before control
+	 * by value 'normal', which controls have mostly configured by default 
+	 * or to render label around the control by value 'label-around' or
+	 * to not render any label by value 'no-label'.
+	 * Use \MvcCore\Ext\Form class constants:
+	 * - \MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL
+	 * - \MvcCore\Ext\Form::FIELD_RENDER_MODE_LABEL_AROUND
+	 * - \MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL
+	 * @param string $renderMode 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetRenderMode ($renderMode = \MvcCore\Ext\Form\Core\Configuration::FIELD_RENDER_MODE_LABEL_AROUND) {
+		$this->RenderMode = $renderMode;
+		return $this;
+	}
+	/**
+	 * Set control value, should be string or array, by field type implementation.
+	 * @param string|array|mixed $value 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetValue ($value) {
+		$this->Value = $value;
+		return $this;
+	}
+	/**
+	 * Get control value, should be string or array, by field type implementation.
+	 * @return string|array
+	 */
+	public function GetValue () {
+		return $this->Value;
+	}
+	/**
+	 * Set translate to TRUE if you want to translate this field.
+	 * It is necessary to set up any $form->Translator callable to
+	 * translate cotnrol placeholder, label and error messages.
+	 * @param bool $translate 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetTranslate ($translate = TRUE) {
+		$this->Translate = $translate;
+		return $this;
+	}
+	/**
+	 * Set disabled boolean if field will be
+	 * disabled for user, not possible to complete 
+	 * by user for submit and disabled in submitting process,
+	 * result value will be used from session.
+	 * @param bool $readonly
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetDisabled ($disabled) {
+		$this->Disabled = $disabled;
+		return $this;
+	}
+	/**
+	 * Set value to control html class attribute.
+	 * More classes is necessary to set as strings separated by spaces.
+	 * @param string $cssClasses 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetCssClasses ($cssClasses) {
+		if (gettype($cssClasses) == 'array') {
+			$this->CssClasses = $cssClasses;
+		} else {
+			$this->CssClasses = explode(' ', (string)$cssClasses);
+		}
+		return $this;
+	}
+	/**
+	 * Add value to html class attribute.
+	 * More classes is necessary to add as strings separated by spaces.
+	 * @param string $cssClasses
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function AddCssClass ($cssClass) {
+		$this->CssClasses[] = $cssClass;
+		return $this;
+	}
+	/**
+	 * Set any additional control html attributes by key/value array.
+	 * Do not use system attributes as id, name, value, readonly, disabled, class...
+	 * @param array $attrs 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetControlAttrs ($attrs = array()) {
+		$this->ControlAttrs = $attrs;
+		return $this;
+	}
+	/**
+	 * Add any additional control html attributes by key/value array.
+	 * Do not use system attributes as id, name, value, readonly, disabled, class...
+	 * Use specific setter for them.
+	 * @param array $attrs
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function AddControlAttr ($attr = array()) {
+		$this->ControlAttrs[] = $attr;
+		return $this;
+	}
+	/**
+	 * Set any additional control html attributes by key/value array.
+	 * @param array $attrs
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetLabelAttrs ($attrs = array()) {
+		$this->LabelAttrs = $attrs;
+		return $this;
+	}
+	/**
+	 * Add any additional control html attributes by key/value array.
+	 * @param array $attrs
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function AddLabelAttr ($attr = array()) {
+		$this->LabelAttrs[] = $attr;
+		return $this;
+	}
+	/**
+	 * Set field validators collection, it shoud be validator class end-name in pascal
+	 * case or closure function. All validators are located in /Form/Validators/... 
+	 * dir. So for validator class \MvcCore\Ext\Form\Validators\Numeric is necessary only to set
+	 * array('Numeric'). Or any validator shoud be defined as simple closure function
+	 * accepting arguments: $submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field
+	 * and returnning safe value as result. This closure function shoud call 
+	 * $field->Form->AddError(); whenever is necessary and values is not correct.
+	 * @param string[]|\Closure[] $validators 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetValidators ($validators = array()) {
+		$this->Validators = $validators;
+		return $this;
+	}
+	/**
+	 * Add field validators, it shoud be validator class end-name in pascal
+	 * case or closure function. All validators are located in /Form/Validators/... 
+	 * dir. So for validator class \MvcCore\Ext\Form\Validators\Numeric is necessary only to set
+	 * array('Numeric'). Or any validator shoud be defined as simple closure function
+	 * accepting arguments: $submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field
+	 * and returnning safe value as result. This closure function shoud call
+	 * $field->Form->AddError(); whenever is necessary and values is not correct.
+	 * @param string|Closure,... $validators
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function AddValidators () {
+		$args = func_get_args();
+		foreach ($args as $arg) $this->Validators[] = $arg;
+		return $this;
+	}
+	/**
+	 * Set template relative path without .phtml extension,
+	 * if you want to render field by custom template.
+	 * Empty string by default to render field naturaly.
+	 * If there is configured any path, relative from directory /App/Views/Scripts,
+	 * field is rendered by custom template.
+	 * @param string $templatePath 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetTemplatePath ($templatePath = '') {
+		$this->TemplatePath = $templatePath;
+		return $this;
+	}
+	/**
+	 * Set supporting javascript full class name.
+	 * @param string $jsClass 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetJsClass ($jsClass) {
+		$this->JsClass = $jsClass;
+		return $this;
+	}
+	/**
+	 * Set supporting javascript file relative path.
+	 * Replacement '__MVCCORE_FORM_DIR__' is in rendering process
+	 * replaced by \MvcCore\Ext\Form library root dir or by any other
+	 * reconfigured value from $this->Form->jsAssetsRootDir;
+	 * @param string $jsFullFile
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetJs ($jsFullFile) {
+		$this->Js = $jsFullFile;
+		return $this;
+	}
+	/**
+	 * Set supporting css file relative path.
+	 * Replacement '__MVCCORE_FORM_DIR__' is in rendering process
+	 * replaced by \MvcCore\Ext\Form library root dir or by any other
+	 * reconfigured value from $this->Form->cssAssetsRootDir;
+	 * @param string $cssFullFile
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function SetCss ($cssFullFile) {
+		$this->Css = $cssFullFile;
+		return $this;
+	}
+	/**
+	 * Add field error message.
+	 * This method is always called internaly from \MvcCore\Ext\Form
+	 * in render preparing process. Do not use it. 
+	 * To add form error properly, use $field->Form->AddError(); 
+	 * method isntead.
+	 * @param string $errorText 
+	 * @return \MvcCore\Ext\Form\Core\Field
+	 */
+	public function AddError ($errorText) {
+		$this->Errors[] = $errorText;
+		return $this;
+	}
+
+
+	/* core methods **************************************************************************/
+
+    /**
+     * Create new form control instance.
+     * @param array $cfg config array with camel case 
+	 *					 public properties and its values which you want to configure.
+     * @throws \MvcCore\Ext\Form\Core\Exception
+     */
+    public function __construct ($cfg = array()) {
+		static::$Templates = (object) static::$Templates;
+		foreach ($cfg as $key => $value) {
+			$propertyName = ucfirst($key);
+			if (in_array($propertyName, static::$declaredProtectedProperties)) {
+				$clsName = get_class($this);
+								throw new \MvcCore\Ext\Form\Core\Exception(
+					"Property: '$propertyName' is protected, class: '$clsName'."
+				);
+			} else {
+				$this->$propertyName = $value;
+			}
+		}
+	}
+	/**
+	 * Set any nondeclared property dynamicly 
+	 * to get it in view by rendering process.
+	 * @param string $name 
+	 * @param mixed $value 
+	 */
+	public function __set ($name, $value) {
+		$this->$name = $value;
+	}
+	/**
+	 * This method  is called internaly from \MvcCore\Ext\Form after field
+	 * is added into form by $form->AddField(); method. Do not use it 
+	 * if you are only user of this library.
+	 * - check if field has any name, which is required
+	 * - set up form and field id attribute by form id and field name
+	 * - set up required
+	 * @param \MvcCore\Ext\Form $form 
+	 * @throws \MvcCore\Ext\Form\Core\Exception 
+	 * @return void
+	 */
+	public function OnAdded (\MvcCore\Ext\Form & $form) {
+		if (!$this->Name) {
+			$clsName = get_class($this);
+						throw new \MvcCore\Ext\Form\Core\Exception("No 'Name' defined for form field: '$clsName'.");
+		}
+		$this->Form = $form;
+		$this->Id = implode(Configuration::HTML_IDS_DELIMITER, array(
+			$form->Id,
+			$this->Name
+		));
+		// if there is no specific required boolean - set required boolean by form
+		$this->Required = is_null($this->Required) ? $form->Required : $this->Required ;
+	}
+	/**
+	 * Set up field properties before rendering process.
+	 * - set up field render mode
+	 * - set up translation boolean
+	 * - translate label if any
+	 * @return void
+	 */
+	public function SetUp () {
+		$form = $this->Form;
+		$translator = $form->Translator;
+		// if there is no specific render mode - set render mode by form
+		if (is_null($this->RenderMode)) {
+			$this->RenderMode = $form->FieldsDefaultRenderMode;
+		}
+		// translate only if Translate options is null or true and translator handler is defined
+		if (
+			(is_null($this->Translate) || $this->Translate === TRUE || $form->Translate) && 
+			!is_null($translator)
+		) {
+			$this->Translate = TRUE;
+		} else {
+			$this->Translate = FALSE;
+		}
+		if ($this->Translate && $this->Label) {
+			$this->Label = call_user_func($translator, $this->Label, $form->Lang);
+		}
+	}
+
+
+	/* rendering ******************************************************************************/
+
+	/**
+	 * Render field in full mode, naturaly or by custom template.
+	 * @return string
+	 */
+	public function Render () {
+		if ($this->TemplatePath) {
+			return $this->RenderTemplate();
+		} else {
+			return $this->RenderNaturally();
+		}
+	}
+	/**
+	 * Render field by configured template.
+	 * This method creates $view = new \MvcCore\Ext\Form\Core\View
+	 * sets all local context variables into it and renders it into string.
+	 * @return string
+	 */
+	public function RenderTemplate () {
+				$view = new View($this->Form);
+		$this->Field = $this;
+		$view->SetUp($this);
+		return $view->Render($this->Form->TemplateTypePath, $this->TemplatePath);
+	}
+	/**
+	 * Render field naturaly by render mode.
+	 * Field shoud be rendered with label beside, label around 
+	 * or without label by local field configuration. Also there 
+	 * could be rendered specific field errors before or after field
+	 * if field form is configured in that way.
+	 * @return string
+	 */
+	public function RenderNaturally () {
+		$result = '';
+		if ($this->RenderMode == Configuration::FIELD_RENDER_MODE_NORMAL && $this->Label) {
+			$result = $this->RenderLabelAndControl();
+		} else if ($this->RenderMode == Configuration::FIELD_RENDER_MODE_LABEL_AROUND && $this->Label) {
+			$result = $this->RenderControlInsideLabel();
+		} else if ($this->RenderMode == Configuration::FIELD_RENDER_MODE_NO_LABEL || !$this->Label) {
+			$result = $this->RenderControl();
+			$errors = $this->RenderErrors();
+			if ($this->Form->ErrorsRenderMode !== Configuration::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL) {
+				$result = $errors . $result;
+			} else if ($this->Form->ErrorsRenderMode !== Configuration::ERROR_RENDER_MODE_AFTER_EACH_CONTROL) {
+				$result .= $errors;
+			}
+		}
+		return $result;
+	}
+	/**
+	 * Render field control and label by local configuration in left or in right side,
+	 * errors beside if form is configured to render specific errors beside controls.
+	 * @return string
+	 */
+	public function RenderLabelAndControl () {
+		$result = "";
+		if ($this->LabelSide == 'left') {
+			$result = $this->RenderLabel() . $this->RenderControl();
+		} else {
+			$result = $this->RenderControl() . $this->RenderLabel();
+		}
+		$errors = $this->RenderErrors();
+		if ($this->Form->ErrorsRenderMode == Configuration::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL) {
+			$result = $errors . $result;
+		} else if ($this->Form->ErrorsRenderMode == Configuration::ERROR_RENDER_MODE_AFTER_EACH_CONTROL) {
+			$result .= $errors;
+		}
+		return $result;
+	}
+	/**
+	 * Render field control inside label by local configuration, render field
+	 * errors beside if form is configured to render specific errors beside controls.
+	 * @return string
+	 */
+	public function RenderControlInsideLabel () {
+		if ($this->RenderMode == Configuration::FIELD_RENDER_MODE_NO_LABEL) return $this->RenderControl();
+		$attrsStr = $this->renderLabelAttrsWithFieldVars();
+		$template = $this->LabelSide == 'left' ? static::$Templates->togetherLabelLeft : static::$Templates->togetherLabelRight;
+		$result = $this->Form->View->Format($template, array(
+			'id'		=> $this->Id, 
+			'label'		=> $this->Label,
+			'control'	=> $this->RenderControl(),
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+		$errors = $this->RenderErrors();
+		if ($this->Form->ErrorsRenderMode == Configuration::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL) {
+			$result = $errors . $result;
+		} else if ($this->Form->ErrorsRenderMode == Configuration::ERROR_RENDER_MODE_AFTER_EACH_CONTROL) {
+			$result .= $errors;
+		}
+		return $result;
+	}
+	/**
+	 * Render control tag only without label or specific errors.
+	 * @return string
+	 */
+	public function RenderControl () {
+		$attrsStr = $this->renderControlAttrsWithFieldVars();
+		return $this->Form->View->Format(static::$Templates->control, array(
+			'id'		=> $this->Id, 
+			'name'		=> $this->Name, 
+			'type'		=> $this->Type,
+			'value'		=> $this->Value,
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+	}
+	/**
+	 * Render label tag only without control or specific errors.
+	 * @return string
+	 */
+	public function RenderLabel () {
+		if ($this->RenderMode == Configuration::FIELD_RENDER_MODE_NO_LABEL) return '';
+		$attrsStr = $this->renderLabelAttrsWithFieldVars();
+		return $this->Form->View->Format(static::$Templates->label, array(
+			'id'		=> $this->Id, 
+			'label'		=> $this->Label,
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+	}
+	/**
+	 * Render field specific errors only without control or label.
+	 * @return string
+	 */
+	public function RenderErrors () {
+		$result = "";
+		if ($this->Errors && $this->Form->ErrorsRenderMode !== Configuration::ERROR_RENDER_MODE_ALL_TOGETHER) {
+			$result .= '<span class="errors">';
+			foreach ($this->Errors as $key => $errorMessage) {
+				$errorCssClass = 'error';
+				if (isset($this->Fields[$key])) $errorCssClass .= " $key";
+				$result .= "<span class=\"$errorCssClass\">$errorMessage</span>";
+			}
+			$result .= '</span>';
+		}
+		return $result;
+	}
+
+
+	/* protected renderers *******************************************************************/
+
+	/**
+	 * Complete HTML attributes and css classes strings for label element
+	 * by selected field variables from $this field context
+	 * only if called $fieldVars item in $this field context is 
+	 * something different then NULL value.
+	 * Automaticly render into attributes and css classes also 
+	 * system field properties: 'Disabled', 'Readonly' and 'Required'
+	 * in boolean mode. All named field context properties translate
+	 * into attributes names and css classes strings from PascalCase into
+	 * dashed-case.
+	 * @param string[] $fieldVars 
+	 * @return string
+	 */
+	protected function renderLabelAttrsWithFieldVars ($fieldVars = array()) {
+		return $this->renderAttrsWithFieldVars(
+			$fieldVars, $this->LabelAttrs, $this->CssClasses
+		);
+	}
+	/**
+	 * Complete HTML attributes and css classes strings for control element
+	 * by selected field variables from $this field context
+	 * only if called $fieldVars item in $this field context is
+	 * something different then NULL value.
+	 * Automaticly render into attributes and css classes also
+	 * system field properties: 'Disabled', 'Readonly' and 'Required'
+	 * in boolean mode. All named field context properties translate
+	 * into attributes names and css classes strings from PascalCase into
+	 * dashed-case.
+	 * @param string[] $fieldVars
+	 * @return string
+	 */
+	protected function renderControlAttrsWithFieldVars ($fieldVars = array()) {
+		return $this->renderAttrsWithFieldVars(
+			$fieldVars, $this->ControlAttrs, $this->CssClasses, TRUE
+		);
+	}
+	/**
+	 * Complete HTML attributes and css classes strings for label/control element
+	 * by selected field variables from $this field context
+	 * only if called $fieldVars item in $this field context is
+	 * something different then NULL value.
+	 * Automaticly render into attributes and css classes also
+	 * system field properties: 'Disabled', 'Readonly' and 'Required'
+	 * in boolean mode. All named field context properties translate
+	 * into attributes names and css classes strings from PascalCase into
+	 * dashed-case.
+	 * Only if fourth param is false, do not add system attributes in boolean 
+	 * mode into attributes, only into css class.
+	 * @param string[] $fieldVars 
+	 * @param array $fieldAttrs 
+	 * @param array $cssClasses 
+	 * @param bool $controlRendering 
+	 * @return string
+	 */
+	protected function renderAttrsWithFieldVars (
+		$fieldVars = array(), $fieldAttrs = array(), $cssClasses = array(), $controlRendering = FALSE
+	) {
+		$attrs = array();
+		foreach ($fieldVars as $fieldVar) {
+			if (!is_null($this->$fieldVar)) {
+				$attrName = \MvcCore\Tool::GetDashedFromPascalCase($fieldVar);
+				$attrs[$attrName] = $this->$fieldVar;
+			}
+		}
+		$boolFieldVars = array('Disabled', 'Readonly', 'Required');
+		foreach ($boolFieldVars as $fieldVar) {
+			if ($this->$fieldVar) {
+				$attrName = lcfirst($fieldVar);
+				if ($controlRendering) $attrs[$attrName] = $attrName;
+				$cssClasses[] = $attrName;
+			}
+		}
+		$cssClasses[] = \MvcCore\Tool::GetDashedFromPascalCase($this->Name);
+		$attrs['class'] = implode(' ', $cssClasses);
+				return View::RenderAttrs(
+			array_merge($fieldAttrs, $attrs)
+		);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+//require_once(__DIR__.'/../Button.php');
+//require_once('Helpers.php');
+//include_once('Configuration.php');
+//require_once('Validator.php');
+//require_once('View.php');
+
+use MvcCore\Ext\Form;
+
+abstract class Base
+{
+	/**
+	 * Initialized state. You can call $form->Init(); method any time you want,
+	 * it automaticly recognize, if it is already initialized or not, but there is
+	 * necessary to call at Init() function begin parent::Init(); call to do it.
+	 * Sometimes you need to work with feelds before rendering outside of form
+	 * and there is necessary to call $form->Init() menthod by yourself, but normaly
+	 * it's called internaly after it is realy needed, so only for render process
+	 * and submit process. This initialization state property has three values:
+	 *	0 - not initialized
+	 *	1 - initialized, but fields are not prepared internaly for rendering
+	 *	2 - all fieds are prepared for rendering (it is processed internaly in
+	 *		$form->Render() function, state 2 is not necessary to know.
+	 * @var int
+	 */
+	protected $initialized = 0;
+	/**
+	 * Temporary collection of js files to add after form (directly into html output
+	 * or by external renderer, doesn't metter), this serves only for purposes how to
+	 * determinate to add supporting javascript by field type only once. Keys are relative
+	 * javascript file paths and values are simple dummy booleans.
+	 * @var array
+	 */
+	protected static $js = array();
+	/**
+	 * Temporary collection of css files to add after form (directly into html output
+	 * or by external renderer, doesn't metter), this serves only for purposes how to
+	 * determinate to add supporting css by field type only once. Keys are relative
+	 * css file paths and values are simple dummy booleans.
+	 * @var array
+	 */
+	protected static $css = array();
+	/**
+	 * Simple form javascript assets root directory.
+	 * After \MvcCore\Ext\Form instance is created, this value is completed to library internal
+	 * assets directory. If you want to create any custom field with custom javascript,
+	 * you can do it by loading github package mvccore/simpleform-cusom-js somewhere
+	 * create there any other custom javascript for any custom field and change this value
+	 * to that directory. All supporting javascript for \MvcCore\Ext\Form fields will be loaded from there.
+	 * @var string
+	 */
+	protected $jsAssetsRootDir = '';
+	/**
+	 * Simple form css assets root directory.
+	 * After \MvcCore\Ext\Form instance is created, this value is completed to library internal
+	 * assets directory. If you want to create any custom field with custom css,
+	 * you can do it by creating an empty directory somewhere, by copying every css file from
+	 * library assets directory into it, by creating any other custom css for any custom field
+	 * and by change this value to that directory. All supporting css for \MvcCore\Ext\Form
+	 * fields will be loaded from there.
+	 * @var string
+	 */
+	protected $cssAssetsRootDir = '';
+	/**
+	 * Collection with callable handlers to process anytime CSRF checking cause an error inside form.
+	 * @var array
+	 */
+	protected static $csrfErrorHandlers = array();
+
+	/**
+	 * Absolutize assets path. Every field has cofigured it's supporting css or js file with
+	 * absolute path replacement inside file path string by '__MVCCORE_FORM_DIR__'.
+	 * Replace now the replacement by prepared properties $form->jsAssetsRootDir or $form->cssAssetsRootDir
+	 * to set path into library assets folder by default or to any other user defined paths.
+	 * @param string $path
+	 * @param string $assetsKey
+	 * @return string
+	 */
+	protected function absolutizeAssetPath ($path = '', $assetsKey = '') {
+		$assetsRootDir = $assetsKey == 'js' ? $this->jsAssetsRootDir : $this->cssAssetsRootDir;
+		return str_replace(
+			array('__MVCCORE_FORM_DIR__', '\\'),
+			array($assetsRootDir, '/'),
+			$path
+		);
+	}
+	/**
+	 * Clean up after rendering.
+	 * - clean session errors
+	 * @return \MvcCore\Ext\Form|\MvcCore\Ext\Form\Core\Base
+	 */
+	protected function cleanUpRenderIfNecessary () {
+		$this->Errors = array();
+				Helpers::SetSessionErrors($this->Id, array());
+		return $this;
+	}
+	/**
+	 * Complete css or js supporting files to add after rendered form
+	 * or to add them by external renderer. This function process all
+	 * added assets and filter them to add them finally only one by once.
+	 * @param string $assetsKey
+	 * @return array
+	 */
+	protected function completeAssets ($assetsKey = '') {
+		$files = array();
+		$assetsKeyUcFirst = ucfirst($assetsKey);
+		foreach ($this->$assetsKeyUcFirst as $item) {
+			$files[$this->absolutizeAssetPath($item[0], $assetsKey)] = TRUE;
+		}
+		$files = array_keys($files);
+		foreach ($files as $key => $file) {
+			if (isset(static::${$assetsKey}[$file])) {
+				unset($files[$key]);
+			} else {
+				static::${$assetsKey}[$file] = TRUE;
+			}
+		}
+		return array_values($files);
+	}
+	/**
+	 * Get request path with protocol, domain, port, part but without any possible query string.
+	 * @return string
+	 */
+	protected function getRequestPath () {
+		$requestUri = $_SERVER['REQUEST_URI'];
+		$lastQuestionMark = mb_strpos($requestUri, '?');
+		if ($lastQuestionMark !== FALSE) $requestUri = mb_substr($requestUri, 0, $lastQuestionMark);
+		$protocol = (isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on') ? 'https:' : 'http:';
+		return $protocol . '//' . $_SERVER['HTTP_HOST'] . $requestUri;
+	}
+	/**
+	 * Prepare for rendering.
+	 * - process all defined fields and call $field->setUp();
+	 *   to prepare field for rendering process.
+	 * - load any possible error from session and set up
+	 *   errors into fields and into form object to render them properly
+	 * - load any possible previously submitted or stored data
+	 *   from session and set up form with them.
+	 * - set initialized state to 2, which means - prepared for rendering
+	 * @return \MvcCore\Ext\Form|\MvcCore\Ext\Form\Core\Base
+	 */
+	protected function prepareRenderIfNecessary () {
+		if ($this->initialized == 2) return $this;
+		if (!$this->initialized) $this->Init();
+		foreach ($this->Fields as & $field) {
+			// translate fields if necessary and do any rendering preparation stuff
+			$field->SetUp();
+		}
+				$errors = Helpers::GetSessionErrors($this->Id);
+		foreach ($errors as & $errorMsgAndFieldName) {
+			if (!isset($errorMsgAndFieldName[1])) $errorMsgAndFieldName[1] = '';
+			list($errorMsg, $fieldName) = $errorMsgAndFieldName;
+			$this->AddError($errorMsg, $fieldName);
+			if (isset($this->Fields[$fieldName])) {
+				// add error classes into settings config where necessary
+				$fieldInstance = & $this->Fields[$fieldName];
+				$fieldInstance->AddCssClass('error');
+				if (method_exists($fieldInstance, 'AddGroupCssClass')) {
+					$fieldInstance->AddGroupCssClass('error');
+				}
+			}
+		}
+		$data = Helpers::GetSessionData($this->Id);
+		if ($data) $this->SetDefaults($data);
+				$this->View = new View($this);
+		//$this->View->SetValues($this);// todo - tohle vymyslet jak udÄ›lat novÄ›
+		$this->initialized = 2;
+		return $this;
+	}
+	/**
+	 * Render supporting js/css file. Add it after renderer form content or call extenal renderer.
+	 * @param string	$content
+	 * @param callable	$renderer
+	 * @param bool		$loadContent
+	 * @param string	$absPath
+	 * @return void
+	 */
+	protected function renderAssetFile (& $content, & $renderer, $loadContent, $absPath) {
+		if ($loadContent) {
+			$content .= trim(\Packager_Php_Wrapper::FileGetContents($absPath), "\n\r;") . ';';
+		} else {
+			call_user_func($renderer, new \Packager_Php_Wrapper_SplFileInfo($absPath));
+		}
+	}
+	/**
+	 * Process single field configured validators and add errors where necessary.
+	 * Clean client value to safe value by configured validator classes for this field.
+	 * Return safe value.
+	 * @param string				$fieldName
+	 * @param array					$rawRequestParams
+	 * @param \MvcCore\Ext\Form\Core\Field $field
+	 * @return string|array
+	 */
+	protected function submitField ($fieldName, & $rawRequestParams, \MvcCore\Ext\Form\Core\Field & $field) {
+		$result = null;
+		if (!$field->Validators) {
+			$submitValue = isset($rawRequestParams[$fieldName]) ? $rawRequestParams[$fieldName] : $field->GetValue();
+			$result = $submitValue;
+		} else {
+												foreach ($field->Validators as $validatorKey => $validator) {
+				if ($validatorKey > 0) {
+					$submitValue = $result; // take previous
+				} else {
+					// take submitted or default by SetDefault(array()) call in first verification loop
+					$submitValue = isset($rawRequestParams[$fieldName]) ? $rawRequestParams[$fieldName] : $field->GetValue();
+				}
+				if ($validator instanceof \Closure) {
+					$safeValue = $validator(
+						$submitValue, $fieldName, $field, $this
+					);
+				} else /*if (gettype($validator) == 'string')*/ {
+					$validatorInstance = Validator::Create($this, $validator);
+					$safeValue = $validatorInstance->Validate(
+						$submitValue, $fieldName, $field
+					);
+				}
+				// set safe value as field submit result value
+				$result = $safeValue;
+			}
+			if (is_null($safeValue)) $safeValue = '';
+			// add required error message if necessary
+			if (
+				(
+					(gettype($safeValue) == 'string' && strlen($safeValue) === 0) ||
+					(gettype($safeValue) == 'array' && count($safeValue) === 0)
+				) && $field->Required
+			) {
+				$errorMsg = Configuration::$DefaultMessages[Configuration::REQUIRED];
+				if ($this->Translate) {
+					$errorMsg = call_user_func($this->Translator, $errorMsg);
+				}
+				$errorMsg = View::Format(
+					$errorMsg, array($field->Label ? $field->Label : $fieldName)
+				);
+				$this->AddError(
+					$errorMsg, $fieldName
+				);
+			}
+		}
+		return $result;
+	}
+	/**
+	 * Process all fields configured validators and add errors where necessary.
+	 * Clean client values to safe values by configured validator classes for each field.
+	 * After all fields are processed, store clean values and error messages into session
+	 * to use them in any possible future request, where is necessary to fill and submit
+	 * the form again, for example by any error and redirecting to form error url.
+	 * @param array $rawRequestParams
+	 * @return void
+	 */
+	protected function submitFields ($rawRequestParams = array()) {
+								foreach ($this->Fields as $fieldName => & $field) {
+			/** @var $field \MvcCore\Ext\Form\Core\Field */
+			if ($field->Readonly || $field->Disabled) {
+				$safeValue = $field->GetValue(); // get by SetDefaults(array()) call
+			} else {
+				$safeValue = $this->submitField($fieldName, $rawRequestParams, $field);
+			}
+			if (is_null($safeValue)) $safeValue = '';
+			$field->SetValue($safeValue);
+			if (!($field instanceof Form\Button)) {
+				$this->Data[$fieldName] = $safeValue;
+			}
+		}
+		//x($rawRequestParams);
+		//xxx($this->Data);
+		Helpers::SetSessionErrors($this->Id, $this->Errors);
+		Helpers::SetSessionData($this->Id, $this->Data);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+
+abstract class Configuration extends Base
+{
+	/** Form http submitting method ('get'). */
+	const METHOD_GET    = 'get';
+	/** Form http submitting method ('post'). */
+	const METHOD_POST   = 'post';
+	/** Form http submitting method ('head'). */
+	const METHOD_HEAD	= 'head';
+	/** Form http submitting method ('put'). */
+	const METHOD_PUT    = 'put';
+	/** Form http submitting method ('patch'). */
+	const METHOD_PATCH	= 'patch';
+	/** Form http submitting method ('trace'). */
+	const METHOD_TRACE	= 'trace';
+	/** Form http submitting method ('options'). */
+	const METHOD_OPTIONS= 'options';
+	/** Form http submitting method ('connect'). */
+	const METHOD_CONNECT= 'connect';
+	/** Form http submitting method ('delete'). */
+	const METHOD_DELETE = 'delete';
+
+
+	/**
+	 * Form enctype attribute value 'application/x-www-form-urlencoded',
+	 * By submitting - all form values will be encoded
+	 * to key1=value1&key2=value2&... string.
+	 * This enctype type is used for all \MvcCore\Ext\Form(s) by default.
+	 */
+	const ENCTYPE_URLENCODED = 'application/x-www-form-urlencoded';
+	/**
+	 * Form enctype attribute value 'multipart/form-data',
+	 * By submitting - no characters will be encoded.
+	 * This value is required when you are using forms that have a file upload control.
+	 */
+	const ENCTYPE_MULTIPART  = 'multipart/form-data';
+	/**
+	 * Form enctype attribute value 'application/x-www-form-urlencoded',
+	 * By submitting - spaces will be converted to "+" symbols,
+	 * but no special characters will be encoded.
+	 */
+	const ENCTYPE_PLAINTEXT  = 'text/plain';
+
+
+	/**
+	 * Html id attributes delimiter,
+	 * used for form controls to complete
+	 * it's ids as <form-id>_<control-name>
+	 */
+	const HTML_IDS_DELIMITER = '_';
+
+
+	/**
+	 * Constants used internaly and mostly
+	 * in validator classes to specify
+	 * proper error message index.
+	 */
+	const EQUAL = ':equal',
+	NOT_EQUAL = ':notEqual',
+	REQUIRED = ':required',
+	INVALID_FORMAT = ':invalidFormat',
+	INVALID_CHARS = ':invalidChars',
+	EMPTY_CONTENT = ':empty',
+	CSRF = ':csrf',
+	// text
+	MIN_LENGTH = ':minLength',
+	MAX_LENGTH = ':maxLength',
+	LENGTH = ':length',
+	EMAIL = ':email',
+	URL = ':url',
+	NUMBER = ':number',
+	INTEGER = ':integer',
+	FLOAT = ':float',
+	DATE = ':date',
+	DATE_TO_LOW = ':dateToLow',
+	DATE_TO_HIGH = ':dateToHigh',
+	TIME = ':time',
+	TIME_TO_LOW = ':timeToLow',
+	TIME_TO_HIGH = ':timeToHigh',
+	DATETIME = ':datetime',
+	PHONE = ':phone',
+	ZIP_CODE = ':zipCode',
+	TAX_ID = ':taxId',
+	VAT_ID = ':varId',
+	GREATER = ':greater',
+	LOWER = ':lower',
+	RANGE = ':range',
+	// file upload
+	MAX_FILE_SIZE = ':fileSize',
+	MAX_POST_SIZE = ':maxPostSize',
+	IMAGE = ':image',
+	MIME_TYPE = ':mimeType',
+	// other
+	VALID = ':valid',
+	CHOOSE_MIN_OPTS = ':chooseMinOpts',
+	CHOOSE_MAX_OPTS = ':chooseMaxOpts',
+	CHOOSE_MIN_OPTS_BUBBLE = ':chooseMinOptsBubble',
+	CHOOSE_MAX_OPTS_BUBBLE = ':chooseMaxOptsBubble';
+
+
+	/**
+	 * Default not translated error messages with replacements
+	 * for control names and more specific info to tell the user.
+	 * @var array
+	 */
+	public static $DefaultMessages = array(
+		self::EQUAL					=> "Field '{0}' requires exact value: '{1}'.",
+		self::NOT_EQUAL				=> "Value for field '{0}' should not be '{1}'.",
+		self::REQUIRED				=> "Field '{0}' is required.",
+		self::INVALID_FORMAT		=> "Field '{0}' has invalid format ('{1}').",
+		self::INVALID_CHARS			=> "Field '{0}' contains invalid characters.",
+		self::EMPTY_CONTENT			=> "Sent data are empty.",
+		self::CSRF					=> "Form hash expired, please submit the form again.",
+		self::MIN_LENGTH			=> "Field '{0}' requires at least {1} characters.",
+		self::MAX_LENGTH			=> "Field '{0}' requires no more than {1} characters.",
+		self::LENGTH				=> "Field '{0}' requires a value between {1} and {2} characters long.",
+		self::EMAIL					=> "Field '{0}' requires a valid email address.",
+		self::URL					=> "Field '{0}' requires a valid URL.",
+		self::NUMBER				=> "Field '{0}' requires a valid number.",
+		self::INTEGER				=> "Field '{0}' requires a valid integer.",
+		self::FLOAT					=> "Field '{0}' requires a valid float number.",
+		self::DATE					=> "Field '{0}' requires a valid date format: '{1}'.",
+		self::DATE_TO_LOW			=> "Field '{0}' requires date higher or equal to '{1}'.",
+		self::DATE_TO_HIGH			=> "Field '{0}' requires date lower or equal to '{1}'.",
+		self::TIME					=> "Field '{0}' requires a valid time format: '00:00 - 23:59'.",
+		self::TIME_TO_LOW			=> "Field '{0}' requires time higher or equal to '{1}'.",
+		self::TIME_TO_HIGH			=> "Field '{0}' requires time lower or equal to '{1}'.",
+		self::DATETIME				=> "Field '{0}' requires a valid date time format: '{1}'.",
+		self::PHONE					=> "Field '{0}' requires a valid phone number.",
+		self::ZIP_CODE				=> "Field '{0}' requires a valid zip code.",
+		self::TAX_ID				=> "Field '{0}' requires a valid TAX ID.",
+		self::VAT_ID				=> "Field '{0}' requires a valid VAR ID.",
+		self::GREATER				=> "Field '{0}' requires a value greater than {1}.",
+		self::LOWER					=> "Field '{0}' requires a value lower than {1}.",
+		self::RANGE					=> "Field '{0}' requires a value between {1} and {2}.",
+		self::MAX_FILE_SIZE			=> "The size of the uploaded file can be up to {0} bytes.",
+		self::MAX_POST_SIZE			=> "The uploaded data exceeds the limit of {0} bytes.",
+		self::IMAGE					=> "The uploaded file has to be image in format JPEG, GIF or PNG.",
+		self::MIME_TYPE				=> "The uploaded file is not in the expected file format.",
+		self::VALID					=> "Field '{0}' requires a valid option.",
+		self::CHOOSE_MIN_OPTS		=> "Field '{0}' requires at least {1} chosen option(s) at minimal.",
+		self::CHOOSE_MAX_OPTS		=> "Field '{0}' requires {1} of the selected option(s) at maximum.",
+		self::CHOOSE_MIN_OPTS_BUBBLE=> "Please select at least {0} options as minimal.",
+		self::CHOOSE_MAX_OPTS_BUBBLE=> "Please select up to {0} options at maximum.",
+	);
+
+
+	/**
+	 * Form submit result state (0 - error happend).
+	 * Submit was not successful,there was an error/errors.
+	 */
+	const RESULT_ERRORS		= 0;
+	/**
+	 * Form submit result state (1 - everything ok).
+	 * Submit was successful, no error happend.
+	 */
+	const RESULT_SUCCESS	= 1;
+	/**
+	 * Form submit result state (2 - everything ok, next step).
+	 * Submit was successful, no error happend
+	 * and one of submittin button is control
+	 * to indicate that we can go to next step
+	 * in multiple forms wizzard (typicly eshop ordering).
+	 */
+	const RESULT_NEXT_PAGE	= 2;
+
+
+	/**
+	 * Control/labels rendering mode ('normal').
+	 * Label will be rendered before control,
+	 * only for checkbox and radio button label
+	 * will be rendered after control.
+	 */
+	const FIELD_RENDER_MODE_NORMAL			= 'normal';
+	/**
+	 * Control/labels rendering mode ('no-label').
+	 * No label will be rendered with control.
+	 */
+	const FIELD_RENDER_MODE_NO_LABEL		= 'no-label';
+	/**
+	 * Control/labels rendering mode ('label-around').
+	 * Label will be rendered around control.
+	 */
+	const FIELD_RENDER_MODE_LABEL_AROUND	= 'label-around';
+
+
+	/**
+	 * Control errors rendering mode ('all-together').
+	 * All errors are rendered naturaly at form begin together in one html div element.
+	 * If you are using custom template for form - you have to call after form beginning $this->RenderErrors();
+	 * to get all errors into template. This value is used as default for all \MvcCore\Ext\Form(s).
+	 */
+	const ERROR_RENDER_MODE_ALL_TOGETHER		= 'all-together';
+	/**
+	 * Control errors rendering mode ('before-each-control').
+	 * If there will be any error, it will be rendered as single span.errors
+	 * before current form control with single or multiple span.error elements
+	 * inside, by errors count for current form control. It will be rendered in
+	 * natural form rendering mode without template but also in custom form rendering mode
+	 * with template if you call anytime in template $field->RenderLabelAndControl();
+	 * If you will use in custom form rendering mod with template method $field->RenderControl();,
+	 * there will be not rendered any error spans before control, you have to use $field->RenderErrors();
+	 * to get errors for each control.
+	 */
+	const ERROR_RENDER_MODE_BEFORE_EACH_CONTROL	= 'before-each-control';
+	/**
+	 * Control errors rendering mode ('after-each-control').
+	 * If there will be any error, it will be rendered as single span.errors
+	 * after current form control with single or multiple span.error elements
+	 * inside, by errors count for current form control. It will be rendered in
+	 * natural form rendering mode without template but also in custom form rendering mode
+	 * with template if you call anytime in template $field->RenderLabelAndControl();
+	 * If you will use in custom form rendering mod with template method $field->RenderControl();,
+	 * there will be not rendered any error spans before control, you have to use $field->RenderErrors();
+	 * to get errors for each control.
+	 */
+	const ERROR_RENDER_MODE_AFTER_EACH_CONTROL	= 'after-each-control';
+
+
+	/**
+	 * Controller object, always passed and required
+	 * as first argument through \MvcCore\Ext\Form::__constructor($controller) method.
+	 * @requires
+	 * @var \MvcCore\Controller|mixed
+	 */
+	public $Controller = null;
+	/**
+	 * Form view, object container with variables from local context to render in template.
+	 * Created automaticly inside \MvcCore\Ext\Form before each rendering process.
+	 * @var \MvcCore\Ext\Form\Core\View|mixed
+	 */
+	public $View = NULL;
+	/**
+	 * Form id, required to configure.
+	 * Used to identify session data, error messages,
+	 * csrf tokens, html form attribute id value and much more.
+	 * @requires
+	 * @var string
+	 */
+	public $Id = '';
+	/**
+	 * Form submitting url value.
+	 * Should be relative or absolute, anything
+	 * to complete classic html form attribute action.
+	 * @requires
+	 * @var string
+	 */
+	public $Action = '';
+	/**
+	 * Form http submitting method.
+	 * 'post' by default.
+	 * @var string
+	 */
+	public $Method = self::METHOD_POST;
+	/**
+	 * Form enctype attribute - how the form values
+	 * should be encoded when submitting it to the server.
+	 * 'application/x-www-form-urlencoded' by default, it means
+	 * all form values will be encoded to key1=value1&key2=value2... string.
+	 * @var string
+	 */
+	public $Enctype = self::ENCTYPE_URLENCODED;
+	/**
+	 * Field to complete optional translator language argument automaticly.
+	 * If you are operating in multilanguage project and you want to use
+	 * translator in \MvcCore\Ext\Form, set this Lang property to desired language code
+	 * you want to translate every visible text into it. Use this property
+	 * with $form->Translator and $form->Translate properties;
+	 * @var string
+	 */
+	public $Lang = '';
+	/**
+	 * Field to create proper validator for zip codes, currencies etc...
+	 * If you are operating in multilanguage project and you want to use
+	 * form field validators for locale specific needs in \MvcCore\Ext\Form,
+	 * set $form->Locale property to desired international locale code
+	 * you want to use proper validator functionality.
+	 * @var string
+	 */
+	public $Locale = '';
+	/**
+	 * Form html element css class attribute value.
+	 * To specify more css classes - add more strings separated by space.
+	 * @var string
+	 */
+	public $CssClass = '';
+	/**
+	 * Form html element additional attributes.
+	 * To add any other attribute for html <form> element,
+	 * assert here key/value array, keys will be used as attribute names,
+	 * values as attribute values, simple.
+	 * @var array
+	 */
+	public $Attributes = array();
+	/**
+	 * Url string, relative or absolute, to specify, where
+	 * user will be redirected after form will be submitted successfully.
+	 * It's required to use \MvcCore\Ext\Form like this, but if you want to use method
+	 * $form->RedirectAfterSubmit();, at the end of custom Submit method implementation,
+	 * you need to specify at least success and error url strings.
+	 * @var string
+	 */
+	public $SuccessUrl = '';
+	/**
+	 * Url string, relative or absolute, to specify, where
+	 * user will be redirected after form will be submitted successfully
+	 * and submit button will be recognized to switch $form->Result value to value 2,
+	 * which means next step redirection after successfull submit. This functionality
+	 * to switch to value 2 is up to you. This field is designed only for you as empty.
+	 * It's not required to use \MvcCore\Ext\Form like this, but if you want to use method
+	 * $form->RedirectAfterSubmit(); at the end of custom Submit method implementation,
+	 * and you want to go to next step by one button or stay in the same page by
+	 * another form submit button, this is very good and comfortable pattern.
+	 * to use it like this.
+	 * @var string
+	 */
+	public $NextStepUrl = '';
+	/**
+	 * Url string, relative or absolute, to specify, where
+	 * user will be redirected after form will not be submitted successfully.
+	 * It's not required to use \MvcCore\Ext\Form like this, but if you want to use method
+	 * $form->RedirectAfterSubmit(); at the end of custom Submit method implementation,
+	 * you need to specify at least success and error url strings.
+	 * @var string
+	 */
+	public $ErrorUrl = '';
+	/**
+	 * Form submit result state (by default - 1 - everything ok).
+	 * Submit was successful, no error happend.
+	 */
+	public $Result = self::RESULT_SUCCESS;
+	/**
+	 * If true, every form control placeholder, label content and error message
+	 * will be translated to $form->Lang value translation fraze. If false, nothing
+	 * will be translated. If null, nothing configured yet. Null is for internal purposes.
+	 * @var bool
+	 */
+	public $Translate = NULL;
+	/**
+	 * Translator callable (should be closure function or array
+	 * with classname/instance and method name string). First argument
+	 * of callable object has to be a translation key and second argument
+	 * has to be a language string ('en', 'de' ...) to translate the key into.
+	 * result of callable object has to be a string - translated key to called language.
+	 * @var callable
+	 */
+	public $Translator = NULL;
+	/**
+	 * Default switch how to set every form control to be required by default.
+	 * If you define directly any control to not be required, it will not be required.
+	 * This is only value used as default for not strictly defined require values in controls.
+	 * @var bool
+	 */
+	public $Required = FALSE;
+	/**
+	 * Every form control after it is added by $form->AddField() method is added under it's name
+	 * into this public array fith all form fields except csrf input:hidden. Fields are rendered
+	 * by order in this array.
+	 * @var \MvcCore\Ext\Form\Core\Field[]
+	 */
+	public $Fields = array();
+	/**
+	 * Form submited data from client. After $form->Submit() has been called,
+	 * data are clean and ready to use if $form->Result is in success state.
+	 * @var array
+	 */
+	public $Data = array();
+	/**
+	 * If any configured error happends by $form->Submit() process, it's stored in this array.
+	 * Every record in this array is array with first item to be an error  message string.
+	 * If the error is for specific field name, there is also a second item - field name.
+	 * Errors array has normal numeric keys.
+	 * @var array
+	 */
+	public $Errors = array();
+	/**
+	 * Default control/label rendering mode for each form control/label.
+	 * Default values is string 'normal', it means label will be rendered
+	 * before control, only for checkbox and radio button label will be
+	 * rendered after control.
+	 * @var string
+	 */
+	public $FieldsDefaultRenderMode = self::FIELD_RENDER_MODE_NORMAL;
+	/**
+	 * Errors rendering mode, by default configured as string: 'all-together',
+	 * It means all errors are rendered naturaly at form begin together in one html div.errors element.
+	 * If you are using custom template for form - you have to call after form beginning: $this->RenderErrors();
+	 * to get all errors into template.
+	 * @var string
+	 */
+	public $ErrorsRenderMode = self::ERROR_RENDER_MODE_ALL_TOGETHER;
+	/**
+	 * Form custom template relative path without .phtml extension.
+	 * By default it's an empty string, which means there will be used no template and form
+	 * will be rendered naturaly, one field by one without any breaking line html element.
+	 * If there is any path defined, it has to be defined relatively from directory '/App/Views/Scripts'
+	 * to desired template.
+	 * @var string
+	 */
+	public $TemplatePath = '';
+	/**
+	 * Property to change template type path, where form templates will be located.
+	 * By default, all form templates are located in '/App/Views/Scripts', if you want to change it,
+	 * you can set this property for example to 'Forms' to define base directory for form templates to
+	 * /App/Views/Forms' or by defining this property to '../Forms' to '/App/Forms' etc...
+	 * @var string
+	 */
+	public $TemplateTypePath = 'Scripts';
+	/**
+	 * Array with all necessary javascript contructors and file paths to add
+	 * into html response after form is rendered by contained fields.
+	 * Every record in this field has defined:
+	 *	- string - supporting javascript file relative path
+	 *	- string - supporting javascript full class name inside supporting file
+	 *	- array - supporting javascript constructor params
+	 * @var array
+	 */
+	public $Js = array();
+	/**
+	 * Array with all necessary css file paths to add into html response after
+	 * form is rendered by contained fields. Every record in this field has defined:
+	 *	- string - supporting javascript file relative path
+	 *	- string - supporting javascript full class name inside supporting file
+	 *	- array - supporting javascript constructor params
+	 * @var array
+	 */
+	public $Css = array();
+	/**
+	 * If there is necessary to add after form into html response
+	 * any supported javascript, there is necessary also to add
+	 * base supporting form javascript - this is relative path
+	 * where it is located.
+	 * @var string
+	 */
+	public $JsBaseFile = '__MVCCORE_FORM_DIR__/mvccore-form.js';
+	/**
+	 * Javascript external files renderer. If any callable is set, it has
+	 * to accept first param to be SplFileInfo about extenal support javascript file.
+	 * Javascript renderer must add supporting javascript file only once into html
+	 * output result in any custom way, it is it's responsibility.
+	 * @var callable
+	 */
+	public $JsRenderer = NULL;
+	/**
+	 * Css external files renderer. If any callable is set, it has
+	 * to accept first param to be SplFileInfo about extenal support css file.
+	 * Css renderer must add supporting css file only once into html
+	 * output result in any custom way, it is it's responsibility.
+	 * @var callable
+	 */
+	public $CssRenderer = NULL;
+
+
+	/**
+	 * Add cross site request forgery error handler.
+	 * By CSRF error by submitting process there shoud be called
+	 * queue of those handlers, for example to deauthenticate the user
+	 * or anything else to secure your app more.
+	 * @static
+	 * @param callable $handler
+	 */
+	public static function AddCsrfErrorHandler (callable $handler) {
+		static::$csrfErrorHandlers[] = $handler;
+	}
+
+
+	/**
+	 * Add supporting css files.
+	 * @param string $cssFile supporting css file relative path
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function AddCss ($cssFile = '') {
+		$this->Css[] = array($cssFile);
+		return $this;
+	}
+	/**
+	 * Add css class (or classes separated by space) and add new value(s)
+	 * after previous css class(es) attribute values. Value is used for
+	 * standard css class attribute for HTML form tag.
+	 * @param string $cssClass
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function AddCssClass ($cssClass = '') {
+		$this->CssClass .= (($this->CssClass) ? ' ' : '') . $cssClass;
+		return $this;
+	}
+	/**
+	 * Add supporting javascript files configuration.
+	 * @param string $jsFile				supporting javascript file relative path
+	 * @param string $jsClass				supporting javascript full class name inside supporting file
+	 * @param array  $jsConstructorParams	supporting javascript constructor params
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function AddJs ($jsFile = '', $jsClass = 'MvcCoreForm.FieldType', $jsConstructorParams = array()) {
+		$this->Js[] = array($jsFile, $jsClass, $jsConstructorParams);
+		return $this;
+	}
+	/**
+	 * Set form submitting url value.
+	 * Should be relative or absolute, anything
+	 * tn complete classic html form attribute action.
+	 * @requires
+	 * @param string $url
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetAction ($url = '') {
+		$this->Action = $url;
+		return $this;
+	}
+	/**
+	 * Set form html element additional attributes.
+	 * To add any other attribute for html <form> element,
+	 * set here key/value array, keys will be used as attribute names,
+	 * values as attribute values, simple. All previously configured additional
+	 * attributes will be replaced by this function call.
+	 * @param array $attributes
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetAttributes (array $attributes = array()) {
+		$this->Attributes = $attributes;
+		return $this;
+	}
+	/**
+	 * Set supporting css files.
+	 * All previously configured supporting css files will be replaced.
+	 * Set it as array with all necessary css file paths to add into html response after
+	 * form is rendered by contained fields. Every record in this field has defined:
+	 *	- supporting css file relative path
+	 * @param array $cssFiles
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetCss (array $cssFiles = array()) {
+		$this->Css = array();
+		foreach ($cssFiles as $item) $this->AddCss($item);
+		return $this;
+	}
+	/**
+	 * Set form html element css class attribute value.
+	 * To specify more css classes - add more strings separated by space
+	 * and overwrite any previous css class attribute value. Value is used for
+	 * standard css class attribute for HTML form tag.
+	 * @param string $cssClass
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetCssClass ($cssClass = '') {
+		$this->CssClass = $cssClass;
+		return $this;
+	}
+	/**
+	 * Set css external files renderer. If any callable is set, it has
+	 * to accept first param to be SplFileInfo about extenal support css file.
+	 * Css renderer must add supporting css file only once into html
+	 * output result in any custom way, it is it's responsibility.
+	 * @param callable $cssRenderer
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetCssRenderer (callable $cssRenderer) {
+		$this->CssRenderer = $cssRenderer;
+		return $this;
+	}
+	/**
+	 * Set multiple fields values by key/value array.
+	 * For each key in $defaults array, library try to find form control
+	 * with the same name as array key and that control value is set to array value.
+	 * Only data with existing fields by keys are setted into field values.
+	 * Values are setted by keys keys sensitively by default.
+	 * @param array $defaults			key value array with data to set as values into fields by keys
+	 * @param bool  $keysInsensitive	if true, set up properties from $data with case insensivity
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetDefaults (array $defaults = array(), $keysInsensitive = FALSE) {
+		if (!$this->initialized) $this->Init();
+		$defaultsKeys = $keysInsensitive ? ',' . implode(',', array_keys($defaults)) . ',' : '' ;
+		foreach ($this->Fields as $fieldName => & $field) {
+			if (isset($defaults[$fieldName])) {
+				$fieldValue = $defaults[$fieldName];
+			} else if ($keysInsensitive) {
+				$defaultsKeyPos = stripos($defaultsKeys, ','.$fieldName.',');
+				if ($defaultsKeyPos === FALSE) continue;
+				$defaultsKey = substr($defaultsKeys, $defaultsKeyPos + 1, strlen($fieldName));
+				$fieldValue = $defaults[$defaultsKey];
+			} else {
+				continue;
+			}
+			$field->SetValue($fieldValue);
+			if ($fieldValue) $this->Data[$fieldName] = $fieldValue;
+		}
+		return $this;
+	}
+	/**
+	 * Set form enctype attribute - how the form values
+	 * should be encoded when submitting it to the server.
+	 * 'application/x-www-form-urlencoded' by default, it means
+	 * all form values will be encoded to key1=value1&key2=value2... string.
+	 * @param string $enctype
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetEnctype ($enctype = '') {
+		$this->Enctype = $enctype;
+		return $this;
+	}
+	/**
+	 * Set errors rendering mode, by default configured as string: 'all-together',
+	 * It means all errors are rendered naturaly at form begin together in one html div.errors element.
+	 * If you are using custom template for form - you have to call after form beginning: $this->RenderErrors();
+	 * to get all errors into template.
+	 * @param mixed $errorsRenderMode
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetErrorsRenderMode ($errorsRenderMode = \MvcCore\Ext\Form::ERROR_RENDER_MODE_ALL_TOGETHER) {
+		$this->ErrorsRenderMode = $errorsRenderMode;
+		return $this;
+	}
+	/**
+	 * Set error url string, relative or absolute, to specify, where
+	 * user will be redirected after form will not be submitted successfully.
+	 * It's not required to use \MvcCore\Ext\Form like this, but if you want to use method
+	 * $form->RedirectAfterSubmit(); at the end of custom Submit method implementation,
+	 * you need to specify at least success and error url strings.
+	 * @param string $url
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetErrorUrl ($url = '') {
+		$this->ErrorUrl = $url;
+		return $this;
+	}
+	/**
+	 * Det default control/label rendering mode for each form control/label.
+	 * Default configured value by default is string 'normal', it means label will be rendered
+	 * before control, only for checkbox and radio button label will be
+	 * rendered after control.
+	 * @param string $fieldsDefaultRenderMode
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetFieldsDefaultRenderMode ($fieldsDefaultRenderMode = \MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL) {
+		$this->FieldsDefaultRenderMode = $fieldsDefaultRenderMode;
+		return $this;
+	}
+	/**
+	 * Set form id, required to configure.
+	 * Form Id us used to identify session data, error messages,
+	 * csrf tokens, html form attribute id value and much more.
+	 * @requires
+	 * @param string $id
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetId ($id = '') {
+		$this->Id = $id;
+		return $this;
+	}
+	/**
+	 * Set supporting javascript files configuration.
+	 * All previously configured supporting javascripts will be replaced.
+	 * Set it as array with all necessary javascript contructors and file paths to add
+	 * into html response after form is rendered by contained fields.
+	 * Every record in this field has to be defined as array with:
+	 *	 0 - string - supporting javascript file relative path
+	 *	 1 - string - supporting javascript full class name inside supporting file
+	 *	 2 - array - supporting javascript constructor params
+	 * @param array $jsFilesClassesAndConstructorParams
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetJs (array $jsFilesClassesAndConstructorParams = array()) {
+		$this->Js = array();
+		foreach ($jsFilesClassesAndConstructorParams as $item) {
+			$this->AddJs($item[0], $item[1], $item[2]);
+		}
+		return $this;
+	}
+	/**
+	 * Set javascript external files renderer. If any callable is set, it has
+	 * to accept first param to be SplFileInfo about extenal supporting javascript file.
+	 * Javascript renderer has to add supporting javascript file only once into html
+	 * output result in any custom way, it is it's responsibility.
+	 * @param callable $jsRenderer
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetJsRenderer (callable $jsRenderer) {
+		$this->JsRenderer = $jsRenderer;
+		return $this;
+	}
+	/**
+	 * Set $form->Lang, usualy used to complete optional translator language argument automaticly.
+	 * If you are operating in multilanguage project and you want to use
+	 * translator in \MvcCore\Ext\Form, set $form->Lang property to desired language code
+	 * you want to translate every visible text into it. Use this property
+	 * with $form->Translator and $form->Translate properties;
+	 * @param string $lang
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetLang ($lang = '') {
+		$this->Lang = $lang;
+		return $this;
+	}
+	/**
+	 * Set $form->Locale, usualy used to create proper validator for zip codes, currencies etc...
+	 * If you are operating in multilanguage project and you want to use
+	 * form field validators for locale specific needs in \MvcCore\Ext\Form,
+	 * set $form->Locale property to desired international locale code
+	 * you want to use proper validator functionality.
+	 * @param string $locale
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetLocale ($locale = '') {
+		$this->Locale = strtoupper($locale);
+		return $this;
+	}
+	/**
+	 * Set form http submitting method.
+	 * 'post' by default.
+	 * @param string $method
+	 * @return \MvcCore\Ext\Form
+	 */
+    public function SetMethod ($method = '') {
+		$this->Method = $method;
+		return $this;
+	}
+	/**
+	 * Set next step url string, relative or absolute, to specify, where
+	 * user will be redirected after form will be submitted successfully
+	 * and submit button will be recognized to switch $form->Result value to value 2,
+	 * which means next step redirection after successfull submit. This functionality
+	 * to switch to value 2 is up to you. This field is designed only for you as empty.
+	 * It's not required to use \MvcCore\Ext\Form like this, but if you want to use method
+	 * $form->RedirectAfterSubmit(); at the end of custom Submit method implementation,
+	 * and you want to go to next step by one button or stay in the same page by
+	 * another form submit button, this is very good and comfortable pattern.
+	 * @param string $url
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetNextStepUrl ($url = '') {
+		$this->NextStepUrl = $url;
+		return $this;
+	}
+	/**
+	 * Default required attribute for all fields in form.
+	 * It this global required setter is configured to TRUE,
+	 * every field with no required configuration after adding
+	 * into form instance is configured automaticly by this efault property
+	 * as required. Default values is FALSE, means not required fields in all forms by default.
+	 * @param bool $required
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetRequired ($required = TRUE) {
+		$this->Required = $required;
+		return $this;
+	}
+	/**
+	 * Set success url string, relative or absolute, to specify, where
+	 * user will be redirected after form will be submitted successfully.
+	 * It's required to use \MvcCore\Ext\Form like this, but if you want to use method
+	 * $form->RedirectAfterSubmit();, at the end of custom Submit method implementation,
+	 * you need to specify at least success and error url strings.
+	 * @param string $url
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetSuccessUrl ($url = '') {
+		$this->SuccessUrl = $url;
+		return $this;
+	}
+	/**
+	 * Set form custom template relative path without .phtml extension.
+	 * By default $form->TemplatePath is an empty string, which means there will be used no template and form
+	 * will be rendered naturaly, one field by one without any breaking line html element.
+	 * If there is any path defined, it has to be defined relatively from directory '/App/Views/Scripts'
+	 * to desired template.
+	 * @param string $path
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetTemplatePath ($path = '') {
+		$this->TemplatePath = str_replace('\\', '/', $path);
+		return $this;
+	}
+	/**
+	 * Set $form->TemplateTypePath property, where current form templates will be located.
+	 * By default, all form templates are located in '/App/Views/Scripts', if you want to change it,
+	 * you can set this property for example to 'Forms' to define base directory for form templates to
+	 * /App/Views/Forms' or by defining this property to '../Forms' to '/App/Forms' etc...
+	 * @param string $typePath
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetTemplateTypePath ($typePath = '') {
+		$this->TemplateTypePath = str_replace('\\', '/', $typePath);
+		return $this;
+	}
+	/**
+	 * Set TRUE to translate everything visible in form.
+	 * Control placeholders, label texts and error messages.
+	 * If you are configuring your form to be translated, there is also necessary to
+	 * set $form->Translator callable to translate everything with it by method 
+	 * $form->SetTranslator();.
+	 * Default values is NULL, means no translations will 
+	 * be processed it no Translator callable is set.
+	 * @param bool $translate
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetTranslate ($translate = TRUE) {
+		$this->Translate = $translate;
+		return $this;
+	}
+	/**
+	 * Set translator callable to translate everything visible in form.
+	 * Handler is necessary to design with first param to be a translation key,
+	 * second param to be a language code and ahdler has to return translated string result.
+	 * This property is optional to configure but if it is configured to any callable,
+	 * everything in form will be translated, except fields strictly defined to not translate.
+	 * Default values is NULL, means no translations will be processed.
+	 * @param callable $handler
+	 * @return \MvcCore\Ext\Form
+	 */
+	public function SetTranslator (callable $translator = null) {
+		$this->Translate = is_callable($translator);
+		if ($this->Translate) {
+			$this->Translator = $translator;
+		} else {
+			$this->Translator = NULL;
+		}
+		return $this;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth\Virtual{
+
+class Form extends \MvcCore\Ext\Form {
+
+	/**
+	 * Unique form id.
+	 * @var string
+	 */
+	public $Id = 'authentication';
+
+	/**
+	 * Form http method.
+	 * @var string
+	 */
+	public $Method = \MvcCore\Ext\Form::METHOD_POST;
+
+	/**
+	 * For sign in form:
+	 *   initialize all form fields, initialize hidden field with
+	 *   sourceUrl for cases when in request params is any source url param.
+	 *   To return there after form is submitted.
+	 * For sign out form:
+	 * - initialize sign out button and user into
+	 *   template for any custom template rendering.
+	 * @throws \MvcCore\Ext\Form\Core\Exception
+	 * @return \MvcCore\Ext\Auth\Virtual\Form|\MvcCore\Ext\Form
+	 */
+	public function Init () {
+		return parent::Init();
+	}
+
+	/**
+	 * For sign in form:
+	 * - if there is any user with the same password imprint
+	 *   store user in session for next requests, if there is not - wait for
+	 *   three seconds and then go to error page.
+	 * For sign out form:
+	 * - sign out submit - if everything is ok, unser user unique name from session
+	 *   for next requests to hanve not authenticated user anymore.
+	 * @param array $rawParams
+	 * @return array
+	 */
+	public function Submit ($rawParams = array()) {
+		return parent::Submit($rawParams);
+	}
+
+	/**
+	 * Add success and error url which are used
+	 * to redirect user to success url or error url
+	 * after form is submitted.
+	 * @param string $successUrl
+	 * @param string $errorUrl
+	 */
+	protected function addSuccessAndErrorUrlHiddens ($successUrl = '', $errorUrl = '') {
+		$this->AddField(new \MvcCore\Ext\Form\Hidden(array(
+			'name'			=> 'successUrl',
+			'value'			=> $successUrl,
+			'validators'	=> array('Url'),
+		)));
+		$this->AddField(new \MvcCore\Ext\Form\Hidden(array(
+			'name'			=> 'errorUrl',
+			'value'			=> $errorUrl,
+			'validators'	=> array('Url'),
+		)));
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form{
+
+
+class SubmitButton extends Button
+{
+	public $Type = 'submit';
+	public $Value = 'Submit';
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form{
+
+//require_once('Core/View.php');
+
+class Text extends Core\Field
+{
+	public $Type = 'text';
+	public $Placeholder = null;
+	public $Size = null;
+	public $Maxlength = null;
+	public $Pattern = null;
+	public $Autocomplete = null;
+	public $Validators = array('SafeString'/*, 'Maxlength', 'Pattern'*/);
+	public function SetPlaceholder ($placeholder) {
+		$this->Placeholder = $placeholder;
+		return $this;
+	}
+	public function SetSize ($size) {
+		$this->Size = $size;
+		return $this;
+	}
+	public function SetMaxlength ($maxlength) {
+		$this->Maxlength = $maxlength;
+		return $this;
+	}
+	public function SetPattern ($pattern) {
+		$this->Pattern = $pattern;
+		return $this;
+	}
+	public function SetAutocomplete ($autocomplete) {
+		$this->Autocomplete = $autocomplete;
+		return $this;
+	}
+	public function OnAdded (\MvcCore\Ext\Form & $form) {
+		parent::OnAdded($form);
+		if ($this->Pattern && !in_array('Pattern', $this->Validators)) {
+			$this->Validators[] = 'Pattern';
+		}
+		if ($this->Maxlength && !in_array('Maxlength', $this->Validators)) {
+			$this->Validators[] = 'Maxlength';
+		}
+	}
+	public function SetUp () {
+		parent::SetUp();
+		$form = $this->Form;
+		if ($this->Translate && $this->Placeholder) {
+			$this->Placeholder = call_user_func($form->Translator, $this->Placeholder, $form->Lang);
+		}
+	}
+	public function RenderControl () {
+		$attrsStr = $this->renderControlAttrsWithFieldVars(
+			array('Maxlength', 'Size', 'Placeholder', 'Pattern', 'Autocomplete')
+		);
+				return Core\View::Format(static::$Templates->control, array(
+			'id'		=> $this->Id, 
+			'name'		=> $this->Name, 
+			'type'		=> $this->Type,
+			'value'		=> $this->Value,
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form{
+
+
+
+class Password extends Text
+{
+	public $Type = 'password';
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth{
+
+use \MvcCore\Ext\Auth,
+	\MvcCore\Ext\Form;
+
+class SignInForm extends Virtual\Form {
+
+	/** @var string */
+	public $CssClass = 'sign-in';
+
+	/**
+	 * Initialize all form fields, initialize hidden field with
+	 * sourceUrl for cases when in request params is any source url param.
+	 * To return there after form is submitted.
+	 * @return \MvcCore\Ext\Auth\SignInForm
+	 */
+	public function Init () {
+		parent::Init();
+
+		$cfg = Auth::GetInstance()->GetConfig();
+		$this->addSuccessAndErrorUrlHiddens($cfg->signedInUrl, $cfg->errorUrl);
+
+		$this->AddField(new Form\Text(array(
+			'name'			=> 'username',
+			'placeholder'	=> 'User',
+		)));
+		$this->AddField(new Form\Password(array(
+			'name'			=> 'password',
+			'placeholder'	=> 'Password',
+		)));
+		$this->AddField(new Form\SubmitButton(array(
+			'name'			=> 'send',
+			'value'			=> 'Sign In',
+			'cssClasses'	=> array('button'),
+		)));
+
+		$params = \MvcCore\Application::GetInstance()->GetRequest()->GetParams();
+
+		$sourceUrl = isset($params['sourceUrl']) ? $params['sourceUrl'] : '' ;
+		$sourceUrl = filter_var($sourceUrl, FILTER_VALIDATE_URL);
+		$this->AddField(new Form\Hidden(array(
+			'name'			=> 'sourceUrl',
+			'value'			=> $sourceUrl,
+		)));
+
+		return $this;
+	}
+
+	/**
+	 * Sign in submit - if there is any user with the same password imprint
+	 * store user in session for next requests, if there is not - wait for
+	 * three seconds and then go to error page.
+	 * @param array $rawParams
+	 * @return array
+	 */
+	public function Submit ($rawParams = array()) {
+		parent::Submit();
+		$userClass = Auth::GetInstance()->GetConfig()->userClass;
+		if ($this->Result === Form::RESULT_SUCCESS) {
+			// now sended values are safe strings, 
+			// try to get use by username and compare password hashes:
+			$user = $userClass::Authenticate(
+				$this->Data['username'], $this->Data['password']
+			);
+			if (is_null($user)) {
+				$this->AddError('User name or password is incorrect.');
+			} else {
+				$userClass::StoreInSession($user);
+			}
+		}
+		$data = (object) $this->Data;
+		$this->SuccessUrl = $data->sourceUrl ? urldecode($data->sourceUrl) : $data->successUrl;
+		$this->ErrorUrl = $data->errorUrl;
+		if ($this->Result !== Form::RESULT_SUCCESS) {
+			sleep(3);
+		}
+		return array($this->Result, $this->Data, $this->Errors);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form{
+
+//require_once('Core/View.php');
+
+class Number extends Core\Field
+{
+	public $Type = 'number';
+	public $Size = null;
+	public $Min = null;
+	public $Max = null;
+	public $Step = null;
+	public $Pattern = null;
+	public $Wrapper = '{control}';
+	public $Validators = array('NumberField');
+	public function SetSize ($size) {
+		$this->Size = $size;
+		return $this;
+	}
+	public function SetMin ($min) {
+		$this->Min = $min;
+		return $this;
+	}
+	public function SetMax ($max) {
+		$this->Max = $max;
+		return $this;
+	}
+	public function SetStep ($step) {
+		$this->Step = $step;
+		return $this;
+	}
+	public function SetPattern ($pattern) {
+		$this->Pattern = $pattern;
+		return $this;
+	}
+	public function SetWrapper ($wrapper) {
+		$this->Wrapper = $wrapper;
+		return $this;
+	}
+	public function RenderControl () {
+		$attrsStr = $this->renderControlAttrsWithFieldVars(
+			array('Size', 'Min', 'Max', 'Step', 'Pattern')
+		);
+				$result = Core\View::Format(static::$Templates->control, array(
+			'id'		=> $this->Id, 
+			'name'		=> $this->Name, 
+			'type'		=> $this->Type,
+			'value'		=> $this->Value,
+			'attrs'		=> $attrsStr ? " $attrsStr" : '',
+		));
+		$wrapperReplacement = '{control}';
+		$wrapper = mb_strpos($wrapperReplacement, $this->Wrapper) !== FALSE ? $this->Wrapper : $wrapperReplacement;
+		return str_replace($wrapperReplacement, $result, $wrapper);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth{
+
+use \MvcCore\Ext\Auth,
+	\MvcCore\Ext\Form;
+
+class SignOutForm extends Virtual\Form {
+
+	/** @var string */
+	public $CssClass = 'sign-out';
+
+	/** @var \MvcCore\Ext\Auth\Virtual\User */
+	public $User = NULL;
+
+	/**
+	 * Initialize sign out button and user into 
+	 * template for any custom template rendering.
+	 * @return \MvcCore\Ext\Auth\SignOutForm
+	 */
+	public function Init () {
+		parent::Init();
+
+		$cfg = Auth::GetInstance()->GetConfig();
+		$this->addSuccessAndErrorUrlHiddens($cfg->signedInUrl, $cfg->errorUrl);
+
+		$this->AddField(new Form\SubmitButton(array(
+			'name'			=> 'send',
+			'value'			=> 'Log Out',
+			'cssClasses'	=> array('button'),
+		)));
+
+		$this->User = Auth::GetInstance()->GetUser();
+
+		return $this;
+	}
+
+	/**
+	 * Sign out submit - if everything is ok, unser user unique name from session
+	 * for next requests to hanve not authenticated user anymore.
+	 * @param array $rawParams
+	 * @return array
+	 */
+	public function Submit ($rawParams = array()) {
+		parent::Submit();
+		if ($this->Result === Form::RESULT_SUCCESS) {
+			$userClass = Auth::GetInstance()->GetConfig()->userClass;
+			$userClass::ClearFromSession();
+		}
+		$this->SuccessUrl = $this->Data['successUrl'];
+		$this->ErrorUrl = $this->Data['errorUrl'];
+		return array($this->Result, $this->Data, $this->Errors);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form{
+
+//require_once('Core/View.php');
+
+class SubmitInput extends Core\Field
+{
+	public $Type = 'submit';
+	public $Value = 'Submit';
+	public $RenderMode = \MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL;
+	public $Accesskey = null;
+	public $Validators = array();
+	public function SetAccesskey ($accesskey) {
+		$this->Accesskey = $accesskey;
+		return $this;
+	}
+	public function OnAdded (\MvcCore\Ext\Form & $form) {
+		parent::OnAdded($form);
+		if (!$this->Value) {
+			$clsName = get_class($this);
+						throw new Core\Exception("No 'Value' defined for form field: '$clsName'.");
+		}
+	}
+	public function SetUp () {
+		parent::SetUp();
+		if ($this->Translate && $this->Value) {
+			$this->Value = call_user_func($this->Form->Translator, $this->Value, $this->Form->Lang);
+		}
+	}
+	public function RenderControl () {
+		$attrsStr = $this->renderControlAttrsWithFieldVars(
+			array('Accesskey',)
+		);
+				return Core\View::Format(static::$Templates->control, array(
+			'id'		=> $this->Id, 
+			'name'		=> $this->Name, 
+			'type'		=> $this->Type,
+			'value'		=> $this->Value,
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Core{
+
+//require_once('Exception.php');
+//require_once('View.php');
+
+abstract class FieldGroup extends Field
+{
+	/**
+	 * Form group pseudo control type, 
+	 * unique type accross all form field types.
+	 * @var string
+	 */
+	public $Type = '';
+	/**
+	 * Form control value, 
+	 * always as array of string or 
+	 * numbers for group of controls.
+	 * @var array
+	 */
+	public $Value = array();
+	/**
+	 * Form group control options to render
+	 * more subcontrol attributes for specified 
+	 * submitted values (array keys).
+	 * This property configuration is required.
+	 * Examples:
+	 *
+	 *  To configure radio buttons named: 'gender' for 'Female' and 'Male':
+	 *     <label for="gender-f">Female:</label>
+	 *     <input id="gender-f" type="radio" name="gender" value="f" />
+	 *     <label for="gender-m">Male:</label>
+	 *     <input id="gender-m" type="radio" name="gender" value="m" />
+	 *  use configuration:
+	 *     $field->Id = 'gender';
+	 *     $field->Options = array(
+	 *        'f' => 'Female',
+	 *        'm' => 'Male',
+	 *     );
+	 *
+	 *  To configure radio buttons named: 'gender' for 'Female' and 'Male':
+	 *     <label for="gender-f" class="female">Female:</label>
+	 *     <input id="gender-f" type="radio" name="gender" value="f" class="female" data-any="female-values" />
+	 *     <label for="gender-m" class="male">Male:</label>
+	 *     <input id="gender-m" type="radio" name="gender" value="m" class="male" data-any="male-values" />
+	 *  use configuration:
+	 *     $field->Id = 'gender';
+	 *     $field->Options = array(
+	 *        'f' => array(
+	 *           'text'  => 'Female',
+	 *           'class' => 'female',
+	 *           'attrs' => array('data-any' => 'female-values'),
+	 *        ),
+	 *        'm' => array(
+	 *           'text'  => 'Male',
+	 *           'class' => 'male',
+	 *           'attrs' => array('data-any' => 'male-values'),
+	 *        ),
+	 *     );
+	 * @requires
+	 * @var array
+	 */
+	public $Options = array();
+	/**
+	 * Css class for group label.
+	 * @var string[]
+	 */
+	public $GroupCssClasses = array();
+	/**
+	 * Any additional attributes for group label, defined
+	 * as key (for attribute name) and value (for attribute value).
+	 * @var string[]
+	 */
+	public $GroupLabelAttrs = array();
+	/**
+	 * Internal common templates how to render field group elements naturaly.
+	 * @var array|\stdClass
+	 */
+	public static $Templates = array(
+		'label'				=> '<label for="{id}"{attrs}>{label}</label>',
+		'control'			=> '<input id="{id}" name="{name}" type="{type}" value="{value}"{checked}{attrs} />',
+		'togetherLabelLeft'	=> '<label for="{id}"{attrs}><span>{label}</span>{control}</label>',
+		'togetherLabelRight'=> '<label for="{id}"{attrs}>{control}<span>{label}</span></label>',
+	);
+
+
+	/* setters *******************************************************************************/
+
+	/**
+	 * Set form group control options to render
+	 * more values for more specified submitted keys.
+	 * Examples:
+	 *
+	 *  To configure radio buttons named: 'gender' for 'Female' and 'Male':
+	 *     <label for="gender-f">Female:</label>
+	 *     <input id="gender-f" type="radio" name="gender" value="f" />
+	 *     <label for="gender-m">Male:</label>
+	 *     <input id="gender-m" type="radio" name="gender" value="m" />
+	 *  use configuration:
+	 *     $field->SetId('gender')
+	 *           ->SetOptions(array(
+	 *              // field values will be translated if configured
+	 *              'f' => 'Female',
+	 *              'm' => 'Male',
+	 *           ));
+	 *
+	 *  To configure radio buttons named: 'gender' for 'Female' and 'Male':
+	 *     <label for="gender-f" class="female">Female:</label>
+	 *     <input id="gender-f" type="radio" name="gender" value="f" class="female" data-any="female-values" />
+	 *     <label for="gender-m" class="male">Male:</label>
+	 *     <input id="gender-m" type="radio" name="gender" value="m" class="male" data-any="male-values" />
+	 *  use configuration:
+	 *     $field->SetId('gender')
+	 *           ->SetOptions(array(
+	 *              'f' => array(
+	 *                 'text'  => 'Female',	// text keys will be translated if configured
+	 *                 'class' => 'female',
+	 *                 'attrs' => array('data-any' => 'female-values'),
+	 *              ),
+	 *              'm' => array(
+	 *                 'text'  => 'Male',	// text keys will be translated if configured
+	 *                 'class' => 'male',
+	 *                 'attrs' => array('data-any' => 'male-values'),
+	 *              ),
+	 *           ));
+	 * @param array $options
+	 */
+	public function SetOptions ($options) {
+		$this->Options = $options;
+		return $this;
+	}
+	/**
+	 * Set css class(es) for group label,
+	 * as array of strings or string with classes
+	 * separated by space.
+	 * @var string|string[]
+	 */
+	public function SetGroupCssClasses ($cssClasses) {
+		if (gettype($cssClasses) == 'array') {
+			$this->GroupCssClasses = $cssClasses;
+		} else {
+			$this->GroupCssClasses = explode(' ', (string)$cssClasses);
+		}
+		return $this;
+	}
+	/**
+	 * Add css class(es) for group label,
+	 * as array of strings or string with classes
+	 * separated by space.
+	 * @var string|string[]
+	 */
+	public function AddGroupCssClass ($cssClasses) {
+		if (gettype($cssClasses) == 'array') {
+			$groupCssClasses = $cssClasses;
+		} else {
+			$groupCssClasses = explode(' ', (string)$cssClasses);
+		}
+		$this->GroupCssClasses = array_merge($this->GroupCssClasses, $groupCssClasses);
+		return $this;
+	}
+	/**
+	 * Set any additional attributes for group label, defined
+	 * as key (for attribute name) and value (for attribute value).
+	 * Any previously defined attributes will be replaced.
+	 * @var string[]
+	 */
+	public function SetGroupLabelAttrs ($attrs = array()) {
+		$this->GroupLabelAttrs = $attrs;
+		return $this;
+	}
+	/**
+	 * Add any additional attributes for group label, defined
+	 * as key (for attribute name) and value (for attribute value).
+	 * All additional attributes will be completed as array merge 
+	 * with previous values and new values.
+	 * @var string[]
+	 */
+	public function AddGroupLabelAttr ($attr = array()) {
+		$this->GroupLabelAttrs = array_merge($this->GroupLabelAttrs, $attr);
+		return $this;
+	}
+
+
+	/* core methods **************************************************************************/
+
+	/*
+	// use this constructor in extended class to merge control or label automatic templates
+	public function __construct(array $cfg = array()) {
+		parent::__construct($cfg);
+		static::$Templates = (object) array_merge((array)parent::$Templates, (array)self::$Templates);
+	}
+	*/
+
+	/**
+	 * This method  is called internaly from \MvcCore\Ext\Form after field
+	 * is added into form by $form->AddField(); method. Do not use it
+	 * if you are only user of this library.
+	 * - check if there are any options for current controls group
+	 * Parent method:
+	 * - check if field has any name, which is required
+	 * - set up form and field id attribute by form id and field name
+	 * - set up required
+	 * @param \MvcCore\Ext\Form $form
+	 * @throws \MvcCore\Ext\Form\Core\Exception
+	 * @return void
+	 */
+	public function OnAdded (\MvcCore\Ext\Form & $form) {
+		parent::OnAdded($form);
+		if (!$this->Options) {
+			$clsName = get_class($this);
+						throw new \MvcCore\Ext\Form\Core\Exception("No 'Options' defined for form field: '$clsName'.");
+		}
+	}
+	/**
+	 * Set up field properties before rendering process.
+	 * - translate all option texts
+	 * Parent method:
+	 * - set up field render mode
+	 * - set up translation boolean
+	 * - translate label if any
+	 * @return void
+	 */
+	public function SetUp () {
+		parent::SetUp();
+		if (!$this->Translate) return;
+		$lang = $this->Form->Lang;
+		$translator = $this->Form->Translator;
+		foreach ($this->Options as $key => $value) {
+			if (gettype($value) == 'string') {
+				// most simple key/value array options configuration
+				if ($value) $this->Options[$key] = call_user_func($translator, (string)$value, $lang);
+			} else if (gettype($value) == 'array') {
+				// advanced configuration with key, text, css class, and any other attributes for single option tag
+				$optObj = (object) $value;
+				$text = isset($optObj->text) ? $optObj->text : $key;
+				if ($text) {
+					$this->Options[$key]['text'] = call_user_func($translator, (string)$text, $lang);
+				}
+			}
+		}
+	}
+
+
+	/* rendering ******************************************************************************/
+
+	/**
+	 * Render field naturaly by render mode.
+	 * Field shoud be rendered with label beside, label around
+	 * or without label by local field configuration. Also there
+	 * could be rendered specific field errors before or after field
+	 * if field form is configured in that way.
+	 * @return string
+	 */
+	public function RenderNaturally () {
+		$result = '';
+		if (
+			$this->Label && (
+				$this->RenderMode == \MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL ||
+				$this->RenderMode == \MvcCore\Ext\Form::FIELD_RENDER_MODE_LABEL_AROUND
+			)
+		) {
+			$result = $this->RenderLabelAndControl();
+		} else if ($this->RenderMode == \MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL || !$this->Label) {
+			$result = $this->RenderControl();
+			$errors = $this->RenderErrors();
+			if ($this->Form->ErrorsRenderMode == \MvcCore\Ext\Form::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL) {
+				$result = $errors . $result;
+			} else if ($this->Form->ErrorsRenderMode == \MvcCore\Ext\Form::ERROR_RENDER_MODE_AFTER_EACH_CONTROL) {
+				$result .= $errors;
+			}
+		}
+		return $result;
+	}
+	/**
+	 * Render field control inside label by local configuration, render field
+	 * errors beside if form is configured to render specific errors beside controls.
+	 * @return string
+	 */
+	public function RenderControlInsideLabel () {
+		if ($this->RenderMode == \MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL) return $this->RenderControl();
+		$attrsStr = $this->renderAttrsWithFieldVars(
+			array(), $this->GroupLabelAttrs, $this->GroupCssClasses, TRUE
+		);
+		$template = $this->LabelSide == 'left' ? static::$Templates->togetherLabelLeft : static::$Templates->togetherLabelRight;
+				$result = View::Format($template, array(
+			'id'		=> $this->Id, 
+			'label'		=> $this->Label,
+			'control'	=> $this->RenderControl(),
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+		$errors = $this->RenderErrors();
+		if ($this->Form->ErrorsRenderMode == \MvcCore\Ext\Form::ERROR_RENDER_MODE_BEFORE_EACH_CONTROL) {
+			$result = $errors . $result;
+		} else if ($this->Form->ErrorsRenderMode == \MvcCore\Ext\Form::ERROR_RENDER_MODE_AFTER_EACH_CONTROL) {
+			$result .= $errors;
+		}
+		return $result;
+	}
+	/**
+	 * Render all subcontrols by multiple calls of $field->RenderControlItem();
+	 * @return string
+	 */
+	public function RenderControl () {
+		$result = '';
+		foreach ($this->Options as $key => $value) {
+			$result .= $this->RenderControlItem($key, $value);
+		}
+		return $result;
+	}
+	/**
+	 * Render label tag only without control or specific errors.
+	 * @return string
+	 */
+	public function RenderLabel () {
+		if ($this->RenderMode == \MvcCore\Ext\Form::FIELD_RENDER_MODE_NO_LABEL) return '';
+		$attrsStr = $this->renderAttrsWithFieldVars(
+			array(), $this->GroupLabelAttrs, $this->GroupCssClasses
+		);
+				return View::Format(static::$Templates->label, array(
+			'id'		=> $this->Id, 
+			'label'		=> $this->Label,
+			'attrs'		=> $attrsStr ? " $attrsStr" : '', 
+		));
+	}
+	/**
+	 * Render subcontrols with each subcontrol label tag 
+	 * and without group label or without group specific errors.
+	 * @return string
+	 */
+	public function RenderControlItem ($key, $option) {
+		$result = '';
+		$itemControlId = implode(\MvcCore\Ext\Form::HTML_IDS_DELIMITER, array(
+			$this->Form->Id, $this->Name, $key
+		));
+		list(
+			$itemLabelText, 
+			$labelAttrsStr, 
+			$controlAttrsStr
+		) = $this->renderControlItemCompleteAttrsClassesAndText($key, $option);
+		// render control, render label and put it together if necessary
+		$checked = FALSE;
+		if (gettype($this->Value) == 'array') {
+			$checked = in_array($key, $this->Value);
+		} else {
+			$checked = $this->Value === $key;
+		}
+				$itemControl = View::Format(static::$Templates->control, array(
+			'id'		=> $itemControlId,
+			'name'		=> $this->Name,
+			'type'		=> $this->Type,
+			'value'		=> $key,
+			'checked'	=> $checked ? ' checked="checked"' : '',
+			'attrs'		=> $controlAttrsStr ? " $controlAttrsStr" : '',
+		));
+		if ($this->RenderMode == \MvcCore\Ext\Form::FIELD_RENDER_MODE_NORMAL) {
+			// control and label
+			$itemLabel = View::Format(static::$Templates->label, array(
+				'id'		=> $itemControlId, 
+				'label'		=> $itemLabelText,
+				'attrs'		=> $labelAttrsStr ? " $labelAttrsStr" : '', 
+			));
+			$result = ($this->LabelSide == 'left') ? $itemControl . $itemLabel : $itemLabel . $itemControl;
+		} else if ($this->RenderMode == \MvcCore\Ext\Form::FIELD_RENDER_MODE_LABEL_AROUND) {
+			// control inside label
+			$result = View::Format(
+				static::$Templates->{'togetherLabel' . (($this->LabelSide == 'left') ? 'Right' : 'Left')}, 
+				array(
+					'id'		=> $itemControlId, 
+					'label'		=> $itemLabelText,
+					'control'	=> $itemControl,
+					'attrs'		=> $labelAttrsStr ? " $labelAttrsStr" : '', 
+				)
+			);
+		}
+		return $result;
+	}
+
+
+	/* protected renderers *******************************************************************/
+
+	/**
+	 * Complete by $field->Options key and option value:
+	 * - label text
+	 * - label attributes string
+	 * - control attributes string
+	 * @param string       $key
+	 * @param string|array $option 
+	 * @return array
+	 */
+	protected function renderControlItemCompleteAttrsClassesAndText ($key, $option) {
+		$optionType = gettype($option);
+		$labelAttrsStr = '';
+		$controlAttrsStr = '';
+		$itemLabelText = '';
+		$originalRequired = $this->Required;
+		if ($this->Type == 'checkbox') $this->Required = FALSE;
+		if ($optionType == 'string') {
+			$itemLabelText = $option ? $option : $key;
+			$labelAttrsStr = $this->renderLabelAttrsWithFieldVars();
+			$controlAttrsStr = $this->renderControlAttrsWithFieldVars();
+		} else if ($optionType == 'array') {
+			$itemLabelText = $option['text'] ? $option['text'] : $key;
+			$attrsArr = $this->ControlAttrs;
+			$classArr = $this->CssClasses;
+			if (isset($option['attrs']) && gettype($option['attrs']) == 'array') {
+				$attrsArr = array_merge($this->ControlAttrs, $option['attrs']);
+			}
+			if (isset($option['class'])) {
+				$classArrParam = array();
+				if (gettype($option['class']) == 'array') {
+					$classArrParam = $option['class'];
+				} else if (gettype($option['class']) == 'string') {
+					$classArrParam = explode(' ', $option['class']);
+				}
+				foreach ($classArrParam as $clsValue) if ($clsValue) $classArr[] = $clsValue;
+			}
+			$labelAttrsStr = $this->renderAttrsWithFieldVars(
+				array(), $attrsArr, $classArr
+			);
+			$controlAttrsStr = $this->renderAttrsWithFieldVars(
+				array(), $attrsArr, $classArr, TRUE
+			);
+		}
+		if ($this->Type == 'checkbox') $this->Required = $originalRequired;
+		return array($itemLabelText, $labelAttrsStr, $controlAttrsStr);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Validators{
+
+
+
+
+
+
+use
+	MvcCore\Ext\Form,
+	MvcCore\Ext\Form\Core;
+
+class NumberField extends Core\Validator
+{
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+		$submitValue = trim((string) $submitValue);
+		$intValueStr = preg_replace("#[^0-9]#", '', $submitValue);
+		$floatValueStr = preg_replace("#[^0-9\.]#", '', str_replace(',','.',$submitValue));
+		$errorMsgKeyCommon = '';
+		$errorMsgKey = '';
+		if (strlen($intValueStr) === 0) {
+			if ($field->Required) $errorMsgKey = Form::NUMBER;
+			$safeValue = '';
+		} else {
+			if ($floatValueStr === $intValueStr) {
+				$safeValue = intval($intValueStr);
+				$errorMsgKeyCommon = Form::INTEGER;
+			} else {
+				$safeValue = floatval($intValueStr);
+				$errorMsgKeyCommon = Form::FLOAT;
+			}
+			$errorMsgKey = '';
+			if (isset($this->Min) && !is_null($field->Min)) {
+				if ($safeValue < $field->Min) {
+					$errorMsgKey = !is_null($this->Max) ? Form::RANGE : Form::GREATER;
+				}
+			}
+			if (isset($this->Max) && !is_null($this->Max)) {
+				if ($safeValue > $field->Max) {
+					$errorMsgKey = !is_null($this->Min) ? Form::RANGE : Form::LOWER;
+				}
+			}
+			if (isset($this->Pattern) && !is_null($this->Pattern)) {
+				preg_match("#^".$this->Pattern."$#", (string)$safeValue, $matches);
+				if (!$matches) {
+					$errorMsgKey = $errorMsgKeyCommon;
+				}
+			}
+		}
+		if (mb_strlen($safeValue) !== mb_strlen($submitValue) || $errorMsgKey) {
+			$errorMsgKey = $errorMsgKey ? $errorMsgKey : $errorMsgKeyCommon ;
+			
+			$errorReplacements = array();
+			if ($errorMsgKey == Form::RANGE) {
+				$errorReplacements[] = $field->Min;
+				$errorReplacements[] = $field->Max;
+			} else if ($errorMsgKey == Form::GREATER) {
+				$errorReplacements[] = $field->Min;
+			} else if ($errorMsgKey == Form::LOWER) {
+				$errorReplacements[] = $field->Max;
+			}
+
+			$this->addError(
+				$field,
+				Form::$DefaultMessages[$errorMsgKey],
+				function ($msg, $args) use (& $errorReplacements) {
+					$args = array_merge($args, $errorReplacements);
+					return Core\View::Format($msg, $args);
+				}
+			);
+		}
+		return $safeValue;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Validators{
+
+
+
+
+
+
+use
+	MvcCore\Ext\Form,
+	MvcCore\Ext\Form\Core;
+
+class Maxlength extends Core\Validator
+{
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+		$submitValue = trim($submitValue);
+		if (isset($field->Maxlength) && !is_null($field->Maxlength) && $field->Maxlength > 0) {
+			$safeValue = mb_substr($submitValue, 0, $field->Maxlength);
+		} else {
+			$safeValue = $submitValue;
+		}
+		if (mb_strlen($safeValue) !== mb_strlen($submitValue)) {
+			$this->addError(
+				$field, 
+				Form::$DefaultMessages[Form::MAX_LENGTH], 
+				function ($msg, $args) use (& $field) {
+					$args[] = $field->Maxlength;
+					return Core\View::Format($msg, $args);
+				}
+			);
+		}
+		return $safeValue;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Validators{
+
+
+
+
+
+
+/**
+ * THIS VALIDATOR DOESN'T MEAN SAFE VALUE TO PREVENT SQL INJECTS!
+ * To prevent sql injects - use PDO::prepare and PDO::execute.
+ */
+
+use
+	MvcCore\Ext\Form,
+	MvcCore\Ext\Form\Core;
+
+class SafeString extends Core\Validator
+{
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+
+		// remove whitespaces from the beginning ant at the end: SPACE \t \n \r \0 \x0B
+		// @see http://php.net/manual/en/function.trim.php
+		$submitValue = trim($submitValue);
+
+		// remove ASCII characters from 0 to 31 incl. (first column)
+		// @see http://www.asciitable.com/index/asciifull.gif
+		$cleanedValue = strtr($submitValue, array(
+			"\x00"	=> '',	"\x08"	=> '',	"\x10"	=> '',	"\x18"	=> '',
+			"\x01"	=> '',	"\x09"	=> '',	"\x11"	=> '',	"\x19"	=> '',
+			"\x02"	=> '',	"\x0A"	=> '',	"\x12"	=> '',	"\x1A"	=> '',
+			"\x03"	=> '',	"\x0B"	=> '',	"\x13"	=> '',	"\x1B"	=> '',
+			"\x04"	=> '',	"\x0C"	=> '',	"\x14"	=> '',	"\x1C"	=> '',
+			"\x05"	=> '',	"\x0D"	=> '',	"\x15"	=> '',	"\x1D"	=> '',
+			"\x06"	=> '',	"\x0E"	=> '',	"\x16"	=> '',	"\x1E"	=> '',
+			"\x07"	=> '',	"\x0F"	=> '',	"\x17"	=> '',	"\x1F"	=> '',
+		));
+
+		if (mb_strlen($cleanedValue) !== mb_strlen($submitValue)) {
+			$this->addError($field, Form::$DefaultMessages[Form::INVALID_CHARS], function ($msg, $args) {
+				return Core\View::Format($msg, $args);
+			});
+		}
+
+		// replace characters to entities after all: ' " ` < > \ = ^ | & ~
+		$safeValue = strtr($cleanedValue, array(
+			"'"  => '&#39;',
+			'"'  => '&quot;',
+			'`'  => "&#96;",
+			'<'  => "&lt;",
+			'>'  => "&gt;",
+			'\\' => "&#92;",
+			'='  => "&#61;",
+			'^'  => "&#94;",
+			'|'  => "&#124;",
+			'&'  => "&amp;",
+			'~'  => "&#126;",
+		));
+
+		return $safeValue;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Validators{
+
+
+
+
+
+
+
+use
+	MvcCore\Ext\Form,
+	MvcCore\Ext\Form\Core;
+
+class Url extends Core\Validator
+{
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+		$submitValue = trim($submitValue);
+		$safeValue = filter_var($submitValue, FILTER_VALIDATE_URL);
+		$safeValue = $safeValue === FALSE ? '' : $safeValue ;
+		if (mb_strlen($safeValue) !== mb_strlen($submitValue)) {
+			$this->addError(
+				$field,
+				Form::$DefaultMessages[Form::URL],
+				function ($msg, $args) {
+					return Core\View::Format($msg, $args);
+				}
+			);
+		}
+		return $safeValue;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Validators{
+
+
+
+
+
+
+
+use
+	MvcCore\Ext\Form,
+	MvcCore\Ext\Form\Core;
+
+class Integer extends Core\Validator
+{
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+		$submitValue = trim($submitValue);
+		$safeValue = preg_replace("#[^0-9]#", '', $submitValue);
+		if (mb_strlen($safeValue) !== mb_strlen($submitValue)) {
+			$this->addError($field, Form::$DefaultMessages[Form::INTEGER], function ($msg, $args) {
+				return Core\View::Format($msg, $args);
+			});
+		}
+		return $safeValue;
+	}
+}
+}
 namespace{
-$app=\MvcCore::GetInstance();\App\Bootstrap::Init();$app->Run();
+\App\Bootstrap::Init();
+
+	\MvcCore\Application::GetInstance()->Run();
 }

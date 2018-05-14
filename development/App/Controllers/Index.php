@@ -6,18 +6,25 @@ use \MvcCore\Ext\Form;
 
 class Index extends Base
 {
-    public function IndexAction () {
-		if ($this->user instanceof \App\Models\User) {
-			self::Redirect($this->Url('CdCollection:'));
-		}
+	public function IndexAction () {
+		if ($this->user instanceof \App\Models\User)
+			self::Redirect($this->Url('CdCollection:Index'));
 		$this->view->Title = 'CD Collection';
 		$this->view->User = $this->user;
 		$this->view->SignInForm = $this->getSignInFormCustomized();
-    }
-    public function NotFoundAction () {
-		$this->view->Title = "Error 404 - requested page not found.";
-		$this->view->Message = $this->request->Params['message'];
-    }
+	}
+	public function NotFoundAction(){
+		$this->ErrorAction();
+	}
+	public function ErrorAction(){
+		$code = $this->response->GetCode();
+		$message = $this->request->GetParam('message', '\\a-zA-Z0-9_;, /\-\@\:');
+		$message = preg_replace('#`([^`]*)`#', '<code>$1</code>', $message);
+		$message = str_replace("\n", '<br />', $message);
+		$this->view->Title = "Error $code";
+		$this->view->Message = $message;
+		$this->Render('error');
+	}
 
 	protected function getSignInFormCustomized () {
 		// customize sign in form
