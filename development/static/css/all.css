@@ -1,61 +1,43 @@
 html,body{margin:0;font-family:'MyriadRegular',Arial,Helvetica,sans-serif;
-line-height:1.5em;font-size:14px;background:#999;}
+line-height:1.5em;font-size:16px;background:#999;}
+
 .clear{clear:both;}
-.master-container{width:500px;margin:30px auto 50px auto;}
+.master-container{width:550px;margin:30px auto 50px auto;}
 
 input.text-link{background:transparent;border:0;padding:0;}
-a,input.text-link{font-family:'MyriadRegular';color:#307C00;
-text-decoration:none;border-bottom:1px solid #307C00;cursor:pointer;}
-a:hover,a:focus,a:active,input.text-link:hover,
-input.text-link:focus,input.text-link:active{
-color:#5FA21B;border-bottom:1px solid #5FA21B;}
-a:visited{color:#7CD023;border-bottom:1px solid #7CD023;}
+a,input.text-link{color:#3d497f;border-bottom:1px solid #3d497f;font-family:'MyriadRegular';text-decoration:none;cursor:pointer;}
+a:hover,a:focus,a:active,input.text-link:hover,input.text-link:focus,input.text-link:active{color:#263b97;border-bottom:1px solid transparent;}
+a:visited{color:#633d7f;border-bottom:1px solid #633d7f;}
+a:visited:hover,a:visited:focus,a:visited:active{color:#263b97;border-bottom:1px solid transparent;}
 
-form input[type=text],form input[type=number],form input[type=password]{
-padding:8px 10px;font-size:14px;border:1px solid #bbb;margin:5px 0;
--webkit-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;
--o-border-radius:3px;-khtml-border-radius:3px;border-radius:3px;
--webkit-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);
--moz-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);
--ms-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);
--o-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);
--khtml-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);
-box-shadow:inset 1px 1px 20px -10px rgba(0,0,0,0.75);}
-
-.content{padding:25px;background:#fff;border-radius:3px;
-box-shadow:0 0 15px rgba(0,0,0,0.6);}
+.content{padding:25px;background:#fff;border-radius:3px;box-shadow:0 0 15px rgba(0,0,0,0.6);}
 .content a.head-btn{float:right;}
 .content h1{margin:10px 0 25px 0;font-family:'MyriadBold';font-size:32px;}
 
 .cd-collection-items{width:100%;}
 .cd-collection-items th,
-.cd-collection-items td{text-align:left;padding:2px 5px;}
+.cd-collection-items td{text-align:left;}
 .cd-collection-items th.right,
 .cd-collection-items td.right{text-align:right;}
 .cd-collection-items th.center,
 .cd-collection-items td.center{text-align:center;}
-.cd-collection-items th{background:#7cd023;color:#fff;}
 .cd-collection-items td{white-space:nowrap;}
 
-.error{color:#ff0021;font-family:'MyriadBold';text-align:center;}
+.errors{margin-bottom:10px;}
+.error{color:#ff2222;font-family:'MyriadSemiBold';text-align:center;}
 
-form#detail{margin:25px;text-align:center;}
-form#detail label{display:block;}
-form#detail label span{display:inline-block;width:70px;}
-form#detail button.send{margin:5px 0 0 95px;}
-form#detail button{float:left;}
-form#detail label span{width:56px;text-align:right;padding:0 10px 0 0;}
-form#detail input{width:200px;margin:5px 56px 5px 0;}
-form#detail input.year{width:100px;margin-right:156px;}
+form#detail{margin:20px 0;}
+form#detail label{display:block;text-align:left;}
+form#detail label span{display:inline-block;width:75px;text-align:right;padding-right:10px;}
+form#detail input{width:300px;margin-bottom:10px;}
+form#detail input.year{width:100px;}
+form#detail button.send{margin-left:85px;}
 
-form.sign-in{margin:25px;text-align:center;}
-form.sign-in button{margin:10px auto;}
-form.sign-in input{width:200px;margin:5px auto;display:block;}
-form.sign-in input.text-link:hover,form.sign-in input.text-link:focus,
-form.sign-in input.text-link:active{border-bottom:0 !important;}
+form.sign-in{margin:15px 0 0 0;text-align:center;}
+form.sign-in button{margin:10px auto 0 auto;}
+form.sign-in input{width:200px;margin:5px auto;}
 
 form.sign-out{height:21px;margin:0 25px 10px 25px;text-align:right;color:#fff;}
-form.sign-out input{margin-left:5px;color:#fff !important;
-border-bottom:1px solid #fff !important;}
+form.sign-out input{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important;}
 form.sign-out input.text-link:hover,form.sign-out input.text-link:focus,
 form.sign-out input.text-link:active{border-bottom:0 !important;}

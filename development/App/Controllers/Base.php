@@ -7,7 +7,7 @@ use \MvcCore\Ext\Form,
 
 class Base extends \MvcCore\Controller
 {
-	/** @var \MvcCore\Ext\Auth\Virtual\User */
+	/** @var \App\Models\User|\MvcCore\Ext\Auth\Interfaces\IUser */
 	protected $user = null;
 
 	public function Init() {
@@ -17,7 +17,7 @@ class Base extends \MvcCore\Controller
 			Auth\User::ClearFromSession();
 			self::Redirect($this->Url(
 				'Index:Index',
-				array('absolute' => TRUE, 'sourceUrl'	=> urlencode($form->ErrorUrl))
+				array('absolute' => TRUE, 'sourceUrl'	=> rawurlencode($form->ErrorUrl))
 			));
 		});
 	}
@@ -65,9 +65,13 @@ class Base extends \MvcCore\Controller
 			));
 		$static = self::$staticPath;
 		$this->view->Css('fixedHead')
+			->Append($static . '/css/resets.css')
+			->Append($static . '/css/old-browsers-warning.css')
 			->AppendRendered($static . '/css/fonts.css')
 			->AppendRendered($static . '/css/all.css')
-			->AppendRendered($static . '/css/button.css');
+			->AppendRendered($static . '/css/forms-and-controls.css')
+			->AppendRendered($static . '/css/content-buttons.css')
+			->AppendRendered($static . '/css/content-tables.css');
 		$this->view->Js('fixedHead')
 			->Append($static . '/js/libs/class.min.js')
 			->Append($static . '/js/libs/ajax.min.js')

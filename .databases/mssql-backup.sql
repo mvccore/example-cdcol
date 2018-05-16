@@ -27,7 +27,7 @@ GO
 CREATE TABLE [dbo].[users](
 	[id] [int] IDENTITY(1,1) NOT NULL,
 	[user_name] [varchar](50) NOT NULL,
-	[password_hash] [varchar](40) NOT NULL,
+	[password_hash] [varchar](60) NOT NULL,
 	[full_name] [nvarchar](100) NOT NULL,
 	CONSTRAINT [PK_users] PRIMARY KEY CLUSTERED (
 		[id] ASC
@@ -52,7 +52,7 @@ GO
 
 SET IDENTITY_INSERT [dbo].[users] ON
 INSERT [dbo].[users] ([id], [user_name], [password_hash], [full_name]) 
-VALUES (1, N'admin', N'0c0fe72aaae872f5444b2d1c04f89d78b5df48a8', N'Administrator') -- password is "demo"
+VALUES (1, N'admin', N'$2y$10$IWZhKlJOK3R3ZTY1dHMxROHExizREYyUTjUUiQfm9wk.rrPCRjwbC', N'Administrator') -- password is "demo"
 SET IDENTITY_INSERT [dbo].[users] OFF
 GO
 

@@ -4,4 +4,4 @@
 
 	\App\Bootstrap::Init();
 
-	\MvcCore\Application::GetInstance()->Run();
+	\MvcCore\Application::GetInstance()->Run(1);

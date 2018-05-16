@@ -1,7 +1,7 @@
 <?php /** @var $this \MvcCore\View */ ?>
 <?php /** @var $this->Albums \App\Models\Album[] */ ?>
 
-<a class="head-btn button button-green" href="<?php
+<a class="head-btn btn btn-wide btn-no-visiting" href="<?php
 	echo $this->Url(':Create');
 ?>"><span><b>New album</b></span></a>
 
@@ -10,7 +10,7 @@
 <?php if (!$this->Albums): ?>
 	<p>No albums in database. To create, click to 'New Album' button.</p>
 <?php else: ?>
-	<table class="cd-collection-items">
+	<table class="cd-collection-items theme">
 		<thead>
 			<tr>
 				<th class="right">Id</th>

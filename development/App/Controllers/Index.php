@@ -7,11 +7,11 @@ use \MvcCore\Ext\Form;
 class Index extends Base
 {
 	public function IndexAction () {
-		if ($this->user instanceof \App\Models\User)
+		if ($this->user !== NULL)
 			self::Redirect($this->Url('CdCollection:Index'));
 		$this->view->Title = 'CD Collection';
 		$this->view->User = $this->user;
-		$this->view->SignInForm = $this->getSignInFormCustomized();
+		$this->view->SignInForm = $this->getSignInForm();
 	}
 	public function NotFoundAction(){
 		$this->ErrorAction();
@@ -26,27 +26,16 @@ class Index extends Base
 		$this->Render('error');
 	}
 
-	protected function getSignInFormCustomized () {
-		// customize sign in form
+	protected function getSignInForm () {
+		// you can customize sign in form here:
 		/** @var $signInForm \MvcCore\Ext\Auth\SignInForm */
-		$signInForm = \MvcCore\Ext\Auth::GetInstance()->GetForm()
-			// initialize fields
-			->Init()
-			// set signed in url to albums list
-			->SetDefaults(array(
-				'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
-			));
-		// remove username label and create input placeholder text
-		$signInForm->GetFirstFieldsByClass(Form\Text::class, TRUE)
-			->SetLabel('')->SetPlaceholder('login');
-		// remove password label and create input placeholder text
-		$signInForm->GetFirstFieldsByClass(Form\Password::class)
-			->SetLabel('')->SetPlaceholder('password');
-		// get submit button and customize submit button inner code
-		$signInFormSubmitBtn = $signInForm->GetFirstFieldsByClass(Form\SubmitButton::class);
-		$signInFormSubmitBtn->AddCssClass('button-green')->SetValue(
-			'<span><b>' . $signInFormSubmitBtn->GetValue() . '</b></span>'
-		);
+		$signInForm = \MvcCore\Ext\Auth::GetInstance()->GetForm();
+		// add 'theme' css class to style the form by css stylesheet
+		$signInForm->AddCssClass('theme');
+		// set signed in url to albums list by default:
+		$signInForm->SetDefaults(array(
+			'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
+		));
 		return $signInForm;
 	}
 }

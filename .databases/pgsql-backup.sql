@@ -28,7 +28,7 @@ CREATE SEQUENCE users_seq;
 CREATE TABLE users (
 	id INTEGER NOT NULL DEFAULT NEXTVAL ('users_seq'),
 	user_name VARCHAR(50) NOT NULL,
-	password_hash VARCHAR(40) NOT NULL,
+	password_hash VARCHAR(60) NOT NULL,
 	full_name VARCHAR(100) NOT NULL,
 	PRIMARY KEY (id)
 );
@@ -43,4 +43,4 @@ INSERT INTO cds (id, title, interpret, year) VALUES
 (5, 'Berlin Calling', 'Paul Kalkbrenner', 2008);
 
 INSERT INTO users (id, user_name, password_hash, full_name) VALUES 
-(1, 'admin', '0c0fe72aaae872f5444b2d1c04f89d78b5df48a8', 'Administrator'); -- password is "demo"
+(1, 'admin', '$2y$10$IWZhKlJOK3R3ZTY1dHMxROHExizREYyUTjUUiQfm9wk.rrPCRjwbC', 'Administrator'); -- password is "demo"

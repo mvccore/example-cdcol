@@ -9,6 +9,7 @@ class CdCollection extends Base
 {
 	/** @var \App\Models\Album */
 	protected $album;
+
     /**
 	 * Initialize this controller, before prdispatching and before every action
 	 * executing in current controller. This method is template method - so
@@ -19,7 +20,7 @@ class CdCollection extends Base
 		// if user is not authorized, redirect to homepage and exit
 		if (!$this->user) {
 			self::Redirect($this->Url(
-				'Index:Index', array('sourceUrl' => urlencode($this->request->Referer))
+				'Index:Index', array('sourceUrl' => rawurlencode($this->request->GetFullUrl()))
 			));
 		}
 	}
@@ -114,6 +115,7 @@ class CdCollection extends Base
 			->SetMethod(Form::METHOD_POST)
 			->SetAction($this->Url(':Submit'))
 			->SetSuccessUrl($this->Url(':Index', array('absolute' => TRUE)))
+			->AddCssClass('theme')
 			->SetFieldsDefaultRenderMode(
 				Form::FIELD_RENDER_MODE_LABEL_AROUND
 			);

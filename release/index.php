@@ -27,82 +27,89 @@ class Packager_Php_Wrapper
 
 	/** @var array */
 	public static $Info = array(/*____\Packager_Php_Wrapper::$Info____*/
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IApplication.php'=>array('index'=>-1,'mtime'=>1526048260,'size'=>27618,'lines'=>array(0,704)),
-'/vendor/mvccore/mvccore/src/MvcCore/Application/Dispatching.php'=>array('index'=>-1,'mtime'=>1526304363,'size'=>17496,'lines'=>array(704,463)),
-'/vendor/mvccore/mvccore/src/MvcCore/Application/GettersSetters.php'=>array('index'=>-1,'mtime'=>1526051642,'size'=>24642,'lines'=>array(1167,747)),
-'/vendor/mvccore/mvccore/src/MvcCore/Application/Helpers.php'=>array('index'=>-1,'mtime'=>1526051785,'size'=>4387,'lines'=>array(1914,118)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IController.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>16593,'lines'=>array(2032,427)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IView.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>11871,'lines'=>array(2459,300)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application/GettersSetters.php'=>array('index'=>-1,'mtime'=>1526051642,'size'=>24642,'lines'=>array(0,748)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application/Helpers.php'=>array('index'=>-1,'mtime'=>1526051785,'size'=>4387,'lines'=>array(748,118)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IApplication.php'=>array('index'=>-1,'mtime'=>1526048260,'size'=>27618,'lines'=>array(866,703)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application/Dispatching.php'=>array('index'=>-1,'mtime'=>1526399656,'size'=>17496,'lines'=>array(1569,463)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IView.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>11871,'lines'=>array(2032,300)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IController.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>16593,'lines'=>array(2332,427)),
 '/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Exception.php'=>array('index'=>-1,'mtime'=>1485618923,'size'=>439,'lines'=>array(2759,16)),
 '/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IModel.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>8292,'lines'=>array(2775,222)),
 '/vendor/mvccore/ext-view-helper/src/MvcCore/Ext/View/Helpers/IHelper.php'=>array('index'=>-1,'mtime'=>1524054938,'size'=>2211,'lines'=>array(2997,47)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/ITool.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>2986,'lines'=>array(3044,91)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IConfig.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>3918,'lines'=>array(3135,107)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IDebug.php'=>array('index'=>-1,'mtime'=>1526026926,'size'=>3486,'lines'=>array(3242,106)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRequest.php'=>array('index'=>-1,'mtime'=>1526055870,'size'=>17662,'lines'=>array(3348,551)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IResponse.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>7435,'lines'=>array(3899,208)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRoute.php'=>array('index'=>-1,'mtime'=>1526055891,'size'=>19724,'lines'=>array(4107,466)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRouter.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>13585,'lines'=>array(4573,325)),
-'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/ISession.php'=>array('index'=>-1,'mtime'=>1526301209,'size'=>4011,'lines'=>array(4898,143)),
-'/App/Bootstrap.php'=>array('index'=>-1,'mtime'=>1526300298,'size'=>859,'lines'=>array(5041,32)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth.php'=>array('index'=>-1,'mtime'=>1526302880,'size'=>16527,'lines'=>array(5073,459)),
-'/App/Views/Helpers/JsonAttr.php'=>array('index'=>-1,'mtime'=>1485608932,'size'=>316,'lines'=>array(5532,14)),
-'/vendor/mvccore/mvccore/src/MvcCore/Controller.php'=>array('index'=>-1,'mtime'=>1526050733,'size'=>29519,'lines'=>array(5546,845)),
-'/vendor/mvccore/mvccore/src/MvcCore/Model.php'=>array('index'=>-1,'mtime'=>1526303572,'size'=>22552,'lines'=>array(6391,571)),
-'/vendor/mvccore/ext-view-helper/src/MvcCore/Ext/View/Helpers/AbstractHelper.php'=>array('index'=>-1,'mtime'=>1525338269,'size'=>4206,'lines'=>array(6962,102)),
-'/vendor/mvccore/mvccore/src/MvcCore/Tool.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>4899,'lines'=>array(7064,144)),
-'/vendor/mvccore/mvccore/src/MvcCore/Request.php'=>array('index'=>-1,'mtime'=>1526292919,'size'=>43202,'lines'=>array(7208,1331)),
-'/vendor/mvccore/mvccore/src/MvcCore/Response.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>12846,'lines'=>array(8539,403)),
-'/vendor/mvccore/mvccore/src/MvcCore/Route.php'=>array('index'=>-1,'mtime'=>1526305033,'size'=>43599,'lines'=>array(8942,1086)),
-'/vendor/mvccore/mvccore/src/MvcCore/Session.php'=>array('index'=>-1,'mtime'=>1526301464,'size'=>9578,'lines'=>array(10028,320)),
-'/vendor/mvccore/mvccore/src/MvcCore/Router.php'=>array('index'=>-1,'mtime'=>1526054113,'size'=>26975,'lines'=>array(10348,717)),
-'/vendor/mvccore/mvccore/src/MvcCore/Debug.php'=>array('index'=>-1,'mtime'=>1526295041,'size'=>16086,'lines'=>array(11065,478)),
-'/App/Controllers/Base.php'=>array('index'=>-1,'mtime'=>1485613332,'size'=>2278,'lines'=>array(11543,77)),
-'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Assets.php'=>array('index'=>-1,'mtime'=>1526054234,'size'=>16663,'lines'=>array(11620,512)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/User.php'=>array('index'=>-1,'mtime'=>1485496281,'size'=>1758,'lines'=>array(12132,75)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/Controller.php'=>array('index'=>-1,'mtime'=>1526303692,'size'=>864,'lines'=>array(12207,32)),
-'/App/Models/Album.php'=>array('index'=>-1,'mtime'=>1485607758,'size'=>3023,'lines'=>array(12239,136)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/User.php'=>array('index'=>-1,'mtime'=>1526300120,'size'=>2999,'lines'=>array(12375,108)),
-'/App/Controllers/Index.php'=>array('index'=>-1,'mtime'=>1526304782,'size'=>1811,'lines'=>array(12483,51)),
-'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Css.php'=>array('index'=>-1,'mtime'=>1524226656,'size'=>19777,'lines'=>array(12534,546)),
-'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Js.php'=>array('index'=>-1,'mtime'=>1524226656,'size'=>17963,'lines'=>array(13080,519)),
-'/App/Controllers/CdCollection.php'=>array('index'=>-1,'mtime'=>1526304828,'size'=>4895,'lines'=>array(13599,160)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Controller.php'=>array('index'=>-1,'mtime'=>1526303868,'size'=>1537,'lines'=>array(13759,47)),
-'/App/Controllers/System.php'=>array('index'=>-1,'mtime'=>1485608826,'size'=>890,'lines'=>array(13806,36)),
-'/vendor/mvccore/mvccore/src/MvcCore/Application.php'=>array('index'=>-1,'mtime'=>1525962055,'size'=>2290,'lines'=>array(13842,59)),
-'/App/Models/User.php'=>array('index'=>-1,'mtime'=>1526303402,'size'=>1099,'lines'=>array(13901,49)),
-'/vendor/mvccore/mvccore/src/MvcCore/View.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>22762,'lines'=>array(13950,648)),
-'/vendor/mvccore/mvccore/src/MvcCore/Config.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>13885,'lines'=>array(14598,399)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Button.php'=>array('index'=>-1,'mtime'=>1485675968,'size'=>1978,'lines'=>array(14997,60)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Validator.php'=>array('index'=>-1,'mtime'=>1487286786,'size'=>3548,'lines'=>array(15057,101)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Hidden.php'=>array('index'=>-1,'mtime'=>1485678435,'size'=>555,'lines'=>array(15158,21)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form.php'=>array('index'=>-1,'mtime'=>1526053732,'size'=>16544,'lines'=>array(15179,458)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Helpers.php'=>array('index'=>-1,'mtime'=>1526299064,'size'=>7701,'lines'=>array(15637,245)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/View.php'=>array('index'=>-1,'mtime'=>1526050845,'size'=>6082,'lines'=>array(15882,194)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Field.php'=>array('index'=>-1,'mtime'=>1494456224,'size'=>26055,'lines'=>array(16076,762)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Base.php'=>array('index'=>-1,'mtime'=>1526305980,'size'=>11430,'lines'=>array(16838,283)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Configuration.php'=>array('index'=>-1,'mtime'=>1526054012,'size'=>33327,'lines'=>array(17121,834)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Virtual/Form.php'=>array('index'=>-1,'mtime'=>1485496281,'size'=>2223,'lines'=>array(17955,78)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitButton.php'=>array('index'=>-1,'mtime'=>1526308530,'size'=>514,'lines'=>array(18033,20)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Text.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>2188,'lines'=>array(18053,74)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Password.php'=>array('index'=>-1,'mtime'=>1485678433,'size'=>503,'lines'=>array(18127,20)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignInForm.php'=>array('index'=>-1,'mtime'=>1526054167,'size'=>2667,'lines'=>array(18147,91)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Number.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>1804,'lines'=>array(18238,66)),
-'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignOutForm.php'=>array('index'=>-1,'mtime'=>1485496281,'size'=>1700,'lines'=>array(18304,64)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitInput.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>1643,'lines'=>array(18368,53)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/FieldGroup.php'=>array('index'=>-1,'mtime'=>1485675968,'size'=>15452,'lines'=>array(18421,438)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/NumberField.php'=>array('index'=>-1,'mtime'=>1485678424,'size'=>2750,'lines'=>array(18859,85)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Maxlength.php'=>array('index'=>-1,'mtime'=>1485678426,'size'=>1350,'lines'=>array(18944,45)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/SafeString.php'=>array('index'=>-1,'mtime'=>1485678421,'size'=>2376,'lines'=>array(18989,73)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Url.php'=>array('index'=>-1,'mtime'=>1485678419,'size'=>1250,'lines'=>array(19062,42)),
-'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Integer.php'=>array('index'=>-1,'mtime'=>1485678426,'size'=>1176,'lines'=>array(19104,37)),
-'/index.php'=>array('index'=>-1,'mtime'=>1526304358,'size'=>118,'lines'=>array(19141,4)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Interfaces/IUser.php'=>array('index'=>-1,'mtime'=>1526400737,'size'=>1660,'lines'=>array(3044,70)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Traits/User.php'=>array('index'=>-1,'mtime'=>1526401894,'size'=>3872,'lines'=>array(3114,151)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/ITool.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>2986,'lines'=>array(3265,91)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Interfaces/ISignForm.php'=>array('index'=>-1,'mtime'=>1526386028,'size'=>342,'lines'=>array(3356,12)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Traits/SignForm.php'=>array('index'=>-1,'mtime'=>1526399739,'size'=>1005,'lines'=>array(3368,36)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRequest.php'=>array('index'=>-1,'mtime'=>1526055870,'size'=>17662,'lines'=>array(3404,551)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IDebug.php'=>array('index'=>-1,'mtime'=>1526026926,'size'=>3486,'lines'=>array(3955,106)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IConfig.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>3918,'lines'=>array(4061,107)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRouter.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>13585,'lines'=>array(4168,325)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/ISession.php'=>array('index'=>-1,'mtime'=>1526301209,'size'=>4011,'lines'=>array(4493,143)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IResponse.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>7435,'lines'=>array(4636,208)),
+'/vendor/mvccore/mvccore/src/MvcCore/Interfaces/IRoute.php'=>array('index'=>-1,'mtime'=>1526389072,'size'=>19861,'lines'=>array(4844,472)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Interfaces/IDatabaseUser.php'=>array('index'=>-1,'mtime'=>1526401531,'size'=>164,'lines'=>array(5316,7)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Traits/SignController.php'=>array('index'=>-1,'mtime'=>1526392292,'size'=>1522,'lines'=>array(5323,48)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Interfaces/ISignController.php'=>array('index'=>-1,'mtime'=>1526387576,'size'=>146,'lines'=>array(5371,8)),
+'/App/Bootstrap.php'=>array('index'=>-1,'mtime'=>1526402586,'size'=>1106,'lines'=>array(5379,41)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth.php'=>array('index'=>-1,'mtime'=>1526402676,'size'=>19491,'lines'=>array(5420,550)),
+'/App/Views/Helpers/JsonAttr.php'=>array('index'=>-1,'mtime'=>1485608932,'size'=>316,'lines'=>array(5970,14)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Interfaces/IRole.php'=>array('index'=>-1,'mtime'=>1526383596,'size'=>231,'lines'=>array(5984,11)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Traits/Role.php'=>array('index'=>-1,'mtime'=>1526314366,'size'=>132,'lines'=>array(5995,12)),
+'/vendor/mvccore/mvccore/src/MvcCore/Controller.php'=>array('index'=>-1,'mtime'=>1526398401,'size'=>29847,'lines'=>array(6007,852)),
+'/vendor/mvccore/mvccore/src/MvcCore/Model.php'=>array('index'=>-1,'mtime'=>1526395296,'size'=>22558,'lines'=>array(6859,573)),
+'/vendor/mvccore/ext-view-helper/src/MvcCore/Ext/View/Helpers/AbstractHelper.php'=>array('index'=>-1,'mtime'=>1525338269,'size'=>4206,'lines'=>array(7432,102)),
+'/vendor/mvccore/mvccore/src/MvcCore/Tool.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>4899,'lines'=>array(7534,144)),
+'/vendor/mvccore/mvccore/src/MvcCore/Session.php'=>array('index'=>-1,'mtime'=>1526395688,'size'=>9578,'lines'=>array(7678,320)),
+'/vendor/mvccore/mvccore/src/MvcCore/Debug.php'=>array('index'=>-1,'mtime'=>1526295041,'size'=>16086,'lines'=>array(7998,478)),
+'/vendor/mvccore/mvccore/src/MvcCore/Router.php'=>array('index'=>-1,'mtime'=>1526054113,'size'=>26975,'lines'=>array(8476,717)),
+'/vendor/mvccore/mvccore/src/MvcCore/Request.php'=>array('index'=>-1,'mtime'=>1526455837,'size'=>43269,'lines'=>array(9193,1333)),
+'/vendor/mvccore/mvccore/src/MvcCore/Route.php'=>array('index'=>-1,'mtime'=>1526389064,'size'=>44542,'lines'=>array(10526,1112)),
+'/vendor/mvccore/mvccore/src/MvcCore/Response.php'=>array('index'=>-1,'mtime'=>1526398281,'size'=>12484,'lines'=>array(11638,404)),
+'/App/Controllers/Base.php'=>array('index'=>-1,'mtime'=>1526470318,'size'=>2449,'lines'=>array(12042,81)),
+'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Assets.php'=>array('index'=>-1,'mtime'=>1526470602,'size'=>16873,'lines'=>array(12123,519)),
+'/App/Models/Album.php'=>array('index'=>-1,'mtime'=>1485607758,'size'=>3023,'lines'=>array(12642,136)),
+'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Js.php'=>array('index'=>-1,'mtime'=>1524226656,'size'=>17963,'lines'=>array(12778,519)),
+'/App/Controllers/Index.php'=>array('index'=>-1,'mtime'=>1526464573,'size'=>1254,'lines'=>array(13297,40)),
+'/vendor/mvccore/ext-view-helper-assets/src/MvcCore/Ext/View/Helpers/Css.php'=>array('index'=>-1,'mtime'=>1524226656,'size'=>19777,'lines'=>array(13337,546)),
+'/App/Controllers/CdCollection.php'=>array('index'=>-1,'mtime'=>1526469649,'size'=>4930,'lines'=>array(13883,162)),
+'/App/Controllers/System.php'=>array('index'=>-1,'mtime'=>1485608826,'size'=>890,'lines'=>array(14045,36)),
+'/vendor/mvccore/mvccore/src/MvcCore/Application.php'=>array('index'=>-1,'mtime'=>1525962055,'size'=>2290,'lines'=>array(14081,59)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/User.php'=>array('index'=>-1,'mtime'=>1526392378,'size'=>564,'lines'=>array(14140,21)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignController.php'=>array('index'=>-1,'mtime'=>1526389610,'size'=>531,'lines'=>array(14161,18)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Users/SystemConfig.php'=>array('index'=>-1,'mtime'=>1526400705,'size'=>631,'lines'=>array(14179,21)),
+'/vendor/mvccore/mvccore/src/MvcCore/View.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>22762,'lines'=>array(14200,648)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/Users/Database.php'=>array('index'=>-1,'mtime'=>1526402242,'size'=>1687,'lines'=>array(14848,58)),
+'/vendor/mvccore/mvccore/src/MvcCore/Config.php'=>array('index'=>-1,'mtime'=>1525959959,'size'=>13885,'lines'=>array(14906,399)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Button.php'=>array('index'=>-1,'mtime'=>1485675968,'size'=>1978,'lines'=>array(15305,60)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Validator.php'=>array('index'=>-1,'mtime'=>1487286786,'size'=>3548,'lines'=>array(15365,101)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Hidden.php'=>array('index'=>-1,'mtime'=>1485678435,'size'=>555,'lines'=>array(15466,21)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form.php'=>array('index'=>-1,'mtime'=>1526469352,'size'=>16966,'lines'=>array(15487,468)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Helpers.php'=>array('index'=>-1,'mtime'=>1526299064,'size'=>7701,'lines'=>array(15955,245)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/View.php'=>array('index'=>-1,'mtime'=>1526464063,'size'=>6288,'lines'=>array(16200,196)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Field.php'=>array('index'=>-1,'mtime'=>1494456224,'size'=>26055,'lines'=>array(16396,762)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Base.php'=>array('index'=>-1,'mtime'=>1526469478,'size'=>11748,'lines'=>array(17158,290)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/Configuration.php'=>array('index'=>-1,'mtime'=>1526469661,'size'=>33364,'lines'=>array(17448,837)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitButton.php'=>array('index'=>-1,'mtime'=>1526308530,'size'=>514,'lines'=>array(18285,20)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Text.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>2188,'lines'=>array(18305,74)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Password.php'=>array('index'=>-1,'mtime'=>1485678433,'size'=>503,'lines'=>array(18379,20)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Number.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>1804,'lines'=>array(18399,66)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignInForm.php'=>array('index'=>-1,'mtime'=>1526464099,'size'=>2824,'lines'=>array(18465,102)),
+'/vendor/mvccore/ext-auth/src/MvcCore/Ext/Auth/SignOutForm.php'=>array('index'=>-1,'mtime'=>1526392148,'size'=>1874,'lines'=>array(18567,71)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/SubmitInput.php'=>array('index'=>-1,'mtime'=>1485675734,'size'=>1643,'lines'=>array(18638,53)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Core/FieldGroup.php'=>array('index'=>-1,'mtime'=>1485675968,'size'=>15452,'lines'=>array(18691,438)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Maxlength.php'=>array('index'=>-1,'mtime'=>1485678426,'size'=>1350,'lines'=>array(19129,45)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/NumberField.php'=>array('index'=>-1,'mtime'=>1485678424,'size'=>2750,'lines'=>array(19174,85)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/SafeString.php'=>array('index'=>-1,'mtime'=>1485678421,'size'=>2376,'lines'=>array(19259,73)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Integer.php'=>array('index'=>-1,'mtime'=>1485678426,'size'=>1176,'lines'=>array(19332,37)),
+'/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/Url.php'=>array('index'=>-1,'mtime'=>1526456331,'size'=>1304,'lines'=>array(19369,39)),
+'/index.php'=>array('index'=>-1,'mtime'=>1526470251,'size'=>119,'lines'=>array(19408,4)),
 '/App/config.ini'=>array('index'=>0,'mtime'=>1526303494,'size'=>359,'store'=>'text'),
-'/App/Views/Layouts/layout/sign-out-form.phtml'=>array('index'=>1,'mtime'=>1485608956,'size'=>496,'store'=>'template'),
-'/App/Views/Layouts/layout.phtml'=>array('index'=>2,'mtime'=>1485608972,'size'=>1220,'store'=>'template'),
-'/App/Views/Scripts/cd-collection/create.phtml'=>array('index'=>3,'mtime'=>1485608541,'size'=>234,'store'=>'template'),
-'/App/Views/Scripts/cd-collection/edit.phtml'=>array('index'=>4,'mtime'=>1507400261,'size'=>191,'store'=>'template'),
-'/App/Views/Scripts/cd-collection/index.phtml'=>array('index'=>5,'mtime'=>1526304891,'size'=>1466,'store'=>'template'),
+'/App/Views/Layouts/layout/sign-out-form.phtml'=>array('index'=>1,'mtime'=>1526377138,'size'=>487,'store'=>'template'),
+'/App/Views/Layouts/layout.phtml'=>array('index'=>2,'mtime'=>1526471023,'size'=>1727,'store'=>'template'),
+'/App/Views/Scripts/cd-collection/create.phtml'=>array('index'=>3,'mtime'=>1526468537,'size'=>251,'store'=>'template'),
+'/App/Views/Scripts/cd-collection/edit.phtml'=>array('index'=>4,'mtime'=>1526468534,'size'=>210,'store'=>'template'),
+'/App/Views/Scripts/cd-collection/index.phtml'=>array('index'=>5,'mtime'=>1526468547,'size'=>1481,'store'=>'template'),
 '/App/Views/Scripts/index/error.phtml'=>array('index'=>6,'mtime'=>1485608474,'size'=>132,'store'=>'template'),
 '/App/Views/Scripts/index/index.phtml'=>array('index'=>7,'mtime'=>1485609251,'size'=>235,'store'=>'template'),
 '/static/fonts/myriadwebpro/myriadwebpro-bold-webfont.eot'=>array('index'=>8,'mtime'=>1456749696,'size'=>24703,'store'=>'binary'),
@@ -117,22 +124,32 @@ class Packager_Php_Wrapper
 '/static/fonts/myriadwebpro/myriadwebpro-semibold-webfont.svg'=>array('index'=>17,'mtime'=>1456749696,'size'=>75348,'store'=>'gzip'),
 '/static/fonts/myriadwebpro/myriadwebpro-semibold-webfont.ttf'=>array('index'=>18,'mtime'=>1456749696,'size'=>67372,'store'=>'binary'),
 '/static/fonts/myriadwebpro/myriadwebpro-semibold-webfont.woff'=>array('index'=>19,'mtime'=>1456749696,'size'=>34280,'store'=>'binary'),
-'/static/img/buttons.png'=>array('index'=>20,'mtime'=>1456749696,'size'=>29500,'store'=>'binary'),
-'/static/img/favicon.ico'=>array('index'=>21,'mtime'=>1459332216,'size'=>7886,'store'=>'binary'),
-'/Var/Tmp/minified_css_2ec230d8dd5ce135d407ed58bdd89f0e.css'=>array('index'=>22,'mtime'=>1510831797,'size'=>10767,'store'=>'gzip'),
-'/Var/Tmp/minified_css_53bf53fb12afa393ed4e358fcc4a1dea.css'=>array('index'=>23,'mtime'=>1510831902,'size'=>10191,'store'=>'gzip'),
-'/Var/Tmp/minified_js_0a22c902c25a64e464ece951c7a3a78b.js'=>array('index'=>24,'mtime'=>1510831801,'size'=>14910,'store'=>'gzip'),
-'/Var/Tmp/minified_js_1b7cee0f91c0592097ba380c17de88ca.js'=>array('index'=>25,'mtime'=>1510831804,'size'=>173,'store'=>'gzip'),
-'/Var/Tmp/minified_js_227e5246fda513f342e38c4e53000327.js'=>array('index'=>26,'mtime'=>1510831904,'size'=>173,'store'=>'gzip'),
-'/Var/Tmp/minified_js_acd741cc5f1e772d165769e88965a7e3.js'=>array('index'=>27,'mtime'=>1510831801,'size'=>525,'store'=>'gzip'),
-'/Var/Tmp/minified_js_d778d95102e01b9a89be5b22bd955ae6.js'=>array('index'=>28,'mtime'=>1510831904,'size'=>14910,'store'=>'gzip'),
-'/Var/Tmp/minified_js_ef8a402a6566ba4d182e50e8128b57c7.js'=>array('index'=>29,'mtime'=>1510831925,'size'=>525,'store'=>'gzip'),
-'/vendor/mvccore/mvccore/src/MvcCore/debug.html'=>array('index'=>30,'mtime'=>1525959959,'size'=>1828,'store'=>'text'),
-'/{database}'=>array('index'=>31,'mtime'=>1526303104,'size'=>0,'store'=>'base64'),
+'/static/img/favicon.ico'=>array('index'=>20,'mtime'=>1459332216,'size'=>7886,'store'=>'binary'),
+'/static/img/theme/box-bg.passive.min.svg'=>array('index'=>21,'mtime'=>1520277813,'size'=>4007,'store'=>'gzip'),
+'/static/img/theme/box-dots-bg.passive.min.svg'=>array('index'=>22,'mtime'=>1520277813,'size'=>152443,'store'=>'gzip'),
+'/static/img/theme/buttons-arrows.png'=>array('index'=>23,'mtime'=>1520937849,'size'=>402,'store'=>'binary'),
+'/static/img/theme/buttons-content.active.min.svg'=>array('index'=>24,'mtime'=>1520277813,'size'=>3929,'store'=>'gzip'),
+'/static/img/theme/buttons-content.passive.min.svg'=>array('index'=>25,'mtime'=>1520277813,'size'=>3869,'store'=>'gzip'),
+'/static/img/theme/buttons-form.active.min.svg'=>array('index'=>26,'mtime'=>1520277813,'size'=>3878,'store'=>'gzip'),
+'/static/img/theme/buttons-form.passive.min.svg'=>array('index'=>27,'mtime'=>1520277813,'size'=>3882,'store'=>'gzip'),
+'/static/img/theme/form.min.svg'=>array('index'=>28,'mtime'=>1520277813,'size'=>152359,'store'=>'gzip'),
+'/static/img/theme/text-inputs.error.active.min.svg'=>array('index'=>29,'mtime'=>1520277813,'size'=>3812,'store'=>'gzip'),
+'/static/img/theme/text-inputs.error.active.required.min.svg'=>array('index'=>30,'mtime'=>1520277813,'size'=>4287,'store'=>'gzip'),
+'/static/img/theme/text-inputs.error.passive.min.svg'=>array('index'=>31,'mtime'=>1520277813,'size'=>3836,'store'=>'gzip'),
+'/static/img/theme/text-inputs.error.passive.required.min.svg'=>array('index'=>32,'mtime'=>1520277813,'size'=>4283,'store'=>'gzip'),
+'/static/img/theme/text-inputs.normal.active.min.svg'=>array('index'=>33,'mtime'=>1520277813,'size'=>3878,'store'=>'gzip'),
+'/static/img/theme/text-inputs.normal.active.required.min.svg'=>array('index'=>34,'mtime'=>1520277813,'size'=>4353,'store'=>'gzip'),
+'/static/img/theme/text-inputs.normal.passive.min.svg'=>array('index'=>35,'mtime'=>1520277813,'size'=>3882,'store'=>'gzip'),
+'/static/img/theme/text-inputs.normal.passive.required.min.svg'=>array('index'=>36,'mtime'=>1520277813,'size'=>4329,'store'=>'gzip'),
+'/Var/Tmp/minified_css_08054c3159dff2961ab94912566ed871.css'=>array('index'=>37,'mtime'=>1526470605,'size'=>29347,'store'=>'gzip'),
+'/Var/Tmp/minified_js_0a22c902c25a64e464ece951c7a3a78b.js'=>array('index'=>38,'mtime'=>1526470605,'size'=>14910,'store'=>'gzip'),
+'/Var/Tmp/minified_js_1b7cee0f91c0592097ba380c17de88ca.js'=>array('index'=>39,'mtime'=>1526470605,'size'=>173,'store'=>'gzip'),
+'/Var/Tmp/minified_js_acd741cc5f1e772d165769e88965a7e3.js'=>array('index'=>40,'mtime'=>1526470618,'size'=>525,'store'=>'gzip'),
+'/vendor/mvccore/mvccore/src/MvcCore/debug.html'=>array('index'=>41,'mtime'=>1525959959,'size'=>1828,'store'=>'text'),
 ); // replaced automaticly in build process
 
 	/** @var int */
-	private static $_baseLinesCount = 3893; // replaced automaticly in build process
+	private static $_baseLinesCount = 4741; // replaced automaticly in build process
 
 	/** @var bool */
 	private static $_minifiedPhp = FALSE; // replaced automaticly in build process
@@ -831,7 +848,7 @@ PACKAGER_TEXT;
 <?php /** @var $this \MvcCore\View */ ?>
 <?php /** @var $this->SignOutForm \MvcCore\Ext\Auth\SignOutForm */ ?><?php if ($this->SignOutForm): ?>
 <?php echo $this->SignOutForm->RenderBegin(); ?><?php if ($this->User): ?>
-<span><?php echo $this->User->FullName; ?></span>
+<span><?php echo $this->User->GetFullName(); ?></span>
 <?php endif; ?><?php foreach ($this->SignOutForm->Fields as & $field): ?>
 <?php echo $field->Render(); ?>
 <?php endforeach; ?><?php echo $this->SignOutForm->RenderEnd(); ?>
@@ -840,46 +857,43 @@ PACKAGER_TEXT;
 \Packager_Php_Wrapper::$Contents[2]=function(){ ?>
 <?php /** @var $this \MvcCore\View */ ?><!DOCTYPE HTML><html
 lang="en-US"><head><meta
-charset="UTF-8" /><title><?php echo $this->Title; ?></title><meta
-name="author" content="Tom FlÃ­dr <tomflidr(at)gmail(dot)com>" /><link
-rel="shortcut icon" href="<?php echo $this->AssetUrl('/static/img/favicon.ico'); ?>" />
-<?php /* force render mode in newest IE, strictly do not use any back compatibility modes in MSIE browsers for this page */ ?><meta
-http-equiv="X-UA-Compatible" content="IE=edge" /><meta
+charset="UTF-8" /><title><?php echo $this->Title; ?></title><base
+href="<?php echo $this->GetController()->GetRequest()->GetBasePath(); ?>/" /><link
+rel="shortcut icon" href="<?php echo $this->AssetUrl('/static/img/favicon.ico'); ?>" /><?php /* force render mode in newest IE, strictly do not use any back compatibility modes in MSIE browsers for this page */ ?><meta
+http-equiv="X-UA-Compatible" content="IE=Edge" /><meta
 name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><meta
-name="apple-mobile-web-app-capable" content="yes" />
-<?php echo $this->Css('fixedHead')->Render(); ?>
-<?php echo $this->Js('fixedHead')->Render(); ?></head><body>
+name="apple-mobile-web-app-capable" content="yes" /> <script>var timestamp=+new Date;(function(a,b,c,d,e,f){if(b[c]('Opera'))b=b[d](e,f);if(b[c]('Trident/'))b=b[d](/ rv:([0-9\.]*)\)/g,e+'$1)');a.setAttribute('data-browser',b);a.className=f;})(document.documentElement,navigator.userAgent,'match','replace',' MSIE ','')</script> <?php echo $this->Css('fixedHead')->Render(); ?><?php echo $this->Js('fixedHead')->Render(); ?><meta
+name="author" content="Tom Flidr <tomflidr(at)gmail(dot)com>" /></head><body>
 <!--[if lt IE 9]><div
-class="filters"><![endif]-->
-<!--[if (gt IE 8)|!(IE)]><!--><div
-class="no-filters">
-<!--<![endif]--><div
-class="master-container">
-<?php echo $this->RenderLayout('./layout/sign-out-form'); ?><div
-class="content">
-<?php echo $this->GetContent(); ?></div></div></div></body>
+class="old-browser-warning"><p>Your browser is <b>very</b> old.<br
+/>Please install any actual browser, <br
+/>for example <a
+href="https://www.google.com/chrome" target="_blank">Google Chrome</a> or <a
+href="https://www.mozilla.org/en/firefox/new" target="_blank">Mozilla Firefox</a>.</p></div><![endif]--><div
+class="master-container"><?php echo $this->RenderLayout('./layout/sign-out-form'); ?><div
+class="content"><?php echo $this->GetContent(); ?></div></div></body>
 <?php echo $this->Js('varFoot')->Render(); ?></html>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[3]=function(){ ?>
 <?php /** @var $this \MvcCore\View */ ?><a
-class="head-btn button button-green" href="<?php
+class="head-btn btn btn-wide btn-left-arrow btn-no-visiting" href="<?php
 echo $this->Url(':Index');
 ?>"><span><b>Back to list</b></span></a><h1>New album</h1><?php echo $this->DetailForm->Render(); ?>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[4]=function(){ ?>
 <a
-class="head-btn button button-green" href="<?php
+class="head-btn btn btn-wide btn-left-arrow btn-no-visiting" href="<?php
 echo $this->Url(':Index');
 ?>"><span><b>Back to list</b></span></a><h1>Edit album</h1><?php echo $this->DetailForm->Render(); ?>
 <?php return 1;};
 \Packager_Php_Wrapper::$Contents[5]=function(){ ?>
 <?php /** @var $this \MvcCore\View */ ?>
 <?php /** @var $this->Albums \App\Models\Album[] */ ?><a
-class="head-btn button button-green" href="<?php
+class="head-btn btn btn-wide btn-no-visiting" href="<?php
 echo $this->Url(':Create');
 ?>"><span><b>New album</b></span></a><h1>CD Collection</h1><?php if (!$this->Albums): ?><p>No albums in database. To create, click to 'New Album' button.</p>
 <?php else: ?><table
-class="cd-collection-items"><thead><tr><th
+class="cd-collection-items theme"><thead><tr><th
 class="right">Id</th><th>Title</th><th>Interpret</th><th
 class="right">Year</th><th></th></tr></thead><tbody>
 <?php foreach ($this->Albums as $id => $album): ?><tr><td
@@ -3689,107 +3703,6 @@ ZÁg×Õo}ñxCÛ­Ÿ_V¦_Ñã°ð¸­káG¯ªžy|¦ëáw¿©þÐÔöt•èfƒûKøŽáD][¿qt_#•ÚSêæªÀ
 ä°yA9,@«”ÃR¶Êá rØ« N ‡#ÂaÜÀ5–[ÁuWý&íÌneÚ.‘D´n7/  OÕ´³  
 PACKAGER_BIN;
 \Packager_Php_Wrapper::$Contents[20]=<<<'PACKAGER_BIN'
-‰PNG
-
-   IHDR    è   V&£ý   tEXtSoftware Adobe ImageReadyqÉe<  fiTXtXML:com.adobe.xmp     <?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c061 64.140949, 2010/12/07-10:57:01        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDocumentID="xmp.did:57287B88A5B0E111842ED4FEF045BD67" xmpMM:DocumentID="xmp.did:598AB816B94111E1A5BDFA748B6057C3" xmpMM:InstanceID="xmp.iid:598AB815B94111E1A5BDFA748B6057C3" xmp:CreatorTool="Adobe Photoshop CS5.1 Windows"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:F1AE46CB13B9E111A64B8694EE410F7E" stRef:documentID="xmp.did:57287B88A5B0E111842ED4FEF045BD67"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>§\ð%  olIDATxÚìÝ	€u÷ÿOUWwÏ™If&!!HÈe¸aQnQ}D£ëµº ¢>»îó,«ë³÷ÐGÝuÝ]×uUòÈ%"9„$$!$!÷Læè«ê_U}LM¥º»:!™IÏû¥•îéª®núø}úûûÕa¼ëÆ^ë¢EW^±y×Æ›·÷=×:˜Û¥#åÇW;†  MÁºhá/]¾þ—?ÌõéúK~ žörÜÿÉŸ<F•ë";  ©dëî-ËöíÕŸ¿áß´qðýüå;GEE­È/5åØð®ÿíéÏóŠ@³È¦½+;ßóŸÒ3{~©]™rì‘¿œN AŒ@!á×)ÎÈ²N`¾íŒ.<‡ š*@2¹¬öd·hgn£²öP%$Ê~TÃ”òßÞuÛ};Á M ^ŸÉP®q{gtõ¡ƒ+r@DÍ¨û*ƒá h¾ ñCÁ©ÂEY¸²Vá0‰ª\¨D  	ÄoàíbéáFÂƒã £n3T+©Ü?bÙÊ¼ÃÙx 0NÄ·ñ§p™nøË‰­Ú›iU» Ð<â”«;Ôæ;¾
-‘¨À0Bó hâ
-Ä)ŽƒÔîGu;Õ»­ZW]X Ðdâ·íÅî+‡‘n @Ü ñ#Ã.vc‘ €øHé°W  ± ñ»¯Êû  €ØR
-* @Câ  €C¬@ŠU[a ‡­°  ‡ ta ¨@  G'@J§Œ<˜"  5+º°  ‡RÐ… h8@Š=X h°‘Šc ì h(@Ø p(b™)g8“5 @#Ì™“æí¹û©;e™éÀQyÌ h¢ ™1eÖÛz'w:=µFƒƒ†lÇPÁvŽÈ hÖSÛ~óØk^xñ†ÉoÝ°msoßAóPVäU†1Rix× M Þ?­ÉIS¦v÷v:­»Ì!{W P?@Î:þò‹Wîøõíƒ¹>}üÕßWwÛôâ&½*–†û¿¨ëòî h¢ ÙÙ¿í–½ƒ{õ‘ó¾¢•/Ý«Ç7ÿòˆ=ØïÙÂ+ Í [úžé|ÇÂOêñ-?×¶¾õŒ]  âH&—ÕÎMÚq`ƒrö“ #@lÇÑP~@y'Kx  âˆ÷×meÝ €øâG† nõa°¯  vR ÐP€¨Ô…E€  ­@¼1Lwr 4RÐ… 8¤ ¡ @ 8jR¬BØ ÐH€ta ±¡ pb”·ä¥ Ð@€øéA h0@8 àÐ*•¶À*M  ÄÒVX¦w.§4•s¤ZEb–^†ç©Îz  Çn€øC å­°ìPÃo†ÿ`P”ç…/Ëó
- @V ¦Q9 bdµaT	£Ê¥ hþ )	©`»³gä2ÁùQÊ÷)Ï®ãÝ?œjj£F}cT©aFuœýðÝ;ó¼… 0†bÂ!x½Ó	‡pP”×’`Æ„j§FSµ Œ‹ 1½aCŽmür0êƒpxáIµ IhžQ%L¢B¦ZP0, c –™t†sÃHŒBµ*$XmÄY¦\­8NÍ
-Du®ÇY p”™'öÌßsÛ#¿P2‘ö›d¯ÁOFé²\”o‹œ›Wþ.]¯Qq4"jü p´dfÏÌ¥=“&9·Ý»RxÕ‚)Ûmšƒ“¸TèzyrËEÝ¯T…Ôë’
-_FÝ‡ð €qÀZ¾æG/^pÉEÏïx~Ùªç6÷î0ËÍs#£ÚõFÂ½ÛçöôFí~ëˆêªª¶["]X 0–âNù6«köäôä®“·›“;ŽØƒ´ë•Þì–€±
-^ñÑ‡×ßþU9¦þôÂ4¥½7ôC_Šwì’jí{½]>‚9àÔXGœe G-@¶ìÜð¥kŠÞûêÿ­õC÷hÕËw6üó¿ÖÞ€QýOFÄõ°8ñô·§?Ï; c ÷<Õú®?ø¤Vîý…vg6WÄ£ö$Ú;=¸×ºwi;‡€•uE$ˆãTY 0~d(;¨ýù­Ú5ü‚òN¦ÒPG5ØáÛF5ô¡ûáuˆÛŽ¨ðráûräy ã ñðL¾OùBÆ­œÈ½Ç£B!Ø¨—CÀ‰¨2ÂóÂ—ÁuÊ§`€#ó#bY ÀÑbãí¨Pê{Šª$‚ÕB¥¯R©«„jHøq¢æ…C«Öó ŒY€xé ÈëƒÆ/"FÀí‚ãW/ÞmfÂhÝˆÀ¤W–±GW Áyá¹¨@ `<ˆíMUšä*›AyUK6gkp §ì°¡i-§ú·ïÎl”™Êª½=©TÒ}Ž‘j[ÿV	‰zÏ 0–R>Ôˆ­êúÉïuw8U[ö$½gÁ'uîI—+aZ¥Å=µå·ºåÙÏkŸ¹FIY	óàõÙ¿k=vµƒš( 0¶â÷(9ÕÛðpCÏÛêßŸ×ù=×èê3ÿ—I·]7ÜP)T–Y2ó5zÕñ·ëÿ=õ5Ý·ýßÔÙeËJšÑ­ hdY ÀQ®@Tì¾ªÚ…l¿Ý¤éïËêòé×ë­K®óKÇ¶åT.K…¥§}TSZŽÓ-?©ÉSÒ2MF¾ YøNô«»þ”¶5Å^¨·,þl78l·êð.·î_«ÿùË³µrû£n÷¦‹ç.ÕìôÅÊb=F# `,ÄSˆ×`æõú9×¹ÁàT&/<>{ïêÏìÖ£[6j^q²õú“¯ÑÀ@^v €fQìÂòþWçX!Þl¯9íø‹T(üûlë_§Ïÿö*%“	½cþ_ê¢ßãÏ›?í,Y…N7L2tc@SHŒ_ô^5ÑnNUÒLúUÅþÌËúÜƒoñÃÃ²LýlÃ—´líç”ËÙ•0úÐ™_ÕiÇ½NÞ˜HgbšrùÍ2, š#@êmÆ[®@Üùy;[©0
-;Px;ÚU‹QYÞñÜéz€¦ª@¼qbîv¸°_ÞÁÓV‹:’Ýú«îÒ—–¿Cùü€®œó'ºìÄkÞÖÖLw
-Ú;¼EmŠõ8 €ñÏ,Wu¬Ývßrãæ‰-÷ùU…wø’ÎäT}â¼[ÝjÓÏÖý³n|æS~eâÍ¹,hÕ¶Çd›Cþþ"¢@³T 1»°<é”¥{_øŽÎ™U×ðtX=ºþœ[ô»¬×Ì¼Úß„wDqß_oø–ZÒ> 4]âÄûÅï’d¿³N?[ýõÒ¾Åý=:¬^½aöÇü0)ïÿQÞ„÷õË´uø÷î}ì ÍTø#Žbí‰îiM'õÐöoªx¯Þ¶ðO•²Ò¡%ŠU‡7îñË5ßÒ#;¿¯ŽödñV›ñ hš ñó£_ôÞ¡Ú;ÚÒz¶o™ÖýîwzÝIÖÉ“—¨§ãx?8öíÒûžÕ=/ÜàV+ÔÞšôïCÅ  Í ŒŒÔ†[‰¤”/ìÔÏ7ý²ë
-jItÉtW7PØ¥TÒR:•P»åV„ 4obûS<„;›	Y-nP´x!”q³(£n£md'úÜê €&	ÉyEöÏðÇ9H ˜8ÂVM €†$•h×àð°dþ ˆÃœÙ9¿ÿž•÷Ê2ÓÅÁôch Œa2³û„ëÖµ=wãÃ+7Oš©–V¯q¦? P'@žÙñÐ²‹¿öÍëºÖ|ÓŽ§ôšÁ_÷Þu#âìÁÛËË{‡¯Ç¹¬%¼Lpý €1ïŸÖD{ÏqÝ½jßefìA^ @ý 9kÆë>²âå_þ³c›úØùßTWº·øK?0 îE×?£ÇèËà¼(QËGÝÇ(˜1j=, 8Š²­ÿ…ÿ›r¦èK®×Š­wé‰Íw3Oþ†÷lá€±
-Í}O·¾mþÿÒ£›o×Î›[  Ä¡áAíÚ¬•³32L^ @Œ ñŽ°>”ïWÁÉ €øR¹fŒP +@¼Êãpªï ŠvédQ†iøçÿ  4{€Åòo‡¾|¾ áL^ùœ©§z·êå/HfF--–’–éŸ @â+¸ÕÆÐpN“'ë}çþ…Î›s¹f±7ÌÛ?ã©Í¿ÕŸø;ízNm­–	W  éÄ¯Œb×S¬ð(Ø,è¢>¨wó	Y‰¤?vR°•e–Ìz>?óçZöä×t×†¯ªµÍ‘e" Ð|HÌ.,o¬cÐ­<ÞxÊ'´ôôëüäql»²Oº*{‡Ãèíg|TSZÓV}B“:Ó2Mº³  Y˜2Fº°êMy·ú˜š\¤·.ùl78l·êð.·î_«ÿùË³µrû£n÷¦Kæ-ÕÜI—*W(Ä~œ¸ `,$PÔ›2Ù¼Þ0ï#þWåÉÏÞ{…ú3»õèÖŸšWœl÷>×øƒí 4âÈ·› õ¶–ò¶ºÊe¥Ó¿H·šðË·õ¯Óç{•’É„Þ1ÿ/uÑ‰ïñç…ÍŸv–RN—»ŽÝX Ð4s3^Ç­&:’S•4“~U±?ó²>÷à[üððÈ¶áKZ¶ösÊål¬Äó¡3¿ªÓŽ{—Pš”œ¦œ6Ç¬ Hœ.!¯Ù/([©0¼­±FªGvÄYÇ©H¼*‡®' h² Qý.,¯ë)ãì×PvPi«Å­FºõWÜ¥/-‡òù]9çOtÙ‰×J¡ótøƒéNAûr/ª+ÁŽ… Ð,Ìò¿õ¬Í„”n1õä–ûüªÂ.8êLNÕ'Î»ÕM¡6ýlÝ?ëÆg>åW&Þü‘Ë‚Vm{LJ)a¢@ÓT Ê¤µÝÒý/}WgÏ*Žkx:¬]Î-úÝ‹?Ökf^íoÂ;¢¸oÈ=›oP{‡E£ ÍVxÛq¦tKBƒéõúÅš¯—öõ(îïÑaõê³?æ‡Iyÿò&¼¿Ù¸L/»÷µb?NÜ	 0†ˆ×{ˆÜ‘\¥¸14©3©Çö[ýÏîÓUóþD)+yoÜãWÏß ƒ7jò””,Ó½®j5O5æ Æ&@*]XF ±6Ú¡ÜJ™šÒÝ¢nÓWžú.9îÃ:©ëUêi?Þ_hÿÐ.mÚ·J¿ÙñmµnTWOrä8XN¹æ	¬Û	=¦Qc~Ôó ŒQ€¨4(0n¸ÍˆÞ»“[·LêJ+×¶W÷~NC»óJÙ“”0’Òn¿««­7©ÉÉt±«)ØØ×oD¯¿2/j¹p˜  Æ0@J²wéDTå-ogtž¶J¹aÑ59í¶ïy÷–¼ºŒöƒ¤¼ÞðúÃ·WæÂ¡<ð^ž|ïþáT+ôP½£k"ÇªÃ{0î¾Õ^‹D`~ÔOÈüx|ç(¿ÕúKjýt®µž¨¿«-ÑwtÐíªóó=~€ŒêÆ
-5üÁ;8?ØèGwTX¨úúG­Ç+zÌÑ¼^^†]IpÙX}J…o‡£¡=–ÃÔˆbqþÛÃøQáž_í³Xí~Šù<ŒƒÄo˜G¶jŠläU»Qwª¼MQ}0 Â·Ã$,‘ÁÅ/pP+ÕHøyEuNÛ>ïñü}j¤ª§J£oÔùï7êüíT	#¢2rªT.•çcµXíÌûç1w"Þ·¨»Z¥—ZÁR-ˆ‚cš£+ ZÁÄuÂéDÿñp¬uá™5îk7ÁëU­ËÈÍ[ÁÁ[ktùPÞ«Fº´üÛ¬ºôß¶üW—½z®òöpteÔ®;G½Z‡òŠ§Ö³6ª<Žqð:«§4àã.H—qtxãÆ8}Œ*¿ð«UFÊÄ¨ŽjoC{(ááÄ¨`svïì·¦Î/î_­þÞÍ¦?Ë)Mv•ëá©<¯œ‘áÛœÀu;´.…Ö¥*­ðýÆ×¯ßñ4aâ~œq0jÐ8‡øš×NƒáDü&¯Õ¨Wó¨õzFý7ªtaUëŽ«„ˆñ®{[Îž÷š×®Ù¶æ{›vn²hÀ6Îq†ýkÕlµ:ßât²ÕŠä¹=½I~}ÒC%rÌ}æ¬:MCáŸâŽ1Ÿ§¡ú[vÕk‚ã,Óøè»‰! @}mÉ^MŸ´`èÄÞ9ï|pÕwk÷ßO€4å~ÞV>|öÆösàÄüœÄ)ª½®†jïþq8Ï{ôuï»¶éË¼×’Iúƒ“¯|½ñVœâð±!> ¼òÑuÅˆŠ¨ïqTTÄ9„`½a§ÎGp™Å]Wèø¶%úÇ»þ»O¿¨ßøË'N¡­9Ö?°ã0Á>U˜àßÉzûÇ…wy¨vŸzó£¯ÚNàõv‰¯#¼|ÊlUozŽ¦&NÓm+¾&ëp¿è4^O¯ýxù<N´Ï íÀè×Â¶ã=·ò²õîSkËÓrC™p”×Þÿ.ø˜áÀˆ
-“LaH;‡7*‘œ¢L.ëˆ}¸	Âg\ÔÌ¼•ü4 ÍÿºÇ÷¢Õ*Œàþr•¼FÅÞ¿.ªaw"úÀ¢Å‰‹à¼j•JðÏœ“QFüe»á×þØpÇÓ{0Q?ý{0ž4Ü0Žåóˆª¢*Š¨ùÕª‹z•E­Ç­Uy„×Wõ¹¨´_ž¼í±÷ ùçà‡ŸhâÇÈ¯	ÿ¹Gý3è”ÚU'0šíÔÙ¿ˆÁJÀ‰~£ö ¬\VÛ]Ð©²žÀs®vÿòmþeéxÊ‡ß…MZ ú{i×¸>òWÔ&[üõ¸õns"žO½Ç0ù¹áwaÙMð&Ñxb¢V”#ã÷sèT©8ª5èÕ>ËNÌÇ©·mnxY;b^Ô>îás49ÅjÅ»Ù²ù°‚Æ8²ŸÃC9ê×¡’²Öýâ5Ë©ÿ\Ê]kta âg£×…UJ”c¿ pD~÷—C€  J;r  âˆÊû†8T  €Æ*rÝA€  º°  H`›^* @cˆM€  %@ fÂ  n€8•ãºS  «@èÂ R€x¹A h¼qJÇÂb? @Ü ÑÈ¹r©@  V ¢ Ðx€g²²Ì”cÑƒ ˆËJ¤u÷Swê‚W·Ç*°  Ã05<$=¶qŽŸÞéÌ˜2ëmÖSk_ä•9Ü’Îoo4ï	Ÿ>scõ^”_ïñ«½.µæE-\>|ßògx¹¨×¢Ö2qLêh³ÏZ°`×É3æ¼ã©m¿yÌ:õU|é õµšmæÔÖÞÎÖä¤)~ =ýâ½ôaî/¿Ÿ_ÁC.cbøìÍç ÖëüœxËE}nÊ÷/Ï‹Z_ùq‚—‡óŸwøºá–-{·ë+¿OmÉIZrÜë®0®ùÁ,Þm @]gŸø&Ô}šþãÑkaï…ýýå €8žÙvŸvlÖ;~Rw®ÿz§e˜¼( €úrövØ Öd·2¹¬ @ly'«¡ü€lÇq„>, @L^f”cƒ
- Ð@€xÿøÿ'@  ˆŸ h4@Fº° ÄR‚P  ®@ÌJÂ h @Ø
- pxû  bÈHfP  «@Jû‚  €Æ„., À!Hñ  ± ]X €CÒ±°èÂ ÄÒém=È+úÊ‚$Å¶À	]7"¾FïLð¾~ÇÂ÷©õœj=cô:ÌQ[a%š¨Á/¸3Á¿8|&îgÎà5‰lô*—ŠÙ€‡ÿ8áS% *÷3C—FÄ:#×öð'½[aÑ`ü5x-¨D&è{O>Ò(«N(”ç™1¾3ÕöFÂ$n U¬Ê|CþÐ‡Wˆ>¬Wî»3A_KÇÉDÝ:Ý!¸ÇE;àÄù1iTÿ»üùuB¡þ\‡çWû”—«ö½ðæ{ó¢ÖW¾½|iÚ9ëXÿ¢Çç?Ñ¾Äãé=˜è»5±[×Øÿ‚?—`#}Pƒq›Q¥?NÕ(9fôzË÷	®¿ÚgÊˆ¸ÃÞ
-‹œ/1ÆÏ{Îg?ÐåïŒíkl*ƒàµìp¨D®+"¸Œ*u¿r°ï~íŒRwVùÒ4àžèÍ÷%¦ûÆúµ(wõDUQ!Së;\­J†D¸êFõõ‡ÛÍ¨J¤ü·Y<Îed™Iç˜ß‘p<~_œ	ö…aìž×œ`ãñ¾ŒñŠÚ˜+üó:œÀc8Á@(ýcÄø€ŽÓ7"7ðÜ“fZ·=ô]0ïü=Ö+ù)sø’LÌÊ‡Fû ×‚Ï%ß‰pÃ¾Ý®ó=rê¬Ë-ã4ðYZpKâj÷3dêÀ€­_=¶R3º'93{f.µîzp=Ø¨Š1>ü¨û÷>øËÞ9ÄÏ‰£êûUÖëÔªjb„`ùÊäÖvûìSîš{ÜÜ·/_óÀcÖIÓh|  õµZ)srzrW›Õ5Ûýócíþšè¿} ¾{ãåûÐèžRõN*5¸lÜc”Ä=¶Iñ1÷ìÒW{­û§­óOyËŸŸYq
-Ýµ4ßà'ß£ð™ˆj²ãDŒQcÝÕºÄœ:gÂgvQ×:¾u±~ðð—ÔÓvüåØ‡ùa?°È8L±|-ªm6Ü2Ëvjß?8ß©òsJ)Q~§F›T^Gy3]Û‰Þq±Ö‡k÷ÿF»‡_Ð›O¿F?ZþÅV«÷`L´ÏÜx
-°ñòý«×¤üTÛ+<Ø GíìW	ƒÐmN?j}Që®7ê½ªõ·w=gi— ‰™ÊÊ:Üw;ê‰ñ+”†”ÏÀÄ}ÝÇËsëý±l{t#
-o~ù2x[¹’O+\a„#8Ï	UÕ–‰Ú±Úžë•ªÅ]WÞÈ(“ïó¯[¶Íö•þâP ˜ØŸpã[«Vµ*ºp·X­®¦`ƒ®V¢žG0‚ëŠZ¾à^qJX:ÆdÔkN0qöïÀ8ú:á.œÒmåëå÷Ê‰hÃBË´\9ë÷Ç²£&°r¯á·Né¤P†Ì„Qý¹Õú|‚Årl¾ñMù¥åm˜Ÿ‡ÏÀ¸x/Êz KjÔõ8çî¨vöÂðæS56µòÚ÷lÎÖÀ@Nv6¥žôÿö—‡×*Õâ¨­=©TÒTäy¡j<ÏòÆW‡½œqôE%4€ñÓÙUÿ¨c…T;em#»qhôcæ¶ôçÔeÏ×Z§Ÿp¡>s¿±óúý÷è§Ï}QûS/¨£#¥„q ®xó¬fÊP ã²-ªw´Fo¯SmæÝª£¿tÙôÿ¡¥§Ô­0LÙï¸Vçžô:yÂ%úñ“ÿ GvG]–,ËŒÕ–:¥®.º°  ‰Øn›¾_FÿuÎué©o/Y8£Ê§Tª$Kï>ë“j_9Y÷ìø²ººRŠsšórn4W Lp™¡‚f§/ÖÅs—Žª:<Ï¾ü ¾ýÄõºþ‚êøÎ¹•Ûß²øCzbÛ/54¼Nét"^å  Ð4¼Bc` ¯×¿êšƒÂÃóèÖŸ©?³[Ÿ½÷
-ýÕ¥w¸!2¯2ïõs®Ó7ü¥’õD•*6\€¦àu_Y…NÍŸv–
-…ÂAóß»äóšÝµX·®ùœþö7éÓÞ®nˆxƒë§‘¾·Ê–ÝéÔÝ¿Î]X ÐT
-yG‰iþŽ¶Û¸?½ã×úæ“êÏóÆ6’ISI+Y,ÿÜƒoÑß]ö€ºÒÓ”4“j7§Ê.ôùç=¯ M¹/ L`^{îÖ•êÃqŒˆ*Å®T~èìÊòy;«”]ƒÖÊf¼ta@sðºžöoQ¾“i$´¨çbýãåO—Ð}›oÐ¿"KíúÔ·ª#Ùí‡J&?¬áÂ~µ)­º¹àÐ… Í îÿlsH«¶=¦…ÇS¹µ¼ãM«?£Çwü\-V‡>qÞ­êLN-ÞD¶žØrŸ,K£UR«Ò!@  É´¤-ýzÃ·4êY
-ïÿÆ9¢I©©zÍÌ«Õaõøƒîå]Îï}á;J»÷“	#]X 4+‘ÐÖ¿×ë—é¢9KËM¾ÿ¯o˜ý1?X‚›ùþbÍ7µßY§ŽD*~€ˆ=Ñ ©x5G{kRwlþ’ömÓ›æÐ‰:°V6ŸÑOWUOï»EíéÀ^ëõ¤r(^p h&¦aº!bhù®ÿÔs»Ôå']«“&/VWk¯$»¼¤ûVê×/|CÙÄvu´¥ýC¼ÇÍÆ@  ©CÄP{KRCùMºuý_*›Ë«=Ñ+[yk«T*á¶¤5‘*Ö&dc  Ðô%	%[RkJ¶3à‡E«ÑHƒÆÏ¤iW¦È~  0Aâ¤\An»Ï~  €C‰Æ@  W1†‡‡•J´{]X¼  €x’‰´îYy¯Î˜»¸ß*°  ^åa˜’aƒ¦MkqfvŸpµbÍ‹‡¹Òñó8^ª©ñôš ›¶¨Z;œW¾^n»‚÷©µŽð2q.Ëë?VµÇ	ßî]ïlo³O›wÊÞy³æ¿ï™ÝkÍ_Â› ¨/m¦ÍãÒ½­‰ö?TV¾x_Óôa9šØÝq†(}Àwo¼|j½&ÞsÎ/?×ðmQëˆ³lùïjëß'¼|µç·?³KÿþÈ‡d˜¶Î˜ö¦ÿa\óƒY‚  ê:ëÄ+uÒ”%ºõ™/kJÛŒ!‹þz @Ïn»_/÷oÔå§¼_?]ó­–aò¢  êËÙCÚ9°Q½³44<( [ÁÉj(ß/oË  p¨@ `°Gåš¦¡Ã)Ê¹A€ @“òŽº›ËÛÎ»	’Ö´ö9^ó¯m}ke%mÿüé–•hxçgyƒ €¦T(ØÊ«'µ@×]ð~â…•ý9
-v^n¼G7?õõoPkkR	3~Š*Æ@  ™äÝªchÈÔ'_¯·ŸùQÿ8V¶=rèuC¦Î›ó:uâ%úÑc¯·|[íí	%1+
-£xn* h"ÞÙ†²z×â¿×eóß^:ã`é´¥ÖßQ1L†¥÷žûjOMÑ/ü½:;R±ÆFÊ‹  ÐDr¹‚æNºT—Ì[:ªêð<ûòƒúö×ëú~¨ã;çVnë’é‰¡…µþ¹Òëˆ)Æ@  ÙgòzÃÂk
-Ï£[¦þÌn}öÞ+ôW—Þá†È¼Ê¼7Ìûˆ~´æãJ·ÄJÂ~  Ð¼î«”Ó¥ùÓÎR¡P8hþ{—|^³»ëÖ5ŸÓß>ð&}úÂÛ5Ãopýôã/Ò÷VúñP«¬ÒT  Ð$¼ý<&%§¹WÙŽ­§wüZß|òOKm¾¡dÒTÒJÊ²Šÿç|‹þî²Ô•ž¦¤™TGrª»`Ÿêm\Åf¼ ÐdŠcF¥úp#¢J±GªÝÛÜ·¼|AYõrad3^º°  )x›áîË½¨|!'ÓHhQÏÅúÇËŸ6ýºoóºcãWd©]ŸºàV·êèöC%“VÆÙ¯N³µnVy* h– ñºžRCZµí1-<îœJs_Ü„×ÐM«?£Çwü\-V‡>qÞ­êLN•]ðæÙzrË}J·˜21ˆC™ @óiï°t[eÌŸzV)<F¶Æzãœ?Ñ¤ÔT½fæÕê°züA÷b¸8ºÿ¥ïªu’¥8™¡ šEºÅÒËCë7—éÂÙKK·Ç<¼ÐxÃìù­p3ß;Ö}SƒéõšÔsGÂRnX‡ãé„¸ã%9I00qÛ'âù8K…®×úopjÌw¢o÷Ž´;yrJ÷ïù²öo×ç^ë‡DÝ)›Ïèöuÿª5ùešÜ•.v9õÃ8"‡2¡á_A>sùÔx
-#â9™¡`‰
-³Æ<£Ê}Ýû$¦ºz¤•ýß×óOþVwfO^¤®Ö^áÝ/é…ýÏèßÓ±SSº[”H#ë
-®/â±L$Xí
-#ÔØ×'â½uªT7‚ ™L¸•ˆ©lûVÝÙÿ”ÙYP«zTprÊš}jmµÔ:Ír—KluþüT	¹Êf¼¯èn‚xÙ"ÚÛîœ× „hœçá5ÂN Êí‡w[ðzp=Þíþ|sd¹ð:‚·{BÚJ(Ýš(­o¨´hû¨å£Ú1Ç9¸z
-®ßÓ¤ñÀ±¢ã1¸ù.Lìï@ùý¯Õ@ÇùüšæÁë*/ÕvÆÁ×G?£æc„o–Ã•Šu¸ß¾QO˜//@5ŠQ·¡±Q5Õx3¢òEÔg¯ÚmÁuD­3j}ÅeÒˆÁ—à³×<ÆúäA]@ÝHçÿjD¹/7ðáÊ#ªá[Õª†ª}–½½Ð3Ãj±Ú_Ù.¬1ûÀŒ—Æƒ×„ á%óÏÞX‡xe¼Ùˆ÷ö+	#þÖ¾á1àúË³£ê·£–?v­­Œˆ´¿é®™ÖmÿJgœðª~Ë¦¥¡ÑÆ1ÿ0x-ÆÕw¹áv"i§ÊkSžoG¼†Qu95–	?Nð985Þ+§ÊûW¼¿©þ[¿{bµz:[œ“¦Îù u÷ƒëùÖÀ+ áëµB¶ÚòQ÷wT{ßD#F°Åùá^—WÅtµ¶Û§Ïž·wáñß³|íý÷>w§uÑ¼W¬ÝôòÍÏîØßº{(Wuc£Ê‰ûëÇþ×«©ð IXÎ~é²åkÞ?˜Ó>r©fvwøÇŠ¯U5K‰ 8Œ Ù°eç²½û‡õŸz…žØ5¬z|ë{°ÿx¯8 4K€¬Ø²§óï®>_÷nèÓ–¾¬wND^ @ý Éfózé@A›÷4œ'<  1ÄÛ«d0“W®`³7   ñÌ½“¬û ˆ .Ã)Ž}P  	¿úp¼‰  Äßv÷ïü¸ta ª@D h8@œbåA h(@œbâUT  €Æ*Æ@  ˆJãŒ  û  ‘ñ* @cc  €CÆ@  Hi+,Æ@  ‡Tp4^ @ãB 8„ ñ·À²*   àˆˆÃžè  * ÀÑ
-§¸/c  €†$eÎp&kP  a.˜ÑµgÙ]+”J˜£Ž‰u$& @È‰3{–vöt9Üû„òex]YûˆL €æa­Ø9üû7\ôªKW¯|ó›¶÷ìë7R±P®Œ+rJËU»õ 4Y€xÿ´'­®žÞ);Œ´94”—mÛ2œ‚[xã"…âá²Üÿ™¥Tðº£‚aáÅ×4J·xóÜëåeÊñaðZ@sÈ9Ó[/ùù3ÛnïÌè×^ “Ó~€ØþY£Ç.g$$‚5†·‰÷wqY§2#5	c  ÐtòâŽý7ïÝ@ßø£Wë‘õÛtÏ³[cÞµ@(-ú†3æñŠ@³ÈS/õuþÕ›—èîU[µiWŸßýORô_@óH6›Ó‹ûhóžçÝRÁ0yU  õÄë_Ìæ•óÎMJ @Ü qJÛHy•‡Á@7  n€†û³4  €¸â1¨@  ‡ Þ–WÞø#   * ÀÑÓý¿éíKÎ+ ˆ  à0*¶Â 4 nbz{   €Øb·Âò'^ @#ˆ_…0 h0@LÆ@  ˆÁ àÄ÷` p(ˆI h8@¼a Ðh€xÝVŒ  ©1‹Õ  ¡ qlŽ… h8@	³˜ta ©@8/  á I%Lg8“3#É~  €ØÌE³z÷üø§(e™¥*äN €æ	Ù'ô.íìnsîùÉ½ÊìíóÇAçÈL €æa,øÜéÓfõž³úùíË6nÞÕ;°Ð4œb_–SúŸ©ƒ«ïvC/g»ÿó“Éý_y§48oÿô#t’@“ðÑ;R‰9]©®dO»ét¤ýæÞ*—véòà9øïòrv`•rçO~\³	?nø1ÂÏÁþ×«	$ « yõœi×Ý²|Ý¿x5Æ~ð"Mëj‹l¸ˆKE„„jÜOUîcT	¤F— Å Y·eçºÓIýõ».ÐòÃúÍ£/3OþÁ?^À; c OnÞÝúÙw¾F÷lØ¯—úsÞné¼* €ú28œÓŽ![[ög”-Ð1 ˆ rdsÊå¼ €øâØŽl7Dl›®+ @#ˆÇÛÉï0Æ>7|l»XÁfB¦É^ç ÐôâŸÄßS¼± ñö,Ïg3P!3¤9SŠûlÝŸ•m¥ÕÒÞ¡d*åŸé Ð¬ˆ·Û_]Xv¡ Á~—Èèã¯Ÿ§Ë_u’¬„Y)fZ³Eÿp÷jmÙk©­c’–Å+ M vü
-¤Ïk°oŸÞ¹pŠþç•(™HøGñ-Fîÿêy3uóÜãõõ{žÖ>ù²R“&Ë²’¼Ú Ð|¯ñº­û÷ëƒgMÕ‡.[âGyðÝ»^>^¢QÚ}üº×.Ñ´Îçõùû_PçänÆF  ‰˜þø‡¡XGÓÍf†uR[^×^²Ø¯êð.×ï: ×ýÇ#úÝÆ=£n÷¦·s²Î9.éß—£û@3ˆ§`T!5¦Ìà€ÞÞ¿»Ëïòù]ºúOjïPNw­ÝY	ož7yaò>÷>™^?W¬Ç‰= ÆŒ5ò‹¾vƒì-“ËéÂSg¸9Pð†M´qÏþè'ÏÊJ¥õg¯ž©w,îõç••»µÎ˜=M­ÆJ7§
-tc@³Hñ4¶vÝý@¼}=zZJ&L¿ªØ5˜Óû~¼RI7<¬dJ_|—¾úÈ6å²™J}þŠ¹ºxÎd™îcLmµ´«wS…-²  )¤T^ÔSð*‚]©0ìÒ¥Sœ¥Bå´Q£RGùÒ!R¼M1v Í ^T½1·áïË4˜ÍªÅ²4Ù­F~|õ"]³l­2nÕqíYÓô‡Kzü0)w]•·Ò*¸ëßÞ—Uz’» €&az½MŽF½«MÞR‰¤¥ûWmõ«Ç.¨»ÅÔKç*eäõõG·êó÷oòiâUåKoÙÇ7lWÖ¯÷ƒÅ~Å& ÀV þ¡LïXXéTZ?zl“._4SF©'jŠ"ßzë\ÝþÜ½uA·[m”ÖãŒœMð{Ë×+ná\# ÐTˆS 3%	mnx`µ…Ò&»Ý-	½ÿŒ^MvÃ¤²¯w”_wúécôÌ®œ,÷¾q'î 8F*¯¢hmiÑM+wjï`F½t¡ÒÉDhÃN÷Æ=¾ûÐ-[µ[mm¥½Óiô iD~»îøSÞÑuÛÚ:t÷Æý~óÃzÿy'jññStü”?8võkõK{uãï7ië©––™î}â® pŒˆSÞ·êÀÛ¯Ã«D–þå¡•ÍnTgÊPÂ±o¸ d2¥T:­¶VËƒÊ š1@Ê;ÊVMÞ˜Hk[«?yûwxkèj1K°ß 4m€Ç?œÃ®*±A` ÀÄbv8ŒQ  ŽTBƒCÃnaS<  b37©ÿö»Ÿò’øJŸ¯ãHO €1¹'ö^g´·;ß¿Bùƒ2¼î¬‚}LL €±c­Ø•]våE‹ÿË³k'}ï…-/OÜ×o«ë]5j¬ Xu–wË„—º_ø¶àßÔ 0ÆâýÓ–²zzz§tì0ZÍÁé£Ù›Á†»¼µ–]ð/½n$Ó(nÅ5²Œü}Ñm§ÜØ;•£óšFqÀÞ¤BñîÅÛl÷Ò¨„Kñºÿîcyû“Ã—˜o Œi€œ;­åºÛž~é_¼²ã[ï;_ÇMJGÙ£ò»¿8þPnØ£j
-Ç	ÔÎè%<fQüÛÐÁûŠŒþÛq‚÷u¸
- Ë Ù°£ïÝ)éSo>]­{I÷®Úz«s^‘»Œ
-°ƒåWž3Ÿw Æ*@žÜº¯õ/¯\¤»žÝ¢÷(zä¯È]è€c @††3ÚÖ?¤-{•Í{&¯
-  ~€xƒÕƒÙ¼ò¶íf¿ý 1ÄÛ°É1Ü¡ò  4TøE‡éŸçãPùGâ-mbkºUŒA@óˆÿ¯—"6ú^häóye2ÃrrY<µÓ»U›÷¨à®6ÝÒ"ËJæ < `\ˆ7öÑÈø‡m4<<¤m†>þæ³tù’Ù²üci·ºýÝš­ú‡_=¡MûÔÒÚæŸ7 ÐdR¬âW …BACƒƒúÃÓgêÏÞt–’n8þíÅ£ùz«;ÞñúÉÜúÆ¯ŸÒwÝ(µt(aY¼Ú Ð|ˆéOõxÝV^åqÝùstík—øaQû(®Ä¬êº×¦©]múü]«ÕÙ9)Öc  Žfq·½RRgòÆ<Nê²tÍe‹ýàð&ï8UvÐßX®‡_ØãW"ÞTž¿ôœ“uîÌåÜûÆyŒ†& Àˆ—¥­°êMÙLV8®å€X·k@ïºq…öåt÷º]þ¼òäÍÏçm½×½Of8S< ¢a¾b `ìøûøýNuº—Š[]åtÁ¼éîeÁ?ZÕÆ=CúÀÍ«d¥Òúøù3µtQ?/Üuæì©j³Ü@ñ¢Šn, hŽ ñÛs¿20êHO«¥”eú]T»ÜŠãý?yFI7<¬dJßxb—þuù6å²¿úðüÝNÑE'Mö½>­-¥]ÞáÚÙ¬ š#@Š»­?¦àµû9Û©0
-…b°¨Xm¢ï—÷¯úC-Œ] @Óˆ?gïqw™þœ”ÉçÔbYêv«‘_½H×,[«Œ[u\{Ö4ýá’žJ×ÕÈ¥£‚<Ûä•žl1v MÂô+¯«Îd$²ZZuÿª­þ¾ Ž]Pw‹©–ÎUÊÈëënÕçïßäïdèUåKoÙÇ7nW.‘–éíã±bO €±«@ü½Ð¥Xc­­íºiÅKº|ÑLÿT´ž)nˆ|ë­suûs{ôÖÝnµQ:í¬3r®Âü~³ZÚ:ÿ €‰Xx“Õ’ÖKùV}ûÁ5~PJ›òv·$ôþ3z5Ù“Êþ!¶w€EG·=¾Q«úJºÕË+Z}P ÀW Åò#ÖØ„·L[g—n^¿W{‡Vé#ÍS:9ú8W^=ã§{ãÿùðóºmCF]ÝJ$8”	 4U€ëø¿èfJSzuÿ®~=~óÓzïiSµxÆd?¥ÝŽ]ýÃZ½m¿~ôôm·ÛÕ6e*ÇÁ€f§¸}mC[G%,Sí“¦(›k××V*ûøjKØJš†öå¤TºUé¶ãÔ‘J±Õ 4k€ø›Úªñóx÷KºAáMêêö7×õ†Szüs‹0X>Ñ,üü]¡ÌtŽçÈ—oü†ŒÀgÉˆ±lµ¿k­Û}f*ëSƒ
-³¸úá)—O-& >æü88Ÿ§Zv°‘¯áùÕ¢Úýóy4¯t,,öÇ„øuN°a¼½†N• qª4úFçlÔùÛ©4FDeäT©\*ÏÇêH[ÌÊ4Z Œç/ 3Aÿ»Ñ\?€ŒP]«âßÏ©Ñ¨×jìã~véÒòo³Íìé¿åößu¾æ*S BÀ/D½¦}ÏŒ¯qß³jU„Q§21ª„…£èn*ã0ÂÃ‰QÁæ)³§~Øl±œûo½W™½}Å½8œccÂ„n8™F7ãqÏŸ›ñbFçfÄhÔ«yÔúaT	OCÕ÷ˆûû—Ö“[vý¿7_zÚ›Ÿ]óâ÷W?õÜ”¾A3¸¸ão£eÔxGFæ—w"¬¶|y^ù¸½Áå£î¾-ø·¿ŽkÒ”ò+›_Ù8V?×qÆ3ªmYeÔéÚŠÓ=7àª«†ñßoâ§<€	“øcýkÃ©×/T§Õ¯—(¾OÕÖµ½qOkR‹ë:uö´w>¸nÛÆÃ[ú>\8–~NóB3}Ïª5þÕú¯â–(‡pQ×½ÞŸ÷Ð»þã~u¶%µô¼y¯7.üöj¾ €º.™Ý¡½-zÿWïÔ¥¦÷Þð, ¨«Å2uÂ¤”æu8ú‡Ÿ?á‹ü  Ô7”+hóþŒÚ•P6›—%ÇæU Ä’+8Ì8þyË-Ç&@  ñx;Së‡
- ÐH‚ŒqÝr @Üüp¼
-¤ ¢ ›w)ÓßI„
- ÐX"›
- pˆ]<üû  ¨@ü‹]XT  €†*§R  €¸ˆ¡rn°  9v0c  €*•Îë0 hDy„ý@  U ^€0 h8A‚[aÑ… ˆ›¢ VâØl… ˆ[”·Â¢ rB€  âæGeOtÎH 8ä
-„1 @Üü(–!þD h¨Îd•2‡ca bK%Zv×
-½úí±œ  6Ó0”Ò#+žWçÌéÎ‰3{–Z+—¯>ºÕïCU/ÐÔœÀ÷Ü9Äï|ù~áûW»=Øî<®j—¼±óöÉö¢³ìZxê¬w®Ø9ü{K³¦µ–Ñ÷¤stS.Ô}H¸Ž—@uêÞìŒƒŸH†1v¯Xížoçïwt>QÆ6B¦ûÚ8Åƒ¸“áïg¦l÷Òû…ï5Ò¥gY|cä™Wž¸!ã ÆÝp×þï3*ï†¿nÿ±ŒÊãº7Ž•Ò½íªü¥ü'™p—sŸµ{iº—­­–ÙÓÓÖÙž´º¤¬Œ_>öœ3¾›Ù»Q^>7G$íÆÁ/%#p5p]Ñ·{7ÿvFÍ÷‚¨|[q¾Q‰#>Fù6stÃ\ºa8¡ÇuÃÉ4ü Ù¶/£÷Þð:ÛÒºòUÓßhœöéòéãƒŽc¾cÇì[eÔ¨"ë•KU§ñ‚4ÞÂ—/ž¥E3ºõáï=¬KæNí7Îø??áÓ ¨«%™ÐìÞIZxÜd}å¾µ²4ªŒ  ÚpÞÑæ=š”¶”Íæd&Ûþ  âÉÙ¶³y…E ˆËÛ¢Ë?©”Ü
-„  ÄÎÒ_î%  ¡
-¤¼õc  €øùa•ýJ¨@  ‡Z  €øH¹ð  Bb°  ‘üV ta â2ƒc [a âW å£ô2 h$A*W 4T˜Œ  fŽÚ
-‹1 @ü
-¤xZD* @£ˆÉ~  €C¨@1 8”
-Ä(uaQ  ª@LŽ… h<A$‡£ñ Íï| 	/7Ø Ðh"Ž… h8?grJ%L‡
- [Ê2õ£e¿Ñç²Çr‡W P“·õîðÞ~=tßcš4}’sÒ	S—ÆU_;ª	âˆÀªZŠîD ™yí_ù{¼~(ëß¿ÚíÁv·ÚüZmuåùŽ:ºÚí9³{w-œ7ýíOoÙõ˜¥É…£Ð0F__oìÈ¿GûQ«ý‰qù!o–1^§îÇ›hò›of¯ÈFpT>¾TpÉàµQºÍt0Fb¨2ß_ÖyñòÞ~ãFù*g	†àëSz†Fñql#áïóa›ÞeBÉtÒìêHuµ'sÜÙw>³Å9"ß¯ª9‡~ß¦ÿNÜ©ß“êæý›ûW-ŽGù™øs áÆ„ŒÑ¡P˜¥:ÿ«ŒÐmfiùòm£‚È»Í½1aÖá§¼\%ŠJ·•sgßþø†ßúÏýíçògÆß|šOß8	ñÕÇÄk^ŽcÿÍ2ª|íUßH¶œ25úwFU/•ç g`´žê.:±Có{ÒúìM¿Ó¬î¶!ãÂžåã ¨«Å25£3©WM±ô7·<,¶Â Ä2”+hë~[ÓZÊädÉ±yU  ±äòÒ@6ë÷¹[ŽM€  âñú¬l7<ì‚C íŽ]ÜmÃ4:¬é–¶¶ š³ZpÛ÷\6«á2óÍìJù›oÜ›Q"Ýª–¶vY©´>&¢[†WÐ… M§Ïkð@ŸfµäuýY ×œzBekÝ|ÁÖ½ÏnÒ¿Þ¿N;†Òjkï”™H4RÏøÿR @“ÉçsÊöíÓûÏ˜¦¿v‰¿# ×Ö—ëï¸V—/ž­KÎÒ?ßñ”nyn·Ú&MVÂ²bæGqë]* h"ÞXÇÀ¾½ú‹KNÒÒsO‘·«†ÿ¿Ò^R(Á*áþqý›ÎÐ¤Ögôí»Ôá†H¬î,§R° 4‹lfXg—Ô[ÏžãÅèaùæ}úë»×éßÞ¾X'w·ùõƒ—×\¼H÷¬½WÛÜû¦Ò-õóÃÿ‡1 hn£ž8 ÷^¾Àò†Vå ¸{í.íÊéÝ7®ÐÞuºNéiõ«oÞ;GsïJ%Sõ§À 4¯ûªÕÈéô§ºÁPð»­‚5Â_\:[§Nk×WyIï»i¥¾óÎEš3¥Õ¹ðÔéÊÝ±Ú]~RÝn,¿[Ìa? hž¤×ÔVK	³ØÀß¿~Ÿ>s×zža˜J¦Òn…‘TÒ­2¼ˆøÀOžÑ-ï=M½­IYn¹ÒÓ’PÞ.ÔßGÄ°Ëû0 M Þâîÿòùbõ.¼›
-Nq@½ræ·R)L?r7JÕEò/€&áÕÛû²þø‡w¾Nœ¤{¯9Ý‡Ò)?tÓÊÝºá‰—•v«ˆ¯^¤n·bñÎ2œË«/SPW{¨ß+² )†c  Ð,Ü€Èº1òø†í:{Î´âMðøâƒ[u÷ú}jKšºaé©ên1ýÃ›x»uÜ¿j«IË¯SêU ^ãEc  ÐDÒé}oùzyR¯?ÎaÎr{Í™ÓÔãVW-èÖ/<Üö¿Üõ£Ç6)jU¼L(Ê„£ñ@ó°	=³kP?}lƒÞzÖœRs_L‘Énh¼ÿŒ^ÿt¹v íÿÎƒk´e@jkO(N&xËø]XT  Ð<¼®ª¶¶6}mùíèÔ.˜ï‡Ï±>ºk*“+èk÷¯ÖëûÔÞÞQ<{¬«*[a@31Sé–ÝºjŸ–o|Xï9w¶?E½-~¼´÷€ž}i¯þóÑÍÚWHºÓáoæ7œÊ±°¨@  éxUG[k«^ÎçõÅû7)—[§É-	ÜÆ¿?ë(•J)•nUkÒ*¥·‘,pØ
- šže%Ü©Í½ÖæŸIÐËŠ®¶àžæ1öû8HiGB* ˜Œ@qXŠ{)2 h0?Ê;R  bW1n384¬ŽT‚ca âKY	Ý~÷SZ¼ä”~Ë)P  jóN‹›Ò3O­WzúqÎÜ{¯³V._Í+3†Ž…úÏàmâ½ÂýL¿Ð|#â>FèR¡Ûª=–úuž›úpµMî´ç>oïâSOø£»²÷XÎŒî#øá5bª±øÚ;µ–pÆìëœÄ¤éO¶Qïs>Î"Â9ï‹3>Þµx_ã0îû
-½nÞf´Þ{_õÞ¨œ¯Ü¿Ñ¬,gåWÔ¨¼²fiùâ}áãÝf•'×i”îS¼n›d=F±½qKf¢xi”îñN¦R¦ÙÓÓÒÑ–²z¤œŒŸ-vâ‚0þŒUk>A_£Ô€£,Á—nd^ð¥,.kDüíô£säïðxÃ?I°f1Œ„J9vÐcŒŽ_C;ú2úà÷ñöÑ[—Ìø3ã´Oý`h4C«ÄKpÌ¾YõÂ60ßˆz££ûyí¢YZ0cŠþï/žÖÌÉíC–i¥xO u=üüvmÞs@ºhž>wÇ*ïTT&¯
-  ®á¼£-{5cò††3²“ú OÞ¶5˜ÍûÃóT  €Øü£`†ÚtË @  ù~Çvýâ–C¦iæîféh¼ 4ih8ÊçsÊ+¡¼NœÒ.o+¬;÷ÉH¦üó§[–Õx˜”–g šP¡PÐðÐ fwYú_o?_¯™?«²¿G¾`ëž•›ô•»ŸÒ¶Á¬ZZ[Ýª$??J¹A Íù¼rÃºöæèÃ¯;½´÷ºí[”v`×å¯š­‹ÎÒ¿üò	ÝôÔ‹jmëP"7DŠ{°» ÍÂñ¶’r+O¿a±Þ~î\¿ËÿŸ£ÐaNÜ
-Â­$þüÍg««5¥o<ºYí±º³Ê¹A M$—ÏêÜ™ZzÎÉnÅa:bÓòÍûô×w¯Ó¿¿}±æt·UBåšËë®5/i[&¯d*«ñ&¶Â€æ©?”Îè½ç/Q>ot¤”»×íÒÞ¡œÞuã
-}ÿ]§ë”îÖÒA¥œ?W}×:¥Ò­1âÃô3Ä]X Ð¼Š£Í²uæì©îõB1RÝVqÉlÍŸÚ¡¯<ò¢þè¦•úî;¹•H«?6rÁ¼éÊÿr•¿‡ã]¥ý@Ø
- š£ q4­-%Ópü}>|aŸ>s×úR›oúÝS©dRÉdÊï„zÿOžÑ-ï=M½­I¥,S=­–òR¬ ñjÆ@  Y”Î5’Ë*2*_Ü©à”ÔË·
-nØ˜þm97tLÿœ õr¡¸<c  Ð$Ì„¥íûò~WVÂ4tÁ‰º÷šÓ+]XÞåM+wë†'^VÚ°uãÕ‹ÔíVÞÌL>¯þœ4ÙLÔ­@L³4ˆÎ 4I€¸íy.‘Öã·ëì“¦‹’@x|ñÁ­º{ý>µ%MÝ°ôTu·¸•„íV îüûWm•ÕÒ*#Î¾ f¥a šEK[»~ðûÍ:sv¯?ÎaWúª¤kÎœæs\µ [S¼ðpìJwÖM+^Rkë”xû¨¸7: 4‘¤[E¬Ú7¤Ûß¨«Î<©”Å™ì†ÆûÏèõÏnèus•}÷¡uz)ßªöIiÅ7€¦“H˜êèš¢o<½G;<§÷¿z®?bøgð=¨žÉô®Ó¯_²ýû˜¦ïAJçk§€f‘TZmS¦êö-}zôÅ§ô®ÓŽÓÂ]êílñƒä¥½zvÛ>ýàéê·&©sJ§ÌDüƒ)–sƒ
- š•L©cr·öf;ôO+”]¾K““ÅMu¦R­mJwÎP»·OHÃcáÞÁö€få©ËÚüM±lwòŽtÕR>®û¡¯¸Ø…ÅÑx`bH¼Bëñ{®* À!T ì h,;Üip «Ž´E ˆ/•0tóm¿Õ’Å³ú-'t°-  Â¼Ã_ïí×Ã÷?®–Þ6gÞIÓ>hW}Cá{ÆgÉJ7'ïŽägªü¾yßÃðßÁÛ‚—åuD-u¿8Ÿ—ƒÖå^mïj³gÏêÞ»dÁ¬÷¬Øòò=Æsß–5ÿ´Ë®Ð7oÚº·õå}GîÅ:÷¿;|º I¸áqÉ¥Wß÷ó}¤3ßòuÍn=¹?¥ã¤xc$Q×þiÄX 4Ãy`jßÃ+vv¾úm_–úžvÞ~äí²>* h–
-dýF7<^ÿ!iÇ2iðùˆ
-Ã«ìÐßAQËo7«, 8¦äÀ°ûïÐfi`­TŒXÄ>øo¯Ž¨:žh×ù ÐR<î¾bxØù‹š¥à‚?&R%(*óìˆª Ðâ”Úùš[)ÚÏ¯5 >jU 4q€ÐÈ » b×•W18á.¬jèv`ž©èôjƒë €æ©@¼ê£jð‚ÚIÑÉ¹·%F®û
-ÅÛ¼å=þõÜÁÄ¼ Ðdbkdü£Á	«w[ÔüZ· Žá
-Äë¾²m‰£b 
-¿« Â¯7 4[€È¯>ì`/S0L¢v¬5¦á„îc  Ð|b+· Ù°V`8¡ëQ!cÔX Ð\ˆ6ãÜ €¸bº¯Ê×ª ¤ƒº£jV T! 0A*òø‡jì£ýjAàTù›à €&Òˆ_ÐØ ­@Ú
- €ºR°GÆ@  ˆ .¬|ž ÐHâˆª@Â[aÕÞyP½%ã+ Ð\R<œ»Í~  €W¨  á ‰ên
-ï@Õ½Uëv @HyOtÑ q$•pã#wÀ¨Æ €ÌÓ×ž=¸W-–Ü©ðˆL €æ	MYø¶ã»äÜþ”4X:•yÞ>2  yXkV¯~ì’Óg^|êK/Þºb‹zw¸¡r¼.0Óˆ7#Ör
-¯7 4O€øÿ¦»§ÌèÞÓ9œ2Ý   ~€Ì_´äâuÏ­¼}ßtî»ÿEs:O”ú›  õ*þ·lï“.úoŸ”6Ü¢MÏ<xÄlögI€¦	Õ[:/ºâÒšïi÷ËÛ;þ `âÈ ·óàþµÚ»g›dE€  âˆÂ\Ÿ²É´J·r( @½ ñü„éovkÒÐ 
-C  ± 1òÓÃë¾µï'” Ô­@ÌR–É ˆ f)@ÜJÄb, @CH¢   €Æ¤<žà Ä@Ý €†+/@*g%n=UV—¨Û¤Ú[`‰p€¦Ë«R€0 h¬I„ö‰Úo#XIu*ª ˜ Rª@^VpN­î©` Dq" Ð„H  €ÄôK„Sà 4 Fé8&  v€øû”ª'Q£Ô—U-PŒÀrÁËð¼2‚	 š´ñ¤¨Ò wp $©ÑCëfàïò¼ðeyž3¸ M ÅÃ¹[Ån,ÃŠXÄ¬ñ·Yå²Ú} ÍU”«Ç>¢¶æ[Fð¤¹Õö]/_W•¿+{™Ìÿ “ç-€1•zœJWŒZR®,ìÐõàüˆû£B î5Âž% 0>¤Ô}e†Â0«7ßN0HÂ×£þöî—	7þÕÎ{X¾½ZP°o; Œu€¤,·1.0ŠMu•Ê!ªò0b,]„+Õ¹gy ÀQf.<¹}Ï¬t£¤M#ÕHµI‡°Ì¨ëŽÁsÂT^U Œe€¨}ÑÒéÝr~ñ›mn¡0X½Ûê•Q¯K*|uŸ¨#s Ž2kÍ³¿ôôÓ–\´`ïÊeËWz÷ôí?b	ròŒƒÎ6ëˆêªŠsf ÀÑwÊ+Ù=;ÝÒÙÕ;©ß4`³Ü7¨Wz³[B Æ*@æ/¹è£kž~à«Þn ó^ƒNi9±ô;?0ð]Þ¤7|œÙ¼G,uŸr·YÔzY pÔÎ½ƒ»÷ö·öœýE©ÿiiçíÇÎ³¿¬
- Æªyjmëé—ý™´c™4ôBi„!î‚f`Y[õ7V•û†ÙU– Œ› épÿÚ,<ï¶ÑÃ5ñÀm•í ìÐ²4òÜ‡ð €q ¶×6g÷I…ÁÒ¸BðP&å°w„eb×©2êU"õªŽj× c ~Hx¡`‡*‚rh÷¸p¢ªû0+;Æívƒë ¥ Ñáíšç·rB©ä‘Þ 0nÄ«>ìj»hTé2r#—÷÷íÐpVš9½Ë¿yçîýþå¤6)íW*xfÂšÝRåê"êñè¶€ñ[ª¾v$0‚öHS:Óêyõ?ºéñnw¹”ûT¯¡ßöSé™i÷Þ~Mn/(Q)H‚§ËÍ•ÖŸ¹^^¦òØåSåN—«èç 8ºÌQ]XQ“](N¥¿sn[¿sŸ§¼Cºü…bxx‚“-MnY2ý¿H¯}A=¯Õ¾þâ}ª­oÔõ¨ÇŽz.åÛ c ^÷•×CTg*¸‹íés«Œ%’NûbÕáß7;ÒæO¥;,ú‚zÎþÿôòÞRˆØ¯ð » ñ~ÌûáP¨?g¤ãº;¥S8/UûŸÖþ›{¤m·¾Ý›æ|L3O˜§Á¡xÑÈ ë
-Ä±GõùS>0•þöw:<õÓÅÍyËÓ¾§µæ¦Ëµ};ï…ïŽžçOîçýo°=Ÿ½¾ÈëÁÇ¯¶\¾Æ˜? à¨°ŠÝAÅ u ôÐƒí+U±õöÂÁ­<ÖÝúVµXÒì®—æ~<ºeŸúZµ¹ËäÝYVpßðãTìC÷ZŽ1 ã )mÆ[ï½ ½^ÍÒR¬*·jÍOÜðHCaÇò/kø·_V6?²Oâü+¿(Íú¯þõžÎ„úþz  Í N±‹(òTOå qCa8'u²¥*Á.mUÏÎ·ƒç,/o›îc”$\i„/ê´SŠ¨T  c {ôÞèQ'–õ†;HSó}nÒ&¥º5ÿïÐŽÛ®Ô`Fšsþ»%ÇŸG”.yÿÎ›¶ç4¹½J D=^Ômªq à¨ª>ˆš¼å,¯ñßtKi+7QZ¦ë¸«~á¬yð;Ò#Ùú*8½ô+å¥ýÉ¯Ü Ã
-Äoˆv¬Ù
-=ó÷Ò‰ÿmäÆô4Í¸ê6ÍxþÒÜG¢?óµ$hô ¹*Ò¸…cJ¹%ÄúîòOþÕè
-£uš´ä3ÅËpõ±æßµnÓ^¥ñ£‘	 0†Hy+¬|.ÞÚ’Òêßß¡…CÛ¥³¾ %Û¢ô*‘§þFëVÜ§Ž–bHåiô É$¸VYh+¬‘’EšÜ*­{öIõn¾BSÎ¼NšzžÔqrqÁ—¤Ý)³âŸ´y8©‘±ŸQ}Ý£·ÚÖZªs ÀQ«ƒŽTqÏô—ïÿº†s_÷CÅJ¸÷¹¡‘.Ž—xÕÊ¨ð  4Y€ò‡4¦àí@è‰7Ù¥šÖ9ºš`ÇA ˜HHT££{Ë_O•ÛG­Ç©²ÎàmN•Ç¬¶s! `$Æ¡L   “¼-¤2}ü¢ 4Ä<íxõßöðµxç/wŽ±	 0vHºû”ë:Òëo¼ëYçœTÜrŠý5  udÍÚõË.?{ö›·lÙôýg^Ô”]
-ž±Ã\7Íƒï¼½< ïý¾ç²–ð2ÁõŸÂû c þ¿ÉŽžzÒÃ¹ŒÙ;Ä‹ ˆ ó-ùÈêU+ÿÙûcá;ÿMj›Î« ¨Ëp¾ž|qw®uæ¥Ÿv<¢MÏ<xÌ<ùÙŸq8 	 ŒUòä¦\ë™¯}´æÛÚ½k7Ç˜ Ä=ƒî¿}ÏkçîÝôÎ>K€  âˆù>e½­¬Ò­‡q(q( ˜@RšLª @Cbšu÷Ç¨Åu×$ˆ `bU ~€Äé¦
-ÎºS^Ê¤Å'$ÝûØZ¿£ l¡¸G{ªt>ƒº­8¡ 4Q€$«8K'M•¯ù7éäw»ëHùóNñÎ]»i™ôÐµn[Î?­eòB@sˆ[~XÉxwÈæÜðp+SÎ[*ýÁ¿»kðçë&„“YèÄ«¤YÛ5ïñÿ­MÜàW7©$/6 4W€˜Åö?ÎˆWyæÝð¸àZé¬/ïX9‘ˆòÚÑ×Ïþ‚f·ÏÒº»ÿZÝVñ”· €æ`ú]W	ÓïÂª7ycsf¤¥3ÿÎ­8òÅªÃ»Üû´ö¿GÚzûèÛ½iþÇ4oÞœâfÂ‰Wv Œa€Ç@âˆ7`®Ó>ë–W&7<ÖüðrmïsçmüîèyþäÞéUŸöïK€ @ó(Ž¸He¨­ TüÛ«"4ëªRuáþ±ïi­»ù­jII³/º^šûñ‘.­à:¦¿VmÅ.ÓPôÖUá­®jí4ÈX 0N$ÆVXÞøÇôn/lZŠ2¸UkJáámìxôË~èËÊæGÎÙ1ÿÊ/ºó_ýëS§$Ô?X8¬ýM  ã-@¼	­ˆŠ  n(d½­ìòÖVvq¬Ü(Vùrµà¯/°žòòÞc$B~œpeRk9e c f¹qÍ	5Ø–›}}ROÞýÇl“RÝšõÚñ‹+ýƒ0Î9ç¥¹Qºäý°Ù¶7§Éí£ÂªÚ±¯ wª¢[ÉýÛÛO¤ÅÛåãÅ[¼z£X´L×qoú…ZÒÒšG¾#=ùÒ¼Ðôò¯ü*%•Y_pÝ£®¿ÚrVàÀ €±©@üÊÃ­
-1¶jšäVÚøýÿì{%U}Ç¿§ïÇÎ{fwödA\–‡¨˜’­¤0C*h°´*šüaAaEIåUƒe¡¥V*Ñ+–¥Ÿ•¢ŒQ¨„J!n!DAAƒÆ¥p\¢¸+ûbfwvggnŸt÷½=s§§Ï9¿Ó}Ù¹{ï÷S{»ûôés~çwÎ¯§Ïg¿mùdÿFlùƒ»±eßíÀ¹7Õ¿dÙ{Æ†eÏ „r&y É+=œƒë€C3ó‘»ñÁåyñ_ßF`êýõ›ÏÇû>‹¿:Ü+y†×!„µó@–?|Gî®­¡šÎG¿Ç†k8°çlZ<\ð¡È­È96{þ/>s6Œ5ž¡ÏÈ»–ÄWciBH{ø°²ä˜Ô	›^÷ëcs+A6M,à¥¾þƒ× ïü?F8·~ËüÀK?ˆ<OáÈì&ãÑÓ_O&îtùÓ³›¯g¯BY[Êý*~÷at8D­¶€ÙéÏ`æÄgê«îFmüÑã‘-éF"Çd|$:¡ªŽøL†ÀvÆƒBÚÇñÝ­‚ÈéÃpäP/Ÿ<}‰Ÿþ¼ÊZ½nèÛÍsô5Ë íê€I•¦ëyƒø_†çëÓ\’Í¹]úbº×Þ´›’†}#qÉ3òHc)“]Fãä±¡Á­fõ}9ñ'„†ûLáÙ\’¶7dk¥gB­P‚†öL6¦JhÄ$yoÖ'“qÈ^7é¢é>Ó±êZ5hL$\îÂ
-òA6ÛÚÖvŸ)þU†!p„7VšB/°ý=rü•îBÏt·s}Ïk¤•‡·¢¾rä_9ŽµÁÐ(˜÷ŽÕ†xPŠ‡×Æ³Ë•É£0œÏ-ºœ=AŒdÃ¦úc:Ïî“{ež;S¥åXî;@^¦.#•}z°*ÇðšºÆTÁ²òéÒJÎU_}AÏìÃ<>¼óµ›€ÚœGYKô"ðÔ¡ÀqžMa~RíÆÔ7ÿræYÆ²È¾á›¼åðLlë•+Ã3‹-ð`"·cø²›ú{¡w=r ²ûs†n'"P”vú#Ý«ºþŠ]Pæíú2¡=††}•À¼oÚSž¦2ì+æyVZýô‹èŸÚñª«Ž¿øãÝ½ã‡gÎœ1²¯Ø‚ž6Svçn	è£sUË[mLí/'éÇq%L§iÇ¤<ïÁ¯$ŒFû×¸%„âfã°íìñºü­Óÿûà.¥î¢)m†ÛÐiÓ!Ë…º@Ý[K=Ð¡LOâpyz“ÞŸ^Ë‹/}Nó¿eÊ 9ÝÙß1'žÁÿõ.Œç]ô;¿¯ôÃ4 „BÜL^Œ¼þçßâ7/ŸœUúþA3žv|ëå[(éö::êkvÊƒk*…+ÎÐñŒ¼zXêmÎó*‘ë1ðJ`hö>ö9T}áî€m&6ÖÔIÊ¾½òz\÷„%â„0náµÅcÀñŸ%†äØÉx4DXvÙ™ÀOð¶ó)¥Z·5¨A9ewíM¯,åbø×eeôåi*«¼‘ý¶UœeÞ­/]ö>mŽk!’Ü2Í›íš$]6*çxéO£9.ÏÃ±¼T=,MòZ-ÿæ`x)^ßóRºúí3,'íylºÖÍeÐ\©%ò³3ýK™û·Iºd›¡‹Ö›ÐáAäxÚqœ›žV{¡¼Íh!„ÒU/KK$\¤@:ÉeoÇ·@Bº¶^†–ß¦é(xl;o;gJá¾xÈn„µØ€ÔÎð­bÓ-oÛÊBŸn™r»ß¶Ö‡®{C¥>Öõ0\–‡j–K­±÷‚½«¬<k«Ãg¶_ý,[Ø…•×’n³Z¦Î…a‡taQY	õ´»ºŽ‹êrs˜ô·é¾¼°’kÙsñ€‘Ø6Ö»°XÖ„B¤ÞUXÿýW­ñ…BˆŠª-wa…&"³Ë½¶…MãØ¥áléÊK£)/¶‹³éÈ;–ŒõwåÇ6gÀ–?ÛbÏÈyà7^	t@*Sé½’rTûÈÇ•Ï"s ¤ùÑÂò)"+]"<ºâÒ[[;¡uSyÊÜÖÑ;UB•°í‚G|ðÔ›.*‡|é¯Äk)§]XÉ ,‰À” Õ<•P·°ÑA†ÆÛÍó02ZØ´¢!ömD¥•ERÎ>•á2-v­…iñ•c}õ1`hAÚ¤qûì á#Ç"õE{èšŒTA=+Z/|t¥Œ<P@ï‹¼€gäû•°Ñ…²‹Bˆ01 ©æX/›µ÷íò0mÂ‡Ç"qÃ$›0J\qi÷‡;îë6ÚºÌlÝ†Zð<	Zà¹öH“nk£¿}ºÇ|º·$Ý‘R/ÐÖ…âz[¶Õ5[ú|º|!|3…¥>úvcºº²|z-”@/•%ÿ>m–kË&x–OÙøt]ÙÚS›|º³å6ÂÆ¶cå(,×
-¶FÒ4­_;Îù†µÝ/í+t-¡=Âú>ò#Ç7\«äâSv¾òmUšŠèŠê¨o]‘Ö5©œ‹ÊÂ•n]"?ð,]@æÒòÐ-(_ßº«Kèq™4—iG…å6m¾Ë.,B!rb…ß@!„øTš=N$$„"$1µÆ<Å
-„BˆÐIæ¤]XÙQX0»°ÚŽÐÉÆãqa»?{‚çkAú\2<°”Œè‘ä¿¨a¹?‹ò”…†lRQ4éù·ÉÛ¥»Zx.Oa(iyH®ÛFRúÄeET$pè¤kS-×ÈHÕB=²µqª`;àSÊæQ:šÖC'›áœ‰N!„dHÃŠ$Ë¹ó!„±Qyˆtò»drß}&†AàÞîåàpG¥yu=W:yÌÕuPtYß% |Ö2ƒ¥|}ÖÚ‘NNt-Qbsó]á]Mr·å]:©‚ºcÒ]Ÿåg\õ\Ú%']ÛÍµJè ‚ÿä9é^ô6Ý´µ®n -lS¥kjùvÕºÚVê¡²B!DâpOtB!Þ$v:Ž¡·MB!DLø·‡àO®Àáê"?¢BqP€¹àià“‘ë1~Ñ›«ì¥`J»tmf„ƒ€eB] Î­UY¤²ˆŸo’‹íZ^¸æðÙ{Ó|fÃåÉÂFÂ†A„oÜƒ[¶žõ–é§žúAõÂÍ¬ô„BD$Ø2±n}ãÀ/ ôÞ»ø„Bˆ¹-³Ïãñ¯ü%ÆÖÛ/¼ôµïÃüŒN!ÄÍ¶Kv[®ÄÃ_û'ì¼hpVíû!„7CýÀúÉ-Àæ+ñÔ#w¡ZhÑ@B!]Ç±y 8üKŒ¯ûæã‘Y•Æ.e"Ë+—21ëÀ¥L¸”	—2:z)“SÉDÂ™dkÛeB!„8H† W‚Ä T9g€Bˆ—QhŠÃ­‘Â¥¸¡”DÜPŠJÁ¡“ÜPÊ??§qC©dGÂÈŠÄ¶ƒ!„?$htaU{(B!ž$ B!ÄÇ€ÄŸ=–>¢s!„)
-9Ñ	!„—´i–d4  Ÿ&±"	kIc;ì¥Â ûè®¢“Œ`H¯dôŽ$>Ø&Í¹ä’wM2*D,À>‚‚ð¶gÂ‘'×dAW9²‘h’É•®òü&ÍòIpÔw[uéŒm$œ¤ü•g›%™ˆêS>>eÈ'|¶j‚'í™¥œWãå7B!R¤²lHªéÓYÆÁgÙ8Þ^¤oB¼™BøV]é2 ’å	”g>à¦Ì²>å,y+ôÉ—k®€¦ÅWŽEôð[j¤lÚ¤qû¾©ÃC'Q2­>Kò@ØvùèYÑzá£+eäzï“nƒ‡²ò#zÕâžI
-Å§;Ä×Õ”®«äÛˆK*Œ­+ÂÇ8øº–­4|’Þ·KRš—¸ÔË€´{Â§—9É¤YWã 5ÀE_Š„‡@W\z+í&ç‰´¬ x9ñYÎG¥ëôù}Ô+iyx¤¿RmœøBˆ¯·ØøR­Ð€BÊòLtð#:!„±	êÉ0^n(ÕZËÜíèe@HÜ¤u!ýÝ|./œ-žæ¶EZÇ²÷ØÒdKGO®a<êH¥ìbXa•Z»¸Sa×œ
-u «u. L„™ºPÉüî1Õ©æëÁ=Ù¸›Ó”þîÉü[É‰3ç¹éDÂzVÀ
-ËFŒPç(“5{v ¼'hÑsòžXâÌ9ªõåÜÙ…E!DŒ
-–g¢Ÿù$Xv«|ö:N¯~¢$Ë½tuVèC‘I˜«Ê0GGl÷îe)|'çùìoÓUWáHà77B§-/Eâ_º'l6)¯-ˆ_6…sîq†9÷#ó,Çý«Òf~ÃýìæÅaœIXP!ÖÔ2ZÎ)0Òç¨fwÂÚ•½i–Où*Ïóp<Ó‡¯¾*gù¤ÃçºI®ºÅqúÔÇUò
-^>½*eLšŒˆíº1ýAÎýy÷ò´ <7ólU]òBŠ{ mé¹¬aÃÝòèrÏ‡Ý±”}[åÍöfŸç¸êp`<‰ ó[¿ L,Ú1ôV¡«fkFÎÈîBÈT/Ï:¼Ž Dü‚0Õìzè'¸æ7WY¸„BÜžXx÷|{gOBcpÇWï}t–‚!„âdbáï½ûÆ/½~úÉÇPÝ0J¡Ba}ýÃ£è™Ø~OéC÷éŽÉîöÈüBX÷Ú¦>Ød²b8nSZ³çòâ„]r˜ÓÑ|-Þ”¾“ÏcÏ}7 Œ.M]ºó/”~`XSû	!„8™¼¾‡~ø^¬>¡ôýƒ%H;¾õr"9Ýp¶ökÂ6ƒcržõþP Ûò5±šã÷:&V€uçc¯ÇügTM’Y1¹†uÛN¬dð¥å´Ë>¤^‰äPäzØÝÿBpý^<èÛŠ™ãñDÂ0Ì”mëÐ$Ün7&ÁJùæ-<]Ë`ÝÂW· ’¸Ònº7ùMàR&Ô•rÈ{ÛÏ9g\æÄæ„‚´¸¼ ÀàÍd&,¦éç€SGÓQ]J°64hÚ¢x|ë6W—¬L²Ó–ë.y-¢iuéG·ê€D~ZPöZP­.]PGˆà->´ŸÓ¡ùÍ¿°‘=¼ÇsuSx]×ó*Bº€¤Ñ_hx;•úšV…ãBÃ€„‹lË\Öv~"Ô–Åé•½©JòÑÛ¶R¯kÍ«¦ûÂæ£&~f®~8¹¾>ñïû_Bo#@O²TE˜†4ÞÔ©uÐ¤k¶¥l›TTn'»†Pö,‹L[”¾í'ÇhÚš6\]_WmY›ÙzvE¾²×š¶¼mzf-zÌÑãˆ‡ÛbòµŸ¶¼yÉøœ¥OEVä+À“ƒ#³óÌÙj7éªª9<NêÂbJiÇ¶(=66Èžç³×2á^Çú‹o v|´¾­^\é]œõv`óõÿÉÍxñ§wal0òFªÂ¶t¹‹eM!Bl<~õRd®ü ðŠ›ëžDÒÎ7ws5Œ‰ê.û,&{&pàGŸÃ† "éŒ?}Ä¤Æ—vBéæNFÆãœíÀyïÎxû¿—¾sF¯¾Ù±|þÂaÓó_Åñã³èïu?£&ŸWPk%Å4fÝæÞØÆ Û¶±”„³¥+/¦¼(K~³éÈ;–Œõwå§è6»yù°Í+ ÜÛ²ÚÊ¼Ì|é½’rTûÈÇ•O×V·®ySpäYR>Ed¥K„‡@W\zkk'´ n*O™ÛÚ£"z§Jè¯¶]ðˆrýˆ¿mÇ]W£¯ü»ÕÆ#fß—±ÿpdG¾úL½mWð’åk¼3ß¹½;ý•to2K"0%h@µGÃO%Ô-ltP ¡ñÅÇÈhaCÐŠ†Ø·•VI9·rb›«!våAšGß2öÑë²a‹6FE^¨´§‹Ôí¡k>2Rõ¬h½ðÑ•2òÈi£v} þŽ±ñ*äŽ°}Ý˜ÿ$žûîÇ±çë×`ûõwGFä²ú$Á­×áäü-X\Êbü“.¬z·˜Ù!„rF·ëë‡ÓY‘ùù˜¾÷½Éaü½72.ý=QÃ‡èxúkoÂÔ;Š¬ÎÙÑq?6Õ»¦œÛø¦ÃxÓ•L¬K( À[Ší­Ðäñ(KZ\.¦$E½©¼®,—;.qã¥]f¶nC-xž-ðÆ”CæÚò¶hê,R°”Ëý—tGJ½@[ŠëmÙV×léóéò…Ð#ƒ¥>úvcºº²|z-”@/•%ÿ>m–²è£«ÎÀ¡ûþÝ¼®6À ;Iã¯ãO-‡Kïë‹‘]	uã8¹.…?9_70Æ¼7?Õ(,×
-¶FÒg)”2am÷Kû
-]K<h°¾ÏCüHãñ×*¹ø”¯|[•¦"º¢…:ê[W¤uM*ç¢²p¥[—È<ËB¹´<tÊ×·îêz\&ÍQ{þÜ/°-<Uw16_‹©w^»2ŽéÛðì÷¾„>`Û[îÜ’‰zwW8‡£Ç¢[Faž‹™>«–z ìÂ"„Ž  úxá›À–«Wøþ˜ÞýCŒ¬6ýÑ=‘»±¹±ÆUlyî¬wmé†'c5œ4 „Òq$]P»ÿ1²W­¾xñ­˜ê»xåMQÀ+?´ïþú«ãÑð@êÃx9‘B:†xîžçŽ`ûô§nZyq]d4.}Ã‹h2?úö Æ ‘Mh8-ÕÅ
-œB:‰¡ÞÈˆ<ü%lŸÝ¼êV 0¬¼»0üÏßã©ÝOÔGMèGaÁpìÂ6jC:B'kÄ…íþì9ž¯ésÉ@òÀ>ÂG2¢G’ÿ¢2„åþ,ÊS²HEuÐ¤w0äß&o—îjá¹<„¡\¤å!¹nIé—mQ‘|À¡“®Mµ\##UõÈÖÆ©‚í€O}(˜Çø[È@OdDžx¿öÜƒè»ü¯õWD'·Ö{xñ1yâ_pp6ò<Ö5ÖÞ…e™ŽÂâ7Bé<R#²ÿ(pò[ŸÀÜ<°qXŒÚü£'|ïˆ¿—ÄÞÊÒrY>FVó!„t4Õ n$â¿¸½g™o\¾^ÈÔ3ˆtò ›øäêBr¹ò¶É8Òõf¤ÝU>yu=W:yÌÕuPtYß% |Ö2ƒ¥|%K`øìý-Y¢Äææ»Â»&šänË»tRuÇ¤»>ËÏ¸ê¹´KNº¶›k	”ÐAå‘©N]–	–öÌuÍÕ•êSÆ€³›5´µ­0ÔÃÌ$BvaBñ'äžè„BŠ0?ƒ‘~B!Äû…Üýè¼ñbÌVùBˆƒøcüÜðí=ÀÖ1è¾‰óßUýÎžr‘Aûd°]F”µ“L!kÓ™Úækéï´íj¾ÇG6Œäß4þì³LÏÉ;¿aáï^€#çœ³íÏ¦¶÷êŽ­,lB!nÆÖ!8g}ßz†ÖÇÇJï½‹_A!„¸™Û§¾öžäçE;.ý+µïÃüŒN!ÄÍ¶Kv__<ô1œ5Ñs‚½õ„BDzúa`ú‹8ëuïÀÏ-¬«Z4BH×qlÂäèÓ8<ÌªP(„BdœŠW/YœI–6©.ÓâZX²¼r-,³Ž \‹kaq-, í×ÂBÙµ°„!„t<¡®ÿÅÐø+Œ
-2!„Ž3§ë3È{#gáüM•¤ñòÿ’™åñ~ Éê¾ô@!¤c‰—©Š?zoßYˆßú<°íúºçqqx
-xæ+¨}÷=Øwê÷ôHÒ.¬j•‚&„N"ö:âÝÛwÞ \ñÑÆš$‹Mß5¢ãóßŽJdTÎÿÞ»±÷ñÿHŒH¯Ô=Bé8Ï#23±çqõ€oÆò~µébc’üì®¼ç÷MàÙG¿€Þ^¡'²ôß@!¤s¼…Èxl?˜zwd3W^|áxéþ0zÝýÀèŽåó¯þÎÛw™Ç@¯à!• ±óA„B:ˆ“±Í¸ä}€^\}ñ™/cÿ°ÿŽ7`êí»€ñK–¯½êƒ8ù­[0´NðØóâ¥èBHG/Áž€ÍW­ö>b®¼S“ŸÄsßþ8öüû5ØþÖ»±ËêßDÎ¹§Â[ ²	•ì7ÓD=4]äÒ$’´0¬m’Œí°O”NìÓŠN2‚!½6Ã—)œÛ¤9—\ò®I&›ê‚eKù¸&Í)KZòäèšX¨-e,T*••KÒkÈÈg²"àžp'x)™$()åÙfI&¢ú”OÙ ò	ŸŽ	žñWŽÉñF£{ ?¿Ó÷¾·î4¨úGòxØn5ºÙ€é¯¿	Sú0pvtÜÍãõóF¢šþåGtBé‚´{)¦ÛÔÐ/]êŸÏÃô81BÑQ­þTô³?²	N» 8
-‹B:Î€üòè¶èSõ£Í×bê×®´ç6<ûØ—0ÐO¹è›¨{+áfNÖ»Àœƒ«8Œ—B:‹x¶yd€ß6^½:À7bz÷12 lúÃ{"wcsÝ‰}’Ÿß‰þ¾F÷–ÓR5>¢Wh@!¤cŠþ·÷6`òªÕ/¼Sý·çÞyWŽÔzö“D6AÕ»¹8
-‹B:ˆÁu‘ò«Ø´ï³‘¡¸qåÅþÈh\øþÆA“ñ˜þÍÌcý°ð!•j½e]]kÉ©6q§ÚI&„tkÝdëœžø\úoó9WLaL÷7Îo^|ò˜<ù<pÁû¢ó†5Jç"ãq+ìû>6Œ î~¸ÒŸOGa¥‹keÝñzø+î©¼ídÈHé\`R¸÷Žñ~¦éþviwš}örÉk)Ž`µÒ6¡¹mzß‚FØ`yTÔÒ}=Ë×rãV_î‰íÀäØŽ<Æÿ7pÞÍÀè‘²µlnpô1Ì?ýœ\ 67¥g)ÞTgòžJðò!¤Ë`; —C6°Ä8žÓô;èÃøÈ"jµÌìþæNÖ¿Äke;äCú@dWâ‰!*ð{v:
-‹{¢BH§z¦±PÅø(’¿”Ñ‘²ñÂÒ…Uva¾ñ².PW®|Zô5ÌÑßPWào;'¹n‰?H¸4cÄÕ7˜ž,}¨Áêûó,—tI_‹è³×q6?Òþ`Ér/&YåÃ Sé~Î>×¥÷¹ÒnºWºß¶©ì]yÜûÌûì-Ñ=WÞeØãðÑWÉ²1(Y6¾eä£k>i,¿*Q~EuÃX¦°]rÒŸm“›ïrÒ^¨‡L÷Zsz"»Ù.,ežÊ‰Ï¶i<×”@!ŠºUpäAFúehÄ ©-œ$­§SvEÊ³HÙ«éÌ–*X¾ªlÚ‚rò´é«äw™²ñOy4ö¾qúêò
-y…­Ë³r´uÊ¢¦·ú¼4æêh6lÓÛ?àðr†r…ux&iþj3(Ó…Åo'”Ë€´¥ìƒ6É[Ð¢4ž¿}â(‡Ê þîãØyYÏ,?¢BÒØó8†]Îbb8òËF.¿±zot@!„¸˜AøÛ—àÈàä«ß1ýäã÷ÿ¿  Uv,f~½    IEND®B`‚
-PACKAGER_BIN;
-\Packager_Php_Wrapper::$Contents[21]=<<<'PACKAGER_BIN'
            ¨  6        ˆ	  Þ       h  f  (       @                                                                                                                                                                                                          Ý Ý TÝ «Ý ßÝ øÝ ùÝ áÝ ®Ý YÝ                                                                                     Ý RÝ ßÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ãÝ Y                                                                        Ý Ý ’Ý ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ›Ý                                                                 Ý “Ý ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ                                                             Ý TÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ _                                                    Ý Ý àÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ çÝ 	                                                Ý SÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ^                                                Ý ŸÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ©                                                Ý ÌÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ×                                                Ý ÞÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ è                                                Ý ÕÝÿÒÿÊ/ÿÊ.ÿÔÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÝ ÿÞ ÿàÿâÿã ÿáÿÞÿÝ ß                                             ñ:…ß’ÁÿŠÓÿ†ÖÿƒÚÿÞÿ‡Èÿ¥ÿÏ ÿÝ ÿÝ ÿàÿëWÿóˆÿö˜ÿö”ÿöÿöŒÿõ€ÿ	èxåÐþ?                                 ñ ñ« ñÿ@ßÿ“ÉÿÍÿŒÐÿˆÔÿ…Øÿ‚Ûÿ~ßÿ}ÞÿªzÿêRÿõ™ÿö™ÿö•ÿö‘ÿöÿ÷Šÿ÷†ÿ÷‚ÿâÃÿÐþÿÐþ²Ðþ                     ñ" ñÞ ñÿ ñÿîÿ“Äÿ•Æÿ’ÊÿŽÎÿ‹Ñÿ‡Õÿ„Ùÿ…ÞÿÙóÿ üâÿö›ÿö“ÿöÿö‹ÿö‡ÿöƒÿ÷ÿöÿÔðÿÐþÿÐþÿÐþâÐþ(             ñ ñÛ ñÿ ñÿ ñÿ ñÿR×ÿ›Àÿ—Äÿ”ÇÿËÿÏÿŠÓÿÖîÿ þûÿ þûÿ üÛÿ÷ÿ÷ˆÿ÷…ÿ÷ÿ÷}ÿ÷yÿæ²ÿÐþÿÐþÿÐþÿÐþÿÐþáÐþ         ñ  ñÿ ñÿ ñÿ ñÿ ñÿðÿÆÿ¾ÿšÁÿ–Åÿ“Éÿ¸Ýÿ þûÿ þûÿ þûÿ þûÿú¶ÿ÷‚ÿ÷~ÿ÷zÿ÷wÿñ‹ÿÑøÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþª     ñ* ñý ñÿ ñÿ ñÿ ñÿ ñÿ ñÿìÿ†ÂÿŸ»ÿœ¿ÿšÃÿ òôÿ þûÿ þûÿ þûÿ þûÿ þïÿ÷€ÿ÷xÿ÷tÿñ†ÿÔïÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþ3 ñ‹ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿîÿ
 gÌÿ¡¹ÿºÎÿ þûÿ þûÿ þûÿ þûÿ þûÿ þûÿú¡ÿ÷rÿê ÿÒõÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþ– ñÎ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ"åÿ«èÿ úûÿ þûÿ þûÿ þûÿ þûÿ ùûÿáÙÿÙÞÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÙ ñô ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ€ûÿ ²þÿ¹ýÿ½ýÿ¹üÿ«üÿ—üÿ¡ýÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþü ñþ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿˆûÿ±þÿ¬ýÿ¦ýÿ¡ýÿ›üÿ–üÿžýÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿ ñî ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ{úÿ±þÿ¬ýÿ¦ýÿ¡ýÿ›üÿ–üÿ£ýÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþø ñÂ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ
 [øÿ±þÿ¬ýÿ¦ýÿ¡ýÿ›üÿ–üÿ®ýÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÌ ñx ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ&ôÿ±þÿ¬ýÿ¦ýÿ¡ýÿ›üÿ–üÿÀþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþ‚ ñ ñõ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ òÿüÿ¬ýÿ¦ýÿ¡ýÿ›üÿ ýÿÏþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþùÐþ     ñ| ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ)ôÿ«ýÿ¦ýÿ¡ýÿœýÿÀþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþ†         ñ ñ¹ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿS÷ÿ¦ýÿ¡ýÿµýÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÁÐþ             ñ ñ¶ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ ñÿ òÿ
@@ -3798,65 +3711,997 @@ Søÿ·þþÏþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþÿÐþ½Ðþ                    
 îÿ„Ãÿ¾ÿËàÿ ÿûÿ ÿûÿû½ÿøyÿñÿÓöÿÐÿÿÐÿÿÐÿŸ òÿ òÿ òÿ òÿ
 îÿgÍÿóóÿ ÿûÿ ÿûÿþêÿî“ÿÓöÿÐÿÿÐÿÿÐÿÿÐÿÿ òÿ òÿ òÿ òÿ òÿ òÿ¿ÿÿÀýÿ¸ýÿ¢ýÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿÿ òÿ òÿ òÿ òÿ òÿ òÿ¶ÿÿ«þÿ þÿ•ýÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿÿ òß òÿ òÿ òÿ òÿ òÿ|ûÿ«þÿ þÿ©þÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿß òP òÿ òÿ òÿ òÿ òÿ-õÿ«þÿ þÿÂÿÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿ`     ò òÿ òÿ òÿ òÿ òÿ?÷ÿ¿ÿÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿÿÐÿ             ò@ òŸ ò¿ ò¿ òŸ ò0Ðÿ ÐÿŸÐÿ¿Ðÿ¿ÐÿŸÐÿ@        ø¬Að¬Aà¬Aà¬Aà¬Aà¬A€¬A  ¬A  ¬A  ¬A  ¬A  ¬A  ¬A  ¬A€¬AÀ¬A
 PACKAGER_BIN;
+\Packager_Php_Wrapper::$Contents[21]=<<<'PACKAGER_GZIP'
+‹      ÍWks¢Hý¾¿‚aj«&/›‡š˜¨S€øŒñ`ÈÔ|@hPE35ÿ}»Q3êht2»5UB7§ï¹}ÎåRæ?Ï=—˜Á tF~¤SI„‘æš;òaôGäçâ_ù¥–ÐSÛ"Î,¢-ó÷5 ¯ è³ ¥^‰”
+A§h Ä’ í(ßÇq*fS£À•@ÛŽˆŒ¦SFdˆGŽ#²Qõ7IØÐ±ìh=ÚH‘&	”´öð0Eá¸+ÈíÜuüá> Ëå@òmØÖÆð*€¾Ç·
+¤GŒGoPw0/YÌÐ‹ù0Z¸°Îó¾%®Ç}9)úf:®{û‘ß}Oyôjhš&êë!d 5<Ã¬f´´6Ð3x†]c(|â™ôjæš¾¾Éeï¾ƒó¯_‹ç –äQêP®†ýˆp”v€¶MHäáœI.‹åhF4‰“‰‘i†éŠUÅWúÈrÅM‚ÜRÿ-¤ià#ÁvÅ¼§…Ã$ÝC„V1ŒÝÕBä—‡¬;ì1ØSÀÌ/ ‰Åz.
+4?4GW “[W‹à'êòŠ9{#srŠ»Hbþ&ñsI%Ä I°h›Òý{Ê±ïFÛ ûÆþ3ëÙ_@·ž=¸7"¦ŸùA’IÖï¬N]{LáÌZáÝä§U ³— 8™àuo3¡­lSe3µ<,ÓÀýôQ÷ÎÖ´¸ó­f­àìHá`ÿ¶í¤¯¬½ÝrÒWãT<f‘¼ü'Æß,ËKŽ”ëV¸ôo„ÛÓøèßGŸí5ÃÛgÆv£Y3í3cžpž†ÇéÏ÷tâƒñÙ>°äHóÛ5ãá˜=áV»yO8z£5o™áFØÇÓ,¸ùo¼Ú4¤¡EÚm‚cßºh!Ì¦/…oucªQ±F:$ÙeßÊø§ÌsMtáA§7ëã	Ž}$¥S¸çAZ	²êòME|è˜\·“ë8ªÃœ=gZÉæ€Ê\ÀIx3Nnd¡:9¼Nð»RÏmrŠ	^RÜÔë	‘Ke÷ÝÜ‹ˆE˜×x*¢/ ~ÄÏë]±,u÷Y¬ŠuµZšùÍ’¥j=.Ýðú1/Œ]´¦AÉ¢•ÅŠIDIVZÝFFPkµIì“2Øò”>þgô®Ó?é½¸>ÖÚYé-Ñ ²h^„KÍ`küÖÕÁMì¦qŒÒãRû§Ø:Øê}¦vTûU¡*öÕ²E?ªe~¢LùšDUŸ91.YRÖiÐƒy’1_ïÊ1Ö-Ë*ÐÞüÐþ”OÜÿF{:7ÜÌôko¥[%…¾¨bí£¨9ÅÚ_,µ´»*Sù}íÇ¯Ú;åº¤¶9A§ÏèvGWízGæ3Ë—ÀŒê>I8Ñ-÷†Ò´ã	Âºì©û“¾þÆ…šò“7 ý2ÎB;ÐgZ‰œ=)¯Ô×ª³n;Jº»TßioHÏøÏé—Nb°.ÚOzœ¨Ž†¡Ä÷†9‹ñ3M’»¼Â9O*-´d‹9xß‘¬~EéS’8npç?ZmXÓ²OÃ·*ÿ›-þÀõN§  
+PACKAGER_GZIP;
 \Packager_Php_Wrapper::$Contents[22]=<<<'PACKAGER_GZIP'
-‹      ÍY[o£8~GšÿÀªÚm;
-IÓ´DÕ\µÚ}˜—Ý}˜Õj˜02NÓN”ÿ¾ÇØCédÒÎh4lŸËçãï˜‹×æEÉKÂ‹°,/b’³Ò'óõÅ+ã-Ú1
-ñZ>eIúèŸ~z¤	ŠþÂóeŠèé¬¤¡¿¤éÙé›¤(ISLo·¿¡%$¿Ee‰Ùob‹ÛÚeåî"«Ì­pPPÒØT¸°aÈELØéùËú{s’à8y8=7cB3ÄÎNqà(Â‘M
-œ³ÇŸž[ÆËàY‘8VˆáK9gLõÍè¿ìæËûùI›y[4°Ä¨HºÂÉ|Áüœ¯¤bªd)–3›aRÿ³ä=I£çdu	>ðñb´Ö9ü¡¼Þô¢ÄÞñþÒÌÞ°¥vÃ¿!nsÝofös³úEýS±ùÇ1ù‡²¸‡Á‡²÷•ñÊ¸hw#(M›^dÁ²Ô
-Hô¸Î'¹ïÎzëŒRëœÞc°†¬å%äMâYšäØ^,ž3Á™“|Å¾wY<ÌÞÍ)Yæ‘rss³qÂ#º®þôl±q2T2LmGæèz•DláO\ô%À1<hÉˆ9'“?m’¼XÂIáfŒ»µâŠQ€X 
-l„F˜ÂEI>÷Ý²ººC-YHRBý“±;ýàº³J'Â!¡ˆ6D<ÇÒœ"c$ó=@X’4‰ÌZ)\Òl$Éa«ä/È=¦òc.KøåÌ¹Ç]XR¬;+”º³ÂÄZ¢üþnä½ï&ÖÉ}R&GµÞôÃGw4î×ëÎH³BðOŒ[ã‹ÕÍ—P8èî|²_Öõ™\Ãñzü¼»ô‡ 	 ‚š˜ug<mîfKÈEÉ²ôÇ lgä«vºÔÍÝäOÍ‚F´ñ`—‘•ŸäPL<þwÄ‰kóMšt 3×ªþ8ÓÉyô Íò@Er ^’tQ‚Š”€Dn¸2štêJÇšQœ¹¦kz“®ñ«­m9Œ";`ù:N	b>å%­Y7^]*9HÃ59S[6Eo°åñxT<€¡
-\ÕaCÆe¥¬sžëþª]7ÙÂ2t‹ÖUÞ£4™ç~ŠcÖ7pfLz‚A§ÚW¯Y±¬¯ã ·b^ÏúÍ‰uÕž˜Ñ4ØB­á'Ó0â¥H&8ä­h½ZÀ£?ä7àŠ¢bã`J	]7Ê®;òúOk /Y'†)­O¾âÝ ¤‘¢ §ë()‹=úAJÂ;uÝ¬Ö š7BI^Ý¡•ìL0b
-k™–P†s§Äy´VkÐúf¢••,æÔè oÙ«ö¦ªóÞ^•UQ7nËGUÊ¥‘zMsTÜ¢YeÇ®ŽóÈ/ÿ†÷¢MEÁu+-§0v’?!öµh½s5O«>¡%4‹ÏvO¯V6õ×ó ˆ¸«Ays·ï\×ü%É
-BÊ™‚‚ zÙo¼-z×¨
-RuZÝX‰#UÒ¨eMFDž'…"®àèoÚrm{Ã¦“Ù‰›Nhà4°L¦ºCKþš<5Z3€òV9-)udí´×÷‰òäÆÞ¶µiúR›‘BÕ»éôŽZ»êij¡v‹Ý=‰¢ öóeSmA‰Vk½]L24Ç¾ &Ù\žJé9¼âÔˆvJoƒSÑ”ßèÍŒ( ®
-© ÐÙòñòåÄI
-á+ÍfÛr¢ÞÿºeÛÝè‚%bÔØ¥8Eœ€-\Âš¿øMûªjÚèj¯õlÛ}gÇ2s9{øñ_Ûë±Y‘¹cµ¦o§ƒ…·U[A&f¼G‚ÃµÊ?œ¯UDË>ojJoÏo×Æuïßó	qè%”—¸ïVþ"‰"œÿ$(¾5þ»´ªâÊé!9+~dù”Q'å@ÖC(•|Wp)(•Pz³çã|Ý›&ª”8Ý~êz£KÎ3UE‚kÏU{\ÚcOoCä€ÆÐ^T“I×b=àÉh#hWílOÛ•NÅ'òsØšn×©Á8ÜŒûüT)Lè*@/xŽë«'î¹NöIÇ0ò¦Šß ]â¾.¯;’ûl§£ŽFçª©Áp¦7ZílíìƒtéŽ;ö¾‡tcÞÈí±¦Ùò·rn|éõ¸ù>Î]Ž/÷Ûí‹÷ÁŒ»¼R¿Y&ëQÝ7ô6f_éÔw{ÛvY4hòÃ¿M»þÊq2¹B×®ki'›‰®dgN|+zv'òkÖóo¦|~äù]ˆbÏìfÓmÚŒüJø;ÙnÇ.´½™PöJæIäüü'oÙÿá”¯Þ²>%!%%‰™óaAI†Î>pí[©}nì×ûHI!vFâøó­kÁÏ¿·¶g©¦\Käí=¾åÿ¯rÞªß“]®{ kK;Ù±"Ù™Û›]Çq²?»Ž´™Áì:ŽÁì:Ž‹½Ùu7»Ù¥²7¹*å›C“Kh%¹äÎz’K4Ðââë¾‰6GY;0Ã²»[ãädûÉÎÜÞ<Ž“ý	x¤Í&àq|&àq\ìMÀc¸é¹ÞvH«KÓ{{³µòtðU(´’­2OÈVK³Ï¾†~2šî¼M+‘Ñfü¾¶újâ=å²×M¿ð>ÏS¯÷XyÃÑD©Wª7n×Ý·Á^O×ÿÃÜ'å*  
+‹      ¤¼×’óÚ–¥w¯§ØÚ
+]¡«à]©NuÀƒ„%<pï½ÇÓÿéîZQºêdF2I. ËÌ9æ7 ’ÿþ_¯¾ûëÈ—µ‡üÿ+ô÷_ëYÜCþ¿‡ñïÿúÿÛ¿ÿï¼Á9¡)üµå_¦Ëªî¯¿ÿ}”AÞáÿ²=é/ø_aô¿ÿú»Ú¶éß@ð<Ï=Ñ—”–xªêtß†àŸ†ïFà»3þ×lËþ~ñgÏgmÕÛú?ÿþ«Êë²ÚþÇ£ÿWá¿ÿz;=¬ÿøOŽƒ@ôg¿ÿ½É¿]]=´ÿYC˜¦iðŸ¯¾®â)ÿ—%²|©‡ò—ùØçÛR§æ’§õŸãþýÿžåÅúÿþn‘ÇË;œ¬Î‡í¯:{[ÿéü¿ß©»ÞÝÿíÑý>‚ß-×mœþ‹bÍßáüÌŸ'þ%»qùÇßÿGŽÿ¹ýþÚý·aÿO-‹¢øÓüŸûðŸ÷	ù_êSAü¹ý¯ôiŠ·-_†vfúû¬,AÿÏÂþóÁoçõö.è¾æ‹=Åinîš¿Ý¬û¸Ìÿÿ·®–¼øÇßY¼ÅÿöÏ–à4”ÿW¯9ý—Úcë„©™÷G·ÝJpË÷¿îÏŸoÈ1Ú{Ï}w©Ùÿ4`¥Œu\aTÉäÀ«bž·Í8F!Ùhÿ´R]ár­?¯	Õ×VöeÆb©ªB_,1ƒ¯ÏU5A¼™êóKeaË½³\Oçæ—ÑŒ„t­‰Žf¨C&®ØíÐáyÌ•£š£(_T1à ŒËŸsc»ëÉM|ÉÐ·µñAn>Ý3y„öãÇ”ªtÆC=$êàÏÐöƒl­Çh×“'Ït0ÓWþA3ŽcztAòÇïfˆž’h¡¾à ²Û„ u´!ø,µMW`Š Y"Á”€Rß7{ ªt¹€k+’áŽMáLü-xÔ¬%Ž~_b˜®…!¤Ÿ¥õ›cŒÍ„ÔZ1ÁºZñ>ð½¬+ÔËR3Æ”\ƒÒ ¥>­gêâ¹fOc·º*µ±’Hš	‚ièaŸlÀø*bçYÑâ+m¦¨!¨m]@L´BÁà	4G—ãüö1¨‚ÔVÛ
+è£½®›/AFù‹ÍÁ˜Ó&ºï §—_ø 	Í×ô©‚R6tÄÌõEy 6ª¯ãBÎˆ	äåD0ú›ÖÈ¨Ø}1ëh3~lOÂôjpÏw …êCa¹!O
+¿ìßÀË^þ@°ˆÛ×dbaG¯O€3HsTL`y€êb$Ëº¾Õ,0awŸ¦Ž)‚Ýâ\–|Uáó6á
+@Q•íæ÷_ä‘æ®€
+z…tó0„Z¥eÓ* y¾v°_jÛ¡S` bü†Æ34Es&cZñMše-^šR„KØUt<0,@µ‡œœ#h¥óo*ì'=²FÌÀ¦{ÄC! 6 ?‹Î•DÂ€—ž0%»EOÙ­öMhï“•¨ïÕeJÀÊCejuŠ?‚>1ùÎSµš07_‰Xº°xz—o%]Çá~Ë“”i…Q­}sùeuñÔIÎ¾†‚£&šò0øÔ#ucì6r‹žŠíÁÙ0oõ•ÕË3*–s¦-^·‡TP‹Œ[i†§¨Xw7ÿ"½AáˆŽ^KGÍ{Ê#Þ%:]Cô{yÈ¬C¥c6{~ÒA´˜×¢À³²Š³`”ì>¨u¿"ŽJJBÙ3çÒ ]‰(ÉV‹È /]vpŒ‘¸À‘Ü²Á›Š|ðsN|ª&P Ú»ÑÚ‚¬Ñî•Æsýž8±ÎÁ,>\Òúb=tè©[SM\ŽÉ§"žùf½ÜP%‚ MXL„_SÌPSztŸàúÒ3ÎgVœ68»ÐæÊXwÖ”k¤.ÈÅ‚ ~é’âžÒ!òîŒžãÓêL
+™’­ä\ü²5ø0ÑtåŒ™h;}",®vx¼3çUÆµ™ðÀf‚ûàÓe;æøÃÊßÝ"œô:½¶Ð!
+	ìðA¤­=Y†Q˜jÀ@7!…+[-üDvË -¶š÷òùoP.¹õ]b]ÛÂ2hœçrÞ™”.Q–VÀØœ^ÙÇúXßò9¦0Ã¶|äÅ¼¡`$oØ¶üª¾©)AÞoHW!rŸæ1äyrž±ÜÜuC¦3H%bí–›;³.ÏA,éwîæôCìÀÆJÞêe|eæ"ÙÁ8^i÷_{b?Ú/˜Š›78Ô·˜êˆ¬¬¾¬Ÿ¥º›º¹þ£oêµyú"r‡v&«^”Ñtp0Â}ô<¾è’þ7æ »æ‘£2mâÄÇ†—Uµã¸áQúGY6Ñø®F‘99§OÞ×^º®õ6!Oj‘…Þ¤žL‡n\37#½ì/Â®žÍöÕÒ÷•®NcÒÕÍÑ'à²ðÙ±âûÐ|)N¸ÒLå[é„ÁýœQø~_{ó˜ˆŽ9Û¢6Kñ+{g¡eµPb+Äp¼7G¢ø©#_O1øNwZa™‘È„+l*}Œ3$oÞónác±¡³Þ‡}¸nÉOUqø†R2ñÇLéiËØSåÅÄÿ$ÞgP/½%G´ªÄšäâÝü\°´n¬¼¥(Óq|0”Èp~øéº‰Y:~ œRœY€]zWGe°:ÿ~ìóh‰=R
+oúŒò¢T¿dâ,)c@å£Dú…’Q÷Á€-vNèGÔøô£¦×ì”	Ö´[¼0{.ÓÊþn†;&äOÖ%Ù/&íS¬lÄ€VGeL	¯7‚!eQQÁkk  œ±EUb>ùÈ™‘ÑÆ@hTÌHÅ¬£Ÿ¥~²¶cŽÉÏHœ_€$è7º€	ì|Î¯ä¥ÖºtÌ»²$” ž¸ t–àPþ/rÎyºTLåÄØI2M›š¾ý@C±ÏZg3ã Vf&;t‹üézû¾ã×ˆœÐ+¹>½7¬>ƒ‘‰*‘L‰âBF?Kˆ‡¾¿¶¤$üÒ$±1½$ÁïvPöË3N(PŠMÜa0mr4Q•mÖ,j SÙI=I.áÏñ¨)c´bnéãeeøôlrºò.°?Ü÷Ó½íQhh€"æ¹iúÍÁ»ÝÝÊ}¡{5¾â©ÏÃÉÉ`7%ØêN]¿¾xFÓYˆï9a
+*+¦Rý#ƒRŸ+´˜_`è9¢gìú3öt!­©3d˜¿»˜üŒFT(¢†Öýž9~BÔÃi_q©°5p`Ü“é9D³“Ò¾ôô1EC±wßò¹vOœŒ$6=?O°^2¥Cˆ|>ºœmíY—8Dd+ö“=‹à5¨ÌY@€âAïaœò®¦:¯–Ï8º5f¸-0QO7“ ëBþš íhf<¼T|2ÞÚ‚†Üúq¶ýäÞ™
+_T£®ÐBæà[™‚c[Å'¹ÙðE~ñ`øD4×©Gãñ`wÖþÌÛÝ	T$<Š„2÷¡#†!ž¿3¬ùù‘©)TWþæÕÆ»Å§ŠìÐÑ'¿‘ù7K’k½°„"Š(×æjÃ%™òð*Q‡œe|Dêœ]†ÕS—ŸT™Ù±²Ô€
+J?)ÿ…v+ÖSG¿›¾ziD°;cÞôX¾Ø©]ÒÈq.ülp¾¼b¨AŠ ™Ygw¹áŠ`që»æ‚Èòí“êD×h<a¶4¢dÐò",Å€±êÐ?*M™(–nu¤Kï‡—¹Ã¿1Aâ¸\g	FÁåŸ[YØ­%Ð€ÑxMôt¸òW¬Ô:¯¹.¡Ím•+®ólÃ¯ê—#“8r¼ç‡ÚUWñUYkc	³5lŽá >;³)f£ã½¨[¹}¤n[†]ÂT?/±ÆœMW&ÀhÕ<¬m¶aÐ“ýðäÊ.€Ä¾mPüþU²5½ú“.˜ãTÚ–Ö¶wÉšL0ùß
+nà2•yôG2¤Á[@nŸògÕôÀaÈ6ù¡´HìÌ Ô.lOg0íâ^Ûæ³EèÕlbé•ñ
+¤/p˜­îœ´“²Lˆfr¶ËÚ¦Óu†!Ñ©Ÿ²ú'=¬b@".½ºœ³1¹¹‰]kÒ³áTm-ÛßÖUÊõ{•móÑHaÈî£Ã¬Žö ç¸ˆ¿¶j­ÌøyJõãœiŠ}nU-RÏìÛ«†ñ‡P7ñ»éÓlFÓMßCtÏn)ÀaVÒEo`L™&ÙsÕÙÚäîWœå`¯ý½IIAbTyÝdÊš€ Où;„ªL–Ö§«¢vA6KfênP	Aøáîø*@ÒADã0@#ýF( tƒJ^;Wí¯rgbë­CêÐ¸ÑNÙ "·è&â3žŽa*xXE>½ZBÀ„‡Žrÿ iêã×OB£'â%1}–ñ\ÂÃÅ_‰å<£r>A–n9[Šˆ´÷³‡Á]öXíkgGi ûÙúAÔÅ‡7ùÿŽ°ó|{šûÝ;U¼-ûÎýùôEjÊí³Þ«‹<íßKÉªÕ½oóø€	1'Ù1œ °°á½8OÛhšÐªèy¡ž{pÎ%e0ávmfg›ö‹áyØñ¹BsYékn!Cs.Yý44	‹…¯ $>²C'Û³§žÈµÝ";z¯,ßãàñqáÖà-3N^~ºL×æ}Ó¶·öÃ»Röù|™i*¯µ‡PÉf³Ié…¸ÒÐ+këdyCO”ëö‹0®yì¿´Ô.Ëµ4.ðÔCî50¯³yËiØš>L!éÎD6ˆ&!TOÍ^ºHœTÙ[®Üô¥µCT—a.X)VHö4øŠƒ„«ùrÍeüló.ìnÓ¥šä–€ŒŒ? ÄFþ ‡¿d4š0‰û¼¢+nr½Ifˆ°Á'8žsÊšDåTdÿdiíÃÌ*´'filKÃ±@ÐÒzÍ_Û­Ÿ²Û®RA®×vˆì˜^Í€Îdô…£>!ý’„½ï?ˆ$6¿bÖ!ÍØÏ™›ækEáZ-ÐtvèÚ.÷U|Yâê<Ð?ªõ˜çPK'KNþš°Þ©{Â¨ª¤Á0JjEÈÖ}®ßô'¡²YòŒºG1nS¾©ÔCêº›Kn¨(A§—S¯ÅŒyHšýJ…~©íLÛ=>™ÚwÒSWû¶%1YEðæéõ‘T‹ÖÓ[UÔgèÄ'Çvn6=^øº&9¨m´ž¯¿·‘‘ÐHÖxvûùV6xmù¦®85«&OÄ~ªµS³G­\ê9¶39†XÒW¸K»°°fÝ~nÐÇQ{Š4 ÿ–-Tó‚ÞfŸJc`zçÔÔ¼"D¿3áÞ@-ÁKØpÇ“Þ-v¢aXÄÆ™}ÖÑï;Øó‡ŸpîaˆdYÈ;¦ië÷6…áü©‚+Û›Ý^yC«&m˜K.ÖbÆàcm(s:º‚’
+ºtPÏ^ûÖöWBãéCâ÷zÜÛ+Iæˆ4'W¡ù„X\{e†áÓ»þÌKV.ù3uÍŠ· ‚rvã¬±'º4Fåù¹ó-§~GÓw§ÎšÐ‡g‹÷-UM5L™£1A9a!y×˜ôZŸÒ~Èy69ý‹èŸâ1}ö©È¿ÆTˆ‚]m_»ðþk|üAS4½H?PÍõeÇš(ªÇÒßÙçt;_?"I–&>MÑü¡•¤²æß>• ÀNÏÇ\Hþf	pâ£G¦²Š¤²¤–ôñÂœå¬D$¦a3éÚ»ûá4“$¾Á}gœlk~§½’º&)Kä-±‰å®$åcSöm,öžoT å©®Ùá';YïÖrÍ‘ò²`Ok†Ç™?õÏDˆÊñå3¨ûŠð;kYAÞúå¡OUD§Ë°ˆ’ßÓŸµ~[dÖK]±Ã,èføs‰ñ²ôÆÕòÇl€>ÐÇZMYšVë4Mø<Jp ½1.ýª–‰ÔäÈóó;€ÕfîuÜ¹næ|]“]ü*³ÀƒÅ0ÉöŒ¬Ï~c| õ::¼Á¬N$jM×ìë¥8ûÆHºw­ }rœ5ÕZ*v¿–ñ²H¹Ö•Æ‡hÐ˜¬øë·Ä¯ù.
+ãÌYPg}¡'ü8øa«öÇM¹fÓÇnrUªŒ»æBú7 ºÌjg±ÆV ,%2ÖÝÒl|Âß…™¥Oi¦ÇÊ¿yIw(*REšÃÔp½Ç‘t°pWµ GR”¤xc@B´Ä³ ‰%Ï°g1nÝËÀ{…Í"ot²~¿––Œ*üÀ¤Õ¥´iÙN^ÛˆÜñ‚Ç¿[%âeFíI¯o9€M©9Ä`i­Å|œG—=´ø4òëª˜ü¦‚Ô2¬ô£Ü†àéíˆÆ7Ó1(–“
+4An/s\i‘>¢®AJt²B¢â—ß¤8kV´ O•gÚóÎÕSX¾’O§­‡;èŸÿ-$£ù½¡•gÅ>:œ¹þÝRÞé¤=pýRdkHpJ°Ñ4HU¾¢9è”®.Ú‹¾°
+oà1`@î[Ð˜ˆ_Ðdâ1"¸–XÓþ¬¬áé‹}m{Cx?P?ù€zÂ¢ƒŒ¼r“Ôßóè„1’Õô¡R >Ýëd½ÀÄÓP:`ìŸ¶%ÁÝd’ñßGˆð¯§~3Ærm ˜½«;I÷ÜVT¶´R(öPÔu…xBÌ»¨™»ìóT6©pÁÕÀb“iZÇ”J4ÒXÏÇ{„ÃÀ…ÃLÆTÏáWv
+ë¡Hy¦“…I…m‚é=Yd"I¬NÛ4üšËoÜì»t¤á·b8¶âÓ²+ó1Èö×ÆPœPÁ-ä)¿ÏN×ØÌ¤Àæ?.Ï¨\&>/‘qµÊè·DÊ¾»bÉŠì…Ù¯ßY|©ˆøtû*ÀÀdŒmÈPŸ*ŽRÕ"¸î_¸5:këŸ§¿BYúsWI<€Á+ÿ4âDåƒ-.PañÛ;Ÿ”j±9«Õ–-Œ†+ÁÕxb „‚Išø2OÚ)>f¿§òÅò}ò®ƒ.(øçô[—ƒlö?„Šëš kM(ââ"â7'	=ªµãF÷¼’°;ä¨}læÈoAøìÆacUÒMúó€¡E$Ð7Ý¹‰á-P¢aùúTÙ¦ða?»!¾âýñ KÄÖª+¢Š}Õ¤f¹t]Yvæ-Ò„UØ*_‘\ê~òOWÀY×ûò¢VUËKvK!¤N¡”4
+óÁ~0ó¢Oa¶­KT™P5ÐfñåÖ×eëÑˆÛ)#oŽT»ª!›:®R²ÅÂ^…ÓA3ccãy¿’Ë0•Ýd~ûŽŸ œv¨woAÛ·ªfî:J°¨§Ý¥AÛù<åÕŽõ"æsÊ52tƒLÈ~cLÒª=Æ|ÃÛp¦•Um’½¿*Ecžihÿtã¤ŸÎR=…OÈ”¥¤TkÁ9£ëXx2ª`	×kæ5v¤Ó`4A’c(8´°¦ž²¸âµ§‚‰:Hû8üöÊ)hœž;;¤§‡âûùŒ_€ÇÇè'Z¬dâËÛ L:_ó‡d>C‚‡± )Ë)JÌ¤çkAÓŽ;8¸°h4‹À¨4«w‘¾s»h´eøÙÕîHÙ*0Né¯U¶°GÝ6gA²cÆ·èÖùê“	 ïzœ>žGPÈËù¦P.ÓL8HÙ«ÞŒ”‡©)Ç !5ü_z	»GÅRÌ­‹ƒÁ £˜¢<ìïËÇecdä6U/þÂßq8 ÀxAd &ÑÀØFöI¶%~²‡à
+4¬‘X/AŸŒÅ%,‡Ú3n‡<j¢x âÃL¯7-ª€¿Ëe"ìIÆÜ[†«µ¹RÔU£8³¨yÁ7,ÄR5aX(•·È½ep
+“«\Ç‰¿¨Ó©ñU^§vVu‡	®ûx¨¾€tg6Ù«¡Yykj¥Íäø“õãÎûWþå˜–Bf©%Ç	la0xˆé±“û?K¼¬™àµÄ§üe•ºÒ)]ÏS¹–OR¿ÜÈ&#X>ˆ¶D«¶çRÛÎÅE£h¹¿¡4mu>°Æ8àM›¤wuo«Äá}¾`?]Ôj¸³š¦Î«:ÇÞÇ›PÈ÷u+ôWÝ|‹z8°«2zqV´A™ÃR*†ÉO=Jð‡™E†Pú‚å;uÎ5ã†#£Ù»çè±e4-ÊèùCn¸(Ð»—ÑŠƒ‰ÊŠç„i>Æ=OÂ„²üP‰O˜U H}W_ØX¡^c¿U:W-:¢Uv˜&©‚€Tns*ìÌ*€Â&\×±iÕ™’iõrô´ñ©jr7•.Î0ù]¥
+aÈ/3V’kT2M´›¤××‰]¬X‰
+©^æiæˆ°ü	¶“-	‘6W½·£½K¥iÅ<5‡îl=|…Ní<Õ^úh*ÿ*ï*wyÜ´§óá¤é³wõVãŸÆc ç@=‘ÛD½ÒO{rye«Y¨N	³Ô¥A)Š²”›”`w_L=4-|g­v»Æ§œq3æ[nå‹Q¿oÃ—Ÿ‚Â¸ ¾Ü-¾¾twçºM¹_9ÙÑgEÊû¾ü4 îAUUGÔ†y
+_ífTl¥t0ŠŽ>í#|õ´î«—T‘ªnq;¸K‘ªªf½Õ¦rB˜íRD	xÌd£ßìƒ¥gNÎî›JäuÝiêÜ¤Â¿0µB|Âz‡¿ÚÉ©Ï±{Oø`˜E&íª7ÂÝoîK^5Q	V&l{1ÑÅ
+Æ¿6c†{-þ9õøý)F‡o·Ä±Øßì î¶À:€i×°€{ÃH·£?ËåNáîŸ“€ž¹T@ÂÄ®B¶ }ÂF78¨˜Û×¼±¨vÜæ¦Õ7T6¥n=­­,>Õb¾ÓÝÒßrâÑÝ%®å!Ïî1;ãHÜ—Ìg2@{ÄXâu}V¥Ø,Ã@ä×ìzÝ•é¥Ä¡¨ Ï­|ÓÍüMˆNV¯•£F›ÆåÒê`ñòÑÒ­Z0èO-¹Î>Ø¥~pÔ×gÉ2™PvÂgo—9_†§ˆñI[ý|shŽhÆž0ÓŽõ«$}^æYÌÿ™H´S»K°>™ƒOÞQ`}þ(=5‹NXßd|KÖ@x˜îÛÎB*Ù5V'gÄ^±Å4¦Èì„MõÐ´þA qWi:.“w€ÚƒGW‰ýkŽÎŸ$®¨{žeRÊ´rËð˜•›§ˆî¸q q~PË·Ñ2!©¹°¸9oß~àR—ðæÃïó*¿©Œö^)²=<Ð¶™XÃmÉ‘Œ~CêÜRm_‹UQ<p¥oþ6Ý7_0L¦–Ç§…°¨ð0x8úq)ÉûET}Û}þ‡°ÿ~ÝõeÅõºžJ±{¡ãpˆÊ}ÞÈŽ›…}Àâüå¦¶71 šb(»ÂväU;oÄb~x‡—Ò¸…• JÄú`g;¸".B^x@™i=`CÞr-Œ+ºÎôç ’+º$|ÚÙú5sæŠ˜Ò#S¨ÓcæÖJcîüÆ ó4fË'A÷‹±WÃ+»êüJÅÏ
+tQbÐÿ1>iºúî^«™-ªxÿ§êýVÆ+öÏå 7µIiœ‹Çm¦‡#UçÔ94É ˜§‹f[rÝ¼»:£_ï¶îäã@hHÏöBô¨,‡)CcÕ¤‚ÞQ„ákížeŽÔ 1dŠI|,sO¢¦!#GìÏiªg³ÐŸñÞô‰ÚÒ²=gèr_K0X+.š[úð¤Áõ£ü[æs|îo‘ ¡0… ø }Þ÷+å. ’¥Åý3W}Ús8)‘}j{÷óØÛÚ:ä¢¡§<ì­€¢¦®r)‚—1h¹icþ†ý`æèQtØÐ¨Å.16)ü47p |Sˆt\Ú²¨çÊFq»ÏWÔùÙS%ÆÃæü:¸	·d£í[ej—®%“N›¶`@‹ž…\pï(¤1üÍææ­§^íÑQÎWL	J‚‹&7”ûÙ†:ªqe úŽïŠ± E£?WÌwžªª}Ù½ny–D×äYÛ/‰£U¹²lc,	÷9 ½!Æ×2H]Wvm‘ó]1×Ç¯ár	²¦¨õ2l^âÜý]‘&¨ÃfÝ ñ¼V[É…ÑxõLøL¶ÎÀ_Â¢ªèÈïù»œöä¸ùÜRôã>fÚh¤;’Leî.rôçpë´“ Qý4:nÞÖÊ£ðÈ©i÷E’åÏ)²Ëb—då|øm•M¹Ð¬“tö†\¬žßP!uO?®D¨Æ35zŸIÃW·…S
+Ö®•!ºrõ?<úQ‰*·Q}3zaû¤ùâ ¨?/Þç6SoÑT;ôž\Ø…×œaªZ”ÅãGƒKf_‚šMÖIÆW´òU@|ž1L×RM%1Øœ>'‡¾–4]°!±¦“)}o¼ãGÔ#xŒAE±3¯qÑæ¤ôûnÈÃ¯“Ô#°Ø' ‡?u Í’º‡<ZC«pÄ¬ðáÛ1©ˆQ’™»l;éô2<¬:ì³2åVÛÄí!©A¦ò¾ãxø˜Z%fã˜ìÂèøÇí‘©ÏQF1›±èEQ~ö÷ªYíGé¥–¸ètÙïŸ8£ƒë¼¸Qö™˜ª”’ã`ÆA6"QÒƒ%¾NßÆþ±P×lå!D ~eÞçòÂ^”®à‹u÷ÐÝêã½Ü™6²DuuCúK¬b9=]¿¦ïÉWìLêGŠ†;ã‰®¸ *xµ `ÎoUÒoÆèzVYóƒxÒ|>3ë)ã¢î‹bé%ÁòE°QÚõcÍ¿ÉñÑg5]²£ä“W6+åû/ˆ.Ä™O„Td¬nKìÃ\„[]dÈ(xJ‰P.+¯M> j XÙÄêG_Õ;¼åuË=iÔ®ETÈˆB%HŒôæ——ÿ¦ƒs]»ò&Lÿ'SÄ˜}f¥^*o/è¸#Ò¨ÝöF‰ÔñH¦€tk´+Ñ¢å±‹/XOÀ3©ý&ž7ÎrŸ‰D$5Ñ98æ³Ú9i÷üj…†ôéÖ™‚gžÈ¬vÿÈ,ó:8¸ŠQ•Œ¬­ ¯ÆÌ…IÂ3Ñ+qþüFyµi0·’.å
+¾0,/¤Ÿ/ u–ÄNˆÐ"OuÒp¶RPìÒýØñ¨OiÑGžŒqÿG¦
+éaû<é-ÕR¥ñV 3…îôj
+õ°Ø	ÒÑÇƒ¹+i`„‰°Q{ŸqÎÙ"Ûƒ>¥"mR™#—·ÎL¿¦ùhW…«tQp÷êÚL\¥NT›\%O—ßÃóÑrcäÜô–ˆ*†?ï¼ÀöÛ÷ô¡oÑ4öÇ¿Ô~HdPpm½Ã7F$€9TÅ«wZ¯M„n—àã¬ÇkH|`¸:ò¿lËÆ¯Î—AèŽ»j–®w$ì-2öéªéAmã„öq1É÷r·`æJÏÀ„|í[ºü€ß$¬õáÁ)íÑ“d†`ý[</ðhXN‡<ß*—}vÒAMâè
+B&òIü‚HO÷‚jY²­§àZEë±ÛtÐÄ§Ç¾µ04±rá–ŠÞŸ †%->{ªók´Òò”¯½oh…áëŸy‹ùÓì:}ßJZZå>HÊAþ9]·OÌ›¼z=ÂJZ#ñDó¦;ë:3?¬F©å•Éž„Öù
+3ÜÚET¿ð.áéó®½Áœ÷Ôø¢,^ eÄ¸ð|Á³˜ÔÃK®š‹Œ ûÔž@ògi¹²Íï>']aÚ 5)#/õ½‹±‚lœwTTû×$³	iO&ØÑ|ü~Fl0ÛØ—xò}ºO†ù0ì×D÷Rd¡ÃÄ0r4š¨zãi¿!)Çh$'"èb_l\†"GTÛ"y£V×‘lJ åþ[jÇ«‘ÿ^õºÎ*Ùã§|éŒù«r]ˆkQóÐã·M¶Ò•Ò¥Ÿô×%ZÉÆ!±áÈ˜µíæõû«*ð¤iY€m™¶¡Þ$4¹°¢k¯Üëö‰Ê$PJØSãÒœ‘"¥œÔoÑïÀÑ±¯l{~o@_>|ÒS8ãåÍôì€ “½ÁCZ½±Ñ´)•Q‘…ðç–.%'!;é©ª”Â¡s…î¢¶êÊX¹vïe	œòƒXÂHg™·–Ÿ¬Keß¸õ‘Œ}ÉIßI]¬—¬ž{7Ï¢ÔRKåž#ù
+r?;üÉûœúQYR¯ÎF	êä%×Çï\‰ÀWÞiÝ‘|N"ˆãCìûKóÑ•|ãp²Ñ{‘°ðDÖÂ‚Ê‰
+¼ïiêóÚ(£–×²S<öŽ™Pç3TéºÀ–Ì~¾\Y›`ÐÄ$y-B†ßvX>Î õL¼_±Ì¹:ƒù—>%Ñ®/S¨¹L»wòb~Bú^u¡%eÁU)(xtxµÂMñFbPÄ±~¿‘Õ>"s}«7Ò2¤	ñ ¢´@“º:"êN¹ëEŸ{ ¢´p(Æ|æ”FÈ&;P;Y–,Ä.¡<~IÉ˜Ð¼	’ÉÊKçg&ï§÷)ô"»^” Õb7`šuø¾µ£ßkˆ”gÙai‰¤AÂ+®Æ]èT~Q/½ðíE²ÑÖûZâaë¯É¿Gþ®¶}èê¹Þj‹(á·½aØç–Í¦Y9¾bÉÄh;ú¤’!kË¹«„ÁâšÜ$11[™!}G†7ì‘ \jÍ!Cÿ}òcnÉ²³Õ„Î_möÅ[c&ú(/K¾N©ê'0…ª€!¹XÑg5#$Ù–ÑØ'ÄRÚh]E8äAÍŠ,[Ù¿ëUéíë6©‰øýú0åz­nZRþ~öyñÓôlþø×ŽÌŒšæ/údÊ’+"]œUÁ>Û•AïèŸ}‹ÅS¨\+ÍþÁˆ¥\«€UexÃÎ“|D¼+Þ"ù¸±;@©%†at~ÊÃ·²^­ØÖøšñË•ó[(¥âÞ/¿CÖ×g)4[½€ºçÛId‰LÉÚËŽƒôîßçJvâ«_b¸Ënb/l"™{R/ÈO?hŒ>q¶zåuú$±N|€„D.o¹‚^B|çU"q¨<ÓP–¯ƒâ„
+¬»Zª_KíD©ÕÅ·âaøJ‹r=65TDg~?`ðµ•ƒ‰Öi¬³º ™É*Æ"³ò	øLS·º-œ­8Ûñß¯=½”"GþÅzèî ç± ·©””–ž¨w†|B/Åö¾RÓÔ©‚nž1óT°/êQþÀ›u]øèp<ñ16P¼p¨ytˆ{áã|Fr²¼–Ù¤vÝjÛÒXuúìY~Î‘]ä£][Ç‰4‡	,Ôl~¦À=H*Ò×TÓp˜”Š¸ýö"%HéóÜ%7ÓX‡8S"‚šv²?€‡²ªóÏøi?ð­¶d3t½‹—?‰öñpËÄ#ÛÚ_Æý‹£Ü©w9ñ¡¶¿ ôœÝ÷:ýÊË²Ó¬Æ°>ùÆ÷§`ŒKàõQb$-Ûàaº—¶ùcpßÑ :¡¬Ú,TZ+Ï6Ä³ïMÜ.aAgíGÂZÁÍ°èv‡Ðw6F
+í’½àJô‡JØôóPˆîûKR0ÿRÌ¨Oâ[bAœÆ9eC}ÝÁÏS´Lø4z	q‹Žð;Lë0Lp9³ÏÕg±¿ëÂÏ/Ö9ÃË‹ó¨|>æÈÿÈPÚqKC¯O‚¡¨-…ÌÝãëFAÝýBWÎº ®T€†…½;Å œ«
+Ø¦í¶Ýw„|8¤FA¿€éTÛ1òc,XWôX¯‚o¹1`pñ6lpñ®8!)tfPbèYzóª6çUsE^ÄÚvý¸Šú¶j¶µv÷jbÝ–àj­»„}qLúu/*s©804•Ô·#rÒyS_^¢Li¨Îö¯ã^µ$Èu3ªŠü=×{Êyæ=þÒYß®=-*_3Ô,lFò‘ð.&«®}ÖÖ÷¢ê˜‰}Û‹Ål²•CðQ¶^‰»£ ±'‡2™ø´o@à)Ÿ6ŸÐd`
+‚Ý´ze¾Œy$Á€_ÕÇ´_9ˆÁ¼‹?büxÒ‡…¤ß´Þü~?=zks–Hç¸-´æÉ/âø³C~¶c˜á ®‰¾eK©@;ÉùÕb…°<÷‡xþ²VºgoàG…R!D0®ûÃ]\“¸{Œ8´1û5Ø´/Ú‹Úèx“ÊØ8»«…B˜[J¿yãÃ"ÖsY—W(M ‚X¾¦TÚ/*¶kÃ ¸fm'Ú¿Z·?	£2Ü6È–ŒB^"á•ÔËù#RÌµ¸Ø§‘S`"žl6ýˆ‹~¶õ:Õ§C¹xu¿Öê®ÛµAdûweijúU¬:6÷6R‡}ÝU«-Záß>­âïÄ¬3–¬£ ´¦aÚ!T¯­§ksÂjêÉ½ö²È§i‘NQ·>è’<Šw@«¥ÒÎ´"«ÉÃ@^~	Áo(ÙDpxN05±eü¯§ü´Gf¯y^û‚X<_(H‰ãD…òÙÐñ¡˜¦Ê$2¯,|ä8WLõ\œ‡|ú­Rq”ýÆ]=`Í ýO!ú„ãÁERDOÒý‘òì¥1¥/·òŠ{ýÅ@9YòÀÕöjè{ºh«û4#‹uŸVnŽs0’Õ‚ËêÓØÄö:XÃyý´ç›ñ[¹™-öaòì	2~ý¶M“µj¶%Õ³÷¡œH¿o‡œüR5dBg;¬v2aÊøûÇ¦¡0!6=&G‚¢lÎ.q‹ÁÀîâ2*rÿíf)Í.ëŒS¼W™w,XÛôÏaÏ5qEØÍgÖ9	:¼þ1qQè¥EÀž·ÐÞ°ÜÛLÛ”eO"	Š¡éÒ ~Üg×ü/|…ÝŠ›+T¦”Rï2²HUÈæÁº$Âs[H0Î•]ÔÌzû¤i¾–„=ƒ{Çtã˜<±üU	F¥ß!Û³Í`áö¡èAéýÐ*æóã³V}hÒSpÖ(¯OÉ9{@S®ïzZ_õ¥aÈŸ²ÙµÓqeìca(h„_Pý¬¬ŽË8y¾¥Ä#xØ.:t:ö£YŸWç¼êä)Ð"t_N2|~¦ÎíÑ¯tŠ÷ ÇDÒZðÜwó´I¿"‰Õç' MÄŠ¾Á34ù`yÆ¤Xh—eP§¬Ga”ª šs,GHhâÃ£"£ð»ììýÈ ´¤é½t1ÊæŒñP¡ò÷,°2]ç.ÿ†ZÂ¢|,ßÔf¤-#§ž=­Ô}ÓÎc“v6’Ó›ûÒÑE'KoLï/!Æ ã&©1›â·N¡3qó×ÿ¶?»i,£¢¾Bâ…îö	]tƒí2ê-PYÁZíÛQ
+ ]?¨¬^S“GÂnÊ”õÕG¬Ó`þ´éw©ñ»ùôÝƒÕ3]ÿ»ÕñÆËcd#\•L7¬R w¡ù3ÈNéthrwÁìéàêg‡Ç£Õ 4ãX¤…fß5ï\+§œh·´A3!Z2à²Ÿ­ÁÝK\P./ÂÌû{
+¸ã^#dPl_Ð¹ªÎ³èSÂ~›Wë@ãÇ¥”ò%ÀðÆ}6sýí˜Ï9ÄÈ÷OŠÌCË]´Ê#å;ýœOõ­Ö»8Œ~é9Ðì]UÈ€¹·l_3aªä6æDG5Êƒ³ùóW©ñ&TsTHéHzÁ´dð‚wËw…ˆÈêë˜á›
+]¯¶!&¡Ýj‰‚*ð]Î(\2|÷O\=à]=²LSÑÕÐ¿§D¾ o!%?ŒaÄt}Ä†Œáí@¹”ùÜ)_Pñ^r ¼Í±Ÿ¦þ°BÉIü®$×œçœ°×3@©!ÆÁ1ý¤¯’ððÔ6gÄìÑ~Üy“£û4C‚|©D›9ÈRïÜ¿å@ò%Ié$Zï*º¶â
+]wô™^Ÿ5­µï]Ò=`—÷Žž
+_H}4õ9D·°ÿ`^G-M¸Û¾š¸u~ž,BúªŠ$’Õù"Ýçº«øà{9w†®â/\,ì¹ê~Ñr™Ék¤éSõäîä­rmà»Î™Î„¢MÇQÖ¢åâ%ê²¸}%:IµÇU#1£m=Ï<‚D_0c×:4Þú–6fJ‘*ög¼°/-`¬TE6Óº˜ÏWê|¿Ëçr þ­EvYÐþçÏ*ö7<¶`†ÊñKð1‰Oî±{#yÃˆ^)§vm$•ÃÏ	¦d±zÃ¸¥Ú`…#]B:¹Be©5Ã	Ë–wÂöåâ·¼YÒ¾ÛKN½ kš2¢/¸¦æï&˜)Švî´ï«BØ gùÍžèª{Ê;)ú$î§Lzv§|Ì`ˆÚS¸îvþíÍL°E8ò2{l6e{¿—GÖA<ˆåÎóŠìn4V•ñ‘Ûø’f1,¶ƒæ¦€$Š^?™¬h[ÒªT8MùëÐF";Ã†820}FÚcQ%Q#Æ‡Ó—jËÀŒñADúå\+Ö/;Ò‘$³2_.•ÕÐ]©‡ã±ó0÷ÜÙr˜â&ßóerWÝÆïuà’®™ßze[¢š¥†xtS~s¾D€ôóBA'Ž¶—üllÈXð7¿ú­›dK	ÛŸšîDšK!è*Î¡/·zaÜ»Fy6˜`vÍ°ƒ,‹tQ7pÄ„Úq
+º*”ã~ÂÆÂ÷œ¶Ù±tõImå˜ï[…}˜§»XÖ±lXñB]Vù€7aYEFÛ©íµ^õŠ·Fˆ{SaA÷{-	k¹Ç)@FTÁÍHGò·÷šÊŠ¶1VãÅÍ[/Véä«`¢L>ŽÖ™˜ÜKÙÓ˜rX—q¾M ›3P$“ÄÅÁ‘-ø7·_ð;_ÂDV•¤¼Â)„×¢ªÃÝˆR¿ò3ÂAI´í€³%¯îY2¶^ä6ê“›­:kI2Õê°ìíñhu7ë•°?÷?¿ÉõéÐR%R…ÓÒ¿~^(mcý$sê¸GY<ÔIŸ~Ü8V×rŒ{¯Ïd/ñÒ¬4¿­HØì§ ’uMN\CPcÊ¼ ),ZßPÚX®gá4ô©=~.œ˜Ñ<N|ä+@¤Ù«J§+dïó¼"
+ïí&‚íËÈc³ã:4SÖ£&h3á-zªp£#Ý¸?müì¾m± ÛUøyhò‹gxŠã@¶z’ðœ}ÿÆ“ºkí4)®9.àè´£DIŽ#¸PØ„U²YWß˜ŠOg¾ùzTÅØCùÃ3Ó½4yôÍƒÕXåÉ0ïóÅI3MþŒš0@©®öƒcW;4÷GN?G¥©¡TD¢ö% wéÂá7fPÌe-EÀ¬j:vsy)“`Øg…§lë_—žÖOSŠÛî¢kî…XÚs0™¹ÜO$h‹dæBSÊ!Çöí,Gôë.ÛÃÓ²5$":òšÑ¨Ó¢?i¿R„…WC£—ü×i™‰!±På'tPÞ/»\ÏÇ+Lš¯sÙå#`šCdàz‹›—]ã¶•>‹¢æW)¾È‹¢ãR{ã·óJOÛ>;Ë¸dxíµ,åç~À„aJ~¯á1}ŒJ±­.+BpÏx Ð©÷ýÖ#ýþÈÏÌôï¡TÍ; vèk(Nƒt»e(¥"/	ÁK¥úš¾Ë¯½ÒPm–°2·œýí1ÎÇ¼Ÿ*.r"·gÓœ¡¦²þæìK—ôÎKÕ= ±æË5níš¬£¹SàÇ“"Dz	pÇð²Íæ>öUf;Øµz²õ™¨Þ%¢îþ P÷âN^ð8JI¸ªÅX=%è@œö‚*x?,¿‘þ4Óþê®¿‘+€_iÿmÏp»€J6/C=¹ÏOúq×®Ó‡°ŽŽ#Þ;5Igs®¬ÔÃ~m¯<áÉzõ‚ŽyáßpÅÆµ¡º•zÙ;Jxßƒ-âKmu±:Ï}ëÕn†ºÓ‘ñÌŸ43 )ýÅÔUA¬è`
+¡‹}:Ú‘/—Å)’¢Ï£yT×k&kì[r<æºÈ¸Ýèëq¶‚º
+uÔcù¡Mã™†¼‹dþcJ$*‘¿ƒ6îüÊÄíËÛûò™ÅôcÆMÌè¡Q‚™cŒ)0P‘ø€pnâ„te?¦#`ßhsÁypYú…òS?JÂ…Y;²–›k%ÙLGiT}•!3u°6²ê>fÚÿ†€‡Ssû)=­õ	Q¹GPzíŸa} –_çð*¡Ÿ,ñt¸áu¢ëÝa'’}D´èz˜Æ1Mû{`ÆÆ©C xw8ÅWåI[¢”rÛŒ'^™ñá•	Ös’†§ðã5¿æD˜ŽÒZøbÛ´nhÅF20A¿#½hs]ÉfsChbX?üÊðãÆàj ji HdE}äE"‹o!‚ª<òƒ‘<ÀPïrKTA/_@ÒQ •±—Añ¡>ÇnbÁÍÇá ô#^õ¶¼nMyQê –»ƒý
+SÞ4ßY ×PöxÝÃÇ]¿#ÑÝêìñÒ•póppø÷BË3öl.©?Àq>!8ÇÃ|a>—úG=ïb¿ALº,ënÚ83ý0¾¼åªtªEï¦ÏÏmÅ¥økz­½”ã3ý@æ ,3ÊÀ‰¶×…lä‡Êáœ?zWÍe^§»ÓåÅPÔ
+UˆÐÝ[L ö…ÀÆ:íc5†Ë¬y/u¨TØ‚]¸ù}u?'A3Å–BI¢÷ÛXiW×šÖŒÆ_lû§h}‡
+ÉÂsðúŸtœi‰º] ã¥ûù@Ó<µÒ›@Ï¡‚²3ÝÀGùôd÷f­1tg¢À±!aš¯/Ý0CÐ±Ý/ÒgaÒpB>A‚µtI‘²™°t“Ðò06 EÆ‘2f,„¢ÐÎR¨("J›b¿f÷tÆ oUÙÉÔ‚ÃÎ>Ÿp*ˆ(Ym‰U·¹ç²ˆ¿©åâÑhÖ¹‹üN¥R
+÷E¹Í Jj™$*–ÁRÆšZÊ6º¥êsþ©¦ºYhc–³æXÀ§Kb¿M»˜¯Ùò½g­a|OpóÙ¡ï­£½¢W8cjn,<‚½ñ“ÚúsuÃ>¡åT 7t="_@÷$<ð¸l;ßÙq¶ñ/$ÉQl K€¼’è@tRšÁÓtst+K¼M³n\F­RÉÜË·æC¨ß7ˆ¿`ÔX±ØB{<…]",$µÿÅÇmD©žU„«zœƒ¥°ý³èË<:?S5.íl¦(ÇÊµ?ÇÕ0îYÖágëW:nÄH Ê}À <Î±ÊÊècbNôzþËHj.ìÚ£H¡H†=å%‚*ü¨É#Î}‹²á±Gr¹†á‰•?¿G	æË›Ð¬ß£­£2Rœõèígs^M‘B0½=0®qøÏFþÑo2VØPh·0ñë~º[9pËÜj¬6ç©{PR[‚Caš é‘¦ÌW‘^âZ7i™´ÂTm[·ï³Vß¢7œ1á!ò&Ri‚Ø­”Âví+´Ì"T2üË]®efmí¾§Š”Ö;™ŒLÙŸX‚ºì´D†åÀPBÔº„ºÈaâ%Hîò'¥æk«áÄ—lc£öÄ:K}šzË¯¥{Ÿöv¶{ð”x´&Ÿ›|M7' •è±“í}R« •Z'‡AôõG9À»<¶½sx  é¢-\öCMwnó†y ä9ôÔèÇ‚Ö×·Cúi•´šCŒ¸’Ö~ÁÃhcsfÚ¹RÓ>zdÃmÿfà¸û5áñšZdj¨ŽÅÇáãÏÐØ£mz0p…]ZÑ÷éŠ>V’ Ö¬0þŒJqòô(ÜZß®6n2XëÕœïNÁ.AðÓ!~‘Üè6v!Â§©B):×„£ÊÁÉE5F×`)KºÛk¿›©ôâŽ¶Hg÷{)ÐÃ,Î™,j ¤Ã¹éVÙ13Cdæ1fU1)™¾<Ct·‹3×J•-UŽ-ì>éJ	ö¯3Åâí ZQÇ[ö¤¡À:þgæPBøfÕƒvñŽéï<¤¼mR#E¹dúrœ$á)Q^¸ðåç¯ßt5iÐr‹[‰ãW†,Ñm÷kIlKbä—Í±›T]•o|¬öT/ê†“9Ë£‡LØk)‹ ÅÉÈ_=ìTol”½ÿº›¦k§mËcv{ZöÏÈÌËmÎ[‰ý4—ßGð[WÜ‹¤‚­a=YK•ÀÃÖQ½‡øn öá+yÚÃKÿ“\È•±çDýp¹‡ž€`Pn<“º sò¡£}™ljs)h"#®ÆÒ‚Ìœ7,ç/Ot.ÖÙû0 ÒµO§ä_JTTDZ˜Éá÷…HÎô)s0hî¹0þ’J×ùŠœÎ~Þ2”
+	´»ÊÉØta¯Ô5u€F7›<‡+àÞ?9Ê« 6!£¢®×W’‚ÇÑ‚ê?ºé>B„¼7Ö"7Û]­Æ(<B†ÙÕ‰C3(}D9ñPgÅîcƒÔ×œSüZx€\ÎÜË*õ•ß—åß2eÕªñ.ÓvàEžR5„kCHEÖ´ì-’7¼EudK°ì5‡Çß;>6Í"B2ý:åI¬¯SÞ?€	½¸ÏÓ‰ûæMgŽB‰zÇÏOÊ|¼Èp‹œË×ŸÛ–gtŽ·êzúí‡^¨bGÁe!¢Soi»!^EÃWygîbíR“ ÐðªmîÖ~‰oÄxRÊd†…lxžÇvæ+2÷|¦tëKdœÏL„f”!³ý`‹Åz—©ÎN¢ûÌˆž¾ _|¦ä¤å‚ŽRä¢SF™
+ƒÍ«çH~Å˜WIã'n‡Äƒ«`´ƒ/½óØÉßÏÊã?Á0`VÁàn&‘ñllxìD³ôƒ¨§ÅîÚÍîtÜ Óô>‰+1‰1õØÐD¥œ5¾É²0 NG¤è»mqŽLêÏ÷\ÌöÃÝ-Ûf8C½…d(7iútú2kCrêgvï
+iÊc?qàæúµò3Èƒ5Ÿ±ØüõhU¿qæ ¾ò]Èu„ùo‰†¥öéWËÈŒSöyÝZÞRŸûJqüº¾ìNŽÆq9°¼œ¢®káw=}ù‚¸O_-7<4PÄÂáæIµ?†à@m€gáYº»"¨iZ~Ä=é˜½xäk¹úì!×oblvfÆ×U\Ó3ˆ[OS¥5L?„h€£]‹?
+p=H68¡ñ Q~ó{º­íW¦[î¬ pu	¿ƒp»øøÓ½&2ÈÀOˆbqbòrSyTwêZôž^¢e+›îžF‰ýE|W”6üy%¡¾Ùl?r>ÙÓ5®ÙÙE“TK!†_˜}¢Q#áè%j˜CV C®9ø~µ‰¯=qèýktbLÉ…_ÏÍÁ%ëþýÈ”nº‡ñ„ÿÍÆ;7‰ 2:œ›B¡T®lªçQ'¼3@¥ŽìÀ³CÀžº A7ÐF÷©UOp³=áb¬Ò0éâƒ%Ò£[¿¦°5û°k›À[ä¼6ÇZÐª"‚fþƒ¬øÏ4Äê¼Ç1æGœª#$¨ûK `Ò'VïŸž½™µ‹÷ÐˆÛã²ŽÊ
+1lƒuë$_»P6]Ò„	Ý?«ì×ÓO±vTúÉM©éVº4žéKCç¼4'&›Q84qÌÚkÉ`<ŽN•ŸìŠödŒÅñ(âûl—`Œƒ‹Ø+"Všþü(qO—³ýrÜ'E§@É¤eb¬P,zóf¸þ(2ð]akø¸aÙø´ŸE]XrTnè'•CZ¶ÄDZ|
+ëK:*÷ÃµnJå?–êxn´tÆ¡g±¨˜¾ˆ>{^_$ÚvÞ>o65aUD¾?óWyÕÀÖÛ•à{íh¨1ptÓàCýjb›ó%“àS)2?T¾Ëãð´_Øêë"K&Ó4BÅCa<Ö¾,4M~ónmàèûŽÃOOtÆ®œ;9n’¯$óZ|&Çf‹mÄ9ÖÓD–Xåuó,Ö'ác«´h±€éE¡²!á…Çfl|±—Lüì:Ä¶mñi6›ôÞw_XLö§ `„Ü`º…ñ#¾9Í#Î*'€”Q4x½K™N NS¿“ 'AEòÞÃBÊ/ ã2M¹À^ÙÂÙ%ÆO¤GÉsá²t’OìS§ôf?úr½V_îWÊ@øä±zÉ§=XÒÖþI ·»ä÷!EíÂ³”IŠ]¥7Ì+_™°£ˆ[FWCv¤éÎô‹V˜»`ÏA¬)Èní›k¹<óÄ]‡À˜-ö {¢È;gJuö¾<KmX›šðE'2‡óŽ6¼Vö€ÚˆÌ{ißÃx)K¸ºh&C}Ç3Ö	å‡®:•zØ§Òˆ¢Ð!ÞSmˆ·M³æèÔö£zè^¢¨ÐÒöx‚ˆíºöô£›•ÆfÂ 
+¢n Q>æ^3ýìE¾%ÅZ6Ò—ží·RŽòôùM6].}a‰ý_zg}ZýÉS¤ZÒˆ#ÜÍa2üÐmûò_d¤;âàÛfnG˜	P™FÜ½@«ùìèw;2t9 UŽ,Ï²X#:®Y† Ì¤ »OgÍýêš÷ùÂ5/mRÿvA)½%	Wóœ¬4ráøtÖèQ'qÌž—Ô>+‚.üNÊÖmÈæV/S8ë]†]]Ç0Ë¿—,åÃé/ÕG‰&	öïðal5ˆƒ!ó›#QbŠ€+Wí³Ì5pŽ„ÄAQâÇ°	™Ë+¦Ê€³v’ÀÐ#_½¦‡üJÃ0%#tÂÏ³=½ÏÁçX×p±#wplzfá£ú'CWJ$½œ"ý6!kc_?ñH>}š¦+}q%¼¯ÇùrX×ßÆ¤Ml³0à”kò!M¶EØÖjNW~-}’¡w<pÅ<ê+~h=á¤‘Ž*5›¼)uÑPZp]_x(iÏoþx1ÛÆ³àQŒŸ°lÅÎ9Ý79µ_{S‚	Í(,½1ä=Šp…(‚
+ UÁ°*µþ€g6{í‡Vñíbü:Sòy†#ó¤­KeÖ«Æ·
+Ü	²«¢ºã­cwÖèé*N±úåáÚ²‡óÔì¨*Í~S„øh÷º¦ô-c=ç¿‘øÎ™Æjå;í¯êé.pŠï.f‘è5´|,ˆ}‹ó4_)´’D |]m@ã]DóöÃ]Ø²)L$ðZ•­p©€¾“|¨ÉöFÕs–óŠË,k4ÝU@åpåñfš\a$ÁFHï‚§ŠÙº¨S¤F¶ËUÚÖ¿ÁÖ2Ûn©ý»Îç‹ââ'àïº:P	âKw=mÃ*±Ëà4	v\d²ng½€þ`GiòÕ½.ûœe‘2ü]i–I¨i#¯FS‹ù)åæúÈÍ·Õ˜ kÖ¶×¹ØµmÖÜ¾¯CÐ÷±p™ H¸¯¥ðË<I±ÇíÍà;{ÜÅé±ÞM«ÅHµø$ä'òíÕ”ðÁÞU1¤i+ËËð²Y·`T­"Üh¨M°b±÷ÒÁØÖÿ†ß´ÔÝï3p=Mî‘¡“{é"Ëh‚­‹e^œ w±ß•1ÁA¯kbì—¯ýksCì~ƒÃtŠŠêóÚ÷ØS¬£iü®)¯éŸ^u»vdô$Å7
+Ël>‡ºKøæ¶ÞC
+ÏˆTPÖóÖoÃH›ï¶HÁÏÙYyôÁ—ƒ^Qg´ß°=&ðÁ›JE 9Âñ^ñú -]o‘÷LMtc˜„û<•_y2ìLJ¶)_ÝÂÛ{‘i´.Ó2O[Š„‘n„a4êX}ÂÆäÍuNvÖ© ø–Ñè“Á«âÖew~Íù&·îè¯CÂ,s­ ñ$OßW_	fj6U8ÐÄ£Ã.ž3)¸Ó€ÎŽ9¦ªã•GR¨ñZ$Ç…UÍÀ4êKºo´¡ûØ›û›ßñºææ!§×ôÙ!;0æ>AŠ*=¾¥Ïdº_K.•Šé/D ×b‚'Âñ+0eŸf+¸I¾‘dn¡SD?ÆLB|ÖiËnÅí[{Ñ67V»”ÑÕ¡ÜALÖ¹y~O€åm+Ç	î˜òkÇz‰\ ÒÁ»O>}4¹;ÄTå­O4fþùÒŸc*c0£Ó|ýðœ:æü5:Ìp<½œ¶ýnâS¬ëfF¥Y>cøc½=rI{˜ý!Kôº^ÄÈE¨Zä¹]!MÇë³	¹èw‚	A¶‹ÚI.®ó†Lm7öCê¶H9=_ìºÒú,²ŒÏV–%.-µl» ËÏ©ØœtÎ¨Á£ÎDôg"^UŽë~k?½í#9+‹ÆáöÒx>‡ù> ÒHrø(NÏÁ+S’tÕ%¼–·V!×Ú³;º¦9y’ì^Åµªö—’/À°wh¤˜½,Žôl2ØŸÀqzaÄ­‹(˜Ñw‰V•ð2ÚtÚåmÀò¢„'“¾‹2!% ñp¤V?‹î³aÞskÝº×Wá×<§#˜¾¶IV©õr`ëöYqÃOåsE‚ªÞZfû7ý3`z˜pÇÀC=;Rþòª¡l‹ïv>ŠÍR&ÉàK§é}è'€¡´Ÿ@8hÖ½Ù¤Œ3m ô|óë×±çPŒ¦™á(AòóÛAƒÐW’û´Z•™A±ÔËeý¦‘ñNn$`£Ò-Fõ1‡¾®þaõ‰‘D›	"„1û½É*Ð\~¯²®‘çgÈ<ºVŽHÐˆÁ¯ÅÝmßRšš8ýÍêù9¼A™wp‘â=ØIø•Ö®'%göÔƒ×'e9®Mò÷qö¸SïÏ^>8kceêO™lÐØc¼%½»¢,—?§æðÌîð#â ±\g:<›ü¨Ì1Ž²µÄûª6•Œé®ÝGÛ·¹|:´“µ²â¢.=l¾3†jLŸu‘âž`Xn¼1°î&f²Þ¶ä7´~µl¨Mà»Œ°ØûJo¡ˆI•ýŽ‹—Qê¬uÛ•¢€jIdïô‡ŒüB|¾ÑóçAÙ‘6E%’öòl{&UÇyÃÄ»õtê·2;öÛjM ã¥BºÕTç÷Æ²J“ƒ0Ùù$ÔE`xs<Ùd‚¦;™06ÅÕÃeÏUŸâØJNÆå@ÿeŒ´…! öØ¤+^oBîÃ»è³tcs5¼áòDzèÉªÄ½ßRõ`¥9xÉ).`ìv;3æ/>ÎúåÂWãâ¢X’ mØƒq$U	úfrþð¹¦põyCF´àkžN?"whc¹7Ñ{®:z\BøkdËslWlÛ3Z˜fB‘¥´[›i™êôzZ¾û~ÍEÆj§Ïå(Ë²â¹zp!“k©D:ûY×«ëGãŠ
+ÍDqY2tÇžr–íÕi¬ÞžN¢±ÝØ_¥Ž[šŽ~Ì4´ò?…OŽË½vÌ±ÄÆ9ÒrH-•Bq¿µQH6i^\lþ*úøîš†â<âÙn´%_Èú‰ öîã¯ªš.žãÌ-~r¼¼{ž+H¦`5ìú‡‘û'š›Fy9Çýüá·ù(–ßˆÙ~y	Io3©+F¿"^ën•ªc7÷ƒ‹Bõõ²÷ìc`ÞÄŽÓ°ýT’Œ»¡U[t×èŒè}"0Ó.¿áhŠôv;ObÆ ¨)M´ßLZ“ËýE÷¸SsMæ„¾Àz¹•åvŽ¬5áRž'rbSœ¦:^¯‡û^©l¤‰@%¶Psãü-Á;¢òNüßg'¯Ð YT¦!'|(0ð&5\ÑÀþÎ>Pð¹‡ä‹ìyÉ’wl@¤ß¤îÈSx¥A/™{P?|·Yè8.”Ë°À˜i,ô 9ùøî‹èwˆäIÈ!Ÿk5­ð&Û‘c˜W*"îH²Á9t[bo(¢a¨ñmã‰]˜°$j.0üƒ„6¨ë°ˆóf¨Üú±Ðõƒ€¸x¤Þ<Þ©Ú±Ô/’JØ<%¹/†ddÝÍ÷{çòdvÊ^wÈ±!BÙ&®4‰×¯"^Vˆôý.6Ö0Ÿà– Ò¯N¹U] â¶Ï{¬{;1u'·gb>³åå×Öß®K“i‰áÝ|ÂROx{XgM_ûs¹ÖÊ9ïwvfß~ç÷ÒpôåAšÍ¦ª`å&3=Môóböß<b3áô¨âs}¿™»£¨nGÊõ{s¢/	‚Y»¹¯ºí_0:ºê£ô:Cá±éÚwÙ¤¶CˆÀÚ^¼üýéˆnðé@:Eeg_W~¿u¶*ë<;V|oíôC(é#‘÷ú¬ù;óg¹´¿{(ÿ:‰Ç8—4Ôï‰{ŸšNûŒHÌÊF©ÉÅ~8KÎ~0ð£³rþ[án²ß–vêÓwŠÄY¶›Ÿ[søþ’ï\@“lî3ƒþ¹ÌÛ€0[zÀîu2|ðßT«›Ê€½®1Js³’I×›ìçU/k´ƒx²®÷s]§¬•ïëMŒÉ|tŠiMº5<~¨~ßVãs¾¸Óñoº”/ŸY»V†V¦· LYLÄÅ”hÝdxßÁVßg·Mú[T[%VÒƒ‡F§ØßŽc7e}ÈÀ˜à¶pëÛG(þv˜p,6Ür7_zê3Bèpbô'Í$«3Ä"0Y ™ºSÕ•ö=å‰ñUaíÅM§fÐIšb©Ò›<ílÙî‹/É‡ìí˜ºç‰EØHü9
+¼]—¶Êâd7â¡³º[š)ÚóyÀ½˜GÜ¥çtìdBÙ{$ù‹“ß4®_CùÂó&å=aó—•%ùtíJª­Øµ‘U‹ÕÐj†è~Õ‘Ût[g‚2¬‘&®ÞÃ?»J‡æ8]0œÂ„.¥‰ä¬(¨Š Úž‡°ÆJ•³Wï2š“O™î/[ E¼ù¨”ö'þ$–”*[pEPÀùzƒºÕ—úÓWG¥nóØP´’Ë¦’f^ðhëš¸“%“óE1ãä$ÒÎ¢9ÀeMötòR¶Ã3[M ä|
+êÛÝP§5
+ž~(8.ß5€·f"B:ö2ÚA+‘tÝ Üwó9ˆ*,	+Û¯ÍñÜñ–e#Æ™GKS°ÅJØ˜ “!d—’LS¥_ÌaÃ/qäØÚº„áÈ¶a[YN0ñ†‘™/ïu6o2•AuìBL)CðÊ±M-öe0F#°vè’ðQ÷Þ“‘X­²ZNÒÑÜfi£¾ßo¹Ü5™Î:íÛ²O¯Ó€e¦7ÕY›œÿÈì›Gæ©™ß±JÚn
+Þ€¸nõ&¨¡F‚7eë)UmßÈCÜ-Žo	¤ÊI~Xƒc~©^º¶~b&5gfB±[”ú˜9qµžšî¿Ëžå­Ö9ŒÑZy×g1ˆ#öõÎT{Ëƒ-Ì˜b­õSÏ£§ÛÑxÜÞýß¦ÃûË¦ÈþóNõA[5s²ÁÚl"éüÝgôqªÈò!¯L÷ü[yÅ:†a9(_¨ÃÀ£Äpw@û«»ÏÕÎ5Õ9¢[ŸÝÈ#@ÓGÜ´€ÿ¡NËYkÜgK%1î÷¾Ÿ^ø–Eó”ÅÂ52\Åƒ‹s£P7aÊ«¿z
+eéÃ‚,Ý?-ßàjD–=Ïæ,Ïýj¯OÉ§Ž(j6ú–™Û2$x¦b;{&¸€ü æf|Î!¤¥Ü¬?Î¯¯Ð–8ûû¡°„G¼Ø¨¸ÚHu²TtðÆÛÏQ×Œî©‚¢¯§þRz¡j1Î|ÛOõ»Yð‘_ê³y‘Èý¾³Û$dûÑ&‰ø1yÌL
+/ë £ŠØ™D-Òo¼äsÒS#<—e¾‹vdîqË1Sßgö†”FD*„óŽVN'Db*ÊÉõ²©&]§ø%gBõ;~,÷Ñú|¨)ÚJÆðGŒ@d@!Ö¯úé5‰Ë¨÷z¢>º¡÷Ç'M¡Äw_Øµp¶’* ¶·x&¹œ]ÍJæ”;^[å“ˆ&Ü³íz¸}wþ÷Érf .'L¾‘ëÙšºþÊGIÇ›¶#­Ðfa©3ýjó¥,Ó]|\ì¨ç$äRXªhîƒ ŽRÅâ_¯qÒzÖ"[Q›Ã%ö2:í®peL2§àWÎ„ ÷„ž ôDëº†CÇjãÚ“ø0üDú:IüºgOúR€ÁÇ}cý¸3¶¦*£õ¼uq¬êD%ÁM¶5ÂIäÇôl#D"`To,=ñ¥(šõ[¤¨ÃQÐDÑ¸c²•¶üŒZùÀ5.ÑÂ•ì*·3}T“cwoKÝ-w„‰uüb¤'«ªÔvgöe—ñIÁnZ‡…ÞáÏè“¸+GRß…Ø¸:bÓ@¬¶5¢|GÜr€/ñKBªY–;&P=œ°«@¤	˜‡6éÜMÁ*­¾Úúj+r2Fwd¦HM™+Št´“€·]‹Âx%ÿÕË à·Éì—ÏOEFÇqÀã¢…ŸÚcû>ŠžÆk2êkà|¢Ø´µ~œ~œUß-³ý~U^7IËø<¤0?ÍïS¥¼U6e[„°/t{·D$íÕ Ñpc£MÄÙ|3Îx7­L-„K¹øñê´…VlnŽ(2¤*ÔÍÌˆ»J&ëÅÈ‘ÐH‡€ä™*æEˆÅHB2WñøqBñ¥¯tª“«,pÖy¦¡Á?ç‹ÐºC+ÌÞJ%õ­åX0 µ‡L·ul™_še“ªVQK®ŠÆ;c†ÕÙ#à¼za2¶“%;Î+jëÔ¹Ë‡”ê¾›#ä*Î†u®&»G¨ß”}]æ¯ñåeP(®!>	ë4ÜÛÅ‘Ìå|£VE?Q!_Ñ¹0TA™ÜöÈ¦ábsnoW
+Mñé¢u6®Xˆï…ŒùT"×˜ð´W7×\£œù6dº=Œ¾åÅÕ‘#\¯‡ÆŠ›é?0žé…Öåøt£‰ªö´Qd
+¸'YWÈ(+é¢ÖáæÑlÿ\ÎÌ¸X.Ï’ši
+§žFÕYZ\½o^T½Â5÷ÈNÜõRIúp7^šâqMuc¶±¤g é=&OÕÎ»Šc¥ÛÒMS!˜§Ï N¿]ä¤^‘@æÍÆt“~$H©9‹öŸ%¡Š²mÐ/¶@0ôceÝjLÇSW•ã	1Â¤šòË5.¡GØfC5ÄmÜY“G¼ôãµfgÈ|Îë¥”6¿­oÀá;_‰ñÛÄ½FeÃAÛ\Pb/Åš¬Èv _ÌÅ§¶ÿà}¹iÆR0¨¨T!V«Ëî:—*..¾qU\¿	MÂå#[tkõEGI”z¦ØÇ5´îƒB=ò~qš´Ô5”=½:‹žg†Ìn¾X»†úFB*w4°ÙèkÉm%†¤·ºs?ŽÿYþ1‹äò–kµvuEÊe˜~Jki)’×gçÞ9|ùçK¼h)”I|dvñžËf¼ægú´’+wP[j¢ùÛ¥H•º{ÞZ_U\=Ç¨GCÿ|Ý5°%‘zñv{˜~¹… d¿sº
+žsZ¾¾ôú{•{¥ú¸}dGÝ¸=}ãwJì>œ¦´×Â°?«fàñ&ÕüÝ8u<b
+ñ¨7X³Ug~ÊZ²¥*ÉíŠ²8ÞZH9¡àÓ¼Aüåì$Ï‰V!n^;1ÖÚ2¯åˆ·$æõ+:	þÎÑ8JQ —ŠÀ])¨»õnð5wÇõå·b7ö(
+²ße´†nâ|ÁdöEÌÈÄeCö«&º|¡€ËÞhˆI“‚ƒ±¤Åíôç;œ $æGÍµÇ ä•Þ•DCBûºÄ4mÌbç421ki<jzoûûúº¤ô[QFÖé/LrÛí~¥:ÌÊDúË¾Ûš±+=ùÓ†/¬¤$ß%jI‹ê/1s©	ò]g [G	¤â~ÀD Õ_çdüÞš?¨1u-*œã¾È§Ü­hcóOßØªQ!:­ì®Lõçƒ] Ø,Ý5L(KHßJ¸ þ¤eñìÑ¥È‰}	—BGÃî¦ãðª½ú¨7²](4ƒ¶Gn
+QÍX±õ®o?’ŸRø±)Ä	—Ÿ…än©ä*^±ZTèÓ­£˜VD’³ÓQá»4²mé
+t¡ø*ci´«b'%R‘qŽgvšçrñìÊÞ’‹tiJ`ÞÊEÔÐW«û®.t‚žÁ¦>åK _TâÞœnpÑKƒVÜG¸wªÒöçvàMå.ôŸSèåOs‚]´­™$|8 ð ›=¼¿Ô¬×ð+£Ý¨}d ¡Ä.wR‹ˆ‹&‘Ìc2â}¶È”ªž–³P+F€÷VeAd¯¦`¢„hÌ<ÉQk_~ÌÇ¨ÂÀž2ñG“¡Ÿ<	å‹U$ ýœL¼ñ(—l’†Leà#Cõ°mÏ÷é·•ˆë™4Å6£_éŽ$Š®p”×èS¢ +g8…‹âH =¿DÂÿù@TCté–‘ÝÒ¤EûŒ‹ÜéWx#Kï«Böœ6ûhÀðúMîlíôªNÑÄKæ<§÷ËBÿÁþƒŒpüÌ+^}7ÿÌ±§xØh°ç467Né`51¸
+Â+°›ø½ñí¨ü¾?\2£$œ?vå1D7BQ2ÃªvUŽxHô,‡DŸaÙØŸ‹Î·˜SA¤-ÅQ™ZmeÈÌŽt5´•ñc0kXö0?aß,i!l6‰§!P¦S©1;×™³agê»2ôŸ®#DÕ;¥W>»)s)GJ¥÷9@Eöë] ’;ÁyÂ‚‚¤®>§Ûq¯§#Þ9¿½4úñ^çSý‡OJTmAï¡ïNüë·cHk/rVõÅÒêýž»ˆî²‹1‚Wø>(‚ÛèÄx×@ðÊM¢”u.¶âZ@1>»+Ùš.ÝiaPQw—¦ƒ{/rhØcqPD¿Ê³cÖ ®\l)#¼†“|\‹1k‡è<Ÿ$z€¦	9ZËÑä¾¼3’”¨~ 4sàø×¶’) è?G,äÉÑ¼Oä¡e ¾e\*ÙA%¾¿ó‹,P1Ÿã(ÑýÔ!vÎWcxev`ÀódR–÷YkªBw›>1“”~8ò©.»Ñ(U&5Ø‚vÚáûÍN)OÐmI}ãx}š7rë…F"I´~âƒ
+¾l	D:=CêåOOõ½¹×µ…„/X4xŒ;€û²®µ(ÞàIár»ÚRÛÄR­FV-@4…=Ò-q‡l­:EtI`0“Ù¿Žt©ž)ft[¶r“¯}‹VðÛq,çÒšMû”
+pºGNÃåÕñ“V9±Y	i°J³9yT$Ž‰Êb—‡ï-æ°½yÑîm{ÉMk)r|–åi„Î˜&w¾‰”‰\?@è­«’v
+.`³‹iJl^KFpPq¿‚– ¢¯K˜pu04è–×SUHÄ¼iŠçâóX_"µÍ44¦Xm¼.ÅÕ®à§*êJã×¨MÏA·û{ù–/Þ!MsvšïilôA°¹Y˜.m‡².Ê(ô¾4­0UñdUƒ•Õ¸Ç¸&Cn—$_+Ž¼}ƒø ·Ï@;¤€Ë†Òš}œÜ'ÛK‚¯Í$sï["ŸcŸ>‹†€_°é‹³qdF"=˜Ô¯á,>^AŸí¡:×4U€Š¢>¼‚Š
+©T„ñÒ¾šÍùy«4(çÂˆZRO,‹÷yìCUÒ™ÚÑ¥…#ŸµÆÚëHÖf½4ï¸…¹‡-ÉÅ]SÅã×«»ë¶3,ÿ”nµQ‘‘YO óÊvƒÌZu™`=áŸYŠ&üEö}•!š/¢¼pµ0û ¨¡ü”YA/Ž¤Ÿ{”=+ÝN\·»D¬4Ô÷&³3aƒ3I‹®ß£R¦åñf aÒÇÊqœC~MTpbM›˜«ö™V!ºÌô>Û¥_|ž…¥]³À™$Ð¬‹kiÅHÉk%7™Dì09rñ¤oD·	dr %Æ*ØœÎRÜwg[iÐ.'œÜ{?éçGa_ÂkÓCbXV¯û&lmR<Êc?<ìÞIèÕÜÂQú‘ƒÀ8‹(
+×¨Þ25Wü“°/ÔÔ±²Â¥¬[Q>¯Sp­žöÛ}·u–„¹¼hå7³áy°¿á³BÜ8vÍ”J·×pP‹VM(•&Â?ÖùÙ¿Q„-(Â…š»€|·•ü\{Wv'ñ‰ÆøæÙ®ÅèåÄ Ì:©†Dhð¡e„—ƒJ¦/roÚŠáÅÊÁÑÕqÀ«ÿ:Š1gA³¨Y'5Ã'XÝŒþÑ›Ó©¿ÃêùÍ |iIÇ~ð`—a‹LX‚±Â¦ù¦’É´8(+ÊsÊQË'àh'Œ–Ë+|W¯F*oÁ9tÞHwÜŽ.ùh>^Ÿ—­ >èø=ó{¡?ü}âê—Ë-’1ÄXþ0&T»Ú9íŸ1:R(/¶VÜxAƒþãC£§0Ö¿›‡ìµÂÐ“OÚU7V± ¾	ÎxaæNV^QXN"øóQFQt^æhU„tqdM¬^|ÏlmJ§ie£Šš^¬Øä­ÿ6k–ûûÎÌ‘}cŒ‰*çšº»‚×¶ÀGW~YÙ‘Gêi§$/ÊÜûûO;âÞ’Oñ×—«¥O:|öËÎÅaYÁ¢½T„ GEó4äðnŒ‘ÁúxË4ú¾ù:ìÜÎÖJD[|1MG©i®÷‹‰~Ãœä’QÄ¤®À+Þ‡‡¤#½RU7ú†³v6°4 ò H|’0ò¹³©yN¬yh!é'FÐ½¢üJ€V1ÀŸÓýÒ¨Hd$éÐ[ß–^´#¿_å†¨ 7ÝZå?"Û7gV ¯.î""yÊº#Ôô›Àö5v 5Oª3(rêTeýÍ“ Ÿ‚'@óW!ižˆYš	T>FR/‚-rè0ô@bÙïWG³4nxÇÝC&(œ~ÞåµŸVlN§ÏÒˆhêF›ÁôäÝL¾ÉJ8ZÔ™}½·—”¡»®´­åqfŠ§ /I&#rßs€ñ+Ò0×5²ÅÈ9øHÜË2®{“	qÔöñ™…o™ÍØ%a+6³Ì‹Ÿ$¨ÛÖhrpÕ€¹ÛŒm,L±gòÓ2ÇÉçúTÄ ÇÔ„„G­„m™Ä».F«ŒeÿÆ@Ð%£¬6"“~óèv•®$zýç›!4V³(• ÷ùA­Ÿn%ó%©U÷ðbS,+Û°QN»{¡Â'ˆŽÝïï)ÄTx™¼Kdr$õÀ¦Háu¸“ksb¸\¤sÞbŽïT™¡þ5­Øï!—C9$ðÄê8R
+™8±« –dAÜT˜¹¥dCß0s¯Ò™±Qõ×RMîñSy÷g¹Ó˜èRdbg!Y^ä…¦Tzæ`t(=qñn0pÃ¯,`¥zró®oRº«2÷ã_ôÃ¸¯0+ë´p¹ˆdÒû8
+ì‘Ó”ë(kVA¦ÁáxžÜ›XDD <pfœ–lÎ):‹‚þ&§˜Ü#öÛåõ~&`n6m¥Ý1ô‰?^Ö¯K¶¥ ¡ö°¿ÌÏÖºïs €ÇpŸˆ_('â²èˆ>Y5Þ]”^ÜI—Å”¢é€›©R{å	ù–Hì’Š6ÆéJs_’î;Ñºî-nÞ]N‘ÙñŒû†$0 ÔòaŽal×b=ED¤³a&è6*M/ÜÁ0oÆÉ×ŽÌv1{ Yéiø3Q~ùbªÈà*…„…¦ÁS•†±ä¦oðÕ¼@Ñ”F3I‰ŠH±ÖÐGà²Z&rWyBîÚšŸï¸¶ø‹º÷ÕsiøéOï<I·K+Ê^¬™[fq_RÑý8«
+í¤_¿$j×CÐ]):Ûo5ØM‰ƒ¾»sŒØ\¾­M>UoUôH_Ve’¸8¾&Ç3—ÒÈ·î&ÓøÜñÊÀxÉfÇü`‡¢0ØsYþeðÄ^±Ÿq€^ÕôªøNUö³ôû,ïéúKÈ$GÌ,6¿Œ„
+r­&’kíœÇ²Ù}#ŽÊÙm†
+Šø„=KsÙ{^Éý—ú¿9:­'¡0Š>z€!¡wB‡½÷ÎÓËï@—K]J¸ß=gï$@Ïƒ¶/-LéÔÏl˜"wO˜èº£g¼¯‚Gõ·Ó¼²6N<Ñïé;óá÷YãGÊƒÉádŽ#¨=cIWš¸ÜL©`GAa33o1ã‹w%°qgâÆUH¯ÝNhÄNý$Zõå4è‡H¶‘ÝSã™Íüß-lû÷óÌßÃå ÎBœëVUça·F¬
+Ž´;w åøÖw½RRi§
+$Üà›ùz@‚S÷ÀK¦ºû^t€Ù¯D‘s€î¢‘©WŽ ¯¹$ŸÖ0A˜äA¤?(EOˆ»‚W=ÔIäédj]@y˜`Üùwñ^Qrz“€‹UjŸÛP ›,-s6ÂR×PóGÿh³e®m€¯\Âò¯£ÖM=r"ÎÚ[:‰ÿ2:^V`AWB°F$ˆ#Ó±Ü–:úâmªå«‹”šÝ%nè™«ÀDÄÏ©òûnF‚nZÏ(‰òÈéýòTÜå7½z1-‰1K† Í›ß
+³lÀìäíÔ ÷õ©††™‹xŠ­úQ ;b Õ}Ý’äö›ñð¡1ÒLïJXøcNQ¹ZÄ3,BéœšâaŸh˜õ/æù}€çwÍaýÒÐ5ìÜŒ}"å§háùuî0Vàß[q¾‹ûŸŠÞç
+Wáûâw¶yjÄ7Œ”yUãàP™7v€Q„dì˜¶´Ö=,¥á¢4¥$ªX‡·!jc˜r1„l5jHPš®ƒæÖ l†
+Õ%h¡­©èê>iH$ªáEIÊÕæ>pŸw–'I¤à2Ë1UÃÊ—D¼l•õ\ó7ÛMÙhÍn¼›/P_Å÷ÞaÛ×NKêð‚œµÃ¸2þÁ} pR®8XìÁß}?°QêÏ£¹/k"pnjB3æ”¦èU÷EšÍx¾ûrUÙõ÷Qü¾«/Þ!t'QòzSÊYÛÍÊŸi`MêÍœLØä˜_ŽYr,Ð $z0+A7ÿ¼–DÉïøtrS^ÉU,[Û.²Ü£”µyïhÆ	o¥Íµˆµ¸d¨JÝ·‡f5bïx¥²¤öýË€üÌÃ¿ß6GÔ«,’Ž¡‚*º¾¦±ÃX"gÝ#BÞÆµc›¥ß8"›i„›yÄÊaN©L­UÝ;o™¥–åîYËï.	8û~hËµ™¾ÞùËDñi;öw€¯9~lÛOñCœH¹Y!]ÅˆÐ°,>ó/‡mD<ÖÑÌš¢ïº¤N!ó8öÓæS¹;ìOûŠÒ³c6EGÌÁàüéŽ2|˜yç’‡ñtOœJD8ÐoÖØG	¦këøƒô-€}£¾Jn"¶_úCœ¬#‘˜Ì·š™Ñ\¨b¿Ç7÷lÑÇ²´v·˜¤µ5)*¦¢[H}q`/üïXûkè¶—F_³1}òGþlD©p‹€y°';fƒq›WYZLÑÉ”Ë°Ï„f)œtUÅ–“Bì'£R ”€‰ƒÃÆÞœœïmíb@•ÝRñ#­%WV»Ì
+ä¾¸;¯M‹áatp“½'{½FPLôS2h€RA‡(«‰äýCŒ`Ž°kMýxí>F{!¾ïQý
+?±Ë§ŸÖö)ëÖ‚¬oˆ	O€qùØÞýîþT¿‹²`øæµÛ*wÍªh À8–Ú)·ƒïNþž†‡Ùsƒ3îŠý’‚á¾ÚÌìòõNCL@kDAÖGˆdPpD™Tcêƒ	lÉ°¤)XO=wsâ®¨ðCÉuÎ+Ç#è5KšØÔ¨¨4DŒˆ¿½£ûÛS;8BßŽ»gcÀ[ÍkM5xÜ,i¹Å:nÒ
+²¿¹K}Dhê7y,»ÞFò+ÛD^Æç“´0·sÞ¡×'ý¶CFÒt”7ý›KOƒéHw¬×ö•ÊÖØ‘a†‡"3Ô€‡n0@¼êW“tªÈÚoØ‰ Ä}vßê§6F1[%¸ ®ÙEñ«Pý¥¶Oœ]ƒgÜa‘å»qs³—¥XŠÚƒ¯\ÓÆF†Äø2€Ps¸ÆAI¢“ßz0®4UUÕðÄGH“Âí­ˆ,Õøìªàëý²d>¾åaððfø\hèLÂÆqñšÔ|Ñ »ýÚ,$8SR:Ü\°_Wí”k*Ö_!(õnhâIÀ;FÉÞ)Ûµ'óŠK”È±Žë$î§UrÓm†ÛF‰"û4”áž~äÏÁtÎ€ÿÅ tëDý€Ú½¾Ól«ˆ&À»Uìïw³Ò€>öæËPíWæEåKoOló‚ûR·-KÖDàW'Vi{qË Ÿø~×œZaÁ ‰r¥jƒÓÀÞ.¡ë¾õ\Ad‚èãüÕM?7ò´ö3@s¡Ÿ4µçÃ>¡¹œ^+m<è,™€’vØ½beS:\ùy}Î€Eøå…»üA7Œºz˜¥åIÂPÕ!¼€J^Â;üªum'y–Î·ÛBA¢ža„Y"ÍwÙýÄ€ápÜP”g~t!àt?XhïÚl:^Âw€ þ…¬‰oØx»‹2X ÐCÆl×\lC:ÓÓxƒÇnI äAÎ[¾ªSŒaä ¡¦bïo[ØÈ¨9x«Áý}%ÿáªÞ-ˆ—¬±]RÐÁ;½‘ðÓvKÔç;0÷ƒÔÇRÅ!ˆj)þZ—-Œ·Z'a{Y¦RM’ËE+ý;–W½ÉSTö`½&#˜9Nàæ[¤%ðhèÙ4q½Qþ<îrE+#â˜e øza.|U¼(W•F,NßÖ =‚ËV4ïÀ{J€aˆ	]™7Ð‘®ö\¡à¡DÿÖ³¬,ï†é¿•–Ç£’üa
+%kSëÆü%L txB‚²Nr S¿^Öø™ö«h=Ïåwâî¬Bò0[»?Hëçâˆ
+V}i@.¤ås–h–tå0ïÊ#ÒüÅ5tÎÏüwöÅ½É}{Õh¹ñ™¾:&.èŒW‚F’Çä64ò T´¬è3M”¤€&vÏâÇ£Xœü¶Ÿøx¤ ZÐàÎ…ŠmdÜ¥yäÕ+7¤æ°­º
+îÊtB'‹}åzò)(ô-‡7±š“Oä€ žètèºÝŠt7hb#E6yÏSZžDÃ3V©6°ÁXóÏ¼^um/	}K‹s´)guÒÕþ=Q%ùÌýz Ð‘â†ŸQ8g†›{d=êÆòµv-ÅHbª?ß(ìdz¼ãÒ]†T½>æç#¶˜>Òr†wÂ†¡QÈ…JÙzëfc»÷õ^·Ëq×VóEiáû
+é€ŒÞNÊ‡âœðvë‰¯jz!aÂ/»|©¶XZj°xïV½–(ñÃZFz]ADúû|kÁÑô^û†Ã,f9ŠÊð¾µ•TÜÑ=±fßâO€Š3‹ô·%9¦ÚßúÉzKýNåN£'(9á@wƒ¶{Øƒ‰´Ôæ+(øÇ¸cžG¿À3Iår¬˜Öy€šé9P²æR¸ÍožG‰Ý¥çÖf¶½?Ã	Ê¡¯„×.Áµ¦>ÄÝ?µûö‹di³n†kx6Ø7 ,|¬>v¥œðì<#³ð§æÐvHSàöª—1ú†kœ‡Ü"wïhG/*ùRõ*i7pzµšxâÎÑÔ)ñ*„ÍíQ1ç—úÜ¥Àå á¯Ôüû»˜‘ŒÍ‹P­_RðRñs ŒØ+á%R’P´Ý[9i‰ž‘Æ¾ ñA2ŽÃÁ®Âý`½73Òº@?B=®ðIîa˜¢ø¨€g	œç…Ag†®}ÕFQÝ,Ú¸°ün$^ºz¾±«nQ¨'o€ýxr-k/	¾3î
+ÖZç¯e A‡Hj14ÚWhóÈ¾ÜQ]Ž¬¡>C¬µ’b†Ó+¿ò»á:­QâSãŠ$\w¯Â±wþˆÓVïAÈ°›ãqŸñ®&>3(‚òÛËò0vzéÉcÀaËêñ*”rçVÉ åx×—AÍAl{‚>¿ñÍ<Çe:¬Êó~<²³5† žŽú;~#†³îEýÔpPöàìº^ÓõÒŽq¥Fó{
+2t
+¶\}7qß *zé7Á¬V˜(ä)ˆ”1À(Üó¢Û—íW,´¿;Â¼ª<{9'Tâ|L%n’µddâùì~ìc³ J¢àÒÑw ×Å	òí…÷–I'~e¶/g=ZÏUÅUK»‡Ö—þì*Ññ„§Bf¹˜}Úk?UÊ^¯NÐÿØ_ßÜ)B½¢R ”n¡umÂÊÃ÷È!³Ë–qŽ'DP&·y¢>}ÆkvÏ†æF ¯¬H˜˜ÕQâ·x5xþñgØž (ehnzÅ<ÁM
+éÌƒüÉ¢’f²zòF ‘Ó¸(	@ GŒKIw¯åÂüÜèÎÍAI óaü‰KðZu‚¯_Ó¬ºçð%”CŠÆ1ôÇnÍ³øTBÀåEP‘gøÐëyëcÿ}:3v7,ÔA6–IÊø5÷Ô8K'¯§"ärLQ–¼éRM)Jä‹eŒ¢ä­è?[É3
+2]ƒt§éScÏ¦-$r ¬˜ú•q{í¸V¡àª­7’ÂÙˆ@ç˜ct„ÇõÅçýÉTíFˆ&·d‡j?Ù£ôö[zbb8ýƒ}“SLPoU3žãóåýæ‹E`‹µôO‘,€lMCO=ýÈÎ<TOÊùC—‚:nY14&úýàãS¡¦ä!WnRFkù5%P–’Î%ÎYvê¢ÎB‘[ÍRÌ-y2g"ñcL)Ä1?©×¬ /­ÄÖX^ŒZÉM«»”~Âx—Þ~a8ê*+Çyÿ¾¦…ï©Ç!»ñ}ØÖ„ÁU·Ãß‚ˆÊÆ¨7~´ïŸ›S‘8½í±sÑ$¶¡;ê²q2Å»õMsR¥¶mö€r˜i–Qyð%¨åBlszË®™Š»
+Æœ^$œ ÇžF¢auÕ&
+`Î:ês	ˆ–~LdÉÔ…p¦êW4„¶?Ní"èŠP¥&eQÜ@œ¹Ò}°dÜì\²î>‹G|FQ+À_ƒÌFÏ¢M÷ÍÀËäg1õwg·Oâ 	A¾G,»ØÐ8Ÿ¢SIO^vëPro)ûËºå`ž]ù	ýi%¶Vp ÏgS˜ÊL£ƒ¶dœÕâç/îCV·…r¤Èï•ñ®`¹B©˜TüDú‰1>†n£A¶¸†äe»q`)g¦£ieÛBì7¶š•ä¼žÇøŸÊÂÊyÄø¾¸¡_µ	ìœÑL‘ÏéM{úöƒÃ g‰,ˆ3GÜ¿,	à%£`(£J¡{ƒõI0Àe×Cc¬!˜¬ÎŽ¿K,æmÅ./ÀÍ'¿°ƒ³ýTh¦áâï*§r²¬˜p’ðˆAïˆpŸr@ÅÖüãŠtØkjÉAñþŒòõå…ŒìßfväTÃC,îådwi^5!@Q5q™HÙºÎ}%rL°¤©×]Ÿ1ð•µ­¬j¿Ž¹U<¿ÑAf¸G“-»Ñ£vO)u–Ç}ãFð%Aºãã³b{‚‚ßgÎ2‘Ž¡½~}þPúÏ±XykD˜å[òãk¨2W¢”ÊÌþ¨ÞoÓ.agòMî4Õ‚RyuŒXÁ¿Ç§"#ñè`¨ìž{cEj´Z}$¦Ü˜úÃD2ó/Ùô²<µ=Ç]N56sÕ_¨ˆ£œchÐËFLonêI )À{MÔ€¤–|ñ2_ùà2ùŽY @’ŸŒ| ÀT>ËP
+ð%–É!MùØ p×À#zU>/jWu‘ÐMéR­*_ÿ8q=§R°*>]¸÷'ø·]~ScÜu“Ð×òiÅ·„B¢(â{æb¹Þ¡érþÔvìœ3í]9šqjÉFXía„¸¶›úŽ,™+w}îÅÝ}5SÌ´D*’'5œÃºáIí]“¶[øKû¥VÜ™Ö•,ÇhøfŒëž‘\²¡—›v"jì’ÿ¼ßPÈŠîFð]PèyuÀ[¨ÁFø d.ÿŠ½åÏ‰mvÅN#œFKÈ†õùN9ÕÍoðÚœ¼Ž|1[œ“&M	I‹¡¹5×ƒ´Ñ\ëi&çPŽÚ[(i‚¿ãG+³kXoLn[Øi‚0”žÉíÅh¤
+ö¡íb¶ ÿ(tí§îæºÚ•Ò)$|¦Àu²ß’¡>eŒXë;‡YÆ…èP8ûíö¬é û”0^ƒëåŽf£K5/-ÔèR=§ôX)õ0î±O¦ŽfÕLoC·à	Á êÆ9^ñYéÕÉs­òW7«	æîXwÍ÷âvUˆk £•g\n+{‘½‰à÷_œ4n‚‚ÀÏQIÀu”U-Ù‰\Ô"™Lûœ‘{#ýw.b³Ç)Î5JW€hnÙ@—Ö×9Y 1G½ÔõBEÑåÓ•“ÝµÎ—VCÀŽZ”ÍÞÅqã+Õ²}4Ì÷PÜXÏôç-pE´X	Báõä%:¸EÅòb1'/„µÅæ;bÍ×¸t¾{|ÔœÀíðÀp`d$¥´è4þTÊìž1()¿MJµGm·;³v/bîA©¡>~‹Õž†fjì¨?YNÒØ·1û‹*c<ÃKñQÀLð©~ÜìÈÃx«í€èÆràƒ¡ŒÜ|}Ï¡§‡t-8ùØ±”€ïDã¡‘£B·˜&ÙÕü9áãŠ³ÔŒ¯ËôrÔ~e6Žö&k£{kÉ?¿Ô'`óæ¹Æë÷ û,¬2C.…;áÍÝçû£t#ý9AÇ­ÛÂ§èûzg
+%©Ùùæ#Ð|ÿ¾Ø~)~`ë©=ì½k‰Ÿä8ßúÄUi“V_ÞÝAÔj36 :
+›—¥(G7tSe8¦Û³õ–Îä m_‘÷‡øÝ‹`Bv£¶ªøÁjú‘hqÁ¯¸ŸFœÚ~J­°yOäe²HÒÜçªÁÒúPO_
+Õ!ØË1”5=FB†Ý|¥9Z|I‡ö¯ÊlG}„ãu.9&c¸eÉÉ}uM¹Ç¤][PËZ‘•÷	Å‡W|¸”ï½;{'%.ÙEb²N/Æ:YdÛêKÃÒ*ÆÇ§Ñ¶‹öÉ€:ào¾²ñÎ‰± 5Pþé¢î €.v"Wl˜¡]×#©ž§\…@¯‚ª¿úÜãõ
+õ‚+ÁçEK2ñ§ê›´D‘ž¡žË±8´U”qéÜaýj
+Úþ}ÆpˆŽÈ3koóÎs=Ï–e»
+Ë©ü¼ù‚®ð:`\½’–Õ6Ûð0† Ø÷ãôŒƒçú—W(v[&Ù_!>‰ãƒ¿WZn­à-_!C·¡èCóþEá‡Ì‘“dó5,"<#1kyó'?Çg ’Èí…ãØ0Ñfà(žÎW©¡}@Lkû#®Õø#„×àˆ¥Ísdr_škZj—³eû5:èLÓ@ü|ˆ½±×ùWC~›jöýÂA:–q¾¸á’á…ÏfX`BûŠ·Ú õc`êÈÅ‰=þ}}}2°|nq#Èƒä:šþpSR-Œ÷NƒÐ7–‘-RºÌg4œª†Ü°Ë^2]²"{ø±¨jjÇìËTc7Hµ¹–TóÓmäºøFñ PjÔßnp éž©éôp¯wÙfrŸâåZ¡:ô?\õ+i]DnIF‰ÝcõßC$lBÖè—kQL¾T9Æðý©èl€…_EH4ù\ÜpV¤Ø× ãuÙ_Ë¨Ù%2µäš¬#½BîâÙ¿Ý‹ž8Bé:¦Òý±lœ!w›ÀŸ¹¾ÒØÀÓP1z¬où3SCºYÂ¢; ÊÂû—gÑ]~²ÍŽà2M¡–Ý2e=M0ÝÒõêÆ"ð±ì NPƒ_-¡Êdú¾ÃÝŸ¨8OiRÄñ0{;AÚº7¢#ýè/þ5|µgR(}N4l·Û
+JðWÛ!¡¯e€ËØùÄ‰÷cxOÒ£8[,Ý†Äš¦|GBÔŠÃQW.A6M3•l9¸r{©ÑWò¯óÐ›\DÙÒ¾ê7zó³g{(¡G‡¥œÕøS£Þ´àT}c¶o€¤8F=îÙÎ0‚¹»ò=xÄ¿¯ûp’	màà< æª4Ië€@þKÁM#d¬ÅžåÒ
+&Àåßd¯l’k€ßØ/)·isVlsS;GÊo<¥Ç”˜Ï‰^0a¤1êD¥w;6(Õ<\m8ì+ßB˜]ÖÔ!sñv‘	èØù¡âß•]¸b¦”Õ)Ã'U6>ñ[H/÷#Mn$±rè>$Ë½*EžýVÑeúXdX›Ëìô
+z Ûc2]*gJ ’ØjÆ5˜Ç‡˜7ÆÏÙª+4ß€È2@þ	~mSø÷R@wd4²ÀÇ³dÖ7‘0°Q®°¡ooå¹öôº™~(CxÎ™VøðmÔAoéÞ÷:ÂÖâ<Œ
+ópóCzKÈMÙÊIaâ¥Q”%Hiî­›q{d‡Ä£Ž	Žúnrž»¼™î(UÐ4n$ÒÝz„À¬óþïw"§×ëgbOê½.%AGFóÓùßU-.t×­-@òDv*9á/’ÏZ‚)1;LÝŠò	P%&cÿÑ«OÍ87$ú¡¿'˜ÍGË¶é‹†*oSÁ?­n·FnŸmËÝu8Õ6m9<Q¡ ôÖ´ïs¿ÐLŠ-K¨Å¿£çfß†§Òí‡ %áƒô1Sê“äÎÇÿVÕˆäÛá•wk|¿¤ÿñY™KðlÄó†ëÄ%üDTWILú´8"ŸâÁF’l]ô2c‘¶±~C¥èv²!e£â‹ˆ¡ûFá«¾É„8âYáâðÊwço~¿=­»±"~‚LbÞêñ	ž¨è-æ©x[jx÷³Ñè,¤XÚT¶á4‘%íòÒâí6òš+àÕ¡zêC“ò…ˆ‹ä	i8ÂETÓˆ†ar«R]õ1ÑTV>‘-‹ÀÄÎQ\ÔŒuÊSá4uÇ 0våq<Yýƒ¨õmdüª&O½ÚØÁJäÁ•xácŒ*ïi£Î¢x@ÛÁRÝã¤Œ¦}x…(·®æŸ_~ô¦ØOÌ&âW«ˆÍÑ¿^ð‹›Ï-Ùƒ•ã?¥WDÁ±ÞªŸNß¶1ð~m ò.~ðŽéfA“âiM/üþAœù}R€Œ¥cGåÚïTòúÓ“†_^pÛ¤§¨Nr´b&^zobÄÚÎ‰ 3øhSUú…¡F˜šÀ¿óIYOÀ²i´«¯á¯&sªHÑ¦ <xÏt´Œ¥´SµÝ{~ïdäåÖa:cUQ—¢ééŸeÉõsFjnÑ?¹Åm“j,°iÇó­>üd½î7ƒ?1dhkžšËÍãœvt¨iœ #eÌÍ
+"eöÐøÔßâš,ˆ– {d;¿]Y)Øfu¥av¾Ú'òS"ð^{´Ÿ”m•Ü|ã7$—Ÿî4¬"U§“!@òETçËHÍrr]îÛY%–/º  °‚–m”ÀüÀ¾QLÔ¦Z£¯^ÄNÁ#0¹LŒfl²Û PÈ üM¤*éñ{Xòþ.Üâ]n­@%Ìøï•v×›gO´mDH´ÍÙÈäÜfJÙÙíÇ’öq¦"!È¦l¢#EAže¾	ÆÚˆñ$×°yÖ«YÒ¶rYß4[’ ÈÐÊ„­*éÁS8¬  °gaêÒNÇyóßB/gs‚Ý7ì'G„}qœiúz·!F~ûðJÔîÎûÅrÕ‘z×è“pVÑ¦3yÞÝtÇ…ÍpÕØÊç-#:ü õ.å5Üç;2…•;ÜJiåû§ý wÿ©ÄÕ£Ýtu¢dŠÐO+vÛò0d…ò&ðfD£!€7¡1¥¹
+ˆz!Q’¶ÀTÍ>›.´æè+~¬¾=ÝDþö»ONÊ%†7Ð¬”ìŠµAvý²ßDÕÛdÔ /×Ò¸
+d<<}NäóäùÌÊšJ¸éªÐ©|™´Ea Ô‡ë&‰ƒ°Ì–YàCkw…5ür ë§›93œ–v-‰<‘ ƒ?Û<ŠA>Î“ Æ!Ïüç¼D9„TöôžŸµÅ_öÍñþö½ûø¦bÎO½ðgã!²¦¹àN²‹Ô¯	ÒÉç	,4_ÖØ:®/x7~ÏN_^-@ÑiÍÌÅ1:!æúžU¹¬_cì“_yVñ—À@w+Söƒ‘KGä‘²€“i–nvú¡ªÜ·[½áÜùÕÿhÖ£qÞh%?ŽUÐèÎ‘%!ž3À Säd”Ó}ŽO|g¬¡ß:'Šïâ¡º²)±%Iìu¨7‡”žÃÒ™Jº¹·éœùÖ¿_|Ó‹ØØÛªãç]‚ p1b¿ƒ
+IH} C!?0‚&VÁ®ç¤Ü@M •U;!jQ¿ŸÓT…O¦@"=À/O@‚ðû­À'Ü×,íÐ»:\…lpD½Ö?ëäº-©³!Ab“_uôÚ[S¿7EpJLµ«S:íEq÷°ñù)È`]Ü`Æ²•`òo œI#ã p¨LáãH‰œqãð*iZ¢¿²Åñ®ánäiVj±ê×‚Döÿ‹ƒÕ4æÝl6Þê‡®q3	¦ï±QNaÞæ0 ÎNbˆ4’b@Kæƒ`Ý‹i¼*,sÇ<«3½ìÿ>eQÛÌº2¤f\¢‡i*FÒ—Ã?¸u~ØüuHµá>9áVZœÀÁÌˆ}ë1ÿwç+B«% 9ë\šJ1Çø×›Ínœáì˜ûÓ‡ž÷¿õéïú¼¢±l{jµ¢Ê‡H³Ì|xéàÖª…V“	ÇgÄ'Ã¹„³<C	ô§-“À:;–8Ô5Ê¢æ-vÜÖATQûþKjiíÕ_¸náÚîO–Ì0èÒÞÔ$QÉâ>¤…Ó¾d|”…ûñä2RÍSóLÎ¹áçlmm!’ÍsÀÃjá÷DÎ¬mi÷ÙûÉë:ßzøÍ³9”6½É£×›‰ŒÇpÄÙ0Ö~žÆ©¢IÔ™•3}Æ§^=ˆÃ¬B3)ƒ¿Üdñ@#×ý]%òóË6"~‚²nîÏÒE£‰ÝZëêœf÷Óhöâv%¿dæq[-~MuŠÂÁÄNæb§	¾ˆýé9]"Ø·Apl@ö_;™KŠ¬ª„tÉx)Á]£nGc·_ÜûÅå-H!?{Qã+£Ax¶’i;Zúß/Ì‘Â±ß]pÇ½­I¼®ïmTZâ^Þ’îéºÃxº_£{¢o
+r©óÍŽÏ5 ¼ŠLœð‡ð“Ÿˆ¤ØþGT8hwžÛ|a3IpîôI=íK>uœ¡*HD¢ÃÜü¶8Èõš¸ŒŠ¿í¹ó–€xÈˆ´ŠŽÀI÷ÿ{7ÛÚíÍ*¼þ\ÀŒÞLÀö6ù‰GlP<©bNc÷uKöãxodÖQ¨_&›¯¦9¯MÒ?ýØïaUrÇ­ñMzù5µùìa’^A«9™ÇƒÃ#±‚U>u¹Þ¹BwïxÝ”¶NSŒÔKC«]‹Õ‹Q#ƒÎ’ ­8:}@87/=»Æ8Ç…SÍ%õ>05v*,ü·óçQ;µ¥ÿÕN-È‡ˆè¶ÎC{ÿgj8œ)[ôb:üûz¦7ø”Á…‘º³ïº?¾„ß÷Ô¤þ•Ÿk®úÚ û®g¹bßŽssƒq©'l)Þüêd“LÎ(â§{³²*Ô§Š$ßÓ…Ýœ´:i0qæ¢ùÊøŒ˜ 1žwQÐÕø¹†À^é’¨“›ÉægW1U¶m0lœci«ÄÅù%5õß(å³§‡É¥_k‰Uø(†~“íŸ²{¬:ù)€H/—•xV´¹xZ‚õÇÝl¾Mr×9d"ôh\1.4Bœ°ºií{J”c-#ðõ¢ÜO«Ñ½66Yü¹Õú¨CØUžÈëü<rŸ$â³üéØo(RüKñ¸þLv¾“³=ÔÎ¦aàN…?²’ÝaX¨­·eL>Ù°«ù,K'L†Oò…‘ˆžˆ.Tpm|b/
+öë u¡ŸÁÔ3ÌÑÁÅŽNŽ[Š=ø	 ¢Zš2Sº4€†h-sÅù9pM ¢¾* ê
+d¬W#\ŽzÝài[î9b2Ø pü¨Ÿ ,Ÿ)“;bn3ê-]A]œpÚnÂlÉH$Œ©…½“ˆ^¤L¾£l‹zãN¦lÉ¤1|#–yÑ¶þØSç„nžì3¶Œ-´<:ÖðWß¼S	 –K¼RF¸_½ÈY™åíµ.´83ñyKzŽ¬iYók•}Ê}C^L{q´Xt÷4üé=ìì‘º8ˆ@¨ÕÕ¦múî6~b"ÒZÏŸÚ*6ÈysMO`þ˜‘ó³1—wÖRµHšÌ»Í £ñR`0¤õÇ¹Ù„”Ïí6nŒwöÉ¨Ÿ¥ú®¶Læ )Ê‘}ü}~–HxO"X<¥§ôè3G{ÞxÒ‚XŒ5â‰ÅáœŽoàuëàð=u]õ8„Ò`’$ÌkŒ²ŽešéJ¿V_t’Ó²lb€ä¾ëŽk#D <<sÕIfà}Gß,yÕŽj"l¤Š"·ßŽBÛÑfAM–K<”µkØccZçÐ·AÎ{Ø'­ž^\F±’Î@ÅH.üD´ùç	»d]Y?Ê®^¨Òbê¯RM(‘{Ž²š¼šP
+ÌÎp:ú*Orì¨…XtZáëÁ+%  @(õã»fôÁ$úÐ“ŸòãVYžGöòò~ÎÊ9*lVL÷¥v Â›—â!€ßbq5uoõ8Ò®Ù™;ÆlšfÒËh[•ä&8Âýæ–ýMÆ¥{ó6Ù`låc€Ð¾¸âš­Z’Zp!jbk’²ŸEˆÛïè·ôr™ŸI'‚ö|¤çÍAü[I5€òO2ßV½ÄŒ¨aì?™µ²zE³xk¡™NhÇŸBG¯@£Ñu@&ì&Æü¢ÛÖ3~¬dÎ²wOSva¼±gh¯Ø ”’ íöß3Nè¶aï[ÑÝÀéuO‚FhäÖjt¢½ƒ”¦hc$¶"ÒÐ>Ÿ¦+K>Ï¶þµá	¡‘9ÕëñLI+:ytÏ9^‰ÄÕ®Oûvý\__Ðù )v;ÅŸ^-Îñq#À.ÊŒcÑ¬†eÕ «ŠãF	/\v!K³UE'ÑÕ+3‘Še—yÆ'äïFò}ÞwÝ-‹Ùj&œŠl"ZÈg¿
+/ÓQÐ~ŠÕµýš„œq>‡õÅMí®;iø´ò&$ªþ!„¢Sä^Qm÷†,j¶™ŽqÑw	Ì¿¨7~",÷‰¦¾ÙƒÔÇk“Ìj¾l²tÁÆ®^ˆýE‹‚;P=GW¥àßˆ0 œ,1ùlˆài'*nµ|™GÝsä™ ¹¨ÀªO>7õÅ­#.S{õúTÍ¼1~{¤¨í
+
+W$ ²îÜ™`$m&°4¶j‘^=h¾¦R½Eg\á¼/î ð¶¥4^ÐLƒÑRL½F­½Ïó¦ô1ú~¿Âwxµ£†œ ^YÅí¸Jþ
+d³0WÿV<	8…s«šåÝ›yÃ¥6Çr$Ÿ– ‘Ö ‡ëÇüd¿Ÿ¶ö;Ø…å¢­®ÛED Š(Ë¡Ën„`´£yDE9%]¯|ZFêr®Ÿü¬•uOrÏËl3¯6.Tñ(Ö®im‚´fnò>c“4½Mc46¢éB_¾…ã¿$Y‹ÝnÞ§JˆXqŠŸÌt|pQ¥Ì˜f+#^ÖÇ“èbØGy}ØM#‚äéƒ,G "ÉÉ¯ÚªÛÂ™èí|$5:\7¿ðøÓiÛ‚Õ˜A—€Ð¢J~I×ZÊ:ú»Vãcf;Xbô!5'Cq’‰7UQwÙ›6à”â|ÊKCã­ÉÓ½©L8]³++µÙã”UU?AÇWY˜È#L‚pŸ¼¬	#u´4õ(ÍQ'ÔœfV€^ËÑz¼n×õžQª•^»ÚŽñóCŽ>hi	)XÇ@hƒ9dË!;Lt„=ëÄ“™¦­…:VíGï¸þ»ÉÿÒ"t×åÀlÄ)Ô§Âðß@¤„MoBœBÃL#˜_–zÍšO;?Ç„;¼‡YkT·Ûn³FÅêÚÝ[·ãÔ@EÚ´} ¸â|ÝC/üo)_ÆFñ„¸UY­N³ÑínÐô§Ï¸æÕBnâ¦«L­¬Ö†n`rŒ‡kB†¶soèT0ö+V¤‘ò#ôø½ß_¾–Âe@Íª`Ó·¤¼|4Î…TÆô;Îpb!c&­¤¢ÓMBÅ[Ê²x¼í’€/g/ßÐ¿[KäÌ[¦üá_îã\ø6ËKæúÒ˜§ÒÑgn-Ö¾Ù0I2Äâ]Nï›\~¢áPü;9:®þ>n‚%i”yÚ­—hTÔT=­äÇ:ßó?°ï{Ÿeû]¬âÕ§Óƒnõ#«£<DŠ"¾Šò¡¬Îázš\Ø“ÔZÄX`òÍŸÁhÂi*qfÏ¯ÉÉT-Œ¢66)~ßA*,ÄO’ø"ßDì¼­¬J¹GM¸í­î'~e½
+x“«:_ãFÈÿ>yCàÑ7ê°rûE‘ØMä‹UÁ±Ÿ©Aõ%„~­Òïiº –êQ§Ñkâüf¨ù|J–ùÈâª½«¨ÆõÍë½àD„gEòfHW-Ør›Ü^™ìçíàä@§mÊÎí´z^uOû&É¯%Ó¶1Ù)#ýœ XÉÜ
+—'Y±2K÷3Vc4Õû5åÞ‘;ÜøTeÉb”ù(‡r8Ìûc™3uv9×R÷¢¾s„«Î`Úkö¡XÕÝqÞd"y¥»à$XÆMmÙŒ6À¬Ìó³K*;§Iò\O'cä·Èº‚Æáõíö<L‹ìâÉEì[NGÜ“ç[~T:)ðH¾ÈÜö¿¡‡ÕÜDIHÍ¢`
+âIœìÉŒà*+ù6S›/g"5nòÁ=ªP¨3<„Ów¤˜À•±±d‚Pª¶&ïÔÙÍó4hàÝ‹üŠËíw&ø:è­NÀ'éf†Aü,~Òä“j&«žÄB¬pù’@>à¬SIêË/21VÖGÐ.£"¾ ka´‰ïFªDßý^kTòkút
+H§¶zœ²mË-
+ÊZŽ¬é4K’–qs5Ýtžø¾ˆ¿ïVúŽžõPSõRïôß©¬áa*e>cxªBÌ}šmçMõ2½IGaèÍhomû­µ´oJ¼;?iøoÍ}µ5 Æò‡ PkÓ~Œ—
+®³ÓÈúG{e$`X©äf>3R})…ðT… ×<ClÃÓþþÂüjÌ`øÛ¸H‹lSÞ‹µ{\J-ƒÆðUã‘<0Žh”‘XW9@”"”‘ñ«X&«Uô»xƒv¶ «•ó'šÇµ“†Ñ¥Fˆ¶á99•°”ÅÆžûBÏã¾?&‘ˆMÇ;é1GböÌçð@Ü«ÆgŠÅÎ? ñVíª«fŠê¼«+îê@ BîÖb¯û}ÖB\2jD|z³-p¨ì„ºÞô›”×Ú2ˆ¡^­‡•mvã.%3ÜçÞáº¹	ñ>~<ó±•àø¤¾¤´›
+¤ŸætØ® øð9)GÄš%Æê÷5 Î÷Šô²Ü0±nóÝY.§|ë{»J	èznùÇT&‹ÁÁ^Y)„ &{›”§ ¼ñbë4)¢%ˆaPÃÀååÜî’²\2S8ÐÒ¶ìíºÛOÐÓ(½ðvÇ€ƒÇÜo`†ß#”—>r
+ºD…|²è7ßÅ¼N2ð‚Ù(êêë©–uX¤%iwÌ­Uow‹¥oÐ:‹R;½êç4 raXëÀÅÉEÿ;îýÄ®É_1N%	o’±¥‘%±­õµ¸BÇUúò†ON[ïF
+öS/‚7[ãM°Ž¶ZyCkœ6A}¤Ì÷…€ËR+—t
+»ËûZº Ò´Gb¹ÆE[^Eõè‚•Ì!5~R¿T´6ÏðˆÞhKûgÓj/©5 !<Z|kz¼±”b,1è-ÿ þÝýóþd4]%&
+FŸN÷rÃÈ`þ{ýìšíçè÷NzS’R%š³
+“¤©ª†wÏp¼ƒÑ}Š~«ó"¹–ž‡ysØ>C£!éßL+”¥äñÔ‚Z)ÿŽ*yÄ ÷;ÀÚCþùÀÝÅ[ôÎ*Ò ,É†iÚòh~Ï4ÒR—aÄùH	àœÞeî¿U¼[?&:A8ù9´)!ž  øc]ß†PØ¡kÈ+¹1{nŸ[§{Œ1œÀ*ÍÁrÖàÂDæôÔPâ;Œk+TsŸ½»´ºÙeÍLEO:¥oëUB[,íÄsXýÝ‰äR`FûŠ6F5‡Öh¹ƒÅšÅNˆE"Åi`£)òç<èÛ2ñ	æÑ UDÒÌ4òîKæzc¹R:J‚Fÿ~%{Zúy¦=S^9üÚÃ‰n³S¯3w(L»£@oöðN3¾ù¬Ñ”P•˜  Ì˜‰N°<ƒUïô™´9Š·&Ãª¸Nýjü¸¶|µ+i?ÄUL‘CË­|üš´quQoþŠÖ _¹‡T]ÉöùObÞ:
+:® -F³,âüxô÷X‰Ë~_¿hÓKVeÃ–h;f‡ÇýGßˆBû¸žñŽí9Ðä½” P?`lû)¼®ÇïÙ½èÔC‰!ù³h½,ºÐ»~ÉÝ7¨j²>#„Îìõ¸‡Ê¨	¢¥[Ö]\Zª†jFÎ‡ŽñÑ[‰E¹fóU^{ UÞ¿J¦5ÀÁ	‘=8Ö½õ*8<€òþ®ñ–“Š:ß9+× ã)5˜#èd‡Üözù’„"ìÎè‹¯ðÔ`G)Fº·FÂ'¼”ÏÀ½¬‘KÅ
+PœZ_Ëbì5Ÿ¶˜ÄÄöšÐay	rH¼Æ;ˆûßÏ½ð8´v&—4<ù}}‡¾ºóÆÓýŸì§ÁÃ‡UØ©}æÁx	ÏˆY²ì{Ö”/;¾JRg˜í¸ÓªEÖ‰×0ªmm’¥<0ØÄ8Þë©³>X¡+€“3>ÜÜäö{v}×°Ân#‹’8",€·€ÆZ¼²Š9IÁ·Å£»&¿¹À¨2û+Ø‡Y„¸ÂCÑ›ýë’08O&´íDŸw¬Pëžá*V®|œF×lä¥dO#‘—Ë‹ù«®ÊVÇøÁy~äÄUœ†ÁØ?I<Ò=ÀÊ¹à;nì0}_…†;,­€â,òÞ³o©Ydg‹—†ýÖº³„ì£H»œt1ðø—œ§´}ciHèQ„èôuEä¬Ô¨ð;%*Ÿ¯XIëý.~Ã¢ÃÍÊkÒ«PN/9]ÿÍ‚xàƒFY€ÍÎûØdöÚA·‡Òòõ4Õ´ïá¸*äL01¯&ŠƒÔ¾Ï‚sç)‘Œá…&(;‹Žï[Ü™tJšPPi=~b4ëJ\¼ã¤BÃØE®*©WâžÙÓ´’—ÞM4¹¾ŸgE¢dm~Ayõé³˜Ú2¼É?_Î2—}Š›:çZbxo1‰Î€Úûh°Bx‘‡é)RÚ°»ÔCÌÿ´’-«ù§èD+Þñm’WºS	–FrVëÐ¿[ƒt¬Ü=É¡èâ¬u\=ùà¬m…§<•IÜëÜtÈJJj¤\~-º¸l ´&'µ…*ß «T}±–A%£ÁëÑ ]ÃÞ'<ºC‰·[íjSlòÊ¼qê”À½Ó°ÙoÑˆH7V†[éN‘•‰ ð.©‡Xäˆ_ÄK)úö`Vj®•úÊŽzn³ÓAþÖ]4~èS9hXØ\È§$ÑNBöÜ®•(ãAôbÙ¯ô ·ø£!S•µÇÿŒ	ïªõK0ß€öD#'5»aöñd#ù¬3y„O $ª'zLÖâh¬É¸|#ËßÇv¦Õk·ÂÛáƒ"¸©§JïMyqÔð¡ºñC7OI«íÌãó¶ug(…E¢ÿí”„¨5M°8d17É¬¨ºþ»Ÿ¿~óˆúÔ°2¥¹Ò8,ŽB…õNF˜(  îq€·,üv,&£ˆõÉ¢ßi¹{ÝN°#±^x“uË²ßÝÆ¢r›£D@äE¨kšïíõy²¦•r9¾ž~}¤WµBÅC!¿Ÿ}¹!?éÄ¾ŸÃh¯»ZYx-ÿÞn“'JÔ‘‰áø(În÷âA”~cdGÄíÏò‰§‘sýÓÉ‹.íKÈ'ì{Àýõgpšè>T¨g-”G4§šjl´ÁÑ2w½(UQp6£mõ_Ÿaù÷“~ž5/#S÷“h:+¿à²ÃÕ‰²¡‘ÿT±ÐqÇý,œØ}Øæž7š]„‘¾Ò1ã#:úî³ ù»Óäa_S:ç†L5»’¼¦o„Â¯£ï2Ú…±ƒ‡åj °™ŸP¨ yp&¯=Žî¥R„Õ@±ØzfêgÐ„¹ÒcÓ¢I}{—äð˜¤g¼ ’ðf¥ÝäÞGòQË“]p8û‘~ˆáñaâ¯Hñu×‰ŒX­™ûU™oÍðôh$lö¯äü¬Î:Ÿä—ÜU£ÇýŽÇ°‹ÿ¶Åé¡­ùZß:ûÒ
++Æü”GÍQ2Á†9t¨ÒË}ã ByS•Ï–¸Ôàb“ašG“•~-Œ‡‹XõÊ‰_égÞõ¡Päÿtp¿úMA‰¾½ªíÝÁÆY›­2Ñî´IðDQò)ä@ÏWq/,¼ƒ\°šJ86BßŒ%eüÂ‰ìóB.yS ÃiÝŠ‰P§ t3&íáú2ád(k¯ë&½Ë­öø%ï½¢ L*àæN´^¼ÆÀÄëû¬$rÚÊoŠšÓ_ïÞkïAn7ù,í¥+_·på¬½yPÆVÕq(°lÓõ”³QšC_rëtt½J¶ÈLÒlâzÐ$UÓÉ%_îíH5ú9öW†BÜ±š´äù>¬¬ËõÂ4ü¼Ì	,½ ,b»Àfž}ä$"
+þ
+Î†—þ4aI7Æh¦ò,Ít%¬·v‡ zë~‚ò` ó"ÿ±'¯é*Î¨ªž‚ŽÅ|0ù$§>Ò£Ä¯—ñ’`]MkaU07c’çÍÉwöë¶ª¾“ò1ÖW¯]P7öÇ\6CnP‰Êb¤µjo÷-¶G‘8ÈHi¹ô¡ÌŠ•jÚuñJX;Ô~
+<¼ÂMgC¾ão*¡S;·Å¡¾!’ÃÖ»Ódv¶jLÃU'¿Þx­B‹åéÆP·š!vÈ
+rv°Rq–|Í?"·ÕšÎÛÐ8>™ïÂãì©ŸVÝ ÌÅûõ=µ}>wX¾¼	/ŽbÏÕ²2ÎÁ¹¤†³›Rí-Ž°¯pHà7É›m,vkn­ ÜIð—dLÑF‹F«¬:äùäv†–)šû×´&Ç5ª¤.¼Ž«ü„…ljÖÀëy&Û¯@‰;÷3¢FòÒ7“ýÜ6³–,þÐƒi%Ì*¼‚j›Ë€ˆ‹÷G"ÙÖ•+àw
+ôÏãà08@ ‡È´
+R™Éî92•‚/‘tJŸ©æ9ÌKÒ|­ˆµVa¢ÐÌsn$‰³±»š7#uäE}˜Yµ}0ŸšAŸ€mfÙ‚1-q6æž~nS=vpÆëõý7¾û÷lI7§‡z;[¢!7yâÚ¯‡Ï›Z<¶«?l5ûô¬×ý°â)²·³Vrû»ÁÌÐMþ³¡ýƒŒ@ `?d6ÛP|Ï¥öçÕíêzÿô7½ç÷µJ» :Dâ¿žxH=Ê‘Íiƒå)ô…º;4?}Y›S~¢PõIÉ˜rƒe|!JN¯ÀaC]â7Ë¡ñ”Cg^fñÌ?ìì-¶«½}j;x‘Dô—ñÇÈyÎZÜzÑàœ“ëÎ(FÂP/V •d˜Ênq¥µ3E0ÃCÊŸKIeùëøÔÇ!¡üJÌŸû÷¥øcÄqÌØ¤Œ¾|b…ôÓÔ™˜9‰wŸ‰âØí0öîš¼ËÌòw²[°¿Š¹¶ñ—X|²ýFÆ—ì&Z?£9%¾cû­çæX;mU’<Þhß	™;Ðáð¯¨2/+|
+DÅÔð†nE”¬5(²nâ;X‰äÓ|µHŒ\þK• ]âSÿ‰c¬ZŒò˜“â£äß#£‹‡¿[ÙÚ8†~O_»sæ8ªé{‚÷Û&Ö¥ü ã}gõWx9
+cskV±—„X-îš/EH"ÍORÄ¦¿”Ý…*|ÃeMIì¯:èoÁ,kDë.¶=ek5°ªNñ5bßßlXÙ2¶ß(÷˜Ós¯hL.
+b:@øð6SÛ÷„ô¸›¶•˜¾ÁïßŠpRíÓÆóPïñ‹kÚ{h½0ÁZ6ž€%ôÛ|„‘è¢ |»ð*s+¡Ýþƒ>¥ïhôš|ºIàwì‹ÁÝ~Œ ßØ¶Ô@VÄ€ÌÖ#uÎÅ®YiòkœùTÇ·}3¦‰ºÐ J×›_ì±|Ëó‡,\Ú_ÆVžŸ˜‹-P®¸}ZíŒ‘i×g§oR9AOâøA“Í=‡Â_–¡/ŠY âày;çqô!>£ŽwëŒå8m¥üÚ¥!ÿøGé*µgå|³Uù`n>ð¢«jÝHôáûf‹¾I{k aÔ»—="PÝna~$Z‰Ÿ@Ú§?µë‘Hd”¢˜²Úµé«{Áw^9u]”¤£ÔTä¶º¿Œ/§xfµyæOÐNýb„¢«>ÙA A?­[ÚCiP\MÆÃú‹6í‡o€êï™=’sâ.ÕëÏÇâä0n<ªÈºXÄ¾ak‹‰í[Áv*fþÇªƒÙêY3±sÇù-ON~âd¸žÝÌžêŽv@Íq_'ìôÕ†¨ ¹ñ|¶–}Ê¿<¯w å?ßFå09F}(‹†G¢ùù-°7uéD dÉ]éÕ]äžµ/:¢Ä«„îtRJ³óGŽïÍï¦Ð“kƒ(aÓçÑ )/û:0B»^n±â—5z._È¦½V%L@¥}™¢Åq¤‰/~Þñm¤¶œñé‘-cô£û»“s|®‘¶­ãÂJÉ=ÔIh±²q?åúfZÏ’tkË>í…fYEö	Hö¹Vê1¡BÐóä*¸LyÐ¯˜^3s©‹Ø´Öü€	ÒÕ¢7y¾Vb6uOiV_9õ1Š˜ð!ôæÌZhê²ÄÇ¿ò€¶{×mr5 £&\i„Ò~ý†£ü¾fK–ä»…9Àj)“IJ2AT!4sý?‘5GÚÐq+a.o¾Øéù#Ðw¹TT@ÆB£¡—1¨>G]ÐSl¥oBx ©“]ùíêñD†¿Ì¤ŸHÚ3iþîIZuPRÍÁ§V^»ö±eºÅÍŒãéFÌ+Á1 Äo”2ó=2.5m>0£M{³w‚ºÃçWß6UÛsÀ@%m³0AÚÉ‹dŠ—ùßÑ" åz‘÷š²³3J+µ‚|´½R–Ó«¿ È"š¦Kšë¸Ÿ÷Sw«ô«ŽÂ5lû[Bnˆç	³sÆØues‰%.Òe¤º¸Å›l"†BÌT*°Æàû-ÖeM/á¹Q¾Ëï³ßxrP"+‚û™AÏ;«"œ;ß¨E2€:A¥xknÚi;!ÅxBÌ”(}~à»ˆù95GÕÒ¤¿t#µiYhŽ²7¡¦’ŸŸ¦ý1ý
+nÇeí¿k•]){ÂØyßÜzÍ¸žcÙ¥‘é§- çÝ\Ò˜á.7bèhxÿ":Xuø¥†Ö{ÕðRÔEÐ«û\Yˆz4D“2o1¬×Dv’O	p_l¦Õ\²þVc%?&kÞo]säõ¥¥JrI"mø.°a?ýžšïÔ&¡2›Q^Fƒ}Èwòäû±n…L»Ð¸è%º©nc`,ÿ,iI6jÐX¢6æWRc‡6æ[¬GèÞ\Qt8¶lS.É+ —;<~Œ‰=;K¿†fYÿŠ¼tÞ·QñÜ×=£~ÇŒ\1{Ÿ¸A.Ãh•”¢wFíD˜i_Ùný¯OCÖœš1â!ÈÀ%Ú'»ópä}ü¡¨A!ÍÒJ°*X²¶ƒò1ó:'Ré7$šé,NÄ¿ÍZC©ÎäócÑ˜¬Ûžs_Oð„•Ûæ÷…^l­<+hl!×yuŠ¸…4¦Öör«Œ±E‡ªõ£ãþ{ëgw ÂºÇìeg©ýär,ÏÅêé¥wy%†ÍðÓÒã±Z{ ;„¡íÚü+óœÐ@ECu”]nB¡G¹è0Ï#½bqß‡_y/÷	¤1èk&þ¢y©ß×ófÝ¿FŠÀi¶|,ÙÊ&DøÞöq<UV¤¯fb34¿ü(.ðén9Ö·æ¼GcQ­pÂŠn«Š›Mµ¥'­ oûJ¤6èF›ú"U²õÚ×1qÖ«Ýç·ñI2ŠVÞpEN«ö/|±nïóK¡/•ˆyi)PÆ12òˆu_‰réhÓÉÁàð1Î<JÜ<V”³Iâµ°¾"+ÈJìÓì±gH-þ²‹.poÚ…AÅ”Ž1Æ_bA^ýÞYnï~³‰ø¼uôÖÑXø5ÕRWŠÈâ¹ø1ÁÅ|¶®×øCmóCÃW¸Æ¹¢V‹:e¿`æ¶Pk@nýÔíÀ»÷v%ÚU#Ã6üªOÊçÕ,VøÃ-}]þÞékOKÓ|áõw×£×D~¯ä¹œ’¾nQ±>YOˆŸiÑW€‡_z”¼¢§MÌœF(Œ£»³PãCVüÈ	Ô	†ÀøtaÁPÀ°ø6ÎãB¨ÜtNueZ‘A;íºbÈSƒI@gü°É™û„O·£?–d#þ€rˆ›g•PÒËŒüˆÒõi¹ý!fSÜe7`¤dü-’$MƒîÅv~Ðs‡â·FÃ›ÇtøÅZ‹ÄÞ®Ö]H ä&d,ºúì<÷*®Èú}*°;øé¾Ž½}éÙþ}õÄÀpÊÁØ™ •ó£+¹•LO‘ÏRÄc;é¿v¹“ùîVM8¶9}/¢=g<©˜+†A4PéÙÍØ!6÷®é(%^óƒ
+VR!	ŽVž—¨íZ·oÀ(€ú¶cƒÚÌ~‚!ï¯ßIöƒû5ïü ¶îaj®JrsEƒ¨ðDËU‰|\.Qž€çªQEÞZBéÝ,ƒíÆl³B)!àÄdc’ƒ[÷I°Ì;/;¯þFÕò«¼9®|9°:§krbfg¥À^}¿RJHûüPòÉ2åX>ípA}OÝ÷‘Îá-œJÑAÅq·èŽ"ÙBr=ÆVÇv¦{I™ìKí.ùý÷1ïYwù5{œ	ýRHæýqþJY7ÏV?ƒóå´ÅXoü’+ï´øf!Mï§§r·$Jæ¦wT?rby¹‘ÏG”#	ö„gŸ®%–ÛìÙ±º•KÙ´#±a^SíÇG²Cð|íN`È.j@;Š‹úˆÉW%[ ÏØt µž7:¿îþä&’yÖx¬íÕžDÕ!e!‚¦çøq¡°£Ñã­…|<»ÆÄ
+(sL÷4qÉu»Ž1¾ê?¶ÛÈ’›°³?Šqþ0îÃƒ³fè:ä àBqÔSÑç¡=48r´”bN})jù!5¾–Þ[Pcçö´}‡ú7üNóè/´]¤½:íªK1g:ÝyÇ¯óªàNnµ³É^|¬hzõÏ·jÇó{þ›z^‘lÓ‡T8´mÐ:r]z¡³~„ïß=ÌkU”å¸eú™¤~ò}2Aº€`kž;O¾uÄÊÏO7R<pÀ¯%ˆèžAÐŒÇÍÂ×ogü-õB]^ï9‡	.ÈâÆÛ«I‰ ¯}'téj«`€¢K£f
+çÏ¡w“Ø-H õn•”5I^æÃûÚ~ ,âÛÝ”(\âÏ ”«Ø×ñsÀ3ÃÆjî­Ûà|T…¢¸ªØ³ªg†AMŸÝIxÌÃŸo”C?hçY+<E8¯¾¯,÷+È‹YšB"øÙ¯Zí Ÿ^ò2HR®¨a8Š“ŒÎdmêM{¦G:ŒB¼¯õö¹ŸÐ<i¢“ñ"<]š{kU ‚–¡D\tž	×Zp™ºWÒÙQ2$Iò=€'Ô†_É`R´‚öÆAî¡Ðcði×ïèû{0lÒ24º¤-Ù¡§?¡Þ
+=X#hc×F—Qiú°¹›cúIÀ%”}dþ(õBÚRQíÎÕ).Ù<”@Ó,@ÙoÒ	­À!–Ÿ´|•ñ‰›ãŽÕkÚ‰½žßZhœîÆË-@Œ¶ìŸ†®PU îúëÖô#o­Ý]ÃpTD]0‘Ð}KÓáHŒú·ðƒH®c=/2_¾Á)æ&öáº›&®`Yºûçç ¶¾	¤m`2?ATü]ÌVÏ—ÜH}$žU²íÁ¦žd»´ëÃ2Å13~fpÑ·ì¢9ÏÃÊý=â¯{QÜëW8RÉVÑëÀ'Ž“'úÞ›„t£9rsJ‡Ž‡Ó[ö
+H”vfú®9I¶¨Ÿ‚Q1Ž¥˜È’ªvë²_Ž{Î·Ú$Ò¿%&X>	¼ 2•ÎÇˆ|÷p‹}Ò$÷`U±D·½ô¾Û¥ø ýÛ§2-Ü¿ûSÀêÓb~JmùˆZo­; 7íµã9‹k«â`š”?]òh}ŒpÞNµ&QfÜÚ¬íwJ¾[E3âï~‘íäü7³p,ÔzÃ\Pb«`æo}¨­~Yå{½!ígˆÃ ‚œªÝ«=	˜[Ñ°#áó;P×a5–%àD†¦³®7ë	,q3§ö’œ§õê€yçÝ€rè]62¬uuÑÄMã8?ßâùÌï9ôQ'ŒœÐÞve_A×È$5ŒžÉìÂ÷,C˜ªtÂ4µRY„EÒž.‡Ø¬Ó‚ƒœýÊ1VnWo{È“M¿í“OmmfÉDÆ£ÆUŽ?÷|4“ÞO&Vôœ“·žÏyÖ|?™­Ž1+L‹GO,Ip)Ð ¢7^3QcÍƒ×}ÖP‹™âË3v¦ÁgØi•`£
+y¾û‰c°¶ïìW)í4‘_W¥,›K'á}ø÷ÅJÖn ÒØ³ãmvøXõs¢^wrî¤gs;»o/‰…X»þÊÚøÐDÒçÊÛ/ì}»Aøf›$t™”bÖÊ«@<~‘u6`#pý‰oÕûµµÆEÛîÍói¢tŸ¢yÔn jÃ@Zep*fÕ— þ>w4¿è½Tmç®­bR›À0 p)¥ŠîœÛá[šj¤†ØCÏ%ï±‹¢&Õ>e BÊµæ‚26¦EÈŽ“3ÔOìî†ÑÈ2‚˜¸ÉÓR-þüŒôµõJƒj‰YÝs:¹ª¾Ua®·’ÌÌm4˜ÎîéŽ YÃ+ñWx-~•ÏfuIïˆdn«ümåCØ>|Æh´Ïûïµo|"¯Kÿ]dJ(5SçßÃÔUxeçƒm÷”Î”§Ìnõ†7@ñÌ¿ê<Ø‹âsºG8x…ï‡œ—9ìâ.Ê•%]“U‘?Ñ2”cåÉ¹Ô™oHu^oy;™	™C÷KÇ²åÞcã_P|ìðl3‚Ÿ*¤¸­/ƒ¦hÕ^ŒOËpqz‰TàáoäL‡›NÈÂMk]†¯ÿê»j1”h81ƒa›‹V *ÊZ`ø,¨æâ{£
+…ì¯#Ò¶­Lõb!°µ|úˆùnLÖñýôÇ§ÖÌïU×Yº†Þ>3Îy'f»LÛLÜqfÎiÆî2áÒA °L‡PvÆo~" øV)y¯ÜÞ"Á¸…¯uR‘!‰ëÅù<ù/Qâ%0»ã«ÀdÐŸóÊ”j£½ «ej4.ÀbøF±O åéÑ^Hwãdçõ‰ùK…çNØ£¸Ã?BSË^0G"Q.Í#¦’víxÜ$÷æ¾0ö
+¿ od{‡ ÑØ(+EVXIÙâIè+½yYÚgÞ¯	:MÊÅBQÏyO7Q¥ß¤òÖÍ?
+œzÚ´,¿ß¸…£ðžçãÄßGš|?ª˜¦³²=f&—.™×Ïi£ütÖþ´+è |¯´" õÑ GúXUãMN'ØÐyÅ¥ÔZ‹‚IEŒØ¶·KßðaïÝ•&_Oäß#ß¯0¶9v‹þšSÿA$Šî_üTµMÝtNÉIïý{ûøà¥4$°ssüÍ®W8¢ænká±o$Uˆ³ÄÎ©Ü^÷±’¬Ã¥©bL5ÌŒ$‡Å²íˆ·íXÒ×C@´D3/~ÀÖ+.X½ ÐÌj¯ì ñÁÁ“·ŒœÖh¸ŸÆ!Smá‰ˆšâÌ˜Énäï0‹%çmé¤Ÿ3CðÑâ–fGƒt=±lB]|N‚Fä.R(rÕLQ•z$½âŠ®Aj;­—Ò/Yû@±(¶†‚i®™ Á gêˆóÆt"‹¦³Rª~wt×1®cpÁ?âW
+Ó0‡hAºEê„%ÑrT'Ì¢ ŽÍ†9/œò #ß2ç>ÇÑƒm”Ê¨Ÿ,–ìÑ-ˆ¡(Ø‡"¾_	hè›æŠ]BG²’$Äí6b£m8¡Â¯O2œrivµ%pòþD3£ SæIÞ\æ6“•ÊWad”Ð tï÷#\¶ÇZ£ '÷)Þ	VŒåà,¶¯t˜R	|þ$ET¤Œ8ÐÐIëïPñ‘Jl.>í£HÈï”âc”ä;#ï6ï;€¬²BdF¡ì´˜3iéç~ÏÅá XÆôëˆ#‰u)’< åä	ÍÉÂ£Jù‚<é5‚’†¨¡I0ÕaÈ²8òGÑïE©êG¤*é´D_Å‡n}ÎHÃv‰Žü4¿Qc^£{ ´Àì—'»ä
+â¨åfN¶O¢E¬Nò´çHÛÀÝbÄÈØ©¢õ³"8·8þÃŸu³&ËÚ@ÎØµ.¤¥PÚªÏméÉÈ”È—œ8þäðÍ¡ï.¨• ÚŽ«µÓ½H+ósëÆ K0øLF50…BöK˜¦;4Í@‘ŸOÓ*ˆA•º|ÅÈ7¡Žm…âÓÑNövÂÖ‘qˆ„»#Îcã ­ÌÛÕb!@æËøÑŠkšvûáþî3æ´ž*Œ 1˜£¢Î™yØ¥Ë#GSiSÚEN|61Ä½óM!¨7Âh…¢.¯çÞÌ>Æ| Óÿ©™ñ;U½l"oiÎ¦=åÏ±Î;8ÓÕQtIó‡0|Š(Ç»3ò¬þÙ{ýÀóyÞF:åÆÂ@Á	£¿<«…Œlñ¸àôã·ŠÄLb¬ltÃ§0Ívl%˜ÂÆç‰Ïqa¨ÃV·J_âHÆÑ{16ö¡È2),Ei§Z_œ4ÑIÂbM¸<êÁ Ë´–cÞ‡«#(ïœ¯éÊéAÕ×tV.÷¢ä‚*»•Ô,ÜhŠ5ßéú<¿ð©‘õ«cæÂÌ´¶“ô}ƒdõ7€ø¤2+'m$&wî[25Ž"D_Ü·U}ˆÔºJ`¡±ÛÈ—)ìšˆ‡òÕÙ®¾eŒåæ›9PÝ¸!nÅ¹ÿ>½ÇzÅPs«;xZYâ’Ÿ›÷³VU¿JmHŽbÖ8¿’’Ušç=¼Ì<¸ôÿzUðc¤/÷$Å\ßB¼¾<.¥žLÖ@˜G_ô“Hãi•sì¼ó2ÿÒmB³*“Bþ†Ums¥Þ
+•@ˆa¸À*L¼$+4Ù‡jA¶`õŽâ±A‘:yà}þô¤rZ'¸·c.ïò×…'T,×âˆÛ#†«æ˜®X8¾{ÒZñnÀßb¨ÁÁ4[†æójvj§eþÁ™L³JDÉ=á `5kìy¾¹¨_bh´6†±Ÿe³ãfÞ)=+Žacµÿœ5ÒHÖ"Z7*æ[ïd±S­…aŽ
+O+„mýf>òËWòã÷¬Ë^£þ;œw˜p—ú·YùÖß½—_‘„ZÒÒDòÙª¯Éô,„6Dd¸Ù÷8<¸6ÀœL9IÉ“‘êMÄ°ÜÊ*,IWT±¡´”CPßCqì‡Þæðë¯¡³¯¥?d*ôGSÃæ.[ÛŠ"s€»'ý5¸p>ç7œüZœ7ñ›‘líQPµ§d,¥¦¦/þbéUù5£ÙéAò"/6JJCŠ[Û­¡«	âô[op: ©r¦k¿î7	ú¦ïîcÉ?‡ˆ`Åñ4A°žJõ^;šµÕ@€¡kn:F’†LX¥E¿±‘*úÏy<ù	h}M 	1	?ÙÚ“9è¥GËåÁy”X-Û§ooŒ}PäžI)à+±û1Jö´@[ïX–•åkBÐÜQ¦˜÷›ÕNéDÝíýîcÑ'¢bÏ]3‰¢‚DƒQëÑmóOqÎOXlÉµØïmu¦}œÅøNëô÷y,4„ØñÐgV¼gY±^%5Ört'ŒCqÄZ‡Ÿîî+d$22œ,ÜtMÏfdj§iÁ¢öð Ë°ÂwØìFö·ÃPø¦Íl<=0gä:gâµõ˜ëXZw¢NuQc@¨Wõ¨¹È'[ÐÃç<H<*ÃÖ6BÝSq¡º¨þ¼tË2D¸¸ÖFÌ«N2ð ”C>¿*ÃT.ÞÚ&Ùß$ébeÁÍ¹Oïú­Wƒ¾
+
+:yN€Ÿ­Œ!»â€jwÕ»Péò–Ã2nmúœìšÜ:ZpáÎrêÙcälF<IzÔò–ß¨”ß®Ê’¿ãÿÎ´ã&.Ew‰1“¿)çk!)ÂïÎ¤÷Ñ0¼Æs¿Y N›ÿvVÓÐìÌð‘³h")À!ÆFç©a•ÂÜXw}øüUßNÌ3¹°ü _‰‹ë¶«6îk¬|ËžQßœ]%IùP–>˜Ÿw¡$ü”0qxÀaûÜö‰Û*—~_Nè±%¤—U²3‹·=ñŽëW†û"—ÍÍX+,ý_B¯±19:oº†x8lÕÛçâ¯¼ju&Ìñ|#FRiœð‡9´¿ObÚóûõ—üæzÍ™zÿXÏ[?€³Jä8M(9pIR‚›DvÆ%Ù4 ¬éFøŠQ3‰°~™ËêJÌíÈŸ4>OŠ×_,ú©~Ê\'r¹œ7ºÝ¨þÞÔ"8ˆÎp•PVö`J6t€ üõþ¢Hq—"•Š½ew‹«Ò+¼ÛM!îX¦Ñ”vžü¢Ü…T¿ îN‘Î¤g§¿;õÂß9{"ßÈ7dx­”…ì¶•‘¨¹}Âv(ßcƒÙì×RÖj|M%ÿØÁ3~Tÿ€ƒ¨Ñ ¯äYÚºpü®š‰÷Z“9øjË~¬™µÊ–ÿ†ëvó¤.3Ä$ÚJ¡ 9íyfAtùÍy9ÎŸöÊ¥Pä gZ~Ú¹÷"iÑËÝ;¼¦½g=BtHÑ [Vò/—Ïø	Ž{Kv	fW›ÝÒÉ‚KÜXtc¢û6êæÇ^l¶ÉÏ‰h0€¾šýS†OD3nœÓ’WƒMªéw‰Ñzùb®ð¼qx¿Wv°ÛFçáB’e’•Æ•¼ñ`ûö+ñ(îy3:u‹OBÚ¡ûƒT¦ù¸ky2
+-MÁºLuövùiî™$W¹ývíXª˜aÏ0åÓÜXušn,¥e/üÝžfÒ:çïÜC”N”êÃ_”3Zf³a•ª³4Wã^Ëth¥‹PF$áv	t¼ðÙhÑêíkxAD-­t~.3> ÈÏžwG¸O„JS fÜá€§sé>Ûxùôtro}Âøü[k¿:Njg1ù¡\B*Ì3ŒOøe—®(^©œ4ˆ¡xé°¢íÑ›bÊµ•Æ_©ë•qÕb§Zø@;qøcGÌ54*%é‘]g7÷²ïHµæ´–GŸÏ>’C¨t¶à )¸]
+jQÿÂ•B®¤‰ðº_Ø.ÉfLËB¿v–‚ ùÔüC"^Ë!¢c­øü=ÐÂ Õ"ù¸ùD²ó<vŽIÒ~ñ•êŽL4ŠÅñëàyüQÃîÉÞHMz©Ò@o ¡Ø´SÇ“ËSÄÈû†LÜÊ“M{ †¼Û0At¥¯Ö}qeÛNÙ}ÛõÕñóhjvÞËŽ«}¥É¾<°ˆZú¿);ïÈWO©é‹ÁŸ¯WoßØ'gbù7}µ°uS«"ù£§ÿÌ îs2VúGšV’î›OÕªŽ—Ã½_)S3Òƒ¹½íLnK¾½Ë(	*á„ßíwLþS9š»æB`Hd÷I¶¸i´’óEž¶ô_! …tv;µÓlG=3jD$—Û'éUlnxS?8 £¢iõšô{…(àÖœïƒ¯™zGü’†ÃÛ—ƒšð}I“fŠ!´ÈZ%C(œvb›¼„èƒP'“dâºAí¸ôÂH
+[CŸ¿â¤ «™žzõ’ªÏÄ §§úçYŒw5›#Ð¢(œUÞ+f¢ºÊÉÏŸÒQSWBX™å!;õÉ3’r/n7øiÔ¤á+˜" ÜP"”+áùHÁÁŠæ+\½0‚zaß‡ŸÎbÂùÚ§žö"Ku‚m¨*á]ÔZ%ø5ÏVD‚ÓAÍ_¼ÕK›B/CgúýÝzø’G-ÕˆØÄ°b{ýR¡ñ?YyÖo\rò™z,€)’Ý=ßØ+&ˆ%Þ˜½½ªç	‡`Z¿ÿ>T,ÏUS(Éßã£Ïg©HÂìâ@ƒÎ)Ÿ‡p:.­"vôÖAÄÿ®ÙM©Aqi*·ÕÞÅ¸*¿ü¬€o‰«y[¼SßÆŒR«(ˆ£' œ¦e‰°KüiPµÀ€!<ºCF±~2íeé;^ômZè‡øV),ÌÄA§Oasš—²s>UæcæUðzraæp¥§ßA¥Ý©8ÿQj5ùKqÂ?ÓìloþP$VQÃw*0èrÙŽêS»áKa
+¼ÙmqÇ½¥ïu”˜ðe@5»O³|yÏpèã~p¡%Ý¹u‰_zN‚^ø$`vjnÈ ·_–Ì§zSY>¡ú‚{ëªHirúGAÒ1j®ÄKŽ°ÈÎxÇ½çA’ØŸzÿýpä[ž²!@gËG8'keI(„Ýç[1œµO[Êï»ÓàƒªèºT7ý{*á’ôF8?t“ùáVH»ÅXÎ.Åv8 °–5‘;~Ù®¥À”He¹p#OKVÓ+mÕ5œÈø‘“ñ:ÙÌ¢ªË² Tû‹ú.‘Øìƒtß‡¯¾fÉ‰¾/‘/8âg|ˆvÝ}¿p-ÑÝô|]xÃÑWÚOÑþ$ÞÂÉfXÂCp•Ï±1è€ž}Ó€¬7ó”¯3e¹àý„@5uê­6Hå_ñe/nt!ÑÛ’ß¶#”·cÁÁÞ#·°¸²!æM4é˜,†ÕWÇÎbí`n¡WË)•û0Fúû(DÐúU…þÖ
+­Œ|Q&ðŠ0“Lo½óü¢A.¹ïæ‹£a½ó»ÕÎÂÕ›‘ÑkˆîÚâY 2º’Û q=åïëž¢­½¬ã<jk‹#N'	ûñ8³ÞeS…üÁ ´ãŠ~ÊSfÑšYãw I+¥?®ãÞ)ö}a”b£®t"2x‡ud¡WÎËÙ{’¿_4ÏOú<{üÜ!w	Õ}«†
+×ÜŒ@¨ÕŽÏe'QUÃS|¾y»]ø—¡æO·(ZßÇŸ»C\°F‘/·ÂÝ±¸QøW”Rí():&\Ýi‹ÅÓÆµãiñfU"¾„íJÇ­jA¼ÎÓsoŒÇÝîY×ØRëärrÈ	nobEXìð<dm›ïs4ðNÆY.<g*¦•Væ`+ûË+ø–¢ÍÚ¹cè-ÐÂ»›Ê­Ö7u2G»¾R)QYU-td7z°	ÎnÕbk­P¸¡,c{®4“RB]úÐ9@G-Bœia/ÓTf^ ÷-×ò]iî¹ÊJà.ßù`ÝË–¬Ó¤kI3¯û1C”cØŸòÑ,uÄòbf¸· ßñ™&X‘å+ß1ÜFíˆÈ*žµ&P'æ¼<íàSŸ£, `Exä{–ÕÁ±ý¡„ÝÞS~,žúX¥.2€7æûþ”’âaj	*I°š½Åâë¹ìe@çÞÌ(~—¼[—5öFf_¸¸á¿'Ú¯b~Ca;Æ”ˆzcÀ1Î÷Dï‰~Ú¿zIwPüT%¼’Ù‡”äšæ¥}ûNÜ¤]¦ÿ±WPyö×ä.ÆÑ¦$Ã0Ž¦D-ô<Â¢ÙÞ‰¡UlrAÓ?ÏyEhq{zBå±ÊšÊ7+›­æü‰\èÙã/¨Ê%2#^ü•üvžu¶Àù‘nBh³ÒË#c=2	×Ö~fê‘ùÅs’~ò4±l ' H‡"xãÁ%k)÷EÞIÖqqñìúáz²LÙ• Xƒ­y´ëÃ—ñ.É‘‚=‰¢)'-æ§g#-û5ßÀ–E‰tŒ¦š¶]ëëI»ÏÀOã‹à×~¸)N=+)Ïm1kê½·ÓÝ\¾Ñ¶"¾ ‹ò$p.½›éîH]ðÝJ†=ÈsêÅ€eöDè “}éÅ&8ÑÌdg@Y ,Ø8¿Àn•`Pó«Œ]˜òAö ò÷lï±ÂÈÝ [ûÜe{hdw5ÉÝ¤œªžî~wm«–‹ÐD"MrôœáæëRNò…‘ÖÌá¿;Rg]­(JYJðhÀ}.áJ+o
+áè£ÒuëNtJY­à³c"ž—yG"MŽ3õRÛeUÒövbRw9þ_&ºº·ÆçY¶äR	0F¿ÙÚÑfévóÖ˜k6þÉL59}§%i§_®JW­G!‹6ZÚ=kºw8jùNJ˜YkLÓó©	kY¦9ÜãÎ4EFòu€é:cåšËCOªÀ^éàÌH´=ïž0Ú^ý$T8‰+þ.$z›óKÔ¶òiÈD%¢/±ÌÆî‹?*94ÂáË,¾¢Ya€ºh†3›Ÿþk8[Œ‰ X¾ú¹}øOâ”,Ë1üüÛùÒEôTÖ‡VV)+SŠÕèG(oc²¨\»Ã»}9lüu…VÕˆ®€Z¹®Üéc-»ý0OT¦m]O!Î¿«¼@òtˆ¯ÈÁ+ï“:¿ˆÉù;õ›r±å/ZÞÈB°Ã€î)øÇÁÜç´“ôÑR»LÒuªßˆ´˜$ü@ç2£¡ ¬sWYñÐm˜$kS<£ªná'ýª¯IÖ÷ó¯H†îõÒÒ ³Ð%çÛqzt •Y½Þ}ßßïNî­Èu÷?9Jp4á¤Àn^b^Ë'FáŽÑ‘2+ŠòH
+‹N´<Ô´ßÊW…¤JÝ•©6û–Õ;ÈªpaMc%OM'‘%|sà!âÂ¤Ùî¸çÜ16)R‘Übw¡ïbB Ì)wšeaL_a®qÞ^~ý/ª6mä³4s‘*Põjûç¡*TÒ`zÐ$Bv´A/3UjÅì¸ˆ‹«0ER°vz~m•r2$}	q¥rÒŽ6+¾J¯‰él–¾¯É®6eeU0ì?¸Ì¯U«X¦CAJ^€_Ç\Ý}’EÐçpöD¦o¿#lÁ —g5·ýB²±‰,"ò½"šÑ&ÞÈj*#¦¾Có\¶èjSV¢,,\@‚}Š²žUËœ"(JU#Hcé5ƒ4µ“¾2…ôã£¼›ÛÑÐNï&·wìëñAÙÀÑâLÄF¼Èò¦XºOµÉi…Ê¿&ÉŸÎ|°Öþ^9ñ‰Ž¡°zC*¦
+¿~­D]êµQ¸‰COÌŠ²ô¦˜àÈ¸:T;Ï©€ûä7áwc°|ˆýtÞÎE -©A¶úå®d®Ô8KÚ.7S_ÂÓ‹8æg,°í‰cÑN·¡éŒ¨'.;ëà¬ç§=ŒÝµ’!Ü°a›â{`5³·ñJ£pè?ŽÎZ[nŠ¢äÂLåŒyÌ™™ýõñK“"+“Ø’î¹{Oô$%ÚîZ¯'C fœÌ›7…}‹)è¯l,À/ 5:WZ“ÆÜ$Ž¾_9ö—óÙûEiôö™ñåÏßÀ]í5n”;Û§Ô	@B6ž‡2ðÅÔƒHq³2¸DØMAQÑEži‡ˆé.nž©ý7Š™,¤Ko–(½tÇÈwc§w£Û
+±¿ùK†¶¬!’Ñi®,”zÛúžV®1ì§˜ÞÆ¿ÓîÇÏ1k0¦ÖöÏÈ¦˜æ¾.ÔÓà•?üÛ?ËÛŸç(‰%ú²wrµçÎó*¸¢—]Gg¿HË6§oÊ™ó×zåðpÂ×ƒûî#h+fÖœš•î•ºÜ¢»ü|-ò@Pæ0ãå1$ˆ‹©%ðÏT˜ÃÁJ7ð;Ì}ÿÍðSãhX•z®ÃäÄn7È[¶ähÇÝùöéÜeö,ÏJ$	ÍP®WMÏ=»û”|(dïZc‘‘Üp*Ï`Ã7²˜ º]«à­|ðQBQáäŒþ¾åóÏú“
+aÍà˜‰”š^cœòJ†Ï«G{®pýØìúÅªÖ³Æq´F¯N*–7£¿ÃÜ’pðñûÙàØsµm  IU¬öÎf›—ÊFËŽ‰Œ¸DnèowR³{RÅÈ¬Î›hÉiö]÷Vçœ ë²ÌGÆ¥„tÃpŸ§Õæý ²#ñFC¡ñâ™çÚjBjø_úœ\¡©1¯Zd5£^ÝØ:«ë|Ó7`Û“ƒ.wCwÆŸ÷½Ö.é·8æ§ ´®Á0çk¸A»F{ßÁ`CåŽÛJôëä1¼ÊâRß}˜	>^VÎ».ÙD]sù¦Û”<,.kËbWðö	–ã@‰ À\Ÿ¾³ÜS³+Dä0en·(`cœ‹½.÷L+rê.-[SïZ¥;äŠ¬Ã»t!5>Ÿâm3t(-¨¾öà¨Àå_Ð(Í$Ê¨Ç`žsðBó9ùÔ—ðE»…5ƒd ë—é3Þ ßÑü˜¿52
+ÖËXöÇà~¹öGp€©áu…qEØV—LäÉIÿw íÏŸ…±}`íêÿ^AäWh2+~êæA"Ý>gºFª]•â¯Œyy™¼×æÃ:T#»¬½Ø 2<øÆûÉ”i~¼kÐ‘¯”Èˆô?ºRë}ÜITË'“¹]–”Ì`ZgØ»ŸH£júÉæomùÛ¬mðW¡§‘¸Wf$òÜzb*!®räâ>Îý«1çw´Ga¾j˜=”ó›„M}ûØQµ1Û(×¨³Þ7ä@ÛËOO ÉòÃ7HI|FÚ†.^ ßsø6/<™ùû›Ê{îGõ'w6…ÀËU—šËà¡¶¨~×ÇÖOÒ´ºÀUxýâ¤f2àšJVºdKq¹3Z4%e&vjø|ÞÖáTXÆ.òÔŸZ^?0Éa¿8­±Á½^@ƒs€ ð‹»,å@Á=o¬E	è_×Ø]8ýü®e^5Â+öþÌ»m‚ø"1êýåÄAŸü,ädàÈ$'ü:êÍo˜‹š×©`öhVÉØû°}ð[3/H7(öÉGküð¸ÑÔÿá $K¼cZ•¸{ŸTa.zÅ÷g#;œV‰,™	žßÜ<Ä·îê=îm>k“ŽãöX£ù½UX µJ’Ä—Wˆ3¶%Çà
+ÓÙ´€	L·8	fM"ý6Ezs­Øã¢Œ…ÂÓ¢D9´SdÎTP§÷=‰
+5J„T°v_Ó”äãÊ‚l|cªŸ´˜s.Ùš#úZùÙÜ4^ÚCFgù ‘äwÜ¿¦&¸Ó!¤”Ìž€±Ü.L}š{€:™möõüjÙ bZÊo"3r6 ŸÇ}ÏR›:´jE7dýDfþÀ{¥Ð§W°!ät"D„Ù(tU½ÈV´Em³#²9ªÄ0ð`²M9’¾ÑB?$ŸW¾Pçé´:=üÝ
+wËf™é«xÛ­Èe[u9þP¥T~ü0û
+¬<­w•ó,ý5U‘-8£ä×>8áÝ®SÅ›áÊzÈE\ Ý`”ƒ‚.©wK? ¦9ƒ§˜§¿_ $äîß×ŸR6®Í”ŠštÀàÅÂA¡x,¿ZŠï€PÖïf!öÑJNü;é™ª£º3¶áéa¿VÝSŠéèízB·Bjý}y¿z‰R1SøÔ3aÁDÙB°¶"íÆ„'Öê,µó‹ Ñ»MR<í¿ô5~›çm«M¬9¬hxâ‰ý|,NÆ{3x„º@:£Å€»èê)sp¤È<swf·/Ý#?|xóÍ
+|†ó½n×ËÃ§×÷§,|õ#ÌpˆÐf~ÃWÿ£7Þãû-¶]“ÚAkõŸàMÔP	ÓÀÆ±	} j¨´Ç7(çŽ&#P¬è¢ƒØÛ×©ë%ž£6p˜ý8ø,\_Ç³ËóMfÅå^Q¾ãoL±‚â]´.´wíÁ©¨o‰„–Ñ=à½œÌêl®¢öZdØÕx³pPŽãGèœûÝSl¢â8?À¥”Çmºqió]©DË0Ú´Òqè©¸}Íiìò[Ø„ #ƒMí=¶vBÑ…É
+YR‚ß3</Ìc+£Ÿ¦qƒ;‡-†'†L?>¬W&Sß8z!lëQsò‡QÜR#Ó"ŸˆÐ˜D,Á>Ó(ütkÆdgN‚o‰°–2á1!©äøžï‚Óû‹Ù'MxW=ýëð!L¦ÅOŽe¯×© ÚAüžå‹²tE¾¼ÿ²Ü¯íW~åGýê½2QƒïrcáeŠE+±[À>¹Ø5Ø°þTÁ{½šã#¨À9[Ñðø—N’^õ^µàÄ$R'}œss)AÀL=¨ƒ¾®Ü8®£Cm¸øûÛ¼"Tºâúié@Ov®“±KnêDÈ‹è‹ŸÝ€øîuƒ¯¢ž4l‹ylÕNÔ½3›\SriŽ‚¢F÷Qª®er½d„OüÆ…÷ö©lOF–˜†0b<¤ú.}|kšYeÀ,süÃLêvffr‘D%rÞŸÏ“AEpYt©–ö¹bÃ„ÆêˆÌ1á°êó'C±Y­J'Ã.;&EL¨€Mšy|tlCØÁŽ]¦ë“TDû; mx„l.aMR?eeoÁ‹“üÐ·Â!wÄ2Úõ›ã™@mákê>³
+š˜øä>7üv2Sß@ñ{cI„©2;I*3šâƒÈ…J+X“î‹u.là–¡sIÚ±íMïlzïÛ
+éì%ðwyŸ“6°›o(`CÅ<÷\27ï‹í7‚ém”ì]Ê·“ÑÈ{Ùß!y7ÜN¬ü¬:‘¶’þZ¹‘3ÓCG‹°ƒt£ãEÒ3„oòø%JàÊ`c63¢” `…¸6=P“p®ºÑP¹®¥K6Þ]ûÁ)ÑæœVP?ÓêfüJ’JÀ2sÛ7yšÍd®‡ Öo¯ˆJ/îÊt-0á¸¨Ao[¿îÉüºz:‚L:ìÜ3HR¦€"×}…Ø.NWK±ºúËûœ¿Ç´tB5
+Æ¶/üAÙ7¬‘"—„Hû¸J°ú¯F2F‡ú#>¶eŽeõñt>N¥mEø3Ô•0é]§IÇNJ)wêIXef«`ëU ™aß‹À¦ª¨ ’WÔO\Ñ#T3°\4÷DÄX[wt~8~È.w3|y#¤„×´Ü8ŸŒO-¨iœrôÕ‚—åoß‘§	þ8ç¦eÕKÙKÜ=x-q%¹ûhrÉŠ=LEÍÑèt
+Ë7Údúo±9þ€ÀdtVoä9h‘I`óâð8úgÒ™ÆæÑé?\C8Ïwð’ˆ;UÎÎ@þ+ýpí™lHŒðXA&úÚã‡\%²ÎîúvØï^{×Uök>{=Ã-­ßZ»uæéå:ÛŒ¸"ó’‡q"/¿´½…MÜºq~[6ÙÆƒl9ÊâÆLú®áMå™ÒÝFI ˜Ï`Ðy‚[Ü%I‰Uë.,Ò ¹G=`:êã&¦¯8Ø§Ž+MßªEÊÆ“ÐO¼O¿d‹þ6A¹‚H "	·8\kŸª!qØ"}n©ÜÏƒ¢£»Æ5{ýŠ/ºfv@ØÃWX¿¯jÏ³‹4°­ñ¿Ow._n±C^6í Æ`É*ÇŒ&ŠLÎ22ÏñÒº¼2y"·jÆúÊRY^w…»»x¦ÖbH–¼GiÓméŽÏõâÞ	ßª=eŠhÂXLhTg‰F®/`g<ˆYÈ_1È²t¼ãüúsS×st3.v6ìþ[A¥°¨lo™oiòCþaÒD§O„tà‹Zñqz«ó¢''3?€Éf#›N/~[*jêáEÚ"º!h“GÒÁf³E*¾öOè÷ü-ö*OUJÍ9¯“‹v;öëˆúh{í•QKúúµcEùf=+×WN¨kÁ]õA™^Oß­rÃå+¾kkw™ß§GÃöH.“ÃHœº’i°òÆj”ê‡EŠsQûÏ¥†ûOû:3®©&µ3¹`ŒŸ´UÒþOTãœÙ¦Úªh*¦ÜÑá:ïÆ·•SâÊ•Ì‡	ë{0ü-¥—¡¦xÈ0_dK[.¡>ÔÃ_AÈýëMw†Îným¦õÄ¢¸+ß¢µP-»ªüeÚDîXftfŸKMÝVµeŽ˜õæÈ#jWÇŒRuºFf_¿<¨qZº«…±Kâˆ×jˆg\F·3ŠYs“› `-üÐD–U¾9”È#8Ñ†Ýd/Iä˜†õšAÒ’ª,á~à¡ð¯2T<Ô>ðÜ`pçÌ¸\sY!Õ8/s$s’.Ð˜ëZñ)äÅ@šXë"Ÿ•ÐÅ‚`ýK²Û	Ü“B@ä¶Ñ¨\º=ƒžÌéì¨G]L›XPÝo˜X©e3Yýð3HÛ±©î\'›þî6¡^îÇGâoÍ-^¤Ò>¿(‡Oÿi’ÃR{
+ø(bËrrEbé(Ò?²H]ú©p¹JÐÈ#Kák·z©_Ý{ñº1ŸCÆxb*D0«ô@XqçY2OU¯éÃtÕÏ¾µ;*´¶_dª—³¸ˆóyb6ðâGªÓw¾Ú‚ä™‡ ¸¿aÔFÈÚq©ÁÎ•™[4ËÅ\Í nëóIC‡4¦…D'cbË¥§¦{·øÒ­7I"¨Z«\p!¯A·¥æ@¼òª%ÚÔ¤èoTt8ÊÑO)˜ßTÒjDTð»h¤õpùAfÃ-8@sƒut¸S‰
+–p~ý¸dµŠuŽŠJ9ÍÎxm_n5¢I[ýñý4qÖ‹ö%ÔiV'Îb„#[)Í«ìMüårþ9~Súl7…ZafD‹hI ¸Ê½úe„…9‹àqb¢¯zT×òw2‡pNØÓ×$³ÜZî®—ƒ™I˜S‚ðÐs‡OG¼fÃ÷ù‹šªŠÓé_³2“ÇEPÌ©ïÉO[IÓ•sè€.eTL~c
+WEuiþ>®˜ÜÊÅç÷­®Ð0ôé\ ôG1ýãp¨erJû–È‹Øçœ†Ô¶¼ÈüÚ‘{È§ŽU§Ê’½f¼í£¤•›’|òÐ__¦Õ.d¨¿âñ
+ïlö	–Šºoâ¢½ôC-öƒùÚ»=Ež¡9‹€2Òß•|…÷€q§ßW¿	}Ó#]´¢ÅâÛU£Øˆê…´(Ç@¢‡ '…ûø›H¡~6ê ì(e½FJ€8ãQkˆôì¯™BAÓŽ*cÍußá×ž±÷•‹›’^‘Q'ÓíÁØºÞZ’æéâWÄúxgùè£ªO7ÿ¦ Gæm´æ¼î¿Ù5¾°Ðe‚2ì=bÜÉÃ›Žˆ ~Æ¼ò¯›Ã1ýÀ-¨‰àÊ¢µ”â9LÔÇ¬ÓpYÏú'ÀQ
+z0)!Ê¢¤D¿«&¼|¦Îµ‘ý³Á®¶Ì0fŒ¯×’ƒ¦Ï¬£ÎÊ!'ß‰ÂE•=?ýÍFá½GÏIªzƒ^—øà•²@ÑÞkçÇªò­èkaÑÁJEg„ÖÁ‹5ôwö%Ñ†±\¢«v¨áŽHBòçi¿ÚágÙÔ{|½û«ì2~o’®éÏËú'ZfF~—œŽ3É#µö ø2Âw¿k !ÑOˆÞ1Æ_Ÿ-œBR#a‚¯{‰&äïd^éÃv0šñwöÛô¬£Url’ÍzÞ:²EèIÆLq…²‘väþÜ‰}pjÉ·ºCÝlö$ÀùQQ# ÃP…á°ÉÓx¾ÄH5ÆÞ$uƒ.]ûú ’#M¬ƒ_ñâüŽBmúz´é~‹2°¤œÞ“"$ToÑú£7¿èA˜±Áéc*à|9¸n=+(:lˆŠ±Í‡gLbèœ@´YGŒHmÖŸë1²Þ>lÃ—û³Ž¼¬ˆÏ!1>k"T(iI^¿˜”¾ÙÐÙ±Evh³jüvõ¡P‹ _/ÚßÑDÞLÑ-P0«Òê9Ç Tó¾ŸìS0 BgU£øè‡ùI¿ß|—?)Fˆùæ“iØ!õoð°l·¤",wÛOû¦Â°ú•,É{ÄÜ€»
+­MžŽí¿J°Ù®ø±ø}:¢þîFx)˜Ãf[oïëõáÞ;ìÕOx©e5=z—q«²óA¼”r´€ø7‹õúÜ>¼™î3–›k«†iDÏ;vñÔ	¡˜ÊÂ…-Ì@×ö¸á¹à¯š?ZØ®O¦ÀJÀæü3ÍŽàùÐíÕ†nJÖÝ_äÉÉuÆÜgØ°	{R¦TH6xãÍ»¦žžŸì“R”	ýOËH9»Å¯ ‘†ÐŸìB‚Þ?4Rb·_âÛë­jA« ˜\…ÞäÄ*‚êÉfìêIuø÷~©¬
+úÕŠ¥4ÖìÍ$
+öàŒìn›ÔÎ	ŸRdLU$ˆ,|Ø;ç^Ë{/ë&V=Mò$?5¼9Ž[X´‰>ç'`VnÊ$háU2šáämÊ&tF¬RšT&i^bð4¼{”aUãôVâ8Îüh@ |ê5ê1Þê›»Lt–©õ½KH0˜×¯qf	¸'¢ÇWÇ’ãïJbUr:ýB³€¯Ú@ÜàÔÊ¡­+}{'=q¤Ððë!{Ôì‹‚;
+ÿ’qÒ¸´w!\­KÀÆ_æDæ-OˆßaÖ# Í½ê_±À€äG/A“Ta¤Ot¬žÓùÔŒétUMê1´N¯n¿pÃãwöCä—}+ÍðÇÇ¿#è©¦åA7¯³ò"tvEõ®¼ÅªÄ><˜O–;ŠòÎâµg°Æ©ÓG-Â w_ð;“‚CmÛÌÏøeö§_0ÙÚ7ï+/ÛËWßÃ‘û,¥eßþøõZzQûZŒŸZ˜Á~Œ„ïð>Â\Õ×‘|¯üaä¬&éæWÉä2ÆÁSùìœ„ “pÅnÃ4K©ð3Œû…Íª2[ÀÌçkæÓ\ù¾vacTÉicNYšþŽZ³QÅã»Æ‚°Éªè«é=¦p¿·^{ýÖ Ë¾<¯h©æØýÎ$ °ÚÑ4Eý§’œ#”q§mcìÆD¼Éƒƒ‰Äõz½ÿª{Cÿ"^~Æ5ÉÞGê¸K­`…VTz3ß°Ž¯ËwS¶ST©d%H¥â„‚¤Ï¦¢§¯³Aâ¥ªù¹`±,\Å-ýËì›ýJvø©W2y?éwý´
+×½ÖåBüo Ú‰kÛÙýå(´‰$}c%Þò mR0O„]L=ð÷Ä¹wï?ðùr2Ã`æ’¼’jíqœŸmÖ¥%F-ºeN
+8;ðNqV6Ýa@Þ€i˜U¨C€É¹ÍËx…-èëpËh®ó<žIô„)² ÇMú7¶HeÁ­oá_Œx(gèRe?R³ä™ú‰¨·äèz³À_áA¤µhnÎñLb3–Wë‹¤º8ûÐ+¹GnFFé°uâk<Éºû7íñOšM‘ú+KýÐ¯Û•Þï\@^k‡ïÀ>gE˜G›9¯Q¾,b•‰<€àgè oÆ–Ï'NÌªnŒ·±o|’¡/q.k›T¼+9ø(êaù›¢
+WxÉñ>ÕÇ
+Þ§X†åð3!=tË.äÙy]öÆöñŒ¹Ä_|´¦†yø§|ö¬Ž>ª ÇÑÍZú€ÈÏž
+yÐº(:±Íþ|ÆÇü¼ùï«³(!^þúüºžf%ˆ¡9|›LD‹óf¹ˆî«ÅË§&™“&øÇÅ&EŠFË´àø¦ÞSÅ"B!Ïá[å†#$9éx—dîºqöZ®°^œS©²¨ë­Ò¯`^Z»Û°5FEn“…DK Rzkï	)7g–}DÓC3°ÜôF¿	¸îZ^˜ø<8]\,/=‚n"æÛ’Fzº(Dä6Uð²¹Œ.È¢-.N4ÆT^ÏÂ>t1.*à=ï(ÍÔ¤#7?¤}šƒ«Âö­õ8²fb~Õ"õöÌÒÛËæ”eÀÖÆOõõ­³ö}/´€O‰,ªXÊ?éµs=Jˆ¡ŽµÑ!ùú²K½}˜ŸÉ>rL¿Ÿ$¡êô0²¢µ—ÚR;ð·¬ž¯(x^[£ üŠ”ëzq›r„âS–ÂŠ£>Óåìð¹idbøOí@"‘p!žnŽ Ñ´?­«ÏV0{0gÌ$ìwS@•BÓèÄUE@$‰…ñ¶Ör8HgÏ3÷tÑa´’¶ò¹È‘Õ…KºÀËÈ/ˆÝ¢À{A©aá	[ô.Ð¸†Ì/Ÿ”Â&qì@fcc¸dtØ#à°é>ÿéu¼Íù|ûƒ<å™À%Ñ%¿w:F¹TŽ€ç¯wð`5mË|„y¨{ÇH°ÎI52Ø”%p‡B/Þq¼Èú‘Ž Óo»@¡ô!dVôi|Þß»ui÷ÉS™cWy21N<út`øÎTÙÈÚ²ÕìŽ‹×‰Xý©Ží=ŒÛ¿SÊœË(/Þ2?äKvÔÈí/\cîªÆ¬úŒ©aQv¯šyÿ`15¢û€ƒð®M,Tn§WNfgäàF«KfÛj¿ž¿Î(J@M×QCImfÁzT®ZOöüðÓÛØ`ªw¥VÉ·‡ø¹q}+Q	fâ3#ƒ»°.}„f{1qHbvî?X·Oä«	×yŽaÁü¾òß9›[ô6ª¡Ÿf‹lüÇÓíoÑ8%óç;Ô™;‰jby<‘ÜP5ô]Ø[]ÐÑì9ýQõ:¦n¡MõùŽêŸG}š/<î²Æ7	„ìzê*C=ñ›jC‡n­ôûkå€(jõE6ì’'“aü^ÖgžÇžîoJÌ/8êËÑägK×6êòçó‘>ßŸÅñ¯ðk
+–3ÜM,ÇºMÙ(-ª"Mèv†ªÇŒÀ `¿¶Ëœ\âÆGö…ã©¸bv‡‘þ° ³àÌ“i(®šc;®³Ðžu^žÔsJÎõl-
+Œ¤á@‰¼ Ñ*›JNë—±¤ 	óù¢›éDQê+`ñü èps¢V·kL.˜¶-GäQÚõ,àP‚,¿°’='¤˜Çš/ñI5aøN†ŠÆá¢!½.Ý=P}~^-oÌÒÜž•(&0"¡YØƒ¿–‹Eè„5)rãß™w;ƒüDfj•-˜æ¢sK½ú¼ÌÜÁc*@°‹¡èÝ¾§†ýv…`È“­èº¯ˆô{6RíDøê<¸ÎN?åöÖpß'pAd]9íg€Æ^ÛïjZ+"">™³pƒÈÖË‡}ŒX
+ÔŒŽ*2px	òöK3Wðc:d\u|¤ú¬EÝ8Š½¤WÞr‚×µe]ü»Ž)–ó1#ÉÉµ¥ŸÖU`ü <ÿTŸéå“–>`´9# d!x{ëìî!5Ðõ‘[_)š8²’Rù·ùPr¼ÌF„]~
+~}¡{)Ä%vïÞ‘„ÊÆO$K´	•–€Å„ÃåW®¿rCŠ-ÿËãÒ+Ç_ðô’(p¨—Õ¨¿‹õ’àýM¨ÞÖ
+PBsùô\‹b×™­SúÔO	÷ñûñê¥ÐZyšËB1;‚yÆÈWßM˜4hÕZïzqÞSÃg¾Ëè¢é­Etý;¿3ÖI~~0®ì=cP&hvŽúÞ…K2E›•9}r°Não£dõ}”J}@ÔEA5®Ô// 3SÉCÕ$À"÷ÇÐªóZ#ìO”~À'#2ò¦¼ñÅIú=u› ¬²ê&Ô[€añ˜¿k\÷GjBk°eYÒÜ{>|Òe"iwÂÜ¬È¦“ÒêÈ{ÄÖæüÉ*”gg…>L[Ë~¿Î!®t)j,Ïõkpú}®{OQö©÷ Ðªõ=¯€Çœòw²¾ºÏ.:ÿàÝ]Õ;¿ÝUÆ,­±<÷z´Û°ÁÈÒÊW@Ž¾×©·È@’ÙcžaŠX¦ñ§O{@Ã*È¾OBÒ9±¬÷)€Y´CáþòYeÌ ú³Ñ­êô²…6‰;vq¨½ˆ{G–¨À'rˆgc;€(ÓPEzIÈ4S8‹ŒÿõäKÅºxOcy÷çÆà `ØlÜ¹Ò5K]è?×¨Ã(Õ
+÷Šõªð=êûË] ¹’ÁP‘	˜{‰·ÌvJcçQNªÏ:éŸe¸ŠzÛòA-·Ý[ý”NFÈ¦¶ŸË#†‚UðF1º"]¡ñ<„@™Ÿ¾LP§
+}µRIÒmÄåf´¤õêð÷*'ë¶#_+FO×NÓ¤Ð‹¾öAtåôÆtrde$ ¯çSÜ€Œ(%¹Óô,aeÉUKì‹­JŽBÔÙ@ž»Ÿ ðÖATdœwZŽºÚE%2…3ijSY©Ï…)Vq¼Ô†>Q¤<;ïŒ—i?DÑIšg›ë—°ëz-ðñêû±ÂCÌ³ g'ó|óUèë¡Îf°Ug[+•.![™“”J»ÅÇOl ½^lú5eÞÆÄLI¸°0‘)=Uüö)â‰á¹Û@ÁeAO¶†,[‚<þTH,qÿJü;ñn.¾^`þÂGz”Š„¿~®Ò<ajfVrˆy5/{A¬îPö”®Rè¢®>ô,ÈvâpÖ¤§FŒiñÎIô/  K%Ý™,o=?´27“eKxÒ@ûm"…Ö8ˆ½â­¤³­%6u ûõá‚ÙóŠÌ' šÔ“‚}2®Æ—ºÐ‘ÿxñjÁ¨/ŸÍ ¾åLjÌÑöò’`óØfªøXƒP´dñ§ˆ#Z´dˆ¿Šå!i0\Ð[ŽU†óÌ¢^õKZ/Ü5·'y›ž G}„RÀæ[B«…^âX:¤r¨ìvó Cn.ªT–:ü°² QÜ;'£<#|ÓÔ€©ôÁ¼@Ð¿¯‚yz0o¬Ž&æâÆ‘©a§<VOàïJ?Õ*NKj‘VA«yGF-qOêwm|ÁZö=°?.o›FÇvÑLö:bî¶„ÍçÅc»ÅÈ³#%š’Ã­N!7IÈ×]<Ô‰HÂÈ>eÕRCS	ºéSw¿Vñåè'7Üóåøq»ìu±ùhtæ m]ô]ùââÒüž²»aR§ÆòMâïk£¨¬þ&+¾h¯|)Ý‡ÿFON,9ÏvÎ_Gk)ÊÔ?üW½cÏŽX´çÃþG	s’tÔðæÞåÚ¦³»ß¹‹¾R‚­ó£w¥dDY'œÑ}ãsçÌ^ïtŽÔV<BÐ;Û®Ëâœ[±Ð¨IÈ°qÆ,Ú*›~#„½ÞcX4wÈR‡ˆÊÕ2?ß
+??Æ>€w8Uðv+¦äY}îfœÐµ;èX×²Œ;¢+<¢’Ø,‡Ç\GÇåmsAXr!Ý”DSÎ•G«#ÌÝ¡Ký†_—	ÊrVyx™ƒŸ–ªcŽøŽ,–Ÿ‹YóÓI¯«Jï$J÷+´øõ€7.H|ÄÞÈovÆoD®F$^~£¹T¢¶ÏÀxÌd	,äîbfK‘‰xàÊÖ$1zö¦j``x
+²XœGë JLƒQO‘WV} Lßa4Ï¼]÷¯5\ Ágôù:•S8ex i÷£#§ÌBApQ_\EúÍ?aÔîSË<»í»’wÐÚ¦ÅÆOx)±,­*¤?Âc*þ@[õc*ìR¬½¸}ƒ‹Á"ÂéÍÊ<CÅ—O†Jb¯‹Ø*ìGR÷©ë-X¿Ÿýý`ût©óA‰”Í(„2¾s‰ª…ÞVÇ‚[ø¢X?~>Éx6N;„_ó8ÞÓ³Ã'ý;%Ûl¯›é^õA3”7v”ìÎÖüÊ+7Ì>­k‚t¨8ûÓ~…k9¿?Í];QÚ6á­¯O,‘[ù…çLF~¸Ö5×Ùàc¡hbþ…Þm“ñÈýÇ‰Åçt~Ÿeœ”‘
+´Œª¥'J2aÕ>I˜¢¿€PKpìVÁ!—×ÃH¾¼X‚;}¥±
+ëÄà`¹æ€=/„ …6_‚òÜ¨\ÓþÒzœ|¦nM5˜NLØE90š®O˜û'‰lJ]:{bqø$€'lá{á%'¿¯š/¾èÄî{,¯JPíjŽ·v2m/cO+YÃq}¤š…é†éúÎ±Ï_)ü ‹-±Bz/9Ë¥:žùÚŽ\äå¿Ï,i
+ÜdG2÷ƒ¬ ˜¥Ä@`ÛŽzªèëÄ'—tr™X¼­•ŸHšm•Æ¤ÞHþîÌé'4jèF8 Z€Æ·>jCùSj
+á¨ÇîO‚½è˜iîX»ªyô¯×Š®GçŒì•í`åÁØŸjÏz!‘hjEÖ2lÐ/òÍûZf^Õ7ØDÓ&Gp;6yShvQþ&×ãQï‹Cû7 BaøCÀk‚8:¾v¯(ÞQ>Þæ€Ê|Ùáj/Ë®º¼	m ÉH÷†-:¸¹¢Âä¬=OfmñµÌ–DàG–;ëµo_x
+»E¸º»ÏH@Ó¤’!öŠ~IçƒÖ •ë•iœ A~½íÚñHŽÀ¾áŸÉ/Æ[ß)# EÇ¿¬öõ=ûž¸Òo©kÐÒ6fl ç''Ðò¢kbì¯¿âVÇä¬tÂBêŽ)’€ŸXÁóuNÊ®É	˜˜¡6	Ša¦îSËÖ'†êÂ¸]a,”à¨@ÊÝ{Í‚w•šEú/Æ{Ù:KM µ¹3£:§þ·_,çÏŠ7Ü_Ï¶¸¼­Ù9¾ÐÚW%ÙÆ¤ª°Á|¸-‡ ×BÄw`mOÁƒyªÝÐ¿xLé‘Uæ`*ÒmùŠÓLfá\(S¤aù¢p§‚ûQ‹äÏÈ‘ý[Bîž3_&`ñ£„n„–)Úu§…ÑðgÕJ4Ë¨‰È¯]—÷Êsàd{´§€tE/Çô‡€ºöê®B6VÀÖ—jæ^ÐE±…6¦-Óh#BB-Î‰•AþjVÑ¦CV.ÌZD½=á‡”ŠOþ»´7U@Cl°âÕç•ãaÓÔ¶s!„.»qRô^½½Çï–ÒýŒ/ÂÕË©ÇŒÀ¤˜XÈáHUÆ¯ì2ÿyO;	¬,ôÈØ`†Uhë÷<
+œMèœiã°ø¢èš‚ïçÝ+x9IÅŠ›N@šÉÕÄN.óÜ.mÍàÏ¶ò¢ÏõbÖ@Â‹²ÏH`~Ïa³¦½ºŒ†tŠÛ‚°6S^”øÆ¬¬Âj/®xæG¼¬ó(^FYÑ
+¶|ä~¶ ^UCø›¸Fvä—Lþ8¢ÍÉ¼c¶?\;P†×XûÕ'ao F’tã@éÿŽFuf¦dsÕûB>Ð~˜	3-Ñ1±DÓ@ÆVøç«Y·¡ðhÁ2Ñ•ÿ…Ó©C³HÎÇÏ'‚Z¦ÝA.•È_G»,¬1Žj³¾HÐÄõ-"™Â«““ÒD˜Ûý¢‰Ëˆ½Š°ù|Gb5ÏÎz:•ÔV!Ð•—˜¼_7p0÷¨èvˆýµÏàKñâ²“æ)j®%	úÎøU¹©!‚db‚U[W}hÂSÕÑ´(Z¢¥Õs>š¯×÷jÊ/G/?v—Ï ê¹/9íb§µÇ¯Ë!caæõÉÖŒä®ÐŽ¦ÍyÎ¶ÁJ_ìíÏö>È%c4óIBØl‘_Bž<XM«ÆeT7œÛª…;äÓ\_“è@~³ôA4‹ÉÓÎ,q•Ô2«Íeb^æAFPù¢~¡dŒŠÏ9|Óä¾°"3eS`ëŽžæ{ç"jK–¥"´~ZÞ±Ä’Ó‘mxŸÙü±…¼°«)òÛ¹í8ùõÂü¬¬	j±#¸ÛÖ**cù-GÞvp¿›qÊ¯¦ Za¾)Ú4”lßï–ä‘Ï˜Èñö…›ùˆ ‘MW7® Þ`óÉO 9€˜—yÖ½uôa²œ¢ò{UŽ~?Î×ío	`¶;@N¢¢"¢n‹º tS&5g­5Ì|
+âÒ«*@ŠÂÑÐåB#ù–J[Ýßù,òøF™¿ì 	ÏìÙ>Ž¸Iú'ÜÐÉ·óÓc‚çnA¹ÚFè!Ô™é¢dÖ“<Òøl±0ã.ÉÎPŒ[?&0Á„¸Uáß
+ÿ¶X2=8Ù{ÚÇ½“d™Hâ×Ñ]RÖüY[†Ï5™(€HÕ#DÏ£‹K)çsáN8½«âC2^Å´Ûœƒ"Zƒ Ù“Ð>6á`úØýÓðBO9áX€þÚP¤×DþNB}ìá°Øi«+­ùïV¬–ëØð|1¤«YþiŽ½ã› 0"ûõê«»Í–)O%¯ÇÕ`ùM(W4ŽYW¹ÒúÏBŽ¯)ðxø™s\šsÚp–*[ÇR,½÷XÔ~ŒÖt%y±…7#“üõWÚÜŠBw_41C› Óÿ!Ž­N°12xÝOF–„&ÎeŸ†@î!¦Ì­v¸Žc0x\fÚ, 2œÏ)VSuz iu^±xÜ$@vUD…jþº<;ÊŸ”õŽUšú® •@hðïPC'$Þjt[ÌØpã$—‡Ö:£/<‘ÚV‡„·¬>¤ÉRlcÓ¡‡}ÉÆ!
+Ë/pµzMvQxTûæöBÛûc’>>––OŽºÏ„j›öÑÂ©!œƒ…øV lmxbÙ5÷@nhH««G²Ó~"‡OuG“÷À¶lMÕøÁªè©{g÷„¶ÈÊ8lËøã1Ö s"ãÖMŒù–¿‚¨µó(~þä²T«‹LÐE•zX,ó¨…£ª¢¹ ?¸¥{t._vUÑ½qgSx’")O¨Ø4(‡§Ø#i²ÅB Ÿk±d3„s;zB«ö˜§ï?†V<c–?ºq;GÄ¼®æ²dåPMÊÍùÈ6šMì1Y¶­@}pµ#+–Ê7—t¸…Ù–þZ>ø•Ôb ,Û \ÉWµT¸§%õM;D’i¬ùñf¾ñg‹a‰¨´^.£ð°ýÊª[\…;’÷SÌEÇ£È6nI\u%¾8Ù·ÌIäâhÞ¶	‘¦ðŽ/ÌÓ˜)Zà/³ZC=XýÝ-Y‡Œä<eé–t¦\aK]I\îãFÏ[%øŸ{ŠÉ û¿Ý,K'xzØ*‘S§{òÎ?Ï±½3fg-hT
+¤JyVÃ¬ÿ„…jÕÉ¬tr¿ÆEJ)?.²ñíµ
+´…ÁŸ2¡PôUUìvO Î[ýãO
+^·unhïÇ‹ã¿vMÅëäö° SK3"7=)m´ÝUr“£[¼¿¤%ì4±½7@o‹=j‡ån|1n]è†Ì¯/ŸƒÁµ¦îÁÇ£Ö æÈ*‡Òä³ÄVÍ¯P)Ç«3I_eœ!Úäêõ™O?]Xw:©¡ºRöv	+>Úëº#Z?R+´èç«+Ró×Ç]Jl&•<ŽrpÅØ±¦dz¬$lÓç˜ú¶«ûÅõßaš^& ž‰ÇÐMØHA2>._%ÃNÒêGpÒO+ÀLOŸqç²>®°e&Û}M7F`wñÙ£I™&ô~gúP¢­Ó¯5Ÿç©RúbpƒNc›îVL=1[ø+X¦¾J!Š¡¢$=_´°;r}E>çµý_jàN`Þ–*àXj©ÌZ­ÖÄkáôòf˜ôñ¥fÐ•°›·7@á...a!×ÆÔdz¦{ÐÅH”{W²x‡<µ–15<Øƒßï!øL>‘[…èÃ`ä€´hÜ4¹âk@ ê¥:IoõÂž Òñ]ÃÖh¼!»Æ›]³ õ	ÆV£ÓšQ\Áð‰!“î|x1Á¼_FœaEËÌg¡Ï¢üf]¯ùâ¿S’m±höy~¶•†šîtòvƒE<ãs|Y€£¦ŽnEz´v²ªMïæÜmÏüNïÄsñ$˜ˆ« ­§£KÁŽ|…NHÜ²)²ß;Ã‹¸\Ì”ÁTñº›î<v'Ì¼5]Aãzí8¡œÿNÉÉWÇÚ¶eS¶÷L[”"
+‚V¬µË¶²:¡%ßdø³¦]º?Û¯à_°Õû†ž\â¸–Šhœ+N(Â*¨áŠmŠe-$º	/57†?¬<<ò¨±ÕVK’iâŒùËó¤:1]Œ°ä¡ÐÉlpÎÓ½ògéü¸¸žU?àƒÊr e‡³n´jmó¹Î06‚çŸ½íÄ“·à2o)©ˆû‘Â æPhªŸðá{Ù ŠŸ­dÓÎûÔ1”ó!åþúW¦Ù7ÈCj.Ø5}Ø9ÜÍ³“³ó8ÉÇÔYQ±wzk>’8ÊÁ/U]!kºú8ÖŠ×¨oQ¤rK×65%™‰fšfV«XãÊUJö¸l´bHž.ú>uÔì|O˜C^dM3ö^¾¤ÖÊ%é,éT
+ò61â® jå[ÒO!ÉeãÊä‰‡	ãÇØÈÐ–CvE¡_o[Zt{?ÚòA4/›a,¾ÊU˜‚îEÖ­ÀB¥.Y_÷f ½‘ÃörFxÒJHœðvòð/X'ÄßÏ]5:½ì,³"1±µ@wÍº}´(_È‡Xjd
+ÅÏdd9Á3áó,ëèÃÇù<<G%¶¿,1žŸë6{Þ$¶Ót§H½Å›j9	½¿ßwO™»Kºçº:±ºªÓè½5{÷(Ô7víI¸RÞF%y—^´&¾ÈfÆû:·þ£úÙ®ÁçÖÊçåU…éêáìu"~ØÒµ¡NÎûL'UðíºNœ5QÅ{Y¶[byíï®”ð³Ñ¿ïóÛ/KZ¯¨*V»2Ž-Ž‹ÃBŠã´’:_Êü¼“AÝÜ6?z5¼¾•$ø·14XJqz1@ÿ6÷©þBR¯ EÆ÷îêØ‘86q,¼×¹šè´ˆuv>mÎuÏ•.ìfgmšWq`ØCh¡2¡pôÖãVÀJ/êR=¬%Öº¾…QgcKQÕ;ÕbGG.Ñ7tÃ£BJø{¾šíwíDOÄŒˆõîè*(MÉ˜‰_´c]×VÒ~ÖënK_4ß®ÁR×ú…#WMÑì%é¸üÆ‚ó•µSMòâÚÎ7Ý®$²@Àí„éZF{T1ï>v<_TÝpxxŠ‚´i¼•-–nxÔ8•Ž…l/§TÉjyúCÍj« q ( ®SOñèá|ª¶|-q%BJ	¾oÛ6:CÉ¨Þ*}™Â™âB^QžÆÑåÙa›Ð¶Ž	ßš}ÆÙ¶uÑæ%z¹¼V*<$e•Ù‡›
+åWjž”£H§zyNøœvžºUËÕ‚VÑ”_‹«3À€ØjNž	~ù^ÜEÑê‘ëÆä×7n6!0EÌ0_hšÆ‹>:ŒëeRÇ™ëgñxzò¬òIalË×ŽŠT®U´'Öì‚«à\Q°Ÿd¢	^Ï·Ÿ{¥¢ É'úñ_Lyí/Íß[CÓÈ|ÈõeÛ"`‹;¥P7Â´2»áQU2`‘1YŠ4’ç'½`PÈ ãP:eZ£Ú¸€ *ùj-RŽ­]¢Ýù§ÆÉ–<”¨j°Õü…í³÷mò£}i›žW~‚ñ(áî¬{fWÊ‚÷Í­+¨p 4J­³ßoFx8þñSQá 5œŸ£Jè4z_¬TYkŸ'ÓÉj¶H6£VM`*‹¶¯R‚ßleEa,µç§¯«Å9U´%8ê?Âp¶š×úÌÌèKnž(½À®¼—µE~2P˜7kê`¤“NCö|Þ±­õ}È×áHdFÐÆÎn^…¯ÿÇð)'VEN½’yOg$oåÙpêÃ(«îÜ0¦>”“xDÍ‡þHNÕ"Ä·V¿!“TƒÂR0 ™…â3²/4£#cp™ÔæÔ%ý‡–PQAl²CÃ†Vg¤ülÐ×tÝ|ùÕ °lÁì‘Ù1ª².n¾­_~¾ñl6àôÖÑ÷×0À	z5ÕºÎt)ødœæ	IS<½QÄ¸G!—¡°A?×¬vÂqå¨£ÄÂ¸çF²™P„ª:<	hzKh©—FŸF.à.ÙQâ‹vA‘X>Z¤]$pÏCùíjå÷a ¨
+e2Ú0DµÀ:Zîrs.ªŸÑ‘gMØŠ»íš4¥ê¾²š	MÒ~Ã~¿ºeÕ¡j@ÐKg !~u!0obŸ0ìbúW°Id4w|MÑŠÃß·õŒ+7ó%ÌÕQþ*¢ZÉJl¼ÆkD1…«ä¢„Ú“è•VVÔW[à¿³˜fÝ×:uœÍˆ
+rIðò1²]Ê[#1HÓªd½¸ðÅ¯/ov GVÐ¥ƒñZÚTÉØÅxßÈ…ò£éî’$Ÿ“Ì¾I’d‰×—.ÞZâïñ êµ«>z=c”±vØXå@<šS]áZu£…Ç±@ÊõQsm‰à8jâfX!)ŸÿQ«®›M¬¹Ž{¢°p5¬“æÈc1DÏ§ºš«&XÇÀ O/‡ß¹‰Ñ)W>¨wÑv	Dß%¢ŠmyC!o¯µ/aFcËVÆðe·j³@ÖHÙÖPö­ýf~˜.DTŠ_ýÞ	TBÚ]cd¹™•Y2Üý•aôa¹Šù!KÕÔì÷.S6½‘q^g…¬4¾¼'iFÒ˜yõ–*I'ûq5ØÖ{Ú\sÛÕý’}^8Væ¥ªD0úõu~‹®M–ÜçBJÈ^5ÊìúûìœÐ¡ÖýR’Ï1Ê@¶ú»üü†°èÑ(çšó‹ºŸS ÕÖµ èççÝØ¿¡˜v¦Ûµ"ÄPN?f.ž@÷ùÖ~“…’ƒYB•{ECCMÀ40,Aýà¬&¤wû]ïÉý¤UlèÛÜ		¡Ðõ¼š~LŸKÿŒëÎâGŒ]oa9›ß)¦ÎÝS"Ì™|ÏßþË=[2°ÓbË÷!‘!ÀUìÃ§ŠÍ2]¢ë›o‹WÀÊ¦ÃgÔáÉ<ù8Ñn¹UÒjb•øŸ>µ€è?0lÄgx_|Å
+g4)Í9x[7Eˆce3dñÂÔ33ú:ÓÕ8 â:‚7‹èHàœm`ÞV”…nK ´¥ìE’Ó>œcJÁ[ð¯õTP—âôwÑDŒq6NèÖí-t1ÑEíZÿ¾ßÑ|°yÞ_5º:ÑÖ°v™ý öï`Çþi£ì›9Ä@¥š‚“7pUåˆDî­VeÆqµ½@…píq!¸ð¤†wä_œxôx¬·~âýËxý¥”ëòx`õG›û¹34õÎ?&»6×n¯ŒùC·ß¨ç	«—ssÀüÕ'ŒÀð¬öD¯™ä‘Æ#ºcòõü÷ªsŸ?Ü=Ðjšo·kë7zØÕxk›$†¶q¥EØéðñíãaõö²Iº‡í/
+Íg)ö0"”È"ä©ÂØœßÍŽÀgm	ˆrK²,ôÄ Xÿmƒ‹sy"êÕñó©‰.*;æ6:-Ö(røÒÓC(r,‡š(±_‚km¿éÓØÄÿæL[^Š2†‡y*_/æñÐùâÌ¶bºTùØìj‚<¬|
+}"‡HDÉ^[ÁØÕ§”QôÈmÎ¹7“ŠêÝ/GF"Ü‘_VŒäâ¦öß›Ð''^<·äçà#1€öìáXÆ{¥i„ÔrJ>°Ç¨p’Èá©Ä¾>Ðß.]+sýí€š¥,Âÿ®
+$Y… Ì@t†:mÏŽD-û.a{%ñY<5`4|ŠÄ¡bž	ÒuŽß´'‘l&àíÉË_æÇî9ñ¹*î~Œ=#j9Üc>¯Ë5åcõ³>ŸOùá:Î|­V¦»P)2˜°D¯É/ û:M9¹Ó¤uõ…,xB Ÿ²¬·@¶«˜çC b—Çö¸zô'~ °½^Žì%Šº
+ž"úê ‚EÇ’ƒÄ“”ª]«ÛL£–h-ÁqB?œgê¿EÍé_ãèSÐÁÄOæËÁ¥@^§Z;‡¡A(e¶N,NjŽ_Èaž¨ç¶§ z«¢LÂ#õŽ}öšmmf±c3ìë`ŠfÝªÙþ.¦7¯P ÛÊî§i|nÒ è¤àâ•Ð•-é¾ÂÈMºÃ^®bò	²Ü]uÈX´ý¬qy©xQû'±üÉh;“¦T{çÚ¯6*`àÿ¬N›ø%ö$®ãîÙÑï/o±paÈwüàIbÃßIWêzCK§™°ÇÖ…I?³²ßDþ|ë@ð AÓ\IŽèçï”` Ì8ïBiŒÖ/9TÉœb¹öƒæ€F“‹™…s"ŽŒ¡ü,‡ºïø`Ÿ
+D%‡k[”&û2wq—Æì™$ˆ§­jcïˆ/ÌÃ×­«oôÝF	›‡»sýÀðnë¸Gô3”Ç÷òµ®ëkaÆa¿®—ÓI<¬±E¦U óŠ8ÎÒ13×ŒÊã·æÀr¡€¸ŸÍ¹ÍiSb>9‚ê²®hÙû@Î¬\I’È6ùè>›¦¿{Â‘7ýn²ÏnþÙ<[ü€a­¡º9Àès/è®ÈC†Ürð¸EÙÊÏçç>ô$×7Äù—Ò§Š	ø´6†Gú­f+ØÇÈòc·o“­³·mãëP|“°0N‰	Îr¢Ó­ö*0èïÊèV•_#•ûžúEÀ;k‚ŽñÚlBû:7N§3Á‡Q–ˆ"ˆÆOû¢X†6ºb±½AêŠâ®—˜¨P|?ÏúqÄñ›|jo¾¡êG:rÜ=Ô÷üñîˆÐˆk@pÜ‰6+,Øqå¾h|å›7‘ˆ®ØU`a‚õ2øòp‚ŸnÄ›:$ZÕ¼¶1}ÙõÑÃK—ÌL§X„éðÉÍñS¶Vœ"šZ¡þ9ÂÞÖ³	t¸·‡Ž¼ýµyýkrjú+±¥Î?À£ŽíµOZÍiÌØ¿,ñ:ÌJrd„†oÊþ	3Ùt58ìxÍZ9^Pç†‰\ŽŠ•L¾è6n¶Ø†_ÛTõ÷““ñ§
+GS’§rUäªû“ã5?o&ü‘þ§†{ÞAØc¡â·o}ÒCÿq”[rÍÁÚŽª¦d)ñ 5¿­B[r%ÍÒBébÇn%Rzfº5Žö õ‹á>åJýKÏ<svÎ,…Œ0SKJèt²8ÂDÛj(^F¸Å¬¬7FþØë¡qÕ‚¬)ëò2eÓ„XÐnE‡ÌeõÓ¯	lxæŒäÄ†»›ðôdÕÄÀ¹ZÇqW+DŸÎaûÉ§þƒ PÑG1å½'öøõhóÁzi|ðSÅrj{5+d‰Î•>J9á]F'Ï7„ÀÁK†‹Åyêñ,ÁõŽÌl…õTp5÷îvBÓ_ÑœmÚ*…çðÃ–ý÷ÉtÔâä¼`ø3…j×¬7Åî™ç·Fð;K«Û÷Ñ]²éQ—¶ž!k@OÂ°¬Ë£Ëê?õÓ† °m"*Þ'¡w²Ô(Aó÷Z›>‰Ñw×Yù 6|}ŠàìqŠ*Ò‹ù§&ˆ(¼vygN1@^~‘2%"
+È’gxžý¢Ö|Ùýo§µ7kÎc;þ)*%’ÔvÒ—H_„aˆíy
+`¢ †°äí’†Pð†æx(ä¼Šº/ºÅÓàÓ‹‡AÌõ½]Ó{l FJŽÈ ÓoMit`m¿Ú0{\¦Ã²„«œ:ï‹Íü¬L{òO'AñPµçÚ/Œ‹ÉjÅBåµ›	Ê#aFJŽòÚÞ_Z9 ?_üŽ˜/ G_ÎäSûb]üM/7ú»Txò€Ö]=ö`ŽÚ_*ÍZsˆ¢¢žû“~3…0Ýßü®’Íw£]›Ù BÚ"ØÄXëWã"LúáëìIŒUûÑ3ù–A(øÔs±4ý¤Ì4eVª:JÅšwHþD”¯j‹µÒ 'Çjâ—5Aqáuín0§ÿ‹õV)Ë'¬øÄïD÷˜I3§ÚCzôÓqjŽÚqã«¼,«Ø— ïŠ‹‡{‡DN´ãnnƒŸ9Ðšø¹Ñ*Ã¯~³™„tÙ(Ñ‰ô7Or7ƒz7G|˜«+ìÇ>ð«{Ñê‹G7Y“À˜«ÍwfÊˆ²»Ò®Cün‘3Æ“½ŠM7(¢p‰´/hlf—QˆÊ+u}>Õ€ÚjÝ ÏÅ,›’‚ñÃæƒÊ
+	s¼lRo~6¬5G•Y'ývî¯¼2ñP=S‘ò-°£n¨‡=sT0J%®vŽð7^Ýùcõ4´¤­Q‰ßðµL&¹˜9‹z'æ–\ÄG,Xß4üÕÍßžø]ÃBß
+—VŠßº¸ÈèpMliÄÙ}âcÕ“ÍyrTÓu‚®QÉiTqxzö `êIÀ¿Îë°HD=¦±Ü¶zÅc³4 yÂæ	IýÜÔw‚{À×º5dÍ×'Kk¯sæßí[yC5g2ãï.²ñsuÅ¼¾&ÂÐÇN0’gdtD!÷¨±A•’ÊR8·õ@#PÕûûQÁ¬¬|¸Jù«/¾e×¢ávØ½ÉJ¢MkyíC&ªÀ2T^vpô°cDÅwr~Â¶Š‰cG1Ï³·C|¢¥*”¯7b!Ýw·i¶éêÂ²hƒü¼ÆÕI’h|…»ˆõ
+…ÿð¾uç½Pu|žÛª—h'Ý%}° ùBB†Rg3ÐHÝ!¥-ÎçV‘û	”>ÃM—Oˆ:k†\–‰©7j<¨¨sòø#}­ñž€Æ¹#ökœy¾³9¾u~«MS„éào‹ár¤â;R0%ÁŒOÒº¡›@S%ºœsEÛ0Ù™‰Æ0rr¤¡rÕ4	¾^¬½!{V^ìÄ?ê`®í•mpŽû“ÔR
+°ôJ$cwÞULÅîM „OmŸi#™«#—oˆ€l­0Rs©{,½%(çõcþ( ©‘2=g¸’/¥¼ë võ:PQ)äè:Ø¼.XæS÷°Ò¼y£X÷eø&Ñq¶ß¦¨Ã*{¦C‡É„Ëeg˜Ûjˆ^ÏëD kHC—µê˜/·‚Ç_…¨½‹tS®Q!Ãºè”¹y#eWoú”‰wßü…P%nço?|èa]×¾ªÐGºx8qç*÷MÊàŠBBã±µ9¸Úp?"sU†š Ýò3Ð@Ì×™Ov¸}à´’TpÌk’‡¾.¥sÆ»·’îÈo‹OÔd„ßiðmBü˜Â”ãƒj÷ãÅá%ØÐ2ðwø
+zäZøKE¶¨¨¼?#V`¨h2ÚÛ|~câkø8_8Ö4‹;¡üäÎò>òm"ÐÚúiM©€ñ™9Ò9€¹P˜bjê}Nâºi›Û|éÅÞò÷Åþ¬çâ Í6vG+Üü’ù_~1naìŸî\”a5U/¨½—÷ÁsY;¹o·¬ÂMõÓò´ulaS!fˆú±áÕðdÞ¨	TmÜ¼Pž;Å`ìH×q YôhFPŽž„çd±é…çGCÊEó¯¬yV{ŸÛ†ëôoðBç±°£xÑaAB‡‹}qŸ-ÚºøüÕOà{´¾ßm–}¿¥œ?Ðñã #Èš^Á2MX„ná«Ðu*S(Jó*’÷4é@óc¥ŠÎ=;Q~XÉ9N_…À‡¤aRiôÙçìõ]P%èîÄoûÑ]žlb´(^ØP…;“Ï~þzƒôzö<º‘y®ïß«>U:ý‰üõZ­ýþ6ÈÆ(rÓŽ
+9îŽÜÉöfê`ÍÃ7niÏtó:7î=w=g!ØìñTd·å ‹æ.ðšCWF_ËF×ú-=]ƒ‡Þ\_o#‰}€V%’ùÖ5Bc (øé3À‰qðq7ÕgïSua!]ë´ŸÝ-ßSe[A7LÀAmçnîyUÎõÚûÞêWCüöé’ÈJÏB•n)‡
+½¦VŠ1,cªv]çLí[€¥‘hß”08ÀoÆ (H§²d­vSHÑ]È+óÚ‚„:-gvx‡ï;Mp¼Å1‰‰aCIM{9ÄÅ´Âä@ÑÒ¬‘šeÉgBˆÉ,'ÀââÀÃ ‚úBE›BÚ#2oDÕ48Ú|Ô°ñ…YµŒ6Ód1Ë0‹ÀË—¶Né÷P:X4Udú Ã®èõlÉ)V7€"ªïü;·à<A_ß©RDt†HÖ¹È%BÂ9¥Âxºs]>g«Ù•v~'¶Túã­xAÝì­]»=1×¬‘º›ÚÏßâTB1VöbTÀ[“`
+:'.†úmE_Ú…¿í5L®^;äW..ÍI¾ôH4ƒÙº¦%eÊmÐÝH<~nœjè%ä6ŠíÓâS¹ÃgïAfŸ÷QÆÚrE—ä7*O’ÕêIòyÈdó	e¦é„†6XŒŠ«!:t‰U±ü
+40>ÕÎ´ÑûTŽHZôoU+ß,–ö'ßB‡výT¸Q~üùÐrï@6eÙI[D48É”¿£8£^0ø‰—HbÖÀ¥¡oŒ¥*‡:¦`7=¡_¤~zßÉ`QLÉÍ£O¸¡Yy)ƒÿ9!øU‹)ÎÍfLtÎÓk¥úôiº‘Ÿ»àÝñS5	CQUC²]®mÆ²ià¾0Þ"»ÈƒÓ="nôö;SOfÃ‘¥[ á`‰¶†çÒ	ïy…?ÝM˜ˆÌXfö•%²=3Cò¡ÈµµI´®/ùDõNìëm„ƒæC7¬kÂÜð®!YøOk±]¾„‡¹O?ÑV$\ÿ\*öª&ˆŽÇj:eúîíX$Ê~¢ÚcTC¶ÞZ àDsÇwmëÀŠ¾Hæäg	ôrCh©…Fw	Ö$õžmòl”H|ù%`‡ìÚTv
+O:;å’ð¢¡¤³`ƒ¸Ö)ÙåÍÚ‚ŠC_'ßÙQQ–>áËõÎÉkzA1=¡ôÖmI%È+ÀdæBnù-PwAmëHƒrs×g¶Šî„€hHm3G=Â/ƒÌãxÃmþœQuã¸¡KPZÿ»fiÝN-ì ¿’Ø8Dž‡M	¦¿ÛDßáFYË©PUk6÷dÕë+@Ý©³›}/ÊÛæ;ø¦û”á4ßCO.ïù û4Šðç5­Øç‘K™+‹ÂË„›«sa$x,–sËÂSû¨ FN´#ÐQ)”wRÑ|‘ð~ô™  ï#•4—AŠ9, :T|:;½;{³3µ¦ˆÎˆ29ÙHÒƒéì®ßjØà÷.ÌúÂú4ÛôI‰«k;S<¥¤ÉkÙµè¬öVÜœî\-ªû™I@­b¾çÊ=æ8Š™¯%ù¶åÄ¥ýÅQ„gYh3èFý~“îŠAa‘Šì×pOI–‡TGX~ò0•¥zP$äÑéþÊËÇ'ôÆ²´Îçø[ŽœT¿`Î#ZW~Æ V{)ÑTµjèƒË„)ä"˜]‚EfkÀGÌ‚ÂnÖ»Ó;¦uÂÈéôhŠü& Ù¡Ôµ»æž5›)¡uÏ’R/Ÿ~ßºÚÐïõ²Ê±ÏnX0[õT:‹‰á§Oršãiöy€Y+Î"g‚S§Z™À€Æ™WŠó
+µ2›6*+p3Q÷Z­LÉC\ß©ã»_Z÷„Þp?î>zgï…!„cØ$Š»èxÒ„F«ñ|ÐDpk4ã(ü¦Å“½rhcg5æ©‡J-”AçïÌ[ÔÍnª uGàŽ9æ5©<Ÿ—C˜ùÛ¹`æp2m)-gåz¶9Ï€Ž—ÖH#ØÌœ&°:.¼1èá¨B÷r FFÔÏR»yAP:x/Ëð½?¢rŠÓ÷ØmvÀ×†óa’ñ„&qÒÙ”"EŽ
+HÒÈ»ë»tï ¤ÀùñÛÖ%»@Î*„6_".2Â™+»MÚ©0­fVB‹KÉhÀðîðzV)ã¾˜ä73yLY¦ñÆô/µ]Ñz&Yý!=qwMÕT$íarà=z
+¶†qùïHÊ»É†¬¸…6×-’8;Èƒ?;×ˆÔ4ÕO1{¤iÖ^Â§¶4•²5¦â´žeN«1!Z³àYà'$cº-{µaRÈÈí˜1ŽPCdcÈ!íèšÚø0’%Œƒ»Õ\Kû£¢åÅÌˆ†	Ø:åÉ?™_¾hQ6gÌ @'ÓûNà"~ºs.93¦ŒÙØÀLˆTYY;æŒis:ŒVÃPnÉŠ$ÏªÇ=v@N™Øšuu.Ì†!¾`ƒ©‰oÑZºÎëN& 8ŸÔÍÚ‘õå~—Z4µ¿">«eÆ½îl¿…‡®;’ï]°3‡iýá!ù6>¬[¤ìC¯-ŸˆÕSG"Í#ß•]2áÂNñÌ6N•KÍÐ%w2ššÅ÷…ÚÙí|Ò[[¬²·ÞT,ü”D¿áÀ¬ÅäýÎ‚pË©™ßÏA²@ýÈ¡Qg“\ï§vNV‘4½Ñ¢ÓlR¢n¡¸Ÿ}ìïG˜
+mNmÎE‚P*ä…^[	|<üõGºÁ{5ÈÙ3€_¨rÓyZŒÒàp1kv]á"¡Žê)–8ÖU.ÊŒZ9ª-WòùíÛ@HÛ:ºZþ½”*8÷/ï8¿Þ s¸4Å~ ·Ä›Ø¯ŸÆC”Î~èŽ¿E‡FðÙ5’ÛŒÀ äý^˜pÅÍFžUµˆ@Æx…æý“UIÛ¥?¿ @vCÞ39­xâ©žk¦ÛÔ¦¼MÇ†ÎÂœ9ì».îZä#!ƒ[êw?ê_ÛŸÏùáÚ§›F§mk_'ÈlÒö›qË`ž@‚î÷ôvq•*–)åï+gsÐ5‡×©¹ô;˜òÏµÞÏè-ÅŽüÚñÒxœ@Ö òMÂDkË5ÙëëC2öh)ó±Íüú”Eœ!þý“Ñ]÷ï€™}	ýîSíoõ/˜s•±ôï@Ôßo##IìÍ(³˜}25Y›¯wl™rä®‹òœ¡•ˆÎé!'eµÛ&M‡i‘ó»qTP*0u3xS/œ+XÉ—1!þ”¼ýH.b—~š‹h*¡fÀê&ÒDAÇŠ*àR&Ä¨éý}*è"ÚÐppèF
+ú4#ô9Ã1Æê &’£1eE˜-*Níêw%äMÕ-åŸ™µhx«²Ì‡4†ù~àrç‡ùfkMçkú"AóÃœ~å÷©•x×q/¦ß2™;1eYõi}TE¾µ˜£Ìxàãšs©®oˆ¡™`7_¶,þ±¿
+YR¸”õ\-š:ÌàIx‚JZzýÈí§Lü]%§Ä|{ƒ‹»¿é%Áa[Ô¹•LEŸ—ŠSïÈâÄ¬yØ+‡-c›ŠÕ¯Wfå_Ù¼b.hAÿ¾iš£ã|o+È’Y2tS®˜õÉ/1³=Vm)a¤ç=5:CgL,¥ša¢]Ñ}Põ9ºÌÜy°°Õ“ÇG[{RnEa¼†•½J¬3 ÎnË{zñyå€äHYüB2x$ŸYk$N^—¯ˆ©úÁPÚv!­£c“gSKõp?åÓ½MOÀ`ç:ê ñç³7È[\ÖgûñÈý|?ŸGk%ÍWD3í|$8å(4¢šèÞ¥±]Ô)Ùvýx­Ô_¾8^ù…ˆIøïh9øïá"»m¨UßÞ~Ÿ>X17©i¶:rvë-åë^¡ÀþZ´›”ó°ê™VPUõÕÃnrÞÔŽ‡NÖö ÝL]\KÀ˜Ú=„«i’uaïªŒmôj—Â\&Ð—¢Œ%ãÊ×~ÈÃÇð’[áj¬ã@Á‘–{•‘ãþ|rê#¾<`HØ:Ø“ae låé¾NŽÌnÆ„h¡âC‚Ëkµ6›ÂHöŸ‘Ÿ„]j<Ùêª,E	ŸeDgœñQD¥–X35…¦êãd_¿»fÏg£“pÁ1ÞçÄ! ‰{ 0™Ê>’ÕCFUCHÎ¹¡mê'ŽéðÎwwÌZ¨IÏ)®»™Š=¹´KŠ9Þ‹Ãª]hy._É’`Ë1{Vkvl ¶êMwóÏŽ6Yý™UWÓˆÑ3·‡ ¤ÍåŸaElŠ¼MÝrÞ©uúëévÕ¯ÊeÀ€+Lb^Ê‹|hîƒ€i•}”ißdÄO_BŠûQ…òÓCˆÞÇxŽ“/ägò67Ýøµå!ËQ ¯ŸÓ&œŠ¦ƒ\Ÿƒ?G¿"£ïD—ÁuHŒj”öÃBØAX%›8•ï°¿m„h¬¨¬<žŠ°âÛ=*ÌÊJ÷Šíæ‹ž60¿ÎÙ_œêìq†ë)ùöá¥®ïÆ»]Qxý-v&„¸¬¥OpˆÜÞ|~ýÆ{CúÆÝ&ó®±9ä×˜ÝE©zJòQq²–
+¿B]Mò>Q2—Öƒ¤.‹í™˜¸¡p
+V_Ù3ø•š=ìš¡­ÒGŸÏ÷J€†^®âî²× :SÒ÷õtÉKQ­Qü-biPôï¬™sßDdõhË»é  ê!ª*Ïd,âL°=Ûœ÷•ÖŠÓÔ÷•­IVôB‹*¦ïbÀŽ3Œ­ÚŽVY•WRÜ)7øþÊÐgjˆ›G5¡ÎZ™‹9ŸIúr£JíBÜÓéD_Èì*Ô‘ïòÆT_h<RëúõÛ¢|?
+q/3<Ø¿álTD}Nn=Yf	®š)½ðûùCÖ±@Ò˜Éæ¤ ‚kë~—d€:bºEh0Üp¹šTš‚
+b}uÍRÈÑ>pô…SlˆN‘¡%Þš¬Ì„ª]Žÿwƒ¯Užø§ƒt.ö¾æ—â}ÑrJnˆgMœNòƒIAg)iO|8ËúC­ç¥pæ.f ‡urf+¾¶½Ô3`ÁìåU;J¤9X\^L#$ÓÂ–Ÿª“ÂªL4º.y¨ŸJ†s³(ÚPlçÜx{ý ”}E`ùª–À¤ÎßÑï”p¾sKMÖ87x(s¨SaZ=(ž!Çj/;ÁM‘\o²³K>´;R*„ö?…l¼\ƒ•pu<F²å-
+¾Í”Ö©ŸäÓ0Tfz7ù´£øÒ‰íŽ'íˆ"³ÑèãÓ„G÷j–3°®–³X?^[ða0×XYlP¹µw7ý„½ÙèáÈbÃm+k0>+{ßþôîªû]1CS³†Œ(HöÞ¹-QN}W#mlÇæ¶3ð0ÏÈÍX­·jÑµ¯ÐíwË¾ùÜ&_üXß!Ê8eR¤y¹+»Ømë§	#D›l³Œ¡±›Œ°4‰A¤ãß!ÊÜ·yðá$5’8+Ûˆfu[«É‹ ú=LòÙ-b*nfu>®‹ ô¦Þ¹'©­Ñ€rÏRÂ…Þ!&48î"ø¸ôOÓ¡kø	>ðŸí¦#‹>OÂ{Ì8†sEù£ùreù'¢’üˆwöˆ}3I-é=iI¨¤¢¸¸¨Û%l2’ýñrJñðÎÒõ½ÙTQ6ù”™`—åo“~ÖgêŠN%f*Ìt%¥"˜·]²s>Y+ž½»·ÑQû.Ô5ãyq5¶_¤p’Úç}ÚÖ	™8ª†²)Cé-õX“ÏJèˆ€øfÐì«g7¡µ8ëtöŠYÍŒ‚ie«ŒàµþÈrFrIÀE HeNí¸,ášGj_µ)¢ÂÙ±(fÐ _,§ Ý©‡—‚6åuå ë>~@€²Lç/ƒì¤Ø–Ìœ2=¿­Í«k"`r](ËõÇ3¼Þ;—UíªZsæs™S0Íßåã2Æ°—¡–FÅ–µ©þ0¯¯lIR¯ï™KBÉ3õõãÂÑÒ«¡¡¤9„Ã¿¸DÊ³pz²ê'êoþj€ï˜OÝü2Z‡@3Zä•&>`	(¡QÍUñ›©AüÍÑZÜQ@ íÑx.ê2„õâ¢Lr²&¸›?³ÎñµøWbHG˜’Ñ²:£"·Aû›‚%0%Ú3‡‡P?µ…vÞ+k11/ªq£€íÌß5ÃfYf¼pÀ‡4~ÔvGQk¥&AŒAGbëS¨ŸêR¾tBÅð^ôÀ#HÈ4_öäÝ¡÷:£Þ·¢¼ƒí–_xo ì¿19z¿/håß§-æ¿‹#–§ëßÜÖ®MÚxàð&d„/–Ð³—qªvè!ö	Sà/"H"`X¶«]S3¿ù:“è¤©¦
+Ì"MÃwyS³šL6`›QÇ!i4¹g*Æ“#çÇûß™!4°—g¶=¤øÒ»†áÊW#¬×DãÌePªŠ^R•Ò›wõ]±óÜjdål2­Ïîçkv…×jÝ¤”ÂA¨øCÿq†"ÚáÎáÖw%·ß`ŠP:³­Ü!á(þJñ#íp¯º÷ëHCOèsÀy9³±§eóÐöñ]E¾[þ# K½ÞÅ^Q`‹$ya‚M`¤ÚºV±ÏRu›ØS—SVÈšƒcÎÙ¹´ïÌ'Á 	³žçŸñs¤°™æ_áð“¬´Yë DÅ]D#¹)]Ñ­Á°ž/ÎÕõJÄÛ¿™‘='Ž"L¤n”š¿ouo4t–„æ:#“—:8îÒòò—©ò;ú¦Ò@}É¾‘ŒÝwÂñ{‹ƒÃ\ºÄáy/”ðò×.MS€39Z¶Ië—Óu›¡·íÛ9[ˆ >Ýy&]çÒ1 4ÖóœžpKIòo„—ct^>‘·îKÄ sâFÆ›6£ßU1N“ôÓfP® D;@|ÇVs0pÚþö‹°N¾]ãÍïõãÕ‘”Ÿ/ü.:.ÄÄ0?æó±]ëë‰¸L/‹õ÷êé$¤ZƒÐlìÈ^Ü'MTúŸ©ìÔLÛ¸È-èõþšãñ!¤u6¸ùòžùeæÈE6Ðžì-G?Ì3I¯‘hLÀžÈQä,È+û‘µœJ¿ Q˜‚| kO±I<®âE÷Ø]/‹âïå÷#4¬µ/®•òiT°¶¿óDä÷'Ó‡uò­MoG&5+Å÷)TÛøbàX‚ŸÈÍAÂä"'ãÈ÷¸û€N¸ž5CB†! ‹K¨Ò˜•.-š¥Ž“äÕ°¡AÎw½!ðÚ‡=±³%?§ü¦±ïü~*w«Ü©ÎUBœÄ¡ž=n	]ç!*ëK¬ö>x+—ï,Ý d^˜˜¬ïû‰ÈÚ
+_Ä³"üUt°Èn1?×mC6Ýÿn§VÞø)ŒoÆh„J?ªJ}h÷'%().=ì:ÃYªt±«‚bÊÏÀÜßÇûÚa7µ¨IBAfWñëbÓç#¨‹Lù`“}¿›­Gšß'•Év/[•9p9nkbþmuœˆGq¬uÕôÏBÙ/ž±§!X6ùP¿pª%Ôü…€æê§ !¾+ï¥¤&ì½‹ß¨-ß‰žQ›<)S.ˆ’O©H—ïÑ\wp±æ+1C_ž;ámm²õí‘"Tñ‡í‘ZÁ>ˆŽÏù8ö®T—‹-	ÀÓP$ K:©—xŸ—e;¸&¶­’ÌYÞ½|Sø©²„Í<éâï[IE¢Õ³Ù5s™á¨‡(|¥`?¯š$ƒcbÀ‰øÂ‡Õ|òôIÖK_ÈµX/Y‚
+7ÒÃÅ—˜ ¸ßä8êÛØBßêƒ˜âÉ/vfÓ†Åz~Dì/Ø(™˜u­]‡ç)ò@võ<Š×É[—ÁßŽî=Òx\õEO:)ÆJæÞî2™Ü‡Ú6!]›0a3•,j:;’?3ºº}boJ–CmXŠ@²ñ9Ñ¸Õ™`ïçÉâËòÙaž_ Ä»¤l>~JÔ{¼ÄBh5†ûb„býí±§ë÷h7™Wz%…*O˜¥›ö
+¾=x€É‚ªØä|BWôêìx •±ê‘$¢;|Õ=OžðôŒ¨A`žÄž~Hò{ì^'ø¡o¬Hˆ5ïG‰æ•—æ–fQ2ç¾rË×ßÕÁ\{	[o´·X~•ILã.]A^„ <çßí¶Tøê»Œvdæ–}¢‰”Þ­ª½ð1U>¾ÖÞÍ¿¶ ª”k‡®‹z½3EÅ+­iè´Ö+¾ß%‚îrÒl§ƒ¾ó),ÓÛ•}¤TBëÜûNV¾Nß¬Q†vè¡vë(ìÞ›½ßDàQ„Œ¿\‹ü–>ù-ëo,ŒZà3VCN(.O¢HˆÙ|I™šûMò‘³3§
+.¹Ö\~`â,Ø¤³ï¼ÂÅÇéM<RSqK˜ò>9³¾ØB‡3—x–Ùhï9_£&a$þ	1/˜‰|^7Lw˜3SÓ45w—/R7ÚYkj('’ ãC)œ=š:s¨%³«Z×ã.‚V]Â©½ŒØ£e}Á(£wÈùVxyõ]`Î…ŽWª•‰ZŒ„R±åððÕ|wÌÛ»ç!°°bÖÇÝ(gÌ„Á²è~0«éŒÐ,»{\·Ö SÎb>½¯üêWQïÔCD¥‡bãò%†5¼/×ÐÏì6>_W*¼(j“‰7Ý"»ßÜ(2° °ãœ°é"ÖÖwÔ¨RH‘¯e½3}©pöVATw¸n5Šõ+ví¨:_XÔ˜ÖÈ¹ƒ¯Rš-Êß¾²Òp½ìPD‚XïÄ¨0áäüyv)ø;%°SÑÂ†~êÇÑ¬èQ>~R”Õ„”[:ýŸã UXØ§œ ¢¿èÔêæ $IYZb@^pçÏúÊç÷^­.I£P_úˆÿ!ÖÍ{¯~lnëUòq‘|OW3xÄÖÎ’³nIôôNá2~£¿†uØv”=qOùó=g±*¡]Ù¼3ð®$BQ6z|x ÒlM<	W!ïâ'Öª\ùó³œ_(sÃ»/ŽpÏEGá‹–B]¾JúË|MtÂÜÁhZ|}6PÌÍœ¡ÎW+Ä¾Àù™¹J™c1QQíPk?	ùZqº›¨i&Mywès²¢ÌÕæj÷¢|žE™½ÔÕ¯wÛWT	'È1í-øêiþ$iÒ®XÝNTÄ-Ý(©Ñ×z4›ëß`Î¯wpR•,4CŸ47µ`£ ã7dˆ±Xè‡1Àøá,BœÒ­jKµ®y|¼ÑY‘O¬é©®á®¦•È×M <³Iè†¤Keè9¤Å"õ{n£-€-oÜ,$Om-	;T=Ž2i”ìgú¡tŠY­ß×²ŽKr@ìéT|¢ýã.5.¦mr<|¡VfÛY
+þ ð oO’&@!csWÌ²{	½6Ðªú­
+GÙ‰f £j‡gT¹Ý|hY•fÛÄ½žÙA‘”ï3—.ÿ*ÚsR‡[†½¾×+ïÔ¨£xÛ!Ò¦ƒBçwyÀIbžô³2óóµ—±jnOÁõÌXKTvë]ÕÖO|OÙÒš ÿ8:‹-·¡ ˆ~bZZ3ÓNh1ó×G“]’“± »«n¬÷0[À¦#×è|(ï# ïÝÁO@™žûÈ§c¤éOru“v‘‰Äñï»F^".&Kª/·’Z¹h%4c)Í­û¨¬´]ô©ÓÑb l¡¿ðP^¯'0f2Kmt£&‹{¼k)½/×Œtñq+£¬Å¼FÂ*ÌØ ×_Ô>åÕy_ŒŠP;çó)%eµÖßÈüâ`’ÈHE±6+¾³ÀžX-SêO´°Ø}j%¨óFøN¶Z\W/Ç	T™î¯³ì3W{Pmsñ?FÛ}{3ùŠÙôT	õ†uüèÆ‰.(‰û"Ž÷L=,ð¶ˆq¯ågÉ[sŸ(´ÍÉqºC­×eAðk‡ƒ§‹næSŽ`¤Ãúbf<®c#uÈO·¿×A
+¡óœ”Œ~£´uÆ2áÓÛ¹êGAûûÌóqß~ý Í÷–^
+lÓ
+6ÂÄƒ§8kvü*×apÿ¦uœñuyç=ˆß{÷…ñÁ'š´×jKš~±­sñ¯¸2NÌ ü)©:eãwºÍÐŠÈô*{µbaZã…xqEY)ÐÈÙÖn'¶ó€'Çp°djžs)-yÖ2áõ\V®MðYL4$Pj›w¤±MrÌ€y¼OY‰¤Lƒ”öô¢¡z×¯ß·iv†Ö´xïB¬Y¬€0O¹™~RU	Ýb´N“i&@€]úù=^^@ÍPZL¯×
+ï6HxV˜¨…F 3Üõ§>»ÃKã;¶ð¢ïõ|MÂ&ùå»gM ü²nÊÓQ“óß‘©æˆÁT(Ø(*ñ™‰èd#åàïG†êÓ²‘žGn“škä«AÐýŠD c0ã ¼	|²QžÕê^8×_ë)vºØ)1@ÎŸÒ)Ãš×ÌBB2Lß}‹m¥õ'…ã–h$CW»ºSûfÜðö<çúÂZ¯&*!ÞárS}óq‚øÙ,¶ù}ÊlÅ?AA
+žØ'O‘ÖZ”Ä.8Vm]C#ê|8õh«M3ãÉ
+0þÆo×«•Lž'#£5Ð”j^ò«tDÜÏG&åÜÏŠ¯[±Hf¢Ì„5ÈÉ
+éN¸œV. ¥?k|RB“Ø4qîÑnÑ£øù1’õ ‹..€žŒ~=Õ¢1úüÝË~ô¤mà»',¼¹¶ðGˆØ;;ý&0ý¼*¹sÉQL’i’âGËù@ccCJ1ïx/Gfƒµòch}ñ¥,¯,ÌïÄ=åúã^k34?ˆ
+µþDOþ#–
+QaXD§ö+ÕlU"”¿e|-úˆÃŽÍÑÉÝ©Sœ¼§Ø;¯pÓ?FŠìÃÛwüãÈ}‰µ)¨[pMŽµjòÚAÔ—ZØÅrW£:Chªù”g¾ ¢õ;•ÀhèÔ£Ñ3_U8B½òÜL§ÃOÊÃàÊ3"ß,Ý1}‡Y³¢âoø%þ9È©u’ã,´¤ÂÇ„úuY#¦ÉÃFFè<ÛúôEõ,Ÿx—M^ÔÚ¤âñÀì²ümL€í_sÎÑÝóXˆí©‹¸4©›ì²ŽS!PIÀ<;×T§&Jé²<¤Ë;™…1ˆwÂâ‚ÄÖj§³§Òfkë„ÏÑ¦)Ðù¶|ÓÍUôæ\»µÀÝ×x£Õás}vò'ö©»Ìï»1+¥eg(Ñ¾®·OÊaœÝTzñ·4ÊIˆBäß	ûÕßä&Ÿ|ìKš¬Ýõ½ÎMüTùóÁ#2àvjJ—Iæ²AŠÉ%n'#×1¶·N÷I>ûzcf©¬çö”ƒ¥Ô[_èåuj2tx]ÔNhv]†ÇZ/¹¿Ÿ^S»…ÖÏ€ã‘Ó™Y“]Î.¬[æÂO¶ÖO
+4qÆ•.S~Kÿ¦©å.âyƒd 9_¬Ì;ï|êÔRû@V™
+Õ¨%Žòy™ª15­Ã»v?µ¡Éˆˆ»òE†5äøQuÁªÅÉÅrØÝ;Y{ƒÑšcú¢ý`/ª¹‚ÍGä1YþMÌ…”À¢?Ä¢5‘„æ¨F®½ÎcpcÈÐ=ÄçÊÊíe‚¶pIæ'd›úFº5ld³¤õŸÇŽNO×W±Çü7÷“Lá©ö¯~¢ïLÒ1zJ~y¹c±„ú"Ã"°—H™Ø)¥›V‘Ðô=R%ôZ¬½’åâô‰ŠÅX€½¬Â^Šó¡<Žýùji"§}úéSS$¥— D-[JMe¾¨¢Æ	»5¯¥áàdF¡óÁÞT	þÌo¦CÐAµZÐ¸@Q¼ìåÝ¨áe*@$?áCÅÖ•…wDÒ™fë¦7ù°s·¢\îù
+!Ïn’)ÖÝ|š2©2é»ŒóMö¥±éQÏ‘‚È­ûA7ì¸z,–®èš6áœ£úçJÓ“ì›fF°Ú6ÐS	ìL§Ë.ã9ÌSgo¿;ôh€`…¶,mú ¤![Ñ¦UÞ&ê/è„Om¥ÐGd	?˜sËGõR)9F¼´[õœú‰è¤¿ëRbÙòƒ"ßxYàðŠèjÞW;÷k¦ÿP/šÕz¦¸„’„Õ¦îtÏ@’$Â?Öº1M^CÊ«¨l[‹í…äÃ‚•Ù©o?X. t»ø$°¡&²}i’Œp5Oðšqî†ùFÔÚkO_‹8xÓtÛ{²«Ã±èÄûyg3ßÚð^+£ügx<[ùñu,ËúoÑëGñ¤áŒ<J™fIúE0Ò§soj¸¨“/åªæT/)‡jIOfŽŽ3«çº©‚ t~Ÿkþsõ
+¶!^JEëë’CüÆ"Ò²§	È­íV>Rµ¼ñÃ›’j’xrêcÚ˜CÜ}ÿËE¶Þ/«u9bƒ…%ß«ckßj‡˜³vÐ{fË«X®åàøFÝ‡wÓ9–ÍOâòÛKú†6¢Î~l¾ç(÷wÈÈ*·³ÿën1“þpò•²opà Q=v0aÛ%;»l…ã®íÃñƒ®ÐÊ;ÒF¦vMØÆª˜¾×W‹KsJœÞY{€A¬twOÛ¤±ŽÀ.OäF@-¾ûÙI±Z´)¦Ahü·q¯Û½Äô¦³b˜èrOç;Û‰ùc¢´4’†Ð? ü^°ÒÌ74Nm¾¥1x´¤ˆ5-»à·×¦¹/æKiCø¼óŸçè^œ[º{Ûo:xëÓ[Éï~x‚ÐÑ‘ÂÙùæD›‰N…Æbù<ŽÏôè	jkwÇê>GVù0Ä]¤/Ë£$UÉ˜+Bì„ÑòBp|(ýãßaEŸéò¸þ[ÉmõNBûIÌdô7mù“zÜºÛ¾ÒCc‡¬ûR´¢$Üççoidoc(ÆÛ³¨~ýi¹±®³ðLá0ÓÁ¼P¨;ÛäˆmTòT¶ŠP4“#„4{#ÿôá¡à.,ÚIÀ•k¨µ=Éàwý=N8TÉy‚y¢ÂbðÚªoW‘GzŒuIåJŠïKA
+?©;¼<Žq­•c2³MF‡øˆVÁ·8*9¶vû£°FÅVÁ1z‰š 1Xàm;z%è\Q)ôRð†ú®¿àõ¨žß’§&b<HyÇØö¶E	Y Š%XìPW83[×ÌHù }Eß‰^T ÖÐž³Oâ¦å¤úÞOu„—E®ò.Èo/å#;Dœ©UŠU¿@»©AüxA#f%ÊèŸPÃ"HØ`.#?Q‡ú/jæ§7…N\¶÷.émãøñf·A‘6òÊÍÃ;ÍíØ;vÉùt–{å¶' 'ç<<ª°€#×fp·Ó%ù1¬¥£†ö§PM6ÁÇð;ÈØ„4Žd¡u¼¥l¢…°­UÊAc5g2ãU4vàŸØÎ)%ý~2ðà:–F-E[¸IÒ„÷¾o÷[9´bÔ½OâòJÆ	#H[l³·E3¨î)2à8HlnK¬ÂÂº2úB1vøHÝ²’o8è¡¿¯SLØÞ|¦0má6p¯ÌšýcÅk=`×šDhJœÒŒ}‡Žºñ^Ú0îæpÑ>òã¶j/ù‡ÔÀùo<	ù¨‡}7¶5tï}¦QC—Á¾K¾7_eáÀ§·5w¨Y]O1„xÇ*$¤²1Ú““ISMÛ!s-¾¾0ñÅd£ãk_N%P6R¶µ)'²kÙHTæ
+)RlöÄ5Ìs›¾¶W>®•küf8¥ÃãÚ ¾—fÃwÎ
+”Y}‚QkÔ©‡Õ‚¼ÿþ¾?HÇ¿o]Y8'NØ6âžÚœIˆ€Ö×í¿Ô¨ßFîÑ·þüªX%l…OÛáŒç¢ë†9ŠŒÏ0ülKÃD’uëÛêWu½ì	^Ê8:að1­p Ó'¾¡êÒ7™E5FWñmbiµOrŠ¯AxÛÂÒV!p•Æ)7îÍ57¬sÎÌÌ|ÀÛþWLwf:ØAõÖ
+£»ˆÐ“ÙñŽû)A-æœãŸbP$s1wþé³1þøÂçòtÛí¼ºÌÀFwÔå[mOÁnº×2ñQ?š>§“íÍ‘ÎÀÊ.ß9S^8†‰×áÂî —w÷ï7íIj_á=Ýß—)g?eP¹•#-fSìú(-Rà@ñÐ†_á…4+†Ÿv…IôÈ
+¬0¸å0+ßÈËÅÚ¢hŒK€VtÐ°Ö›ýE™–¼}‹ZÍKù¡ÎVCÕ©RBW•>Q)‹£)nqúHt¨ëÒš;O‡Ü…¬€f:OfeŠ!´ú>5“Ú˜
+œAÁ¯‘e^‚ÈšRHÑ¾¥—†å‚¾I¢ÞÌ¨“Tÿ¾õ–]âõxÏºFaÅÝ±¶#&ïÅ4‘Ð‡øß^ð6¢léf6¨Ð£œôÿ·±»€[ªí0ÂN`þ%)}ò/Ñòl–K…¢ÖeP ®µ+B3Ëeò#ÏßòŒ÷ƒe«RÍ¡ñTKkCüŠíÓpú~7À8Ê£]üþ–Ÿå?v³)—Pxè¶LÚ¡'ò'£º-­¤a@¢‡ýA¸G?+õ¹ÏÛó/¿#5a€¥ýd+‹kçÁúØ_¿Ïž:Êr°ékI ev¶JÀ¶(Rögj¬3®ÚÊ1;©„s¦*>Â3}˜/ÕòÖÌÝaò»TžS$-úV¤…ß?q Š^9Ø[K&9È ß.eóÓfråDðEÕ$¾Té…š¸åiÅþŠ½ÒÈ…×É†ˆ6»ú¡G¯¢;±lº€½þ‹žöÎ^J hZ%(xs¯Ç·Ÿ¯#Bý¼Ññ£lt´Noë†›Í#üŒ oþ!;lˆÒ7‡Þ¤^*,Ü_9‰ŒJÑŽ(¼ké*‘íâ­\ŠÙîGõçÓõpw/ˆi‘*¼w(AP¥úò ¨BHW'ÂM67"jÎfluûDYª¥Xf~¹‚YÆO‘ #%ŸÆ}¶mAé9&>†ã2>“•Š¶ýåþ%Lr0Ó•I6[Ú‰³o¼rÝ%ô&{û…g–ß;;I«\Ü¡Dù'
+§›“Ó'z‹9ßL>¯Tƒøø¤oXô¶Ø¦B.wx±<§nò…QÛ~YôJ(îÄMm²l„}Ñ¸Tó„mÁt±ZØÜoRëv¶pdôð!*áÉäSæ³¦ø=~‚hciçMÛ­.$yx€î!Ã!œ¹–a‡Îôché¹7ÍD¯npc¶H×DeŒ¾ÊfJ6ºl/NÊbýi§çl	WT“×y=æ®`píkÏÞµ
+‚›‘"9ÛX~Ëw>ƒU	ÝÈóJ“çdd0ŒKJbm’/¶1o½…àù±K-Vî=†va>Qã,ãòF;Ï˜ø$—;HÈÖ¢¸)Òá;gO’ÕF„*˜:<÷:þæ)©«tW&Ã·…ƒóS`½Ód±±‚÷ý¤Ð‰hx¨ÐVÙ©¬ã•¥˜;G¨ÛQß=QfüÖº“	üœîÂËªù@Ußøu7òe.Öøíki,Çþ$u¿…L@óW¯º–Êb“0);óÉzCvx×TGÏy½|c&Ò'Ôé/àÙÊ<fÛd¼Ù²Ó%5÷  ª¿w¸öjF…uØ[±œ‹…2€McÂL~SèWSŒ£»†s	ÑW^`c%¹Aë¬Ö%ñÜQh¶œi Ñ$	ÅCÝÈN4 ØªÔ…7’fE²¹#¸+s­Qö2eÞìiy-&Æ¹h®Ýz´±M/°Ÿ/Ë
+Ø&4K+q÷‡æ¬nrâóÀžûá›KƒêÌ<DøÁÖ<g«Þ Ê…W‰.t÷žZÉÌù`ƒA^øê¿àaé? ö)p/gBísÒ-?¨¸‰Cùýí™Ê€ïM±«íó)D‡}x![§	OHN{¥É†nôÁËg}ëUM¨=Å‰ÚÏô\¿Qðäª’ïËŽ¼m	|„>&º"×ÀIÆ÷å+†)¤wßg7ù¡€—­Á8Ahè§pù~¦€È–Ž„­Æj¸i[VBô]^Î/þpb³Ã¸ó…NPèWj|ýM‚Í3¶4­¡Ï(¹Ö¤êej‡—å†±QÍp€S±ÏE2ºÝ4Å+ëšf—•­X¿_õÛ½R9åÒ-8Ö ácr–¸ÅðoBRŸB˜%'®{ÒÂ8qœ¸Æò”ó>Ó\í¢˜ùÝÊ™Ýéü¾i{®¦¦|ÒQ²¯Šâ€vãÌ¹¡´®;ë—ÖÉ+ÏØ¹§ùB×yâDJì ‡¥¼èÊö]ˆˆc&ŽÍoGHûý†ÞÊOcâdÇq»NšýÎô©½ÖGXDü„¯àÇ}æ–‘ª¢/›_†5$A~Lé½që#Å*×cÌÔ|vƒu(cp*}:¦9¾=‰ØZs]‚7>îÕ2'ZD-€5…„X47ÞÇ¬rÕÒ˜/®º…»xõpâ_:TÂU`èÄÛXeo ûë±Mö“ø®åõÎ^TïHÉfúÙxÎFf¤+;î•6´ãO]_Ói:†ó÷(L¤ÝŽ§ÁÑÞgiVãïì¨¿W•Ï×Uja¸g‚ùk¯Ò>óÃ7F!þ ±¿(ãªqwÖ~ü•RÙ2³Cˆ‡ªfûÖùåŸItkÈ¢­—ZÃêË:U6Tn¯ÅÌômØåŠO¬ã7êJúßöŸt“32â·€Åýd²¿+òAàOä–S’‚ÿ²¸Š§Ûe}â¥Îõ«ûýMç›[¿‡Óånç¾mON£ÝVøýM,[ü>áF¥Ä•6iíÛ†½¦DÝƒÎ´N/2¡É”B^5ê<tOsÀ§¼éï™Æ°=mÙ¦ÊnŠùñ‰ñ´ïÊ‚³à^ôuÈyJllÕb¦üž¾|Ð|çóåÝNLÃ¶Ÿ'¹°
+Üì÷H>º@¯ÉÉa¿ç0ÂÐÎ…½r«oç«Ww\%ÒÄ™ú,V”ìÞÎãÏ»’„›Y) ðêE1”™ÒMeÓÚ\Åc_cú†A´cš!có[1GÜåN¢^Éÿí'!`Ü¶mæZœ[‚Àg«Œ·NR#z¨Kír)•‘O£¿;}ÿ…­(]E†ª`<^®pé¶•DmZ¸Þê•ñþþmôh`–Éˆð2´‚çïi˜‰¨Æ£Ï’*ZÒ(U­D_ñÇ¨ŸÈf1îv¾ÿî!È|ÛJèDz©QÒM[Ûð‹Þ$ç%ã_ˆ5•!Ê@ºdTtg‰H„8°+©{ÿÊMÓ×ê/<ŸÖhyëˆ<Ñ‰/N}7KMnHùÇIcÌBÂ[êfê½“³•›¹`Y^)F%3úEJ¥„.°…ÎFE¿ –øJ}w›¬åÿ¦ÁúÐ«>=Ï¡T[RŽ@	f¦‹J¦’ u¼Uwº_Ìæv{—¡¤' K|ÃOœ‘‡†ªqŽƒàS%IUºÁD¦[æ"A¼”†'Wjû+µ5‹ví«	NóÏQLÕÚÍ&?¡Ø~³<RTo¯+1»!I…ð	Š¶ºâ€k0šr:ê˜òlLÃªûæ¡aEÿDm²B•Ö–+Í„°Bðrïq€4÷Pœ^øOÜæ4¶c·–	ê£pÒzYÎ±'ýH³u¹ÈÉÛt±<Op«´¨W:ÁIÅÂæ„ÜtI‚&ÿÿºí7Ð‹"¨c/ƒuh$ÃÓwÂÊ=IÔÌ©¼}i*ì P•JP!¢r¶ŠÎH÷zÛísÿ€äºèBçRæTõ^—¼äÉÙ\zë×°hÆTh_ÔO<1r¹h_#Ny¶Êó	®†Ûq®BŸO‹oÌ•ã¼HoaÑUQä–:%k©Ò£Ó^Iª>ˆ‡¸ Ëßç#}Ùæxo`FùLÂ,ÛXˆòm¢ží’«¿wÄÖZm™™D…t€r‹4§t;Y(³]†-ÏÉ@¬/í
+TE§fù£rç¬›‘¥1¬Ôj{&)D+1“ú<_£°)¼¡É
+È: ªi¥$ÿ	è4×EÉø³ÐÁ&>Æ!>¬î±¨•Q\Y'Éîô;i^™\§w°@
+ã:Œ;"r…'²‡y®bû¨í#êÄ·MÇ§½—ç³ÍûSc°ö£kO—ÇC‹<ì×6oWäË:VbÏš©U_³šŒ÷øÍ¢~î4Âa+jÞû ¶d&þFÍõ9à¦ÆÊS$<)±œÅâ0µŠõuÌ•Š1±°H„´* ú½-,ºË¥“I"ð[x~ùŸú6R%—j,.ö¼ƒ{³Æð="oj‡ƒƒË¾Q-¬y—þšlz³ß—èÙjƒÀ< ýÖáÍþ^ðÜ²mK8Ô2Q¨Ô“$«n«Rðò#µ*ïM,~ùƒîH³XÝáòí—›l¿ò¢úYl–Ñù§T‡³4ÃN0¾Âù”pËQè¡UÏCWMz}ò/ ’¯Ô	¢ûmÛ[Caœb[€«ˆ_gªIÖZÃÆMÁ9?<íÈ®l¡8¿ëzÿ‘I”öAeõE’+ðFÅÇçlÏ.ª»Ú…Œ( ¢õÎÊ©:›äj¢ËþQr¾Ù1«:å—ëõÕp‡îƒ‡˜DÅJÔ„·ë{Låú>ÐóÜT¤è•‘9:œkýeýðëž>N«óEMä¾Â”y¹0ÌŽ¨îÏ!Ë}ð•QëTa¯æ¶„ÂÖzòü¦š'#jÄJix”ì§ª/ÂL	ÄUü-&d·lè]—¶³~?ógÛtSZ˜`ìRy£e„UŸeÃævrfÈìùð)\Þ€“¹iürKdìW®ÿàùuÚ„QNTî¥ŠÆjS0à'ÁxVmå§þ¥9-+âÆ¡X¹BnìûÆnã]iÅuHÆÂú8=<ì–u\QÍZÁøA¶@0&ðáB?óüí‚œ¹êPÏ™ýëÚº`íÞoVa]ŠXŽ ØÙö›êà~Ö‹;’µ¢§Úv¾q€ÀD÷ÍÆ.(âè%
+Îl=ÊPþùZÀ¥^ì×½P]pùœýçÐ?U¬ÉÞûIï“ïiG§ƒºQTI[»ÁCÕO4ZÁ7ÄÖ×&ôy
+¦Bç°ûË´”YA> • >‹Ìg£ºUñ:Z®ûø§‡:¤‰äø7ÿŠ¾ûœe\»Wý†Ñ-wkBÆðsD
+ê¶–<kÀ¯Á?6¯65tå;ÀEÓb1üz5øîEU*Ïú]âp	ù†à¼§ÇY´Þ3&\·j-cVÕ,fmq;¡DþØ7Ê÷ß7òkÑ7—™›ð{—JRù±œ_ç¸\¤{¯, £Á7Ö7fùdþPîK`3¯ý¥æ$ÄµàK
+µ0<¢hk¿¤Ï¨m"b,}½ñÁd[°	œkPÒ5Ÿg¡1,¦œ¡Ñ°¼ø±ï‡·ñå/‡á;š§mö;& š¾‹uñkü¶—FðÁ‡àÛsÊàŸ¹z=ÂùÙŒá¼àŸKˆ "F^©§€d¤!D8©y0ô=#_ìYÞv>*&4N{ŸØh¾fÍÂ/2¸ÈðL,òügÍÂ/ÍaŸ¿ì6%Ÿ
+Iâ…-‚/òØNü0.@7')=‰ís¼ò~Â|Œa“=H÷%ð¿"=[áâæAOú»#úÎøZÒxAè2fE±@~“¸Ö^ázÓ¾äöMÚCc
+;Å¿gØ!Ú¦0íVé¸~¯²°»èûgçJIQü8Î&†ñ5H–©H#·pè¦Ý×LÔD¡TD¨3S/VyÊ\§È¿ÅþÌ¥TÄ¾#ŠÖçRŸ3Ïë°0¹,ÆU­ëNsj¦ñjP÷MÁŽ¯?Í®Jêïüùv‚²oÌ¬†\ŒŸÄ° ²™ú]3{¢ŠwbgòW†Y8Dÿ°Â¬¸Pê¥“'þzÐö´§á #ôrD®»]ª±hJKpÏä’±]¢¾îÞS+¶‡Æv±æg„Làõú>2³
+º?—ƒßpýƒøþÝÄ—õùBÄ¹)ÖrÔê®1{HT‘ªq;üt¶UHN KÖ~ Þ÷l]2ì,÷©5ÞlÞ	£”»IÀ§Éb‘ù˜]í	š›VkÂ8º*ãŽÉD†Š?®.ôÐ†W|+/Ÿ7'™žCmÙÃM°8Qt&y¹øaßà~¤ïø	yÍœwY€ãá-FJîõP}*_8‘%^v˜¾A´`âÅñìyþƒ”ã)½$¯"ÍÙ£,h„­K™„ù“Í›$÷ÀR»R^¢Ow»Bù·LÆ!mlŸý0#PYiÌ'ïÙ–zr:Åª+(+¤Ë¶4ý<'|sx!‚ì—Q†›¿,&î¤½ðÒ¤–'Mæ
+[ORšP¿Ë÷:®¸0=Þ‡oµÍôCW¦#ü²•Rf¬ÇPSùùøßÚ„qÞ8|`áÏvb\2‹m·‘*¤-c+ŽÛÁ«¦.fÔ€¿G+Ý.FòITè´uXªR½ P:?\˜¬?ã?YsG6]bö ¶ñ½¦Ïç¶'réQ-Ùëoû±ÈßþòVÝÏ$ô¶ßð0`±!ñdzr$g)	¦R§±MÄ.Ô°rÝÝÛ ²™EHo{¢¡¹ê[¦Õ(¸ÀÎMÓ–s>¿‹'m	3‚°A°+Š1mªÚFà›sBûCë…6Ó©‡ÏüÁDÆÐàñœÖâÁ§+ŒõQ¹«ã^NQJ¡Bfâ#’šÇëšf× …¶Ž¢â×VÏµ-YØ7pß4R¿ š_“ ÚH)õL‡+].¥ú $?óYA.Ÿ¨6äžôŠ‹
+xê³ÙS°±MÔ 	CgMÉ²T¡¤à}íì–{§Œð€Ž¥nná0¿öÀÏ]î·dï¢ÕŒ*€í>Ò/È@V[‚mË“QÅO/`¯œhgcøˆ@Û—ÇJ×Ô¹HY!`«ä^—áoí„½ñè6¦^mØG¾jüï!j‹à^ù¡Õr#@=o*ÈÉyR}Uô)¬à¿Kõ±ývEVAk‘N§wg€ŒÃA±€®kÑÂÓZAX>ÛòÑk`1Ç.¼Žrž"‹åí3cƒCÓˆOë*ýø­K+¶	dÄ·Cf…Ð4ºvÏRX)jO‘g·•2÷l†j<õ²¾´Êfžß²ñ4?gï4>™/iÄ«)R`&V›Ý»Ô5è‘B¾&|ÚA~ˆM: <¼1ÿËž¾ºí÷RgKZº¾ ÂGw˜„Ãü\ f­Xzè‹€"]½Ôc¢¦|,J>;îwŸ ôhM_ÍŸî5ªåçš„?	%ý‘Í7*´3í× ¶ü‰ŸYÞ¸!*×¯¦—ý÷øp}[.Éžö~cñÎLÅŽ¶dç[`“!l–’Ý¥cß­eHéÆ$³«¤d×W ós…Z³á[hØÒÔÞ(ãºYÜ®7r.ýAŽ”Ž¬~€äØÈä­ÇùÌÚ
+k·Ë1ÈS(]°šßßë™	¶¹ÿ’5ˆÄÌ4$]bÎz%¥þ[‚Y<ñÏµ8’õª¤ôÑ÷Ú]¹GhUü2¯ø‹:,[}a³Î†Å†%1	3kBM‘çe•Tã¿m0	‰Ç'öî’â@<Fø>êÐÇÍûðÓcG¾àäµ¯\Ù›º×‰XŠ,=HžÎÃ	€¿Îlû@Z/J%%:àtãŠt;[:à›(Vb!Ò³ƒ8¬=dlOMy3;‚a…ÅØ²Œ‚úOM$Â{‡,|oGBÙõom^	hîˆ[õ/«ì±¬":r’$)pëˆg/O|†µBU– gûU§a¼Öúbj+ÞDõø}ÕÎÈ´<F2åHŽçrŽÝÍçÔãí“~?;"0Oÿ­Œm¦ïž˜—æ¡(´¤:FÁUaoƒj‚òc>Lóê‰ó˜ÍX˜ú(©ÏÃáPH	ùáAÑvG0ã=“œ\²“ðà“üÎÇŽ4aUæoþ™œ>e9^’QI‹H´n‹wúRqPÚŒõážñ5 ˜¦¿yaó¿%$NóWóâ™Á­špÈ‡/8w&o1œXŒÞ5þ‚0!A_ácºB­Ù×
+à	/Öl ôŽ)Dàº¡&w‹Ÿj«†kÚz´M±7æœŸ„Ã§^"ŒõØò>²uébè†Ö8u7 «O
+‰«‚f:W˜Ý¬bÈÍ3ÞUý„ ®updlüÛÕø6]Xéžr²|„šLDeT™âYß«9èo0(–ÈŸûB‘2Æ”0û‘º¨­­!Û4+)WÅ~`´±ø%©6µë]§/í[”•!6Ø1yh„Óª LOh•œ~ú™U‚F8þ[¤ÉCãBw•öï_'¿vý•âOi°GâóîÙ6þ+¶û¼ÁVÏ"|Ð:–’—Ó¨¿!•ÇŠØ[ÕE¢"ý×eðí¾Œr-n´ã™3­ð ÉÏ³ÌP!Ø;ÕK¢­¶LLS@YC­HßsøÁ‚Ï¬CŸ<Y†Ž¥˜Óçöƒ=ymM´/3F¬Œ‹)F¼«f"Ûñî³¸#%ßúyC$6wÏô3R".lŠW¬?*þ- ¶[iaFˆvž{Õeìœ¬lU~lþG¡!|ù)µ&ŠŒÆøÑÞ—w8ã9iÃ	óúšpÕ¸Tj¸ ‡èPúËa©]çM˜}Í¶<áfnWlý&ÐM–F©MžH‚­êÍø\âk}%,ø1	"¥¥kÓ¿YŠ*à!ÇŒo®+´‹¤Ý%×º6‘°ž°ià—›~Úpž[ÄMPŠÒØì!Ë¹ÙšÍûÌ4Ïmz„g”ûBmùÏ)áñ<Ïïî#·;¬ÇëÏoNt¦j%Òð’ÀúÙÜ<HUÒšÝÃÃok|¥"W{ŽÉæjä·¹®Áá†S¯É#Nnƒç£(cGxóÔÕÁ8†µ™qè&ãCjuh7KáòÏÀ&}§~/²qøÙù_’+~X‰ÏŽÔYÀ²79?T_µrÚž˜Ÿü%
+ÓÙábïÒ±ájÄKåcÒk¾ç`Ûsºy…Ê<ÄX.ã¬Ò%Ïl•=‰«íÔäOB íà×w “¹Sx¶a*å£.Ð{üôaNHôñùr¿ˆrQ/mÈùx’s>Ÿ	t‘¯
+Ç.k8uÇä¼à³´ŸŒ|jÉæ§×m†¤Ò‰j,ö¡öŒ¼É<4ÅúÆ!ì-¬Ú¸uùÞì]´—Ú¿Ø—‘¿éÀ,w\S†=p°ŠÖÂe†(¯ŸÆ×^dshüîá‹K±Í¡zÂÈ½@ìýCá˜²ZZPP_Ç•Çh¶Õ‡¸Óæ£'ÉˆvU+Ý€Ï»P.(–¢íºn„²âáÅí;ïÃ†gÈùálÜ’ñˆ»?NB×„¶€íLÈ½ÚÆäòæ“Ír˜˜wfDì t÷(v³©)¨aDŸHx„Îë€Lý"<<÷ËZOo’îÀü—_U>¤h“6ÜäV¥0"_q Ž.³³ÇùÉtÌCïüúBƒ¼HA>%$Èàr×õMJ¨Á= Ô´'…‚ÅüP$©èXºÀ&ÿm:3ÿÈw7Á”PáÑ)ï6Qd/|-Ö4Je{þýÅ K‹
+¢R„F‰RÑØ’$€–jHò«‘!×vÐÊëå»y•Œrˆ³îÐ÷£ö¹¦¾rãëˆ‹(UJíðñ´ÄÇÐ‹*%ˆ~?ßþ.9Q|X@9¥ûh];NÈKöS¦p¿î÷yS¨çI–.Ÿ)Å@¢!€FÈþ˜ÈäÞq½Ñs9Ü7m³œñÖÈ ØÔòÀÊ‚©à
+Íå´¼Jk›>“^_þ‡ÐˆŽ®£VˆŸâJ+7I\<Añ{IR<*'Ì •1?ÙvÐh2Í‡d 2BÊôÁE{^ª^-nM’0…¬¬ã†»¯nÍ—¦à±Øñ¹ý÷F©ØXq£Q±µø=Yí×—óóõV†M0Y¡ÿ`4ò	ù¬ÇLž/wýhLS[@¬,€:Í&>4÷3XåùQE,ôÎ“v±öçÆ”8rrl>eë:ÚëÊ4Vèõ
+­lL…!„âðƒÆµü<q¹v¤VµÚvC/ÂN ÀÑ6	äÅ¢¥©m.ÌÅ1%àê)(n õOÓàmjTSX7)u¢×ÒLóG.xïseKl§ì¹?²¦H‡äq!¥›MÒA5VñCÚYÇPXCÈM4gêg˜OÝM6vûIëŽMãl¡ÀbÎÂtùäêì"êð³sÀ¾m?ø<0 mL‡Îy|ôÐ|”ä4Å”ÿ]3˜OË=V%ßîµ1h~eÞ9N%	•ács½îÆžGkû 	½7rS¯³n˜’$¾º[#bØüž,â—¶ 5«Îuß1,¤óä®©ëx§{¶œÑÐ
+Š‡;› ·Ó§ÊÇSÌˆá™g) ‚#Ýèú‘Iä4¹ú-µ8‚™v»V®=ãÍ4@Äž!ÊXBƒý×/QÁn†1™}3AätÒ ž¦Ëÿ­ºW¡A¨«iøK²,t+ Ø\vwËÔ5ÆUTjÖc}žÇ|ñ
+åüÍ/‰fà”ÆZ‹mcXh·¢Å|5p‘ÃøŸ°Ê6¬qË!qTÞ~ÿž–üÌÀ
+i¶™0¡Îk<Î6¹Ù‘ *u¦°ô±
+µŽ_¹#fÞÙ‰…—W’ðëqkV¨÷ÖÏM*Mm~‹F@–ËCí88-	Áo¾=ç„ÝÉøLÛ(´•ýŽöÇNÿÀpïÔ—þÅ£ ãnuÈÃ{<îyPícS401ÂâAÞÓÃ[›gÕÔ4bÀç¨e`Cy<’æÑ”3Ì#7#bSY=®¤0ž­Éh7Œá Øûj £Qzn‹ôªW¹öy‚‘@ðMù~7|”,ÄÀô·ÝªàÚÜÅ6˜‚·aˆ‹â‘Â1j£4ïGöïÜIêcëS®e©oò£~´Wß9_'|jÕÉá^"P%=qô1í>@cq‚æ½¤„~£¨&ŸsëY±}ßŒ¶5q§rÏ]Z¨à t½t<—Ü¤¤±04ƒÒ»x%ò`bwˆ‘gÕˆIgÃ5/[ä.ë&@Ápñß™Aº°_ˆŽÏF)C2íÜ­®pöaK¹Ä~šJNz8b>:(˜BètuÚ§~ò?w+e‘­ ¯~Ø~Å˜€Nb!×^NMÀ{¢ÄÞ7õ-¯C:Àß;¤Ú´{ç‹xíÌiäKÛí5+Ò]übÕzBÆ=¸òUÐW±ys_!éh¼Í?™º„™ÈöØ‰ ÂÓ4TTMaC¯¨Mp&kÄ«¦•BÐÄÒþŒÐÀëêârìÍQ£EÄ-³z¶wžm
+ýï:ö¹VecðŸÆ{ÜìeÑLþÄÏK@×µvƒÏÆfÅ#‰XôÓá]ÊÈx¤)£ÚslÓ=ï'¦J=zÄWžÑq}/â¦'r”Æ@@˜íe¦ˆd3rpˆW¬[ùn[væ{#‰aL†Kq¶ÉTTZé½ÜÞšÑ×Öf6d»M?[!‹mŠÌ£rÇy#X¬öÀ1ú½íîÕf•bÆ$¥V‡ÅuÖˆU?¼§® 	Ž|ËVš6ªM¿Å ŸøAkß"¶¶RU˜·cŠïÆŠœKuöSy#…¤VìWSøc•Uý dúèð}™P6]IÙuŽóóýjfð|žãmÊùt~Ë©æŸŽÄ3¥ÎÜìðùæ
+ YŽ3ê¬¿ùR3&E5½•bà;B¨3QëF¹!tsÎ6¶¥¼%ø…ÎE`ãeÏ¸ïaÌ®6™e¾Ž=œxÂ\)DCª’G¶|Î;%Î…šŸÄ¯‘î8wóðçÝ.ó¿i&jx6^…Ô•—€r}§ŽNQÔþÐ; _YxfWšJ[×§ÁˆEu½SÿúTCdÎ‰ÿî¾ÜÆ´ý¶“½ù0ˆèþæ«Íáƒ\:z;îßÂw—ÇcÙ\õ	_ãu¾„"–€ã*£nYbCÔK¾‰QLã_Ã3Áü`¿ðÒÁ¶¿áFpZ,æï)ÍzÆæo;ðuh£®(‡*óËóÉ› ¾Ó;ßzD’ñÀ¯ö1©ôg÷ ¹NÃ8!8DÆFx=Ã°8Çê©¢ëŒ=ˆÎŸ&dÙ(årÑ\Â9.—<»¼°~°k ´GÑNú‡ÝùÎ­±‚e*¤’iãSÀ”7õ/±nÕgìž:pYï9 gº¶ìf5¼‘2´qä§ÁíT úwL.8©Q™S>áûÌ/¹ÅTëŽvÿÀç"­¬50œ¢0éÛ«v¸èÈç´5ñx¦§è,A4¡GõK©†$K-JLŒ˜ßaw	ÌÈå:ñÆzER~ümN„Ñ'IYâuÆO’ß×¢˜ÒLùGlºã&0ÏY §p÷zŽÃ'ÿÎ¡ˆk\¥Š÷wU%æ—9§ÞtJ§ÛÜ‰x{ÇÉ;Ø¤ZÊÌ¿öêM€_à VK{®3šjpq&ÂØÆHô›âbÂÂË„{.s‚@â'û!Ü»cÒ`,ó›˜ŽlªZ•ÜÂYstiÊZ)#Æ5y]ûojNxŒôÁEDÁP*²¾YØ7Ák½­éGúÖ'†ézú-Ž+<k¯N–Ìý+ön™Í4c0õäGÕ,$[;–º /ÏÔAÁlô¤ËÉW~esw†‘Õð6ugÊ²ìE#ÄˆL%Ãdn‹6K×¶í¾¡.¯(6.@Î‹I¤º7«BÂý¬Ô³¨ã8ZÍ0;L‚TºXž€ß•©·|À(`3³±Çcšæ;;¶.•ßò=6ÔÄ8$[ßRÕD¥½’ GñPí§:#§“‚5ÑE]]{pV>+#m-õ&í•É®†™«²œj9›ÊQe¼˜»_‹¥tw>°îùÈ¸Í,K¿âJõÏ'‹bò?û[~ôY6ëAêó›ä%ß+=F}2cæü!Ù%Ñ^_'$è?Û!Wòªß°”oã^ë/Ð­'Ø*2È79M­Ùå3w5>Ž]Ï3Ûdži$2&ü…„€Cóø¢eIC….ô¹ü"öØ+–71ñz‘2hcuî½ÚéÁ[ýøÈ°_»ó›*»\m®PéªÒámi±ÃÉÑšŠö=ûb—1­LfÔŒ¬(¬D±ÉTÐ/,%wSâyÌ2øzÞ8öØhi~Gi°ÜÕƒÇ.ÁQ[½	±×}zëñÀïÄ0]¸Ï(›®¶7ô7Ç)ycä·Su#¡-îFóù÷¾ñoÓš¯ÃËB†;¾)Z"?›üŽ!à­Ò½DƒÎ`Éºž¾5Þij9ËÇÂ‹99s±Ÿ“—ûL.ˆ‘ü¸Âà²ê½×éeI}áÔÉjNñ©‰C2QÛðÍáú+:0~»Oãc<Gè±bÍà–¬•‚aÛ+dëÃÈ,¾¢D÷¤¥Æ-Ãõˆ•œ×KÍQ¥xìV#6À=ã¬ÈŠ¹é½“´s¥†69Ýi¥…;£–ÂÙY}Û¿‚ÖÜªx€RüûÞ²¦ƒðÕÀLURMÚcÑE'7âø}Ý9o7e9J¦É Î{Ú§ ¼Šÿ…9'ÃÍ£¤üA²NþœæÖ^îäVpÒF¸â†40°¿æök†9"v‡—ø'>‰û$(ùŽn*òPåÈ¶™ìdZzrßÍÆíÍ”ÆIy#læá«èÄ‚B*í ˜®K²Ãn_x#P.,ÓZõUúHã%êÅ_¼ŠM£—Þ µÎ@(0Ä­n|ù›©Gw"Êëº£	7‚™­t‚@ËåD4Y•ÐÂC-N4·©{ë§‘VîÆz/sªÉŽÀ’XÎFØ­\­æ…ìus$	dHš¾ÇyÚÜûô& ÙÔÀ" ET¡ë¼\¢j7®Zý”$h·ò9†b
+qßÛà*Dæ Ìý€áÄ >=¼Ý2æn´}{Ûù‰0Êbå†ð(zý%eâ°-ížÐ²uèð!ÇÚÛD‚Ç.f\þñë­ì;b¾Œ$<ÄN¯©àrñm»·#Êß2~ýNÓêÆó;È0ÇYRì—_$7°aG«Å;Ä9ö lÇN­2Å&±1÷à[ñ—jûƒ|Ib´³ÖÚß¶['q5§:ËèI½|ÞtþK¸JŒ
+ ñöU*:ÐöØÝ=­É`ÇÐN“ÂLÑØë©§`­^ÊSvÄæÓÔÑˆ)Â5UFf²«lÄh„{2˜B¤ Xo|^‹«¶ëƒúev†)ì_#yÓ0‹œ#'ÐH*üŠZ]ÿ,àŽ>Á!LÌ*JxX¿“ÑÖj*ä¯N$1µû–Êa—&šH—Í: "]?V°å0&caÑé¼ø–ÐKQÜ€^“×{Áè‡)úa$‡ø<~5u¾È‰yIOtš¤jT;Ž=“‹"¡SÆýHŽOÁ1\è¯¸”GÎÛ¦S¼wI,{æ´ÊàiÉ°‹P»ÔœøiŸþ³ÎŽv/î¥{ÎÒËø{*j#ù4ó9êßÚk .Ù—\z°V¶$ª¼FµÛÁ.C,	
+ÎNíì•yÕÇŸm8¬ÔIÖM¢eÆ_DOßþôÏý±1ˆþöL{>¥žƒp;úžÈ WÝóáGºVòì|ðæßÁ/Éhå:tÌdþš°‡ƒ-6ò/Àå‡šw£ï TàF¼z«è¸ÑjÔj¨Zü®|uwVyÕLÒmkÌ/4?®z-{˜ÁI6÷ììñÃ7î·Ïçóûpgù®=Ö…B“ÜŸà_ç%KŸØ‰Ü©ˆ¿®éš~4@«ë%c&£•=f~‘¥¯Â±­€[…}-èªµ#'›Š”žénë…)ZòÒ7^iÐ’h~)UÍ‰E4?{y£­`\4K½u
+;#&J´•î£»j»lãFd¾ã´N0–¯ ùº¥T9ÀL4úµ)Þ¶=ó#[n­ Ã¶X¾Hµþ'’Zq¿Âr„T¦·žÑºé2ùþì7ú‡ûJs`¤Í	éæ´q&7O²¶‘åMuzJÚl‹*öC™Ä}x"ªc†¤‹J°þ57äÁZ?¬Z©æŠª./‘]ÿFÐãnTâÞlÌœ‘ü@`n¾Hz"¾ì´’çë'aÌÀ“82œ½œÂoA¤K<ðÁÁrÈÝGêžûÚi—ÕÁJ'B}¬¥<9Â÷uXq¼V›‡W+E•¥›í9ÆÕ»alW?¸Ø·î£ƒù˜	4ÉcÞ·=™”ˆžìó6>˜Go)F¤R•}M@³/y™M§Ž `Yü­ò„0ö03ž|(öBªÉÇÅyt“•ïvÔ´SHTsÑs•öÃíá	áõ!›Ð<ôÕUªÒÖCt‹ÒX‚Y'—aŠ¢uñè3ZS`†½óö—Ë˜ù
+…-^þ–$ÂhûôkÓã…B§)em¤†]g³äÖ .i%ŠŽêÇ¿4dÅ¾Þ"h›ªS"•™ç6r×çˆþq2¾)€à+yLa¶:Ò¯ß¤½©/ªqq7€ (cM³f ¸q1
+é­!7–«ê›ØâÓ£À5—±G´b˜ÎC¿¤!z2„)91#f.€XêbgµÏº¯7¬å9´jþaá‘“Š|´æsŒ']¿¶Ï·Ah^Þ=	î¢€±~þIúµeÍÌž”È•§PÊ#®[V­ô¶Pá›êãë}\
+HV{üÓ¼¦oAJƒ ´aŸ	Éœ¹ðeÐù˜-O ¶ó8Òuç^{ÓªÃm@è]oªò%"ŒŽ!
+‹ç€n¡_6Ñ5ª7Qº26-»r×ëµHA¨%Œö·w\>ºHÍ´ÒÖ(9|òišÕvd¼”Ñ3z‹=¨;9¡‰{¡*}ØVÛiT5þXm’Xü%6´zÊÆèÃëHÈwò5_2æv¨Ä<õ-¯è TMÉú Oƒ”ºñŸ„úŽÎ+ž"r9&/ým+±0ßà8œ¥«“É¤ç!C×:'KÓ«_<çú /²c`Å†+2ðàÑþ«h ôkŒè%sôñÌŽ„Í'>{Ô!lÀ&µ‰K_
+ç\5ªûž&[ßd ød!øð‡é0u£ëð£‹¢„ÈÉ…ç¡ËøQ[ò‰ÿ)cö{Pë´¤3«CihAÅ†4´ÚÍL4[8¤ª)lçThô9}O‹gÜõG	ÛŠÖ„*Ô|”]Ë5IŠ«yþ›ŒSóXü¤/Uz)ÑÅÑ;âe(½m)'|ùŽÑà_¡–ýIHF¨˜©NGCÈ
+ˆÍ^ƒÑÜœ7-Ïµ->i\ìb×‹=¦—€='èÏg	¶»—¥?«w+*¶7“ÍQQ‘g{¬Áœ£Qù[éo`Tr]´ß4ŸÞõV”n-ÿÓÙ©YÆO¯puT««ˆjÃ«[c
+Æêi­_µÂ#û%©:°Þ˜·Jkùšôu·'c> Fø…³‰À˜yhø$œ°ÉL¡’õ{úÏ«Û£ ^Qü'ˆ±}’-«wöì†íAFeíLH OOn?XØ3[VNò‘êº”ôxjŒuÉ?<äÊý39Oq„hqC8œúmîÞÀ
+KØ¡-)ÛÇ'ì¬.„~j^†ÛòOªß"–ëÓMÆÉ+¾a1Tÿ¢Ix¦­ëÅ°ÉÓ]r-ÿQ7höµ½‡ÇHÕ	"ìuNtå«ÚûlêàîbÆ(åëæ§A0ýŽ&%©°¹œ
+Œjûc¤‰9n®7¦„——TöûÕõÎ.>^C¡Kw”ê~)Åün°ç/k™&¶¸ö¿º4‹ÐÝ7¤©ÁÞ~c+Ìá¾4\t
+Ñ¨d‡Ú½ßO¦ä¿ˆ˜ŽðYÒ›ðß]f×ôH5jkSç•7dÛ 6·XSƒdMqûkÁžm@)j—ß÷8õ‹pÐGy‚>ZD	-ùâÓ²g]Ÿ³h¹ì~ê˜|päKÊ®–ôÚ¨‰–ÃÆ[»É~~˜@t€5ÄB©5z'þ&_½ØfúÛGº–RúùŸ]$þLn™¬·ÏKPkþ1BRd;®ËìÜ…„‚·ÔùO‹/xëJ™¢|øŠ_oRæ˜·òÁí·éFù70„EŽŒZN½ùõ+zB¯Xe•¦î ]wK"ãç³ê¾ÄAÒBt˜­{¾lWH†¶j¡=‘^ô7Ù¯'æcší‰×,±¿LŠÃ’¬SQÜš–¸äÂOƒÅŸ^7ºx¨g!ý·UÑ~¨å=Ç<ˆIŸìâ(s˜bÛ›¢¡Uî>6“7%Êf8ÈA–Q#Î.ãîwÚ£]­ÐHþ]G¤N<=×HšŠ¬|òë@”Ñðís·|DDpÏ7äQy£Z_¶ærØ–©khlt’ì"íLvm£´ò\yûWÜ(	ÒïsÄÄ‚>B˜d—ß(þycãy	…]eÐ'	›µ¦åÅÇPºbµcÖM[9´z£ó9Ì®‡¥	Î³î»>I†F·<Œ ¼f´Wèž*/¨±® ¡õ]!Šöø¶×==œ'÷E(tËl­AšxNÉVÖêåÜ/
+c	¬5¾)Mh»°-"&a{E°‰Ç*‹9è‚ÔÞ/£vÉ’ÇéZÜBYÍIpÅœ´®(ïdJ Û©ƒ8˜ ^Aè±åï­Ú¯™qâÛiƒeøwqÄýnCÍµ¿y€HÛHŠ'C gµ`NÏè{²ñ‡­\¤Nèœú'H´õÃ~ä˜d´ñÜåðZu8¤É	(ðÂ§‚ó‰†y)„ñ¤˜ü÷ÈlOTÊËëš«h-HÆÓÚ1§#Bƒ4_L«.cqƒç•üêm04…ö;íÌ·yÒ^¸ oø"ßláµ¦ùÑÙ²¾–hÃvpÆÍàh!V²:%Z÷M=ÏiŠ°´©˜‘c1}ö‹Ë$
+£‰›-(¨£RcÑú(ñš±Ýü2ÉÏ®…+(O0òy!k¢ô“‰°)LÙ1b<Aé¤}ÕÅõ›úðÕcy?Sj}V¼˜>¢”’Ü‘_`±$B’n\âŒ¨ëxtsº©dì*±oÔG}/Aé²#öó3ž‰eeõÜ.q+‰æ{ÜÎ›æ£d] ŠTâl
+.h`|,±ÝÍîyR|8Çg×ªÜÑõœo¯öUIÄ‚.7 +µh`¨3·"Ã‹oë‹uWÞŒgS+¦ Êç{7é‰Ü´“–$®Žê¦Š†ØV™YŽ<‘³/½fH‰õÌaE?Ì)õT¯Ïuâ”7V	ÊjüQËšÀºGÝó‚cq+~j+ñ¶œjXOü”¹àºcëÈ\¢Š†'ôþËÿ~=–ÀC²vŒÔÑòÊñ!˜r/è%
+»ËÙöÏþVÛb€@êù›ì·öŸ²ÕÌt¸0§”§Ë+{äq51ëƒ]æñr_s£XoMàIÂ¡[œ‘jÎãÝP$I)ÖéŠw2üÐÅßÅð2æ¬xRÒì46»ulH¦¿g×Ô{P¹pAZ|€’b2ÈÂNû]öC³“M04ê¬µ“JÄáÙGd˜v§Y9¿q ,w•”u81^ñ\ß! 9½Cä›!òÛE)” ¬Y-ÁèC(­ìºñãH¥ÉP~ù]%PÐŽ‰ŸÈ´¥Q­á#%ÈNâGâÝp6»ŽÏ×ìƒ`/j‘aÁÿ¾³Ë	´‹di×®ú{Îv¸Ø¯œè™Å¾Á¤©Üg‹	+Ù' n„5ü9¦¡Ò0¸›üÆKÆ t¤M((¿¯e÷óÈ9uþè ×±¾3uâã=eõ8]C­R>¹y°›S#x*ƒ÷­ÕÊUóXëx“ ZÜÒW×“#ýÒ,ùÝÓ®  ­Ö6™ÐžÝÔuÁADes5O™ ¬Oj#µ=ûŠâé ßø¬"Yì'ô•w¹á)ï¹¥õ§Omê‘$-uñÂƒóúEÃâé]7ÀÑ§û¶Â–,‡FC¦Â?
+Ò×«#S¿¸¿ržÝ<~¾ú×l…ßyÜ+âüð é,‹¶‹½,SŸSã’‘h íÎœîÊ±ìA1´Öj{2ð…Æ;i€ñš‹vs.\±ÊŒ÷~6…Õ`‚ƒ1sÈ84ÿçUüñ.¸¬A“{`,á< Àîïù½ƒW”vNvñ…F$‡ÓÌ,>Í=d‚AVÝ>Nc˜=këbã)¿	Çs³NØRí5Å8ü©J€yÊÚ9‚?e 'AT”BöÛÃh¸Ï	ð;öYÒM<ŠH':]ŽÈŽIL‚›Ûbs>òúíù&‹Ð(î[ËVI–|óËÌ)¬~¶ñ§ÌlD4"„7Hk–$¹–:áþ¡Ï@P˜b×ÌøÌû|SDÔv¿*,à62t³á°.ù0L!˜oì~2çÐ]/ÿC¬s¤ÒÃ2Çïd’âó½'v)6ó/m
+‹iËŽz¡¬ê2¨´˜HêŒK€ºoÒkµcVdv,‘T[SOo;’3ÕjÐ?ˆFŒÚ»k^JYp»YÑû{Hˆ‚y?ÔY¢É6k,Ê»è>I¤/½D'•Šw6D=(  ›¬žþ~ ¦éCøá(ñŒ–Vü"sÈ!h”œP;ÞTŸV»Ä„çm'fML= ™š¨º&Oya¶ã@q¿‚¤Ø$ekÒžª.qYˆ¼T6¨Ým¼ZçŽá¯ôÍw©i~v©·L¬´<füÁ÷ÉÚN2Ür«AiªuÁ(G×ÕÂÒ” 0Ü,ìÓHÎ¹UâfÏ­M¡¸KÍ²•|¬âSÛ‰½œév¥0/_|~F]ÐŒUýA'ÉIÆCæÐKÕ~~7¥\?©ë˜O>St1Qúƒù‰V§Kœq ðHv•¨WõÒ¥ôûL”Ÿi<^ì“>¼ÄBÿJDçr”¶fø,$õãBøŒN]×ß†ð`{Æ(e+}]ö´ÝŒvîKQƒ¸wH3-æë•‡kB1‰×oZáÀ^‚Ü†û¼+±Õ?‚ÐÎ¿D¾úö”&·¾{gM„{Ç¨¡(€7?”þ{ÍVÁµjeÜ-•Zíñ¨¬âxý!'óË¯µcü
+®%§£Ïè>ç4]Q?Ê¥G‚§õš•ú(?òsÒë´ocÒŸ×€÷»\4ªl®×Í¤>ÍB×gãŽ¬[Y¿·ÆfXˆJýâüäb÷)ÆKMn óxcŸ'dð#0ZÀŒ{u‰ŸÐæ’ÍNú–XÄ¡ÍÙKp&Xä(ŠO¬ñÉSj?—Â dÜÎÏy!8Ûa’·ÐŒ¦ÒF÷acê
+Í¤(iy:Rêþ]¶µ%Á¡I""?w¿€hZ®•úÄßÑ`ß ÝÌ¸çÈÎÌhžGÿè¯xûxÙ¼‘õµá%F·ë@¼¡PäÝIs–ÝÆFÍ²s)‘åîÁ¥ï›Óœ~ üêµHH=j—u+cjÕXNç6R-—c€ž¥^‰u¤Ì®ÄÚ|©ïç†½¯ÆT?±È'¥3åbNú‰‰Þì¶Ï~‘]‚îY¦Q)¨â 1Ìì‹éñ<%µöþ€'w½ƒLŽñâ<”Î(¸Æ¤‹[Qß†÷˜˜fÊ£l^£«ÑÑ†{3I¤ÇŽðÛOWlMŠ@Ã/lK9Å	¿‰×,:-’LÂÁ™Mfíˆöç—Ÿþ·
+gqO&Ò³<ŽÑïÊ¹Yz?DõÊLñ9é«?ömîžö0¢bÈzÆ´voÌ”q`hÊ6Ê:z9V±L¾åé§måK_RbÞ¸HnR=ÅáŸ÷ˆÒ\ñä3öÐ¹•Þ-ü\é ’oþlžU 0}ä…Pû]ù<£«oÄÿ¥>ã½¢tO.Ã©$£ºÏ„9bç"è ”¶ßßU9[?F¨”SË²h¶oW]EAøÛõÃQ¿K…a´ý;Ó¡Å$>l˜ÍR6M*+µ¯á˜Iû¨œ)é{˜Â¥ gìÑ€ß\~C:ãd¡Hßö—HZ wÍ‚C®X†óï‰¨8\FÀÆ:ò¯3¶YNêíºWÊ!ˆ44¨ +hÍ£ô–•]”mf,Ö„?Žf‘éw&êbÊ”`°„%J(Vß]Rù·o<UŸLyå³®jeTð|ú]ÈŠ­i­fî@Qø6kÚL~G¤Ø7K“h«Þ)SÄ¸¦\™íæ¾NÎQÐ7‹†Ëcæ•5C—»æ»´»±nü’9¿ç0ÎªbEÉÚÿ¾WYï2›OÀ¯à˜gÿg°ôïõbç"Š Bž•ö^vN™ÜÅvêÕvG KŸ¦ü’X…µ¨¾ÙcþÐZ‘G´˜¥ê&%æX&ÿ²Þ,ð¼¹_¬¸éÀ3ª7°E0YRíŠjµš´B×Óºm2‚£jÊ”ÞKù®Šk~€?úMhïÌâ]Î·)ˆˆÈàÑ²aäŒ/Üm1";¬·Ô)‹JÓßÙvX1p¤’Å'ç·|%BkxÔ9Aª¢²ÁçAØ&IúýýŠng“ËŠÅT}Öw§‘Œ¬´Yÿ{LÁóóü?þïmS­óMŽCeüön¬ŠïÿøQÔ–ÆpWjt§×Qd<Nô‰Y~èµ”ï‡±Ù”íh»¯ïü:iŠ‚}³ùº3†É&7øœ—\þ‚˜èì_½¬4m.ª×`s¢’˜žÆ”ÃÎ‚/!¬Gwû×U1NZ<£ ”+C–ÈaiátØ¯¬?OÉaîl»Wºkß¾i=+ôS¶r1ºFç‘ôgyQò+aÏéj¶æ££h«t_È«VÑžGu|$sb•ãë¬q¬©¡@w˜¬áÚÇ¤Jå•ñe)Még¾¿Ð‰ytÚ8‡<¸žã‰i1öPÙ`Éj¯b1hÕjÄEð(5òz>0ÿ÷ô­¸ç‡¿…ÔZCm—Ç~L×›Œ>ßÜ¦‹¯„åÍJZÂY>rdb%êù"‡'Â‘»#,ôfÄ²õA®kÂ®ëZ­„ô1#™µ«OÙ”;“­›«7-fÔ9XRðEí&Wt¾î,Ën
+ý|?Y5AÃÌ2,ª‡O‘<Å†6 #! Yõ7Á\§®Å ô#³Îƒ RÎ	ÊB¿Âv¾=·›ïtËãë?’Kj]f9çrepÓŽh‡¾G=Ö'¬EŸ#Ï,è%¡É«ç{Á˜è‹ËÙâ’ŒMæå‰E”ÆZå†ètÂÄ]'ÞuŠ‘‰~*ŠWÏ÷ë+öÕØWË6ß?ÜÐ&pxîÍF”KÙd‹ÂvÚ\òêI€xÇÿ‚œËÏmÞ”†‡þ6¬žoìíªÍ¼TÐ&yÞŸï­¡Ý
+ˆ¬D£ýið4›­í´¥°® Ò7Þ”Ð«uHq|ê0ük5ø“‡+JŸçua,[/u¤˜O·fl©íAUô=——Sc¶y„ð—Ú
+C#‰®!¾¿‘Ô×êa(œŽuH÷Œ©0Ë?{€bâÝ§EÝ®2¾^iˆ¿%†‘b™¬º{23‹Ý?õúâœ† c0{ª›FÃ›®Ü>´uÊ`·/ÇÒÐYÊå- fôDáB+#±³<'¥ÄòëÓ¥æ„…hI”©Õ(ïMW’ºçÔ˜vHº2Ä‚#qÐÝbe~¤­þÕGCÕ½ÞRÚ@…ê/0´B`ðÒÑ¨¯»ŠT»£ÈÎMn4ü#JyVy×,CSŽ¾Çõhi²ÏÇ„©…Ñ:|ïÃÛãÒ**-ÆÌí.r€ýò‡Ø[ ôŒ'Ëb†¹Õè7ÒèWt/ÚÈšÈJß^‘¢q_\'*‡ÙVàM×¯œhpN— ,œ“ ¼ó´\!Œ|ªæ iÖ’ÕÅj<­ÝÏDgÂ[ï"žø~þÜ’’Uã%¨ó¶Fa%{l[jn”Í³Ò×XƒvÞß›(FüŽ"ÚX¢¸²O
+üu‰›è´c$	r39©ŽG‚*ŒÕS@ºi4yæ¥q‹¿Ð‚<¡ÇžÙw<@L¡o0“‡21hlíÄýq¬nª–œ¬rò¼©R¸’¨a¤}†ùùd--0ÔQ†˜º<ØÆ ‹d%æ‹(è›á*‹‡šÈ‚/(€ŠIÅ4Ô.áoðêÇÙ$ÕîäFÚ	Ç:˜ó|M&FMgß¦Ý“l¦gì×YÈÒÆ2ÜHpÝpõµä³D*›f¨	9É(ýXJSÝµ7Qò.‡lŠqgyÆwÂ„ræœJ÷‹Ä²}Ëýêø¹fm1ùo¡.Kƒkrf¤dv{A^Œ±÷'þ1yRF!ŸøˆóŒ«}%€Û…xæÀ>	$¹zWzvù[fFd!ø6Ù±ïó70éàRÞDæ˜	8xõsq‘¨³ø'?+Ÿ6,n´¢iK¬9m`?ø4J!^×œ—Pt@~çS‰WÙºì-švž6Ma“µô-o0‹²-u¦öˆÔºäÄsÓ¨\`·D*ƒt!|»ïc|ìÏ¡þàg K‡CŠE]€G±vå¨×ïUÓcJÈ)‹1¶„_`	:Ù“E±äÄÇˆÛûZ¿FüQ-zfJNZqP3øpíà×æ÷Î6l3bFçYÅìôdP·ñõÙ/C—3dær#RÿáC0þÛ¨…9Ý3»ìxË?Ô9ÚÇƒµññö¤•Xò6Ñ
+ïÃ†Ÿ+Æí~¥óúÎÖÿôJí¨¾v*ùÛwå]`½}­ Šò[Ö+Ëðl¯‡/˜!¯h¨®ÂÞÕf›šðPŽ
+çìíÙ¬Í¬p¨2sE¿‘ÍÁÐÌ’Ó˜¡“òK?ãS‰›
+Yç@y’Uûëþ»7xrÜKº„)ÐX¸}hgAjñ2î‚Æ2ø…2“ö
+®¡þbÂ÷J°Ì+P`‹&4zÇ4§QÀ”ð!-ÊåÂ:ð“~ú¯?¾B7mJ²}¸‚¼MU‚ròÒ7a.—£QËSô¾kþÖâµ„¹àgÇ|«Õ‰õqî“]©³ú´Ì”ž¿ Óýú¢—R¡°9å•r˜,:7ÿ°o—{*àÃAÛòœÎˆWf–ß“c1ítÜ`'fº¦4¡,thP ƒšŽ˜
+†ýoq‚w-²®!ÆWìï«ò‚²ý‰ÎìÄ5òošbl3˜Y•ÉÔw<5qãcÚ`Æƒ½ð\Éši5%I«`Î6$«¢‡æ£|¨}f9XƒCçwQ*m)ŠQ¦ÔA»LNU;´S]ÞÏnÜüY-RZMï^á5pAXføj	ú.ã>ïì¶Ø–œ¹BÉ™2†~maáQ]O(à÷Ñó§Y6ä$ÇÏšO÷§ÿ¤OÝ!Arž¦õj_ìãGoøl‘[ƒ±Ìì;Õ—Då$Ø¦{ÝÁÐ€»J`LÒp=±@å¬Áù$ƒ¥ãÒ&?–ÿ‚‚eK¢™	's=‡¹ V™Ê ¼uùº™~¿$7wÖP¦~ðú	Å%ñ‰Jóçå
+šEø*¼‘m‚<V¾+âÍgJmJ^µ!æ:¦¦§­ø•&J'V›²•À`af9#IT¼ä9/A)j PÜÚ¤ßJ÷Ã¥%1(ôÂ?¥hhÇ9®o0Õ7ÜÀÉcÒô²ôÅ¤z¸²MkÚÎ¯	P˜#úÔ;­ê¡“	–f7·ˆÞôþ>–1þCÃÆêØt@À}<xsR`›7‡Ã~V”¡Qt¡l,zežüm.K‰aT°_É‡W”·{CTÛÎ›þ[…>ÀAŽ ¼6:Ðã!Y8ÒXÄÀÅOüo?º…ë®2†^ÁÒ$ªÞ˜²Àáúv®»Y¸—tæõ†Ù@M|ž¨1«ëh›ÀðÚu9UÊ{H"DÕX«5ýù‘¡©‚ž˜Âi£YY®"Îéœ¾cÑ|áŽ<N^›ÖÈ`ï1!ôÑÍ8µ›”H¥Å7ÔÖæQ bŽ™ÏÑcuw0PXÕ»Š!ûHxd‡´ñ«Ö)È~) ù~"÷{ºgÕyLvk '7Dpu‡¢¤±)OgL`[™Ç	lAf(ˆÍªÕO(ù^§˜—™{Þ•T¶XYü§cÎ*ê<ëüû¾Óå³hy¬ŸôUöà¾˜l‡!Cƒmü	(éôtñ™´‰
+…ˆl…aéâ´è¿­ðˆ}¶ƒoûÁd]?É»È„Ø›–Ë	y£,dmø$1æ‡å^ì¯7ýìÒ‹ÆNú&ê[xJäO¿^J^µCbÑïñòãÂÎÕ·wÌÑÖbMú4×x‚‹Å1Ì°]Ãs6¢˜êg§m -¡Zà%
+“i2yJvLb‰²FöòLTÎ*ˆÍðoˆÛñ›¿¯(ÍÑwp¾\º»øKyY@]ÛŽDÛÕÜ8¿é¾Âc,¨˜rû€æjN8ÉªÜwØ‡ä¯={BÁ­9üÕ•aâÎ£!f%V‚˜	ˆV®(¤¯>ó·¢íjöK$*ß”!êa:Ç(	‹¯L;´
+‡xÛìÉ bÜ–BoÛ
+*Xõü%øáñG|øš¥²(Ô‰ùõ~z°¨ê‹¿‚z‚x%úƒìJ'€ÅXç„Ë}*–ß 1g/ûýîôÔå0pQé:»UKOXO|UÇä>bÙÞXNºÆóeß Møêô<ïë~	&q£Ïçûù8žÍøf?í±×>Báyt6x#AÔcúýÚH»Ñ áW¤ìÓ·L—þ‹+Ò|«¤.Ç×S‚¢;þZZÇ>»[¯øÂìæ‚‹¢ÎqkÓÀ‘eì©Ÿ’r03‚„6ZfÐ™·Þ”'º ÜÆK¸FpKØÚþ¯•%‡Í+
+<	HËŠÕ`Ãz$¨‹H·hâÜàQq™(‚.[7µóûìGK¹e1[¾À0´Ü¾BÊêá(_n2™›G¾´¡$xéFRkzSy]Œœ0¼®e÷õß9Ê*Ç2’ÝaOJõ0iÑ]êÜLÔHìÄ-á4ÕuBÀÕ<ÚgŠÉ-„¿!ü d©ø<Q\†S§ýÒùœÑ07öüÖüpüî
+)¼8†
+>µ:bÅ”Óù·:üSä?Ëþcì&¹‡TcŸ”	IxäÏ^>Ê¼‡—å àåI¬bÏ¨gÍ"^²Y IÍ2hÝ§Æ"½3(&“J£Ó0É¬mÚIðëf
+úÔäì7Ò?Ü¸È|¦ŠiÏñæÞ/AÆj,<Íí¤ `œøXã¹÷I°Š»š6ð%‹c„„q¸D›öZSØBÈZÎÞIöø%bINwlß¾¸ªFõõU9ÔV%øv%pÏy:V@[×Ï;ú™bì¤q/êiÌ’›iMšWx'|:<I$&0¹š8cÔ-ìãû8=ÈƒÈêÉ[³`göyè%ÚAË]à.´¡ákSè2Áì‘-ÜÏ¹N
+‚F6{BõýÛ êXê(wàÊz_â,1œÄ÷*¨	iÙó(àfŽJL?ƒ–;?‡6¾k#ÂŸs{*…ôYEu¥Âß$˜LÍZ3Ëb=Ü€v»¿
+Î×i›œk=-GÛ9ZÂc°3çW5Rm+®áÿg^ÉGõÈÜpûË¥|;ü4Ä‚÷ëàO?$ZMO ‡’>Hñ	&p]‘\)òã¡G©P:zkÏ9ü–‡ZŸy³­}Yûk¦	{b‹•Å‡#ãD6,º@vE#îÖ°»q"üŒœŸÊ¤DìwS~Va­XJ¸táõª/ÊÁéŠP¶øÍyOÔQÇÜÃ-ÄÖ*¶Ü·5‚«†ãˆ]õt ‰ü”JšJCR,Ôˆ”;–ó^kíMì@UÕW;]â¨Dû
+ñl®RÊ/4ô2¤ØG,–Ul%QJ{ú»ÈùikùB:¾ê¶ál~%ªdËÊ4u_3²íøÀéµØöçÆõ¤»Ðáö´Š¾ºK>5???ì¼¼hKiïoË‡¿MŒ*ÞUøí)ƒ¯§….R¤tœÛb.¬#…GV÷áü©º¶^íY±ˆ¯øÑÍÙÏtIéáaÆ]ìº÷­Ûœõ¦Ð‰Nöæx¦ eCê¾çC¬aý™Ï´yº çmš‰x4q|fU6!ú!Ê7ˆ%GÎ÷¬—eþ²$ýà3ß¼­­L%kB™•	
+4²*ºôÔWa´ÆAðyÍùî¿ÅÚö‹Ô%¥ðó7uÑìúv,(á=2³@¶néK?<²Ü‹XÝPÜãXR¼Œí¸,7ã&(Ë?¦wÞ§Žµ7£oÓ«Üüâ±h=×½Y¤á!ã9Jx5|4æô×4ôAMâr;‚Þ¶Jÿ~bù(*#BS¨ŠâzpH­ýúd˜“?7_
+X’,NhpËdÎ‰·\n?2Ûá±o6ãã;å‹Õ}ÐiûÝÉ%¹ÍÞÛtª6Þ`0£®òC·C×§Æ­xiFØQQ¬±ïÇl‚¡UŸk—îÉøØ<o(j³rê„JÌMOâ°%ä£kÁIFwåÉ‘‹ÍhÄ³+'ÿjý¨i
+þ˜9<Àêu|óÔãv-Ê¾»o5CËY]¤‘™î‡œÀ(×¶´“PxèRF½ò™}é‡Þª Ì£a*=`U¹ANQ¶93 2y…xY !®³ÐtÕ@bŽÍêÎÒýk@6ö¿ºm[ë5ÃgðV¤D;Úv–èD“D^“ƒ“Ý-1ÿ åB»>ö¯'`G7—¯õ•Kún¦Ú‡Ð‡5Ñ4:±ãò­J©v¹b‚@Ïà: ¥‘©.±’XS>|Èjt >,Ô©ÖQ;óÇXÿhUF§=	„bZwŠ:ª½LÖãª•æÙÌÅ>(ï1öð4PFuõMQl”b@ˆ`Ë‡¡­¡¦0B?+þ%Nak‚ŒÑàfÏ£š
+º´øxqD…œ˜ÜîYÅö¬ÌXS& ýŽaë4ÉãÎL6çÔLûŠò|0¨xÿYt’Ë¾‡zV]Øü¡Ò‡Ž®Ð”§@èSÅ©2ñª=HòË$“©m^¦TÑû¬‰eá_‹2“÷ZflÂÂ@1‚¦€¨Ÿy•^ºO÷!T¨ P×j—A° áoõ‚2ûÕÓOý)ˆÐ-Ô…ŸorMÔœà hÝÃ³!ØÕ°¹Àë,ZŸOÛ)³Øã|]l}~ÀPû·ŠC·Ö,K}ë/Hë£«q|Ä¨ggEây‡#rŠÍíÂõSy‹ý¬"È²ûty”pìð…èëR˜|kœ?oe¤o –îh|bÌÜË†jï•KâÁ$b~-:,:hy-u­UüJoLðYø#T.rEøMéÏ_1Øïµ(Û«}PT’"ƒÏÑ+~Ð&âd{•Dah¥—Õ˜+vCg'2&º{³ÅÔ´:µUN$è(Ç¬ü4A€ç50X@»ÚëgÉNø¦ræ81É5o{Þ³_ª¾³ü|Cýð$dOÎ¸$¾õØßÊ<¦èô7­ˆWÁÑïV»ñºöpç˜ã÷Þ;ÍŠ®Ù/€ÿÉç™Í}ÈˆfŽk• ž_>¡jÎiÔ€lÓêC’#˜PÀ1j¯äÎüÁLs®o~¨»UÓmñ´áÍ¿rÜ4åû‡þn+JÉ~q¼¥uE$ éõ ðÖ ÎÝóÃüþ¢–<´Çplù¾>á8ž«fß§Ù$|§ëSúÛ¶tŽ$Æ2X“A‘gS<DÔÙø·?¥ì‘‡xz¶Œ5‘áÓ*È’×ƒ%XÝ-C‹K/D<!**Ênzø)ÂnªÇK­®q3j¡ƒîWª©š\rë#m™gA!È³¶Pö7ãŸ8Û|É'ç7‘x†Ç‚Å&.9bšþ…2ª‹Î† ×RüÌv2É=±C4ûÆl–*Bq”cÙ¢E?Ê6\"ëœJ{ï	þÁ¶Xf¸Ú°ÌÀ©Ü7"^´¨Ã*Þh¯À–°ÇG!šŠç8<…<ÈÒ»=ÞpL7† ….»xm	¥(†4×ï”?ÕDæç%­¢J:ZÃµQ½'õù1àyãaªæºó¹j?[?rÐŸÈÙŸÂñèXÈ’Uý-Êå@T	™VÕü`Ç•¹ÏyQ*?dEÃ¤ú£~¨Ý¬‰eÜÕèn$Sa¼UÄ'•ãg	øÍOðy©hÃ æºž™<æ€êR×ý^…;„ZÁ•ô)@—-ê;WØÌ…³¯½?_Œ(tp%ömI}1ŒO'Mã¨HD3“Ál!+‹VFI?Îžù[3TÚ}À>ÍÒ¼F=sU3‡¶“åy“Q?Ðyù€Ç@cµz¦$Bs¦ù.Oÿß[ø%*Cþ.M¦s!;6´˜g¡»˜–†¿þ¥"7DÉãÀéô\e®ÃM8lhN½¯— ¢0máxâÇö%7PcGèCµŠ“^i®Íù3øòÞþ ßh{Ÿã©™òB:Ó™Z˜ÍeÛî¢±‹ž-.øbxzŠŸ=—å*úWÙy­H¯mYúU»h¨F]È;¨}@ÞÛ¿“y2Oßú‹*º¡.šÎ¼Èˆ$×BZsÌñ¥­eë‰\à«j©pb¹¥…ôj?K—†¾#"ËV6m®;¢šÐðþ¦h\l|Ù‚òÓîj õõmj³Ò¹@;Åö]¨HˆTD¹÷ôSæg(ì5üue*s)xü|°¸ŽÄär…N´­ib³Ë„•›[ò7!ÛJUà>Øª
+_@ô,QcYÒ-ôq/åÐ5Á*.\£8²ªåäò€.mÁs¹.Õàu(ãy“…™¿é³,àšÊö™baï°íA«£4/cM<wÌâÆQ´$?2m½ïŠXÇ±Õu»‹:¢€IzgÐñ›ûúübåL8c– ˜Ç-tßZÕ=åô{Ö{Ù·}íC¾‚ûÊ~%U¥n¦¼t	šÔ‡›ô¡QÆ#) ®¿VÆÙLËø<ÓTÖxÊ7¦X©‘#Ù¯PKð·Ÿv4µ:v<gÑõNš–AÙÒûãßj1{ž§•FšdUbÏÊþšÇzD“A;ƒÖr´?.võK|o$û{“ç»ºÎ|Í<„PÏ¹lÐÏ:€]î	|ÇúçmrpÝ<éŒ…¸W«WàNóQŠ‡N Ø¶Ååì¢ÌJÒú#Õ'—U¿ÁŠ½=B óÑàÏª5:\J“"Ë—Àƒìm9§T+Øo
+˜OÖ¦W¨¯ŒÆCïZe„»¨LÁÓ{øø~0âÆ÷£$”s_]!®Iûpž§ÁÂJ-+"	aX¸=X*äyÃ<÷7ù!ËÞŠ%‘€›å;ÝÈÚSIû¶;ÔQJî›v™v¸ÖJ(÷I˜ÞK™î$4šzg˜€_ùfØeH¡Ë²ÙŽèíd9A3B¤nëIS/go,e¨ *š§#9P”[| p|ÏÇ˜c‹u¬„Â<„ØŸZÓæíEû”Ã”Y/YS°kZH9?lV_ãûýð]õ.‘É¶ø(#'ŸQz"%M,0#·4ÉÑGdæ›cjþrÇÑF›0—^6?lì*0hÑI^l2^Ü•[ýXëÑn+€L¬¸}¦¶ù'«‡ãƒØ+£–†äQV¶’²¿ŸÃ;„7¥_©¨gí³Õ¨ ˆæCCÎ© T	êà„¤ÉeÉÜªrÐMö–ø^éëÑO¯X¨ð¥ä¯1_'ÿ›iågšývë—c¨0b°X,ãbßST\ýËY®ôy¢9>óêœJâN$ˆse•úqêXh?É¼{Ù%<ÆÃ™ÀšºÝƒÆ„ØÀRùDÁÛ“Ù‰£ßÎ†ÃAàÉýîŒ#é&Ðñ4_G¼ÂŽÁ¶DçŠÝY„ËHñ0pºd?W)QMaÀHÞS_¿ß“Œ	ëÈ"›,™Îç7:Q^ØRïÑd…jÙ” !ü‚ŒVBaS•y¿ùwÖ¯ÅoHjë'üšp;!zƒñòM_¸W$ø=Âb‚“°Ñ’tƒÌ>¾"¼záëæåxç¢áÅ¢UãßFùEí"Ã¯«Ð}s—ì;}8/»íU\&zK€a€ÖEÆþ$Ç+=òm1‰mŒ_Ë øÃ~¦4QNêhl*IA‘óÅ¨õÇXpònBúF*NWôXúG¼¨ÈÑ`uò…"£Þ‘DËüñ°jŸ°±¿fYÁgÊ;?Œ-5lÄè³²}[2¡W	ô¢ìÊû0¶¨³½Øn~[Ì
+Ý¦qšŸÇ…Y¼4k“È	¡”îA‹-F5Å)²W­§,ÂB`òC+ô˜Òï+Îñ‡òZÓó‚ÍzºˆÄEßRRÅ‘Igd€ê£ê¼º—;L{s]’Èãµf„*&ßWMÆa8kòÎ8ËÇ!‘úŒŸ²ªÍ}~,ZT„X¹o.æ¿pB¼Ÿ¸~ß^†Qõ‘`ség˜NŒ>ævßá“¸ã‰òñÙQô*‚ñùÎý©9ÌÍ4‡ãŸlks‹5~ù8o3|íÚ‚Z¶«?Åî¨Çý‹ÒpU’…×4±]™›ÔÊ‰?.ž9—-ç„Ü~‡¾wëÉ)¢‰¿í¢8¸Ž­VV8fú"}¦‰ŠpàþL:œ ˜ÝË4ÿm‹.yÉ•ú¾zÉÑ¹6¦©WÕê€T†µç+¨7UÃh÷h$¿yšoê¸Aå’Ub	øuÀÄÔ#ë´8I³Ì§d×9Š,°åäQ«:Câ8:õóßô±Ê@È_me|zÌ?dNwýÄú/™eÙË]õÏlÑ»÷áÁô@£EÀê'¢ÔuÁÙër¬ÙôµWÛ¿±/Sy>¸ u­à/¬ýÔÎÀëÜ_=jÉ³sÒm@`}Â4Poû-y²þì¬Gê´ø0=¹ë¨N´:
+R£ ½Z:ÙÀ>Ø²‰x÷ù‘×(—€¾\‡Ä À{Êfýî±×p¿¿gõƒ§d4cZýñ5¶A¤÷à@‰à›Ô×Ô)BH‚H´ö'Ü­TÕD»§¿©e…±=ƒ¿ïàÚëþ¤ÎÛæ «c,6P•e­‰®OVRÞ¶¾r]­Ñm_½h©Î¡­ø>4MÆ¬KÍ©'u—ywû»™NBO…í£Õ íësj;ä·Âñ ûž¼é-¢,~Õâä¤ï‡ T@3Z`+)kÕïçvØ~9ŒBü‘~<'¶+¢ñå½o]±øñÈ,¸Íû™VÔo¢PQãªÃÊ²Cû¬ïA}bU!#˜¼qº‹Ÿ)h.‚•[iMÆï]x-=Ž(¢-$`šô.ÃZJ&tˆŠNfÊ£ð~
+çzîô}Ig„Ï¨7%€|ç7Ù‘jƒ’v™¢—ÄÕWuÂ˜UÜãqäõI-_š0¹r„Å'ÔÝl¾$¾jÚ-Y]ŸIeÚ+.’·Ø
+D*ª£BV[qËÄc”W]~“1Öœåº´Œ|¦6ºŽ
+ñâÚÝ‚·_Eº~ØdÄ1ÃPŽñ#+˜â_Ã}ŽyY›L_6[Iúæ+§Ô(¦¦÷ñ{Po¯(lÊ—7QôáÏm2*i*„FyË\½‰¥&Ð'ÎÕ­µaË›ùË®@{IášÂ&eqñD¯'…òÐòcrGùŸºÃiD–VIcD¸Þ±¬õ°pi¸ñ	²áæ§<¾"“iX–LÆZ^•_)½V¬W³›:šÏŒçŒÆ«ð÷ÌÒŸ×,½Ýý¤@q¸ŸA[.ˆe‹DOUÿ®L‘”XaT£¼×ý—ÆÕæ÷ÆÂVµb®Ú„5Š‚UŽ±~hÛPÕ¯že0i" ç§žß§©üßþùÞŒÊD`±Ÿ@ÏßÚa7žÂ…@ØôéæBË{â»µ+-©ÎÍ»ž—äàÊßñç5ÎQl÷¼Nl¼¬Þª™$ð¨Ç‘#ï.˜Ê†¥2%z^Çó€I©	¦Gˆð©èU—-ŸQ¿kÎ‡Øw…â°•ŒQn¨ÅY)Uq5‚ªhJƒÎrØš& qË)·aú…z$’“œ‹Ÿ_À¥·ãŽ¹|aåXoœ@?yÿ]¾(@cÏæs¿¾'éDm|Êî™w°»CU|.H
+yûgÉíàösd@».Â‚˜|Nó—ËôqO&ˆmSÜò0cfˆ=6ËG'^QÀêB†G
+DÚúŒÈ“YÍ“Êúm6ïå“–^;?Ë}ÂJÍÜ/b®K'X–|K¹zZËi»dÊ»-àX•Q°E:‘_E>zXõæ
+-ßàÚGÊ
+ ƒC–jàÃPÛ‰qíÈ´w½ÁM—™<T
+‡ôõXÔï7>«ùB$âãz:j%(‚•ß½hËx³§r50ý"›„Y2ð}ŒÂ•*ÓÑ]:ÍJ	ßµc8Òi®èY!©ß§ìD­}ŽÚK-ü+ë¡JsˆÃv—$˜¨²4Qt¢D£¯©W©áÏ–»;;Ü8ú$xù'&%%H>#‘Ÿø‘|°ÂžpÄŸ˜.â¦ê"Ôf)`Z±—NêÊbC¢`˜%ikÙœvLóQ[Œžþ{QHlf xºI™Ï¯5¢¯S?•¾B°?…Ü%4äEMTKÈÓö}Â¤ÏŸ'¿ÙÐÈ‰¤ÙÃéÁœÓc—ààsÉöˆœK6q³X9¾C»F~)T®ß[éÒ®·õ3î£øûš‹-G4uïP´fV1ÚA	&Ù“cÍ—,G#PÖ¬´T³¨•Ð%çœ´ëÑÞm-ÝçzO"òŠ”íEúÄÄ
+´“kñz’&ˆñ˜š%'ˆ‘ruÅR²øËÂîBîo$àmƒÓsøAÞËàÎZ¬{í |£¢·'QöeèbšéY4³ƒŠHÆ>A.SaValWö<o íoÁà ]©Ø¾½V=NÞm„æR@SUè»{K¢y(Þ1³ŸÎ€ë!»äv†®‰—h]ÿ	‹¥Cì.Š–5Ê¸k‘BðóK•‹€€#å”Àö@é&[co–àXß€0PŠ¨…\|‚kÜÑøÍiÇ—}jšSû#Á*k Ü1¨öÎÎÉu&²xô§¢ÞzÒÌÖ£?K÷ÐL£–_AÿàÏG‘˜–€¿êfÂÝ½lH`›W9ª&	ÃH´û}ìƒ×à'›õ·ºK1=¼4Èå2¸"õ.XIaÔ t'E#WMŸÞž®Ÿë=ÛM«G3<êýr†Dpëá;-äUxÑãƒð<SK*²ýózKËGæ%kA+´"íY¯€ïá¤Òúh]5Bœ»VÀ@²Iˆ Ÿ³ò±´i%¯®‹5þ&(éLùŒ3Ó§ýñîAÏ©	½ýÿU¡ÇáU.ÀŸáÖìÊ‘Œo[%÷š–	Ð¸tëCFx× –o×B2C¶ONVm#‹Ÿµ¢Êccáƒ2d‘ö¥Š±÷ì1V^&–Þ½?’Kh·¶ýÇV„‰hQòQÇ*sHŽäR%ÃPø…¢t;°5ÍÆ-kVäØ1øO¼Yø@©*ÙÅ0r VkºäÇ3Æ³q“*Ó“½òP/A¥8•F´—iòÑ±ñÖøcêìS„{ñ} @Rf‹ä=U±HU
+(M$W
+eG×8Nsm¶[‚`¼'¦¬×S‚E…{±såÙ­_1H]‰sB`‚pµ—™™ðiº™×/ÞX]ˆ¬êF	d­HêÊ IªýyadÆj³†rkÏIhÙ‘3Æ><*OÇ\óÛa„Ïæ}DIh—Ú‰GK”•¥ÏO”§8"¥«!(Éˆ©ûó¹ÃÙƒX”\ãÖE+ªA%•L=“³Æ4*ÙxÄ¦Íeùš–!ð€_H"óÂ½&/¡MÔjÊ`‘>‡nÐÆÏšéEôê>ëÉQ/õªÓhù%è©¦§eu‚¦;©æs“
+¡ŒJ¤ÎÄnãwñ7™r>„ƒõÃý ZPñO…bã A#æËïF[ð~Û1>ñB‰nŠ·CúË+Œbå÷qò=è;þrc}À}]3wx;j¨þaîIÝ±
+|Ïªõöóp®å]qú­<D._êOÆ§˜ï#¤°§S aª$Õ‰"AØ#mˆAÕ¾ã;ûÉÆÔµ)\1±‡­Á¾as™º82uH|ÖÑKO¢ííúÙU+j#Dê¿†îŸ|ãôŽø-Ä)Çäk.ˆŠ-ãüs¯‹åó¸è1b—‹”AóTÚLá§_ˆÛÁFQW¾'z y­ÂÜqo»òó9Z4üSÛ’ÀãÔü¸:Žê=oŒUüñ×={QwÅ˜år>aý$µi,¦‚ë¸pÄ~£™ÍãKüVžJ~™KOˆë€…´,^7íÀ+ÍvËÙÌI+©˜K}J8>Ž`#!‰Í°Š½ýÌÛžÇùŽ¨9t	=à²Cák)6Ô=Ã‚ÒÕOØ}A^_Qö6ñq°UŽïP{
+Ð·Ã#Ûú¹qC6„étË]pù»X‰FY²,´ŒNYøLÒ ÉYZ,?ÛA¿ˆ2³Hú9ÉzœöïŸ–Téý‰a¿âƒ~ùù†%cçÙ»”@ÂzžÓŸ{ÎyÝùúÊ&ÝÅ[¶¨^~Öµ!šÌQTBÝ–Ò™$ÄZæEâù%áaÿÞ0ò%â\^\¾nkºsar¯‚ó_½4œág‹Îø»R\Ô/W“??Ö~S—íô„MÝõ‚¼•¡Ê)'ƒ8(_›äÐüGä="ê·üÈà#íµu»;<Òÿù¬ç×X…;Õ™K£›¶ã”»pSºÍü^MŽ¾ÕÔ}d‘b{¦Dâ?1{”GeóGR0–D¸h+Ñ•õ]á÷—#ÛR|ˆ7CUZ°¡‚Ý©ÕDÔÄ/‚Èr™‘*ëmÝôõ„ý<Œ’ÙÄ-ºÝtä7ªePôWîœ_Ôè|UU0¹Ýþìc™€Šz<ûfìúÞqRÇ:Ï¼ L’>ŸéŸV:\lD´?Ï(®;›ÔYæÀ1¯‡¯&/u\KYYëÒáZJyO·wMÎS.
+†I0y:¡vÞØ<~Ú#ihx?k›PÖÔtæ——œÇÛ@ªH¾t[*™½ç’*ñ¨8hqk2š¢=´íZÙ/xÝ¤C8¨š¿¯¯ùE›ÃéuU)ÿåpÁCÁ°))œüÀõ7™Ôéæ÷ ¼U-ƒÚ+m`˜Pçq7S0¥4ÊÛãBÐž®ÎŽÇ¸Ï)˜“W§sÑ ï_ïO-<0ào>ufÛï²@¢%LÜ—×p€/V&ÀÚ²®¾I h‰…Yƒ.|—îø¬èsZ	(–’V(žŒ2ü	!íûÙR[›µ|tñæÔY0/ÜÉÇ­^êâ°ñqÀ¸«1ÙS•Ú8Ó)O ;ímäûS…­ÿ–Y0·p˜Òj-ÂÛ ÿgcªú+SðÔ‹—41âGŒSæÒ›ÂPÙ®{¿a‹aóÊ¹ÿù05s¸€®í †jÝ–7¡tq×‡}á2„Ò¹°˜V;ÕÅlVs´ä’2`Ä~ê"Õ—’ŽÞqä\+êNCÊè7>i"àbÈôB^TBçÜÀúøþïÏã‰5¦Å¤oC·ŸÈc›ýžPXbxöIÚréÇîîÁ h Y†‘ºKuÑoRù
+vÑšÐp
+ÙßºÂ6ÔF“eÑ®ºƒü¡øEÖÔjœ
+u¤Cæ¯Öé¿uXIì><Vk¨Õ†b4÷^vÖf+,ÐgcLÂ&À‚#FÎ‡DÏ¹q<ÞÍO^ fá<×6Ò0r!É‚õ«=¶¨ãUÎÕ_?gÇQ\RG0ˆleõË”P«ù–‡ Š¸iÐ:Û Ù]Á­¦¡Ï«H@ü«ÿ‚z]é¾©ùA„Í”cI¹Å™—£[ J¤@€ô!ÂÆ)(mÊ*3°5w#èÖø]K[â÷x`o/ÏÚJµÇÜöÛwU~˜Xm:÷Ÿ]V‚žNÑ«Ã4ºà%È	Kƒ+d0;…²ç†nÊ¸Ì2ã©ÝlS›ÊŸ!ÕnÎD 5£dˆ2Ë4&eqKù;]›J.J
+À)Só¨’}!yœŠø Åu•ßvŽ‡¹Ï6œÏ|Ž&‹/_!úäJŒ;l¹#XGW/ÚýAc7O|RbY³I}rÕ[òjøI-ª.w]›s»…
+nE\và]¶/G‹œs9ŸÈÊut_~?N)BÔ‘tµŒ¾HÐoZò¨‚<£ãÐä°|uÜŒ+tNŒƒ{@:{tÙ¼r{:­˜4w0—Ç^³’?Nüàîï*—!ÞS|…Kµõ¢±iâFçFœb+bë„L‡œ¤Q¡]åL*_?0¼àÆª0Ùú¼<ã7kŒdi/w	¿¸Y7²æ¸…4	{F1^\ü6¥˜¯,G¨L3´o®u±EGº\D²N	mK~ÑkpoN<F°§?r2xùa$•ð^»{…¼#[”û ~<Šè½îÏOûÑ1(oƒénY?Ž¡®q­‡Is[feÈKï÷uØ˜’~ûg4¸¨¾ž‰çuÎQJ|WÅû6ç¨™ótÒaÙx‰¥¢Ë²+pÇù‹ÁWm«>¹˜ùõbŠà”=i©AØ†ÓS‚R;¢7üiõ%b8ëq÷ÁÝø–üÙéÑ{+ÔOÛ®Rmú³â5´ù}®_²”YöÞÔØŠ$,K‡4_àø‚l(8Ýz¨Ô¢-âŽS	d3O–ÜÄœÈ÷í±Èè˜Ô¨ý²>ìØí¥ÓõF„¦’V­Š¯ñÁŸ[¿OU¯M3øR-*3-+3$®ÂÆ.ôõ"Už¹Â*7 §1íd™š†7E„+œhVA°·×T}2Záñn~~R4pG8€£jqÙ~0…mÍ…úº÷¢{¾ëvjRõPŸ˜>}	z}•.V¹æš\–æÈOû€Y·½=î4X„W$¹{ð¢øª/XÉ	è¤þ¾±°7»žT›	“…ðÏvè›­úF÷g"nÆLÇÝ×ó%‹Ií½Ÿ/ DïœíÆžãòÈÑ/,Ë°3ôM«xo«¬³Ñ×ê²ÍÐ~¶03ß‚:íc<PŠ]‹‰êBdÖ"³5«/ieóöa.0Ä•Ib¾›ÒbíEÖœÞÃª\vœM÷±1…RŸØ~Ö:QhUZ°“ŽeýRðWËØÕSK °¿¯”p÷b‚ƒ*³Š0¤êÏÒîþ~ßlh„';×Iül¹[|¨˜­µÈáüêë<üYÚ|&u·ršõû'˜2wöä¿FöiÀ#jJVŒIÖØ;—§6ÉX½®¾„;`&÷Ðá¶üš‘Ccó~IæÉ·«Í‹^¨ñµ¶VV,§r3¯¤”³XtËô;¡WèG›b|²zEvFþ
+bîÆGTP'È+`ƒ­€rù†KhÚ(Ö%ÈÛZŽ‘›ö"„TóžèÑ}¤´Žy"r–¿<å¿!¦ò5ÎIú³?/á Uæ¾ÉŸ=×ŠmÈÀèžO³¡\D°*†LÍ÷~9eÇ-fã­Ú€!\Dé,î‘¾ãÐyDcËµKò0>ÃXBAÛ«[`URðÁMÃvn ÜK.—ÑQXl’2ô¢<³§|Ô?I¦„ß+i=?“ÈoŸ¥´u	/8ï€ž³XZ½ /ð)˜¤¯kæ
+Ÿ°é«&i÷S?eýK‡{Þ.3´gIâudqü¡öÍ
++ÅÀ}e~nåcO öš£sÁÏ@òk²‹òÞ|:°ßfµMn·LpÖñ§ÈyèL4Ná¾jwÏTè†’±FQûó%,•3Y;«rEu¥1rÈòbP_ƒ´^ÒŸßä¶šâí*wŸ><š ­mâ±×ðww¤Î±}m¯õ·ZÓ $	QL—±â;@s‹’EJ_»´Çì§¨‚—EdN‰nÁ 7§7ôæiš€§¨*[d0@kÎ¯ùØn ì9šwä2ò¬óú`xô)&L·ZÖ##½<ÃûŽØüÑwéúXDli_ÎLMOr
+°qKh1‹vb›L[DïH5ƒgBµÝœÝE=2¾óÃÞøn/’Ú'tì_Ce±Fsêí6Ñ>åÉ–TÌƒç—Ç\îÐœ5ÄHzó‡ž·–IôÁK‚Ÿ‚‰ªùÅwq—ííb·Ÿõ
+¦Ípœxüˆõ4î­Ç˜ÄÂî*))xe?ÑêáE|
+ÓÝ5‹æA¦åúLâ®â@®ôò¥üW$è§íêSH@:ž\y¸‘®Ê
+ ¦5¢¯ãù# Í²%~ÆàhU#¹q%¶$â¼ò‘Üì?œX‡~“EaÓDÑßÍ ÿ0{³yú¯ë	ï¾{¢;:ÔžU#`¿_ÖŒn¨A±âŒW¢·™Ødô®æƒ×â‰HÀrRae…¾	Wc±]ý-!ä½ö2¿# $™›,ª#ªQòÌnßäD	N/†%G}K±ƒûSÀÙåk¨”¹åÇÎ™ó‡@é"ÑÑÄ»ý(õëÌµùç±£9Ÿ|P³×\]¸2|ÕV77¦Œ´ó£üÌóÙûôÝOGšwË¾ý@ìY®…épÐªOðÎrÛƒ»V.º©¸;1ò½6>p>ID6ÿd^²õ¾Ëcû¦câ«ÅOÉÞ…Žmë	He-aep,{"Ú“<Œ®Ô±Ó:ÝïÌ2£€Aïkç ·}kMs¹_œh-í{,	@³©kì³øH±aN qUðÑá<?â×ç'[5&'_½™ªq!#´Ç.)&»ì±*»×ºË½¡ì5cÆÞ¤3Î@øƒÀ¼Ú9ŸoH÷hï·¥ó&Àuy}eÁýGZ9´AwÈðAºîk	Ä–ãJ¿d›ÉïD[XPMësv¼
+N“i" í‹(¨2™ŒTM–wi¯êó›ª}¹ß\
+5v{¢6fá&ª5\vhXïåd	z2 ’IÐic+íË‡Þa?_`¡¯Q]Y+O¤t±]-ˆÀˆ<©õç¹çofnxŠÅÂyU“|QáƒÔ]I:mí4~Èƒ}û é¹µëWíJÐ¡ð™®®
+j£ÅûÈß˜ÙwænðxÏüö:-ë4Z…^ò¡z=yóÛ¯H·=ù³*‘[Ï«7F9H[¸Êf({CÃÎÊicpÐ&}Â›¿ðQ¤NQyP•‚"½ðò‡-ã˜û"0sÄ*/æ}‰×D›²$ý'
+U>Bõ’ôbž˜hÕ1ÕÉ=·µx^–±&'©}.ð"íÎç”jÆÏnšìkÆ¦JùÂ_Â	üªBäÈ>`²Øôô‡	w]`È2zC êV Y\¹àª‰®k.éŸ8P…vGPb} Â¥Xg´¦Ô¯‘yï—b‹@ø·kÍË6FTîÛ“eb£ó¾øÕ£]É¿*I´t¸`˜ÌDx;˜õŠY«©‘ü¡õ»~›)ûÙ®H
+ÖDn¾	:©´Õ™H8Qˆ%À}çHI@Ï"ZKÿÀ‘¿!¨ìLù¬#ÁxÕùÕ†jqƒ7nf2Ï”C‚X²/[#ð]£ÒGa`DÁÐƒVÌ
+aØ,ž¾»Ï¹Ö·±úœ8ïf¶1*.RlÓCByµ"˜ôS¢*ïëÑ–PhŸo¹e Šƒ5Øñu™6Í”IûÄU0ÃjžüŽ\n ‹ü„P#zÏ8,oí…o¨º*”d˜]ŒäD‹½ôuï§‘um#£4U'þ²zöÈàoÎ¸N+“™+PÕßLSi|@'<Üÿ
+Ô¥{þ³l[š8ÎÀÕ=$N­zº·ýÎo›”õ¡3îOõ~fÁðì4Ò¦hãÛÕ{°VM ê–ûY¢fùð0¼V7²¦MBž¡—[yzª»£òp„ñS÷Uˆ­üXßÅµŽT!¡Z`eìJxwg"R‡¢”sÇˆ–ÁÌƒÃ;ríÚÊü#ç6dè­y¾œ+îõ‹y–‡—óõL™qÕê‹Ë“$˜?=ó”ó]#òv½‘ÇÉPê`ñ9ÃŸ¢!®‡aóß
+¶Ö]?Ð^«ÃÇEl2€ê&
+è0ûÙÕGË¾Ìq`E-@m@4†Xº”‚¶ÌÚ†¸=‰¦Á{õÓ˜,À*à³\TW!¾—Å·3ê§¤®
+øãÏí)±&ãÍCá'âíÓ)%âDHDë'
+…ˆ/)§gäëæ¥SsÎÃŽA†°x†±ËL¢†Ò;—zà„bì–j”¦¦éøöÄNh‹Oî"¼Q4QŠh}¾&)úßÕ’[ÓÄTþÒs”ó£¼¦Y³J5Áû9ùD3±åCæSò^ç”0u~Ã¼ýŠ*Nì"}Á®/vxaS–-FŸEÔ4L˜4M^‘8‚"Ïô›‹ÇáÏÃA»0 ¼•2þvþ
+÷’áv
+S°ÕÚÆÍù¯zB2}¤‰ö1`§Ö˜õ§Ñðêxbp˜\hõ/F—ÎDÇ)Â²±4oG«rì„»âU¡¶…ñ%Ô°lb¢ÕâÇ$š…o¬ÅÄa)¤ZØlÌVH!ù×¡ŽéÖþ›šý²µW®–ÎÈÀMÛËà|—f§–"SÃ»”DŽIª»!”›…xí>º1ø»WU;'fPø”¾(3Uy.òslßÇ¹â6!_þ¤F<è†ú
+»×)s¸~¾`ÿQïmàÅxÃt>ÔñÓàØª«RƒoÑÂ™ÓÒ¶W¾4ª»úbxøL>°ïÕ¥·góõÇ¿í7»ÛMyŠ£8¹øÀ‰ø ›šñ´©¾Þ—Í¯ó¡ÕQŠsLˆÃ¬(“W£JKo¼›ÈD”!|çí¦–éÅ÷)Úž©œ¦Y>(-(ŸÖpgÌ×YQêedhlµõ¥<Dâgß‰µfÄk
+/$|-jyÂ’¬G”öÄï‘¯DŸÃüu¢’]™J©‰£õsêF:F7>œŒìàä5ŽD[Å|RÝà@©õwfÕ š+c¼TÀÆÀÍME>Tz«Kp«c¹ÍS B`¶
+”ì{"™‚ùýâZTîkÜ¯Þ¿$»ÖEgÐØk¢I@dŒd0xãvIE91öDfÚ1S!n"¡¢/ànìd‘ñêK`0¢Åæ"SUsFúj©0]D*äDÔÈY&:x
+2¶¡÷Ÿý£
+»µÓþv³3¶T~M÷\Ê©_Í`´ÛV>j÷;‡¤s™0“çÙ&ì¬¬Y»5VŽ`µ`¬¥ÒÈ÷‘4fÏ´ï4	-;³-§‡q„~LW;7`a@ò,Þ¦ò‘NFtj%îµ§k&Q<…E¸£;‡É’¨æPŸc-Ai<)ÿ¡…Oæ±Îhº3ÎµûÁ?{hÞ´1IÊômr\6o7žµ»–¿šägÐ/ûÃz¥_áÕ¼Í¤±l°Qq‘Mp¦Š&úŠ7Ó2çh´ý`æõÆh 9w2,îG²ÌR|‰¨Aý'UÆA8Üóî˜>e8/`ÖlkÂàçü¶A±hÓqZ}ÿ2H+8 ãœ™aÜYÔmû£pýÈR‹*û"u¸(œVI00‡á€W¡–/,c=Š¹"â?ÅO–ý°œÍÝŠ·|Êmh'ÐÑ#ÜgL½áXX¶ð§šðp7^¨’Êd7of¨°KaõIåLöCµ¬”óÝ¶ãÖG&¯þ[—Ý¿ô-]¾þfBíÓ6á©ƒòÕ‹á¢u,ÑÕG²c­ÐšIý37^Ÿ*.‹p´—6«G*n¬ÙÇ×!a*ÉÍt¾êgB¶ØE¥UzÌc¹_µ•&qD	‹Lß6Ûv²<‘ù´Gì%p7ßíwç·P2\¤ ŠágËá^©„½±7ÊŒKÌ«‚Ä#/kÐ¥%U4aÖ›\ÁÖí’<7„ýåïJKE=Š—Ø˜}öæ¢ƒÌzµyi›Û†ê›h,šuž{{dÍÕÊãS¹›õ:xø[ì“soãgË?A¸¤'zUâ_§ FñŒUÇÇ
+pŒà–·o‚È¼\g¸€A©ðféKëZÖ§WØbÊ„ìÐNPìäïªKoFŠ ¸	ß[ƒ?Lçfþø@i˜m*O> |ÃÌ«I{eÐr—8ý¤ÔÝS­Î€Å:TÏ–šòf®ÆO–bnáTþzëO½€v-ÍK.Èpv£ƒ=¿OÐÙ
+<*íùŒ¨ÃÁ8gçBBPæÄH"{]°Í^äŸÊÃ×	¥FQƒ‘œ	G!Àç•6jPåbˆªV.Ïô>ùHáò„¦ôÄeòûâËióòÄàÖjä`õñòÀõ³¯8Äo¯Ž^Èï™4DÓp@¦›ïÅ‚z¿à E|ï½ ÔÑI\£´vÎ¸öÎ—r±3j\ºpí°Þã0âp**ö " ¶À)à[%üX“¤RnÞºÉ»ÉÊ­I:M‹s#VÅ_LÈ¹?;:j"Èj†}J€˜œýšªÌr è‹¿ÈnÛI&4¨x‹ü]åR{¥)'ÙWD"	>ÖÖàI;{ï‚…–wb^ôLãçH­Øó/	«Gýüh¤pÇRûTÈnañ"ÊZùLVîE5:3º.¶ðÖ
+0ýùÃ_”®²=GA¨G!(rºNmG­…Å]‘5ó3„Mzß'F¸ž’úÏDDd­È›}ÍxŽÛµ}ÛÚjÞC)Ô¡É”‰(ÿ5Ïfæª! mqh4 Dô‡L¯!|â[SŸ½?g†£^£Ð+£á%õëÅíá1ñÖŒ®ž¤Eˆÿø„'n;t‘‰÷Rµ}ZAT_0®-P,-þÖ?‘«ýê6aT>–}~-VO·'ñÀsD!Ù—éýMÌ|RYQu‚	¹aÛÄŒç^/¾EEÌå™ûÔ‡;°ñ ÂVJôâ™†ZGÆ°Ó¥àÍñ™ ÉS(,k|.÷Øaš«‰µ¨îì×¥¹ƒ,­*|q~×cbæÃ6`&H$Ñï›ÍBÍ§ÿ¾R?ôÊm|ÖXÆÙ¶ö†
+N¬Ø4ÜLœÜ”øqŽÞ¯Ñ•âÆŸê[ÚØÜÒUmˆUTLb‡¥5ð ÝÐÞìýAš¿ÍHË\²+þ~´?¢ñ-¶©Ôˆq¬îÀ]I Ø'„Ñ×z0÷Ô>º†dè0ê3ð­ i8õ!Z°M5¹GÊ¦có6Ãó«H¹6LƒåÅ2DDƒgL;/V£Ew¿ªœ›Óü¥Aâ,¾cÚ“SÑ•üF|¬ê?7gÖº
+€S5€«8!Ð…ò@|P5Æyp‘}‚Õ{µtt_ÈŸKë¼”sÞ<H5ÃÕÅg‚ÓCƒ¾!0 ©Í˜óO­ëy4@ï†–_Z²¹vüçQ3újã~P-÷×„ïÚÉ âWŒÉœ‘§çÉrñ¸bj1ýøÍ[xÀÚ&·‰÷Ás/>oA^kšçÎéb¶–,ÊÂ‡¢|#kÖ?üçóUõÎÝßEÃ‘lÑ5v¤³á(%á¾öðã¾lp/Ýªd¾ä}oÓºq?ºäƒF ã­w-ô\ÿø¿,&ºSóøÃë÷úˆúB¹æÇiÈÇ·†õÈÈÍ"DÕý¤ßñ,#crmg¯dÜæÞAS0w±Héë0ŠªÌù¶fžßþ¾/¿ß.>'#ÀïjnžµL(x8ÝRƒ‚Ö¼¿FÃ‰´†=CÌº€î£#çÜûR$Ø…¦mL˜Í^‡WëžÅÎ¨ÞEsuøÕ8ÖyÑ —Ô„ Rª‡æ>KlH1vœk&àÑ•Î¿%=åiT,v*hÎôìQ—f‘´°âàŠ€ƒWÊã$	º#ßºp$ð_Ó!Õn ?þ%ë¥–Ug¢>dýåòz*´2(Sƒäç\À}MxÓ$WøÕ‘ß.Ù-r—ÁÃp4å§pãéY\
+SN®¦!)VüEÖ:à"1}j9“C/*Z žŽ2|i¥Z–?%ÒƒxtÜÑU¤|épú±­VÓå ‰à®z÷†\ó†þ<ú1ˆAQÐïµ õñ=8sKR£ ;ðCµ?½Y<4Ê;tªzlàÚóàì>(JƒE{ßV’]û†ã"1³áxhÝÆ#R«Ëd[Ñhs^ž/.xŸÕ}Ë8ø\W¬ÈìI™þ4K’%>ÑU`¿¾ïÊŽ¤ªµ\jishÛ~=W:AÜ¯¨çI&)#Î#Îs¿ö¤Ê?a_íõ-ÓZŠ1ðÄ??;æÇU±S„›Ä¾'F»®NôMçÂ‰d,~eˆ¯ø<0Í€$¡Ï€A…êHÍŽLBók%2KâÀS:ë¹ü“TfO~+!„ôäßikWü«kñÈLøæËÞ	ëþ‰žÍ§ƒä^ÿ¤æ`s•¼äðè&Ü%+_T››éÚ
+”A¨w‚X|KÙ¥f05îç´†-m¸äA8¢$S6ÅË§§¶û¶Ôã|l)Y|&Pñ/H£YkKç7ÞS
+V¿¢!Cr²ÒÚoŸ r(vO3…¼i$Æg€å4àÌÊô´æeéI^b8ƒ	U-žËÊb/­tÑOòF&‹0ö;nì¤ðj•d{‡m(X­„°!ÝFÄuÁ ¦fýU%ñ3ª;FV{»,ÔËs¸:íŒ ÄÌûÅª®k§Öuý÷ßÿüwpN÷½\ÇþûnÝ?šâï¿†¿þùïk™ïÿ¨š¾ÿû¯cíÿõ_æÿù×?Î¦Ø¿ÿCÐÿøëß²©¿û¾û3ÏŸáï¢¬¶ÿ>¼†ÿ_ãÿÛäñgÎÿ|?üLð/%ýçûÿø¿þú¯\ÿ5Ãý_/ö5·jZ‡¿ÿú—}º—ÿúoðÿú·÷¨ÿœÚö«ÿù¿ËqÕ{S 
 PACKAGER_GZIP;
-\Packager_Php_Wrapper::$Contents[23]=<<<'PACKAGER_GZIP'
-‹      ÍY[o£F~GÚÿ@UI* `Çq‚µ»YUíÃ¾´}hUõa€ÁFã8YËÿ½g˜xÀY‡TU·kfæÜæœï\`¯~0¯J†X^…ey“œ•<™?\}0~âK;F!ÞÊ§,I_üó//4AÑox¹N=_”4ô×4½8wœ+ø#ÅU¢®²Štƒƒ‚’ÖÂ¦‚Ý†%'u0aç—ãÉúñ,Áqò|~iÆ„fˆ]œã,ÀQ„#›8g/>¿´Œ·ëÚ8V´ˆå‚Så2ºÆã]>-ÏÚQÜk‚3DðN–+æçü$[%{I±ÜÙäwœ%ŸHŠøà":aï†‘e£ä@ò˜(9¾‡IË!œpÞoFÉ[2:þ3d¼*Þ=h8	ŒÆU»ã 4múÍŠe©èe›!ºLrß]ôë#¬Rëœ>a†¬å%`˜&ñ"Mrl¯„-ž3Ã™4&ùŠ}ïºx^(|\R²Î#ÿìîînç„)Ft[ýÖ³ÕÎÉPÉ0µC`D Žn7IÄVþÌu_8…g­1gðdò§]’kˆ~f6˜ñ¸UT1
-&ˆ‚¡¦pÅEQ’/}w‡¬.ïPÛIJ¨6uç®»¨x"
-®%9x<ÇRD‘1’ùXX’4‰Ìš)\Ód$Éáª;ä¯È¦òc®KøE!Kžp×,IÖÝLÝ]!b+­ýüqâ}ê7Lœƒ%OI™0Õ|ó‡ÏîdÚÏ'Îw‘feÁßô÷ÜŒ¬în¾†d¦‡û*Ëhøg[ÇäÂëñxwá#‚Ò€ jPÌ`×]ð´yL˜-M¦(JÖ¥?f;#_µÛ¥n—è6yªh4¤Ïv¹BÙøI^bfrçñÿ'¸6¿¤I—ºp­ê?g>»¬-=‰³<‘‘œÈW»äÞS˜ b $ ‘¬LfºÇ±& Š2×tMoÖ~³—m"g…Qd,ßÆ)AÌ§¼¤5çÆÊ«K%7ÒpMn„©-›¢Ïîq<Ï (‚—¦8äEÃ†ŒËJYç<×ý^{n²•eèm«¼Gi²ÌýÇ¬)n Ì˜õ(Nu¯^±âX^ûA/-Ä¼žõ‹çª<±£h°•ZÃÏæaÄK‘,Lä®h»YÁ£?äpCQ±s0¥„nf×xýÑ:4—¬³CGJëÈW¸¤4Ràt%e‘¢?HIø¨ž›Õ¹†æQ’W=´¢]DÌb-±ÁÊpî”8¶jíXßÍ´´Å}È.{Ó¾Tï}«¬Š2¨q[:ªR.LÔ6Í­âÍ*;yœÞüÜ7Œ6ç­¸œŒ±“ü¾¯Ië›«yZÍ	-¢AÓ9ùâ0z5³©oÏƒ$¢Wƒ4²s·{®k~—d¡åL±‚€õrÞšx{ë]£*HU´º¾!UÒ¨%MzDÆ†»B!WìèÚtmGÝ¦£9ð›Žè¸ã4ƒ°L¦zKKþš<5Z3€òV9-*ueí´×Ï‰2rSo?Ú4s©ÍH¡¬êÛtfG­\5DšZ¨½b÷N¢(¨ó¼°²)È¶€Dk´Þ&ZbÍa’-¥ÇK§Èáõ¥¶Æi§ëþây·nvDqpUu©•_Ÿ—&'NRpMi6W’õÝ¶-ÙîNçqÿF.Å)âàêÑ²KHÓšÅ›ºißT­¿m]­µÞm«ïÜXf%Gÿµ½™P;Rkhvª,Hø©9#È²ŒÏ?8» üUüâr«ZÔ¨Üés¢Ö Ìí¼£´p4­çúžÏVC/˜¼T@/Ûø«$Špþ?±â[ý«Ê¯³âG–F¹5P.d­ƒ2Èo_©rR›½¤çÛÞ4Q©Dtû¡ëM®9ÎTi\{¯²±G¥=õô2Dhµj6ëJ¬<mCß¦íÓy»Š©ö‰ü–¦»µ†jÐwÓ>=UF
-º
-Ðk¼tÇíÍ+÷ú\Gûª0L¼¹¢7H×¸ïæ“ëÛå1ÙÓù¤ÃÑ‰@µ5èîÉüN+¢í‚½œc&]»ÓŽ¼·€nÊ‡´#Ò4WþVÌM¯½5oÃÜõôú¸Ü>ŸŒ¸ë%ñÛÞ‘e²^Õ3áÀÜbö•Ný$·…Åð%?*ð®hÚõŒ³Ùºu]K»Ùlt);{â;Ð»+‘_ªÞÿ2åûë ï¯B|ðzg5»îèÐFäWÂß·§qÁí-³_P²L"ÿóŸ¿òqüùêêKRR’˜9+J2tñÀ¹ï%÷¥qœï3%…¸ý‰ã?ï]~þº·=KåZ"oŸð=ÿ÷ËVxKv¹îM€n-ífÛÅ
-egïhv£äxvt™ÁìGÇ`v£âhv¡æ0»T@ö&WÅ|wjr	îQ’KÞ¬'¹Ä -_÷ÍHŒ9ÊÙ‰	†ÝÝ'7ÛQP(;{Gp%Çp¤Ë&à8:pGp5=íí ´º4í ·7[+M'·BÁ=J¶J7¼"[-Í=ûúÙd~ð6­xF›ñÇÆê›™÷šÈ^5ýÄÇ4Ï½ÞwbåGã¥^ª^¿Ývß{E¼Î]ÿ)°WQË'  
-PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[23]=<<<'PACKAGER_BIN'
+‰PNG
+
+   IHDR   
+  ð   úýòl   gAMA  ±üa   sRGB ®Îé   -PLTE   þþþ’—­G…ÿ;¸ÿÿÿGRvÿÿÿ.G‹M»ÿÿÿÈËØTVaëïøž½üAùL   tRNS þþþý7±ÀŽdÂf   ìIDATXÃí—-Â@Fg¡!@­¨âGÔªº5xÒC ÇHð\„µ…„`Á IHa¾ôÅ|O¼N'«V¼dÅ	hÝáÞ5†“i'‡‡Õ|
+u¯ÿ";ß-„BjãÛ«Žõ'˜£WAšÅpú*à<¬æLSäèU“½"„ü…´E‡Zu{™¨—‰z}‡eèaé›Ý#´Ü­x}„º{µ³^ÍÐ«}ª^¤êÍvoX†f™Ý“½"„Ôüüf'2—‘µ?«ýóû‰9Ã=^!¤v"e Ñ¯Nå¾Mê{Ø¥J•èâ­³4})«´P    IEND®B`‚
+PACKAGER_BIN;
 \Packager_Php_Wrapper::$Contents[24]=<<<'PACKAGER_GZIP'
-‹      ­[ësÛ¶–ÿÞ™þ2¦k“LËm·÷–«ë8I“4¯iÒ6­¬ÛI¢M‰^’òceýï{ÎÀ—h7Ý¹_D ƒÎÐÑ£ÑQY‰*ÎË£,Ê£0eé,Ó•s^Ž}ùÅ•(F§XéÇëUX¥ùÊÊì)„eo°Kà'°D‘¬—rU•¶—Æ+«"]%Ì÷«ÛK™Ç£`6™Û…¬Ö|è”¾óãÇ“ÉUR-¦Áìxîn¶¶‡£åª™ÑäêfÂÎ[±”å¥åÜgL×=_gÙ
-ê¡JuöôÁ©X¯"§+±=CHæPGC‹~õžëU9—E^åØ×	ÒUtwgÝÓÒ`"Z˜D€‰9qÄåevkU‹´¥+ {"ák\Ác'ÌW¡¨,é„"ËZÚö¶1„i-¦–bÖ‚ÙÕ¢È¯G+y=úµÏŠ"/,vÑ£ÃÑõBT# ¨*naƒFU>
-ä(È)¬]åÕ‰A&xÜ^éÏæN™¥¡ä±ß'•Û<ñ‘šéö÷­°yó»¶µÚôÐì[, œÓœðªJó£¬h‡~I#—µ^‡——VÓØzgüåj!‹´’ÐTvSÉT©'ãH\¦žŒÓÔÅ:¬òÂe­Æ‘ÿ\†¿ªL¼¨*¨È¸áF—™ãLIsM—2‹á~¿Àè2õd[³vœ¶ï‰\ˆ«4_þ†6öeü6¯žãf¹þæhUó§9¼,`WÝ¯i ÔG¹¼ÌD%}F¾™l´¶ j:6Õ}Bƒ	õHý	üfôÓoÒRÂÏœPœ@ŒGð–åÀáÐAï/ËƒsV^ûû{ ð«× ¥ûû‡Ç…³.eq’ p¬¼y¼ï¼}ö‘Ùûû;ŸGP'€{+7ÈÄê"gQÈªššKQ-p7¦{wïxk‹­Ë*_¦ÿ+?Ü®*qÓ¬$PK‰@ww°ò
-kBâQ`G~0çÐ™Eso%~dXXlw‡·Z<³ FÜç63[­—,ZŠt¸“ÎTOIÅµ¾äQ­„HÕò×ac_‘'·È±‰Ì
-aiNy™¥ Îlrég ôñH+j/~œxñØ?¶7¡Íâ9jû=‹°‘¶½·‰ïƒµbÒ
-‰˜qtÀÆÁ˜Œ¢\–«ƒj$oÒ²Úcd2ŽõgÐÀÙ^PHq±ÝJ_º[½IØBK%wwÌo­*y8`˜ô,Àu‘1‘:å"+à‹ÐY¯T9²È Ÿ¬ˆÔ§ÖèmB³ì^sJGéƒ*Ì/-°dÀÌø@½€jêâñ…·@Pc?œ-æ<F80>	 Ò‡J‹Ä‘SåÈ¼ÂZ6ÛúTn«©%™ZôfJxF´sŠ6&[qPÈqßÄ†Îyž®hº±±µ&™Á[ŒPä}(Úö«fÆhDSÀ»co•¡ÁY”^æ±oè¥c±¥ú=¬A
- ¢øÝ:ç"¼T‚œ$Ýlù"r>KæÓ¥¯K–íZKh	[¤«vñ-·¶íeª›÷É‹7VÈ¾D9ÛŸ`‘4*àFû!<.ð¡©ÅJÄ_96™dÍÚdê/[4€d…8pÜÒF!RtÒÙ`ßMxËÆ¢”DÀYYã®]©¯ˆOà›kX4Ó›Ò²#C€s<m¤i`;"XÞZâåFøÝUËÉÒl:®PcF"Cow(o@‘W˜j§ç2/ËœtˆÐÅ‰rd¦á£´:€n2”e)Š[êC:¨öëF×iµ€ª8]ÈÛë¼ˆÀ¯} GaoF(\Ü²o<ÑóíÛl§ð¥ÅÐ$ƒØ¤ÈA)¨ŠÆÑ…Šë¡±,üÎp—õ‡{³Ã.µ8KtGq†ØW, äuÎÁ* ÿ‚Þi¸’clyz	ˆWÏñ“@ÄÚjÕò„vzb#e¯Û-¤rßÞÃÉ õ•Ñ!Y:QêY’fµ÷&{hB’:ö'øÔÒ)×‚5ŸèF¡óQ¿ñvK”´’® a“D,,‰§‰•7Iúslo‘öuv5F#AÊ" ÌW”%ðuÛé¯¥¨s"@=ðý¤½€)l¿…Ä$sšÅÎO½ÅÊtýÔÓ×Êluu©¬Õlío8	¸=^‹É»G¤°{Zð(ÈÃí©{Oà×'ÐË€ÌHHíÄ{èw ²$#ÅH•Žç*~|Õè« ÷gr`‚6‡¿zp&²,÷™cÍx=4.Ê1º ã²ç‡]gè}‘^¡öXÊj‘G¤oÜÚ7BmùµŒFq‘/µX±’7õ»  ]Q“Fã.§ƒˆ¼¯]&-2!ù¹ÚÇ­Å#Dñ² Ô ƒü½v58Å$T‚…ãÄO™­-ô²!$Þ±J	Z%¤®‘=#"d2AˆµmKÝ‡äÙ¶kæ!+	?KÄŒh:?Ëª1Fxž.4Qg5…€LÛ5Òqi‚Í1¼XKÜôArµúôÁM¥¢
-.U-ñ¸œœé/P»µUü†|S+	<'tÅÎÑï^´XÏEë5žÛn¯y×gÎÂRLl˜²R%dŒÕão0[/ô»##ÖÒ®ù“-Ód"ŒÜ2À^ õ¨ÜâÏïµÀF!Ó"/ †WŽúhwu¼ý­&{tŒ`ðCû˜Ðfm~–ŠŸ,V|tw§Œ-X,| ­/`¡Rúâs 5Z¸Aóïa¨mðâAÅot»VþdP@¹\€<´…!£À÷B)vö6)èÛî*ð¼!¤¶Àþ¤¶!Š Eô»–P±tÖÎšDž½3‘6HnDÃGh=î™Ü„32ÆP²:˜»:ËÔqÑdã ²óÛš«›¹§³}g‚ë¿K/•«(nSt(Ð-É›ôñþ¾pÞQÒØžšl¥^(UºýJâ»wîý	ª¡4²ÐB­&®>)
-q;‡.ïè½•z5A¹ž]ÀìÝô³/¶Ýdµ™f™Gë&QOGÞ\æEUN“,DF–Þö¾üâË/ŽvÓùâ\Üô³ù'çíLxòÖ8±Š@ÒK£b€‹—ëÃ,Š &Å‚D÷
-ú3 W¬³ê…}Ì>þ,ÿg-KðÑƒ€ˆ¹ìÓ2{QU—ºžqL©›T‡˜¬†vD$U)Â£›ÃëëëC `y¸.`cÃ<0ôdçe¾º<Ì^¼…€ ?Ô¯LuÂg¯ÚÝtýK¢
-ju¯sÑÍÞw0ÐœËu¹€F³QØGS’¯>(lD£÷à('ëcìŽ@îä#Ð~=0B"«~à((*ÃÖÆç/ßòžµLˆ~l=*„ÒÿÉaŽÇÌàYóÔp–ÞvJ"­"ý‰JÀCï”Èò<Šq1[Þ®BœÂrR«õZê`uc„x×ä4 >™³-/›>‚ƒZCƒqmÜŠ£(}t*´úB=¦NPhx¦÷À‡0o¡ÊDˆu•§Ñ£ÄhÊ˜Ù ^^C´PœŠ¢sI¬«\FKõe=‚^²Ÿ4ÐÚý–öiÜ!Ì—ÇªW!KuPîÞ1GÝÍV ÎœX¥mõöbÕ–¯ÝöV)
-ü½½(iƒQÀH¾qn³PŠ –MjÎù#8bË?ôÃOAŸðÀ¯GU¹™g™Ä7‹•a‘^VLåƒßRò?õ:ÞPêa<¦s­CÆÐ@›V)›w,pÞkÓÌîÑKsµ†7–=fƒá2J16<ËËYTÀJÁº’@]b"¸ 	»&òà÷8¢ªD¸xvEkÈW°¦èU¼A¾‰--Û†…‡8²¨N¢sB÷zåJ•=Ãc®À¶]«?7m=èdõÄäŒˆ"šñu
-J|%!V%Ò“ñ½‰šäLýé"Í" Ä¨–,ÂUÂ—FPµåhmæ›q…W -¶[þ~—?£ÛïM{áí¡…äëëÉ„#çQbæ4BÅkNÒß?9ùò^ö®htÓbZwñ¤dð:]Eùµ#¡"K8´3ßIôrýX~oÝ.=GÚòç•«”Q¹4Ë](HÁÌþ#ZDR˜|™_Éáp÷zÆÈMT
-Æ5¨ô#þÛÄ6oc«)RÞß[°äš8Å4ªµ^)‰•Aâ”~s#™ÉJŽÚM[þ±›h)C1%sEOz-lŸ¢TKiD_)AÕá•áS †V·DoéÊ`h&¦óµ)üŠzßîêÂ_Úè´.QÀ:¾õA¦6ÚßœŸÑKlHç˜. <Sx~†n°]ê·#ÎC]·üç¬¢Çîe˜ëC|¿]—§°¡>Õb(@UÞñ÷ß?nZ÷÷¿™L~hÞ§–êþ¨UzÚËÅ­kuR-Wx £Š:8ÖŸÏêRâë|z˜£4Ê‡qGlÜÚžoËíØf“´Q›ê!/… )W¡¼¨Úß×u ¾üÅ°qDGSSKø³¾îâ°‡Äj®Š&ª¤ÐæF<02)›ËtÿGySíŒ«Gò—³(7q`&jnÔ¬ú·öª•—Ñ²×ûûTüÝÈÀ'T	ŸîŠþ®½ÿ1¿YfípiU·Juþ
-;cV´K‡µk.ºHõúû=„¾3Ë!ßKMæÑ5…úrÂ¹¸ÆÇ¸»ëµá"íikªq»½hu^TÓë…¨ØfuªUmùÅ[Ünv  ÿØäPbbc­ãÚèØ¶ÙõB[ÑÂEm¤X·ü«]Ì6[°¤Jup#U]ìñŽÁÓwoÀS—ÅCb#¤/âw‰ŸùRyßVÈ»1#"@â€#Î	Ðs%?©ÜboÒ°ÈË<®œOo^Ã´Ì6Þ>*”éÐ®CW0Ü÷‚ k$€ðîÆygÉ~kûŽÀùƒ`q"}XŒkÿiîíëûƒµŸ5*â¶º±to:—êO€ô;Ñµ‹.cäLxÐ!çÕ9íý±7%lÀ×î‹ß;ß9p'{•ßTbE{k¨ŽRG½6)Ûìl·Ú“Y)GÍÅ•	Ý²Ð×)¢ÇÒ‹ð:²×0gàå[oh¡X³ä@Ü·\»&nÔND7Â#:ªˆÔA
-æÉ*M²Þµˆ8wÓ+´±ýÅ¾ŠNþtÀ]dSfdµzDq€Ú}¼gà÷6¼1nVh:úcDç)ø\/ó#Â£?òkT1ÜdûÌ®-‰Žƒ1¸Í—-Ö9½FœwðŠ¨¨ð=í|¼úðîíÝ}õ“Õq§œP y	ïÛ+2´?›cðmVzu¢ZØòî¤úè"Íê(âÒøÖ¢«.]*0) ‹Î±1­"ÇÌgã°¦-Ð·föQ-ÿÔ&®µ$ÿ^GÐ¤6'?€;;ØÑÍMPvt¶:á1_ð/ñfììììf29<»9ŽÏnþCáûx~”ã›yåuŠ<^c¼	ön}Wµ¦
-¦ì`,êk0ÏÛ…3¡ÕlW@g®àNèmTõNeë	¬â¨Nœå ~ptüÝà/c+ø¯~ÝÖ.Ñ‚%hÖ7áÍiùoTH¤Z
-¬ÈÐaêƒ Ï3)ÀÚêÏ¡Á|\ zjNp1umØPÔ»oÒä«÷²Á25à*Á¾Ì£æö^óÉXï	Ì.]BÜ~û²|e·n-¦:€UÛà‰š¹vàá¥Ëøñ…º~—(„yñSbÞ‡®ÁŸ±q¢¹‘3›n|Õb¾ÔóÎ èx#š†l ×Ê|œl“RÏ¿€±]6ÎìF%/”ˆý?‡ÑôozôoÙv‹zª“Wï‹S[E€ºûåã)+ü.EÙ˜C(«ÕöìçŽÚp*ØÊ1ûØkx‘¯‹’ZÜþpéjr4ØöA†ù*Rm°­§ÂŽ; ëürvVQ“äg+*®°S1ÆbAEˆåI:ÎÎØTžQ%<Ì¡Â¦Ö]nÀÉ}ê…<­»yÂœ[Ç|I¿ÚwlëCtâ™X¾ïn,Dùîzõ^³r}ñ
-za·—~hÅÏÙm®bõ=ß_âUE<_6ÎF@´¨«EHÉÑ¿ggsîn¶gåüÑWGZAÕšéèìÌ9J8û³›:6û7B±:+æØ]U¬å],€)ïP2î§gÑØšºgÎYôÈžBi&ŸÍgã³Ã9¶ØSoÞºüûÎ½ã6~U>:›Ùcì¢iÄ>öå•È,fÁv™¶qHYÓS*±MÙTs]_ÝÖ!,ír3ÞÛnÑ¸½í$´§#š4gG·®ŒŽ«/‰7ˆËiÑeÐí6rùzµœ¡_Ãö ez•»„íµÍûõN²çÜ$Uw³¹3¤tîªpX Oóä¯ü¬–gî™t2xŠ NÂDA+ Æé®†¦ågÒ{òpÐ^gÚ†FëeÔT€ÃÿE	µ˜þü~)ÖWò"¿süƒvZ»)¤ïcÉî5où8ñ$š¼d5|	.Ä”H+k€‰‘w1ÒÎ—ÞÓ°ë²Ö„pý‘„›ãxþQ¦ÌñÔª±¦u5m‰¥ŽY`x×m·†3ÐÆ]Èajl	/0Åñæž=n<¿Öù•
-™þÉ‘>üïÜsûFàêÃX:õÕ7÷­ÕvÀ7úÏ(sÀ%`[×Iî;}xï˜¯@tþÆÒçûNçÖŸwÐ"uô:OµØ­:óO+‘Å{@ *A%ó~Ï]²ŒŸ¯d÷r‰whÉã4“ôŽäaž©Yô]ÎÞ„šoòÕØµóò¤0]ŠìW‘­¥…Ã×øçÁXoM7þ·ZM¦«½˜Y¿fnïùõYØAsíˆ·Egó¹Cùz­ê–æ6ºÆý¬5éÎ6_éç}aþmCÿ±	ãÏûà£ípÍž¬—+·ÙI>\•'¤òô³Fm}`»< ÓWÊâóHªÿGÔü!Èæx‹/¸M«©j[tu0Å;“EŽ—˜üò¶¬är_úçå!ÑV‚†8àêÌ×=À\ï:ÝÄŸmr‚+RE!NÂØóaú‘HW—ëJñ6á_3©jâ;•þÁäøëo¾ýïïþñÏïOžœ>}öü€çë
-:ø ÝM­¨ñoXéc3’Ñ×éxlonüººŽ¥¶§Æû4µA½uóÃ?|kïOn&Ïíq§éFUzÛ/4 j €ÀöþFkâå::  
+‹      Í—msšZÇßßOAÉÜ™&M\$jªv@56j"¦¦ÓÈÃh £¶s¿û= Æ‡ ÒæÞ™àŒz–=ûßýír‹_f®C<~`¼Ig(’BÕÓUgä%Ò‘Ä—ò_Åb«Òí·%"xFD[šõ
+A^ Ü³ ±+w=™ 34€tC¤†ã+€étš™²™‘@öÕ±ek`Gˆñ&ÀÁh:£‡:‰%¢ÈS[-œEýM–a#+\­6r¤Igí¥†¢¨(îÒåjæØÞ0É‘.
+ßÅ[êØ¸ðO7|ÛC%#×}[kû†fGºd¹¨fP.áÜ1ÊpVüð½"ò]þûd\ê—i;ÎÕ	ÿüOÆ¥—KÓ4ñR[-5],,ÌÒr©ªÌÂÂ.-½"Kv3ÏÅqàìÇòa‘A§n¨>æªÛ†¶ŽÓöqÙt‰ÄMœ1ñÇ|±šãMFÉÆÄÈ4s¨F†mäŒüybrfÎ4IvØrÕT6´Ø¶)]5Æéh.–Då"fš£¸c.nÞ.ÃŽ7µÇ›ù-×ùÊúª˜#ß-‘ñWGÔùsz(“>ËW®³ƒÒÌ9µÌ	"r›üþC|ì\ÔÀªáÿö·\Ž »¿'$÷VÀ­U¸E€Í~êÍG0s/˜wÓ¤U8
+KVðS+¼ÔpX
+i­¥`q¸""Z–È‰ï|<ÑÜÓ•lt.­È?=6>Q·#îä¯íÁWC¥-ÏÔ"6óø$H«°9žûöÛ­xÙ7ÄK:	é7Ä£O“[â&µd»“+©Ä–Ìâ)7DÌçý
+ìÆ(ïÛsä4ÜmÉÆc’â-ú“xôæi½Õ'Œzb»*26éçÜ7Ì©«¡z{ÁØCŸj`\fÏížÐºR×2ñøº¹S,IAÑW%z«
+üWü!@§û|YºŠÄóM¹]™%tb·ŸÊP¯ð×¹V­5ŒEš)·†èCA4 ¾Ú4¸O6Ú.°÷søä/5ñ¾ß–Ù8´^m´9=$ÇÔ$Gêô:uš¹AU¡‡†’5ë|SqùºÒ}@RUš`·oÕé5÷ Ó”1Ã4nNò‡„P©”ŒÌß@–êø~/\½®ÃLk4LD”å-Ì6ŸÓc®*@žµa.„À!äš×0½|ìSõ5g&÷”kt¸mÎ­¾ty©9®!IžÞea®ÜñÆ‰ñA{Úºç8Éói9;ƒ5çT?bï…ópÍ_yÿ61þ„YËÑ‹p˜1ˆ4Ì
+sÈ™m`Ý	P½
+õOd,+/³\¯öˆoÕ&Òä'm(‹õy…G¼óÈß„ÍžPPê9$ÌqªŸðwCºÿŠtk9ÑsaSÎ=và²’Ë‹ÊšlÖSÐ¤mïí|µªˆ—k=^’–„aUß¿AÊÓÏäšÜèïgù_ƒéôY  
 PACKAGER_GZIP;
 \Packager_Php_Wrapper::$Contents[25]=<<<'PACKAGER_GZIP'
-‹      A
-ƒ0E÷…ÞÁ®’ˆ${Å•mWí!ÄLèˆL$3ÁñîU·ÿ}ÞseáXzÁÁìž)’Ø‘‹Ò]/ÝÔ3Û;$ÐêDªZ_òõ;ú<AÕEbIy˜êiŒ¤Í*d;÷	H´i0hùÍƒ~!‹¹µ*“?µ^‚¥8æý·m¦Y|\l8jíÁÎîÿ}Ûc©   
+‹      ÍWkSâJý~E6Ö­ZE™<@D­$„ˆ (ní‡L†Hšoí¿3ä±AØõÞ*Id:gútŸîi ðmê:ÔBÛ÷Š4›fh*ŒtÏÔßƒEÚóiê[é¯Â—rSêö[2¾ ª¥‰7U‰¢Ï ¸ã% ÊÝ2Õé)›foiŠFÑÓ% “É$=áÓ~€€èOCÛÄ› vÆ²i32iLA<Ol3â0æošB£åj-F–¦pÔ^XLàá†!~Ë©c{£$ ›ÏçAüg<ÔŸàY =¶‡Š4‚¾£À6Z4lÂK—
+&´ÂR!Œf,“Â—ïRYè
+ßO@Úeþ±lÇ¹<ÂäW?Ó.»XZ–…—Ær	9ÈCX¸…EÏè#K,üÃ‹X2KŽÍ]äÏ¯~‚“?J'  æpèP°®¦½ˆ²Mv€Óf‹4.â”‹?fóÕ¯Xšï?Q¾e…ëJT%†3Ãwü HY&¹h
+lçØ€ÎÃŒ¡`3RÁÕÃQŽábJT*`#ÊpôWÌÅÅ{§Ê`Íì@s¿-mQ {¡ån‘Žo=‚_™Ó3îø=ÜáQþ¾K}Æ2sj€uD¹uýþCùø@÷äÀ¿—Ãÿ×üoA÷¶ ¿;'¢wf]±dç¶6oÞ#söMæíð‡2ì!›ÌÌð–ÃûT8Âµ¢óáŠ(²,ÒãÀùzd¸ÇKZ2	VïkRÃMOÇ[ñ;[ð—¦2óãàD›Y<	eXoÏ]{ö´í†¿Ìü%MBöþØãä’¸I%Ù¬ä’*±$ÓøÁHÓ„á¼›_kå]{öLÃí’ü¡?.Éß"¡?ñÇ®Oë’8©‰íê®éµs@«H›z¤_Æ(ðä¡«ÂóÌ©Ý›í	SW/à×mGÊ"·y«ˆBˆ@í¾Üƒ¨˜bW“áFiI`:ÕöªLI¨çš×Í1t4yªµñO¿¼ HÝ»¹z'˜êÏ¯³èq½KÕ9vgVjMEN)1«";²ÚS«,w‹4§†´këWÄvEÕ
+j?
+býEøƒVªFð‚ìTº£ÎXu%‰NR'XSç IýY$nJØ?c	ï+g\F™Æ úz>{½Ü¼¦ÌçS_ëAO]ÉÊåžs55{gÞdUWDzFë‹å†0®ª¡/(ÍŒd•­üc;.®_¯Ù®g¥~µZL”Õ¬d=èëé³È
+7eÅR^÷.\K»Îù–Üs©èþ>£sÌŒµœìÀO”TÑ–’6ªr¯†„æu½&hŠt×(‹£QPØGug¬Î`3Ž[¬µµ¬Œj¡b²¬Á ¡[úNþ4¯Ž¾	¬L‹ÌãžõRŠožm¶SÑh%hÆÓÐ¸eoý†Z©<`Aª¨><¶'šRëhŠ ^78¨>ˆ`¸ëè“¿¥¨<ÊF  
 PACKAGER_GZIP;
 \Packager_Php_Wrapper::$Contents[26]=<<<'PACKAGER_GZIP'
-‹      A
-ƒ0E÷…ÞÁ®’ˆ${Å•mWí!ÄLèˆL$3ÁñîU·ÿ}ÞseáXzÁÁìž)’Ø‘‹Ò]/ÝÔ3Û;$ÐêDªZ_òõ;ú<AÕEbIy˜êiŒ¤Í*d;÷	H´i0hùÍƒ~!‹¹µ*“?µ^‚¥8æý·m¦Y|\l8jíÁÎîÿ}Ûc©   
+‹      ÍWisÚHý¾¿B‘k«‚F‡I‚ƒH„À`FœÊ¡cÑáH
+ÞÚÿ¾3Â`ado¶²ªM¯ûõ¼nµŠÚ—Ôs©…FNà4[fh*ŠußÔÝÀ·Úè/õ?jï}i8¹’©h¨«‘xÙ–(ú€1/Ð6(UkQl™@îÑ=‹ãÛ3 ’$)'|9h…úíÌ1"€€ ±ÀÁX¶lÆ&)HäÄ1ãÎ‚aþ¤©™å Yü`­¥ÈÒNÚ„Ža÷r–ºŽ?Ï²Õjd¿ÒõšiÙQ½ÅK×ªƒÃÚ»oRá·CPöØ¿lÇuÏlÛþüwÙcîMLƒMƒ}4ùŠ®“î~çÃ´jpøý{ýÔÀ*z3Zzˆå0Ë)ÇhâlYÆÒ§\v[®¬%¶Xš$ÜRmG–ƒˆA6NŒÀB>°x«jÛ4ØÂ­dÛ@êÓ©±B‚Í4ê5OæY2†‡	Q½ZFL®a™=¬øîÒ€-0³Ì½I-öâP÷#;=Î–®[ï™ã®ôB8®pŠÛH*}‘ø„;f2b€%D´ué~rü›‘ûÀ¿p€ÿ¬ôü+ûKÏï<€Ó;Ó¯<‘T2ÿ-ß°¨ï>…+
+o'7-J°WJ.AX˜àñ/3á£lRÕ D1úgè¾?0¼Ò-™|÷»(,íiR¿Í@¥­ô½—×Nä(…ñl†çŠâõ‰´ÃeO»æ¥û¦pÏŸÁþ‹pl)·^^16ÍSÞéÒŒ³ žÍðÏ&ñ.<)FšÛUO.{†_^ºoÇå„3Ø7‡c×FóF1Ü˜TÃñtd­?ÅkvhÙmê±~–¡À­>OõÈúpzìhb_I˜‹
+ ¾zêh&YŽÈWS„]|Á`¸“È÷$U´%x3=ÙÔÄ®& |‚==ÀŸðq-¥§Ä?–›’I°"¯¨C·Í£€\ÒlÙ·³Àn¢6Ý;¼¸”qT)m‹LÌÌÉí(rs$uÜ›ISI'¢ØS9q Þ]#£ÑC°%ÃsH•…kv7‹¦Ž´¾rQ‘&í¶«Z¸¦Z‘‘ý{¤=wó¤­†þâÓøÚ^íuü9„©ŒÑR-ŽTâ'ù›2“KNÇçñ+¤V›½ù¤ƒ*_'±/_ˆÈïàd v˜ ‘~0'Å¤v§ORyyýŸ¥FPT²¶4žÞü*©—M 8»Sà¹¸8ïKƒeWGsØþa4nÙ›U)ØÕÓœ®.ôÿ=¢·ŸŽ!u$z+á'×`MøY›Ä»¸:Ò2‰.<¸ëÚ“;†<»6’LtlF*4/M{‘õ¬®ŽQƒÎõ„“úL u9ÂqKvåV7ÐZø3MÔ‘a)U's;Ê¨"‡óBHxŸü™¬ÿUšc&  
 PACKAGER_GZIP;
 \Packager_Php_Wrapper::$Contents[27]=<<<'PACKAGER_GZIP'
-‹      uQËNÃ0¼Wê?¤½Ä.ÅkƒAPÊ‰Ç…â’uëÊ±+{Ý‡ÿŽ7TH ÕÛÚÙ™‹IV¬P×Å:: X‡lRsS… îAi,'$ŸvsgúX£ó3mÚYÆ»må3å|dãêØ‚E±\ k¸;¼VËçªM2Ô”ó)eÚµ¼˜ÙÓ…»ÄU©¯L©Ïä%ï¨üƒ½é÷R+FwQ“7RÚ6°Q,oÀ BÎ¯Ï,‘¬ÆV£ü5
-¼	ŸŸ»Är;ÛäŽ4Gµ³Jû–o=d³=ÜŒ9ï
-bãûÖ”EòÿÆK½ÍTe”_ýâåp0ò}ðÎž¸‡RÂ‹=‚mfO®‰¦'òÆ•bSùä!Oñ°§ýÉ<¦TH¶É¹…]FåÔGžŽOW4MÖÏMà7›#7ì	  
+‹      ÍWks¢Hý¾¿‚!µU“—Í#&cFœ¢&êjÆLÍÂ£!ò0Àfjÿûv“¸Qƒ‘ÉÎÖ,–B_Î½çö¹—KYÿ”ù5·¢Øf+MÅ‰˜º–@!ý©ñGýÜ—†“Ï
+Ïõy¯ÚEpÍK ÈC™ÒÆ-Š­° (=š¢$™¦i%å+a„@+ÒgŽkÄ b'€ƒ±lÅLLSÈ©k&Î‚aþ¤)Çr‘“,W+)²4…“b¡€‡c†Ä}‚œgžL‹€l­Vù]ºQ7-;nÔãdáYpP÷U’Å¡øõ T|ö‡ízÞùžmÛÿªøÌÓÓà¥±¼Ëë'ÜYnáž,º®[¶€ƒoß £×1£¥GXÓµ‚„rMFÎ–h,}Æå§ÅãjW,MgThÛ±…å bÃ±za$Ð{¶I>4ØÀ=Ê¶†´ò!H°žF£îëñ4OÆð1!jÔ#ËH(ÃÓc,³ß^°f¶€¹Ÿ@R‹¥-‰ô ¶ÃÈèüÒÓë=stÌí¿Ž+â&’Ê^%>æŽ˜œ`‰ mUº_§ÿfä®ð¯là?+=ÿÈÝ¥ç·nÀKè­éWŸIª¹ÿ†oTÖw—ÂÕ¥Â›ÉÝ–%Ø©@µ *MðÏ^gÂ[Y§ƒQd)Ðß#ïýžáï/iÉä{²¢hGãú­ÚßHßØÚ{EíD¶RÏæx®,ÞXH[\v´kQºo
+÷rðì¿ÇîÃ/*Æú Y2í.Ë9KâÙÿboÃ“bd…]õì²cø¥û†p\A8ƒ}s8ve4¯ÃKH5\_GÖêS¼òhG–-Ð¦žèç9
+ÌôñV­Ó“#wûjÊ\¶P(â£§e„Èåˆü4¡ØÅ'Ãù51ˆ|OÒÆƒ¶$ÞÝžŒ@ŽlŽaw¬| |8"þÊËëK0BÎ|–c!¯jC¯+š‡g€’³èÛy`/ÕšÞ¾¸R0RÊÚIØC;yUiŽ¤Žw7iªÙÂžÆÁöpƒ¹‡Ä–"^ PªÎÕdlwóhÚhÜW/«Ò¤ÝhªH¶hE¶23û÷h{ái{xÅ’äÜt‰mvÅŠ-ˆb‹ñ†'÷ÄO
+Öu&‡’]_$?¡µÖìM'Tý2‘a_¹„ÈPÄÉ v˜PÎŒ œ^§%µönŸµ.óúúkÍ|h>i}çJw¿Jë…¬¢‰U¼€ó‹¾4Xtu4Û÷†<cïÎj>S¶¯oúºÔ›ü÷¨Þ~9=˜šmÃ¬×"ÊËÎl°T¾SÒqÒÜÚ7¹òüKåÁC×ž8mr»c(Î‘æªãe¬‰æ•iÏó®Õµ‘
+Ç¢{3á¤þ¥/¦¢u5Š×­ñ°«´ºá¸5¿g©62,µææ.°£ŽªJ4í „„gõÉÊÆßz~û«*  
 PACKAGER_GZIP;
 \Packager_Php_Wrapper::$Contents[28]=<<<'PACKAGER_GZIP'
+‹      ¤¼×®óê–¦wî«X^†ØUÌ©\»Ì”ÅLž1çœyõæ¿»veÀ€'&¦Ä©äÆxÇó’’þý¿^}÷×‘/k=ÿøþWèï¿Ö-²¸‡üãßÿõ?þ—ÿ_yƒsBSøk=Ê¿L—U?Ü_ÿú(‚¼Ãÿe{Ò_ð¿Â (èÿõwµmÓ¿àyžÿz¢ÿ:.%(-ñTÕé
+¾Á?ßÀ÷`0ü¯Ù–ýýžâÏ‘Ï:Ûª·ô¿ÿýW•×eµý­ÿ[á¿ÿz;=¬ÿøOÎƒ@ôç¸ÿ½É¿]]=´ÿYC˜¦iðŸ¯¾®â)ÿ—%²|©‡ò—ùØçÛR§æ’§õŸóþýÿžåÅúÿþî‘ÇË;œ¬Î‡í¯:{[ÿéü¿ß©»>Üÿmë~·àwÏu§¿Æ¢Xów8óçÿ’ŽÝ¸üãïÿ*`¥ÿÿíþÛ°ÿ§–‚âõ§%ø?wã?ïòÿ«[0ç8òÿ¥[(‚e1òŸvkŠ·-_†ögúû¬/Aÿ×òþsã¿·s‡z{—u_óÅžâ47wÍßžÖ}\æÿï{WK^üãï,ÞâûgKpÊÿ#‰×œÀþKí±†uBŠTŽÌû£Ûn%¸åû¬ûóçrŒö>rß]jö?X)cW`U29ðªØßŸÿŠÛf£†l´Z©®p¹ÖŸ×„êk+û2c±TU¡/–˜Á×çªš ÞLõù¥2‹°eÈ‡ˆÞY®§ó?Hs„ËhFBºÖDG3Ô¡@Wìvèð<æÊQÍÑ”/ªp€ÆåO‡9†±]‹õä&¾dèÛÚø ·FŸîŒ<BûñcJÕ :ã¡uðghûA¶Öc´ëÉ“g:˜é+ÿ Ç1=º ùãw7DOÉ‰´P_p ÙŠmBÐ:Z|–Ú¦+0EÐ,‘`J@©ï›C	 Õ	º\ÀµÉpÇ¦p&þ<jÖG¿/1L×ÂÒO‹Òz‚†Í1Ææ
+Bj­˜`]­ø ø^Öêe©cJ®AiÐRŸÖ³uñ\³§±[]ÚXI$Í	Á4ô°O6`|±ó¬hñ•6SÔÔ¶. &Z	¡`ðš£Ëq~ûTAj«môÑ^×Í— #†üÅæ`ÌiÝwÐSÈË/|Ž„ækúTA):¢(Šú¢<ÕW‹q!gÄòr"ýMkdTì¾˜‹u´™?¶'az5¸ç;Bõ¡°Ü'…_öïàe/ XÄík²±°£Ç×'@$‹9*&°<@u±’e]ßj˜°»OSÇÁnq.K¾ªðy›p ¨Êvóû/òHsW@=†BºyB­Ò²iÐ<_;Ø…/µíÐ)01~Ããš¢9“1­ø&Í²€
+‹/M)Â%ì*: ¿ÚCNÎ´Òù7ö“Y#f`Ó=â¡ €ŸEgˆJ"aÀKO˜’Ý¢'ìVû€&´÷ÉJÔ÷ê2%`å¡2µ:ÅAŸ˜|ç©ZM
+˜›¯D,]X<=
+‡Ë·’®ãp¿åIÊŽ´Â¨Ö¾¹üˆ²ºxê$ç_CÁQMy|ê‘º1v¹EOÅöàl†·úÊêå•Ë9Ó/‹ÛC*¨EÆ­4ÃST¬»›‘Þ pDÇ¯¥£æ=åï®!ú½<dÖ¡Ò1›=?é ZÌkQàYYÅŠY0JvHÔº_G¥?%¡ì™si€‚®D”d«EdÐ—.;8ÆH\àHnÙàME>ø¹'>U(íÝhmAÖh÷J
+ã¹~OœXçà.i}±:tÈÀÔŽ­©¿&.ÇdŒSÏ|³^n¨òÕÿ&¬¦Â/‹)æ¨)=ºOp}iÈç3+Nœ]hseH¬ƒ;kÊ5RäbA ¿tIñ OéywFÏñiu&…LÉVr.~Ù|˜hºrÆL´>W;<Þ™ó*c‡ÚLx`³?Á}ðé²süaåïîNz^[èN	…öø 
+ÒÖž,Ã(L5` ›Â@•­~"»e€[Í{ùüÎ‡7(—Üú.±®ma4NŒs9ïLJ—(K«F`lÎF¯ìc}¬oùS˜aÛ>òbHÞP0’7l[~UßÔ” ï7¤«¹Oóò<9ÏXnNîº!Ó¤±vËM„Y—ç –ô;wsú!v`c%oõ2¾2s‘ì`œ¯´û¯=±íLÅÍê[ÌGuDVÖßÖÇÏRÝMÝ\ÿÑ7u‡Ú<}¹ÇC;“U/ÊèNºF8á>zž_tIs€]sƒÈQ™¶NqâcÃËªÚqÜð(ý£,›h|W£ÈœœÓ'ïk/]×z›'µÈBoRO¦C7®™›‘^öŽŽa×ÏfûjéûJW§1éj†æè?pYøìXñ}h†@¾”N'\éG&Žò­tÂà~Î¨|¿¯½yLDÇœmQ›¥ø•½³Ð²Z(±
+b8Þ›#QüÔ‘¯‚§|§;	­0‹ÌHdÂ6•>Æ’7ïy·Îð±ØÐYïÃ>\·ä§ª8|C)™øc¦ô´eì…©òbâï3(†—Þ’#ZÕbMrñn~.
+Ø@Z7VÞR”é8>Jd8?ütÝÄ,?N)Ž	Î,À.½«Ž£2Xÿ@?öù@´Ä)‹7}FyQª_2q–”1 òQ"ýBÉ¨û`À–@;'ô£j|zƒQÓk	v†	ÊkÚ-†Þ˜=—ie7Ã‰ò'ëŠ’ì“ö)HV6b@«£2¦„Ž×Á²¨¨àµ‡5P ÎØ¢*1Ÿ|äÌÈhc 4*f¤bÖÑ…ÏR?YÛ1Çäg$ÎÎ/@ô]@Š‡v>çWòÆRk]:æ]YJ O\ :Kp(ÿ—†9g<]*¦rbì$™¦Í
+Mß~ ¡Ø†g­³†™q+3“ºEþt=}ßñkDNè•\ŸÞVŸÁ…ÈD•H&ƒDq!£Ÿ%ÄCß_Û R~i’Ø˜‡^’àw;(ûå'(Å&î0˜69š¨Ê¶Fë5€©ì¤ž$—ðgÈxÔ”1Z1·ôñ²2|z69]yØîûéˆÞö(44@óÜ4ýæàÝn‚nå¾Ð½ßñÔçáäd°›lõ§®ß_<£é,Ä÷œ0•S©þ‘A©ÏZÌÇ/0ôÑ3vý{ºÖÔ2ÌÇß]L~F#*QŒ Cë~Ï?!êá´¯¸TØ80îÉô¢ÙIé_zú˜¢¡Ø»ïù\»'NF’N›žŸ'X/™Ò!D>ÝÎ6Œö¬K"2„ûÉžEðTæ…, 
+@ñ ÷°NyWSŒWËgÝ3Ü˜¨'„›IÐu!M Èv43^*>omACný8Û~rïL…/ªQWh!sð­LÁ±­â“Ülø"¿x0|"šk‡Tˆ£ñx°;kæíî*’FEB™ûÐÃÏ‰ßÖüüÈÔª+ójãÝâSEvèè“ßÈü›%I5ˆ^XBE”ësµáˆLyø@•¨Ã†Î² >"uNÈ.Ãê©ËOªÌìØÙj@¥Ÿ‡”ÿB»‰ë©£ßM_½4"Ø1oz,ßìÔ.iä8~¶8_^1Ô FEÐÌ¬³»ÜpE°¸õ]sÁGdùöÉ
+u¢k4ž°F[Q2hy–bÀXuè•¦LK·:Òƒ¥÷ÃËÜáß˜ q\®³£àòÏ­,ìÖhÀh<Ž&z:\ù+ÖFj×\—Ðæ¶Ê×ƒy¶áWõË‘I9ÞóCíª«øª¬µ±„Ù6ÇÆpPŸÙ³Ññ^Ô­Ü>R·-Ã.aªŸ—XcÎ¦+“`´jÖ6Û0èÉ~xre@bß6(~ÿ*Ù‹š^ýIÌq*mKëNÛ»dM¦G˜üo7p™Ê<ú#Òà…- ·Où3‹jzà0d›üÐZ$vf j¶§3˜vq¯móYÈ"ôê6±ôÊxÒ8ÌVwNÚIÙ&D3¹[†emÓéº‚FÃèÔOYý“V1 —‚^]ÎÙ˜Œ\ˆÜÄ®5éÙpª¶–íoë*åú½Ê¶ùh¤0ä÷ÑaVG{sÜD‰_ÛµVfü<¥úqÎ´Å>·ª©ˆgöíÕÃøÃ¨›øÝôi¶F£é¦ï!ºg·`†0+é¢70&ÈL“lˆ¹êlmr÷+Îò°W‰~ŒÞ¤¤… 1ª<‹n2eM@Ð§üBU¦KkÓÕ
+Q» ƒ%3u7¨„ Èüpw| éÀ ¢q ‘~#PºA%¯«öW¹³ ±õÖ!uhÜh§l‘[tñOÇ0¼‡¬†€"Ÿ^-!`ÂCG¹4õñë'¡Ññ’˜>ËŽx.ááâ¯ÄržQ9Ÿ K·œ-EDÚ{ŽÙÃà.{¬öµ³Œ…£4Žýlý êâÃ›üÎGØy¾=Íýî*^‡–}çþ|ú"5åöYïÕÅžöï¥dÕêÞ·y|À„˜“ìN XØð^œ§m4MhUô¼PÏ½‹8ç’2˜p»6³³MûÅð<ìø‹\¡¹¬ô5·¡9H—¬~† š„ÅÂWPÙ¡“íÙSOäÚn‘½ƒW–oŒqðø¸pƒkð–'/?]¦kó¾iÛ[ûá])û|¾Ì4•×ŠÚC¨d³Ù¤ôB\iè•µu²¼!Š'ÊuûE×<ö_Zj—åZxê!÷˜×Ù¼å4lM¦ƒtg"D“ª§f/]$Nªì-WnúÒÚ!ª¿Ë0¬«?${|ÅA	ÂÕ|¹æ²~¶yö·
+‰éRMrK@FÆb#Ã_2Í@˜Ä}^Ñ‰7¹Þ$³FDX‚ŠàÏ9eM¢r*²²´vafÚ34¶¥áØ  hi½æ¯íÖOÙmW© ×ŽëN;DvL¯f@ç2úÂQŸ~IÂÞ÷D’›_1kfìçÌÀMóµ¢p­hº;tíÇ	—…û*¾,quèÕzÌs¨¥“%'MXïÔ=aÔUÒ`%µ"dë>×oú“PÙ,yFÝ£·)ßTê¡	u]Í%7T” S‹Ë©×bÆ<$Í~¥B¿Ô…v¦íŸLí;é©+‡}Û’˜¬¢ xóôúŒHªEëé¿†­*ê3tâ“c;7›/|]“Ô6ÚÏ×€ßÛÈHh$k<»ý|«¼¶|SWœšU“'b?ÕÚ©Ù£V.õÛŠC,é+Ü¥]XX³n¿7èã¨=EÐË–ªyAo³O%ƒ10½sjj^¢ß™po –à%l	¸ãIï;Ñ0,bãÌ>ëè÷ìùÃO8÷0Ä²,äÓ´õ{›ÂpþŠTÁ•‡íÍn¯¼¡U“¶Ì%k1cð±¶”9]AI]:¨g¯}kû+¡q†ô!ñ{=îí•$sDš“«Ðˆ|B,®½2Ãpéˆ]æ%+—ü™ºfEŒ[A9»qVŽØ]£òŽüÜù–S¿£‚é»SgMèÃ³Åû–ª¦¦ÌÑÎ˜ ‹°¼kLz­Oé?ä<›œþEôOñ‰>ûTä_c*DÁ®¶¯]xŸÐM/ÒÔAs}Ù±&Šêq€tÁwö9ÝÎäH’¥	„OS4hA%©¬ù·O%(0Óó1’¿Yœøè‘©¬"©l©å}E|£0g9k‰éAØLºvÇî~8Í$‰o0Eß'Ûšßi¯¤®IÊÒyKlb¹+IùØÔ£†}‹ý‚çÁhyªköcxçÉNVÅ»µEs¤|ÅŸ,ØÓšáqæOý3¢r|ygãê¾"üÎEV·~yèSÑé2,¢$Å÷ôg­ß™õRWì0Ëºþ\b¼,½qCµü1 ô±VSV ‡¦Õ:MS>(DoÌ„K¿ªe"59òüü`µ™{·F®›9_E×d¿
+Â,ð`1ÌG²=#ë³_à@½Žo0ë‚‰ZÓõûz)Î¾q’î]+hŸgMµ–ÄŠÝÃ/†e¼,RC®5F¥ñ!t&+þúí ñk¾‹Â8sÔYAèÇ	?~ØªýqS®Ùô±›\•*ã®¹þ€†.s£ÚY¬±K‰Œu·4ŸðwaféSšé±òo^ÒŠŠTÑ‚æ05\ïq$,ÜU-Ã‘%)ÞÐ-ñ,hbÉ3ìYŒ[÷2ð^a³È‡¬ß¯¥%£
+¿0iu)mZ¶“×Å6"·G¼àqAÇïV‰x™Q{Òë[`Sj1˜@Zk1çÑãeí >üz†*&¿© µ+ý(·!xz;¢ñÍtŠ%ä¤MÛKÇ\WÚ@¤¨k¬¨øåÄ7© Âš-ÈSå™öü„sõ–¯äÓiëáºÅgÃ	Ãh¾@ohåY±g®…·”w:i\¿ÙœìG4R•¯hÎ:¥«‹ö¢/¬ÂxÐû4&â4™xŒîƒ%Ö´?+kxúbG_ÛÞÞÔOF¾ ^§ð„èà#¯Ü$õ÷<:aŒd5}¨ƒ¨O÷Á:Y/0$ñ4ÔÅ„û§m‰Ap7™dü÷"üë©ßŒ±\(fïêNÒ=·•-­Š=u]!žó.jæ.;Æ<•M*ÜCpE5°ØdšÖ1¥„4ÖóÂñá0pá0“1Õsø•Âz(RGžéd!GRa›`ú…@O™H«Ã6¿ærã7û.iø­Ž­ø´ìÊ|²ýµ1'TpgyÊ¯Å³Ó563)°9ÂË3ê—‰ÏKd\­2ú-‘²ï®X²"{a6Æëwß@*">Ý¾
+00#ÆA2Ô§Š£Tµ†®»ÀnÎÚúçé¯P–þÜU`ðÊ?8Qù`TX@<ÅöÎ'¥ZìDÎjµe£áJpuž ¡ E’&~DF§Ì“vcŠÙï©|±|Ÿ¼ë` 
+þ¹üÖå ›ý¡âº&èZŠ¸¸‡øÍIBjFí¸Ñ=¯¤ì¹j›9ò[>»qØX•t“þ<`h	ôMwnbxÔ€hX¾>Uv…)|ØÏnˆ¯x<è±5‡êÊ‡¨b_5©Y.]W–9Bg‹t'a¶ÊC$—ºŸüÓpÖ#Äõ¾¼¨UÕò’€ÝR©S(%ƒÂ|°Lç¼èÓE˜m«ÁU&TM´Yg|¹õÄuÙz4âvÊÈ›#Õ.‡*†CÈ¦Ž«”l±°WátÐÌØØxžÃ¯ä2L¥Àc÷™ßþƒã'(§êÅÝ[Ðö­ª™»Žl'êiwiÀv>Oyµc½ˆù\‡rÝÅ ²ß“´*E1ßpÅã6œi@eU›dïÁ¯JÑ˜gÚ?Ý8é§Á„³TOá2åc))ÕZpÎè:žŒ*XÂõÃšƒyé4M‡ä
+-¬©§,®8Cí©`¢Ò>¿½rŠ§çÎéé¡øÃ~>ãà1Á1ú	Æ‚+™øò6 ÓƒÎ×üa™Ïàa¬ BÊrŠ…’3éùZÐ´ã.,Í"0*Íê]E¤ïÜn m~vµ;R¶
+ÌƒSúk•-ìQ·ÍYì˜ñ-ºu¾údÀûƒ§ç²Ãr¾)‡Ë4Röª7#åÁajÊñ#@HÍÿ—^ÂîQ±sëâàB0È(¦(ûûòq™Å¹MÕ‹¿ðw 0^A€ÉB4°¶‘}’€­F‰Ÿì!¸MkdÖKÐ'cq	Ë¡öŒÛÇ!š(€ø0ÓëM‹*àï2G™…{’1÷–ájm®uÕ(Î,j^ðñ€TMÊÀAå-roœ‚Áä*×qâ/êtêA|•×©UÝa‡ë>ª/ Ý™MöjhVÞšZi39þäGý¸sçþ•Gù¦¥Yj	Áqc[¢Dz,Â$äþÏ/k&x-ñ)`Y¥®tJ×óT®åS‡Ô/7òŸIÄ–¢-Ñê€í¹Ô¶ócqÑ(Zîo(M[Ý#… ¬1xSã&é]ÝÛ*qxŸ/ØOGµî¬¦é£óªÎ±÷ñÅ&òý@Ý
+ýU7ßâBF§ìªÌ‡^œmPæÁ°ÔŠaòSüaf‘!”¾`ùNsÍ¸áÈhöî9zlM‹2zþƒ.
+ôãåD´â`¢²â9ašqÏ“0¡,Ã?TâæCRßÕvV¨×Øo•Î•C‹Žh•¦Iªà •Ûœ
+û³
+ °É×ulZu¦dZ½=m|ªšÜM¥‹3L~W©BòËŒ•äÚ•ŒGíféõub+V¢Bj£—yš9",‚ídKB¤äUïíhïRiZ1OÍ¡;[_!¤“G;Oµ—>Ú†Ê†Ê»
+Æ]7íé|8iúìÂ]½Õø§ñÀ9POä6Q/„ôÓ…\^ÙjªSÂ,uiPŠÇ£â†,†å&%ØÝSMßY«Ä®ñ)g\ãŒù–[ùbDÔïÛðå§à†€0.ˆ/w‹¯/ÝÝ¹nSîWNvôY‘ò¾/ÿ ˆ{P•FÕµažÂW»[)Œ¢£Aû_=­ûê%U¤ª[ÜîR¤ªªÙAou£©œf»Q3Ùè7ûÀ`éÙŸ‹³û¦y]wš:÷©ð/L­Ÿ°Þ!Æ¯öBrêsìÞ>f‘I»êÄp÷›û’—DMT‚•	Û^Lt±‚ñ¯Í˜á^‹.=~?AŠÑáÛ-q,ö7ûF¨{€-°`Ú5,àÞ0ÒíhàÏr¹SƒD¸ûç" g.0±«-@Ÿ°Ñ*æö5o,ª·¹iõ•M©[Ok+‹Oµ˜ït·ô·œxEtw‰kEyÈóŸ{LãÎ8÷%ó™Ð1–xCD]ŸUE)6DÀ0ùµ†»^wez)qh#*Às+ßôD3¢ƒ“Õ+Gå¨Ñ¦q¹´ºDX¼|´t«úSK®³v©E‡õõY²Læ”ðÙÛeÎ—á)b|ÒV?ß#š±'Ì´c=Ç*IŸ—yó&-ÄÔî¬Dæà“wXŸ?JOÍ¢Ö7ß’5f§û¶³JödÕÉ±Wl1)2{'aS=4­@ÜUšƒ¤Ëä öàÑUbÿÚ„ã‚ó'‰+êžg™”2­€Ü²<fåæ)¢;îB\ @œÔòm´LHj.,nÎÛ÷¸Ô%¼ùðû¼Êo*£½WŠl´m&Öp[r$£ß:·T›Æ×bU\é›¿M÷ÍŒ“©åñi!,*|Ž~\Jò~UßvŸ?Å!ì¿_w}Fq½®§Rì^g(Ä8¢rŸ7²ãfa0‡8¹©íM€¦XÊ®°yUÄÎ±˜Þáe†4na%ˆ±>ØÙ®ˆ‹PæDZØ€·\ËãÇŠ®3ý9ˆäŠ.	Ÿv¶~EÍœ¹"f ôÈêô˜¹µÒ˜;¿1ÀüÄÙòIÐýbìÕðÊ®:¿Rñ³]”„ôŒOšî~†»×jf‹*Æ?Å©z¿•ñŠýs9èMmRgçâq›éáHÕù uM2¦Ä)Â¢Ù–\7ï¡Îè×»­;ù8ÃÒ³½ý *$ËaCÊÐXu© waøZ»g™#õH™bËÜ“¨iÈÈûsšêÙ,ôg¼7}¢¶´lÏºÜã×ÖŠ‹æ–>|ipý(ÿ–ùŸû[$h(L¡(>hŸ÷ýJ¹ˆdiqÿÌUŸöN
+EdŸÚÂý<$vÀ¶¶Î¹hè){+ „¨©«\ŠàeZnÚ˜a?˜9z64j1ƒKLM
+?Í ßb'—¶,ê¹²QÜîÅóu~öT‰ñð‚9?¤nÂ-ÙhûV™Ú¥kÉ¤Ó¦m Ð¢g!Ü;
+iL³¹yë©W{t”óS‚’à¢É%Â~¶¡Žj\¨¾ã»¢C,HÑèÏó§ªj_v¯[ž%Ñ5yÖöËDâ(dUn ,ÛKÂ}@oˆñµR×U†]D[ä|WÌãõñkx§\‚¬)j½L ›—8wW¤	ê°Y„D7H</…ÕVra4^=>“­3ð—°ƒ¨*:ò{þ.§=9n>7ý¸™6éŽ$S™»‹ý9Ü:í$hT?Ž„›·µò(<rjÚ}ÑF†äEùsŠì²Ø%Y9~[CeS.tkFÁ$½a«ç·TCÝÓ+Ñ ªñLÞgÒðÕmá”B„µkeHƒî‡\ý~T¢Ê­ÇBTßŒ^Ø>i¾8(êÏ‹÷¹ÍÔ[4Õ½'vá5g˜ªeñøÑàÒ‚Ù— f“u’ñ­|$ŸgE$ÓµTSI6§OÂÉ¡¯%MlHl‡édJß/Áøõc`PQìÌk\´9)ý¾Ûòðë$õ,ö	ÀáÅOH³¤î!ÖÐ*1+|øvLj'b”¤Eæ.ÛN:½«ûì€L¹ÕÄ6qG{HjÐ€©¼ï8>¦V‰ÙÇ8&»0º þqÇG{`dês”QÌfìzQ”Ÿý½j@VûQz©%®Áz]öÆ{ç'$Îèà:/®ƒÃ_”}&¦*¥ä8˜qMƒH”ƒô`	†/†Ó÷†±,Ô5[yQ€_Y ÷¹¼°¥+øbÝ=t·úx/w¦,Q]]Ãþ«XNO×¯é{ò;“úQ„¢áäx¢+.¨…
+^-˜ó[•ô›1ºžUÖü „4ŸÏÌ:BÊ¸¨û¢XzI°|l”výXóo²@|ôÙ@M—ì(ùä•ÍJùþ¢qæ!«ÛR#û0áV2
+žR"”ËÊk“ˆÀ Vö±úÑÄWõoyÝrCOµk2¢P	#½ùåå¿éà\—Ã®| 	ÓÿÉ1fŸY©×‡ÊÛúîˆ´j·½Q"uG<’) ]ÄíJD´hylàâÖðL*A¿‰çóŸ…ÜçF"IMtŽùl£vNÆ=¿Z¡!=Cºu¦à™'2«Ýÿ2Ë¼Î®bT%#k+È«1sa’ðLôJœ??A€Q^mZÌ­d…K¹‚o'ËéçA€%±"´ÈS4œm…»t?vA<ªÄEZô‘'c\ã?DÁ‘)¤‚EzØ>Oº@KµTi|£èL¡û½šÂC=,v‚t´Åñ`îJaâlÔÞgœs¶Èö O©H›TæÈå­3Ó/‡i>šÇ•Dá*]Ü½º6W©Õ&WÉÓå÷ð|´Ü97½%¢ŠáÏ;/°ýö=}è[t'ý1Ç/µÜG[Cïð	`UñêÖk¡Ûeø8ëñZ®Ž¼À/Û²ñ«óeCºã®Ú†¥ë	{‹Œ}ºjúBPÛ8a}\Lò½Ü-˜¹Ò30!_û–.?à7	k=dxðCJ{ô$™!XÿãÏ<Ú–Ó!Â·ÊÃeŸtP“8ºB‰|¿ ÒÓ½ Z–lë)¸VÑzìv4ñé±o­M¬\¸¥âŸ÷'ˆagI‹ÏžêüZ­´¼åk/ÆZaøúgÞbþ4»Eß·’–V¹ ’rN×-Äó&¯d°’ÖH<Ñ¼éÎºÎÌë†Qjye²'¡u¾Â·vÑUÀ/¼Kxú¼k¯@0ç=5¾(„hÙ1.<_ð,&õð’«æ"$#À>µ'üYZ®ló»ÏIW˜v'HMCÊÈ‹F}ïbƒGG¬`çÝ Õþ5ÉlBÚ“	v4_ ¿ßÆ6ö%ž|Ÿî“a>ûµÑ½ÔYèÅ01ŒƒÍ&ªÞxšÃoHÊ1É‰ˆºØ—¡ÈÕ¶HÞ¨Õu$›@¹?Á–Úñjä¿W½®³Jöøé_zcþª\âZÔ|ôøm“­t¥té'ýuc‰V²qHl82fm»yýþª
+<iZ`[¦mE¨7	M.l‡èÚ+÷º}¢2	”öÔ¸4'B¤H)'õ[ô;ptì+ÛÞ€ßÐ—ŸôÎxy3=; ÈdopÄ¤Vol4mJeTd!ü¹%†KÉIÈNzª*¥pè\¡»¨­º2Vî€Ý{Y§ü –0ÒYæ­å'ëRÙ7n}d#c_rÒ÷ERë¥«çÞÍ³(µÔR¹çH¾‚\çÏò>§~T–Ô«³Q‚:¹DÉõñ;A"ðU†wZw$Ÿ“ˆâ¸ÁûþÒ|t%ß8œlô^$,<‘µ° r¢ï{šú¼6ÊèåµìÔ}§c&ÔùUº.°%³Ÿ/WÖ&Ø#ô1IÀC^‹á·–3H=ïÁÆW,sg®…Î`þ¥ÏGI´ëËj.Óî¼˜Ÿ¾×D]ChIYpU
+
+^­°CS¼‘Ô#†q¬ßÃodµÈ\ßê´LiB<¨ƒ(-Ð¤®Ž‡ˆºSîzÑç¨(-J‡1Ÿ9¥²ÉÔN–%±KGh„ Dƒ _R2æ´og‚d²òÒù™ÉûÄé}
+½È®%@µØ˜f¾o-ÄÃè÷"%ÆÙAvXZ"iðŠ«ñ@:„_ÔK/|{‘l4õ¾ÖxØúkòï‘¿ëmºz®w…Ú"
+Eømoö¹e3iVŽ¯F21ÚŽ>©dÈÚòcî*a°¸&7IÌcÃVfˆGÄ‘áM@#{$—ZsÈÐŸü˜[²ìl5¡óW›}qÄÖ˜‰>ÊË’¯SªúIãLáƒ*`H.VôYDÅÈ… I¶e4ö	±”6ZWyPó…"ËVö¯ÁzUzûºÍAj"~¿>L¹^ë‚›–”¿Ÿ½@^ü4=›?þGÁµ#3£¦ù‹>™²äŠHgU°ÏveÐ;zçgßbñ*×J³0¢F)×*`ÕCÞ°ó$Ÿï
+…·H>nìPj‰a_†òð­¬Wk6‡5¾füråüJ©¸÷ÇËïõõÙE
+ÍV/ îùvY"S²ö²†ã ½;Å÷¹’øê—î²›ÂË›HæžTÃòÓ£Oœ­^¹FG>I¬ !‘Ë[®`—ßy•H*Ï4T…åë 8¡ë®–ê×Rg;Qj5EAñ­x¾Ò¢œDMÑ™ß|-Då`¢µ@ë,†.@f²Š±HÄì€üD>ÓÔ­ng+Îvü÷kO/¥È‘¿F±º;hÃ¹G,èãm*%¥ƒ¥'ê!ŸÐÆÅK±½¯Ô4uª €›gÌ<ì‹:F”¿ðf]>z#O|Œ/êBâEø8Ÿ‘œ,¯e6©]·Ú¶4Cg>{–ŸóÃBdùh×ÖñÅEE¢Ía$5›Ÿ)p’ŠtÆ5Õ4&¥b'n¿½H	Rzàã|EwÉÍ4Ö!Î”ˆ ¦„ìÅà¡¬êÂü³~Ú|«-Ù]ïâåO¢}<ÜòñÈ¶ö—qÿâ(wjÃ]B|¨í/=g@÷ÃAà½N¿ò²ì4«1¬O@¾ñý)˜ãøA}”IË6x˜î¥mþÜw4¨N(«6•ÖÊ³ñlã{·KXÐYF{ç‘°Vp3ìºÝ!ô‘B»d/¸ý¡öý<¢ûþ’Ì§3êS†øVÃ„XPÇ§qNÙP_wðóT->^BÜ"‡#üÓ:\ÎìsuÆ™Eìïºðó‹uÎðòâ<*Ÿ9ò?2”vÜÒÐë“`(jK!s÷øºQPw¿Ð•³.À†k# aaïN1 çª¶i»m÷!Ÿ©QÐ/`:ÕvŒ|ÁÖ=Ö«à[n\¼\¼Cƒ+NH
+”z–Þ¼ªÍãyÕ\Ñ…±¶]?®¢¾­šm­Ý½šX·¥¸Zë.a_“~Ý‹Ê\*M%õíˆœtžÆÔ——(Sªóýë¸W-	òcÝŒªbÏõžržy¿tÖ·ëcO‹
+FãÇ×5›‘|$¼‹ÉÇªkŸµµÇ½¨:fbßöb1›lå|”­Wâî(HìÉã¡L&>í¸DÊ§€Í'4˜‚`c7-Á‡^™/cI0àWõ1íWb0ïâ¤?žôa!é7­7¿ßÅOÞÚœ%Ò9n­yò‹8þlÅŸíf8€k¢oÙR*ÐÂNòC~µX!lÏý!ž¿¬•îÙøQ¡TŒkÁþp×$î#mÌ~öí‹ö¢6:Þä£26ÎîªG¡æ–ÒoÞÆ…Àø°È„õ\Ö%ÇU'J€ –¯)•öË„ŠíÚ0®YÛ‰ö¯ÖíOÂ¨÷²%#—Hx%õrþˆs-.vÄi$Æ˜ˆ'›M'â¢Ÿm½NõéP.^Ý¯µºë¶@mÙþ]Yš…š~«N£Á}†Ôa_wÕj‹Vø·O«ø;1ë†%ë(@ mÅ€i˜vUÅkëéšÀœ°šzr¯½,òiZ¤SÄEÔ­€ºƒäâÅjD©´3­Èjò0„_BpàJ6žLMl?äë©-Å‘Ùkž×¾ Ï
+Râ8Q¡|6t|h¦©2‰Ì+Ë9ÎDý ç!ßEA‡~«Te¿q—CX3hÿSˆ>áxp‘T#Ñ“t¤ü{iLAéË­¼âC1PND–<pµ½úž.Úê>ÍÈÇbÝ§•›ãŒdu‡à²ú46±ý„Öp^?íùf¼ÅVnf‹}˜<{‚Œ_¿mÓd­ÚƒmIõìÆ}('Òï[ÀÆ!'¿T™ÐÙ«]„L˜2þþ1†ih'LˆMÉ‘ (›³K GÜb0°»¸ŒŠÜ»YJG³Ë:ãïUæÖ6ýsØsÍA\vó™uN‚¯L\ziÑ°ç-´7,÷öÓÀ6eÙ“H‚âDhº4¨÷Ù5ÿ_a÷‚âÀæ
+•)¥Ô»Œ,’G•²y°.‰ðÜÒŒsÇEe5³Æ>iZ ¯%aÏÇàÞ1Ý8&O,U‚ÑFéwFÈöl3X¸}(zPz?´Šùüø¬U…ôœ5ÊßëS@rNàÐ”ë»ž„ÖW}iò§¬Avít\ûX˜
+áW'T+«ã2Nžoéñ¶‹ŽýhÖçÕ9¯:yA
+´Ý—“ŸŸi s{ô+â=è1‘t§<÷Ä<mÒ¯…Hbõ9Áã	(E±†bç„oðŒM>Xž1)ÚeÔ)ëQ¥*¨æ\Ëšøð¨È(ü.;{?2(Ä†À­iz/]Œ²y c<T¨ü=¬L×¹Ë¿¡–‡°(Ë7µiËÈ)‡gO+uß´‡óØ¤äôæ¾ttÑÉÒÓûKˆ1è¸	AjÌ¦ø­SèLÜüõ¿íÏnË¨¨¯ø_g¡»}BÝ`»ŒzTVð‚VFûv”@×*«×Ôä‘p…›2e}õë4˜?múAjüÁn>}÷`õL×ÿnu¼ñòÙW%Ó«À]hþ²S:šÇ]F0{ú¸zÆÙáÇñh„G5 Â8iá€ÙwÍ;×Ê)'Ú-mÐLˆ–¸ìgkp÷Ã”Ë‹0óþžî¸×Ût®ª3Æ,ú”0…ßæÕ:Ðøq)å‡|	0|…qŸÍ\;æs1²Åý“"óÐr­òHùN?çS}«õ.£„_ºANtCçûcW2 @c`î-Û×L˜„*¹y ÑQòàlþ<ÂUj¼	ÕÕÃR:RF„^p-¼àÝò]!"²ú:fDø¦B×«mH IhD·Z¢`E…
+|—3
+ßýWxW,ÓTt5ôï©Áä‘/À[HÉc1]±!cx;P.e>wÊT¼‡W os@ì§©?¬PrR¿ëÁÉ5ç9'ìõPjˆqpL?é«$<<µÍ1{´wÞäè>Í _*Ñf²Â;÷o9Ð†|IRz‰Ö»Š®­¸BWÁ}f†×gMkí{—tØå½£§ÂRßM}Ñ-ì?˜×Ñ_‹@î¶¯&nŸ'‹Ð£¾ª"‰du¾D÷¹î*>ø^Î¡«øK{î„º_´\&Gò$iúT=¹;y«\ø®sæƒ3¡hÓq”µh¹x‰º,n_‰NRmÄqUçHÌh[Ïs ÑßÌØµD ·¾¥™R¤Šý¯ìKX'+U‘Í´.æóÕ:ßïò¹¨k‘]´ÿùs‡ŠýíE˜¡rü|L¢À“{ìÞHžÇ0¢WÊ©„]Iåðs‚)Y¬Þ0n©6XáH—Nî‚PYjÍpÂ²å°}¹øÂ-o–´ïö’S/èš¦Œè®©ù»	fŠ¢;íûªÐ6ÈYc~³'ºêÆžòNŠ‡>‰û)“žÝ)3¢öî£»{3lŽ¼Ì›MÙÞÆ¯Äå‘uD¢E9Ã…ó¼"»ÍUeE|$Ã6¾¤Y‹í ¹) ‰¢×O&+Ú–´*NSþãÃ:´‘ÈÎ°áŽLŸ‘öXTIÔˆñáô¥Ú20c|‘~y×JÃ€õËN ôc$Éì„Ìß—Ke5tWêá8Aì<Ì=w¶¦¸É÷|D™ÜU·qç»G¸¤ëDæw†^Ù–¨fi !]Á”ßœ/ ý¼PÐ‰£í%?2üMÄÇ¯~ë&ÙRÂö§¦;‘æRºŠsèË­^÷®Qž&˜]sG'l€Æ Ë"]Ô1¡vœ‚®
+å¸Ÿ°±ð=§mv,]}R[9æûVaæé.Ö‡u,V|£P—U>àMXVÑÇ„ÑvCêc{­W}…â­âÞTXDÐý^KÂZîq
+Up3Ò‘üí½¦²¢mŒÕ‚ÄxqóÖ‹•F:ùj˜(ÓŸc‡u&&÷Rö4¦Öeœ¯ÆFèæÃÔÉäq`qgpdþÍíüÎ—0‘U%)¯p
+áµh§êp7¢Tã¯üŒpPm;àlÉ«{–Œ­¹zàäf«ÎZc’Lµ:,{û@<ZÝÍÁzå ìÏýÏor}:´T‰Tá´ô¯ŸJÛX?Éœ:nãQuÒ§7ŽÕµãÞë3ÙK¼4+Ío+6û)¨d]“×Ô˜2/h
+‹Ö7”6–ëY8=CjŸ'ftù
+iöªÒéŠ Ùû<¯ˆÂ{»‰`ûÅ2òäì¸Í”õ¨ÉÚLx‹žjÜèH7îOE?»o[,Àv~šüâžâ8­ž$<gß¿ñ¤îZ;MŠkŽ8:íhQ’ã.6a•lÖÕw ¦âÓ™o¾U1öPþðÌt/M}ó`5ÖEy2G#Ìû|q`ÒL“?£&ŒPªë…ýàØÕÍýÑÓÏQijè‘¨}`	À]ºpøM§sDYK0«šŽ‡Ý\^Ê$6ÇYá)Ûú×¥§õÓÄ”â¶‡»èš{!–öLf.÷	Ú"™¹Ð”rÈñŸ};ËýºËöð´lI†ˆŽ¼æEôê´(äOFÚ¯”ÄÇaáÕÂÐè%ÿuZfbH,Tù	”wÆË.×óñ
+„æë\vù˜æÅ¸Þâæe×¸m¥Ï¢¨ùÕFŠ/ò¢è¸ÔÞ¸Àí¼ÒÓ¶ÏÎ2.^{g-Kù¹0a˜’ß+ExL£Rl«ËŠÜ3 tê}¿õH¿#ò33ý{(Uó¨úŠÓ ]ãnJ©ÈKBðR©¾¦ïòk¯4T›%¬Ì-g{Œó1ï§Š‹œÈíÙ4g¨©¬¿9ûÒ¥C ½óRuA@¬ùr[»&ëhîøñ¤‘^Üñ¼l³¹}•ÙvãF­†l`=C&êc †w@‰¨{£? Ô½¸“<Nƒd®êA1Vd	:§„½`„
+ÞËo¤?Mç´¿ºëodÃ
+ ÁWÚ?ÁBÛ3Ü. ’ÍËPOîó“~DœÇµëÆô!¬#„ãˆ÷NÍDÒÙœ++õ°_Û+Ox²^½ c^ø7\±qm¨n¥^ö„Þ÷Â C‹øRÛG]¬Îsßzµ›¡îtäB<ó'ÍÇHJ1uU+:˜BèbFŸŽväËeqŠ¤èó¨GÕuãšÉû–¹.2n7úzœ­ ƒ®B5äX~hÓxÄc¦!ï"™ÿ˜‰Jäï ;¿2qûòö¾|f1}Æ˜q“3zh”`¦Àc
+T$> œ›8!]ÙéÈ#Ø7Ú\0F\Ö‚~¡üÔ’paÖŽ¬eãæZIöÓQ•F_eÈL¬¬ºÏ…™ö¿!àáÔÜ~JOk}BTî”^ûgXˆå×9¼Jè'K<nxèzwÃ‰d-z†¦qLÓþØ±ñEêÞ]#NñUùDÒ–(¥Ü6ã‰Wf|øceB…µÃœ¤á)üxÍ¯9¦£´þ€Ø6­Z±‘LÐïH/ÚÜFWò‚ÙÜšÖÿ‡2<Ã¸1x€€ZÚÃYQy‘ÈbÃ[ˆ *ü`$0Ô»ÜUÐËt@eìÄeP|¨Ï±›XpóqG8 ýˆW½-¯[@S^”:ˆåîÁ`¿Â”7Í·@è5”=^÷ðq×ïHô_·:{¼t%Ü<þ½ÐòŒ=›KêpœOÎñ0_˜Ï¥þQÏû‡ØÆo“.Ëº›6ÎL?Œ/oy…*jÑ»éÅós[q)þš^k/åøL?9 ËŒ2p¢íu!Û$ù!¤r8çÞUs™×éîty1µBU"t7Â¨}!°q NûXá2kÞK*¶`× nþD_ÝÏIPçL±¥P’èý6VÚÕµf†5£ñÛþ)Zß¡B²ð|§þ'gZ¢nÀxé~>Ð4O­ô&Ðs¨à„,ÇL7ðQE>=Ù½YkL'Ý™(plH˜æëK7Ìtl÷‹ôY˜4œÐ‚O`-]RG¤l&,Ý$´<Œ@c‘q¤†Œ¡(´³*ŠˆRÄ¦Ø¯Ù=1è[Uv2u…à°³Ïß'œ
+"
+GV[b•Å-Eî¹,âoj¹x4šuCî"¿‡S©”Â}Ñcn3ƒ’Z&‰Je°”±¦–²n©ú\ª©nÚ˜å¬9ðé’Æ„ØoÓ.æk¶|ïYkß“FGÜ|vè{ëh¯hàNÇ˜š`oü¤…¶þÜÝ°Oh9U ÀÍ]ÈPÅý	<.ÛÎw¶Dœm|ÀÄI2BÈ ¯$:Ý†”fð4ÝÝÊoÓ¬—Q«T2÷òm€ùê÷Çâ/5V,¶ÐOa—‹‰DíñqCQªgáj£ç`)lÿ,ú2ÎÏTK;›i#Ê±ríÏq5Œ{–uøÙú•A†Ž1€r0(sì£òŸ2ú˜˜½žÿ2’š»vÀ(R(’aDOy‰ 
+?jòˆsß"Æ€lxì‘\®axbåOÀïQ‚ùò&4ë÷hë¨Œg=zûÙœWS$LoŒk>ÂÀ³‘ô[…Œ6Ú-FüºŸîVGÜ2·«Íyê”Ô–àPX„&Hz¤)óÕD¤—xç‚ÖDZ&­0UÛÖíû¬Õ·ègLxˆ¼‰TšÇ‡„ v+¥°]Cû
+-³•ÿr—k™Y[»ï©"¥õN&#Sö'† .{ -‘áE90”µ.¡.r˜x	’»üI©ùÚj Cøñ%ÛØ¨=±ÎRŸ¦ÞòkéžFÇ§½­Ã^'|%Þ­Éç&_“ÀÍ	He zì$D{ŸÔÄ*@e§ÖÉa}ýÇQðnmï H:‚h—ýPÓ¤Û¼a y} 5ú± õõí~B%­æ#®¤µ_ð0ÚØœ™€6D®Ô4E„ÙpÛ¿øCî~Mx<¤¦™ªcñqøøs4öh@ÛŸ\¡F—Vô}º¢•$ˆ5+Œ?£RÜ…<=
+·Ö·«›Öz5gã»S°Kütˆ_$7º]H€ði*†PŠÎ5aÇ¨rprQ„Ñ5XÊ’î6ÄÚïf*½¸£-ÒÙý^
+ô0‹óF&‹épnºUvÌÌ™yŒYULJ¦/ÏÐÝí"ÇÌµReK•c»O:¤R‚ýëÃL±x;¨VÔ±Ç–=©C(°Žÿ™9”¾YõÃ ]¼cú;)oÛ‚ÔHQ.™¾§	Ax
+B”.|ùùÆë7]M4ƒÜbÁVâø•!ËBt[ÆýÂZ[Æ’ùesì&DWå«=Õ‹ºádÎòè!öZ
+Â"hq2òW;Õeï¿î¦éÚ©@Ûò˜Ýžƒý32ór›óV¢C?Íå÷üdà÷"©`kXOÖR%ð0…uTïGÄ!¾ˆ}øJÞ†öð’Áÿ$reì9Q?Eî¡g§  ”Ï¤.Èœ|èh_&›Ç‚F
+‚Èˆk ±´ 3gÀËÄùË@…‹uö>ˆtíÓ)ùWÁ…R Q†¦Arø}!’3}
+Áš{.Œ¿¤Òu…E¾"§³Ÿ·¥BBí®r26]Ø+uM ÑƒÃÍ&Ïá
+¸÷OŽò*ˆÍGgä¨¨ëõ•¤àñA´ úÃnº!ïµÈÍÃvW«1
+avuâPÆÌÊGQN|ÔY±ûØ õ5ç¿ —sw‡Àr£J}å÷eù·LYµj¼Ë´¸F‘'ƒTMášÀR‘5íÄ »@‹äoQÙ¬{Íáñ·ÆBÇÂŽM³ˆÐ‡L¿NùCëëÔ£€÷`B/îótâ¾yÓ™£P"‡^ãñó“2ß/2Ü"çòõçã¶åã­ºž~{ç¡ª˜ÁQpYˆèÔ[ÚnˆWÑðUÞ™»X»Ô$è4<‚j›»µß@â±ž”2™a!žç±ùŠÌ=Ÿ)$ÝúgGÇ3¡eÈl?Ãbñ£Þeª³Óƒèþ3¢§/èŸ)9i¹ £9…€è”Q¦Â`ójÄÇ9’_1&ÁUÒø‰Û!ñà*íàKEï¼AÁvò÷³òøÏc°˜U0¸›Id<;Ñ,ý êi±»v³;7è4½OâJLbÌEC=vC4ÑC)go2¤,ˆÓÇ)úÇn[œ#“úó=³ýp`wË¶ÎPo!$ÊMš>¾ÌÚ\ƒú™Ý{†BšòØÇO¸¹~mü2Á`Âçc,6=Z•Ãoœ9¨¯|raþ[¢a©}ú•Dä2²ã”}^7Á†„·Ôç¾’ÇA?¤®/»“£ñA\,/§¨+ÄZø]O_¾ nÅÓWKÆÏ±p¸„yRí!8PàYx–î®jš–ßqO:f/ùZîŸ>{Èõ››™ñõBU ×ôâÖÓTiM Ó!ÚàhWÄâ\’Nh¼h”ßÀüžnkû•é–{G+ \]Âïß Ü.>þt¯‰2ð¢Xœ˜¼ÜTÕºÖ½§—hYãÊ¦;ÅŸ§Qb?Bß¥^I¨ov ÛœOötÍB€kvvÑ$ÕÒFˆáfŸhÔH8z‰Z &Áèk¾_mâkOÜ$zÿSrá×ssðBÉº?2¥›îÄa<á³ñÎÂM"€Œç¦ÐG(•kA›êùcÔ	ïP©#;ðì°§.@Ð´Ñ}jÕÜlO¸ë‚4Lúø`ÉŸôèÖ¯)lÍ>ìÚ&ð9¯Í±´ªˆ ™ÿ +þ3±:ïqŒù§ê‰jÄþ ˜ô‰Õû§gofíâ=4âö¸¬£2ƒBÛ`Ý:É×.”M—4aB÷Ï*ûõôS¬•~rSjº•.gúÒÐ9/Í‰É&E” M³öZ2¤£Så'»¢=cqÁ@<JøÃ>Û%ãà"öŠˆ•¦??J$ÂÓåÁlE?Á„÷IÑ)P2iƒ+‹Þ¼®?Š|WØ>nX6>ígQV‡•:Ç	Cå–í1Q€ŸÂºÃ’ŽŠÀýp­›Rù¥:ž-qèY,*¦/¢Ïž×‰¶·„Ï›MMX‘ïÏüÕc^5°õöc%ø^;jÝt øP¿šØæ|É$øTŠÌ•ïò8¼í¶úz§È’É4ÐDñPµïF A“ß¼[¸ú¾ãðÓ1†+çNŽ›ä+É¼ŸÉ±ÙbqŽõ4‘%VyÝ<‹õIøØ*-Z,àFzQ¨¬FHxáñŸ_ìÆ%“?»±-A`[|šÍ¦½·ÆÝV“ý)H!7˜naüˆoNó…³Ê	 e^ïÒcf€¨ÓÔï$ÈIP‘¼÷°Ð‡òÀ¸LS.°W¶pDÅAv‰qàéQò\¸,$Çû”Á)½Ù¾†\¯Õ—ûÆU‡2~ yì†^òéB$–´µ$Àí.ù}ÈDQ»ð,e’bWéóÊ—@&¬Á(â–ÑÕiº3ý¢æ.Øsk
+2…[DûæZ.Ï<q×a'0f‹=Èž(òÎ™R½/ÏRÖÇ¦&|Ñ‰Ìá¼£¯•ƒ= 6"ó^šÀ÷0^Ê®îšÉPßñŒuBù¡«N¥ö©4¢h'tˆ÷TâmÓ¬9:µý¨º—è£*´´=ž b»®=ýèf¥±™0¨‚h†›Hù×L?{‘o	F±–ô¥gû­”£<ýA~“MK_Abÿ—ÞY_…VòÄ©–4âws˜…?tÛ¾üéŽ8ø¶™ÛfÂTfw/Ðj>;úÝŽ]@†#Ë³,VÄˆÎ†ÁŸkÀG–!è3)ÀîÓYs¿ºæ}¾pFÍK›Ô¿]PJoIÂÄ<'+Ä‚\8>Ý…5zÔI$³ç%µÏŠ ¿“²u²¹ÕËÎz…aW—Æ1ÌòoÇåKùpúK`õQ¢I‚ý;|[â`äüæH”Ø‚"àÊUû,sœ#!qPT†ø1lBæòŠ©2à¬$0ôÈW¯©Ç!¿’Ã0LÉðólOïsð9Ö5\„EìÈ›žYø¨þÉÐ•I/§H¿MÈÚØ×O<’OŸ¦éJŸAE	ïëqg>…Öõ·±iÛ,Ì8ÃåšüEH“m¶µšÓUÅ£_KŸdèÏ\±úÇŠZO8i¤£JÍ&oŠG]4”ÜDF×JÚó›?^ŒÆ¶ñ,x”ã'ì[±sNc÷ÍENmÀ×Þ”`B3
+KoyÏ"\!Š BÕC0¬J­? AÀ™Í^û¡D|D»¿ŽÆ”|žáÈ<i@FëR™õªñ­BAD'·D‚ìª¨îxëØ†5:CºŠS¬~y¸v…ì¡Ã|#5;ªJ³_Å!>Ú½®)ýEËXÏùo$¾s¦±šCùNû«zº‡‹œâ»‹Y$:D-bß"Ã<ÍW
+í…$€_WÐxÑüÃ†ýðA6¤l
+	|„Ve+\* ï$j²½Qõœå¼â2ËMwP¹F\y¼™&WIð‚Ò»à©b¶.ê©‘ír•¶õo°µÌv§[jÿ®óùâ…¸ø	ø»®Tg‚øÒCGÛð…Jìr8M‚™l£ÛBA/ ?ØQš|u/ƒË>gY¤WšejÚÈ«Ñ”Æb~J¹¹>²EsÇm5&èZ‡µíu.vm›µ·ï«Çô},\&(îk)ü2OBìq{3øÎwqºÁDì£wÓ*d1R->	9ÅÉ„|{5%üEãc°wU)EÚÊòr¼lÖ-U«7j¬Xì½tp¶õ¿á7-u÷û\O“{dèä^ºÈ2š`ëb™×'¨Å]ìweLpÐëšX ûåkÿÂßÚÜ»ß Ç0¢â‡úü‚6Ã=öëh¿kÊkú§×cÝî=IqÆÂ2›Å¡î¾¹­÷Â3â”õã¼õÛ0Òæ»-RðsvÖB}ð%†Ã WÔí7l	|ð¦R@Žp¼W¼>hK×[ä=SÝ&á>Ï_åÄ×B^…;“’mÊW·ðö^d­Ë´ÌÓ–"a¤a:Vcß‡°q ys¤u* ¾e4úÇdðª¸uÙ_s¾É­;zÁëP‡0Ë\+h<ÉÓ÷ÕW‚™šMôñè°‹çL
+î4 ³cŽ©êx¥Á‘j¼ÉqaU30ú’îmè>öæþæw¼®¹y†@Èãéu}vÈŒ¹Ob€Joé3™î×’K¥búèµ˜à‰°…CüÊLAÙçŸÙ
+n’o$™[èÔ†À1“ŸuÚr [qûÖ^´ÍÕ.etu(w“u.Ažß`yÛÊq‚;¦üÚ±^"€tðî“OMî1• Ayë™¾ôç˜ÊÌèÀô_?<§Ž€9M‡N3O/§m¿›øëº™Qi†ÏþXo\ÒfÈãREÀ½n ƒ1r‘@Æ ªynWH“ÀñúlB.ú`Bí¢v’Ã…‹ë¼!SÛýƒº­RNÏ»îƒ´>‹,Äã³•eD‰KK-Û.Àòs*6'3jð¨3ý™…WU„ãºŸÆÚOoûHÎÊ¢q¸½4žÏaþ…@§ô’>ŠÓspÅÊ”$]Au	¯å­UÈu†öìÅŽ®iNÞ…$»Wqíƒªýåä‹ 0ì@š)f/‹#=›ö'ðGœžCqë"
+fô]A¢U%¼Œ6vy°¼($áÉ¤ï¢LH	H<\ ©ÕÆ¢ûl˜÷ÜZ·îõUø5Ï©Å¦¯m’Uj½Øº}V\ÅßðSù\‘ ª·–ÙþÍƒAÃ˜^#&Ü1ðPÏŽÔDÿ‚¼j¨Ûâ;‚ƒFÄ€b³€”I2øÇÒizú	`¨í'šu/Dö)£ÅLýßüúuì9”ÄF€ c‡i&G8JüüvÐ ôUä>­Á€VefP,µÇrY¿id¼“	ØèŸtK€ÑÆF}Ì¡¯«„X}D"d$Ñf‚aÌ~/B2ƒ
+ôFA—ß+…¬kä_Äù2‡®•#4bðkqwAÛ·”fD…&Gs€z~oPæ\ä†xv~¥µëIÉ™=uÁàõIYŽk“¼Ä}œ=îÔû³‚ÎÅÚX™úÓB&4öoIGï®(ËåÏ¥9<ó£;üˆ8@,×™Ï&?*sŒ£l-ñ¾ªM%cºk÷Ñöm.Ç£íd­¬¸¨KÛ‡oÅŒ¡Óg]ä„¸'Ö£[o¬»‰™¬·-ùÍ ­_-jø.#,ö¾Ò[(bRe¿ãâ¥ÆC”:kÝv¥($ šDÙ;ýác¿ŸoôüyPv¤MQ‰¤½¼Û†IÕqÞ0ñn=ú­„ÌŽý¶Zèx©n5Õù½±¬Òä LöF>	uÞO6Y§ éN&ŒMqõpÙs•Ç§8¶’S‡q9Ð#maÈ¨=6éŠ×[‡û0Á.úÂ,ÝØ\o¸<‘zD²ª qï·T=˜Ai^rŠË»ÝÎŒù‹¤³~¹ðÀÕ¸ø(–$@ö`ÉAgDU‚¾Y œ?|®)\çD}Þ€-øš§ÓÈÚ˜GîMôž«Ž—þÁò\ ÛÛöÅŒ&¤YÁ‡PFäG)íÖfZ¦:½ž–ï¾_s‘±Úés9Ê²¬x®\ÈäZ*‘Î~ÖõêzÀÑ8†¢B`3Q\–Ý±§œe{u+‡·§“hìc76ÆW©ã–¦£3­üOá„ãÄr€A¯s,±qÎ…´RK¥PÜom’Mš›¿Š>¾»€&‚¡8x¶mÉ²~"ˆ½ûø«ª¦‹ç8s‹Ÿ/ïžç
+’)C»þaäþ‰æ¦Q^Îq?øm`>Šåw'b¶_^BÒÛÃÌEêŠÑ¯ˆ×º[¥êØÍÄýà¢ƒP}½ìý û˜7±ã4l?•$ãnhÕÅ5:#zŸÌ´KÀo8š"½ÝÎ“˜1jJ-Á7“ÖärÇ=îÔ\“9¡/°^ne¹#kM¸†gÁ‰†œ‡Ø§©Î£×ëá¾WD*é@"PÉ-Ô\ç8ËEðŽ¨¼ÿ÷ÙÉ+4 C•iÈIã 
+¼ƒ‰AWô°¿3|î!ù"{^²äé7©;ò”^iÐKæžÔßm:ŽË år#l€0æFZ=hN>¾û"ú"yrÈçZM+¼Éväæ•Šˆû’lðGÝ–ØŠhjüEÛxbf,‰šÿ ¡ê:,â¼*·…~,t}Á  .©7…wªv,õ‹¤6OÉCîã‹C„!YwóýÞÂ¹<™²×]rlˆP¶‰«Mâõ«ƒˆ—â#}¿‹5Ì'¸%€ô«Sn•FÀ†¸íóëÞNÌCÇIàíÙ€Ø†Ïlyùµõ·ëRÁdZbxwŸ°ÔÞÀÃÖY“Ã×þÜ®µrƒ@NçûÝŸÙ·ßù½4\ =Byfs©*X¹ÉLOý¼˜ý7ØL8=ªøÇ\ßoæî(ªÛ‘rýžÃœèK‚`Önî«nû—ÌŸŽ.„ú¨ ½…ÎPxlºö]6©íÂ"°¶—ï:b…|``:PƒNQÙÙ×•_Ão­Ê:ÏŽß[C;ýJúHä½>+Á_þÎüY.íïÊ¿Nâ1Î%õ{âÞ§¦SÁ>#³2‡Qjr±Î’³üè¬\§ÿV¸[§ì·%…:ä4Áb q–íæ'Á–Ã¾¿ä;Ð$›ûÌ nó6 Ì–°„{ü7Õê¦ò#`¯kŒÒÜ¬¤FÒõfûyÕËíàž¬«Àý\×)kåûz£A2bZ“îGªß·Õø\£/îtü›.åË'dÖ®•¡•é-S“ q1%Z7Þw°Õ÷™Àm“þÕV‰•ôà¡Ñ)ö·ãØMY20&¸-ÜúöJ‡?‡&‹·ÜÍ—žúŒ:œýI3Éê±Lh¦îTu¥}Ï_9Ab|UX;FqÓ©t’¦Xª€ô&O;[¶ûâKò!{;¦îyb6Žo×¥­²x ÙøFè¬î–fŠö|p/æwé9;™PöIGþâä7«Å×P¾ð¼…IyOØüeeI>]»’j+vmdÕb5´š!úƒ_uä6ÝÖ™ ¤k¤‰«÷ðÏ®Ò¡9N§0¡Ki"9Ç+
+ªâˆ¶çá¬±RåìUÅ»Ì‚æäS&¤ûËHo>*¥†ý‰?É£%¥ÊEp¾Þ nõ¥þôÕQ©Û<6­d…Å²©¤™<Úº†&îd	Áä|QÌ@ã89‰´ó…hpY“=¼”íðÌV“9Ÿ‚ú¶E7Ôi‚†§
+ŽË÷Bà­™ˆŽ½ŒvÐJd]wwÁÝ|¢J†K‚ÀÊÁßöks<w¼eÙÈ‚qæÑÒl±6æÈdH Ù¥$ÓTésØðK9¶¶.!B8²mØVÖF C¼adæË{Í›LePD»SÊ¼òclÓC‹}YŒÄ¬º$|Ô½·Àd$V«¬–“t4·YÚ¨ï÷[.wM¦³†Nû¶ìÓë4àC™é„ BuÖ&ç?2ûæ‘yjæ·C¬’¶›‚7 ®[½I jD¨‘àMÙzJUÛ7òw‹ã[©r’Öà˜_ª×Ã€.…-ƒŸ˜IÍ™™P,ä¥>fÎA\-‡§æ„ûï²gyëÇ„uc´VÞõYâˆ}=…„3ÕÞò`3¦XFkýÔsçèév4·wÿ7‡éðþ²)²ÿ¼S}ÐVÍœl°6›H:÷}œ*²|È+Ó=ÿV^±Î„aØ_Êê0ð(1\ÄPàþ*Ãîsµ³GM5EŽ¨ÅÖ§D7òÐô7-à¨ÓrÖÂZ÷ÙR‰AFŒûý†ï§¾eÑ<e±pWñ ÃâÜ(ÔM˜òªÃ¯†žBYú°€ K÷OË7ø£‘eÏ³9Ës¿ÚëSò©#ŠšM¾eæ¶I'ž©ØÎž	. ?…¹Ÿsi)7ëóë+´%Îãþ~(,aÄ/6*®6R¬¼ñÀöÇsÔ5£{ª èë©¿”^¨Zd3ßöS`ýn–|äÇ—úl^$r¿ïìã6	Ù~´I"þDL3“ÂË:È¨"v&Q‹ô/ùœôÔˆÏe™ï¢™{ÜrÌÔ÷™½!¥Ñ£€
+á¼£•Ó	‘˜Šrr½lªI×)~É™PýŽË}´>jFŠ¶R…1ü#Ù$Pˆõ«~zMâ2ê½ž„¨nèýñIS(ñÅv-œ­d‡
+€í-žIngW³’9åŽ×Vù$¢	÷¬F»nßÿ}²‡¨Ë	“oäz¶¦®¿òQÒñ¦íH«´YXêL¿Ú|)Ët—W#;ê9	y§–*šû ˆ£Tñ†ø×kœ´Þ…µˆÁVÔæp‰½ŒN»+\“Ì)ø•3!À=¡'è=Ñz®áÐ±Ú¸ö$>?‘¾NÒ¿îÙ“…¾`ðqßX?îŒ­©Êh=o]Ü «úQIpF“m¤pR ù1=Û‘ÕKO|)Šfý)êpG4Q4î˜l¥-?£V>ðGK´p%»ÊíLŸÕäÅ]ÆÛRwËab¿˜éÉ*¤*µÝ™}Ùe|R°›Öa¡wø3ú$îÊ‘Ôw!6®¤Ø4«m(ß·àKü’j–åŽÉT'¬Ç*ifÁ¡M:wS°J«¯¶¾ÚŠœŒÇ™)RSæŠ"í$àmW€Á¢0^É?AuÀ2ä øm2ûåóS‘Ñq'Fð¸há§öØ¾âŸ§ñšŒúxŸ(6m­§gÕwËl¿_Õ†×MÒÅ2>)ÌOóûT)o•MÙ!ìK ÝÞ-I{5$h4ÜØh†Dq6ßŒ3ÞM+SáR.~ü…:m¡››#Š©
+u33â®’Éz1r$4Ò! y¦Šyb1ÒŸÌU<~œP`|é+ªÆä*ƒu^‡ihðÏùAEç"´î@gÄÐ
+³·RI}k9@í!Óm[æ—fÙ¤ªUÔ’«¢ñÎ˜ƒauö8¯^X…Œ-ÇdÉŽóŠÚ:uîrÇá#å†ºïæù‡Š³a«Éîê7e_—ùk|yŠkˆOÂ:÷vñc¤s9ß¨UÑOTÈWt.UÐCf·=²i¸ÅœÛÛ•BS|ºh+â{!c>•È5&<íÕÍ5×(g¾™n£oyq5FäÂ×ë¡±âfúŒgz¡u9>Ýh¢jÄ‚=íG™îIÖ2ÊJº¨u¸y4Û?·33.–Ë³$ƒfšÂ©§QõB–Wï›$ÕB¯pMÀ=²w½T’>Ü—ƒ¦x\EÝØ„m¬€é@zÉSµó®âÂØDév§tÓTæé3¨Óo9©Wdy³1Ý¤	RjÎ¢ýgI¨¢lô‹-ýXGY·ÓñÔUåxABŒ0©¦ƒürKè¶ÙPqwÖä/ýx­Ùò…óz)¥ÍoëpøÎWbgü6q@¯QÙpÐ6…ØK±&+²Èsñ©í?x_®Aš‡±**UˆÕê²{„Î¥Š‹‹o\×oB“pùÈÝZ}ÑQ¥^£)$öq­û P|§_œ&-ueO¯Î¢çÆ™!³›/Ö®¡>‘Ê,F6úZr[‰!é­îÜã–ŒÅ"ù„¼åZ­]]‘r¦ŸÒZZŠäõÙ9w_~ÅÄù/Z
+eÒ™@¼ç²¯ù™>­äÊÅÔ–šhþv)R¥îž·ÖWWÏ1êÑÐ?_w¬G	dä…^<„Ý¦_En!(Ùïœ®‚gÄœ–‡¯/½þÞ@å^©>îCŸÙQ7nOßø»§)íµ0ìÏªYx¼I5`7E˜B<ê–Ç,GÕ™Ÿ²–l©Jr»¢,Ž·RFN(ø4oùÀ#;És¢Uˆ›×NŒu„öÁ£LÁkù"Æ-‰yýŠN‚¿³ D4ŽRÀ¥"p@W
+ên½|ÍÝq}ùm§ØM…=J†‚ìw­¡›8_0™}32qÙÃÀýª‰.ß_(à²7bÒ¤à`,iq;ýù' ‰y„ÇQsí1¨y¥w%ÑÐ¾.1M³Ø9Í€LÌZÚƒÞÀÛþþ¾.)ýV”‘uú“Üv»_©³r‘þ²ï¾fìJCþ´á+)Éw`‰ZÒ¢úKÌ\j‚|×ÀÖQ©¸0Hõ×9¿·æjL]‹
+ç¸/òÃ)w+ÚØüSÀ7¶jTˆN+»+Sýù`×(6‹FwŠÃÒ·.€?iY|{t)$rb_Â¥ÐÑ°ûƒé8¼j¯~ êl
+Í í‘›BT3Öcl½ëÛÃä§~lJqÂeÆg!y„[ê¹ŠW¬ú´Eë(¦Q…äìtTø.l[ºÂ](¾ÊXÚíê‚ØI‰Tdœã™Ý‚æ¹\<»²·ä"Ýƒ@š˜·ru ôÕê¾« g°)OùÈ•x‡7§\ôRãà£Õ÷îª´ý¹Á¸@S¹ýÄçzùÓœ`í_k&	(<èfï/5ëõüÊèD7*ƒChA(±ËÔ"â¢I$ó˜ŒxŸ-2¥ª„§å,ÔÂ
+‡ Çý€UYÙ«)˜(!3ÏFrÔÚ—ó1j ð°§ŒAüÑdè'OBùÄb	h?'o<Ê%Û€€¤!SøÈP=lÛ3Ç}úm%âzƒE&M±ÍhÅWº#‰¢+å5ú”(èÊNá¢8@Ï/‘ð>Õ]ºed·4iÑ>ã"wúÇÞÈÒûê‚='MÄ>0ü€~“;[;½ªSô#ñ’9OÆéÀý²Ð°ÿ #?óŠWßÍÿsì)6ì Å9ÍS:XM®‚ð
+ì&~ïD|û*¿oÃ—Ì(	ç]yLÑP”Ì°ª]•#=Ë!ÑgX6öçÂ¢ó-æTiKqG&¤V[2³#ÝBm%GüÌ–=ÌOØ7KZ›Mâi”)ÂTjÌÇufçlØ‚ú®ý§ëQõNiÁ•ÏnÊ\Ê‘Ré}P‘ýzˆ¤ÁNpž°  ©«…ÏévÜëéÆˆwÎo/þc<…×ùTÿ¡Æ“U[Ð{Cè»ÿúmÃRÄÚ‹œU}±´z¿ç.¢;ƒìbŒàÂ¾Šà6:1^Á5¼r“(e‹­¸DPŒÏîJ¶¦KwZ”AÔÀ¥„iç ÅÇžÄ‹öXÔÑ¯²Ãì˜5€«G[Ê/¤á$×bÌÚ!:ÏÃ'‰ ©DBŽÖr4ùŸ/ïŒ$¥ªÀ Å8þ5-„d
+è úÏY9Br4ïy¨@ˆ/E™—JvDÉŸïïü"TÃç8JôG?uˆ]£óÕ^™ð<™”åß}ÖšªÐÝ¦OÌ$¥ŸN£|ªËn4J•I¶ vø~³SÊt[Rß8^‚æÜºG¡‘H’­Ÿø ‚¯[‘NÏP„zùÓS}oîum!áãà~†¬k-
+…7xR¸Üî†¶Á6±T«‘ÕcMagtKÜ![«NÝDÒA'Ìdö¯#]ê‚çEŠÝ–­Üäkß¢üvË¹´fÓ>¥œî‘Ópyuüd†UNlVBš,…ÒlN‰c¢²Øåá{‹9lo^A´{Û^rÓZŠŸ¥Ey$¡3¦ÉÝ‚o"eA"×zëª¤B Øìbš›×’TAÜ¯ %ˆèkÇ&Üc]`ŒºåõT1ošâ¹ø<Ö—Hm3)V¯Kqµ+8Â©†ŠºÒø5jÓsÐíþ^¾å‹wHcÓœæ{}ln¦AÛ¡ìã‹2
+½/ÍG+DU<YÕ`e5îß1î‚ÉÐ„Û%É×Š#oßÁ >èíÆ3Ð)à²¡†´fŸ'÷Éö’àk3ÉÜû–ˆÃçØã§OÀ¢!àlúâl™‘HàG&uÆk8‹WPàçE{¨Î5MUàƒâŸ(‡$¯ ¢B*Õ#a<‡´¯fs~Þ*Ê¹0¢–Ô$Ëâ}ûE•t¦vôciáÁÈgm ±ö:’µY/Í;naîaKrq×TñøãõêîºíË?¥[­DTddÖSè¼2ä ³ƒV]&XOøg–b‡	F‘}Eeˆæ‹(o\-Ì> j(?e–FÐ‹#éçeÏJ·×í.+µÀ½ÉìÌDØ ÇLÒ"†ë÷¨”iy¼@˜ô±²Fç_œXÓ&&ÇCÀª}¦U‚.3½ÏvéŸgai×,p&É´†ë¢ÅZZq RòZÉM&;LŽ\<éÑm™h‰±
+¶ '³÷ÝÙV´Ë	'÷ÞCúùQØ—ðÚôØ–Õë¾	[›òØ»wz5·p”~ä 0ÎÀ"ŠÂ5ª·†LÍÿdìÇ55Dìƒ¬p)ëV”Ïë\«§ýöGßÁ-B%áD./ZùÍlxìoø¬7Ž]3¥Òí5Ô¢UJ„Fe†‰ðu~öoaŠpaƒæî ßm%?—äÞ•ÝI|¢ñ¾y¶††k1z91³ƒNª!|ch`™A áå ’é‹Ü›€¶bx±rptuðê¿ŽbÌYÐ,jÖIÆð	V7£ôætêï°z~3_ZÅ±_<˜ÄeØÇ"–`¬°éG¾©d2-ÊŠ2ÁœrTàò	8šÁ	£årã
+ßÕ«‘Ê[p7Ò·£K>ƒ×çe+€:~Ïü^èOc _„¸úårË…d1–†?Œ	Õ®vNûgŒŽÊ‹­÷^Ð ÿøÐè)C‡õïæ!{­0ôä“vÇU,¨o‚3^˜¹“•W–“þ|”Q—9Ú_!]Y«ß3[›ÒiZÙ¨¢¦+6yëÿ„Íšåþ¾3sdßc¢Ê¹¦î®àµ-ðÅÑ•_Vvä‘zÚ)É‹2÷þþÓNƒ¸÷ŸäSüõ%Gàjé“Ÿ=ä²sqØcV°h/!ÈÂ‘FÑü9¼;cd°>Ä2¾/A¾;·³µÑ_LFÓDjšëýb¢ß0'¹d1©+ðŠ÷agÇ!éßH¯TÕ¾á¬,$¨<(Ÿ$Œ|G®ÄljžëcGšEHú‰Qt¯€(ÿ„ Uðçr¿tD'*I:ôÖ·¥íÈïW¹!ê#èM`Ac·VùÏÈöÍ™¨Ç«‹»ˆHž²î5ýf °}hÍ“êŠœ:UY3Fç$è§à	ÐüUHš'b–fÂAF•‘Ô‹ G‹:=XöûÕÑ,†…ÞqwcçÐ‡	
+§Ÿwùcí§Û…Óé³4"šºÑÂf0=y7“o²Žuf_/Çí%eè®…+mAky‡™â)èK’ÉˆÜ÷ CüJç‡4Ìul1r>÷²ŒëÞdBFÜ µ}|¦ƒDá[f3vIXÆŠÍ,óâ'	ê¶5šÜC5`î6cK Sì™ü´Ìqòy„>1è15!áÑE+áC[¦ñ®‹Ñ*cYà‡1tÉ(«È¤ß<º]¥+‰^ÿyçfÕ,J%è}~Pë§[É|IjÕÆ=¼ØËÊ6l”SÀî^¨ð	¢c÷û;E@
+1ÞC&ï™I=°)Rx]ƒîäÚœ.)Âœ·˜ã;Uf¨M+ö{ÈåP	<±:Ž”B&Nìj'€%Y7Õfn)ÙÇ7ÌÜ«tflTýµBSƒ{üTÞýÂ™Cî4&:D™ØYH–Wy¡)•žyX 
+DO\¼Üð+X©žÜüãƒëÛ€”®Á*¤Ìýøý0î+ÌÊ:-\Gî"™ô>Ž{EdÀ4å:ÊšUcip8ž'wÃDÆ&Èœ§e [„sDFŠÎ¢ ¿É)&÷ˆývy½Ÿ	˜›M[iw}â—õë’m)@¨=ì/ó³µîû(àq#Ü'bçÊ‰¸,:¢OVw¥wÒe1¥h:àfªÔ^cùAB¾%{§¤¢qºÒÜ—¤ûN´®{‹›w—Sdv<ã¾!	µ|†cÛµXO‘é¬F˜IºJSÁÆw0ÌÅÛ„qcòµ#³]Ì@VzþL”_¾˜ƒ*2¸J!¡E¡iðT¥a,¹é|@5/P4¥QãLR¢"R¬ƒ5ôßÑ„¸¬–IƒÜUž»¶æç;®-þ¢î}õ\~úÓ;ORÃíÒŠ²kæ–YÜ—”Ft?ÎªB;é×/‰ÚõtWŠÎö›EvSâ ïî#6—okS…OÕ[=ÒW‡U‡$.Ž¯ÉñÌeã4ò­»IÅ4>w¼20A²Ù1?Ø¡(¶Ã\–¼±Wìg Wµ½*¾S•ý,½Ã¾Ë{ºþ2‰Ã3‹ä/#¡‚\«‰äZ;ç±lvßˆ£€rv[ãŸ¡‚¢þÿ'Gç±õ$FÑb@0$ôNè0£÷Þyzùèr©K	÷»çìû/YÌeïx%ö2Ùó íKS:õ3[ç#¦HÁÝ&ºîèï+†àQýít@†¯¬Í€“Oô{úÎ|ø}Öø‘ò`rx'™ãjÏXÒ•&.7SêØQÐGØÌÌ[LÃøâÀÝB	lÜÙƒ¸qÕÒ+D·Ú±S?	‡V½D9úa ’md÷Ôxf3?ÇwÛþ=Ç<ó÷p9ˆ³çºUÕyØ­«‚#íÎH9¾õ@¯”TÚ©	7øf¾àÔ=ð’©î¾`ö+Qä\ »hdê„#€Ãk.É§5L&y©ÀJÑâ®àUuy:™ZP&wþ]¼W”œÞ$àb•Úç6À&KËœ°Ô5ÔüÑ?Úl™kà+—°üë¨uSœˆ³öÇ–Fâ¿ŒŽ—XÐ•¬	âÈt,·¥Ž¾x›jùê"¥fw‰zæ*01Ásê€ü¾›‘ ›Ö3J¢ür:ÁG§<wùM¯^LËFbÌ’!È_óæ·Â,°;y;5èÁ}}ê„„¡aæ"žb«~€ÄŽhu_·$ù‚ýæ_<|hŒ4Ó»þ˜ST®ñ‹ÐC:§¦xØ'fý‹y~àùFsX¿4t;7cŸHù)Zxc~;Œø÷Vœïâþ§¢÷¹ÂÕDxÀ¾ømžñ#e^•Ã88Tæ`$!;¦-­uKi¸(Mé‰*Ö¡ÆíE¤Ú¦\![”¦ë ¹5›¡Bu	$Zhk*ººD‰jxQ’rµùŸÜç¥ÁI)$¸ÌrLÕ°ò%/[e=×üÍvS6Z³ïæ$”ÇWñ½wØö5D†Ó’ú¼ çCí0®Œ¿Fp œ”+{ðwßl”úóhîËšœ›šÐŒ9¥)zÕ}‘f3žïþƒ\Uvý}?…ïê‹wÝI”€¼Þ”rÖÆv³ògX“z3'$69æ—c–4(‰^ ÌJÐÄ?¯%Qò;>Üã” ƒWrËÖ¶‹,÷(emÞûšqÂ[is-b-.ªR÷ía€YXcã;^i£,©}ÿ2 ?óðï·Íõê#‹¤c¨ Š®¯iìÂ0–ÈÃY÷ˆ·qíØf@é7ŽÈf`áf±r˜“@jSkA÷Î[f©e¹{ÖrÅ»KÎ~€Årm¦¯wþ2ÑÀG|ÚŽýàkŽÛöSgü'RnVÈBW1"4,‹ÏüËau4³¦è»î©SÈ¼CŽý´„ùTîûÓ¾¢ôì˜MÑs08º£ŒfÞ¹äa<Ý§ô›5öQ‚éÚ:þ }`ßh†¯’›ˆí—þ'ëH$f'óm‡ff4ªXçïñÍ=[ô±¬­Ý-&iGmMŠ‡Š©èR_\cØ‹ÿÀ;Öþºí¥Ñ×lLŸü‘?Q*Ü"`ìÉŽÙ`Ü&ÄU–St2å2ì3¡Y
+']@EU±åä†»ÀIÀ¨(%`âà°±7'ç»G[»Pe·TüHkÉ•Õ.³€9…/îÎkÓbxÜdïÉ^¯ý” TÐ!ÊjA"yÿ#„#ìZS?žA»Ñž„@ˆïÄ{T¿ÂOìòéç‚µ}Êºµ ëâ@Â`\>¶w¿»?Õï¢,¾yí¶Ê]³*(0Ž¥¶AÊíà»“¿g†…áaöÜàŒ»b¿¤`¸¯63»‚|F}†ÓÐQõbQ&ÕÃ˜ú`[2,i
+ÖSÏÝœ8„+*üPróÊñzÇ’&65**ã âoïèþöÔŽÐ·ãîÙðÆVóZS7KZn±Ž›´‚ìoDîRšúMË®·‘üÊ6‘„—ñù$-Ìíœ7BèõI¿í‘4åMÿæÒÓ`:Òëµ} ¤G¥²5vd˜á¡ÈÌ5à¡› ¯úÕ$Ý€*²ö›†v"h'qŸÁ·ú©M£QÌV	.¨kvQü*T©íg×àwXdùnÜÜìe)–¢öà+WÇt€±‘!1¾ Ô®qP’èä÷Œ+MUC5|à ñÒ¤p{+b Kõ>»*øz¿,™oy¼<ƒ>:“°qÜc¼&5_c4Èn¿6	Î””7Wì×G;åšŠõWJ½šxðÎ€Q²wGÊvíÉ¼â%²E¬ã:‰ûi•Üt›á¶Q¢ÈÇ>e¸§ùs03àq(Ý:Q? v¯ï´Û*¢	ðnûûÝ¬4 ‡„½ù2Tû•yQùÒÛÛÇ¼ Å¾TÇmË’µøÕ‰UÚ^Ü2À'¾ß5§VX0@¢\©ÚÃà4°·ËGèºoý#WP™ ºÅ8u“ÆÏ<­ýÐ\è'Míùp£Oh.§×J:K& ¤v¯XÙT£W~^Ÿ3$Ç`~yá.Ð£®f)dy’0Du/ ’—ð¿jg]ÛIž¥óí¶P¨ga–Hó]v?1`8w å™]8ÝÂšÇ»6›Ž—ðÝ €!kâ6Þîbc‡ ô1Û5ÛPƒÎô4Þà±[y3Á–¯êc9@¨iØûÛ62jÞjp_É¸ªwâ%kl—tðNo$üÆ´ÝµÆùÌýÃ uã±Tq"‚ZŠ¿VÃeã­ÖÉGØÞG–©T“ärFÑ
+‚EÿŽåUïDò•=X¯ÉfŽ¸ùi	<z6MCœDo”?»\ÑÊˆ8f(¾ÞB˜_/ÊUF¥ËÁ‡Ó·5H`Ä²Í;ð^†`bGBæt¤«=W(x(Ñ¿õ,+Ë»aúoc¥åñÄ¨$˜BÉÚÔº1	“žP† Á‚¬“ƒ\#ÈÔ/¤—5~¦ý*ZÏsù¸;«Pƒ<ÌÖîÒú¹x#¢‚U_iùÆœ%šå]9Ì»òˆ4q]ƒsÆ3ÿ}1Borß^5Zn|¦¯Ž‰:ã• ‡‘ä1¹< •…-+úL%) ‰Ý³øñ(g`À?‚í'>)ˆt ¸s¡bwiyõÊ©9l«®‚»2ÐÃÉb_E¹ž|
+
+}GÆáM¬æÁ$Á9 ¨':ºn·"ÝšØH…MÞó”‚'ÑðÌŸUj£l0Öü3¯W][ÃKB`_ÃÒâmÊYtµOTI>s¿4G¤¸ágÎ™áæYz£±|­]K±’˜*ÁÆ7
+;Ù€Þï¸t—!U¯¹Çùˆ-¦´œá°ahrC¡Bö…ÞºÙØî}½WÅír\çµÕ|QZø¾B: £·“ò¡8'¼Ýzâ«š^ˆF˜ð‹Å._ª-––,Þ;äß„U¯%Jü°–‘^W‘þ>ßZp4½×¾á0‹YŽ¢2ü„om%wtO¬Ù·øà†bçÌ"ým‰EÎƒiö·~²ÞR¿S¹Óè	JN8ÐÝ íö`"-µyÆJ
+þ1î˜çÑ/ðLR¹+æ€u …fz”¬¹nó›çQbwéùŸµ™mïÏp‚rè«áµKp­)B£q÷ÁãO­Æ¾ý"YÚ¬›ážö«‚])'<;ÏÈ¬Güi„9´Ò¸½êeŒ¾áç!·ÈÄ;ÚÑ‹J¾T½JÚœÞC-¤&ž…¸s4uJ¼Šas{TGÌù¥>wg)p9Hø+5ÿþ.f$có"Të—T¼Tü#öJx@‰”$m÷VNZ¢g¤±/H|EŒã°@°«p?XïÍÌŸ´.ÐP+|’{˜ ¦(>*àYçyaÐÆ™¡k_µQT7‹6.,¿‰—€®žoìª[gGêÉ`?ž\ËÚE‚ïŒ»‚µVÄùkÙhÐ!’ZÌö„À<²/wT×F‡#k¨Ïk­¤ØƒaÆôÊ¯ün¸Nk”øÔ¸‡‡¢	×Ý«pìÇ?â´Õ{2ìæxÜg¼«‰ÏŠ üã6$Ç²<Œ^zòpØ²zA¼
+¥Ü¹U2hù ÞõeEsÛž €Ï/F|3Ïq™NA«²À¼ìlM!€§„£þŽßˆá¬{Q?5\”=8;®—Ãt½´c\©Ñü^ƒ‚‚-WßMÜ7€Š^úM0kƒ&
+y
+"e0
+÷¼èöåFûíïŽ0¯*ÏÞCÎ	•8S	›ä_-™€x>û„_ ûØ,¨’(xÄ£t4Å] èuq‚|{á½eÒ‰_™íËYÖsUqÕÒî¡õ¥?»Jt¼áÇ©Y.fŸöÚO•²€×«4Ç?ö×7wŠ@¯¨À#¥[¨@]›°2Ãð=rÈì2…eœã	”ÉmÞƒ¨OŸñšÝ³¡y€À++&fu”ø-G ^žüß¶'Jš›^1Op“B:ó ¿G²¨¤™¬ž¼hä4.JÂ èãÀRÒ]Äk¹0?7ºs3EPÒÈ|Øâ¼Vàë×4«î9|	å¢qL'ýñ[ó,>•pyTä>ôzÞúØŸÎŒÝue’2~GÍ=5NÇÂÒÉë©y£S”%oºTSŠùb£(y« úÏVòŒÂ‚L× ÝiúÔØs£†i‰+¦~eœÁÞF;®U(¸jë¤p6"ÐÅùæáÅq}ñy2U»¢	Å-Ù¡ÚOö(½ý–ž˜X'Nÿ`ßäÔÛDÕŒçø|y¿ùbØb-ýS$ [SÄÐSO?²3Õ“r¾ÁÐ¥ Ž[V‰~?øÄøT¨)y@ÈÆÁ•›‡ÑZ~MÉ”å…¤s‰sÖ„‡ºh£³PäV³sKžÌ™Hü˜S
+qÌOê5ëèK+±5–W£VrÓê.¥Ÿ0Þ¥·_ŽºÊÊqÞ¿¯iá{êqÈÇn|vÄŸ5apÕíð· ¢²1êíûçæT$Nï@{ìE4‰mèŽºlœLñn}ÓœT©m›= fšeT|	j¹ÛœÞ²†k¦â®‚1§‰ 'À1†§‘hX]µ‰ƒ˜³Žú\‚b§¥Y2u!œ©:Æ¡í‡S»º"T©IGYT7g®t,7;—,‡;†äâŸQÔ
+ð× ³Ñ³hÓ}3ð2ùYBýÝÙ­Ã“8HBï‘Ë.64Î§èTÒ“—…Ý:”œÃ[Ê>Ä²n9˜g—C~BZ‰íÀ†UÀóYÁ¦2Óè -gµøù‹{ÆÐ…Õm¡\ )ò;Be¼‡+X®ÐD*&?‘~bŒ¡ÛhP†-®!yÙnXÊ™)…ÃhZÙ¶û€-Á£f%9¯ç1þ§²0‚r1~§/„ÅnèWm;g4SäszÓž~Ç„ýà0ÈY"KâÌ÷ïKxÉ(Ê¨RèÞ`}’ÀpÙßµÁÐëCD¦«³ãï‹y[±ËpóÉï ìÂàlF?ši¸ø»Ê©œ,k &œ¤ <âDÐ;"Ü§B±5ÿ¸"öšZrP¼?c‡|ýŸEy!#û·Ù†9Õð‹{9YÃ]šWMÈPTM\&Ò_¶®s_‰,iêu×g|em+«Ú¯cnÏoôFîÑdËnô¨ÝSJåÇqß¸|Iîøø,ƒØž à÷Ù£³L¤ch¯_Ÿ?”þs,VÞfù–üøªÌ•(¥2³?ª÷Û´EØ™|“»ÅMµà€T^#Vðïñ©ÇH<:*$»çÞD‘­V‰)7¦„þ0‘ÌüK6½,OmÏq—SÍß\õ*â(çô²Ó››zh
+ð^5 ©å_¼ÌW~ x§ŒG¾cäã'ã 0•ÏÅ2”|‰erHS>6Ü5ðˆ^•Ï„ÚU]$tSºT«ÊÁ?N\Ï©¬Š@ÏÁDîý	>Ám—…ßÔwÝ$ôµ|Zñ-¡(ŠxÄž¹X®whºœµ;çãL{WŽfœZ²–C;C!®íÇ¦¾#KæÊÀ]Ÿ{qw_Í3-Q…ŠäIç°îBxRF{×¤íþÒ~©w¦u%ËÆ1¾ãºg$—lèå¦H »ä¿ ï7T²¢»|z^ðj°> ™Ë¿boùsb›]±Ó§QÆ²a}¾SNuó[¼6'¯#_Ìç¤ISBÒb(GnÍ5Åàm4×zšÉ9”ã„öJš`çïøÑÊìÖ› S†Û6Dš ¥grE{±©‚}Ah»˜-À?
+]ûi†»¹®vE¥t
+	ßŸ)pì·d¨O#Öz ÇŽÆa–q!:Î~»=k: Ç>%ŒWãàz¹£Ù¨ÁRÍK5ºTÏ)=VJ=Œ{¬Ä“©£Yg5ÓŸÀÛÇ-xBphºqŽW|Vzuò\«üÕÍj‚¹;Ö]ó½¸]âÀhå—ÛÊ^do"øý'Û€  °ÅsTRpeUKöC"µH£@&Ó>gäÞHÿÇ‹ØìqŠóERãU š[vÐ%õuNVAHÌQ/u½PQtùtådwc­ó¥Õ°£e³w1AÜøJµ¬Aó½7Ö3ýy\-V‚Px}'yÉnQ±¼XÌÉam±ùŽXó5.ï5'p»<0I)­:?•2»gJÊo“RíQÛíÎ¬Ý‹˜{Pj¨ÏÃ†ßb@µ§¡™;êO–“4öíEÌþ¢ÊÏðR|0“|ª7;ò0Þj; º±œ ø`(#÷__Ásèé¡]‹ÁN>v,%à;ÑxèBä¨PÆ-¦Iv5¿ANø¸â,5ãë2½µ_™£½ÉÚèÞZòÏ/õÉØÁ¼y®ñú=ˆÅ>«LÁK!ÂNxs÷ùþ(ÝHNÐqë¶ð)úÇ¾Þ™B‰Aj6F¾ùÈ4ß¿/¶_ŠØzj{ïZâ'9Î·>ñCUÚ¤Õ—wwµÚL„€ŽGà&Ã¥C)ÊÑÝTŽéöl½¥³9hÛWäý!~÷"˜Ý¨­*~°š~$Z\ð+î§Q`#§…¶ŸR@+lÞy™,’4÷¹j°´>ÔÓ—BuörAeM‘a7_iŽ_Ò¡=Ák2ÛBáxKÎ‚ÉnYrr_AEî1éF×Ôß²Vdå}Cñá.å{ïÎÞI‰Kv‘˜¬Ó‹qƒNÙö†úÁÄ°´Š1Åñiô…í¢}2 øÛ¯l¼sbl B”º¨;$ ‹ÈfhC×õHªç)×D!Ð« êïƒ>÷x½B½àJðyÑ’L|ÃÄ)ƒú&­Q¤g¨'Ær,me\:wX¿šB€¶‡Ÿ1¢#òÌÚÛ¼ó\ÏÂ³eÙ®Âr*£o~‡ +¼NW¯¤eµÍ6<Œ! öý8=#Åà¹~àåŠÝ–IöWˆOâøàÇ¯Fç•–[+øBËWÈÐíG(úÆÐ¼‘@ø!sä$™Ä|‹ÏˆFÌZÞüÉÏñ€$r{á86L´Ù8Š§óUjhÓÚþH§kµþá5øb)F3äÙ‚Ü—æš–ÚålÙ~:Â4?boìuþÕß¦š}¿pŽeœ/n¸dxá³˜Ð¾â­¶@ý˜:rñ_b__Ÿ,Ÿ†[Üò ¹Ž&C€?Ü””C£Á½Ó ôå_äC‹”.óYM‡§ƒª!7ì²—L—¬Èž ~,ªšÚ1û2ÕØßRm®%Õüt¹.¾Q<”µÅ·hºgj:=œÃÇë]¶™Ü§x¹V¨ýWýJZ‘[’Qb7ÂØCýwÅ	›5úåZ“/UDŽ1|ª:`áWM>7œ)ö5Èx]ö×2jv‰L-¹&ëH¯»xvÁïG÷b 'ŽPºŽéÃ†t,gÈÝ&ðg®¯46ð4TŒë[þÌÔn°è¨²ðþåYt—Ÿl³#¸LS¨eE·LYOL·t½º±üD,;€ÔàWKè€2™¾ïp÷'*ÎÁSšq<ÄÞNF¶îèH¿ú‹_í™JßŸÛíÅ¶‚üÕvHèk`ã2v>qâýÞ“ô(ÎK·!1ä¦éß‘µâpÔKMÓL%[ÅE®ÜÅ^jô•üë<ô&Q¶´¯úÞ|ÀìÙÞãŠCèÑa)g5þÔh£7-øÇUßÆ˜í C )ŽQ{¶3Œ`î®üFñïë>œdÂDA88¨¹*MÒ: ¿ÇRp“Åk±g¹´‚	pù7ÂÙ+›$†Äà7öKÊmÚœÛÜÔÎÑ‚òOé± %æs¢LiŒ:QéÝŽJ5W»ÀÊ·f—5uÈ\¼ÝGd:v~¨ø÷@e®ØŸ)eu
+ÃðI•O|à’ÁËýH“I¬ú…Ér¯ÊCFF‘g¿Ut™>ÖÅæ2;½¤èö˜L×‡Ê™ˆ$¶šqæñ!æñs¶ê
+MÄ7 r€‚_Ûþ½Ð,ðñ,™õM$l”+ìGhÄÛ[y®=½n¦
+ä‡s¦>|GuÐ[º÷½ŽðŸµ¸O£Â¼ ÜüÞrS¶rR˜xi%E	Rš{ëfÜÙ!ñ¨c‚£¾›œ§Ãn o¦;J4¤‰t·^!0«Æ¼ÿûäéõú™Ø…z¯KÉBÐ‘ÑütþwU‹Ýãuk‹ <‘Ý‚JŽEø‹ä³–`JÌS·¢|T‰ÉØ4äêS3Î‰~Gèï	fóÑ²mCú¢¡ÊÛTðO«…Û­‘ÛgÛ²@wNcµM[CBh ½5íûÜ/4“bËjñïè¹Ù·á©tû!@Iø }Ì”ú$¹óñ¿U5"9Ãv8A%ÇÝß/é|Væ<ñ¼á:q	?ÕUc“>-ŽÈ§xpÑŸ$›G½ÌX¤m¬ßP)ºlHÙ¨ø"bè¾Qøªo2!ŽxÖÀBx€8¼òÝù›ßoOën¬ˆŸ Ó…˜·z|‚'*z‹y*žÆ–Þýl4:)–6…m8M¤DI»¼´x»¼æÀ
+xA5F¨žúÐäŸ|!â"yBŽpÕ4¢a˜ÜªTW}ÌE4••OdË"0±s5còT8MÝ1Œ]yOVÿ *E}¿ªÉS¯¶v0ypåÞGxÄ$£ÊûAÚ¨s (Ðv°T÷8)£i^!Ê­«ùÁç—½©D'ö³ÉŸøÕ*bsô¯üâæsKö`åøOéQp¬·ê§Ó·m¼_ˆ¼‹¼cºYÐ¤xZÓ?‚g~Ÿ céXãQ¹ö;•¼þô¤á—Ü6é)ª“­˜‰—Þƒ±†vƒóGb#È>ÚT•~aèãQ¦ƒfpÆï|RÖ°líê+Gø«ÉœªR´†)Þ³-c)íTm÷žß;y¹uXÇ‡ÃXUÔ¥ècgz:Â'FYrýœ‘š[ôOnñCÛ¤K'lZÁñ|«?Y¯ûÍàOÚš§æÇró8g†j'ÀHsó£B‡H™=4>õ·øƒ&b „%ÀÆÙÎoWAVJ¶Y]i˜¯ö‰¼Á”¼×íçe[%÷ßøM'ÉeàÃ§;«HÕéd|Õù2R³œ\—€ûvVI…å‹.È¬ e%0?0‚oµ©Öè«±SðL.£›ì6(E2©Jzü–|£¿·¸C—[`k P	3þ{c¥ÝõæÙmms629·™dvvû±dƒ}\©H²)›èHQ§FY…¯Dƒ±6b|Éµlg‡õj–´­\Ö7Í–$ 2´2a«JzpÀk'( ìY˜º´ÓqÞü·ÐËÙœ`÷Í‚ûIãaA_gš¾Þmˆ‘ß¾¼µ»ó~±\u¤Þ5ú$œ€U´éLžw7Ýqca3\5¶òyËˆ?H½Ë@y÷ùŽLaå·RZùþi?ÀÝC*qcõh7](Ù…"ôÓŠÝ¶|€Y¡¼	¼ähàMhLi.‚b ^H”¤­pUF³Ï¦­9úŠ«oO7‘€ýî““r‰á4+%»bm‡]¿ì7Qõ65èËµ4®OŸù<y>³²¦.B@º*t*_&mQõáºIâ ,³eÖøÐÚ]a¿èúéfÎ§¥]K"O$èàÏ6bó$€qÈó#ÿ9/QáF•=½çgGmÄEñ—}s¼¿}¯Æ>¾©˜óD/|ÆÙxˆ¬i.¸“ì¢õk‚tòyÍ—u¶ŽëK'Þßß³Ó—WK'ÐGtZ3sqŒŽFˆ¹¾gU.ë×ØÃ#ûäWžUü%0ÀÝÊ”ý`äÒy¤,àdZ€¥‚~¨*÷íVï‡C8w~õ¿šõhœ7ZÉc•tús¤AIˆç0È9Ù¥ÄtŸãSß+BèÅ·Å‰â{§x¨®,dJlI{êÍÀ!å†ç°t¦’nîÁßcÀÇmzg¾õïßô"6ö¶êxày— (DLÁ˜Ãï BRèAÈŒ ‰U°ë9)7PheÕNAˆZÔïç4Uá“)‡ÈDðË ü~+ð	÷5$K;4Á®W!Q¯õÏ:¹nKêlHØäW½öÖÔïMÑœSíê”N{QÜ=l|~
+2X7˜±l%…üÁ gÒÄ8*S¸Á8D"gÜ8¼Jš–è¯lq¼k¸yš•Z¬úµà ‘ýÿâ F5y7[ƒ·ú¡kÜÌA‚é{l”S˜·9Lˆ³“"¤ÐEÀ’ù X÷b¯ŠËÜ±ÏêL/û¿OEYÔ6³®©Y—èašŠ‘ôåðn6Rm¸ON¸•'0C03bßzÌÿÝ¹ÃŠÐj	HÎ:—¦RÌ1þõf³ÀÅ„'E8;æþô¡çýoýCúû£>¯h,ÛžZ­¨ò!Ò,3^:¸µj¡ÕdÇññÉðc.á,ÏPýiË$°ÎŽe u²¨y‡·uUÔ>‚¿Å’ZZ{õ×#î‚[¸¶ûÓ‚%3z‡´75IT²¸iát§/eá~<9„ŒTóÔ<“snø9[[[ˆdóð°ZDø½‘3k[Ú}@ö~òºÎ·~ól¥ÍGoòÆèõf"ã1q6ŒµŸ§qªèGufåLŸñ©Wâ0«ÐLÊà/wY<ÐÈuW‰üü²ˆŸ ¬›û³tÑhb·Öº:§YÇý4Ú€½¸]É/™ùcÜV‹_S¢p0±„“¹Øi‚/bgAzN—ömý×Næ¤"«*!@r^Jp×¨ÛQÆXãíß÷~qcyRÈÏ^ÔøÊhž­dÚÀŽ–~cÄ÷s¤pGìwÜq/Bk¯ƒë{•–¸—·¤{ºî0žî×èžè›‚\êã|³ãs ¯"'ü¡üä'b)¶ÿÚgÂ6_ØLœ;}FO{ç’Og¨
+‘è07¿íÎr½&.c âo{î¼% 2"­¢#pÒ}çÿÞÍ¶v{³
+¯?0£7°ýM~"ÁOª˜ÓØ}ÝEãR£ý8Þ™u*Ã—ÉÇ¦GÇ+ƒiNEÃk“ôßO?ö{X•Üqk|“^>DM-F>{˜¤×CÐêGNæñà°ÀH¬`U‡O]®7d®ÐÝ;B7¥­Ó#õÒÐj×bõbÔÈ ³$@+ŽNÎÍKÏßîƒ1ÎÂÀqáTsÉE½L
+ÿíüyÔNméu£Sò!"ºíŸóÐÞÿ™gÊÂ=…˜ÿ¾žé>epga¤îì»î/á÷ß=5©åçš«¾¶È¾†ëY®Ø·ãÜÁÜ`\ê	[Ê„7¿:Ù$“3Šøé@ÆÞ¬ìƒ
+õ©"É÷ta7'­N@LœùŸh¾2~#&HŒç]t5~®!°Wº$êäf²ùÙUL•mçXÚ*qq¾AIMý7J9Åìéar©Ç×Zb>Š¡ßdû§ì«N~
+ RÃËÄe%žm.ž…`ýq7Ûo“Üu™=ÚWŒ'¬nZûžåXË|½(÷Ójt¯…G– nµ>Ãêv•'ò:?Ü'‰ø,:öŠÿRü®?S€ïälµ³)CA¸Ó@á¬dwjëm“…O6¬Ãj>ËÒ	“á“|áC$¢çâ†\ŸØ‹‚ý:¨G]èg0õstp±£“ã–b~ˆ(‡–¦Ì”. !ÚBË\q~\€¨¯J€ºÙëÄÕ—c€^g7xÚÖƒ{Ž˜6 ?ê' ËgÊäŽ˜ÛŒ:BKWP'‚¶›0ÛÂG2	cjaoà$¢)“ï(Û¢Å¸“)[2iL'ßˆe^´­?öÔ9¡›'ûŒ-cK-O£Ž5üÕ7ïT¨å¯T †îW/rVfE9D{­-ÎL|AÞ’ž#kZÖüZeŸrßÓÞF-Ý=z;{¤.E"juµi[„¾»‚Ÿ†ˆ´Öóç‡¶J„rÞ\Ó˜?¦ƒFäülÌåµTG-’&ón†E3èh¼iýqn6!ås»ã]…}2êg©ƒƒþ‚k†-“9hŠrgdŸŸ%ÞS'„Cé)=úÌÑž÷ž´ cxbq8§ãx dÝ:8|O]W=¡4˜$	ó£D ¬c‡fºÒ¯Õä´„,› ¹ïºãšÁ Ï\u’xßÑ7K^Eµ£šB'©¢Èí·‡£Ðv´YP“åe­ÁöØ˜Ö9ô-EóöI«ç£— —Q¬¤3P1’?mþyÂ.YWGDÖ²«ªt§˜ú«TJäAG…c‡¬&o@…f”³3œŽ¾Ê“;j!Ö#VøzðJÉ(Jýø®}0‰>tÇÁä§ü¸U–çQ„‡½¼¼Ÿ³rŽ
+Ó}©€ðæ%ƒxHà·X\MÝ[ý Ž´kvæŽ1›¦™ô2ÚC%¹	Žp¿¹e“qéÞ¼Mv[ù ´/®¸¦G«†–¤\ˆšØš¤ìgâö;ú-½\&ÇgÒ‰ =éys`àVR ü“Ì·U/1#jûãOf­¬^Ñ,ÞZh¦Úñ§ÐÑ+Ðht…I »‰1¿ƒè¶õŒ+™³ìÝÓ”CX¯FìÚ+6 ¥$H;†ý÷ŒºmØûÀVt7pzÝ“ ¹µ†Zhï ¥)Ú‰­ˆ4´Ï§éÊ’Ï³­mxCh@$‡ÆGNuÄz<SÒŠNÝsŽW"qµëÓ¾]?Wç×t>hŠÝNñ§W‹s|Ü°‹2ãX4«aY@5Àªâ¸ÑEÂ×†]ÈÒ¬FUÑItõÊL¤bÙ%EžñIù»‘|Ÿ÷]wËb¶š	§"›ˆòÙï‚ÂËt´Ÿbum¿„&¡gœÏaE}qS»ëN>­¼	‰ª¡è¹WTÛ½!‹šm¦c\ô]óïêŸH‡Ë}¢©ovÇ õñÚ$³Ú/›,]°±«bÿ@Ñ¢ ÅTÏQÅU)ø7"('KL>bxÚ	ƒŠ[-_æQwçy‡D&h.*°ê“ÏÇM}qEëˆËÔ^½>Us'oŒß)j»‚Â•É€¬;w&I›	,­Z¤Wš¯©ToÑÙ#W8ï‹;¼m)Í‚4Ó`4” S¯Qkïó¼)}Œ¾ß¯pÇ^íÀ¨!'€WVq;®’„Ù,ÌÕ¿ONáÜÇªfy÷fÞp©Í±ÉgÃ…%H¤5Èáú1?Ùï§­ýva¹hë‚ëßvˆ"Êrè²!mÇhQQNI×+Ÿ–‘ú‚œë'?keEÝ@ç“Üsà2ÛÌ«U<ŠµkZ› m§™›¼ÏØ$MoÓhºÐ×£oáÀø/IÖb·¤÷i£"Vœâ'3\T)3¦ÙÊHÃ„—õñ$ºØöQ^vÓˆ yú Ë€Hròë‡v†êÄ¶p&z;IF×Í/<þÂtÚ¶ Eg5fÐ% ´(¤’_Òµ–²Žþ®Õø˜Ù–ýEHÍÉPœdbÀMUÔ]ö¦8¥8ŸòÒÐøFkòto*N×ìÊ
+DDmö8eUÕOÐñUV#f ò“ Ü'$/kÂH-M=J3BÔ	5§™ ×ãr´Þ¯Ûu½g”j%„×Á®¶cüÅü„£O ZZB
+Â1Ú`ÄrÈaÏ:ñd¦ik¡†ŽUûÑ;®ÿ®ÀFò¿´ÝõG90q
+õ©0ü·$)aÓ[ §Ð0Ó¦Á—¥^³¦ÄÓÎÏ1áïaÖÄí¶Û¬Q±ºv÷Öí85P‘€6m(®8_÷Æÿ[
+Æ—1Q<!nUVkÓlt»4ýiÄ3®yõ†›¸é*S+«µ¡¤ãášÐƒ¡íÜ:ƒýŠiC¤ü=~ïÆ÷—¯¥pYÐD³*Ø4Â-)/s!•1ýŽ3œXÈ˜I+©èt“Pñ–²¬ o»$àËÆÙCÀ7ôïÖ9ó¤)xGç—û8¾Íò’¹¾4æ©tô™[‹µo6L’ñŸx—Óû&—Ÿh8ÿNŽŽ«¿› DIežvëe5ÕCO+ù±ÎwçüìûÞgÙ~«‡øAõéô [ýÈê(‘¢ˆ¯¢|(«sx£ž&ö$u„†1˜<dCóg0špšJœÙókr2U£¨MJ†_Àw
+ñ“$¾HÅ7Ñ;o+«RGîQn{«û‰_Y¯ÞäªÎ×¸ò¿OÞxôÅ:¬Ü~Q$vSùbUpìgjP}Éa…_«ô{š.€¥zÔ)Fôš8$¿j>Ÿ’e>²¸ªDï*ª±G}óz/8QáÇF‘¼ÒU¶Ä&·W&ûy;89Çi›²s;­žWÝÓ¾Iòk`É´mLvÊHÿ'(V2wƒÂåIV¬ÌÒýŒÕMõ~M¹wä·À>UY²e~ Ê¡óþØEgæL]ÎµÔ½¨ïáª3˜öš}(VµAwœ7™H^é.ø	…qSÛ@6£0+ó<Çì’ÊÎ©F’<×ÓÉù-²® qøDýB»=Ó"»xrû–ÓQ'÷$ÅyÁ–•N
+<’/2·ýo(Çaµ7QGRR³(˜‚x'{2#¸ÊJ¾MàÔæË™H›|p*êáô)fpel¬™ ”ª­É»uvó<x÷"¿ârû] 	þ€z«ðIº™a?‹Ÿ4ù¤šÉª'±+\¾$8ëT’úò‹LŒ•5Â‘´‹À¨ˆ/èZmâ»*Ñw¿×•|à…>Ò©­§lÛrK†‚²–#k:Í’¤eÜ\M7§¾/âÃï»•¾£g=ÔT½ÔûýÂw*kx˜J™ÆÞ£ªsŸfÛùGS½LoÒQz3Ú[Û~k-í›ïÎdþ[s_mˆqü! ÔÃ´ã¥‚ëì42¤þÑ^	ÖC*¹™ÏŒT_J!üBU!ÀÆ5ÏÛð´¿¿0¿Ú3þ6.Ò"Û”÷"FmÀ—RËÂ 1|Õx$Œ#¥DdÖU¥eäEü*–Éjý.Þ -èjåü‰æq-Ç¤at©¢­DxNN%,e±±ç¾Ðó¸ïI$bÓñNzÌ‚˜}ó9<÷ªñ™b±ó€D¼U»êÂª™¢ºïjçŠ»:€»µØë~Ÿµ—Œ_Þ¬C*;¡®7ý&åµ¶b¨WëaeÛ‡Ý¸KÉŒ÷¹w¸nnB<…Ï¼Al%8>©/)í¦é§9¶+>|NÊ±f‰±ú}ˆó½"=†ì7L¬Û|w–Ëi_ÅúÞ®ÒAB ºž[~#Ã1•Ébp°WV
+!€ÉÃ&å)(ï@¼Ø:DŠ†¨C	bÔ0py9w€»¤,—Ì´´-{»îöô4JF/¼Ý1àà1÷˜á÷å¥œ‚.Qá#Ÿ,úÍwq'¯S‡¼`6Šº†úzªe–iIÚskÕÆÝbé´Î¢ÔN¯„:Â9H‡\ÖºpCqrQÀÿÎŸ{?±„kòWŒSIÂ›dl@id`Ilk}­®Ðq•¾¼á“ÓÖû‡‘„„‚ýÔ‹àÍÖx¬£­VÞÐ§MP)ó}g!àÃ²ÔÊ%Âîò>D€–.€ôí‘X®qÑ–WQ=º`%sHŸÔ/­Í3<¢wç#ÚÒ~ãÙ´ÚKjhƒßšo,¥KzË?¨‡wÿ¼?MW‰‰‚Ñ§Ó½Ü02˜ÿ^?»fû9ú½“Þ”¤T‰fÀ¬Â$iª€ªáÝ3ï`tŸ¢_Áê¼H®¥çaÁvƒÏÐÅ¨DHú7Ó
+e)y<µ ƒVÊ¿£Êc1Àý°ö>pwñ½³Š4K²aš¶<šß3´Ôeq>RBc 8§w™ûoï–Ä‰EN~mJˆ'  þX×÷‡!vèòJnÌžÛçÖ©Ãc'°Js°œ5¸0‘9=5Ô†ø$cÅÚJ ÕÜgï.­nvY3SÑ“NéÛzÆ‡ÐÖK;ñVw"¹˜Ñ¾„¢Q@gÍ¡5Zî`±f1"ÆA‘HqCØhŠü9úv€L|F‚¹F4@‘43¼û’¹ÞX®”Ž’ Ñ¿_Éž–~žiÏ”WÁ‚öpâ„ÛìÔëÌ
+Óî(Ð›=¼ÓŒoþ k4%T¥&  s f¢,Ï`•ÄÀ;}æmŽâ­É°*®S¿?.†-_íJÚqÕSäÐr+¿&m\]Ô›¿b„5ÈWCî!UW²}þ“˜·Ž‚Ž+H‹Ñ,‹ø?=Ç=ÖCâ²ßWç/Úô’UÙ°%ÚŽÙ!ÃqÿÑ7¢Ð>®g¼c{ô#y/%èÔÛ~
+¯«ÄÂñ{v/:õPbH>Ã,Z/‹.ô®_r÷ªš¬Ï¡3{=î¡2j‚héß–u—–ª¡š‘ó¡c|ôVbQ®Ùü…C•×@•÷¯’ipp‚EdOŽuo½
+ ¼¿k¼å¤¢NãwÎÊ5 dãxJæ:Ù!·½^¾$¡»3úâ+<5ØQŠ‘î­‘ðÉ/eÁ3p¯käR±§Ö×²{Ä§-&1±½&tØ_^‚¯ñâþ÷s/<­É%…ÇO~EŸÀ¡¯î¼ñtÿgûið°ÇavjŸy0^Â3b–,;ECDÇž5åËN§¯’Ôf;î´j‘ubç5Œj[Ûƒd)61Ž÷zê¬ƒVè
+àäÌ‚77¹ýãž]ß5¬°ÛÈ¢$Žà- ±¯,¤"ENRðmñÄÅè®Éo.0ªÌþ
+öa!®ðPôæBÿº$Î“	m;Ñç+Ôºg¸Š•+§€Ñu ùc)ÙÓHAäå2Æbþª«r†Õ1~pFž9q§a0öOt°r.øNÇ†;LßWaáK+ 8‹¼÷ì[*BÙÙÀâ¥a¿µî,!û(Ò.'F|þ%ç)mßXR'z!:}]$9+5*üN‰ÊçÂ+VÒ:F¿‹ß°èp³òšô*ÔÓÇKN×³ Àøà‡Q`³ó>ö™†½vÐí¡´|=M5í{8®
+9LÌ«‰â µï³àÜyJ$cx¡	ÊÎ¢ã;Áw&’&TZŸÍº—ïä8©Ð0v‘«ÊGê•¸gö4­äÁ¥wC®ïçY‘ƒ(Y›_P^}ú,¦¶oòÏW ³ÌeŸâ¦Î¹–Þ[L¢3 ö>ì^äazŠ”6ì@Ä.õó?­dËjþ©:ÑŠw|›ä•îT‚¥…‘œÕ:ôïÖ +wOr(º8kWO>8k[á)Oe÷:7²’’ƒÚ)—_‹ƒ.® ­ÉIm¡Ê7‚À*U_¬ePÉhðz4@×°÷‰îPâíV»Ú›¼2oœ:%pï4lvÇ[4$"ÒÍ…•áVºSäce"(¼Kê!9â—ñRŠ¾=ØŸ•šk¥¾²£žÛìt¿uúT6ò)I´“=·k%Êx½Xö+= Ä-þhÈTeíñ?cAÂ»jý€ÄÌ7 ‡=ÑÈÁIÍ.CØ‚}<ÙH>ëLá ‰ê‰“µ8k2îßÈò÷±iõÚ­ðvø Ènê©Ò{S^5|¨îÃ_üÐÍSÒj;óø¼mÝY Ja‘è;%!jMìYÌM2+ª®ÿîç¯ß<¢>5¬Li®ô#K„£ÆAa½‡&
+(ƒ{Fà-¿ÝKƒIã(b}²èwZî^·ìH¬ÞäCÝ²ìw·±¨†Üæ(yjÇšfàûB{}¬éD¥\Ž¯§_éU­PñPÈïg_nÈßO:qïç0Úë®–F^Ë¿·[Ãä‰udb8¾…EŠ³Û½xÐ ¥‡ßÙ±Gû³|âiä\ÿtò¢€Kû2Å	ûpýÙ#‡&ºêYåMã©¦mp´Ì]/JUœÍh[ý×gcXþ}Æ$…ŸgÆËÈÔ=Ç$šÎÊ/¸ìpu¢lhä?U,tÜq?'v¶¹çMƒfa¤¯tŒÁøˆÎ†¾û,Hþî4yØ×”Î¹açScÍ®ƒ$¯é¡ðë(ä»Œvaìàa¹(læ'*ÀcœÉëŸ@£{©a5ÐA,¶ž™ú4a`îôØ´hRßÞ¥9<æé/¨…$¼Yi7¹÷‘|”ÁòdÎ~¤bx|˜ø+R|Ýu"#Vkcæ~Uæ[3<=ÚÀ#	›ý+ù §«³Î'ù%÷FÕ(ÇqG¿ã1ìâ¿mqzhk¾Ö·Î¾´ÂŠ1?¥ÄQs”Lpƒaªôrß8€PÞTå³%î#5¸Ød˜æÑde§_ãá"V½râ×_ú™w}(y#Á?Ü¯~SPbo¯ªG{w°qÖf«L´;m<QgA”|Ê9ÐóUÜï ¬¦ŽÐ7cI¿pE"û¼KÞÈpZ·b"Ôi# ÇL I{¸¾L¸ÊÚëÃú£Iïr«=~É{¯ƒè“
+¸¹­¯q°ñú>+‰œ6„ò›¢æô×»÷Ú»CÛM>K{éÊ×í#\9ko”1‡Uu
+,Ût=ål”æÐ—Ü:]¯’-2“4›¸€tIÕt2BÉ—{;R~Žý•¡w¬&-y¾+ër½p#?/sCKï(‹Ø.°™g9‰ˆ‚¿‚³¡ÁåŸ?MXRç1š©|ËB3]`	ëí‡Ý!€žÇºƒŸ |è¼ÈìÉkºŠ3ªª§ cñ L>É©ô(ñÆëe¼$XWÓZX‚ÌÍ˜¤À9GsBò…ýº­ªï¤|ŒõÕkWÔýñ‡Í›T¢²i­ÚÛ}KíQ$2RZ.}(³b¥šv]<‚€ÒÖµŸo…pÓ™ÁÁïø[ JèÀÔÎmq¨oˆ¤Æ°õî4™­ÓpÕÉ¯7^«Ðbyº1Ô­fÈ‡²‚Ü†¬Tcœ%_óÈmu„¦óÆ¶Ãô#ŽEE&Å»ð8{ê§Uw#s1‡Å~}OmŸÏÝ–/ïDÂ‹£Øsµ¬Œs0Dn©áì¦T{‹#ì+øMòf‹ÝZ‡[+(wü%S´Ñ¢‘FÀ*«y>¹¡…eŠæþµ­Éq*©K¯ã*ÆÁ a¡›š5ðzž‰Çö+PâÎýÌ£¨‘¼ôÍd?·ÍÇ¬%‹?ô`Z	³
+¯ Úæ2 â¢Ãý‘F¶u¥Ä
+øýó8¸È!2­‚Tf²{ŽL¥àK$Ògªys Å’4_+b­U˜(4óœIâlì®æÍHùGQfVmÌ§fÐ'`Û£F¶`LKœ¹g§Ÿ…ÛTœñz}ÿMƒïþãÄ=Û@ÒÍé¡ÞÎ–hÈMž¸vãëáó¦V#mÇê[DÍ¾=ëƒÄu?¬xŠƒìmÆ¬•Üþn03t“ÿlhÿ #Ø†Í6ßs©ýyu»ºÞ?ýMgïù}­Ò.€‘øÆo…g'RrdsÚ`y
+}¡îÍOdÖÇæ”Ÿ(T}R@C2¦Ü`™_ˆ’SÁ+pgØcàP—øÍrhüåÐ™—d<ó;{‹íjoŸÚžC$}Çeü1rž³·^48çäº3Š‘0Ô‹@%æ„²[\AiíLÌðòçR’AYþ:>õñCH(¿óçþ})þq36)#…/ŸØD!ý4õE&fNâÝ§E¢8v;†½»&ï23üì,À¯b®mü%Ÿl¿‘ñå»‰ÖÏhŽ@I ïØ>dë¹9ÖN›AG•$7ZçwBæt¸üÅ+ªÌË
+ŸQqc 5¼¡C€›DD%kŠ¬›øV"ù4_-#—ÿR%@—øÔâ«£<æ¤øÄ(ù÷ˆÅèâáï–F¶6Ž¡ßÓ×îœ9Njúžàý¶‰u)?èxßYý^ŽÂØÜÚ„Õ_ì%!G‹»æK‘’Hó“±é/ew¡
+ß0BYSû«ú[0KDÃÃÑº‹mOÙZ,¤ªS|Ø÷7V¶Œí7Ê=æôÜ+‚‹‚˜>¼Íäö=!=î¦m%¦oAðû·"œTû´ñ<ÔÅ{üâšöZ/L°–'`	ý6a$º(ß.¼ÊÜJh·ÿ Oé;½&Ÿnøûbp·#è7¶-51 ³õHs1„kÖGšüg>ÕñmßLA‡i¢.4 ‡Òõæ{,ßòü!—ö—±ç'æb”+®F`ŸV;cdÚõÙé›TNÐ“…¸~ÐdsÏÂ¡ð—eDè‹b¨88dÞÎy}ˆÏ¨ãÝ:c9N[i¿viÈ?þQºJíY`E9ßlU>˜›¼èj§šG7}ø¾Ù¢oÒÞhõîeT·[˜I§E"Ä'vÅéOmÆz$Ò¥(¦¬vmúê^ð]WN]%éèuÕ¹­î/ãË)¤Ymžù´S¿¡èªOv@ÐGë–öÐcW“ñ°þ¢ÍCûá ú{fäœ¸Kõúó±€89Œ*².±oØÚbbcûV°Š™ÿ±jÅ`¶zÖLìÜq~gË““Ÿ8®g7³§º£PóBÜWÄ	;}µ!*@n<Ÿ­eŸò/ÏëÁHùÏ·Q¹ BŽQŸ Ê¢á‘h~>C‹ìM]:YrWzõC`¹g­Ä‹Ž(ñ*¡;”Òì¼Gç‘ã{sÀ»)ôÂäÚ JØôy4hÊË~£ÎŒÐ®—[Elã„øeÍ‡žË²i¯U	Pi_¦„hqFé@âÇ‹Ÿw|©-g|zdËýèþî¤ÀŸëF¤mëø…°RruZA¬lÜO¹¾™äsƒ$]ÇÚò£O{¡YD‘}’½C®•zL¨ô<¹J#.“Fô+¦×Ì\ê"6­µÄ?`‚tµèMžo£†•˜MÝSšÕWN}„DŒ"&|½9³šú…,ññ¯< mçÞu›\À¨	W¡´_¿á(¿¯Ù†%ùna°š@ÊdÒƒ¤’LP#UÍ\?ÅÏFdÍ‘vtÜJ˜Ë›/vzþˆô].±Ðh¨ÄåDªÏQ—ô[é›È_êdW~û€z<‘á/3é'’öLš¿{’V”Tsð©UÇ‚×®}l™nñA3ãxºóJpŒ @çñ¥Ì|ŒKM› ÌhÓžÁlà€ îðùÕ·CÕö0PIÛ,AEvò"™âeþw´@¹^dÁ½¦ììŒÒJ­€ m¯”åô*Æ/H#r£ˆ†¦é’æ:îçýÔÝ*ýª£°AÛþ–ÐBƒâyÂìœ‡1v]Ù\b‰‹t©.nqÁ&›ˆ¡s•
+l„1ø~‹uYÓK¸Dn”ïò»Æì7ž”ÈŠà~fÐsÀÎÄªçßÎ7j‘ NAéÞš›¶GÚNH1$ž3%JŸø.b~GENMÇQµ4é/ÝÃHmZš£ìM¨©äç§iL¿‚ÛqYûïÚCeWÊž0vÞ7·^3®çXvidú©Gèy7—4fxƒË:Þ¿ˆNV~©¡õ^5¼uôê>WÖ¢^àÑ¤Ì[ë5‘äSÜÛƒi5—,†¿ÕXÉÉš÷[×¹D}ii€’\’H¾Ë‚lØO¿gæûµI¨Ìf”—Ñ`ò¼ ù~¬[!Ó.4îz‰nªÛXË?KZD’4–¨Í€ù„ÔØ¡ùëº7WŽ-Û”Kò
+ÈåŸcbÏÎÒ¯¡YÖ¿"¯Ý‚÷mT¼7ÇuÏ¨Á1#WÌÞ'nË0Z%¥èÝ†Q;fÚW¶[ÿCÃëÓ5§fŒx2p‰6ÂÉîü#ÇyF(jPH³´¬
+–l€mÇ |Ì¼ÎIƒTúÇI†f:‹ño³ÖPª3ùüX4&ë¶çÜ×<aeÄ¶ù}¡[+Ï
+[Èu^"n!©µ½ÜjclÑ¡jýè¸ÿÞúÙ¨°î1»„EÙYêG?¹Ës±zzé]^‰a3ü´ôx¬Öèah»6ÿÊ<'4PÑPe—›PèQ.:ÌsàH¯XÜ÷áWÞKÅ}iúšÉ£¿h^ê÷õÃ|§†Y·Á¯‘"ðBš-K¶²	¾·}O•é«™ØÍ/?Š|º[N€õ­9ïÑXT+œ°¢Ûªâ&CSm`éI+ÀÛ¾©ºÑæ†>‡H•l½öuL\ õj÷ùm|†Œ¢•7\‘À‚Eàê‚ý_¬ÛûüRèK%b^Z
+”qŒŒ<â@]‡ÇWâ\:Útr08<EŒ37ål’x-¬¯È
+²û4{lÁR‹¿ì¢Ü›vaP1¥cÌE ñ—XW¿w–Û»ßlD">o½5B4~MµÔ•"²x.~Lp1Ÿ­ëã5þPÛüÐð®q®¨Õ¢FÙ/˜¹íTÁ[?u;0Áî½]‰vÕÈ0†¿ê“2Çy5‹þpK_—‡¿wúÚÓÒ4ß_xý]çuÆè5‘ß+y.§¤¯[T¬OÖÇ"ÄgZôàá—%¯(ÂiS3§
+£Äèî,ÔøP†?ru‚!0þD]Xð0,¾ó8ƒ*7Sg]™VdPÄN»n òÔ`Ð?lræ>áÓíè%YÀˆ? âÂæY%Ô‚ô2#?¢t} DZnˆÙTwÙã†Ç)‹$IÓ {±ôÜa€ø­Qàðæ1~±ÖÁ"±÷…ë†u¹	‹®>;Ï½Š+²~Ÿ
+ì~º¯co_zg¶_=10œr0v&HåüèCãJn%ÃSä³” ñØNú¯]îÆd¾»UŽmNß‹hÏOjæŠaTzv3vˆÍ½+D:J‰WÇü ‚•TH‚£•ç%j»Öí0
+ ¾íØ`£6³Ÿ`Èû+Â÷B’ýàþGÍ;?€­»@˜š«’Ü\Qç *<ÑrD"—K”' Ã¹jT‘·–Pz7Ë`»1Û¬PJx#1Ù‚äàÖ},óÎËÎ«¿Qµü*oŽë_¬ÎÀéšœ˜ÙY)°—G_ç¯”Ò>?”|²L9–O;\PßS÷}¤sx§RtPqÜ-ºc‡H¶\±Õ±é^ER&ûR»K~ÿ}Ì{Ö]þcÍgB¿’ùCœA£¿RÖÍ³ÅÏà|9mñÖ¿äÊ;-¾YHFÓûéé‡Ü-‰’ù€éÕ„œX^näóåH‚=áÙ§k‰å6{v¬nåRöíH¬C˜×Tûñ‘ì<_»Ó²‹ÐŽâ¢>bòUÉè36H­gãÎ¯;†?¹‰dž5k{µ'QõCdÁcYˆ é9~\(ìhôxk!Ï.A ±1„ÊÆ=M\rÝî…cŒ¯úí6²ä&,Ãìbœ?Œûðà¬…ºù ¸PõTôy¨EŽ-¥˜„S_ŠA~H/…¥÷ÔØ¹=m_Ä¡þ¿Ó<úmi¯NF»ê’EÌ™NwÞñë¼*8‚“[íìD²+š^ýó­Úñ<ÄžÿæŸžW$Ûô!Î#m´Ž†\—^è¬áûwóZe9n™~¦)†Á£Ÿ|ŸLE. Øš'äÎ“o±òóÃÓðk	"ºg4ãq³ðõÛK½P—×»Ä£@ŽÃaÂƒ²¸ñöjRâÈ«Fß	]ºÚ* èÒ¨™Âùs(ÅÝ$v‹h}§[%eMÒ…—ùð¾¶‹ø¶F7%
+—8Ä3ˆå*vÁuüðÌp†1„š{ë68ßÕc¡(®*ölêÙaPÓgwÒóðÀçÅåÐšÄyÖ
+OÎ«ï+Çý
+òÁãbA–fH#~ö«V; Ã§ƒ¼’”+jXŽâ$#3Y›zäž©Çã‘£oÆk½}î'4OÚèd¼O—&ÂÞšE¨à‡e(‘ Ý„gÂµ\¦îß•tv”I’|à	µáW2Ø€íƒ ½qG€{¨ôØ|ÚµÅ;úþÞ›´niKvèéO¨·BÏÖH#ZàØµQÃ%ATÚ‚>lîæ˜~p	e™?Jý‡¶TT»suŠKöA@#%Ð4P¶Æ†tÂc+pˆå'­_e|âæ¸#Bõšvb¯gcã·§»ñr$£-û§¡+T€»þº5ýÈ[kw×0QL$´GßÒtx £¾Ã-ü ’ëXÏ‹„Ä—opŠ¹‰}xãB†î¦‰« X–®Ãþùy¨­oÂi›˜ÌÏB³ÕÂó%7E‰g•lûD°©'Ù.íú°LqÌŒŸ™ \ô-»hÎó°røë^÷úŽTò€Uô:ðI§ãä‰¾÷&!ÝhŽÜœÒ¡ãáô–½¥™¾kN’-ê§`TŒc)&²¤ªÝºƒì—ãž3Å­6‰tÅo‰	–O/¨L¥ó1"ß=ÜbŸ4É=XU,Ñm/½ïöA)þHÿö©L÷ïþÔ#°úß4‡˜ŸR[>¢Ö[ëèM{íxÎâÚª8˜&åO—…<Z#œ·S­I”·vëEû’ïV@ÑŒø»_d;9$?ÂÍ,µÞ0”Ø*˜ùß[jk ŸGVù^oHûâ0€ §j÷jOæV4ìHøüÔ5A#Â_Xe	8‘¡é¬ëÁÍ:DKÜÌ©½$çi½:`^Ã9C7 zW§k`]]4qÓ8ÎÏ·x>³Ä{}Ô	#'´·]YàWÐ52I£'DòÀ û£ð=Ë¦*]‡0M­Ta‘´§Ë!6«Ä´à g¿rŒ•ÛÕÛòãdÓoûäS[c›Ù@2‡ñ¨q•ãÏ=Íä‚÷Åƒ‰='Åä­çsž5ßOf«cÌ
+ÓâÑK\
+4¨è×Ì†CÔXó`ÄuŸ5Ôb¦ø²ÀŒƒið™ vZ%Ø¨Bžï~â¬í;ûUJ;Mä—ÇU)ËæÒIxþ}±’µ¨4öìøG›>Výœè‡×œ;éÙÜÎîÛKb!–Ç®¿²ö#>4‘ô¹òö{ßn¾Å&	d&¥Ø£µòê_dØ\â[õ~m­qÑv{ó|š(Ý§hµ¨Ú0VÙ\Š™@õ%ˆ¿ÏÍ/ºF/UÛ¹k«˜Ô&0\J©¢»çöDø–¦©aöÐsÉ{ì¢¨IµOˆr­ù€ Œi2‡ãäõ»»aC4²Œ`'&nò´T‹??£}m½ÒÁ ZbV·ÄœN®ªoU˜«DÁ­$3s¦s€{º#hÖð
+Aü^‹_å³Y]CÒ;"™[Å*¿F[yà¶Ÿ1íóþ{íŸÈëÒ™JÍTãù÷p#u^Ùù`Û=¥3å)³[½áÍ#P<óïŸ:ö¢øœî^á»À!çe»¸‹reI×$AUäOt„åXyr.uæR×ÛDÞNAfBæÐýÒ±l¹÷Ø¸Å;<ÛŒà§
+)nëKÅ )Zµ×ãÓ2\œ^"xxÄ9“Äá¦“²pSÆÚ_—áëÄ¿ú®Z%NÌ`Øæ¢¨Šr‡>ª¹øÞh§B!ûëˆ´m+S½XÈl-Ÿþ#b¾S§u|?ýñ©5ó»DÕu–®a†·ÏÌ…sÞ‰Ù.Ó6wœ™sgš±{ L¸t,Ó!”ñ›Ÿè>‚UJÞ+··H0nákTdÈFâúEqþ#OþK”x	Ìîø*0ôgç¼2¥šÆh/Èj™°~‡GìS'hùAz´ÒÝ8ÙùC}b~ÆRá¹S#ö(îðO ÐÔ²—Ì‘HÔƒKóˆ©¤]û7‰Ä½y…/Œ½Â/èÙÂ!@46ÊJ†VR¶xúJo^–ö™÷ë@‚N“„r±PÔsÞ†ÅMTgé7©¼uó§ž6-ËïÀ7ná(¼çù8ñwAÀ‘&ßª¦é,„l™É¥KæõsÚ(?µ?íÇ
+: Á+­h}4À‘>VÕxÓ…Ó	6t^ñ@)µÖ¢`R#¶ííRàß7|Ø{w¥É×ù÷È÷+ŒmŽÝ¢¿æÔ	‡¢û?UmS÷SrÒ{CÿžÇ>>x)	ìÜ³ëŽ¨¹ÛZxì‰Câ,q„s*·×}¬$ëpiªX#“GÍ3#Éa±l;âm;V„ô5Æ-ÑÌ‹ƒ„°õŠËV/t'³Ú+;@|pðä-cç£5î§qÈT[D8B"¢¦83f²ù»LçbÉyÛ_:éÇçÌ|´¸¥ÙÑ ÝCO,AG›PŸ“ ¹‹Š\uST¥Iï„¸¢kÚN@ë¥ôKÖ>P,Š­¡`šk&@0È™:â¼1È¢éß¬”ªÆÆÝÄuŒë\ðxÀÄß•Â4Ì!Zn‘:aI´•À	³(ˆc³aCÎ§<èÈ·ä¹Ïqô`¥²ê'‹%{tb(
+ö¡ˆïWú¦¹b‚ÐÑ„¬$	q;¤ØhdN(ƒðë“Œ…g„\šDm	œ¼ÑÌ(È”y’7—¹Íd¥òUÙ%4ÝûýW„í1…„ÖèÈÉ}Ê‡÷@‚ãc98‹í+¦TŸ?I)#4tÒú;T|¤ƒ›‹Oû(ò;¥ø%yãŽÃÈ»Íû «¬™Q(;-æLÚcú¹ßó@qø–1ýúâHb]Š$@9yDBs²ð¨R¾ OzM…`§ä£!jhLu²,ŽüQô{Qª:Å©J:-ÑWñ¡[Ÿ3Ò°]¢#?ÍoÔ˜×èí0ûåÉ.¹‚8j¹™“í“h«“<í9Ò6p·X12vªè„Fý¬Î-ŽÿðgÝ¬É²63v­i)”¶ês[z22%ò¥'Îƒ„?9ücsè»j%¨¶ãjít/ÒÊüœÇúƒ1È>“QL¡ý¦)ÆMsPäçÓ´
+bP¥._1òM¨c[a£øt´“½]°ud"áî‡óØ8@+3ÁvµXùò~´âš¦Ý~¸¿ûL`§9­g
+#HfÃ¨„(†sfvérÇÈÑTÚ”vÑŸ_†Mqï|Sê0Z¡¨Ëë¹7³1ÈôjfüNU/›ÈÛDÚ‡³iÏcùs¬óÄÎô_u]Òü!ŸâÊñîŒ|«ö^?ð|ž·‘N¹±0Pp‚Äè/Ïj!#[<.ø=Âø­"1“+›Ýð)Ls£[	¦°ñyâs\ê°Á­Ò—x’±Aô^Œ}(²LF
+KQÚ©Ö'ÍDtC’°X.Ï…z0è2­å˜÷áêÊ;çÅ+CºrzPõ5•Ë½(¹ Êî@%57šbÍwº>Ï/|jdýê˜y§03­í$}ß YFý >©ÌÊÉDÉÉ‡„û–L£Ñ÷mA¢µ®R Xhì6òe
+»&â¡|u¶«oc9ƒùfT7nˆ[q.Å¿Oï‚Å±^1ÔÜêžV–¸äçæý¬UÕ¯R’£˜5Î¯¤d•&äy/3.ý¿^üXéË=I1—Ç·¯/K©'“5æÁÑý$ÒxcZå;ï¼Ì¿t›Ð¬Ê¤¿aUÛ\©·B%bØ.°
+/É
+MöÁ¡Z-X½£xlP¤ÎÇDxŸ?=©œÖ	nÇíß˜Ë»üuá	Ëµ8âöˆáª9¦+Žïž´VF¼ð·†jp0Í–¡ù¼šÚi™p&“Å¬QrÏC8XMÆ{žo.ê—­aìgÙì¸Y†wJÏŠcØXí?g4Ò€µˆÖŠùÖ;YìTka˜£€ÂÓ
+a[¿™üòƒ<Áø=ërƒ×¨ÿç&Ü¥„þmV¾õw/ÂåW$¡–´4‚‘¼G¶êk2ýc¡nö=®ð'SNRòdd„z1,w§²
+KÄUl(-åÔ÷PAû¡·9üúkèlÆkéÙÇc 
+ýÑÔ°¹ËÖ¶¢ÈàîI.œÏ¹ÅÍç ¿çMüfF$[{Tgí)K©©‡é‹¿XzU~ÍhFöcúG¼È‹…’ÒâÖvkèj‚8ýBÄÖœŽhªœéÚï†ûM‚¾é»ûãXòÏ!"Xq<M¬§Rý€×Žfm5`è¤‡Ž‘¤!VÁciÑol¤ŠþóEO~Z_@BcLÂF¶ödzéÑryp%–EËöéÛc¹çAR
+øJgDì‚Ç~L†’=-ÐÖ;–eeùšP4w”)æýfõ…C:ÑGw{¿ûXô‰¨Ås—ÃL¢¨ Ñ`ÔÆztÛüSœó[r-ö{[ig1¾Ó:ý}!v<ô™ïYV¬WIõ†Ü Ý	ããP±Öá§»û
+‰Œ'÷@#]Ó³™ÚiZ°¨=<È2¬ð6»‘ýí0¾i3OÌ¹Î™xm=fÆ:–ÖÝƒ¨S]ÔêÕG=j.òÉôðã9Ê°µPwÁ”E\¨.ª?/Ý²..„µóª“<(åÏ¯Ê0‹·¶„Iö7IºXYp³GîÓ»~ëÕ ¯‚‚NžÓàg+cÈ®ø šÅ]EõAÀ.Tº¼å°L†[[ƒ>'»&·Ž\¸³œúEö9›O’µ¼å7*å·«²äïø¿3í¸‰KÑ]bÌäoÊùZHŠð»3é}4¯ñÁÜo¨ÓfÅ¿Õ44;3|ä,šH
+pˆ±ÑyjX¥0·ÃÖ]>Õ·óL.,?èWââºí„Àª{à+ßò£gÔ7gWIR>”¥æç](	?%LpØ>·}â¶Ê¥ß—zl	ée•ìŒÆâmO¼ãú•á¾äeCsóÖÊKÿ—ÐklLŽ„Î[ƒ®![uÆvÁ¹ø+¯Z	s<ßˆQ‡T§E#üaíï“˜öü~ý¥¿¹^s¦Þ?ÖGgãóÖà¬9NJGœ@’”à&‘qÉC6F M (kFºÑ#¾€bÔL"¬_æ²ºÒóB;rã'Ï“âõK„~jŸò×‰ÜBC.çn7ªÿÁ€7µ¢3\%Ôc…‡•=˜’à ½¿(RÜ¥H¥boÙÝâªô
+ïöASˆ;–i4¥'¿(w!Õ/¨»S¤3éÙéoÆÄN½pÆwÎžÈ÷#ò^ëe!»m%Cd#jnŸ°Ê÷Ø`6ûµ”µ_SÉ?vðŒÕ?à *A4Èk#y–¶.¿«fâ½Öd¾Ú²kf­²å¿áú„Ý<©Ëñ‰¶R(HN{žY]~sžFŽó§½r)9À™–Ÿ6Aî½HCô²@÷ï£iïYÏc‡R4è–•üËeÁ3~‚ãÞ’]‚Y#äÕf·t²à7ÝØ…è¾:„ù±›mòs¢ ¯æ@ÿ”áÑŒç´äÕ`“jú]bôÀžA¾˜+<ožÅïÁ•ì¶Ñy@¸d™d¥q%o<Ø¾ýJ<Š{ÞŒNÝâ“vèþ U„i>îZžŒBKS°.S=‡]~š{&IÄUn¿];–*fØ3Lù47V]‡&„K©AÙ·§™´Îù;÷%ƒ¥úðeÇŒ–ÙlX¥ê,ÍÕ¸×2ZéÃ¢”I¸]/ü@6Z´úFû^QK+_†ËŒ(ò³çÝî¡Ò€w8àé\ºÏ6^>=Ü[Ÿ0>ÿÖÚ¯Ž¤ÚYL~(—€
+óã~Ù¥+ŠWª'b(^:¬h{ô¦˜rm¥ñWêze\µØ©>ÐNþØsJIzd×ÙÍ½ì;RC­9­‡åÑÀç³¤ä*-øH
+n—‚ZÔ¿p¥+i"|£nÇÁ¶K²Ó²Ð/¤¥ @>5ÿˆ×rˆèX+>´0HµH>n>‘ì<c’´_|¥º#bqüÀ:xÔ°{²7R“ÞDª4Ð@`G(6íÔñÇä2Á1ò¾!·òdÓ¨!ï6LÝGéë‡u_\Ù¶Svßv}`uü<Ú…šÅ‚€÷²ããj_)C²/,¢–~ÄoÊÎ;ò•ÇS*GúbðçëÕÛ76ÄÉ™XAþM@_-,FÝÔªHþèé?3$ˆûœŒ•þ‘¦•¤ûæSµªãåpïWÊÔÌ„ô`no;“Û’oïr JB ƒ†
+G8BcaAà7Fû“¿ÇTN€æ®¹ÒÙ}’-n­ä|‚§-ýWh!ÝNí4ÛQÏŒÉåöIz›ÞÔè¨hZ½&ý^!
+¸5çûàk¦Þ¿¤áðöåàãƒ&|_Ò¤‡b-²VÉ
+§‚Ø&/!ú ÔÉ$™¸î_Ðc;.½0’ÂÖÀç¯8)èj¦§^½¤ê31èé©þyã]Íæ´è
+g•÷Š™¨®ròó§tÔÔ•VfyÈN}òŒ¤Å‹ÛÇ~5iø
+¦7”åJø_>Rp°¢ùÂ
+W/Œ ^Ø÷á'‡³˜p¾ö)‡§½ÈÒc`ªÊGøcµÖc	~MÅ³‘àtPóoµÄÒ¦ÐËÐ™~·¾äQK5"61¬ØžGThüOVžõ—ÜãFcƒ|¦…`ŠdwÏ7öJA£	b	ƒ7fo¯†êyÂ!˜Ö/Â¿ËsÕŠEò÷øèóY*’0»8Ð sÊ§Ä!œŽK«ˆ½uñ¿kvSjP\šÊ-EàÂGµw1®C‡JÁ/¿+à[âjÞïÔ·1£Ô*
+"Åè	(§iY"ìÚT­0`îQA¬ŸL{YúŽ×½E›ú!¾U
+3ñEÐéSØœæ¥ìœO•ù˜„ùE|‡ž\˜9\ééwPiw*Î”ZMþRœðÏ4;Û›#‰UÔð
+LÆº\¶£úÔnøR˜/Cv[Üqoé{¤%&|ÙPÍîÓ,_Þ3\ú¸…\hIwn]â—ž“ >	˜š2Èí—%ó©ÞT–O¨¾àÇºêRšœþQ‚tŒšƒ+ñ’#,²3FÁqïy$ö§Þ?ù–'B€lÐÙòÎÉZY
+a÷ùVg@AíÓ–òû®Å4ø *º.ÕMÿž
+C¸ä½QÎÝd E¾C¸RÇn1–³K±¬eMäŽ_¶k)0%RY.œÆÈÄÓÒ£ÂôJ[u'2~äßd¼N6³èŸê²ì(Õþ¢¾Kä6û ÝwÆá«¯…ÙAr¢ïKäŽø¢]wÂ/GKt7=_Þpô•öS´?‰·p²™F –°Æ\åsl: gß4 ëÍüåkàLY.x?!PMz«RùW|Ù‹]Hô¶ä·íåíXp°÷Èí,®lˆyM:&…aõUÀ±3…X;˜[èÃÕ2DJå>Œ‘þ>
+$´~U¡¿µB+#ßG”	¼"Ì$Ó[ï<¿hKî»ùâ¨EXg/BÁün5ƒó„põfdôÅ¢»¶xˆŒ®ä6H\Oùûú‡§hk/ë8ÏZÆÚâˆÓIÂ~<Î¬wÙT!0 í¸¢Ÿò”Y´fÖø@ÒJ)ÆO§ë¸wŠ…}_X%„Ø¨+ˆžÃÁaYèÕƒóröžäïÍ³Á“>ÏžÇ?wÈÝABußª¡Â57#ÐjµãsÙITÕðŸoÞnþe¨ùÓ-ŠÖ÷ñçî¬QäË­pw,nþÀ„Ç¥T;JŠŽ	WwÚbñ´qíxZ¼Y•ˆ/aDû…Òq«ZïóôÜãq7¤{Ö5¶Ô:¹œr‚Û[£X{¼ YÛæû|†“q–Ï™Ši¥•9ØÊþò
+¾¥h³vîz´ðî¦r«õMÌÑ®¯TJTVUÙl¤³[µØZD+n(ËØžk'Í¤”Ð@—>tÐQFËŸ'BZØË4•™è}Ëµ|Wš»G®²¸KÁw>X÷²%ë4éZÒÌ+Ä¾EÌåö§|4K±¼˜î-(Âw|¦	VdùÊw·Q;"ò£Šg­‰Ô‰yE ï@'O;øÔç( XùžeupìF(a·÷”‹§>V©‹àù¾?¥¤x˜Zg‚À…ŠC¬fo±øú B.{Ð¹73Šß%ïÖÂe½‘Ù.nøï‰ö«˜ßPØŽq#%¢ÞpŒó=Ñ»D¢ß„öÃ¯^Ò?U	¯dö!%¹¦yiß¾7i—éìUÔ_^‡ý5¹‹q´)É0Œ£)Q=°h¶wbh›\ÐôÏs^ZÜžžPy¬²¦òÍÊf«9"zöøªr‰ÌˆG%¿g-p~¤›Ú¬ôòÈXLÂµµŸ™zd~ñœ¤Ÿ<M,è	H#Ò¡Þ¸DpÉZÊ}Ñ…w’u\\<»~¸ž,Sv%Ö`kíúðe¼KòD¤`O¢hJÅI‹ùéÙHË~Í7°eAQ"£i†¦m×úzÒî3ðÁø"xÁµßnŠ“CÏJÊsÛ@Ìšúcïítw —o´­…/Æ¢<	œK¯Åfº;R|·’a²Cãœz1`™}ÄE:Hãd_z±	N43ÙA(¶Î/°[%Ôü*c¦|=€ü=Û{l†0r7ÈÖ>wÙÙ]`D²D7)§ªç»_ã]CÛª¥Á"4‘H“=g¸ùº”“|a¤usøïNƒÔY`W+ŠR–<p_„K¸ÒÊ›B8ú¨tÝºRV+8Åì˜ˆçåCÞÀ¤H“ãL½ÔvY•´½˜Ô]Žÿ—‰®î­ñy–-¹TŒÑo¶v´YF:Gã„ÝÀ¼†5æš2SMNßiIÚiÆ—«Ò•FëÑcÈ¢Mƒ–vÏZ îŽZA¾“fÖÚ Óôü@jÂÚB–i÷¸3M‘Q‡|`ºÎX¹æòÐ“*°W:83mÏû‡'Œö„W?	NâŠ¿‰ÞæüÒA µí|2Q‰èK,³±ûâJ0Eø2‹¯hVX à….šáÌæ§ÿÎc`"Ö€€¯~nþ“8%ËrçE?ÿv¾t=•õ¡•UÊÊ”b5úÊÛ˜,*×îðn_Î#]¡U5¢+ V®+wúXË®F?Ì•i[×Sˆóï*oÃ <â+rðÊßû¤Î/brþŽFý¦\l¹Á‹Ö„‡7²ì0 {
+þq0÷9í$}´Ô.“ôFê7"-&	?Å¹Ìh((ëÜUV|'ôEg&ÉÚÏ¨ª[ø‰E¿êk’õýü+’¡{½´4 Ã,tÉyÅ6FœHeV¯wß÷÷»“„{+rÁýOŽ\M8)pƒ›—X£×ò‰Q¸ctd£ÌÅŠâ‚<’Â¢-5íß·òU!©RweªÍ¾eõ²ª\Ø#dÓXÉSÓI`d	_ÃxE‡¸0)B¶»îã9wŒMŠTd÷ã…Ø]è»˜ˆsÊfYÓW˜kœ·—_?Ç‹ªMù¬DçÍ\¤
+T½Úþy¨
+Õ„t˜4‰Ð‡mÐÇL•Z1;.bÄâ*LÑT¬ÝŸž_ÛG¥EÁ„I_B\F©œ´@££ÍŠ¯Òkb:›¥ïk²«MYYû.ókÕ*–éP’à×1Ww…dô9œ=‘éÛï[0èåYÍm¿ll"‹ˆ|¯ˆft…‰7²šÊˆ©‡ïÄ<D€-ºÚ”Õ‡(Ë`Ÿ¢¬çEÕ2§ŠRUÄÒXúFÍ Mí¤¯L!ýø(ïæv4ô£Ó;	Äíûz|P6p´ø±/r£¼)–îSmrZ¡rÄ¯Iò§3¬µ¿WN|¢c(¬ÞŠ©Â¯_ëQ—:CmnâßÐ³¢,½)&ø2®ÕÎs*à>ùÄMøÝ,b?·sHKCj F­~¹+™+5Î’¶ËÍÔWðô"Žùl{âX´ÓmFh:#ê‰ËÎ:8ëùicw­d7¬„DØfõ£³Ö–†¢è¹0S9c3Cgff}üÒ¤ÈÊ$¶¤{îÞ=	ñ=0šÙÛx¹‘9T‰¶»ÖÂëÉ$¨'ó&ÅMa_Æb
+ú+ðÅ‹hÎ•Ö¤17	¤€£ïWŽýå|¶Á~Ñc½}æF|ùó7pW{Í…åÎö)uÂç¡|1õ RÜì€Ì.vSPGTt‘gcÚ!bº‹›gjÿb&éÒ›e#J/ÁãÅ1òÄÝØéÝè¶Bìoþ’¡-kˆdtšë¥Þ¶¾§•«Gû)¦·‡ƒñï´ûñsÌŒ©µý3²)¦¹¯õ4xå ÿöÁòöç9Jb`‰¾ìœ@í¹ó|„Ê®èe×ÑÙ/Òr„Íé›ræüu…^9<œpÀõà¾;ÅHÇ Ú
+‚™u §f%…»F¥n·(Ãn?_‹<T£9ÌxyIâbj	ü3æp0ƒÒüsß3üÔøVå#‡F ë09±Æò–-9Úqw¾}:w™=Ë³IB3”ëUÓsÏî>%
+Ù»ÖXd$7œÊ3˜Ãð,&ˆn×*x+ß|”PT89£¿oùü³þ¤BX38fâ¥¦×§¼’áóêÑžë\?6»~±ªõ¬q­Ñ«“ŠåÍèï0·$|ü~68vÃ\mhRÕëÆß‡}§³Ùæ¥²Ñ2ƒcg"#.‘zÆÛÔìžT1r«ó&Zrš}×½ÕÃ9g'€Àº,ó‘q©!Ý0Üçiµy?¨ìH|‚ÑPh¼xæ¹6B‡šþ—>çWhjÄ«V$YÍ¨—F7vƒÎê:_ÃôØöä ËÇÝÐñç}¯u£KúíŽù)­k0ÌùnÐ®ÑÞw0ØPC¹ã¶€ý:ùA¯²x ÔwfB£—•ó®K6Q×\¾éö%KƒËšÄ²Ø•¼}‚å8Pb#H0Wãçï,÷Ôìã
+9LÙ‡Û-
+Øçb¯Ë}ÓŠœ:…BËÖÔ»–F©Ã¹"ëð.]ÈBÏ§xÛJ‹ª¯=8*pù4J3‰r êñ˜ç¼Ð|N>õ%|ÑnaÍ`ÈúeúŒ·@Èw4?æï EMŒB§õ2–ý1x†_nÁ‚ýÜ `jxAa\6¤Õ%yòEÒÇÿ@ûÅÆógalX»:Â¿WùšÌŠŸºyAH·Ï™®‘jWAe„ø+c^žC&oÆµù°ÕÈ.k/6ˆ¾ñ~2ešß¯Äštä+å²"}€À®ÔzwÕòÉdn—%%3˜ÖöîgÒ¨š~²ù[[þ6küUèi$î•‰<·ž˜Jˆ+¤¹¸sÿjÌùíB`˜¯fåü&aCSß>vTmÌ6Ê5ê¬÷9Ð6ÁòÓhò£üðRŸQ…6‡¡‹è÷¾ÍO&Aþþ¦òžûQýÉM@!ðrÕ¥æ2x(ƒ-ªßõ±õ†4­.p^¿8©™¸&‚’•.™ÆR\îŒMI™‰>Ÿ·u8–ñŸ‹<õ§ÖÇ†×LrØ/Nk,Gp¯Ðà ƒübÀ.K9PpÏkQÂú×5vN?¿k™WðŠ½?ón› ¾HŒúC?Eùq Å'?¹ 82É	¿Žzóæ¢æuj˜=Z£U2öÀ¾l_ üÖÂÌÒŠ}òÑ?<n4õ8ÉïƒV%îÞ'U˜‹^ñÅýÙˆÃ§U"Kf‚ç77ñ­»zO†{›ÏÚ¤ãøƒ=Öh~coH­’$ñåâŒmÉ1¸Ât6-`SÁ-N‚Y†H¿M‘Þ\+öø†(c¡0Á´(QíT ™3Ôé}ÏA¢BÍŸ¡¬Ý×4¥Æ_‡ù¸²`'ß˜ê'-æœK¶æˆ¾ÖßA~67M£—öÐ…ÑY>@$ù÷¯©	ît)%³'`F,·†SŸæ Nf›}=¿Z6È€Ø‡…ò›HÃŒ€œÍ†ÀçÂq@Á³Ô¦­ZÑY?Ñ†™?ð^)ôél9a6
+]`Uo²mQÛìˆlŽ*1<˜lSDŽ¤o´ÐÇÉ§Á•/Ôy:­„N÷‚ÂÝ²Yfú*Þv+rÄVg]Ž?Té•?Ì¾+Oë]å|KMAdKÎ(ùµNx÷„+ÇTñÃf¸²rÑH7å  KêÝÒˆ©GÎà)æéïW(	¹†û÷õ§”«D3¥¢&0x±…pPhžË¯–â; ”õ»Yˆ}´’ÿNz¦ê¨îÌ„mAxzØ¯U÷”b:z»žÅ­Z_Þ¯^"…TAÌ>õLXpãƒQ¶¬­H»1á‰µ:K@íßü"hôn“Oû/}ßæyÛjkÎ+žxAb?‹‡“ñÞ¡®Îh1`Á.ºzÊé 2ÏÜÙíK÷ÈÞ|³ŸaÅ|o£Ûõ2ÆðiÇõý)_ý3"´™ßðÕÿè÷ø~‹mD×d§vÐZ=Ç'xõTÂ4°qìcB€*íñJã¹£É+ºè ööuêz‰ç¨f?>××ñìò|S€Yq¹‡WC”ïøS¬ x­í]{p*êÂ["¡etx/'³:Û„ëŸ¨½v5Þl ”ãø:ç~÷Ã›¨8ŽÅp)åq›n\Ú|W*Ñ2Œ6­tz*n_sš»ü6!ÀÈ`S{­Pta²B–”à÷ÏóØÊè§)AÜàÎ¡@‹áI…!ÓOë•ÉÔ7Ž^cÛzÔœüa·ÔÈ´È'"4&K°Ï4
+?Ýš1Ù™“àÅÛ_"¬¥LxLDH*9¾ç»àôþ¢GöIÞUOÇ:<dH“iñ“cÙëu*¨v¿gù¢,E‘/ï¿,÷kû•_@ùQ¿z¯LÔà»ÜXx™bÑJì°O.vM6¬?ÕCðÞDÆA¯æø*0dÎV4<þ¥†¤W½W-81‰Ô	CçÜ\J0Sê ¯ë7ŽëèP.þþ6¯•®¸~ÚcúÐ“ëäBì’›:ò"úâg7 ¾{Ýà«¨'Ûb[µ“uoÆÌ&×”\š£ ¨Ñ}”ªk™\/á¿qá½}*Û“Ñ…%¦!Œ©~KßšfÖF0Ë?Å0“º™™\$Q‰œ÷çódP\– ]ª¥}®Ø0¡±ú"sÌ_x¬úüÉPlV«ÒÉÄ°ËŽI‘ê`“fÛv°cF€éú$Ñþh!›KX“ÔOYÙ[AðâäE`Ä?ô­°EcÀFÈ1…Œvýæx&P[øšºÏì£‚æ&>¹Ï¿ÌÔ7PüÞXajã†ÌÂC’„ÊŒ¦ø ra Ò
+Ö¤ûb¸eè\’vlD{Ã;›Þûö†B:{	ü]^Áç¤ìæ
+ØP1Ï=—LããÍûbûÍŸ`z%»A—òíd4òß^ö÷cHÞM·+?«N¤­¤¿V®$CäÃÌôÐÅÑ"ì Ýhçx‘ôá›<~I ‡¸2¤Å˜ÍŒ(% X!®MÔ$œ«îD4T®ké’ƒw×~pJ´9§ÔÏ´º¿’¤’0‚ÌÜöMÆ_žf3™ë!¨õÛ+¢Ò‹û£2]L8.ªGÐÛÖÃ¯{2¿®‡Ž Ç“;÷”) Èu_!¶‹ÓÕR¬î‡þò>çï1-PƒB†±íPök¤È%!Ò>®¬þ«‘ŒÑa ¾ÆˆmG™ã_Y}<Si[þõE¥Ã‚…Lz×iÒ1S Â‚RŠÅzV™Ù*ÇzHfØÁ÷"p§©**$¨äõSWôÕ,Í=1ÖÖBN…²ËÝŸDDÞ)á5í7Î'ãSj§}µàeùÛwäi‚?Î¹iGõRö7E^K\Iî>š\²bÓ@Qs4:Âò6™þ[¬@Ž? 0Õ[yšCdØ<‡8<Ž~ãÙC`€t¦±ytú×Î3Ç¼„$âN•³3ÿJ?œF{&#<VA‰>„öø!W‰¬³{€¾ö»×ÞuC•}ÃšÏ^ÏpKëÃ·Öî@yz¹Î6#®È¼äaœÈË/moa·‡nœ„ß–M¶ñ [Ž²¸1“¾kxcSyf…t·QE'(æ3tžà–wIRbÕº‹4hîQ˜Žú„Á¸‰é+ö@àé‡ãÊAÓ·j‘²ñ$ôïSÃ/Ù¢¿MP®‡ h…HÂ-äš Âg‡jˆF@\F ¶HŸ[*÷ó èèn†qÍ^¿âÆ‹®™öðÖï+†Âóì"ÍlküïÓË—Ûcì—M;€±X²ŠÇq£‰"“³ŒÃs¼´.¯DžÈ­š±¾²T–×]áî.ž©µÒ†%ïQÚt[z€ãs½¸w‚Ç÷£jO™"š0Ú#•ÀY¢‘ëØYbÖ£ ²ÇW²,ïÅ8¿þÜÔõÝŒ‹;†‡ƒÿVPF),*Û[Dæ[šüP…˜ôÑé!ø¢V|GœÞêÇ|§èÉÉÌ`²ÙÈ¦Ó‹ß–Ššzx‘¶ˆnÚäAàÑ4AG@°Ùl‘Š¯ýú=‹½Ê“@•RsÎëä¢ÝŽýú¢>Ú^{eÔ’¾~íXQ¾YÏÊõ•êZpW}AB¦×Ówë„†\ãpùŠïÚÚ]æ÷éÑ°=’K Æäð€FE §®d¬¼±¥úÆa‘â\CÔþs©áþÓ¾Î…kªIíL®ã'm•´ÿÕ8gö€©¶êšŠ)wt¸Î»ñmå”¸r%óaÂúKiÆe¨)2ÌÙÒ–Kè‡õðWÐrÿzÓ]„¡³[›éF=±(îÊ·h-TË®*™6‘;ÙçRS·Em™#f½9rãH‡ÚÕ1£T®‘Ù×ï jœ–îjaì’8âµ‡â—Ñí…¢GÖÜä&X?4‘e•o%òˆÁcN´†a7ÙK9¦a½fô€¤*K¸x(|À«Lµ<7Ü93.×\VH5ÎËÉÁœ¤4æºV|
+y1Ð£&ÖºÈg%4F±`Xÿã’ìv÷¤¹m4*×‡nÏ 's:;êQÓ&T·Ä&VjFYÄLV?üÒvlª;×É¦ÿ†»M¨—ûñ‘ø[s‹©´Oç/ÊaÁÓšä°Ôž>ŠØ²œ\‘X:Šô,ÇR`—~*\®4òÈRøÅÚ­^êW÷^¼nÌçñ_@#ž…
+Ì*=VÜy–ÌSÕkú0]õ³oíŽ
+­í—Ã™êåì."Ç|ž˜¼ø‘êôƒ¯¶ yæ!€îoµ²v\j°se&ÅÍrg1W3ˆÛú|ÒÐ!i!ÑÉ˜Øré©©ÁÞ-¾…tëM’*†ÖÀ*\ÈkÐm©9ï‡¼j‰65)ú„²AôS
+æ7•´Z'üÄ.i=\~ÙpÐœÃ`ÝnçT¢‚å œ_?.Y­b£¢AN³3^Û—[hÒV|?Mœõ¢}c	ušÕ‰³áÈVJó*»ÃB¹œŽ…ßß”>ÛM¡V˜Ñ"ZÒ (®r¯~aaÎÆß"xœ˜¨Ã«U@ÅÄµüÌÂ!œ6Âô5É,·–»ëeã`fæ” <ôÜáÁÓ¯Ùð}þ¢¦ªâtú×lÂäqsê{òÓVÒtå: K“ß˜ÂUA]š¿+&·rñù}«+4}:(½ÀQLÿx j…œƒRÅÀ¾%ò"ö9§!µ-/2¿väÞ2Ã©€cÕ)‚€²¤€E¯oû(iå¦$Ÿ<ô×—iõ†ê¯x¼Â;›}‚¥¢î›¸h/ýP‹ý`¾¶ÅnO‘gèEÎ" Œôw%_á=`Üé÷Õï_BßôH­(G±øÁãvÕ(6¢z!-Ê1è!À‰Cáß>þæR¨ŸM„:(;JY¯‘R`'ÎøGÔ¢=ûk¦PÂ´£ÊXs]çwøµgì}åbÇ¦¤WdÔÉt{0¶î#…·–¤yºø±>ÞY¾ú¨êÓÂÿƒ)È‘y­9¯ûov/,t™ ‡{·Gòð¦#"ˆŸ1¯üëæpLG?pgËjb ¸²h-å£xõ1ë4\Ö³þ	p”‚LJˆ²()Ñ/äª	ïŸ©smdÿl°«-3Œãëµä †é3+Ã¨³…rÈÉw¢pQeÏßOs£QxoÇÑs’ªÄ ×%>x¥,P´÷Úù±ªÀ£|+úZXt°RÑ¡upÆbý}I´a,W‡èªêB¸£RƒüyÚ¯vøY6õÞ_ïþ*»Œß›dƒkú3Ç²þ‰–™Ñ€Å%§ãLòH­„=¨¾ŒðÝïh@Hô¢wŒñ×çF§ÔH˜àë^¢	yÄ;™Wú°Œfcüý6=ëh•›d³^·Žlúc’1S\¡l¤¹?wbœZò­îP7›=$	p¾ETÔ¨ÃpTa8lò4ž/1R±7IÝ K×¾>¨äHëàE¼8¿£P›¾mºß¢,)§÷¤	Õ[´þ(ÅÍ/zcflpú˜
+8_.‡[Ï
+Š¢¢@ló!ÂY“:'P#m–€Ã#R›õçzŒ¬·Ûðåþ¬#/k'âsGHŒÏšHJZ’×/&¥oö#´E6Fl‘ƒäÆ¬¿]}(Ô"À×‹öwô ‘÷D'dtÌª´zÎ1(Õ¼ï'ûÌˆÐYÕ(>úa~Òï7ßåOŠb¾ùdvHý<,Ã­©ËÝöÓ¾©0¬~%Kò17à®Bk“§#Cû¯l¶«~,~ŸŽ¨¿»^
+æ0¤ÙÖÛûz}¸÷{5ÄÂ^jYMÞeÜj‡…ì|/¥- þÍb½>·o¦ûŒåæÚªaÑóŽ]<uB(¦²pa3Ðµ=nx.ø«æ¶ë“)°°9ÿL³#øF>t{õ…¡›’u÷yrr1÷6lÂž…”)’Þxó®©§ç'û¤eBÿÓ2RÎnñ+ÈC¤!ô';…`÷”Øí—øöz„C«ZÐ* &W¡79±Š… z²»zRþ½_*«‚~µb)5{3‰‚=8#»Û&µsÂ§C	"vÁÎ¹×òÞKÄº‰UÏB“<ÉOoŽãm¢Ïù	˜•›…2IZx•Œfxy[‡ò	«”&Õ‡Iš—X<oÃåAX£AÕ8½•8Ž3?(ŸzzŒ·úæ.ej}ïæõkœYîI§èqàÕ1äø»Ò£X•œN¿Ð,à«67øµrhëJßÃÞIO)4üºCÈ5û¢àŽÂ¿¤@œ4.í]Wë°ñ—9‘yË“Gâw˜õhóF¯úW,0 ùÑKÁ$Ué«çt>5c`:]DUD“z­Ó«[„Å/ÜðøýùeßJ3üññïzªi¹FÐÍë¬¼„]Q½+o±*±æ“åŽ¢¼³x-Â¬qêôQ‹0ÀÝüŽÂ¤ÅàPÛvó3~™ýéL¶6ÃÍûÊËöòÕ÷p$‚Á>KiÙ·?~½–^Ô~„ã§f°#á;¼0Wõu$ß+y#«ÉGºùU2ù€Œƒqð”@>{ '¡FÀ$\±Û0ÍR*üÌÆEã~aóƒªÌ0óùZ…ùÇ4B¾¯À£]ØUrÚ˜“E–¦¿#ƒÖlTñøî€q‡ l²*úªGzÏ„)Üï­×^…5è²/Ï+Zª9v¿3	¨ ¬v4MQÿ©$çeÜiÛû1oòàà@"q½^ï¿jÁÞÐ¿ˆ—ŸqM²÷ÑŸ:îR+X¡•ÞÌ7¬ãëòÝ”íU*Y	R©8¡ é³©èéëìcx©jþD.X,‹ÀWqKÿòûf¿’~êU„LÞOú]?­Âu¯uy‡ÿˆvâ„Ä¶Gv9Êm"IßX‰·<H›ÌaESü=qî]ãû|¾œÌ0˜¹$¯¤C{çg[†ui‰Q‹nÙ“Î¼ÓAœ•Mw7`fê`rnó2^agú:Ü2šë<g=¡GŠ,Àq“¾Æ-RYpë[ø#JãºÔ_ÙÔ,y¦~"ê-9:†Þ,ðWxi-š›s<“ØŒåÕú"©.Î>ôÀJî‘›‘Q:løO²îÅþM{ü“fSä‚‡þŠÆ’‡C?ôëv¥wCÃ;×Úá;°ÏYÑæ‘ÆfÎkTƒ/‹Xe" ø:è›±å³Æ‰³êƒãmìŸdèK\£ËÚ&¯ÅJ>ŠzXAþ¦¨ÂžEr¼Oõ±‚÷)–a9üLHÝ²yv^—½±}<c.±Å­©a~à)Ÿ=«£*Àqt³–>`#ò³§B´.ŠN¬Góƒ?Ÿñq?oþûê,Jˆ—¿>¿®§Y	bhß&Ñâ¼Y.¢{ÆjñòÀ©Iæ$‡Éþq±IQ ¢Ñ2-8¾©÷F±ˆPÈsøV¹áIN:Þ%™Å‚»nœ½ƒ–k@CÁ¬çTêŸ,êz«ô+˜—Öî6¬AQ‘Çd!Ñ€”ÞÚ»ABÊÍ™eÑôÐ,7½Ño®»–&>O#NËK ›ˆù¶¤‘ž.
+¹M¼l.£„²¨E‹Kƒ1•×³°]Œ‹
+xOã;J3µéHÇÍiCŸæãàª°}k=Ž¬™˜_µH=‡=³tçö²9e°µñS}}ë¬}Á-àS"‹*VƒòOz-„Ä\b¨cmtH¾¾ìR¯CGæg²Óï'I¨:=Œ¬hí¥¶‡Ôü-«ç+
+Þ‡×Ö¨(¿"åzƒ^Ü¦Á¡ø”¥°â¨Ït9;üEn™þSA;H$\gˆ§›#@4íAëê³ÄÌ3	ûÝTP¥ƒÐ4:qUI"da¼­µÒÂÙóÌ=]ôF­¤­<D.rd5d!Å’.0ä2òb·(ð^EPjXGxÂ½4®!óË'¥°I;Ù˜Æ.öÅ8lºÏzos>ßþ Oyf p‰Á_t GDÉï]ŽQ.•#àB ÄùëüXMÛ2aêÞ1¬sRÌ ve	Ü¡ÐË†w/²~¤#ÀÆôÛ.P(}™}Ÿ÷÷n]Ú}òTæØUžŒDŒ…~þƒ3U6r§6…lõ»ãâ5d"Vªc{ãöï”2ç2ÊÆ‹·Ìù’5rgû×˜»ª1«>cjX”Ýãë…fÞÿXLè>à ¼ë„A•Ûé•“Ù¹ ¸Ñê’Ù6C‡Ú¯çï3ŠPÓuÔPR›Y°ÞÁ•ƒ«Ö“=?üô66˜*Ç]©Uòí!~îA\_ÃJÔA‚™øLÅÈà.¬Ka‡ÙBL’˜ûÖmÁùjÂužcX0¿¯üwÎæV ½jè§Ù"ÿñ4Gû[4NÉüùuæN¢š˜ÆAO$7T}öVt4{NT½Žé…[hS}¾ã£úçÇQŸæ»¬ñM!»žºÊPÏÆcü¦ÚÐ¡[+ýþZ9 ŠZ}‘„»dÄÉd¿—õ™ç±§ûA…óŽúr´ùÙÒ5…zƒüù|¤Ï÷gqü+üš‚åwSä±îCS6J‹*†HºÝ†áŸê1#0Ø¯í2'WÇ†¸ñ‘ýDáx*®ƒÝa¤?,è,8ódÚŠ«æØÎ†ëì´ç_—'õÇœ’s=[‹c#i8P"/@´Ê¦Ò£Óúe,)hÂ|¾èf:Q”ú
+X<? :Üœ¨Õí“&ƒmËy”v=8” Ë/¬$dÅI)æ±æK|RM¾“¡¢q¸hH¯KwTŸŸ—AË³´ 7Eg%Š	ŒHhöà¯åb:aMJ€ÜøwGæÝÎ ÿ$‘™ZeË¦¹èÜR¯¾o 3wðØŸ
+ìb(z·ï©a¿]!òd+ºî+"ýžT;¾:n ³äO¹½5Ü÷	\PYWNû 1‚×ö»šÖŠH„ˆOæÄ,Ü òƒõòa#–5££ŠÌ^‚¼ýRãÌ<Æ˜W©>kB·„b/é•·œàumYÿ®cŠe`Ç|ÌˆFrrmé'„u? Ï?Õgzù¤¥mÎ(YÞžÃú»{Hôc}äÖWŠ&Ž¬¤Tþm>”/³a—Ÿ‚__è^
+q‰Ý»w$¡²ñÉmB¥%`1ápù•ë¯ÜbËÿò¸ôÊñ<½¤
+êe5êïb½$xª·µ”ÐÂ\>}A×â‡ØãufëÅƒ„>õSÂ}ü~¼úc@)´Vžæ²PÌŽ`ž±òÕw&ZµÖ»^œ÷Ôð™ï2º¨GzkdÿNÄïŒu’ŸŒ+{Ï”É#ZF‡£~£÷@á’LÑfFeNŸ¬ÓøÛ(Y}¥RuQP+õËãèÌTòP5	°Èý1´ê¼†Öû¥ðÉˆŒ¼io|q’~OÝ& «¬º	õ`X<æï×ý‘šÐlY–4÷žŸtÙ‚†HÚð7k²éä¤´:²Ç^±µ9C²
+åÙY¡ÓÖ²ß/†sˆ+]ŠËsýœþAŸëÞS”=„Fê= ´j}Ï+à1§ü¬¯®Aã³‹Îß øDwWõÎowUñKkìÏ½ívl0²´ò£ïuê-2döÃ˜g˜"–iüéÓÐ°
+²ï“tN,ë}
+`íP¸¿|VY 3ˆþlt«:½l¡@âŽ]Üj/âÞ‘%*ð‰âÙØŽ† ÊôT‘^2ÍÎ"ã=ùR±.ÞÓXDÞý¹1x ˜ v ÷E®tÍRúÄÏ5ê0JµÂ½b½*|:¤Ãþrh®$G0Td¦Ç^@â-³Ò˜Æy”“ê³Núg®¢^Á¶|PËm÷B?¥“²©íçòˆa§`¼QŒ®H×Ch<!Pæ§/Ô©B_­T’tq¹-i½:ü½ÊIÁºíÈ×ŠÑÓµ“ÇFç4)´À¢¯}]9½ñY	è+Â9Bà7 #JIî4=KXYrÕûb«R£u6çî' ü£uç–£®vQ‰L!ÄLšÚTVêsAaŠU/µ¡Åß_)ÏÎ;ãeÚ‘Ct’æÙæzÇ%ìº^|¼ú~¬ðó,èÙÉ<ß|zÅz¨³lÕÙÖ
+AåƒdÈVæ$%¤ÒnññˆC¯›~M™·11S.,LdJO¿}ŠxGbxî6PpYcÐ“í‚!Ë– ¿KÜ¿ÿN¼›‹¯˜¿ð‘¥"á¯Ÿ«tO˜šÙU†b^FÍË^«;”=¥ëº¨«=²8œ5é©cZ¼s’€ý èRIw&ËÛ@Ã­€ÌÍdÙž4Ð~›H¡5N âF¯x+élkA‰MÀ~}¸`ö¼"ó	ˆ&õä‡`ŸL…«†ñ¥.tä?^¼Z0êËg3ˆo9“sô€ý…¼ä Ø<¶Ù€*>Ö`TÇ-Ù_üÇ)âˆ-â¯byHô–cU§á<³¨WFý’ÖwÍÄíIÞ¦'ÀQ¡°ù–Ðj¡—8–©ê»Ý<è›K€*•¥?¬ì@÷ÎÉ(Ïß45`*}0/ôïk‡`žÌëƒ£‰¹¸qdjØ)Õø»ÒOµ
+…Ó’šA¤UÇÃjÞ‘QKÜ“ú]_°–}O#ìËÛ¦Ñ±]ÆÁB4“½Ž˜»-¡CóyñØÇn1òìH‰¦äp«€SÈMòuu"Ò†0²O™CµTÄÐT‚îCúÔEÁÝ_Å¯•E|9úÉ÷|9¾EÜ.{ÝEl>yãh[}W¾¸¸4¿ç€ìn˜‡Ô©±|“øû‡Ä(*«¿ÉŠ/ZÃ+_J7Çá?‚QÆ“KNFÇ³sÀ×QàZ
+ƒ2õÿUFïØ3‚#íù°¿ÆQÂœ$5¼¹w¹¶éìîwî¢¯”`ëüè])QÖ	gtßøÜ9³×;#µôÎ¶ë²¸çV,4j2lœ1‹¶Ê¦†ßa¯÷E Ír…Ô!¢rµŒÁÃ·ÂÏ±OàN@|„ÝŠéyVŸ»Y 'tí:Öµ,ãŽè
+¨$6Ëá1×Åq`yÛ\–\H7%Ñß”såÃÑêswg¨Æ@ÀR¿á×e‚²œU^æ Cã'¤¥ê˜£¾#‹åçb–Æ|Ç´DÒëªÒ;‰…’Àý
+-~=àÇ±72Ç›ñ[ ‘«‰—ßh.•¨í30¤F 3™A¹ûÇ˜ÙRd"¸²µIŒž}©ž‚,çÑ:€Ç`ÔSä•ƒÕ_SãwÍ3o×ýkHð}¾NåNžHÚ}ÆhÁHÁ)³P\ÔW‘~3ÇOµûÔrÏnû®ä´¶i±ñ^J,K«
+éðX†Š?ÐVý˜
+»k/nß`àb°ˆpzA³2ÏPñå“¡’ØkÀ"¶
+û‘Ô}jàzÖïçC?Ø>]ê<EÐA"e3
+¡Œï\¢j¡·Õ±à¾(ÖÏ‡ŸO²žÓá×<N÷ôìðIÿNÉ6ÛëfºW}Ðå%»³5¿òÊ³Oëš *Îþ´_áZNãïOs×ßN”¶MxëëKäV~á9“‘®uÍµdö#øX(Z„˜¡wÛd<rEÿqb1Å9ßg'¥G¤Â-$#Á…jéI‡’LXµO¦è/ Ô$»UpÈåõð ’//–àÎABi¬Â:18äX®9`Ï!H¡Í— <7*×´¿´'Ÿ©[S¦S#vQŒ¦ëæþI"Û£ÒB—Î‡X~'	à	[ø^xIÁÉïÂ«æ‹/:±ûË«T»šã­L@ÛËØÓJÖ0DC\©faºaº¾sìßóW
+?èbDK¬ÞKÎr©Žƒg~¶#yFùï3K„7Ù‘Ì½Ç +fE)1Ø¶£ž*ú:ñÃÉ%\&okå'’æ_[¥1©7’¿;sú	ºŽ¨`„ñíƒÚPþ”šB¸ê±û“`o:fš;Ö®ªFýëµ"EÆŸëÑ9#ûEe;Xy0ö§„Úß³^H$šZƒµ[£ ô‹|ó¾–™Wõß6Ñt†ÉÜŽMÞÚƒ]”¿ÉõxTÆûbÃÐþ€Pþðš„ ŽŽ¯Ý+Šw”·9 ²$_v¸ÚË²«.oBh2Òý„!F‹n®¨09kÏ“Y[|-s å xÆ‘åÎzí›ÅžÂîF®îî3Ð4©dˆ½¢_Òù 5èDåze'@_/E»v<’#°/døçCò‹ñÖwÊHÇñ/«}}Ï¾ç®ô[êÆC'´´èùÉI´¼èšûë¯¸Õ19+°ºcŠ$à'V0Å|“…„²krÂ&f¨†M‚b˜©ûÇ²õ‰¡º0nWå8*€r÷d³`à]¥f‘þ‹1ä^¶ÎRg“(FmîÌ¨Î)ÿíËù³â÷×³-®okÇFvŽ/´öUI¶1©*l0nË!ÀµñXÛSð`^†j7ô/Szd•9ØÅ€Št[¾â4“Y8ÊÃi˜@¾(Ü©à~Ô"ù3rd`ÿ–»çÌ—	Xü(á£¡eÊŸ¶DÝia4üYµÍrE j"òk×å½ò8Ùží) ]Ñ‹Æ1=Á¡  ®½º«°5Å¥„š9‡tQl¡iË4ÚˆP‹sbe¿šÕC´é•³QoOø!¥âÓ£ÿ.íMÕÐ¬øDõyåxÃ4µí\¡Ënœ½Woïñ»¥t?ã‹põrê1#0)&r8RÕ‡ñk»Ì¿FÞB ÆÓN+Ë =26˜aÚú=O†g@:gÚ8,¾(º¦`Gãûy÷Ê ^NB±â¦fr5±“Ë<÷K[3ø³­¼ès½˜5ð¢ìÇ3˜ŸÀsØ¬i¯.£!â6 ¬Í”—%¾1+«°Ú‹+^†9Áïë<Š†QVô‚‚-ù€Ÿ-€—FÆþ&®‘ù%“?Žhs²ï˜í×”áãµÖ~uÀIØÃˆ‘$Ý8Pú¿ã£Q™)Ù\õ¾´fÂLKtL,Ñ4±UþùjÖm(<Zð„Ltgåá4B*äÐ,’óÇñó‰ –iwK%ò×Ñ.KÀkL‡£Ú¬/4q}‹È_¦ðêä¤4æv¿hâ2b¯"l¾_Æ‘XÍ³ƒ³žN%µ•Dtå%&ï×Ì=*ºb­Ä3øR¼x'…ì¤yŠškI‚¾3~Unjˆ ™˜`AÕÃÖUšðTµD4-Š–(EiõœæÀëõ½šòËÑËÝå3ˆzîKN»ØiíñërÈX˜y}²5#¹+´£isž³m°Ò{û³½rÉÍ|ÒŸ6[ä—'VÓÆªqYÃÕç¶êcáù4Wà×$:ß,}Íbò´3ËG\%µÌjs™˜—yT¾¨_h£âsß4¹/¬ÈLÙØz£§ùÞ¹ˆÚ’e©ˆ ­ß‚–w,±ätdÞg6l!/ì*AŠüvn;NþE}§0?+k‚ZìH'î¶‡µŠÊX~Ë‘·œÀ¯ÁÃfœò«)¨–G˜ïCŠ6%Û÷»%yäÃ3&r¼}áf>b @dDÓÕ+ˆ7Ø|ò@`g æå@žuo}˜,'†¨ü^•£ßóuû[˜mÆ“¨¨ˆ‡¨Û¢. Ý”‰DÍYk3Ÿ‚¸ôª
+¢p4tyƒÐH¾¥ÒV÷w>‹<¾Q¦ÀÄ/;hÂ3{6#n’þ	7 tòíüô˜à¹[P®¶zcufº(™õdô>[,Ì¸Æ‚Kò3”ãÖ	L0!nUxà·Â¿-–LNöžöqï$Y&’øut—”5Ö–ásM&
+ RõÑóèâRÊù\¸NïªøŒW1í6ç ˆÖßàhEö$´M8˜¾vÿ4¼ÐSN8 ¿6Ôé5‘¿“‡Pß{8,vÚêŠCkþ»Õ «å:6<ßDL'éj–šcïø&(ŒÈ~½úên`³eÊSÉkÆq5X~ÊcÖU®´þ³£Á+A
+<~æœ —æœ6\†¥ÊÖ±Kï½µãŸ€5]I^láÍÈ$¿D½Á•ö·¢ÐÝMÌÐ&HÆôˆc«SlŒL'^÷“‘%¡‰óAÙç‡!{ˆ)s«®ã—™öˆçsŠÕÁT@ZW,7	]GQ¡šç€.ÏßŽ²Ç'e½c•¦¾+@%ü;Ôä	‰·Ý36Ü8É%Ä¡µÎèO¤¶Õa§á-«i²ÛØtèa_òŸqˆÂò\­^“]ÕÆ¾†¹½Pçöþ˜¤Ï‡¥å“£î3¡ÚfƒýG´pjHç`¡¾ [žXvÍ=Òêê‘ìô„ä€ÈáDÝÑä=pà„m'[S5~°*zêÞÙ=¡-²2Ûr‡þøcŒ5èœÈ¸uÓ#c¾å¯ jgí<JÁ‡Ÿ?¹,Õê"tQ¥Ë<já¨ªh.ÀnéË—]UtoÜÙž¤HJÂ*6ÊáéöHšl±P#ÈçZ,ÙáÜ‡žÐª½æéû¡Ï˜å®D@ÜÎ1¯«¹,Y9T“rs>²fS{L–m+P\íÈŠ…¥òÍ%n!FG¶¥¿–~%µ(Ë6WòU-îiI}EÓ¤CZ'k~¼™oüÂÁÙbC"*­—Ë(<l¿²êWgáŽäýsÑñ(²[W]‰/Nö-s¹8Z€·-AB¤)¼ãó´ &EŠøË¬V†ÄPVwKÖ!£ù OYº%)WØRE—û¸ÑóV	þçžb2ÈþïF7ËÒ	Þö€JäÔéžü†óÏslïŒÙYÕ‡iƒ…RžÕ°ë?aC¡Zu2+Ü¯qF‘Ò@Ê‹l|{­mað§L(}U»ÝˆóVÿø“‚×Ám›Úûñâøo€]Sñ:¹=,ÈÔÒŒÈMOJ­Ew•Üäèï/i	;M¬GïÐÂÛbÚÇa¹Û#_ŒDº!óÀëÇ§GÅ`p­©{ðñ¨5¨9²Ê¡4ù,ñ‡Uó+TÊñêLÒß—AÙ#gˆ¶ ¹z}æÓOÖNj¨®”½]ÂŠöºîˆÖÔ
+-úùêŠÔ¼Çõq—›I%£\Ü@1v¬)™+	Ûô9¦¾mà*Ä~qýw˜¦—I ˆgâ1´G6RŒ†‡ËWÉ°“´úÁœôÓ
+0ÓÓgÜ¹¬+l™Év_ÓÆ€ ØÆ]|öhRæ„	½ß™þF”hëôkÍçÁùCj„”>¤œÃ ÓØ¦{…SOÌþ
+–©¯Rˆb¨(IÏ-ìŽÜE_‘Ïym`Dÿ—¸˜·¥
+8–Z*$ó„‡V«5ñZ8½¼&}|©t%ìæíP8¤‹‹KXÈµ15™žiàt1åÞ•,žÄ¡Omà£eÌGöà÷{c>“ÏBäV!ú09 -7M®øˆº@©N’Å[½°'ˆt|×°5Aš ïGÈn†ñæd×ì#@}‚±Õè´fW0|"GÈ$†;^L0ï—çAXÑ2óYè³€(¿…Y×+C~†øï”d[,š}žŸm¥¡¦;¼À`Ñ#Ïø_à¨©ãƒ[‘-„¬jÓ»9wÛ3¿Ó;ñ\<	&â*(AëéèRp…#$_¡·‡lŠì÷Îð".3%d0U¼î¦;Ý	3oMWÐ¸^;N(ç¿SròÕ±„¶mÙ”í=Ó¥ˆ‚… kíÅ²­„¬Nè@É7Y þ¬i—îÏök øl5Á¾¡'—8®¥"çŠŠ°
+j¸"G›bY‰nÂKÍá+<jlµÕ¤$Fš8cþÇò| ©NL#ly(t2œót¯üY:?.®gÕÂO'ø_Á ²@Ùá¬­ZÛ|®3ŒàùgFo;ñä-¸Ì[J*â~¤0€9Ô#šê'|¸ÃÂ^6ˆ¢FÄg+Yà´s€Ç>uå|H¹¿þ•©FöòšvM_Àvcwóìäì<Nò1uÖETìÞÚÆ†$ŽòDðKUWÈš®>Žµâ5ê[©ÜãRÅµMÍEIf¢™¦™Õ*Ö¸rÕ‚’=.­Ø’§‹¾O5;ßæYSÄŒ½—/©µrIz ËG:•‚¼MŒx§+¨Zù–ôSH2EÙ¸2yâaÂø162´å]ÑGè×›Ã–ÝÞ¶|ÍËf‹¯r¦ {‘u+°ÐDé£KÖWÃ½Hoä°½\ ž´'¼<¼ÀÖÂ	ñ÷sWN/;Ë¬HLl-Ð]³n-ÊòaC–™Bñ3YNðLø<Ëúúðq>ÏQ‰í/KŒççºÍž7ÉŸí4Ý)Rcoñ¦ZNBï¯Â÷ÝSæ.ä’î¹®ÎB¬®ê4ºEoÍÞ=
+õ];E®Ô„·QIÞ¥­E†‰/²¤ñ¾Î­ÿ¨~¶kð¹µòyyUaºz8{H„¶tm¨“ó>ÓI|»®ggMTñ^–í–X^û»+%ülôïûüöË’Ö+ªŠ•Ç®Œc‹ãâ°â8­¤Î—‡2?ïä@P7·Í^¯o%	~Æ-d–Rœ^Ð¿Í}ê¿ÔëH‘ñ½{…:v$ŽMïu®&:-bO›sÝs¥»ÙY›æUöZ¨L(½õ¸°Ò‹ºTk‰µî‡oaÔÙßØRTõNµØÑ‘KôME Ýð¨þž¯†fûd{ Ñ1#b½;º
+JS2fâíX×µ †Õ†´Ÿõ:¤ÛÒÍ·k°Ôµ~áÈUS4{Iú#.¿±à|eEíT“¼¸¶óM·+‰,p;aºVÑÃUÌ»ÏU7ž¢ moe‹¥5Ne£c!ÛË)U²ZAžþP³Ú*hJƒ€ëÔS<z8†ª-_K\‰R‚ïÇÛ¶ÎÐ@2ª·J_¦p¦¸W”§qtyvØ&´­cÂ·f_à„q¶­A]´y‰^.¯†
+‰FYåAöá¦Bù•š'åèÒi§^ž>§'‡nÕrµ U4å×âêLc0 ¶šÃŸ“g‚_þ…wQ´zäº1ùõ›ML3Ìš¦ñ¢Žãº@™ÔqAæúY<žž|«|RÛòõA£¢kí‰5»à*8Wì'™h‚×ómÇç^©(Hò‰~üS^;äKó÷ÖÐ42r}Ù¶ÈØÇÆâN)Ô0­ÌnxTD•$XdL–"äùI/2è8”N`™Ö¨ö . ¨†J¾Z‹”ck—hwþ©q²%%ªluaûì}›üh_Ú¦ç•Ÿ`<J¸;ëžÙ•²à}së
+*\EÀRëlÅ÷›ŽüTT8H'Áç¨:Þ+UÖZãç‰Åt²šƒ­Ò€ÍÂ¨U˜Ê¢í«”à7[YQKíùéëjqNmI#Žú0œ­æµ>33úR ›ç#J/°kïem‘ŸæÍš:é¤Ó=Ÿwlk}òu8™´ƒñ£³›WákÇÿ1|Ê‰U‘S¯…džÅÓÉ[y6‡ú0Êª{7Œi€å$^àQó¡?’Sµñ­ÕoÈ$Õ °@ƒhf¡…øŒ€ìÍèˆÃ\æµ…†9õ@Iÿa£%TGT›ìÆ°¡Õ)?ô5]÷_>B5 ,[0{dvŒª¬‹›oë—Ÿo<›8½uôý5Ì p‚ÞCMµ®³]
+>§ùcDBÒOo1îQÈ%B(lPÆÏ5«p\9*Â(±0î¹‘l&¡ªOšÞZê¥Ñ§‘¸Kv”ø¢]P$Ö‡i	ÜóP~»dù}ªB™‚vQ-°ŽÖŸ»Üœ‹êgtdÇYÓ¶â.B»&M©º¯,‡fB“´ß°ßo…nYuD¨ôÒY#hEˆ_]ÈÌ›Ø'»˜þlÍ_S´âð÷m=#ÅÊÍ|I su”¿J ¨V²¯ñÑFLá*¹(¡ödz¥•õÕøï,¦Y÷µN§C3¢‡\¼|Œl×‡òÖHÒ´*ÙD/.|ñëË›À‘té`¼–6U2v1Þwr¡ühº»$Éç$³o’$Yâõ¥‹·–xÆ{< ¤zí*„^Ïel€6V9PæTW¸VÝháqlr}ÔœC["8Žä†8‚ÖDH
+ÅçÔªkçf“k®‡ãž(,\ë¤9òXÑó©®æÀª	Ö10ÀÓËaÄwnbtAÊ•ê]D´]‚Ñ÷E‰¨b›GÞÂGäÛkíK˜ÑØ²•1|™DÅ­Ú,5Rv5”}k¿™¦„•âW¿wU€vÃY.Bfe–we}X®b~HàR5uû=Ë”MoäCœ×Y!+/ïIš‘4fA^½¥JÆIÅ~\¶õž6×Üvu§dŸŽ•y©*Œ~}Ÿ†Á¢kÓ€%÷¹Ò²W2»þ>;'´FèÂ‡u¿†äsŒ2­þn#?¿!,z4Ê¹æü¢î'Ç@µu-(ú¹Åy7öo(æ…év­1”“Á‹'Ð}¾u£ßd¡ä`–På^ÑÐP0ÌKP?ø#«	éÝ~×{ò@?iÛú6wBB(t=¯¦ÓçÒ?ãº³8ÁÑ c×[XÎæãwŠi†s÷”s&ßó·ÿrÏ‚Ç–ìôØ²Ç}H¤DpûpÆi£b³L—„èÂúæÛâÆ°²éðux2O>N´[n•´šX%þçÄŸOm :…GàñÞ_±ÂMJócÞÖMâ˜CÙY¼0õÌŒ€¾ÎÁt@5¨¸ŽàÍ":8gX„÷ƒåc¡‡Û m){‘ä´gÁ˜Rð<Æk=Ô¥8ýÝE4cœM£ºu{]LtQ»Ö¿ï÷E4lž÷W®Nt 5¬]¦A?ˆý;Ø±¿GÚè#ûfÎ 1P©¦àä\U9"¤{«U™q\m/P!\{\.<©áyç'ž=ëã­ŸxÅ2^)åº<X}'ÆÑæ~îÁM½óÉ®ƒÍµÛÇ+#GþÐí7êyÂêåÜ0ÅßcµÁ	£0<«=Ñk&y¤ñˆî˜<‡@=ÿ½êÜçw4šæÛíÚúv5ÞÚ&É„¡m\i¶@:|<GûxX½½l’îa{ÆK…BóYŠ=Œ%²yª‡06çw³#ðYÛE¢Ü’,=1(Á[GÅàâ\žˆzuü|jâ€‹ÊŽ¹N‹5Š¾‡ôôŠË¡&JGì— ÄZÛoú4v ñ¿9ÓV£—¢ŒáažÊ×‹y<t¾8³í˜.U@>6»š +ŸBŸA È!Q²×V0vuä)e=r›sîÍ¤¢:F÷Ë‘QÃ‡wä—#¹¸©ý7Å&ôÉ‰Ïíù9øHL ={8–ñß^i!u§œ’ì1*œ$rx*±¯Ïô·K×Ê\; f)‹ð¿«IV!(3¡N`@Û³#QË¾KXà^IÁF|OŸ"q¨˜g‚tã7íI$›	x{òò—ù±ûGN|®„Š»cÏˆZ÷XƒÏë²EMyäXý¬ÏçS~¸Ž3_«•é.TŠ&,Ñkòè¾NS`Nî4i]}!žÈ§@§,ë-í*æùP€Øå±=n„}À‰ l¯×„#{ÉŸ¢®‚§ˆ¾:ˆ`Ñ±ä ñ$¥j×ê6Óã¨%ZK@pœÐç™úoQsú×8út0ñ€Æ“ùrp)×©ÖÎahJ™­‹“ƒãr˜gê¹í)¨Þêƒ(“ðH½cŸ½f[›YìØû:˜¢Y@·j¶¿‹éÍ+È¶²ûišŸ›t'À:)ø†x%teKº¯°r“î°—«˜¼C‚†,wW2íE?k\Þc*^ÔþIlòÚÎ¤)UÁÞ¹ö«
+ø?«Ó&~‰=‰ë¸{vôûË[,\ò?xÒ€ØðwÒ•ºÞPÅÒ)F&ì±uaÒÏ¬ì7‘?ßÂ:<@Ð4×@’#úù;%@3Î»P£õKA•D2§X®ý 9 ƒÑä"BfagÀœˆãEc(?Ë¡î{ >Ø§‘@ÉáÚ¥É¾Ì]Ü¥1{&	âi«ZãØ;"Âóðuëê}·†QÂæaãî\?0¼Û:îýåñ½|­ëúZ…qØ„ÁÇ¯ëeçtÒkl‘i Ã¼"Ž³4DÌÌ5£òøm 9°\( îç_snsÚÔ„˜OŽ º¬+Zvçß>Ð£3+×@D’$²M>ºA†Ï¦éïÞ‡päÍB¿›ì³„6Ï?àcXkh n0úÜº+²Ç!·<nQ¶òóù¹=Éõqþ¥ô©bA>má‘~«Ù
+ö1²üØÆíÛdkÆÅßì­CÛ¸Á:ß$ìŒSbÂŸs€œètk =
+ú»2ºÕDå×Då¾§~ðÎš c¼6›†Ðþ„ÎÓéFða”%¢$¢ñÓ¾(–¡®Xloºâƒ¸ë%&*ßÏ³~Ü q|ãfgŸšÆ›o¨ú‘Žwõý¼;"4âw¢Í
+‹ v\9…/_'EùæM$¢+vXØ£`½>†<œà§ñ¦Î‰V5¯-DL_v}ôðRÇ%3Ó)a:|rsü”­g…ˆ¦V¨Îƒ°·õlFîí¡#om^ÿšœšþJl©óðhC‡c{í“Vs3ö/K¼³’¡á›²gÅL6];^³VŽ×Ô¹aâÇ—ãb%S£/ºÍ†›-¶á×6Uýýädü©ÂÑ”ä©œC¹ªÀþäxÍÏ›	äƒÿ©ážwÄöX¨øí[ŸôÐ?Gå–\s°6†£ªƒéFF§YJüHÍok…Ð–\I³´PºØ±[‰”ž™n£=@ýb8¤O¹RÿÒ3Ïœ3K!#ÌÔ’:,Ž0$Ñ¶Š—n1+ë‘ öÅzDh\µ kÊº¼LÙ4$!´[Ñ!sYýôkÛÞ9c9±áî&<=Y51p®ÖqÜÕ
+‘Æ§sØ~ò©ÿ €”CôQLyï‰‡=~=šÆüC°^üT±œƒÚ^ÀÊB¢s¥’DN8F„ÑÉó!0Fð’ábqžz<Kp½#3[aD=U \Í½»ÐôW´g›¶Já9ü°eÿ}2µ89/XþL¡Ú5ëM±„{æù­üÎÒêö}t—lzÔÆ¥­gÈÐSð ,ëòè²úOý´!(l›ˆŠ÷Iè,5JÐü½Ö¦ÏGbôÝuV>¨_Ÿ"8{œ¢€
+ôbþé@ƒ	"
+¯]ÞÙÄS€…—_¤L‰ˆB²äÞ…g¿¨5_vÿÛiíÍšóØŽD
+…J‰$µô%Òab{ž˜(È„!,y»¤!¼¡9
+9¯b„î‹nñ4ø4Ãâas}o×ô¨‘’#2@Áô[SXÛ¯6ÌD—é°,á*§ÎûÂb3?+Óž|çÓÉGP<Tí¹öãb²Z±Pyíf‚òH˜‘’£¼¶÷W‡VŽÈÏ¿#æèÑ—3ùÁ¾XÓË€þnž< uW½˜†£ö—Js£Ö¢¨¨§À¾À¤ßL!L÷7¿«dóÝh×f6ˆ¶61ÖúÕ¸“~ø:{cÕ~ôL¾eŠ>õ\,M?)3M™•êŽƒR±æ’?å«Úb­4èÉ±šøeGP\x]»Ìéÿb½UÊò	+þ#ñ;Ñ=fÒŒÃ©ö„ýtœš£…vÜøª/Ë*ö¥È»ââÂáÞ!‘íø‚†›Ûàgôƒ&~n´JÅ°@Á«ßl&!]6J´A"ýÍ“ÜÍ ÞMçæjà
+û±üê^´úâÑMÖ$0æjFó™2¢ì®´ë¿[äŒñd¯bÓŠ(\"íÇ[…Ùe¢òJ]ŸO5 ¶Z7Às1Ë¦¤ Düð…ùà‡2Â€BÂ/†€ÔÄ›Ÿ$kÍQeÖI¿…û+¯L<TÏT¤|ì¨êaÏŒR‰+Ý…ãG'üWwþX=-igkT¢À÷|-“I.fÎ¢Þ‰¹%—ñ–Æ÷uó·'~×Å°Ð·Â¥•"Á·n .2z\c[qvCŸøXõdsžÕt kTrUžž…= ˜zð¯ó:,Qi`ì·­^ñØ,@ž°y‚@R?7õ]€àðµnYóõI`àÒÚãëœùwûVÞPÍ™Ìø{@§‹ìcü\]1¯¯‰pôcÃ±ŒäYQÈ=jlP¥¤r…Îm=ÐˆTõþ~T0++®R>äjà‹oÙµh¸vo²’h¤ÅšC^;ÃI…*p§•—=ìÑcñœŸ°­bâØQÌóìíŸh©
+åëXH÷ÝßíFEšmº:‡‡0„,Ú ?¯qu’$_aà.b½B@á?¼oÝy/TŸç¶ªÇ%Ú	DwI,(C¾áƒÔÙô#RwHi‹3Æ¹Uä~¥Ï°FÓå¢Îš!—ebêZ *êœ<þH_DGk¼' qîˆýç@žïlŽo@ßjÓa:øÛb¸©øŽLI0ã‡´nè&ÐT‰.çEÑöLvæF¢1Œœi¨\5M‚¯koÈž•;±Æ:˜k{eœãþ$µÔ‡,½ÉØwFS±{(áSÛgÅHæêÈåÂ" [F+‡Ô\êKoE	Êyý˜?
+@j¤LÏ®äK)ï:ˆ]=†TÔc
+9º6¯–ùÔ=¬4oÞ(–Ç}¾Itœí·)ê°†ÊžéÐa`2árÙæ¶¢×ó:ÈÒÐe­:æË­àñW!jï"Ý”k”DÈ°.:enÞHÙÕ›>ebÁÝ7!T‰ÛùÛzX×µ¯*ô‘.^ NÜ¹Ê}“2¸„¢Ðxlm®6\ÆÈ\†¡&h·üL 4óuæ“n@8­$óÁšä¡¯Kéœñî­¤;rÇÛâ5áw|›?¦0åøàC§Úýx1Ax	6´üÅ¾‚¹þR‘-**ïÏˆ*šÌ€ö6Ÿß˜ø>Î_ÁŽ5ÍâÎch?¹³¼|›´¶~EÓD*`|fŽt`.¦˜šzŸ“¸nÚÇæ6_z@±·ü}±?ë¹8Hó…ÝÑ
+7¿dþ—_Œ[û§;eXMÕjïåÀýcpÇ\ÖNîÛ-«pSýÁô…<m[ØTˆâÇŸ~lxõ|Y„7jU7/”çN1;ÒuÈD=š$Ã‚£'á9Y`lzáùÑrÑü+kžÕÞç¶áºý¼Ð9F,ì(žAtX…ÐÆáb_Üg‹¶.>õøí£ïw›eßo)çtü8$èr§¦W°LS ¡[ø*tÊT'ŠÒ¼Šä=B:ÐüØ@A©¢sÏÎc¤VrŽÂW!ð!i˜T}ö9{}T	º;ñÁ~tG—'›-ŠöTáÎä³Ÿ¿Þ ½ž=Ïndžëû÷ªO•N"½V+‡F¿¿²1ŠÆ4ã„BŽû#w²½™:XópÅ[Ú3Ý¼NÇ{Ï]ÏY6{<Ùm9È¢¹Ë¼æÐ•Ñ×²Ñµ~KO×à¡7××ÛHb A‰ä@@¾uÐ(
+~úð_b\|ÜC5GãÙ{àT]XH×z#mcÄÇgw‹Å÷TÙßVÐpPÛ¹›{^•‡s½ö¾7C§úÕ¿}ºd²Å³@¥[Ê¡B¯©•bË˜ª]×9Sû`i$ÚÆ7%ðÛ‡1
+Ò©,YÃÇ@«ÝRAtòÊ¼¶ ¡NË™Ýäá;ÅNoqLbâAØPÒŸAÓ^q1í€09@t†4$k¤fYò™b2Ë	°¸8ð0h£ ¾ÐcÑ¦öˆÌQ5Ž65l|`ácV-£Í4YÌ2Ì"ðò¥…­Sú=T–M™>À°«z=[rŠÕ ˆê;ÿÎ-øÏEÐ×wª!’u.òE‰pN©0žî\—€ÏÙªCv¥ß‰-•þx+^P7{k×nOLÃ5k¤î¦vÅó·8•PŒ•}‡X#ðÖ$˜‚Î	GG€‹a€~[Ñ—váo{“«—ÃÎù•‹Ks’/=Í`¶®iI™rt7 †Ÿ§z	¹bû´øTî°ÆÙûGÙgã}”±¶\Ñ%ùÊ“‚du€z’|2ÙÆ|B™éB:á„á„£âj‡]bU,¿ŒOµ³mô>•#’=Ç[ÕÊ7K£¥ýÉ·Ð¡]?•@ n”>´Ü;ÐA…MYvÒN2åoÆ(Î¨~â%’˜5piè$c©Ê¡Ž)ØMOè©„ŸÞw2XSróè.Fh–G^Êà‡ÀN~ÕbŠs³óôÃZ©>$}šnäç®xwüTCÂPTÕÐ€l—k@›±l¸/Œ·ÈÇ.²@ÄàôCˆ½ýNàÔ“ÙpdiÀ@8X¢­á¹tÂ{^áO·C&"3–™ýEe‰¬CÏÌ|(rm­A­ëÇË@>Q½ƒûzá ùÐëš07¼kDþÅZl—/áaîÓOôƒ	×?—Š½ª	¢ã±ÚŸN™~E€{;I…²ß‡¨öÕ­·(8ÑÜñ]ä:°¢/’„9ùY½ÜZj¡Ñ]‚5Iý‚g›<%_~	Ø!»6•Â“ÎN¹$<h(é,Xã ®u
+Gvy³6‚ âÐ×ÉwvT”¥Oørý†s2Çš^PLOF(½u[R	ò
+0™¹›@¾GÔ]PÛÆ:ÒÆ ÜÜõ™­¢;! RÛÌÇQðË ó8ÞðG›?gTÝ¸Ã#nè‚Ö¿Å®YšC·S;À¯$6‘'ÇaS‚içï6Ñw¸QdÖr*TUàšÍ=Yõú
+Pwjãìfß‹ò¶ù¾é>e8Í÷Ð“Ë{>È>büyM+öyäR&ÅÊ¢ð2áæê\	‹åÜ²ðÔ>*¨‘ítTŠåT4_$¼}& ÀûH%ÄebˆŸÎÆNïÎÞìL­)¢3â„ÌCN6’ô`ú»ë·6ø=„³¾°>ÍÀ6}RâêÚÎO)iòZCv-:«½7§;W‹ê~&CP«˜ï¹rÏƒ9Ž‡bækI¾m9qiqAáYÚºQ¿ß¤»bPX¤â;Â5ÜS’å!Õ–Ÿ<Le©$”	ytº¿òòñ	½ñ,íŸ³Æ9þ–#'Õ/˜óˆÖ•Ÿ1¨Õ^J4ÕD­úà2a
+¹f—`‘Ùð³ °›õîôŽi0r:=š„"¿	ˆEv(uí®¹'BÍfJh]À³¤ÔËÅ§ß·®6ô{½¬rì³[ÌV=•Îbbøé“\†&Åxš}`ÖŠ³È™àÔ)–ÆF&0 qæ•â¼BíƒÌ¦Ê
+ÜLÔ½V+Sò×wjç¸Äî—…Ö=¡7ÜûD„ÞÙ{aá6ÉA£â.zž4á£Ä*D`<4ÜÍ8
+¿i1Âd¯ÚØYyê¡ReÐù;óõF³›ê#@Ý¸cŽyM*Ïç%ÂÐfþv.˜9œL[JËYy‡žíBÎóàã¥5ÒÅ63ç‡	¬Žoz8ªÐ}£èƒQ†5Æ³Ôn^”ÂË2|ïß¨„âô=v›ðµ!ÁüF˜d<¡Iœt6¥C¤£’4òÆnÁú.Ý;ˆ )p~üv…uÉ.‡³
+¡Í—ˆ‹ŒpæÊ®G“v*L«ÙŸ•ÐÅâR20¼;üc…žUÊ¸/&ùMãLS–i¼‡1ýKm—G´žIVHOÜDÀ]S5I{˜x^ „­a\þ;’òn²!+.B!†ÍuË£$ÎòàÏÎ5"5EõSÌišµ—ð©-MC¥l©8­gY‡Ój BLˆÖ,xø	É˜nË^m˜2$r;fŒ#ÔÙrH»º¦6>Œd	ãàn5×Òþ¨hy±3¢€a¶NyòOæ—/Z”Í™3ÐÉtÅ¾S ¸ˆŸî\„KÎŒ)c660"UVÖŽ9cÚœ£Õ0”[²"É³êqS&¶f]³aˆ/Ø`jâ[´–®sÀº“	 Î'u³¶Ad}¹ß¥Eí¯HƒÏj™q¯;ÛoáÄ¡ëŽd£Å{ìÌaZø@H¾ë)ûÐkGË'â@õÇ‘HóÈwe×„Lc¸°S<³‡SåÒ@3tÉŒC§æƒfñ}¡†vv;Ÿôä«ì­7?%ÑïA80+A1y¿³ œÅrjæ÷sÐ‚¬P?rèF`ÔYã$×û©“Ud$Mo´è4›”¨[(îgûû&…B›S›sQ† ”
+y¡×VýÇ‘n°Ã^r`¶ÄàÂ*‚Ütž£4ø\Ìš]W¸H¨£zŠ%Žu•‹2£VŽjË•|~ûvÒ¶Ž®–/¥
+ÎýË;NÀ¯7À.M±è…Á-1Ç&öë§ñ¥…³ºãï_QÇá|vä6c#0èGy¿&\c€Fq³‘gU-"1^¡yÿÄdU’ÀvéÏ/ Ý÷LNG+žxªçšé6µ)oÓÄ±¡³0'Fû®‹»ùHˆÇà–úÝú×Ãögçs~ø†öé¦ÑiÛÚ×	²[´½ÇfÜ2˜'`…ûý½ A\¥ŠeŠCùûÊÆÙtÁáuj.ý¦üsm …÷ß3zK±#¿v¼4'5@§|“0ÑÚrMöúúŒ=šFÊ|l3¿>egˆÿdt×ý;`f_B¿ûTû[ýæ\åc,ý;õ÷ÛÈH{3Ê,fŸLÍGÖæëÛGF¦ùë¢<gh%¢szÈãIYí¶IÓaZäünÔŸ
+LÝÞÔç
+Vò#ÁeLˆ?%o?’‹Ã¥Ÿæ"šJ¨„°º‰´QÐ±F£¢
+¸”	1jz@ŸŠºˆ64ºÑ…‚>ÍH }ÎpŒñƒ:¨‰ähLYQg f‹ŠS»ú]	yS GuK9ÃgfíÞª,ó¡…a¾¸Âùa¾ÙZÓùš¾HÐü0§_ù}j%ÞuÜ‹éÅ·LæNLYV}ZU‘o-æ(3øx§æ\ª«Äbh&ØÍ—-‹ì¯BÖ€®e=W‹fƒóÂxž ’–^?rû)ÓWÉ)qßÞàâîozIðÀDØ–uDDn%SÑç¥âÔ;²81ëcöÊÇaËØ¦bõë•YùW6¯‚ZÐ¿ošæè8ß[ƒÀ
+²d–Ý”+f}DrãK GÌlU[JéãyGOÍÀ€ÎÐK©f˜hWtT}Žn3w,lõäñÑÖž”[Qo‡ae¯ë¨³Ûòž^|^9à9RV¿ÉgÖZ'‰“×å+bª¾C0”¶ÝEHëèØäÙÔR}ÜOùtoÓ0Ø¹Ž:¨Cüùìò—õÙ~<r?ßÏçÑZIóÂÇL;	ÎF9J'M…¨&ºw)dlÅBuJ¶]?^+õ—/Ž×DþD!bþ;Zþ{¸ˆÅnjÕ··„ß§$VÌMjš­ŽœÝÆzKùºW(°¿í&å<¬z¦TU}õ°›‚wµãá…“µ=@wcƒÓc×p &‡vçcájšd]Ø»*c½Ú¥0—	ô¥(cÉ¸òµòð1¼äV¸ë8Ppd£å^eä¸?Ÿœúˆ/¶¶ÄdX [yº¯“c³›1!Z¨øàòZ­Í¦0’ý'Gdà'aWÀ£ÚO¶…º*KQÂ§GÑg|Q©%ÖLM¡©ú8Ù×ï®ÙóÙè$ÜBc°GŒ÷9qhâ Lf€²dõQÕ’snh›úÄ‰c:¼óÝ³jÒscŠën¦bO.íÒ…bŽ÷âðƒjZžËW²$ØrÌž…Õš€­zÓÝüÆ³£MVfÕÕ´bôÌí! isùgXÛ†"oS·œwjþzº]õ«2E0à
+“˜—ò"šûÀ `Ze%EÚ7ñÓ—â~@T¡üô¢÷1žãäù™¼ÍA7~myÈrÀëÄç´	§¢é`×çàÏÑ¯È(Ã»Ñep’£¥ý°vVÉ&NFå;ìo!+ª+§",‡øv
+³²ÒýÅ£b»ù¢§Ì¯sö§:{`Ü€ázJ¾}x©ë»ñnW^	!.kéÓ"·7Ÿ_?ñÆ^`ç¾q7„É¼klù5fwQªƒ’|Tœ,Â‡¥Â¯PA“¼O”Ì%„€õ )ƒËb{&&n(œ‚ÕW6Å~¥fû†f(A«ôÑç³Å½ ¡—«¸;ì5¨Î”ô}=$]òRTk‹Xý;kæÜ7Y=Úòn: „zˆªÊßsÆ‹8lÏ¶ ç}¥µâ4õÂ}å@k’½Â¢Šé»°ãc«…¶£UDV%Ç•wÊ¾¿2ôÁ™âæQMh…3¤VæbÎg’¾ÜÅ¨R»÷tzÑ×2»
+uä»¼1ÕÔÄº~ý¶(ßBÜËöo8[A QŸ“[O–Y‚«fJ/ü~þu,4f²9iD'¨àÚú‡ß%$ Ž˜n7\®&•¦ ‚XD_]³rô‡}á¢Sdh	‡·&ë3¡j—ãÿÝàk•'þé ‹ý„¯ù¥x_´œ’âY§ÓŸüàFRÐYJÚÎr†þPëy)œ¹‹(ƒEÄÆaœÙŠ¯m/õLX0{yÕŽi—SàÉ´ðƒågƒê¤°*®Kê§’áÜ,Š6Û97Þ^? e_F¾ª%0©sÃwô;e'œïÜR“5ÎÊêT˜VŠgÈ±ZçËŽFpS$×›ìlÆ’íŽ”
+¡ýÏ_!ïÄà@%\‘ìGyF‹ƒ‚o3¥uê'ù4Ì•™ÞM>í(¾tb»ãI;¢Èl4úÃø4áÁÑ½šåÇÃ¬«å,Ö×|ŒÇ5VTní]ÁM?ao6z8²ØpÛÊŒÏÊÞ÷Ÿ?=ƒ»ê~WÌÅÔ¬!#
+’½wnK”SßUÀHÛ±¹-Á<Ì3r3Vë­Ztí+t»ÂÝ²o>w€ÉÃÿ–Àwˆ2N™i^gîÊ.vÛúéEÂÑ&Û,chì&#,MâGéÄøwˆ2÷m|8I$ÎÊ6¢YÝÅjò"ˆ~“|v‹˜Š›Yë"@½©wîIjk4à£Ü³…p¡wˆ	Ž»>.ýÓthç~‚üg»éÈb€Ï“ð³G Žá\Qþh¾\Yþ‰€¨ä?â=bßLRK:FOEZ*©(..êv	›Œd¼œR<|§³t}o6•G”M>e&ØeùÛ¤ŸõÙƒº¢S‰™Š‡3]I©H æm—ìœOÖŠgïîmtÔ¾uÍx^ÜFcMí)œ¤öyŸ¶uB&Žª¡lÊP:dK=Öä³:" ¾4ûêÂMh-Î:½bV3£`ZÙ*#x­?²œQ\pR™S;.K¸æ‘ÚWmŠ(†pv,Š4ÀË)hwêá¥ By]9Èº ,ÓùË ;)¶e3§LÏokóêšH˜\ÊÄrýñÄ¯÷ŽÀe•D»ªÖœù\æLówù¸Œ1ìe¨%ÑF±emAª„?Ìë+[’Ôë{æ’P²ÇŒE}ýx‡p´ôjh(iáð/.‘ò,œž¬ú‰zÀ›¿à;æS7¿ŒÖ!ÐŒy¥‰XJhTsU<Åfj¿Ds´wPH{4ƒ‹ºa½¸(“œ¬	îæÏ¬s|-~ÁÕÒQ¦d´¬Î¨ÈmPÆþ¦ D	L	†öÌá!ÄOm¡‡ƒwÄÊZLÌ‹jÜ(`;sãÇwÍ°Y–/ð!µÝQÔZ©IcÐÄƒØú”ê§º”/Pñ |…=ð2MÃ—}¹Ewè½Î¨÷­(ï`;ƒåÅÞ ûoLŽÞïÚ_ù·ÁéC‹ùïâˆåéú7·µkS…ƒ68<E†	á‹%ôìeœªzˆ‡}ÂÔø‹’–íj×ÔÌo¾ÎFÆ$:iª©s„HÓð]ÞÄÔ¬&“M ØfÔqHMî™ŠñäÈ9ÁÄñþwfìå™m)¾ô®!G¸ò•Ãˆë5ÑÃ8s”ª"Á£—T¥ôæC}Wì|€·Y9›Lë³ûÆùš]aãµZ7)¥p€ *þÐœ¡ˆv¸s¸õ]ÉmÁ7˜"”N Çl+7EH8Š¿…RüH{ Ü«îý:ÒÐúp^ÎlìiÙÁ¼´}|WÑ†ï–ÿÀR¯w±WØ"IBØ‡àGÓ©¶.ƒUìó„TÝ&¶ÀÔå”²æàÆ˜sv.í;óI0HBÇ¬§ÄùçAü)l¦ùW8ü$+mÖ:HQqÑHîEJWtk0¬ç‹su½ñvÅofdÏÁIƒ£©¥&‚Áï[Ý%¡¹ÎÈä¥Ž{…´¼üeªüŽ¾©4PŸ@²o$c÷p<ÃÞâà0—€.qxÞå ¼üu§KÓàLÎƒ–mÒúåtÝ¦DèmûvÎ"¨OwžI×¹t uÇ<§'ÜÒD’üáå—Oä­û1 Æœ¸‘ñ¦ÍÄèwUEÌƒ“Ã$ý´”+Ñß±ÕL œ¶¿ý"¬“o×xó»@ýxu$åçÿ€‹Ž11ÌÏ‡ù|l×úz".ÓËbCý½úA:	©Ö 4;²÷I•þg*;5Ó6.rz½ æx|in¾¼g~™9r‘´'{ËÑóLÒk$S °'rùòÃJç¾F$F­E§Ò/€@¦ ßÈÚSlk§xCCç=v×Ë¢ø{ùýÍkí„k¥|U#¬íï<yÅýÉôa|kÓÛ‘IÍJñ}
+Õ6¾8–àgrs0¹ÈÉ8ò=î> ®gÍaÈâª4f¥K¤f)„£Æ$ùcu lhÐ…ó]o¼öaOìl	ÅÏ)¿iì;¿ŸÊÝ*wªsÕG‡g'q¨g[B×yˆÊú«½^ÄÊå;K7(™&&ëû~"²¶Âñ¬£D,ò‡[ÌÏuÛP M÷¿Û©Õ‚7~
+ã‚1¡ÒßªRÚýI	JJƒK»Îpc–*]ìª X‡„²Å30÷÷ñ¾vØM-j’PÙUüºÄôùê"S>XÅdßïfDë‘æ÷ÅIe²ÝËVe\ŽÛš˜['âQkƒG5½Å³Pö‹gìiV„M>Ô/œj	5!`£y ºÇ)Hˆ‡¯ÅÊ{)©	{ïâ7jËw¢„gÔ¦OÊ”¢äS*Òå{4×\lÄ‚ùJÌÐçNx[›l}{$†U<Ãa{¤ÅƒV°¢ãs>Ž½+ÕåbKð4	ÀR†N*Â%ÞçecÙ®I†m«$sA–w/ßT~ªl'a3Ï@ºøûVR‘hõlvÍÁ\f8ê!
+_)ØÏë€&É`Ã˜p"¾ða5Ÿ<=G’õÒrí ÖK@– Âôpñ%&î7ùŽú6¶Ð·ú ¦xò‹Ù´a±žQû6J&f]kW„ÁáyŠ<]½âu2ÃÖ%Að·£{Ï‡4WýEÑÄ“ÎcGŠ±’¹w „»L&÷¡¶MH×&LØÌB%‹šÎŽäÏŒ®îFß…Ø›’åP–"l|N4nu&Øûy²ø²|v˜ç(ñ.)›Ÿõ/±Zá¾¡A{ìéúÅ=ÚMæÕ‡^I¡Êæcéã¦½‚…o`² *69ŸPÆ½:;hGe¬z$‰è_µFÏ“'<=#j˜'±§’ü»×	~¨Ã+bÍûQ¢yå¥¹¥YETã‚Ì¹¯Üòõwuð_×^ÂÖí-–_eAÓ¸KWÁ#! Ïùw»-$¾ú.£Eç…™¹eŸh"¥wC«j/|L•¯µwó¯-€*åÚ¡ëb„^ïLQñJkd :­õJ£ïw‰ û‚œ4Ûé ï|
+‹Çô6Geé•Ð:÷¾ÆŸ•¯Ó7k”ƒ¡z¨Ý:
+»÷fïÄ7x!ã/×"¿¥O~Ëúã£øŒÕŠË“(b6_GG¦æ~“|$ÅìÌi¤‚K®5—˜ƒ86éì;¯pñqzÔTÜ¦¼OÎ¬/¶ÐáÌ%že6Ú{Î×¨IØ‰ÂAÌf"Ÿ×Ó¦ÀÌÔ4$MÍÝå‹ÔÆvÖšÊ‰$hÄÁøP@
+g¦ÎjÉìªVÀõ¸‹ U—pj/#öhY_0JÇèr>‚^^D}˜s¡ã•je¢#áD…Tl9<|5ßÃóöîy,¬˜õq7Ê³a°,ºßÌjº#4Ëî×­5èß”ƒ³˜Oï+¿úUÔ;õÐÑFé¡Ø¸|‰aïË5ô3»Æ†Ï×•
+/Ê£Ú$DâM·Èî7$7Š,(ì8'lºˆµõ5ªRäkYïL_êœ½UÕ®[býŠ];ªÎ5fƒ5rîà+¤”f‹ò·¯¬4\/;‘ Ö;1*L89ž]
+þN	ìT´°¡Ÿúq4+z”Ÿe5!å–Nÿç8Hö)'¨è/:µº…†ù IR––Üùã³¾òù½W«KÒ(Ô—>âÈ£uóÞ«›Ûz•|\$ßÓÕ^E±µ³ä¬[=½S¸Œßè¯a¶eÂ@gÜSþ|ÏY¬
+dhF6ï|§+‰P”ßÞB'€4›GOÂUÈ»øÉ†µ*—FþüÆ,çÊÜð.dÀ‹#\ÆÄsÑQø¢¥ÐB—¯’þ2_0w0šß@Ÿs3g¨óÕ
+±/p~fD®RæXLTT;ÔÄOB¾Vœî&jšI“AÞúœ¬(sµ¹Ú½(ŸgQf/5DõëÝöUÂÉrL{¾zš?Iš´+V·qK÷JjôµÁæú7˜ó«ÄœT%ÍÐ'MàM-Ø(ÀøMA@#b¬úa0~8‹§t«ÚR­ko4EVäÓkzj£k¸«i%ò5CÏlº!iÅGzi±HýžÛh`Ë[7ÉS[KÂUC#ƒLÇ_%û™~h bVëwÃµl†ã’${:Ÿhÿ8„KËEƒi›\ _¨ƒ•Ùv–‚?(<èÛ“¤	PÈØœ„Å³ì^B¯´ª~«BçQv¢™À¨ÚÀáFn7ZV¥Ù6q¯g@vgP$åûÌ¥‹À¿ŠöœÔá–a¯/äõÊ;5ê(Þvˆ´…é Ðù]Þ£ p’˜'ý¬ÌÇãüüFíe¬ÚƒÛSpý3Ö•Ýú?ŽÎbËm(¢¤…˜––ÅÌ´ZÌüõÑd—äd,èîª[#ë½®jë'9ˆ§iMÌ°éÃÈ5zßÊûÈ È{wpÇP¦ç>òéiú“\gÝ¤]d"qüûn„‘—ˆ‹É’êÆÇ‹Ã­¤V.Z	ÍXJs«Ä>*k'mc}êt´ [èFàï<”×Âë	Œ™ÌRÝ¨ÉâïZJcïËµ#]|œÆÊ(kñ#¯‘°„
+36èõõŸBù_u^Á£"ÔÎù|JIY­õ72¿x˜$2RQ¬ÍŠï,°'Ö_Ëƒú-¬ÇvŸZ	ê¼¾“­×ÕËqU¦ûë,ûÌÀÕT›Æ\üQÃÀvßÞL¾b6=ÕdB½a?ºq†G¢Jâ¾ˆã=S¼íbÜkùYòÖÜ'
+mEsrœîPëuYüÚ¡Æàé¢›ù”#éð‡¾˜ëØHòÓí¯C'äuBèÆ<'%£ß(m±Løôv®úQÐþ>ó|Ü·_?Hó½¥—ÂÛ´‚ð ñà)Îš¿ÊuÜ¿ig|]^çyâ÷ÞýAaüCð‰&íµÚ’¦_lë\ü+®Œó(
+AªNÙøÄn3´"2½Ê^­˜CE˜Öx!^AD\QVÊ4r¶µÛ‰í<àÄÉ1,™š§À\JKGž¤5ƒLx=—•k|	”Úæil“3`ïSF")Ó ¥=½h¨Þõë÷Àmš¡5-Þß»kD+ ÌSn¦ŸTUB·­€SÇdšI#`—þD~—ÐD3”ÓëÃµÂ»’žÕ&j¡ÈÌ wýéƒOçîðÒøŽ-¼è{=_“°I~ùîY¿¬›òtÔäüwd*¤9b0
+6ŠJ|f":ÙH9øû‘¡ú´l¤çÁ‘Ûä„æùÂjt¿"ÀÌ8o_€l”gµÅŸºÎõ×zŠn£vJó§tÊ°fÀ5³ÓwßâGÛAiýIaÅ¸%ÉÐÕ®îÔ¾7¼=Ï¹~£°Ö«‰JˆwE¸ÜT_ÇÀ¼Cœ ~6‹m~¤²[qÀOP‚'öÉSE¤µ%±ŽU›E×Ðˆ:N=Úª@ÓÌx²Œ¿ñ›Æõj%“çÉÈh4¥š—üj#÷óI9·Ç³âëV,’™(3ar²Bº.§•@éÏŸ”Á$6Mœ{´[ôè~~Œ$ÁC=hÁ¢‹à†ç£_OµhŒ>wÅ²=iøî	o®-ü"öÎN¿	L?¯Jî\rT#“dš¤øÑrE>ÐØØRÇ;ÞËQD…Ù`­üÅZ_|)Ë+$sÀ;qO`¹þ¸×ÚÍ¢B­?Ñ“?Æˆ¥BTÑ©ýJ5[•å/CŸF‹>âÇ°cst2d÷EêT'ï©öÎ+Üô‘"ûðöÇÿør_bm
+ê\“c­š¼võ¥v±ÜÕè…Îšj>å™/ˆhýN%pÚE€:õhôÌÅWŽP¯<÷Óéð“ò0¸òŒ…È7Ë†@wLßáAÖ¬¨ø~‰r*Dä8-©ð1¡~]Ö‚iò°‘úÏ¶>}Q=Ë'Þe“µ6©x<0»,`Eû×œst÷<Öb{Eê".Mê&»¬ãTT0ÏÎ5Õ©‰Rº,içòNfácâ°†¸ ±µÚéì©´ÙÚ:ás´i
+t¾-ŸÁts½9×n-p÷5Þhuøã\Ÿü‰}ê.3ÅûnÌÊDiÙÀÙJ´¯ëí“rgwÃÕ…^ü-r¢¹ÁwÂ~õ7¹Éç;Ã’&k·ÇG}¯s?Uþ|ðˆ¸šÒe’¹lb`r‰›ÄÉÈuŒí­Ó½ÆC’Ï¾Þ˜Y*ë¹=å`)õÖzy]#‚š^µZ§]WáqƒÖKîï§×Ôn¡õ3àxdÀôAfÖd—³ë–¹°ä“­õ“Mœq¥‹Á”ßÒ¿ij¹‹xÞ @Î+óÎ{Ÿ:µTà>U¦B5j‰£|^¦jLMkÄðn‡ÝOmhC2"â®|‘a9~T]°jqr±v÷NÖÞ`´æ˜¾h?Ø‹ê@®`óyL–s!e#°è±hM$¡9ª‘k¯óÜ2tñ¹²rûA™ -\’ù	Ù¦~‡‘nÙ,iýç±ãÓÓÆõUìñ#ÿÍý$Sx`ª}À«Ÿè;“ôAÌ„’_^®ÃX,¡¾ˆÇ°ì%R&vJé¦U$4ýET	½k¯d¹¸}¢b1`/«°—â|(c>ƒZÈé_Ÿ~úÔIFé%QË–R“C™/ª¨qÂnÍkiø8™Qè|°7U‚ÿ€ó›é4BEP­€ô.PAÔ /{À_y·EêDøB™
+ÉOøP±uåF¡ÅÝ‘t¦ÙºƒiÀM>ìÄ\Ç­(—{¾BÈ³›dŠu7Ÿf…LªLú.ã|“ý@ilzÔóc¤ rë~Ðû®‹¥+ú…¦Mc8ç¨þ¹’Çô$û¦™¬¶t ÅTB;Ó©Ç²KàxóÔÙÛï=Ú X¡-K›>iÈV´iU ·‰ú:áS›C)ôYÂ$æÜÃòQ½TJŽoíV=§~":éïÇºƒ”B¶ü È7^E8¼"ºš÷ÃÆÕÎýšé?Ô‹fµž).¡$aµ©;Ý3$‰ðõ…nL“×ò**ÛÖb{!ù°`evêÛ–Ý.>	l¨‰l_šd#\Í¼fœ»a>‡õ£öÚÓ×"Þ4Ýöž,äêp,:1ä~ÞÙÌ·6¼×JÅ(ÿÏVþG|‹Á²þ[ôúQ<©D8#R¦D’~ŒôéÜ›nêä‹E¹*‡9ÕKÊ¡ZÒ“™£ãÌê¹nª ßçšÿ\½‚mˆ—RÑúº¤À¿±ˆ´ìi²FkAg»‡•T-oüðæ…¤š$žœú˜6æwßÿr‘­÷Ëj]Ž‡Ø`aÉ÷êØÚ÷‚Ú!æ¬ôžÙò*–k98¾Q÷aÃÝôGŽeó“¸üöÃ’¾¡¨³›ï9Êý2²Êíìÿº[Ì¤?œ|¥ì8hTLØöcCÉÎîã›Cá¸kûpü +´òŽ4‘i¤]6†±*¦ïõÕâÒœÒ§7DÖ`+ÝÝÓ6i¬#°‹Æ¹P‹ï~vR¬–mŠiÿ-BÆëv/1½é¬&ºÜÓùÎvbþ˜(-¤!ô …¬4óS›oiÆ¤-)bMË.øíµiî‹ùRÚ>ïüç9º§Â–îÞö›Î ^çúôVò»ž ttG¤°Dv¾9Ñf¢S¡±X>ã3=zD‚ÚÚÝ±ºÏ‘U>qéËò(IU2æŠ;!G´¼JÿøwXEÑgCº<®ÿV²@ÛF} “Ð~3ýM[þ¤wî¶¯ôÐØ!ëß¾­(	÷ùù[ÙÛJ„ñÃö,ª_?CZn¬ë,<S8Ìt0/êÄ69b•„<†€íƒ"Íä!ÍÞÈ?}x(¸‹v0Dåj­ÁßcO2ø@Ur^‡ Fž¨ðƒ¼¶êÛUä‘c]R¹’âûRÂOêÅßF/c\`kå˜Ìl“Ñ!¾ ¢Uð-ŽJŽ­Ýþ(¬Q±UpŒ^¢&HxÛŽ^	:WT
+½¼¡¾ë/x=ªç·ä©‡‰RÞ1¶½mÑcBˆb	;ÔÎÌÖ53R>h_Ñw¢ˆ5´çì“¸i9©¾÷Sáe‘ë‚€¼òÛKùˆÇgjU„bÕ/ÐCÆnj?^Ð†™D‰2ú'Ôð„Hv˜ËÈOTÅ¡þ‹šùéMA¡—í½ËÂEzÛ8þB<‚ÙmP¤¼róðNs;öÎ‚]r>å^¹íÃß	À‰Á9Ï‡*, ÅHãµY'œÆít	F~ké¨¡ý)T`“Í@ð1ü26!#Yho)›hál«CU…rÐXÍ™ŒÃxø'¶sJI¿Ÿ<¸Ž¥QKÑn’4áÅ½ïÛýÆVí£uoÃ“¸¼’qÂÒÛìmÑª{Š8›Û«°0‡®Œ¾PŒ>Rw ¬äzèïë¶7Ÿ)ŒC[¸Ü+³fÿXñãZØµ&š§4cßá„£n¼—6Œ€»9\´üx§­ÚK~À!5pþOB>êaßmÝ{ŸiÔÐe°ï’ïÍEY80ÅémÍÃ*GV—ÄS!Þ±J'	©lŒ6ÆädÒTÓvÈ\‹¯/L|1ÙèøÚ—SÉ””mcmÊÁ‰ìÚA6•¹BŠ›=$qCóÜ&‚¯í•kå¿Néð¸6ˆï¥Ùð³eVŸ`Ôuêaµàï¿¿ïÒñï[×ENÅ‰¶¸§6g" õuû/5*ÁÁ·‘{ô­?¿*V	[áÓv8ã¹èºaŽ"ã3?ÛÃ0‘dÝú¶úU]/{‚—2ŽN|LD+Àô‰o¨ºôMfEQÑU|›XZí“œ¢ÅkÞ¶°´Uœ@¥qÊ{sÍkDÃœs 33ð¶¿ÅÇÓ™¶DP½µÂhà."ôdv¼ã~
+AP‹9gÅø§É\ÌúlŒ?¾ð¹<Ýv;/ƒ.3°Ñu¹ÄVÛS°›îµL|Ô¦ÏéÂd{s¤30…²ËwÎ”Žaâu¸°;èãåÝýûM{’ƒƒÚW8BO÷÷å BÊÙOYTnåH‹Ù»>J‹8P<´¡ÁW¸…C!ÍŠá§†]a=²+n9ÌÊ7òr±G„¶(ã 4¬õfG¦%oß¢VóR~¨³ÕPuª”ÐU¥ÏATÊâhŠ[œ>ê:…´æÎÓä!w!+ ™Î“Y™bíƒ¾EÍdC£ö¦B#gPðkd™— ²¦T'R´oé¥†!F¹ /d’¨73ê$Õ¿o½e—x=^Ç³®QXqwg¬íˆÉã{1Mäƒ´Ã!þ·¼([º™*ô('ýÿíAì.à–j;Œ°˜ÉCJŸüK´<›åR¡¨uˆkíŠÐÌr™üˆÃó·<#Âý`ÙªTs(F<ÕßÒÚ¿bû4œ¾ßÅ0ŽòÅh¿¿ågùÝlÊ†Ä%º-“v¨À‰üÉ¨nK+ièa`îÑÏJ}îóvàüKàïÀHM`iÿÙÊ"ÆÚy°>ö×ïó†§¤²lúZHÆA™­°-Š”ý™ëŒ«¶rÌßN*¡Ãœ©J€OðLæÁKµ¼5sw˜ü.•çI‹¾iá÷O\¨¢WöÃÖ’I2¨Ç·ËcÙü´™\9|Q5‰/Uz¡&nyZ±¿b¯4rá5G²!¢Í®~èÑ«èNFl›.`¯ÿ¢§½³—šV	
+ÞÜëÅñíçëˆP?oDôcü(­Æ[Åºáfó?#è›ÿBÈ¢ôÄ¡7©—
+÷WN"c'ƒR´#
+ïZºJd»øB+—b¶ûQýùt=ÜÝbZ¤
+oÄJT©¾<(ª…ÒÕI§p“Íˆš³[Ý>Q–j)–™_®`–ñS$ÈHÉ§qŸm[PúDŽ‰á¸ŒÏd¥¢m?D¹	“Ìte’Í–…vâì¯\÷ßc	½ÉÞ¾Eaà™å÷ÎNFÒ*w(Qþ‰ÂéÅæäô‰ÞÀbÎ7“Ï+Õ >¾éG§} -¶©Ë^,Ï©›|áBÔ¶_½Š;qSg›,a_t .Õüa[p']l‡6÷›”Ã:-=|ˆJx2ù”ù¬ƒ)~Ÿ ÚXÚyÓv«I {Èpg®eØÇãÅ¡3=ÄZzîMóGÑ«[Ü˜-Ò5Q£¯²™’.Û‹F£“²XÚé9[ÂÕäu^†¹+\ûÚ³w­‚àŸÇ£Åf¤HÎ6Ö„ŸÃòÏ`U‚A·Áò¼RÆä9Ìã’’X›ä‹mÌ[o!x~,äR‹•{O‡¡]˜OÔ8Ë¸¼ÑÎ3&>Éå²ƒµ(nŠtøNçÙ“dµ¡
+¦‡Ï}§Ž¿yJcê*ÝÕÆŸÉðmáàüXït#Yl¬à}?)tD"*´Uv*ëxåF)æÎêvÔwO”¿µîd?g†»ð²j>Ð‡@Õ7~ÝM§|™‹5~ûZË±?IÝoF!Ð<äÕ«n‡†¥²Ø$LÊÎ|²žÃÞ5ÕäÀs^/ß˜‰´Á	uúx¶2Ùv o¶ìt	BÍ=$ ¨êo‡À®½šQaöV,çb¡`Ó˜0ÓŸß”zãÕãèn„á\Bô•ØXInÐ:«õc	E| w@š-gH4IBñP7²(¶*uá¤Y‘lîîÊ\k”½L`™7{ZÞB‹É£q.šk·m,DÓìçË²¶	ÍÒJÜý¡9«›œ¸Å<°ç~FøEãæÒ z3Ï~°5ÏÙª7€rgáU¢Ý} §Vòs>Ø`¾ú/8¤@Xú€}
+ÜË™Pûœt‹Æ*nâP~…Dc{¦2à{Sìjû|
+Ñaž@ÈÖÄiÂ’Ó^i²¡}0äòYäzUjOñA¢ö3=×o<¹ªäû²#o[¡‰®Aà5p’ñ}ùŠa
+éÝ7ÅÙM~h#àekpNCú)\¾Ÿ) ²¥#a«±îGÚ–•}——ó‹?œØìðî|!‚“ ú•_“`óL€-Mkè3J®õ©º@Y€ÚáeyalT3àTìs‘Œn7MñÊº¦Ùee+ÖïW=Åv¯TN¹4AŽ5Hø˜œen1ü›Ô§fÉI…ëž´° N'®±<å¼Ï4W»(f>E·rfw:¿oÚžk©)Ÿt”ì«¢ø Ý8ócn(­ëÁú¥uòÊ3vîi¾Ðuž8‘;Àa)/zç_†²}"â˜‰„£@óÛÒ~¿¡7‚rãÓ˜8ÙñCÜ®“f¿3}j¯u äQCÖ?á+xÇqŸ¹e¤ªèËæ—aISCzoÜúH±Êõ35_§Ý`ÊXœŠFŸN€iŽ¯†@O"¶Ö\—à{µÌ‰Q`M!!ÖÍ÷1«\µ4$æ‹«náÅ.^=$œø×†•p•:ñ6VÙ@ãþzl“ý$¾kyýÂŸ³Õ;R²™~6ž³‘$éÊŽ{åÆ…íøS××tšŽaÁü=
+Ó#i·ãip´7ÇYšÕø;;êï•Aåóu•Ú@î™`þÚ«´ÏüðQˆ?ˆElÄ/Ê¸jÜuA‡¥‡”C¶Ììâ¡*„Ù¾u~ù§EÝ²h+ä¥VÅ°ú²N••Ák13}v¹âëøÍ†º’þw€ý'ÝäŒŒø-`q?™ìïŠ|ø¹å”d ‡à¿,®âévYŸx©sýÅê~ÓùæÖïát¹Û¹oÛ“Óh·~“ Ë¿O¸ÑEg)q¥MZû¶ao€)Q÷ 3-¤€Ó‹Lh2¥W:ÝÓð)oú{æ1lO[¶©²›b~|b<í»2ƒà,¸ÄCã‡ýBrž[µØ‡)¿§/4ß9Ã|y·Ó°íç	Dn¬7û=’îÐëEr2GØï9Œ0´sa¯œÁêÛùêÕW‰41C¦>‹%»·óøó®$áfV
+(¼zQe¦tSÙ´6—FñØ×˜¾aí˜fÈØÀüVÌw¹“¨Wò?EûIX·m›¹çÖ† ðÙ*ã­“ÔˆjÁRûÄ„\JeäÅèïNßa+JW‘¡*—+\ºm%Q›®·ze¼¿=˜e2"¼­àù{f"ª1ÃèÆ³¤C† …Š–4ÊEU+ÑWü1êg²YŒ»ï¿{r'ßöã„:Qƒ^j¤tÓÖ6ü¢7ÉyAÉøbMeˆ2.ÁY"!EìJªÇÄÞ¿rÓÁôµúÏ§5ZAÞ:"OôF`â‹SßÍR“ÛRþqÃ³ð–º™zïä¬@åf.X–WŠQÉŒ~‘Ri!¤l¡³QÑÂo¨e¾RßÝßæÇkyÄ¿i°>ôªÆFÆs(Õ–”„#P‚ÙŸéâ†’©$hÝoÕÂî³…¹ÝžÃe(é	ÈRßðgä¡¡jœã øTIR•n0‘é–¹H/¥áÉ•ÚþJmgÍb…]ûj‚ÓüsSµv³IÇO(¶ß,ÕÛkÄJÌnHR!|‚¢­n„8 ÀŒ¦œŽ:¦<Óp†êÁ¾ùEhXÑ?QÛ£¬Ðc¥5„åJ3!¬¼Ü{ Í=§þ·9íØ­ƒe‚ú(œ´^–sìI?Òl].rò6],ÏSÜ*$-ê•NpR±°9!w#]’ Éÿ¿nûtÁ¢êØË`ÉÁðô¤°r`O5s*o_š
+; Ôc¥Fˆ¨Ü‡­¢3Ò½ÞvûÜ? 9‡.ºÐ¹”9U½×%/9Er6—Þú5$,š1ÚWõOŒ\.Ú×ˆSgž­òßÆ|AB€«ávœ«ÐgÆÓâseÄ8/Ò[XtUÔ#¹¥NÉZªôÄè´×c’ªâ!.èò÷ùHF¶9Þ˜Q>“ðË6¢|›¨g»äêï±õ£V›Df¦Q! Ü"Í)ÝdÊl—!dËs2«ÇK»ÕF‘Ç©Fþ¨Ü9ëfdi@+µZÃž	B
+ÑJÌ¤>Ï×(,B
+Ãoh²²ˆjZ)É:MÄuQ2þ,t°‰1Fˆ«{,jceWÖI²;ýÃNšW&×é,Â¸ã…ˆ\á‰ìaž«Ø>jûˆ:ñmÓñiïåùlóþÔ¬ýèÚÓåñÐ"ûµÍÛU#ù2ƒŽ•Ø³fjÕ—Å¬&cç=~³¨Ÿ;‚pØŠÚ£7Á~€-™‰ÿ„Qs}¸©±ò	OJ,g±8Lí£b}³C¥bL,ì!­
+¨~Do‹îréd„üž_Cþ§¾„BÉ¥‹‹=ïàÞ¬1|È›ÚáÆààr‡oTkÞ¥¿&[§Þì÷%z¶Ú 0H¿ux³¿W<wÃ‡lÛu„L*õ$ÉªÛª|§üH­Êß{“‹_þ ;Ò,Vw¸|ûå&[à¯¼¨~›etþ)ÕÆá,Í0‚Œ…¯p>%ÜrEzh•ÆóÐU@“^ŸüÂˆä+µA‚è~ÛöÖP§Øà*â×™j’µÖ°qSpÎO{#²+[A(ÎïºÞÿEdeƒ„ý…@PÙcýG‘ä
+¼QqÀñ9Û³‹ê®ƒv!#
+ˆh½³rªÎ&¹šè²”œovÌªGùåz}5Ü¡ûà!&Q±5áíºÃSù„¾ô<7)zedŽçÚDY?üº§Óê|Q¹¯0e^.³ãªûsÈr|eÔ:UØ«¹-!ÂÄ‡°õ‡žü‡¿©æÉˆñF§R¥û©êß‹0SqgÕ‹	Á-z×¥-ä¬ßÏüÙ6Ý”&»TÞhaÕgÙ°¹œY2{¾ |
+—7àdn?¤ÜR#û•ë?x~ö¡CÔ€•{©¢±ÁŒ†øI0žU›Gù©)FNËŠ¸q(V®û¾±ÛxWZqÝ’±pƒþ N»åDWÔA³V°~-L†	|E¸‚ÄÏ<» g®:Ôsfÿº¶n'X»÷›UX`—"–#v¶ý&:¸ŸƒõâÇŽd­èÄ©¶o\# 0Ñ}³±Šø$z‰‚3[²”¾p©ûõÆ@¯ T\¾†gÿ9ôOÕk²÷~ÒûäûFZÆÑé nBÒÖnðPõ€Vðñ£5Ãµ	}ž‚©‡Ð9ìþ2-eV@%ˆÏ"óÙÀ¨nE¼Ž–ë>>ÅÇéái"9þÍ¿¢ï>g×îU¿atEÂ†Çš1ü‘‚º­%ÏðkðÍ«M]ùNp‘Ä´X¿^¾{QF•Ê³~—8\B¾!8/äéq­÷Œ	×­ZË˜U5‹Y[ÜN(‘?örçý÷MG‡üZôÍeææüÞå’”G~,ç×9.éÞ+ÀhðõY~£Ùƒ?TG€ûØÌk©ù	q-ø’B-hÚÚ/é3j›ˆK_o|0ÙlçšÔ…tÍçYh‹)gh4,/>ƒCìûám|ù‹Áa8ÁŽæi›ýŽ	ˆ¦Ã…ïb]ü¿í¥|°Ã!øöœ2¸Ãg®^0C~6cø /øç"¨ˆ‘Wê) iNjÞ}ÏÈ{–·„„ŠÉ#ÓÞ'6Z€¯Y³ðË….2<‹<ÿY³ðKsØço#»MIÃçƒB’xa‹à‹<¶?ŒÐÍIJObû¯¼Ÿpc cØdÏÒ}	<Â¯HFÏV¸¸9dÐ“þîˆ¾ó¾–4ÁBú‚ŒYQ,ß$®µW¸Þ´¯¹}“öÐ˜ÂNñßïvˆ¶)L»U:®ß«,ì.úþÙ¹RR?Ž³‰a|’e*ÒÈí„Áºi÷55Q(êÌÔ‹Už2×)òo±?s)±oÁˆ"¤õ¹ÂçÌó:,L.‹qUëºÓœši¼Ô}D°ãëÏG³«’ú;¾ ƒì3«!W#ã'1,€l¦~×Ìž¨bÀØ™ü•aÑ?¬0+.”zéä‰¿´=íi8è½‘ën×„jlšÒÜ3¹dl—¨¯»÷TãJ íá‡±]¬¹Ä!¤x½~…Ï†Ìì„B…îÏåà7\ÿ ¾7ñe}¾qnŠµ„µºkÌU¤jÜ?Ýƒm’À’µˆ÷=[—;Ë}j7›wÂ(ånÒði²Xd>fW{‚æ¦Õš0N ®Ê¸c2‘¡â«=´áÕßÊË'ÄÍIf†çP[öp,NI^.~Ø7¸iÅ;~B^3ç]àø@x‹‘’{=Tß‡ŠÇNd@‰—¦oí˜xq<{ž‡ã åxJ/É«ÄFsö(aFëÒE&!Fþdó&IGà=p†Ô®”—èãÄÓÝÄ®Pþ-“qHÛgE?ÌTVó	ä{¶¥žœG±êJ'Ê
+é²-M?Ï	ß^ˆ ûåF”áæ/‹‰;i/|…4©åI“¹ÂÖ“”&Ôïò}Æ€Ž+.L÷á[m3ýÂÐ•é¿l¥”Yë1ÔT~>þ·6açBœ7Xø³—ÌbÛm¤ŠiËØŠãöAðª©„5àïÅÑJ·‹Ñ‡|:m–ê„T/”NÇ&«ÃÏøOÖœÁ‘M—˜=¨m|¯éó¹í‰\zTKöúÛ~,ò·¿¼U÷3	}„í7<XlH<™žÉYJ‚©Ô)El±5$¬\w·Á¶ˆlfÒÛžhh®úÃ–i5
+.°ƒsÓ´å\£ÏïâI[ÂŒ llãŠbL›ª¶‘øæ‚Ð>ÆEàz¡…Ítêá3ÿD°‘ƒ14x<§µ8A°Äé
+c}Tîê¸—S”R¨™øˆ¤æñº¦Ù5¨E¡­£¨xãµÕsmK6ÃÜ·Ô/¨æÁ×$¨6RJ=ÓáJ—K©>(ÉÏ|VË'ª¹'½â¢žúlöllE5HÂÐÄYS²,UC()8G_;;„åÞ)#< c©†[8Ì¯=ðs—û-Ù{„h5£
+`»ô2Õ–`ÛòdTñÓØ+'ÚÙ>"ÇÐö%Ä±Ò5u.RVØ*¹×eø[;aïF<º©Wgö‘¯šE'ÿ{ˆÚ"¸W~hµÜPÏ›
+rržTc_}
++øïR}l¿]‘UÐZ¤ÓiÁÝ cÃpP, ëZ´pÀ´V–Ï¶|ô˜FGÌ±¯£œ§ÈbyûÌØàÐ4âÓºJ?~ëÒŠmñíY!4‚®Ý³–GŠÚßSäÙm¥Ì_Á=›¡ÚÂO½¬/­²™ç·l<ÍÏYÁ;OæKñjJ‡˜‰Õf÷®uz¤¯	Ÿvb“ oÌÿ²§/nû½ÔÙ’–®ƒ/¨ðßÑ&á0?ˆY+–ú" ÈãcW/õ˜¨)‹’…ÆŽûÝ'h=ZÓWó§{êcù¹&áÏEBI¿Adó
+íLûõ¨-âgƒ7nˆÊõ«éeÿ=>\ß–K²§½ßX¼3S±#„-YÁùãØdÈ›¥d7Gé˜ÅwkRº1É,Åj)Ùõèü\¡ÖløZ ¶4µ7Ê¸n·…ëœK#¥c« 962yëq>³¶ÂÚíòFòÄJ¬æ÷÷º@f‚m.Æ¿¤A"13I—˜³^I©ÿ–`OC¼äs-Žd½ê£ )}ô½vWîZE¿Ì+þ¢ËVßAØ¬³a±aÉAÌAÂÌZƒPSd äyYeÕøoLEBâñI‡½»¤8¾:ôqóþüôØ‘/8yíß+Wö¦îu"Öß…"K’§3äp‚ Å¯3Û>Vã‹RI‰8Ý¸"ÝÎ–NÇ øæŠ•Xˆôì «CÛS“GÞ£ÀÌŽ`Xa1¶,£ þS‰ð†ÀÞ!ßÛ‘Pv@ý[›WFš€;âVýË*{,«ˆŽœ$IAAJÜ:âÙËŸa­P•‡%ÈÙ~Õi¯µ¾Ø_‡ÚŠ7Q=~G_µ32-ƒ‘L9’ã¹œcw`ó9õxû¤ßÏŽÌÓ«c›é{£'æ¥ù@(
+-©ŽQpUØÛ š ü˜Ó¼zâ¼f3¦>Jêóp8RB~xP´ÝÌ8CÏ$'—ì$<ø$¿ó±#MX•ù›&§AYŽ—dTÒ"­ÛâÝƒ¾T”6c}xƒg| fƒ©CgÁo^Øüo	‰ÓüÄÇ¼xfðD«&òáŽÀÉ[B'£w¿ LHÐWø˜®Pköµx‚À£Ç‹5Ûß ½c
+¸n¨ÉÝâ§ÚªaÄšv†m“@ì9ç'áð©—#E=¶¼ìD]ººa…5NÝÈê“Bâª ™Îf7«˜róŒwU?!¨kÿvõ¾MVº§œ,¡&QU¦xÖ÷júŠ¥òç¾ÐD¤Œ1%Ì~¤.jkkÈö ÍJÊU±m,~IªMíúB×)AÄÀKûÖeecˆvLá´*ÓÂG%§Ÿ~&EU„ ŽÿiòÐ¸Ð]¥ýûWÃÀÉ¯]¥øSìQ ø¼{¶ÿŠí>o°Õ³´‚Ž¥äå4êoHå±"öVu‘¨Hÿu|»/£\‹›íxæL+<HòÄ³Ã,3TöNõ’h«-ÓPÖP+Ò÷ÜGA~°†à3ëÐ'O–¡ci'æô¹ý`O^[íËŒ+ãbŠïª™È6C¼û,îHÉ·…~Þ‰ÍÝ3½ÁŒ”ˆ›‡âUëŠˆíVgZ˜b gÅ^u;'+[E§›ÿQh_~J­‰"£1~4†÷åÎxNÚpÂ¼¾&\5î…Z#.èa :”þ²@Xj×yÓf_³-O¸Y£Û[¿	t“¥Qj“'’ ED«z3>—øZ_	~L‚HiéÚôo–¢ÊxÈ1ãÛ†ë
+í"éDwÉu£®M$¬'lšøå¦Ÿ6œçqS”"¤46{ÈòGn¶&Có>3Ís›áå¾P[þsJøÆG<Ïó»ûÈmÀëñúó›‡©Z‰4¼¤ °~6wR•´f÷pÃðÛ_©ÈÕÃžc²ù…Úùm®kp¸áÔkDòˆ“Ûàù(ÊØÞ<uuðŽamfºÉøZÚMÅR¸ü30¤‰Å_ß©ß‹lE~vþ—ä
+‡Vâ3‚#u°ìMÎÕW­œ¶'æ'‰Âtv¸Ø»tl8¤ñRù˜ôšï9ØvÅœn^!†ò1–Ë8«tIÇ3[eOâj;5ù“h;øõÈdîžm˜Jù¨ô?}˜ýA|g¾Ü/b„\TÆKr>ždFÆ\§ÏgÅG¤Ä«Â±ËÚNÂ19/ø,í'#ŸZ²ù©Áu›¡©t¢‹}è‡=#o2M±¾q{K«6n]¾7{í¥ö/öeäoúp#Kç ÁÃ×”al£…¢µpF™¡ÆÊë§ñµÙZ¿{øâR¬†Gs¨ž0ro{ÿP8¦¬–Ô×qå1š-Eõ!î´ùèI2¢ÝEÕJ÷àó.†ŠGc§¥h»n€¡¬xxq{àÎû°aÅr~¸·$‚D<"ÂîO§“Ð5¡-`;r¯¶1¹¼ùd³&æ;(Ý=ŠÝlj
+ªÁAÑ'¡ó: SD¿Ïý²ÖÓ…$Ã‡;0ÿåWG•)Ú¤7¹U)‚ÈW¨£Ëì¬Ãq~2óÅÐ{¿¾Ð /RO		2¸ÜõE}“jp5íI¡`1?I*:–.°É›ÎÌ'2ÃÝM0%TxtÊ»MÙ_‹5RÙžF1èÒ¢‚h…¡Q¢T4¶ä	 ¥Ú’„üjdÈ5¤´òÀzùnE%£â¬;ôýh‡}®©¯Åøzâ"J•R`;|<-q€Æ1ôâJ	¢ßÏ·¿KNÖ#PNé>Z×Žò’ý”)Ü¯û}Þêy’¥ËgÊB1h ²?æ r'¹wG\oô\÷MÛ,g<‚52v µ<°²`*¸Bs9-o ÒÚæŸÏ¤Â—ÿ!4¢£ë¨â'¤¸ÒÊMOPü^’ÊÉ3@eÌO¶4šƒLó!ˆŒÐ…2}pÑžW„ªWK[“¤L!++ä¸áî«[ó¥)x,v|nÿ½Q*6BÜhTl­~OVûõå|ÀüG½•aLVè?|BF>ëÃ1“çË]?Ó”Æ+ N³‰Í}ÁVy~Tý„ó¤]¬ý¹1%ŽœF€›OÙºŽöº2z½B`+Sa¡8ü qí ?O\®©U­öƒÝä‹°“(p´My±hij›sqL	¸ƒz
+ÊA‡hýÓ4øB›ÕTçÖMJ(Äu`„4Óü‘K Þû\ÙÛ){îã¬)ÒÁ!9G\Héf“tEUü„vÖ1ÖrÍ™ºÁæSw“Ý~ÒºcÓ8[(°˜³‡0]>¹:»ˆ:üì°oÛ>Ì@Óa„3B=4%9M1å×æÓrEIGÄ·{mF…_™wŽSIBeøØ\¯»±çÑZÀ>BBoÆÜÔë¬¦$‰¯nÀÖˆX ö_'¿'‹ø¥-@ÍªsÝwÌé¼¹kê:Þéžíg4´‚âáÎ&ÈGÅí´Á©ò±Æ³bxæY
+€àH7º>Cd9M®„~K-Ž`¦Ý®•kÏøB³Ð#±gˆ2–Ð`ÿõKT°ÛŸaLfßÄL94ˆ§éò«îUhêjþ’,Ý
+6—ÝÝ2uqU•šõXŸ†ç1_<ƒB9óK¢8¥±ÖbÛÅ­h1_\ä0>Ã'l£²kÜrHÜ•·ß¿§åÅ?3°Bšm&L¨ó³M®Av$¨J),}¬Bí„ãWîˆ™wvbáå•$üz\Åšê½õs“JS›_FÃâ…åÂòP;NKBð›oÏ9aw2>Ó6
+meA¿ƒ£ý±Ó?0Ü{õ¥ñ(èøƒ[òð{TûØLŒpx÷Çô°ÃÖÆæY55ð9jØP¤y4åóÈÍˆØTV+)Œg+D2Úc8(ö¾èh”ÞƒÛ"½êU®½Ež`$<dS¾ß%10ým·*¸67d±E€¦àm˜ â¢x¤pŒÚ(Í{Å‘ý;w’úØzÃ”kYê›ü¨íÕwÎ×	ŸZ5Ar¸„—TIO}L»ÐX\… y/)¡ß(ªÉçÜzVlß7£mMÜ©Üs—*8]/Ï%7)i,Í ô.^‰<˜ØÂ¢AäYu bRç#ÇYÇðGÍË¹Ëº	P0\üwf.ìb ã³QÊƒL#G{ w«+œ}ØR.±Ÿ¦Ò“^'Ž˜
+¦:]]„ö©ŸüÏ]ÇJYd+À«Ÿ¶_1f “˜EÈµ—Sðž(±÷M}Ëëð÷©6íÞù"^;sùÒv{ÍŠtÿ‚Xµž‡q®†|ôUlÞ\ÆWHºZ'oóO¦.a&²=v"ˆð4USXÀÐ+jœÉñãj)¤C%†4±´?#4ðºº¸{sÔhqË¬ž€íg›Bÿ»Ž}®UÙü§ñ÷{Y4“?ñóÇÐum†Ýà³±YEñH"ý´D8D—22iÊ¨öÛtÏû‰©Rñ•gôc\ß‹¸é‰e1f{™)"ÙŒâëV¾Û–ùÞHb“áRœm2ä€Vz/··fôµµ™ÙîÆAÓÏVÈÆb›"sà¨ÜqÞkƒ=°@Ì‡~o»{µY¥˜1I©ÕaqµbÕß/Äß)‡+H‚#ß²•¦jÓo1è'~ÐÚ·ˆ­­”GEæí˜â»±"gÅRýTÞHa©ûUÃÄÂþX¥DU? ™>:|_&”MWRcvãü<B¿š<Ÿçx›2G>ß2Fª9Â§#ñL©37;|¾¹@–#äŒ:ëo¾ÔŒÉEQMo¥øNƒêLÔºQnÝœs„m)o	~¡sØx`Ù3î{ó‡k£Mf™¯ã_'ž0W
+Ñªä‘-ŸóN‰s¡æ'ñk¤;ÎÝ¼|Ày·Ëüoš‰ž—G¡uEGå% \ß©£Sµ?ôNèWžÙ•¦ÒÖõÀÇi0bQdïÔ¿>Õ™sâ¿†»/·±mÿ£ído~"º¿ùjsø`—ŽÞŽû·ðÝåñX6W}Â×x/¡ƒˆ%à¸JÃ¨[–Øõ’obÔÓxÅ×ðL0?Ø/<¤t°íox†\£VK†ù{J³^Dç…±ùÛÎƒ|Ú¨«Ê¡Êüò|ò&€ïôÎ·‘d<ð+‡}ÌE*ýÙ=@®Ó0NN‘±^Ï0,Î±zªè:c¢„ó§ÉY6J¹\4—ðCŽË%Ï./¬ì íQ´“þaw¾³Ak¬`™Š©†dÚø0åMýK¬[õ»§DÖ{ÈÙ†®-»Yod…Lm9Æip;H‡þ“NjTæ”Oø~óKn1Õº£Ý?ð¹H+k§(Lúöª.:ò9mM<Þ‚)Â):KMèQýRª!ÉR‹#æwØ]3r¹N¼±^‘”?E›aôIR–x±Å“ä÷µè¦4Sþ›î¸	Ìsè)Ü½žãðÉ¿s(âW©âý]U‰ùeÎ©7Rçé6w"ÞÞqò6©–2ó¯…½úAà8ˆÕÒžëŒ¦\œ‰0¶1ý¦¸˜°ðßòážËœ øÉ~g÷î˜4Ëü&¦#›ª€V%·pÖD@š²ÖEÊˆqM^×þš$#}pÑ Q0”Š¬oöMðZokú‘¾õ‰aºž~‹ã
+ÁÚ«ÓG„%óGÿÊƒ½[æA3ÍÄL=ùQ5ÉÖŽ¥.ÈÄË3uP0=érò•_ÙÜad5¼MÝ™²,{Ñˆ1bSÉ0™€Û¢ÍÒµm»o¨Ë+Š³…ÁÇ¢A©îÍj€p`?+õ,ê8ŽV3ÌÓ‡ •.–'àw¥Aê-0
+ØÌlìñ˜¦ùÎ¤­KåÁ·|51ÉÖ·T5Qi¯$èQ|Tû©ÎÈé¤`MtQW×œ•ÏÊÅH›DDK½I{eE²ëŸafÅª,§ZÎ¦rT/æî×Åb)Ýƒ¬{>2n`3ËÒï£¸RýóÉ¢‡üÏþ–}V€Ízúü&y	Á÷JQŸÌ˜9HvI´××ß		úBÃÏ6BÈ•¼êÆ7,åÛ¸×út`ë	¶ŠòMNSkvùÌ]c×óÌ6™gÉƒŒ	!!àÐ<¾hYÒP¡}.¿H£=vÁŠåML¼F¤ÚX{¯vzðV?>2ì×îü¦JÇ.W›ëETºªtx[Z¬Ãpr´¦¢½GÏþ…ØeL+“5#+
++Ql2ôKÉÝ‡x³~§ž7Ž=6ZšßQ,wõàÇ±KApÔVoB¬ÅuŸÞz<ð;1L—î3Êãf„«íýÍqJÞùãíTÝHhF‹»QÇ|þ½ï_üÛ´æëðÀ²áãŽoŠ–ÈÏ&¿cx«toÑ 3X²®§owšZÎò±†ðbNÎÜ_ìçäå>Æ“b$?®ð¸¬zïuzYR_8u²šS|êÇÀÃDâÌƒDÔ6|s¸~ÇŠŒßîÓøÏßQz¬X3¸%k¥`Øö
+Ùú02‹¯(Ñ=i©qËpýb%çõRsT)»UÅˆCpgÏxÂ+²bnzïÅ$í\i ¡MNwZGiáÎè„¥pvVßö¯ 5·* ÿ¾÷Å¬é…À |õ0S•T“öXtQÅÉÁMƒ8~_wÎÛMY…’i2€óžöéÀ(¯âaEÎÉpó()¬“?§¹µ—;¹œ´®¸!lÁ¯¹ýšaŽˆÝá%þ‰Oâ>	Jþ€£›Š<T9rm&;™Ö‡žÜw³q{3¥qRÞ›yEø*:± J;¦ë’ì°ÛÞH ”Ë´V}•þÒx‰„zñ¯bÓè¥7H­3$
+q«_þfêÑˆòºîhBÅ`fG+ Ðr9MV%´ðP‹Ím*ÅÞ:Æi¤•û„±ÞËœjD#Bò€#°$–³v+W«y!ûcÝI’¦ïqž6÷>½É@650†@Uèº/—¨Ú«V?%	Ú­|Ž¡˜BÜ÷v¸
+‘93d?`81¨Oo·Œy†mßÞv~"Œ²X¹!ü
+E^I™8lK{£'´,A:ü@È1„6Æ6‘à±‹™—üúF+ûŽ˜o#	±Ók*xàÆCƒ\|ÛîíˆòÅ·Œ_¿Ó´ºñü2Ìq–ûåÉlØÑjñqŽ=[Å±S«LC±IlÌ=øVü¥Úþà_’ílÅu öw…íÖI\Í©Î2zR/$Ÿ7ÿî’£Âh¼}c•J€´=vwOk2Ø1´“Ä¤0S4özê)XE«—ò”±ù4u4bŠpM•‘™ì*1aãž¦)(ÖŸ×âªíú ~™a
+û×DÞ4Ì"§CÄHà	4’
+¿¢V×?¸£Op“³Š’Öïd´µÚ‚
+ù«ILí¾¥rØ¥É„&Òe³ „HCÅlD9ŒÉ˜Ä_Xt:/¾%ôR7 ÆdÇõ^0úaŠ~É!>_M/rF"C^Ò&©ÚÕŽ£AÏä"HEè”q?’ãSpú+îeã‘ó¶éï]Ëž9­2xZ2ì"Ô.5'~Ú§ÿ¬³£ÝK‡{éž³ô2þžŠÚH>Í¼ÆFŽú·ö¨B¶AÁ%—ì‚•-‰*¯Qív°ËK‚‚s S@;{e^õñg+u’u“h™ñÑ“Å·?ýslâ„¿=$ÓÞ‚O©çä \ÃŽ¾'2@ÀU÷|ø‘®•<;¼ùwðK2ZG¹3™¿&ìá`‹üpùÁ¡æÝè; ¸Ñ¯Þ*:n´µª¿+_ÝU^5S£tÛóÍ«^ËfpR Í=;{ü°Æûíóùü>\ÇY¾kµG!‚Ð$÷'øÀ×yÉÒçv"w*âÃ¯kº¦Ðêz	Ä˜ÉèAe™_diã«pl+àVa_ºjíÇÉ¦"¥gºÛzáGŠV‡¼ôWt†$šdJUóEbÍÃÏ^Þh+ÍRo]„ÂÇÎHƒ‰m¥û¨Æ®Ú.Û8‚™ï8íŸŒå+€C¾n)U0~mgŠ·mOãüÈÅ–[+È°í–ïR­ÿ‰$d„VÜ¯°!•©Å­g´nºL¾?ûþáþƒÒisBº9mœÉÍ“¬mdySž’ƒ6Û"¤ŠýP&qŸÄ#žˆê¤!é¢¬ÀCÍM y°Ö«Vª¹¢ªËÇcd×¿ôø•¸w sgä?PÄ˜›/’žˆ/;­¤ÆùúI3ð$…$g/§ðÛCé|p°rE÷Q„ºç¾vÚeu°Ò‰PkiOŽð}V¯•ÅæáãÕJQeéf{ŽqõnÛÕ.ö­…ûè`>fBMò˜÷í@OæB %¢'û¼æÑ[Š©TeBÐìA^fÓ©#h'X«<!Œ=ÌŒ'Š½jòq`qÝ$Få»5íÒÕ\ô\e‡ýp{8E‚Fx}È&4}u•ª´õÝã¢4–`ÖÉe˜¢h]ü#úŒÇØ†aï¼ýeÀÆ2f¾BaË‡—¿%‰0Ú>ýÚôãx¡ÐiJY©a×Ù,¹5ˆKZ‰¢£úñ/Y±o…·Ú¦ê”Heæ¹Üõ9¢œŒo
+àøJS˜­ÎŸôë7i/dê‹j\ÜCÅ ÊÂXÓ¬(n\ŒBzkÈÍ‡åj£ú&¶ø4Æ(pÍeì­¦óÐ/iˆž$áDJNÌˆ™`–†ºÄÙÃFí³îëkym§šBxä¤"_#­ùãI×¯íómš—wOÂŸ»(`¬Ÿ‡~mY3³ç%rå)”òˆë–U+½-Tøæ†ú8Á:G—‚’Õžÿ4¯é[Ò  mØgB²g.|t>fÃÈ†í<ŽtÝ¹×Þ´ê°Cz×›ê†|‰£cˆÂâ9 „[è—MtêM”®ŒMË®ÜõzF-Fj	£ýíÁ×…ƒ.R3­´5J_<BZ fµ/etçŒÞbO#ªÁNŽ‡F¨Aâ^¨J_¶ÕvU?V[Ã…$?E‰­^†²1úð:ò|ÍW„Œ¹*1O}Ë+:US²>ÀÓ ¥®C`ü'¡¾£óŠ§ˆ\ŽÉKÛÂJlÌ78géêd2éyÈÐ5ƒÎÉÒ„GãôjçOÀ¹>À‹ìX±áJ@‡<xt£ÿêý#zÉ½G<³#aó‰ÏÞup 	Fm¢ÆÒ—Â9WCê¾§ÉÖ7$(>Yþüa:LÝÀè:ü¨Äb£(!rráyè2~TÇ–|¢ÁÊ˜ýÔ:-éÌêPZP±!­v3Í©ªAJ Û9}NßÓâwýQÂvÅD'¢†5¡
+5e×r@’âj‚ÿ&ãÔ<?éK•^DJtqôŽxJo[Ê‰_¾c4øW¨e’ƒ*fªÓÑ²Bb3…× G47çMËsm‹O»Øõbé% dÏ	úóY‚í®ÆÆeéÏêÝŠŠíÍdsTTäÙÄk0çhTþVú•\í7MÃ§w½¥[ËÿtvêC–ñÓ+\Õê*¢Úðê–À˜‚±zšdëW­ðÈ~Iª¬7æ­ÒZ~E„&}Ý-ÅÉ˜ ‡~ál"0f>	'l2S¨dýžþó*ÂöèˆWÿÆI$blŸd‹Àê=»a{Q@#dY;S†ÀÓ“€ÛÖöÌ–•“|¤º.%=žc]ò¹rÿLÎB!ZÜ§~›»ƒw#°ÂvèEKÊßö1Ç	;«¡Ÿš—á¶üÁ“ê·ˆåút“qòŠoXÕ¿hž©Cëz1,Gòt—ÜBËÔš}mïáñRu‚{]ùªö>›:¸»„˜1JùºùiÐL¿£II*l.§£Ú>äibŽ›ëéáå%Uàƒý~õA½³E†‹‡×PèÒ¥º_ŠC1¿ìyàËZ¦‰-®ý¯.Í"t÷ij°·ßØJ#s¸oB`4*Ù¡vï÷“)ù/"¦ã|–ô&üw—Ù5=RÚÚÔyåÙ6€Í-ÖÔ YÓFœÆþZ°gPŠÚ¥Å÷=Ný"ôQž QBK¾ø´ìãY×ç,Z.û†Ÿ:¦Ÿœù’²«å½6j¢å°ñÖnr£Ÿ&`±GÄGjÞ‰¿ÉW/¶‚þö‘î‚¥”~þg—‰?“[&ëíóÔ…@ŒÙŽërE';w!¡à-uþÓâÞºR¦(_À#¾â×Ä›”9æ­üA0ÇAûmºQþa‘#£–So~ýŠžÐ+VY¥©;@×Ý’Èøù¬º/q´fëž¯ÛUÒ‡¡­ZhCO$ƒýMöëÉŸù˜f{â5Kì/“â°äëT·¦%.¹ðÓ`ñ§×.êYcHÿmU´jyÏ1bÒ'»8
+ä¦Øö¦hh•»ÍdÀM‰²reÔˆ³Ë¸ûÝ£öhW+4’×é…OÆ5’¦"ëŸü:eô|ûÜ-ÜóÂyTÞ¨Ö—­¹¶eFê$»HG;“]à@Û(­<WÞþÅ÷J‚ôûÜ1± &Ùå7ŠÞØx^BaWôIÂf­)Gyñ1”®Xí˜uÓVGNC ­ÞhÄ|³ëaéAgB§ó¬{À®O’¡€Ñ-#È¯íú€g€Êj¬+hh}Wˆ¢ƒ=¾íuOçÉ}
+Ý2[k&žS²•µz9÷‹ÂXkoJÚ.l‹ˆ	DØ^lâ±Ê¢Gº u§÷Ë¨]²äqº·PVs\ñ'­+Ê;™èvê &€WPÆ#zlù{«ökf\†øvÚ`þ]q¿ÄPsío Ò6’âÉÈY-˜Ó3úžlüa+©:§þ	íBý°¹&m<w9¼VÎir
+¼ð©à<E¢a^
+a<)&ÿ=2ÛÆ•²Åòºæ*Z’ñ´vÌéˆÐ ÍÓªËXEÜày%¿zM¡ýÄN{ómž´.(ä¾È7[x­i~t¶¬¯%Ú°œñãB38ZàÄGˆ•¬N‰Ö}SÏsš",m*fäXLŸýâ2‰Âh¢Æ¦E
+ê(‚ÔX´>J¼fl7¿Bò³ká
+ÊSŒ|^Èš(ýd"l
+S¶DL„OE:i_u1ƒEý¦>|õXÞÏ‡ZŸï¦(¥$wäX,ä‰¤—8#êúÝœn*»JìÛD5ÁQ_çKPº,ÄˆýüŒgbYY=7„KÜJ¢ù·ó¦ù(Y€"•8›‚Klw³{žÎñÙµ*wôcýçÛ«ý_U± KàèJ-jçÌ­ÈðâÛúbÝ•÷ãÙÔŠ„)€òùÅÞM:d"7í¤%‰+£º©¢!¶Uf`–ãÇ OäìK¯Rb=3EXÑsJýÕës8åU‚²Ô²&°îÑE÷¼`àØF`ÜŠŸÁJ¼-§Ö?e@.¸îØ:2W ¨¢á	½ÿò¿_…%ð¬#u´¼r|¦Üz‰ÂîßrD¶ýóŸ¿Õ¶Ø zþ&ûmý§lõ3.Ì)åéòÊyÜDMÌÅú`—y¼Ü×Á(Ö[xD’pèg¤šóx7IRŠµDú‡â?tñ7dñ#¼‡Œ9+ž”4;Í.d’éïÙ5õE.\ ¤˜rƒp€Ó~—ýÐÇìd:kí¤qxö¦ÝiVÎ/BË]%eNŒ„W|E ×wHHNïùÇfˆüvQ
+%kBK0úJ+»nü8Ri2”_~W	´ãAâ'2miTkøH	²“ø‘¸C7œÍ®ãócÇ5û Ø‹ZdXð¿ïìrí"YÚµ«þž³.ö+'zf±o0i*÷ÙbÂŠÁcö	¨aŽi¨4îæ¿ñ’1éF
+ÊïkÙýÅ<rÎÇ_?:èu¬ïL8ÃxOÙA=N×P«”OnìæÔžÊà}kµrÕ<Ö:Þ$ˆ·ôÕõäH¿4K~÷´+ h«µM&´gwu]pQÙ\ÍS&ë“ÚHmÏ¾¢x:È7>«AûI}å]nxÊ{niýéÓF›z$IK]¼ðà¼~Ñ°xz×pôé¾­°„%Ë¡Ñ©ðÏƒ‚ôãõêÈãÔ/î¯œg7Ÿïß¤>Âu [!Äw7ÇŠ8?<ˆA:Ë¢íb/ËÔçTÅ¸däÚh»3§»r¬{PL ­µÚž|!¤ñN`¼†æ"ÝœW¬2ã½Ÿda5˜à`ŒÅ²NÍÿy¼.kÐäX#Kx(°û{~oÅà¥S ]|¡Ñ#Éá43‹O3d™àGU·Ó¦AÏÚºØxÊoÂñÜ¬¶T{M1êÃ ‚`ž²€vƒàOÀIÐ#¥ývã0îsüŽ}–t†"Ò‰N—#²c“àæ¶Øœü~{¾É"4Š{çÖ²U’%ßü2sJE «Ÿmü)3d ˆáÒš%I®¥N¸è3¦Ø53>ó>ßµÝ¯Š¸ÌÝl8¬K>Sˆæ»Ì94G×Ëÿ$ë©ô°Ìñ;™¤ø|ï‰]ŠÍüK›ÂbÚ²£^(«º*-&R†zãà‡î›ôdíØ„™K$ÕÖÔÓÛŽäL5‡ô"¤£vCÄîš—RÜnÖGôþÒ¢`Þu–h²ÍÚ‹ò.$ºOéËD/ÑI¥âQ
+ È&«g€¿¨iú~8J<£eƒ¿Èr%g'ÔŽ7Õ§Õ®ñÃáÀyÛ‰YB@¦&ª®ÉAEÆS^˜í8FÜ¯ )6IÙš´§ªK@\c"/•Mjw¯Ö¹cø+}óß]jšŸ]ê-+-Ùð}²¶“·ÜjPšj]p#
+ÇÑuµ°4å 7û4’sn•x ÙskS(îR³l%«øÔv†@b/gÄCº])ÌËŸŸQ4cU?GÐÂIr’ñP£y„ôRµŸßM)ÇOê:æ“ÏT]L†þ`~¢Ãég <R£]%êU½t)ýþågû¤/±Ð¿Ñ¹¥­>K Iý¸~£S—Àõ·!<Çž1JÙJ_—ým7£ûRÔ îÒL‹ùzåášPLâõ›V8°— wá>ïJlõ ´ó/‘¯¾=¥É­ïÞYáÞñj(
+ ÂÍ¥ÿ^³Õ@p­FY#w‹F¥V»D<*«8^ÇÉüòkí¿‚kEÉéÃè3ºÏù#MWÔriÅ‘ài½f¥>JÇ|ÅœôÅ:íÛ˜ôç5àý.*›ëu3©O³ÐõdÆ¸#«ÇßVÖï­±¢E¿…8?¹Ø}
+‡ñR“Èß<ÞØç	üŒ0ã^]âg'´¹d³“¾%qhsöœ	9Šâk|ò”ÚÏ¥0 wós^Îv˜ä-4£©´Ñ=DØÆ˜ºÂ_3)
+GZ^‡ŽÔ„º—mmIph’ˆÅÏÝ/ š–k¥>ñw4Ø7hG73nÁ9r£33šçÑ?ú+Þ>^6od}mx‰Ñí:o(yCwÒœe·±Q³ì\Jd¹{p)Æûæ4§(¿z-$RÚ¥CÝÊ˜Z5–Ó¹TËå g©Wb)³+±†¶ _êÇû9aEï«1ÕO,2ÄIéL¹˜“~b¢7»í³_d— {–iT
+ª8hóûbz<OI­½?àI À]ï “cü„8å…3
+®1éâVÔ·á=fG ¦™ò(›×èjt´áÞLé±#üöÓ[“"ÐðÁÛRNqBÀoâ5‹N‹$“ppf“Y;¢ýùå§ÿ­ÂYÜ“‰ô,cô»rnÞÏQ½2S|Nú*Å}›»'‚=Œ¨r„ž1-†Ý3eXš²²Ž^ÎŸU`,S…oyú)D[ùÒ—”˜7.’›TOqøç=¢4W¼ùŒ†=tn¥€w?W:¨ä›?›g Ly!”À~W~€ Ïè*Äñ@©Ïx¯(]À“KÄp*É¨î3aÎƒ†Ø¹: ¥í÷w`UÎÖ‘…D*åÔ²,šíÛUWQþv}ÃpÔïRam¿ ÄÎth1‰f³”M“ÊJík8fÒ>*gJú¦p)è»F4à7—ßÎÂøYc(Ò·ý%’È]sƒà+–áü{"*—°q€ŽüëŒ­@–ƒ“z»î•r"*HÃ
+Zóh ½eee›Ë†õ á£YdúÀ‰ú£˜2%,a‰ŠÄw—TþíOEÕ'S^ù¬«ZÙ<Ÿ~²bkÚE«™;P¾ƒÍš6‚ß)öÍÒ$Úª†wÊq®)—Gf»¹ƒ¯“sôÍ¢árà˜yeÍÐå®ù.mÃn¬[¿äCÎï9Œ³ªXQ²ö¿ïUÖ»Ìæð+xæÁÿ,ý{½ØÅ¹È£"€Ð€g¥ý…—S&·E±zµÝ€ÅÒ§)¿$Va-ªoö˜?´Vä‘A-f©ºI‰9–É¿¬7</Cî+nzðŒêlL–T»¢Z­&-¤ÐõÂ´nƒŒ`Æ¨š2¥÷R¾«âšà~ÓÚ;³xE—óm
+""2x´lX9ãK#w[‚Èë-uÊ¢Òôw¶VÜ©dñÉù-_‰ÐÄuNª¨l°Äy¶I~¿¢[ÁÙäòƒb1UŸõÝ)E$#+mÖÿSðü<?äã{ÛTë|“ãP¿½«âûÃ'~µ¥qÜ•]Áéu}b–z-åû!GlG6e;Úîë;¿Nš¢`ßl¾îŒa²	ä>ç%—¿ &:ûW¯+D›‹jÆ5Ø…Äœ‡¨$¦§1å°³àKëÑÝþuUŒ“Ï( åÊ%rXZ8ö++ÅÏÓDr˜;Ûî•îÚ·†oZÏ
+ý”­dŒ®Ñ9F$ýY^”üJØsºš­ùè(Ú*ÝòªU´çQÉœDåø:kkj…@èÐ&k¸ö1©R¹Ee|YJSú™ï/tGb6Î!C`®çxbZŒ=T6X²Ú«XZµq<J<…žÌÿ=}+nÄùáo!õÖPÛå±ÓuÁ&£Ï7·éâ+aùG³’–p–Ï£™X‰z¾ÈáÉ†päî½ñ‚…l}ëš°ëº–@+á }ÌHæBíêS6%ÆÎdëæêãM‹ƒuVƒ|Q»É¯»ËrÄ£›B?DßOVMÐ0³‹êáS$O±¡ÈHhÖ_=ÁE0×©k1(ýÈ¬ó ˆ”s‚²Ð¯°oÏíæ;Ýòø:Åä’Z—YÎ¹EÜ´#Úa‡ïQõ	kÑçÈ³zI¨@òê9Æ^p&úâr¶¸$c“yyb¥±V¹!:0qW£Å‰·Cbd¢ß€ŠâÕóý:ÄŠýE5öÕ²Í÷7´	ž{³åR6Ù"°6—¼zR' Þñ¿ gÁòó@›7¥á¡¿„M«ç{»j3/´Iž÷ç{k¨F·"+Ñh¿@<Màfk;m)¬+¨ô7%ôjRŸ:ÿZþ†ÃäáŠÒçy]Ë–ÄK]çÄ)æÓ­[j{P}ÏeÁÂåÔ˜m!¼Á¥¶ÂÐH¢kˆïodõÂµzAJ§cÒ=c*ÂòÏÆ ˜†x÷iQ·«Œ¯…×EâoÉ‚a¤X&«îžÌÌbwàO½¾8§!ÂÌžê¦Ñð¦+·m2ØíË±4t–ryˆ=ÑD¸ÐÊHì,ÏI)±üút©9a!Zej5Ê{Ó•¤îù5¦] ’®±àHt·X™i«?ÅEõÑPu¯·”6P¡‡ú­¼t4êë®"Õî(²s“ÿˆRžUDÞ5ËÐ”£ïq=¤C†ìó1aja´ßûðö¸´ŠJ‹1s»‹`¿ü!ö(=ãÉ²˜aî_5ú4úÝ‹6²&²Ò·W¤hœÄ×‰ŠÁa6‚xÓõ+'œÓ% ç$(ï<-W#‚ª9H'Fšµdu±Ok÷3Ñ™ðVãû„ˆ'¾Ÿ¿·dàÁ„¤EÕx	ê¼­QXDÉÛÃ–šeó¬ô5Ö ÷÷&Š¿£ˆv–è ®ì“]â&:íXIÂä£ÜÌ_Nªã‘ 
+cõ®@MžùCiÜÃâ/´ Oè±göSèÌä¡L[;q«Û…ª%'«œ<oªT®$jiŸa~>YDµD”!¦.¶1È"Y‰ù"
+úfc¸Êâ¡ærƒà
+`ƒbR1…õƒKø¼úqöIµ;y„‘vÂ±æ|#_“‰QÓÙ·i÷$›éûur£´±7\7\=D-ù,‘Ê¦jBN2J?–ÒTwíM”|„Ë!›"AÜãYžñ0¡Ü9$§Òý"±lßrcƒ:~®Y[Lþ[¨ËÒàš\A€)™ÝEÐGcìý‰Œ@ž”ÑcÈÇ'>â<ãj_	àv!ž9°OIA®Þ•žDþ–™Y¾Í_vìû¼DàL:¸”7Ñ„9f^ý\\$ê,þÉÏÊçŸ‹­hÚkNØ>Rˆ×5ç%ßùTâUv§.{‹¦§MSØd-}ËÌ¢lK©="µ.9ñÜ4*Ø-‘Ê ]ßîûûs¨?øèÒá„â_QàQ¬]ùªÆõ{Õô˜rÊâDŒ-áX‚NödQ,9ñ1â6Á¾Ö¯T‹žYA§’“VÁ>\;øµù} ³ÛŒ˜ÑÂyV1;=Y£Ôm|}öÆËÐå™¹ÜˆÔøPŒÿ6jaN÷Ì.;ÞòOuŽöñ`m|¼=i%–¼M´‚ÇûpÄ…áçŠq»_é¼¾³õ¿½RG;ª¯Jþö]yXo_+¨¢ü–õÊ2<ÛëßáfÈã+ê€«p‡wCµÙ¦¦<”ã†Â9{{6k3+ªÌ\ÑoäCs04óƒ$Á4fè¤üÒÏøTAâ¦BÖ9EždÕþú‡ÿîžÜ#÷’.a
+4nÚYP£ÚG¼Œû€ ±~¡Ì¤½‚kè…¿˜0Á½,ó
+Xç¢	Þ1Íi0%|H‹ryƒð‚Î ü¤Ÿþë¯ÐM›’lß .†`#/C“G• œ¼ôM˜Ë%ÅhcÔò½ïš¿µx-a.øÙ1ßjub}œûdWê¬>-3¥ç/Àt¿¾è¥TG(lN¹F¥&‹…ÃÍìÛå„
+øpÐ¶<§3â•™å÷äXL;7Ø‰™®)M(šˆÃ ¦#¦‚aÿÇ[œà]Kƒ¬kˆñûûj‡¼ l¢3{qDüß›¦ÛfVe2õOMÜø˜6˜ñ`/<W²fZMIÒ*˜³Éªè¡ù(jŸYÖàÐù]”
+Ád[Š"E”)uÐ.“SÕíT—÷Ç³7V‹”VÓ»Wx\–>…Z‚¾Ëx Ï;»-¶%g®PrfÄ„Œ¡_[XcxTG—ÅJø}ôüéD–9Éñó†æÓýé?©ÇSwHœ§i½ÚûøÑ>FäÖ`,3ûNõ¥Q9	¶é^wð„4à®Ò“4\O,P9«@p>É`é¸4ä‚Éå¿ `YÄ’hfÂIÃ\OÅa.ˆU¦2o]¾nf€ßoÄÉÍ‡5”©¼~B1CI|¢Òüy¹‚f¾
+od[€€ •ïŠøcó™R›’W-Dˆ¹Ž©éßi+~e‡‰Ò‰Õ¦l%0X˜AÎHG/yÎKPŠ ·6é·ÒýpiIL#
+½ðÏD)ÚÚ1CŽë›Lõ7pòA§4½,}q ©®lÓš¶ókæˆ>uçN«zèd‚¥ÙÍ-¢7½¿ÏÄ†eŒÿÐ°±:6ÝpÞœT'ØæÍá°Ÿe¨C](›‹^™'›ËRbìWòáåížÇÕ¶ó¦ÿVá„p#¯ôxHŽ41pñÿÛnázƒ«Œa‡W°4‰j 7¦,p¸¾„ënî%……y½a6CŸ'jLÀê:Ú&0¼v]gN•ò’Q`5ÖjÍG~dhª€à‚ç¦pÚhV–«ˆsú '‚/äX4B8…#“×æ†52XÆû@L}t3Ní&%Rgiñµµ9d¨˜cæsôXÝVõß®bˆCÄ>Ù!müªu
+²_
+@¾ŸÈýžîYu“ÝèÉÜcÝ¡(ilDÊÂÓÙØVæq[
+b³jõSJ¾×)æeæ^†w%•-Vÿé˜³Š:Ï:ÿ¾ïtù,ÚGë'Å#}•=¸/&ÛaGÈÐ BÊ@:=]¼D&m¢B!"D!GXº8-úo«<bŸíàÛ~`0Y×Oò.2!ö¦årcBÞ(äY>IŒ€ù¡B¹;ÅëM?»ô¢±“¾‰úžùÓ¯—’WíXôû C¼ü¸°sõísô‡µX“>Í5^…àÅbq3lE×ðœ(¦úÁiDÀDK¨x‰ÂdšLž’“X¢¬‘½<“•³
+b3ü[#âvüæï+Jsôœ/—.Á® þRc^ÖP×v#Ñvu#7Îoº¯pãj'¦Ü> ¹šS N²*wÃö!ùÂkÏžPpk?Eue˜¸óhˆY‰• fb†•+Ê#é«Ïü­h»ƒšý‰Ê7eˆz˜ÎÆ1JÂbÄ+Ó­Â!Þ6;E2¨€·¥ÐÛ¶‚
+ÖC=	~xCü_¾f©,
+ub@~½Ÿ,ªúâ¯ ž ^‰þ ;…Ò	`q Ö9árŸŠå7@ÌÙË~¿;=u9\TºÎnÕÇÇÖ_Õ19‚ÏƒXF@¶7–“®ñÇ|Ù7@¾:=Ïûº_‚IÜèóù~>Žg3>ƒÙO{ìµPxÞH5Â˜~ÿ†6Ò®A4Hø)ûô-Ó¥ÿâŠtß*©Ë1Åõ” èŽ¿–Ö±ÏîÖë¾0»¹à¢¨sÜÚ4pd${êç‡¤ÌŒ ¡–tæ­7å‰.(·ñ®Ü¶¶¿Æ+GeÉaóŠBOÒß²b5Ø°	êâÄ-†87xF\&Š ËÖMíü>ûÑRnYÌ/0-·¯²z8ŠÇã—›Lææ‘/m(	^`º‘ÔšÞTÞG×#'¯kÙ}=ÁwŽ²Ê±‚d÷_XÃ“ÒF=LZt—:÷5;qK8Mup5ö™bráo? Y*>O$—áÔi¿t>g4Ì=¿5?¿»BŠ/N£¡‚OÃB­ŽX1å4dþ­Žÿ”ùÏ²ÿ»Iî!ÕØ§eB’Þ ù³×F…2ïáe9 xy+Øó*ÁY³ˆ—l@Ò_ó£Z÷©±H¯ÆŠÉ¤Òè4ŒD2k›vüº™‚>59ûÂôÅ7.2Ÿ©bÚs¼‡¹·Ç†ÃK±O³E;) '>Öxî}E¬â®&‡|Éâaa.Ñ¦½Ö¶²–³÷†E’=~‰X’ÓÛ·/®ªQ}}UµU	¾]	ÜsžŽÐÖõóN‚~¦;©AÜ‹z³dÀfÚD“æÞ	ŸO‰	ÌG®&ÎuûøÀ>Nò ²zòÖ,Ø™}z‰vÐr¸mchøÚºL0{d÷Ás®„‚ ‘ÍžPýGÿ6€::Ê¸²Ç—8K'ñ½
+jBZDö¼
+¸™£ÓÏ åÎÏ¡ïÚÈŸðçÜžJ!}VQ]©ð7	&d³ÇÌ²XwÀ Ýî¯‚óuÚ&çÚGOËÑvŽ–ðìÌùUTÛŠk¸Çÿ™WòQ=27ÇþÅr)ß?1‡àý:xÅÓ‰CÓÈ¡¤…R|‚	\W$WŠüxèQ*”ŽÞÚs¿å¡ÖgÞÁlkßCÖþš©EÂžØÇbeñ!ÆÈ8‘Ë„.P…]Ñˆ»5ìnœ?£ç§2)ûÝß”Ÿ•GX+–.]x½ê‹rpz†â”-~FsÞuÔ1÷p±µŠ-÷ãmàªá8bC=h¢?¥’ƒ¦Ò5"åŽå¼WÀZ{;PU5ÆÕN—8*Ñ¾B<›«ÔƒòM'½ƒ„)ö‹e[I”Òž~À.r~ÚZ¾‚¯ºm8›_‰*Ù²2ÍGÆ×Œl;>pzG-¶ýùqýé.t¸„=­¢¯î’OÍÏÏÏ;/oÚRÚûÛòáo£Šw~»@Êàëia£‹€)ç¶˜ëHá‘Õ}8ª…®­W{Vì âk#~tsö3]Rzx˜q»î}ë6gý‚© t¢€‡½9ž©hÙºïùkXæómž.Èy›fd"Í@ÜŸY•Mˆ~ˆòbÉÑ‚óÆ=ëåA™¿,I?øÌ7ok+SÉšPfe‚¬Š®=õUX'mƒq|^s¾ûo±¶ý"uI)üüM]´»¾JxÌ,­ÛFúÒ,÷"V7÷8–/c;.ËÍ¸	ÊòO…é÷©cíÍèÛô*7¿x`,ZÏuoixˆÇøãDÎ…^Ÿ@ƒ9ý5Í}BD“x£ÜŽ ·­Ò¿ŸX>ŠÊˆÐª¢¸Rk¿>ÙæäÏÍ—–$ËŸÜ2™sâ-—ÛÌvxìÛƒÍøøNùbutÚ~wrIn³÷6ª7ŒÄ¨«…üÐ­ÃÐõ©…q+^šÑvTkìû1› EEhÕÄçÚ¥{2>6ÏŠÅ¬œ:¡sÓ“8l	ùèZp’Ñ]yr¤ÄâD3ñìÊÉ„Z?jš‚?f°zA_À<õÆ¸]‹²ïßî[ÍÐrV©Gd¦û!'„0Êµ-í$º”Q¯|f_ú¡·*óh˜ŠE XUnS”mŽÄ¨L^!ÞCHˆkÀ,4]5Ø‚c³º³ôAÿý¯nÛÃzÍð¼)ÑŽ¶%:Ñ$‘WÅßäàdwKÌ?H¹Ðnýë	ØÑÍåk}åÒ‡¾›©ö!ôaM4Nì8¤|«Rª]®˜ Ð3¸@éCdê‡†ËD¬$Ö”O ²ˆuªuTÁÎü1Ö?Z•ÑGÀiO¡˜Ö¢Žj/“5ä¸j¥y6s±Ê{Œ=ü”QF}S¥b£Øòahk¨)ŒÐÏ
+…‰SØš c4¸Ùó¨¦‚®->^Q!'&·ƒûD–D±=+3Ö”	È@¿cØúMò¸3“Í¹ õÓ¾¢<Œ*ÞÖÝƒä²ï¡žU¶¨ô¡#…+4åÇ)úTqªL¼€jÒ€ü2Édj›—)Uô>kbYøÀ×¢Ìä½–›°0PŒ )àêg^¥—îÓÂ}Õ*(ÔµÚe,Hø[½ Ì~õôS
+btõ†Gáç›\F5gøZ÷ðlv5,B.ð:‹ÖçÓvÊ,ö8_[Ÿ0Ôþm€âÐ­µ ËßRßúÒ:Áèj1jÆÙY‘xÞáÈŸœâDs»pýT@Þb?«²ì>]%;|!úºæßçÂÏ[é[ˆ¥;ŸX 37Ç²¡Ú{å’x0‰¤_‹‹Z^B]k¿Ò|þ•‹\~SúóWö{-Êö*E•¤ÈàsôŠ´‰8Ù^%QZée5æŠÝÂÙ‰…‡Œ‰nÄÞl15­Nm•	:Ê1+?MàyÐ®öúY²¾©œ9NLrÍÛž÷lÆ—ªï,?ßP?<	Ù“3.É…o=ö·2):ýB+âUpô»Õn¼®=Ü9æø½7ÄN³bëCöàòyfs2¢™ãZ%€ç—O¨šs5 Û´úä&” pŒÚ+¹30Óœë›€ênÕt[`|mxó¯\7Mùþ¡§ÛŠR²ŸFoEi]	@z=¼5ˆs÷ü°¿¿¨%í1[¾¯O8Î‚gÇªÙ÷i6	ßéú”>Å¶-#‰±ÖdPäÙu6þíO){ä!ž^Æƒ-cMDdø´
+²ä5AÁ`	V÷FËÐâÒOˆJ£Š²›¾DÊ€°›êñC«+GÜŒZhÀÄ û•jª&—ÜúHDæYPò¬­ ”†ýÍø'Î6_òÉùMäÞ‚á±`±…‰ËFŽ˜¦¡Œê¢³!ÈµÔ?³†LrOìÍ¾1›¥ŠAåX¶hÑO€²—È:§ÒÞ{@‚°mC–®6,3pC*wãÈ„-ê0ƒŠ7Ú+°åÇìñQˆ¦â9O!²ôîA7Ó!H¡Ë.^[B)Š!Íõ;åÏB5‘ùyI«¨’ŽÖ0CmTïI}þ@xÞx˜ª¹î|®ÚÏÖô'rö§p<:²dUG‹r9UB¦U5?Øqeîs^T ÊYÑ0©þ¨j7kbwõºÉToñIåøÙ_>dó“|^*Ú0€¹®g¦ 9`‡ºÔu¿ƒWá¡Vp%}
+Ðe‹úÎ6sáìkïÏ#
+\E‰ƒ}[R_ãSÅIÓ¸ÀêÑÌdÃ_0[ÈÊ¢•QÒ³gþÖ•v°Oc³4¯QÏ\C@DÕÌ¡ídyÅdÔt^> Å1ÐX­ž)‰Ðœi¾ËÓ¿Å÷~ÉÊ¿ËCSÁƒé\ÈŽ-¦ÄYè.¦¥á¯©ÈQò8p:=W™ëpN šSEïë%(…(L[8žø±}IàÔØúP­â¤WÚ€ksþ¾¼·È7ÚÞçxj¦¼Î4E¦fsÙ¶»hì¢gË£ÿv+CÙ–ý•¢š†n4wPU ïmÈÏäCÞ‡Ì×·²y³7x9I"ABquÎ>keº¥XŽÏ@Ñsªú—­'r¯ª¥Â‰å–Òtªý,]úŽˆ,[Ù´¹îˆjBÃûKÑ¸8Øøº;å§ÝÕ@ êë;Ôf¥s€vŠí»P‘©ˆrïé§ÌÏPØkø½êÊTæRðøù`q?‰Éå
+h[Ó.Äf—	+7·äo6B¶”ªÀ‹>Øª
+_@ô,QcYÒ-ôq/åÐ5Á*.\£8²ªåäò€.mÁs¹.Õàu(ãy“…™¿é³,àMeûL1‚°wØö ÕQš—±&ž»fñã(Z’™¶ÞwE¬ãØjŽºÝEÆQÀ$½3èøÍ}}~µr&œ1KPÌãºo­ê…Æžrú=ë½ìÛ¾ö¿!_ÁŒ}e¿À‰’ªR7S^»MêÃMúÐ(ã‘P×_+ãl¦e|ži*k<åS¬ÔÈ‘ìW¨%øÛO;šÚ;ž³èz'MK ì
+éýñïµ˜=ÏÓÊ
+#M²*±geÍc=¢É Ak9Ú»ú%¾7’ý½äù®®3_3!ÔÀßs.ô³`—Ã„{ß±þy›\7O:c!îUÇê¸Ó|”â¡(¶mq9»(³’´þHõÉeÕo°bo Á|4ø³jÎ—Ò¤È²Ç%ð`{GÁ)ÕÅ
+ö†æ“µéê[Fã¡w­2Â]T¦àé=||?qãûQÊ¹¯®×¤}8ÏS‚`a%‡–‘„0,Ü,ò¼0ÄýM~Èòã÷ƒb@I$àæ@ùF7²öÔDR Å¾íu”RƒûÒN"Ó×Z	eà>	Ó{)Ó„FSïð+_†]†º,›íˆÞN–4#Dê¶ž4õröÆR†
+ªBÁ¡y:’E¹Å Ç÷|Œ9¶XÇJˆ!ÌCˆý©5mÞ^´O9L™õ’5»F¡…”óÃfõ5Ž°ßßUï™l‹2rò¥'¢‘QÒ$À3rK@“}Df¾9† æ/w=a´‰ £qùèeóÀÆ® ƒ´áÅ&ãÅ]¹Õµí–±È¤ÁŠÛgj›²z8>ˆ½2jiHõhe+)ûû9¼Cx)ýJE=kŸí¨F@4rN¡JP‡ $M.KæÞP•ƒn²·Ä÷N_~zÅB…¯%ù:ùßL+?Óì·[¿@­(€Ó€Åbûž¢âê_Ïr] °ÈÍñ™§PçT?p"Aœ;(«ÔSÇBóøIæÝË.á1ÎÖÔí&4&Ä.Ê'
+ÞžÌNýN6Žb€ —Hîpç`I7Ž§1ø:âv¶%:Wì>˜È"\FŠ„Ó%û¹J‰j
+Fòžúúýž|`¬HXGÙdÉt>¿`Ð‰òÂ–z&+TË¦	ád´
+›ªÌûÍ¿gýZ|ñBR[?á×¼@€Û	ÑŒ×oúÂ½"Áïœ„–¤döñíáÕß4/Ç;/­ø–0Êo,j1x]…î›»dß	ìÃyÙ­h¯â2Ñ[£h ´.2Fð'9ÞÒ#ß1ñ“èÑÆø*?ìgJ³uà¤Æ¦’9_ŒZŒ'ï&¤/aa¤âtE¥$ñÁ‹ŠœV'_(2êeˆ$Zæ‡UCø„ý5Ë
+>ë€„TÞùal©aÛh$Fÿkœ•íÛ
+”	½J WeWÞ?€±E5èèÅvóÛbVè6Óü”8.Ìâ¤Y›DNh¥tZlY0ú«)N‘½‚lh=e“úX¡Ç”~_qž ˆ?¬×šžähîÐÓE$.ú–’*ŽLâ8 TUçÕ½ÜaºØ›ë’D¯5#T1ù¾j2ÃY“wÆ)X>ÑˆÔgü”UmîócÑ¢"ÄÊ}³p1ÿ…âýÄõûÎ2Œj¨›K?Ãtbìô1·ûŸÄH”ÏŽ¢WŒÏwèOÍan¦9wød[›[¬ñËÇy‡á/ÐÔ²}\ý)vG=î_”†«’,¼¦‰íÊÜl€¤VNüqñÌ¹l9'$àöð“8ô½[ONMümÅÁulµ²Â1Óé3MT„÷g‚ÐáapÀì^¦ùïXtÉK®Ô/ð}ÔKŽÎµ1M½ªV¤2¨=_A½©F»G#ùåi¾-¨ã•JV‰%à7\P¬Óâ$iÌ2Ÿ’]ç(²tÀ–?G­ê=ˆ?àèÔÏéc•¿.ÚÊøô˜Èœîú‰õ_*(2/Ê²×»êŸÙ¢wï?Â#‚èF‹€ÕOD%¨ë‚³-ÖåX³ék¯¶c_¦ò|p@ëZÁ	^3Xû©7¹;¿zÔ’gç¤Û€Àú„i ÞöÛòdüí¬Gê´ø0=¹ë¨N´:
+R£ ½Z:ÙÀ>Ø²‰x÷ù‘×(—€¾\‡Ä Àû–ÍúÜc¯á~Ï<êOÉhÆ´úãlƒHÿîÁÁ7©¯©-<R„‘híO¸Z©ª‰ vOSË,
+c{6ßÁµ×;ýIwÌAWÇ.Xl *ËZ\Ÿ¬¤¼1l}åºZ£Ú¾zÕRC[ñ}hšŒ/X—&šSOê.¯òîöw3„ž
+ÛG«AÛÖçÔvÈ!n9„ãö}óþ¥·ˆ²øU‹““¾P Íh­¤¬U¿ŸÛaûå0
+òGúñœØB®ˆÆ×÷>¾uÅâÇ#³Dà6ïgBZQ¿D¡¢ÆU‡•e‡.öYß‹úÄªBF0xãt?SÐ\+·ÒšŒß»2ð^ZzQD[HÀ4é]†µ”LèÌ”GáýÎõÜéû’ÎŸ¨7%€|ç7Ù‘jƒ’v™¢—ÄÕWuÂ˜UÜãqäõI-_›0¹r„Å'ÔÝl¾$¾jÚ-Y]ŸIeÚ+.’·Ø
+D*ª£BV[qËÄc”W]~ÉkÎrÝ@ZF>SÝG…xqínÁ;¯‚"]¿l²Š
+bŽ˜a(Çø„LqŽ/†á>Ç‰¼¬M¦/›­$}ó•SjSÓûø‡=¨·×?6åËE}øs›ŒÊãEÚJ#¡QÞ2W/±ÔúÄ¹º• 6ly3Ùh/)\SØÃ„¢,.žèõ¤PZ~Lîè"ÿóCw8ÈÒ*	aŒˆ×;’µö .7>A6Üü”ÇWd2Ë’ÉXË«ò+¥×Šõjvc“CGó™ñœÑxþ¾³‡ô'Ä5K/d÷E`?)PîgÐ–bÙ"ÑSÕ¿+S$%VØÕ(ïuÿ¥qµù½ƒ±0DƒU­˜«‡ƒ6¡E¢`•cl‡Ú6ÄCõ«'CÌßGšèù©ç÷i*ÿ·¾7£2Xì'Ðsà·vØG£§paÁö}º¹ÐrFÅžƒøníJKªsó®ç%9¸òwüý£Æ9Šíãž×‰—µÂ[5“õ8r¤âÝÂSÙ°T¦DÏëx0)õ!Áô>½ê²å3êwÍùûn¡P¶’1ÊÍ µ8!¥*®FPM	bÐYn[Ó4n9å6L¿Rä@r’sñó¸´áaÜ1—/¬òÅ	ô“÷ßå‹4öü`>×ùë{’NÔÆ§ìž‰q÷7 »;TÅ÷ç‚¤·–Ün?G´ë)\!ˆÉç4¹L÷d‚Ø6Å-3f†Øc³|tò8àõ¬.dx¤@¤]¡Àˆ<™Õ<©¬ßfó^?iéµóC±,Ñ'¬Ô¡Áý"æºt‚eÉ·”«§µœ¶K¦¼ÛŽUI[¤ùUdáÓ¡'Uo® pÐò®}¤¬ :Ø8dI¡&Ñ	¾@0µ×€LKq×Üt™ÉC¥pH_U@ý¾qã³ú˜/D">®§£ö8P‚"ÈPùÑ‹¶Œg1{*WÓ/²I˜%ßÐÇ(\©2Ý¥Ó¬”ð}Q;†s æŠÞ‘’ú}Ê.@ÔÚçˆ ½ÔÂ¿²ª4‡8l·pI‚‰*KE'J4ú‘Úq•þ¶ÜÝÙáÆùÓ'ÁË?4))¡@Bð‰üÄ¯ˆäƒö„#þÄt4uP¡6KÓŠ½tRW‹Ã,	L[Ëæ´cšÚbôôß«Bb3ÅÓM2È|~­}úÁ¨ô‚ý)ä.	 !/j¢Zº@ž~°ïö }þ8ùÍ†FNÔ ÍNæœ»ŸK¶Gä\²‰ó˜ÅÊñÚí0òK¡rýÞJ—v½m¨ŸqÅß×\l9¢©›x¯È€¢5³ªˆ©ÐJ0Éžk¾d98²f¥¥Ê˜E­„.9ç¤Xönké>×{‘W¤° lß(2Ð'&V \ˆ×“4AŒÇôÐ,9AŒ”«+–jl”Å_vr#oœžÃòÞwÖbÝkàs½=ˆ‚´/CÓLÏ¢©˜TD2ö	r™
+³
+c»²çyméJÅöíÊøèqònû ´ 0—‚šªjDßÝ[Íƒ@ñŽ™ýt6 \Ù%·3tM¼DëBèøOX,bwQ´¬QÆíXŒ‚„Ÿï\ª\)§¶J7Ù:{³lÇúÔ€é€RD-äâ\ã>ˆÆoN;¾ìSÓœÚ	VYåÎˆAµw†tN®3‘Å£<õö“Î`¶fýYº‡fµìü
+ú†À8ŠÄ´ü­n&Ü]ÑË†´ Ö¹y+GÕ$a‰6`¿}ðüd³þvw)¦‡—¦¹\W¤Þe+),„î¤häªéÓ»À3Ãõs½g»‰¢Ãcõh†G½ßAÎn=|§…¼
+/z|žgjIE¶S¢ÞliyàÈ¼cí"h…V¤Ý"ëð=œT:B­«F¨ƒsc×
+H6	ôsV>–6­ äÕu±Æß%)Ÿqfú´?Þ=è95¡wþ¿Uèqx•Ëðg¸5»r$ãÛVÉ½¡åc4.ÝúÞ5ˆåÛuÌí“„“UÛÈâg­¨rÆØXø`§Ì Y¤}©bì={Œ•×‰¥wïäÚ­mÿ+ÂD´(ù¨c•9$Gr©’a(üÂQºØˆš†fã–µŽ+rì˜ü'Þ,| T•ìb9 «µ]òããÙ¸I•éÉŽÞy¨— RœJ#ÚË4ùèØxkü1uö)Â½ø>  )³EòžªØG¤*”&’+…?‚²£‰k§¹6Û-A0ÞÓ@Öë)Á¢Â@‰½Ø¹òÇŽìÖ¯¤®Ä9!0A¸ÚËÌLø4ÝÌŠo¬.DVu£²V$ueˆ$Õþ<Œ02cµYC¹µç$´ì€‰Ècž‹§‹c®Žù0Âgó‡>¢$´KíÄ£%ÊÊÒç§NÊS‘ÒÕ”dÄÔ}…ùÜál„‡A,J®që¢Õ ’J¦žÉYc•l<bÓæ2ˆ|MËƒxÀ/	$‘yá^“€—Ð&jµe°HŸC7èãgÍô*zuŸõä¨—zÕi4ütŽTÓ†Ó²:AÓTó9‡I…PF%Rgb·ñ»ø›L9ÂÁúá~Ð@-¨ø§Â±q€ sŒåw£-x¿íŸx¡D7Å;!ýå-Œbå÷qò=è;þrc}À}]3wx;j¨þaîIÝ±
+|Ïªõöóp®å]qú­<D./õ'ãSÌ÷RØÓ)°
+Õ’êD‘ l‡Æ‘6Ä jßñ‚ýdcêÚ‹®˜€ØÃÖ‚`ß°Œ¹L]™:$>ëè¥'Ñövýìªµ"õ_C÷O¾qzGüâ”cò5DÅ–qþ}ÖÅòù \ô˜±ËEÊ y*m¦ðÓ/Äí†à
+£¨+ß=‰G<„Vaî¸·]ùù-þ©mIàqj~\GuŠž7Æ*þøëž=†¨Ç»bÌr9Ÿ°þ’Ú4SÁu\8b¿ÑL‰æñ%~«O%¿Ì¥§ÄuÀBÚ¯›và-ÍvËÙÌI+©˜K}J8>Ž`#!‰Í°Š½ýÌÛžÇùŽ¨9t	=à²Cá)6Ô=Ã‚ÒÕOØ}A^ß¢ìmãâ`«ß¡ö08 o‡G¶õsã†,lÓé–»àòv=°²dYh²ð™¤A“ÿ²´X~¶ƒ~ef‘ôs’õ8%ìß?-©*"ÒûÃ~ÅýòóKÆÎ³w#("„õ=§?÷œó¦óõ•Mº?Š·mQ½ü¬kC4™£¨„º-¥3I
+$ˆµÌ‹ÄóKÂÃþ½0ò%â\^\¾nkºsar¯W‚ó_½4œág‹Îø»R\Ô/W“??Ö~©ËvzÂ¦îzAÞ‰€ÊPå”‡A”¯Mrhþ#ò‚õÛ~dð‘öÚº…Ý
+éÿ¾ëù5VáÕNuæÒèÇ¦í8å.Ü”n3¿w“cƒo5uY¤ØÞ€©Q ø³GyT6$cI„‹f°]YßŽp9²-Å‡xªÒ‚ìN­&¢&~D–ËŒTYoëî ¯'ìça”ÜÈ~ nÑí¦#¿ª–AÑ_¹s~Q£óU]TÁLäBvûÛÇ2ôxö'ÌØõ½ã¤ŽužyE˜$}>Ó?­t¹ØˆhžQ\w6©³Ìc^ßš¼Ôq=.ee­¥Ãµ”òžnïšœ§\“ `òtBí¼±yü:´G*ÒÐð~Ö6¡¬©éÌ//9·T‘|é¶T2{Ï%#TâQqÐâÖd4E{hÛµ²_ðºI‡pP5Þ\ó'Š65†ÓëªSþËá‚‡‚aSR8ù€ëo2©ÓÍïx»Z!'´WÚÀ0¡Îãn¦`Ji”wÆ… =]qŸS0'¯Nç&¢Þ9¾ÞŸZx`Àß|êÌ¶ßeDK˜2¸¯¯á _¬L€µe]}“@Ð³]ø.ÝñYÑç´P,%­P<7eøBÚ÷³¥¶6kùèþâÍ©³`^¹“[½ÔÅaãã€;qWc
+²§*µq0¦-Rž vÚÛÈ÷§
+[ÿ;-³`.ná0¥ÕZ„·Aÿocªú+SðÔ‹—41âGŒSæÒ›ÂPÙ®{¿a‹aóÊ¹ÿ}ƒš9\@×vCµîË›Pº¸ëÃ¾rBé\XL+‡êb6«9ZrI0b?u‘êËIGï8r®uƒ§!eôŸ4Hp1dz!¯*!‚sn`}|ÿ÷÷xâEi1éÛÐí'òÁØf¿'”–ž}’¶\ú±»{0(hV†a¤îR]Aô›T>ƒ‚]´&4$œBö·¯°µÑäAY´«î ÏPü"ëNê5N…:Ò!óWëôß>¬$ö…ÇZCjµ¡Í½×u¤Ù
+ôÙ“°Ã…	ð£`Àˆ‘ó!ÑsnOwó“×ˆY8Ïµ4Œ\H² Dýj‡-êx¤sõ×ÏÙq—Ô"[YýÃ2%Ôj¾å!ˆ"î@gZ ´Î6hvWpë†ièó*ÿÖA½©tßÔü ÂfÊ±¤\ˆâÌËÑ- %R @úaã”6å
+•Ø€š»tkü®¥­Fñ{<°·À—gm¥Úcnûí‹»*?L¬6‹ûÏ.+AO§èUa]ðä„¥Á2˜BÙsC7e\fñÔn¶©ÍNåÏj7g"‰‰Q2D™e“²8†¥ü®M%%…à”‹©yTÉ>‰‡<NE|€bÈºÊo;ÇÃÜgÎçŸã£	ÆâËWgˆ>¹ã[îÖÑÕ‹vÐØÍŸ”XÖlRŸ\õ–¼>AR‹ªËÝD×æÜn¡Â‚[—x—mÆËÑ"ç\Î'²r`Ý—ÆSŠu$]-£/ô›–<ª Åèx´9,_7ã
+Ý…ãàP£€Î]6¯ÜžN+&ÍÌå±×¬ä?øÀû»ŠÀeˆ÷_áRm½(d£A¬Cš8„Ñ¹§ØŠØ:!Ó!'iThW9“Ê×/¸±*ÌG¶>¯ÏøÍ#YÚË]Â/nÖM§¬y'n!MÂ‡ÀžQŒ?‡M)æ+ËÄ‘*ÓíËu£.¶èáH—‹HÖ)¡mÉ/ºcîÍ‰‡ÂöôWN/?Œ„¢Þkw¯wd‹ÒaÀG½×ýùi?:åm°!Ý-ëçÏ‘!Ô5®õ0"inË¬¬yéý¾îSÒoÿŒÕ×3ñ¼Î9JI‚ïªxßæu#sžN:,/±TtYvî8ñ"xãïãªmÕ'3¿YLœ£'-5ÛpzJÐ@jGô†?-°¾f@g=î>¸»ß’?;=zo…zàiÛUªMŸbV¼†6ÿ¢ÏõK–2‹ÃÞK­HÂ²ÔpHóŽ/È†‚Ó­‡J-Ú"î8•@6ÃðdÉMÌ‰|ß‹ŒŽIÚ/ëÃŽÝnP:]oDh*iÕªø¯ü}ôñTõÆ4ƒ/õØ¢2Ó²2Câ*lìÒH_¯Rå™+¬rpÓN–©ix³PD¸Â‰Öi{{MÕ'£^ïæç'E‡ñqô8ª—íQØÖ\¨¯{/ºç»n§&Uõ‰éÓ— ×Wéb•‘k®É…a‰aNü´˜uÛ;ãNƒu@xE’»/Š¯ú‚•œ€Nêï‹…½Ùõ¤âØL˜,„_x¶CßlÕ7B¸?q3fš8î¾ž¯YôHjïý|!zçl7ÞðwoDŽ~aY†	¤oZÅ{CXe¾Q—m†ö³…™ùÔiãêPìZLT"³°™­¨Y}I+›·s!®LóÝ”k/²æôV…à²ãlº)”úÄö³Ð¡8ˆB«Ò‚t,ë—‚¿
+XÆ®žZý}¥„»«T™Uô€!U–v÷÷ûfC#<Ù¹NâÏ`ËÝâCÅl­EçW_ç¹àÏÒæ3©»•Óì¬ß?0eîìÉ~ì/þÚ€GÔ”¬“¬±w.Om’±&z]}	wÀLî¡Ãmù5#‡Æ0æý’Ì“oW›½Pãkm­8¬X<NåfÞ’RÎr`Ñ-Óï„^¡mlŠñÉê5Ø5ù+ü‰¹?QA| olDË7\BÓF±~(AÞ¾ÐrŒÜ´!¤š÷”@îè#¥uÌ‘³üå)ÿ…h˜6Ê78'éo^ÂªÌ}ÉŸ=×ŠmÈÀèžO³¡\D°*†LÍ÷~9eÇ-fã­Ú€!\Dé,î‘¾Ç¡óˆÆ–k—äa|†±„‚¶W·Àª¤àƒ›†+ìÜ@¹'–].££°Ø$eèEyfOø¨;’L	¿WÒz~:'‘ß>Khë^pÞ=g±´z/A_àS0I_×Ì>a?.ÒWMÒî§~Êú—÷½Sfh,Î’ÄëÈâø³öÍ
++ÅÀ}e~nåcO öš£sÁÏ@òk²‹òÞ|:°ßfµMn·LpÖñ§ÈyèL4Ná¾jwÏTè†’±FQûó%,•3Y;«rEu¥1rÈòbP_ƒ´^ÒŸßä¶šâí*wŸ><š ­mâ±×ðww¤Î±}m¯õ·ZÓ $	QL—±â;@s‹’EJ_»´Çì§¨‚—EdN‰nÁ 7§7ôæiš€§¨*[d0@kÎoøØn ì9šwä2ò¬óú`xô)&L·ZÖ##½<ÃûŽØüÑwéúXDli_ÎLMOr
+°qKh1‹vb›L[DïH5ƒgBµÝœÝE=2¾óÃ^|·IíºvŽ¯¡²Ø?£9u„v›hŸòdK*æÁóëc.whÎb$½üá£ç­e½@pÄ’ Â§ E¢j~ñ]Üe{»Øíg=…‚)A3œ'?b={ëß1f'±ð£»JJ
+^ÙO´zxŸ€‚ÁôAwÍâƒyi¹>“¸«8P£€+½|)ÿ-ôÓvõ)$ O®<ÜHWe ÓÑ×ñþh³l‰Ÿ18ZÕHn\‰í„Iƒ8¯|$7û'Ö¡ßdQØ4Qôw3è?ÌÞlžþëzÂ»ïžèŽµgÕØï—µÃ£jP¬ƒ8ã•èm&6Y#½«ùàµx"°œ‡TXY¡oÂÕØClWK$y¯½Îoà Iææ‹êˆj”<³Û79Q‚Ó+ƒáCÉQßRìàþTgdpvù*enù±sæ|À!PºHt4ñ.d?Jý&smþ=vT#ç“jöš«W†¯ÚêæÆô€‘v~”Ÿ™c>{Ÿž¢ûéHónÙwˆ=ËU 0Î Zµâ	þÁYn{0p×
+ÂE7w'F¾×ÆÎ'‰ÈæŸÌK²ÞwylßtL|µøÉ"Ù»Ð±m½"©, ¡%¬ŽeOD{’‡Ñ•:vZ§ûYf0è}íô¶o­i.÷«í¯¥}ƒ%h6u}öa)6Ì	$®
+>:œç§Ó@üúüdë ÆäDà«7“C5.d„öØ%…ÁÄa—=VeòZw¹ÊÞ0fìM:ã„?Ì«óù†tö~[:/®Ë›+î?ÒÊ¡ºC†Òu_K ¶Wú• ÛlH~'ÚÂ‚jZŸ³ã­à4™&Ò Ð¾ˆ‚*“ÉHÕdyG‘öª>¿©Ú—ûåR¨±Ûµ17Q­á²CÃz/'KÐ“Lz„N[i_?ôûùŠ }êÊZy"¥‹íÊh±@FäL­¿çFœ¿™¹á)ç­šä‹
+¤ÎèJÒik§ñDìÛ M7È­íX¿jW‚…Ït­pUP-ÞGþÆ„Èö¸3wƒÇ{æ·×iÉ°X§Ñ*„ð’ÕëÉËo¿"ÝöäoT"·žWoŒ>r¶p•ÌPö††•ÓÆà Lú„7á£H¢ò *Ezáå[Æ1÷E`æˆU^Íûþ¯‰6e1>Hú'
+U>Bõ’ôbž˜hÕ1ÕÉ=·µx^–±&'©}.ð"íÎç”jÆÏnšìkÆ¦JùÂ_Â	üªBäÈ>`²Øôô‡	w]`È2zC êV Y\¹àª‰®k.éŸ8P…vGPb} Â¥Xg´¦Ô¯‘yï—b‹@ø·kÍË6FTîÛ“eb£ó¾øÕ£]É¿*I´t¸`˜ÌDx;˜õŠY«©‘ü¡õ»~‡)ûÙ®H
+ÖDn¾	:©´Õ™H8Qˆ%À}çHI@Ï"ZKÿÀ‘¿Tv¦|Ö¿‘`¼…êüêGCµ¸Á73™ÀgÊ!A,ÙÎ—­ø®Qé£00¢`èA+f…0l–OßÝçÜëÛX}Nœw3Û)6Šé!¡¼ZLzŠ)Q•÷õhK(´Ï·Ü2 ÅÁìøºL›fÊ¤}â*‰a5O~G®7ÐFŠE~B¨½g–·÷Âª®J%f#9Ñb/}Ýûid]ÛÈ(MÕ‰¿®ž=2ø›3®ÓÊdæ
+Tõ7“ÇT_ Ð	·Ç¿Âuéžÿ,Û–&Ž3pu‰S«žîmd¿óÛ&e}èŒûS½€ŸY0<;´)Úøvõ¬U€ºå~–è£Y><L#¯Õ¬iS„gèåVžÞ…êî¨ü aüÃ}+ÄV~¬ïâZGªŽP-°²ö@%<Ž»3©CQÊ¹ãŒ DË`æÁá¹vmeþ‘s2ôÖ<_Ï÷zŒÅ<ËÃËùz¦Ì8ŽjõÅåIÌŸžy‹Êù®y»ÞÈãä(u°øœáOÑ×Ã°ùo…‹G[ë®h¯Õa‡Àã"6@ut˜ýlê£e_æ8°¢ 6 šC,]JA[fmCÜžDÓà½úiÌ`
+ðY.ª«ßËâÛÆõŽÓÒ
+W	üñçÆö”X“ñòPø‰xûtJ‰8ÑúÄÁ‰BA!âKÊéYùº†y©ÅÔœó°£Fc!,žaì2“¨¡ôžK=ðB1öK5JSÓt|{Hb'´Å'wÞ‡(š(E´>_“}„ïjÉ­ib*é9ÊùQ^Ó¬Y¥ˆšàýœ|¢™Øò!ó)yoŒsJ˜ºF¿aÞ~E§	v‘¾`×;¼°)Ë£Ï"j&LŒŽ&¯HA‘gúÍEÈãð…çá ] ^‡J;…{Ép;…)Øjí ãæÈüW=!™>RÈD{ˆ°SkÌúÓhxu<18L.´ú£Kg¢ãaÙØFšw¢U9vÂ]ñV¡¶…ñ%Ô°lb¢ÕâÇ$š…o¬ÅÄa)¤ZØlÌVH!ù×¡ŽéÖþ›šý²µ·\-‘›¶—Áù.ÍN	,E¦†w)‰“TwC(7ñÚ}tcðw¯ªvNÌ ð)}Pfªò\äçØ¾rÅmB¾ü!Ix8Ðõ;voRæpý|Áþ£ÞÛÀ;ŠñÂt>ÔñÓàØª«RƒoÑÂ™ÓÒ¶W¾4ª»úbxøL>°ïÝ¥·góõÇ¿í7»ÛMyŠ£8¹øÀ‰ø ›šñ´©¾Þ—Í¯ó¡ÕQŠsLˆÃ¬(“W£JK/ÞMd"Ê¾óvSËôâûmÏTNS‚À,””Ok¸3f‹ë¬(õ224¶ZˆúR¢ñ³ïÄZ3â5…¾5¼	aIÖ#JûFâ÷ÈW¢Ïaþ:QÉ®L¥ÔÄÑú9u#£NFvpòŠG"†­b>©np Ôú;³jÍ•±@^«FàFcàæ¦"*½Õ%¸Õ±ÜÆæ)P!0[JöŒ=‘ÌÁü~ñ-*÷î·Þ¿$»ÖEgÐØk¢I@dŒd0xq»¤¢œ˜?H{"3í˜À©7‘PÑp7v²Èxõ50˜ÑÇbs‘©ª9£?}µT˜®"r"jä,<ÛÐûÏþQ…ÝZ‰i§Ù[*¿¦û.åÔ¯f0Úí+ŠµûÎCÒ¹L†ÉólvÖ Ö¬Ý+G°Z0ÖRiäûH³gÚwš„‚Ù–ÓÃ8B¿&ˆ«°0 ‰ yoSùH'#:µ‚÷ŠÚÓ5Ž(žÂ"ÜÑÃdITs¨Ï±– 4ž”ÿÐÂÇ'óXg4ÝgˆZƒýàŸ=4oÚ˜$eú69.›·ÏÚ]ËßM
+ò3è—}ˆa½ÒoáÕ¼Í¤±l°Qq‘Mp¦Š&úŠ7Ó2çh´ý`æÍÆh 9w2,îG²ÌR|‰¨Aý'UÆA8Üóî˜>e8/`ÖlkÂàçü¶A±hÓqZ}ÿ2H+8 ãœ™aÜYÔmû£pýÈR‹*û"u¸(œVI00‡á€·B-_XÆzsEÄŠŸ,ûa9›»où”ÛÐN £G¸Ï˜zÃ±°láO5áá:n¼P%¯”Éþ$n(ÞÌPa?–Âê“Ê™ì‡jY)æ»mÇ­!ŽLÞúÿQl]vSüÚ·tùúËþ„Ú§mÂSå«ÃEëX¢«dÇZ¡5“úgn¼9U\áh¯mVTÜ$X³¯CÂT’?šé|ÕÏ„l±‹J«ô˜Çr¿j+Mâˆ™¾m¶í*dy"òiØKàn¾ÛïÎo	 d¸HA=ÂÏ–Ã½R	{co”—˜W‰G^Ö KKªhÂ¬!6¹‚­Û%ynûËß•–Šz/±1ûìÍE™õjóÒ6·Õ7ÑX4ë<÷öÈš«•%Æ§r6ëu*ðð·Ø'=æÞÆÏ–‚pIOôªÄ¿NŒâ!ªŽàÁ-ïÜ‘y!¸Î4pƒ<RáÍÒ—Öµ¬9N¯:>°!Å”	Ù¡ ØÉßU—ÞŒp¾·˜ÎÍüñÒ0ÛTž|@ø†™W“öÊ4 å.q:úH©9º§[‹u¨ž-5å;Ì\Ÿ,ÅÜÂ©üõÖŸz;8ìZš—\áìF{~Ÿ ³xTÚóQ‡ƒq ÏÎ…„ Ì‰‘Döº<`›½È?•‡=®J¢#9 B€Ï+3l8Ô ÊÅU­\žé}ò‘Âå	Mé‰Ëä÷Å–Ó,æõ‰Á­ÕÈÁê;â-ä!€ëg_qˆß^½ß3iˆ¦á€L7ß‹õ~Á7 ŠøÞ{@¨£“¸Fiíœqí/åbgÔ¸táÚa½Ça& ÄáT<TìAD@lSÀ·Kø±&I¥Ü¼u=’w“•[“tš%,æF,:­Š¿˜ÿr;:j"Èj†}J€˜œýšªÌr è‹¿ÈnÛI&4¨x‹ü]åR{¥)'ÙWD"	>ÖÖàI;{ï‚…–wb^ôLãçH­Øó/	«Gýüh¤pÇRûTÈnañ"ÊZùLVîE5:3º.¶ðÖ
+0ýùÃ_”®²=GA¨G!(rºNmG­…Å]‘5ó3„Mz:¿OŒp=%õŸ‰ˆÈZ‘7úšñ·kûŽµÕ(¼‡R¨C“)Qÿk6žÍÌUC@ÛâÐh@‰è˜^-BøÄ·¦>{ÎG½F¡WFÃKê7‹ÛÃcâ­]=I‹ÿñOÜvè"ï¥jû´‚¨¾`\[ XZü­?~"WûÕmÂ¨|,ûýZ¬žnOâçˆB²/Óû—˜ù¤²¢êrÃ¶‰Ï½Y|‹Š˜Ë3÷©w`ãA„!­”èÕ3µŽŒa§K/Á›ã3A“§P,
+XÖø\î50:,°Ã4WkQÝÙ¯KsYZ9Tøâü®Ç ÄÌ‡mÀLH¢ß7›…š=N!þ}¥~è•Ûø¬±Œ³míœX±i¸™8¹)ñã½_¢+ÅÆŸê[ÚØÜÒUmˆUTLb‡¥5ð ÝÐ^ö~Ž HMßf¤e.Ù?ZÑÇøÛTjÄ8Vwà®$ìÂ€èk=˜{j]C2tõ™øV4œú-Ø¦š\Š#eÓ±y›áùU¤\¦Áòb""ƒÁ3¦—«Q‹¢»_UÎÍiþÒ qß1íÉ©h‹J~#>Võß‡3k]À©ÀUœ…èBy >¨ã<¸È>Áê½µtt_ÈŸKë¼–sÞ<H5ÃÕÅg‚ÓCƒ¾!0 ©Í˜óO­ëy4@ï†–_Z²¹vü÷¨}µŠñF?¨–ûkÂwídPñ[ŒÉœ‘§çÉrñ¸bj1ýøå-<`m“ÛÄûà¹—Ÿ·¡¯5Ísçt1[Kea‰CQ¾‘5ëþóùªzçîï¢áH6è;ÒÙp”’p_{øq_6¸—nU2_ò¾·éÝ¸]ò‹A#ñÎÖ»–z®ü_Ý©ù üáõ{}D}¡\óã4äã[Ãzdäf¢ê~Òïø–‘1¹Š¶³W2nsï )˜»X¤ôMEUæ|[3Ooß—ßoŸ“`†w57ÏZ&<œn©A?ÁëÞß áDZÃž!fÝ@÷Q‰‘sî})ìŒBÓ6&Ìf¯Ã«uÏbgTï¢¹:üjœ
+ë¼hKjBP)ÕCsŸ%6¤ˆ;Î5ðèJçß–žò4*;4gzö¨K³HZXqpHEÀÁ+åq’Ý‘o]8ø¯ƒéj7€Ÿÿ‚’uRËª3Q²þry=Ú”©Aòs.à¾¦¼4IÆ~uä·Kv‹Üeð0Mù)ÜãxzÖW …Â”“«iHŠ‘µ¸ˆALŸZÎäÐ‹ŠV¨§£_Z©–åO‰ô ] wt)_:œ~l«UÁt9h"¸«Þ½!×¼¡¿G?1(ªú½ >¾ç gnIj´d~¨ö§7‹‡Fy‡NU-\{œÀEi°hïÛêA²k_8.3Ž‡Ö}aü0ò'µ:±L¶6×éåù"à‚÷YÝ·ŒƒÏuÅºÌž”iàO¹$iP"á]öëû®\áHªZË¥–6‡&±í×sÉ¡ÄýŠzžd’Rp0â<â<÷kOªüöÕ^ß2­¥Oüó³c~\;E¸Iì{b´ëêDßt.œHÆâW†øŠÏÀÓHúT¨ŽTÑìÈ$d0¿V"³$À!<u s°žË?IeöäçÐ¸BHOþö÷°vÅ¿Z±O€Ì„ßa¸ì°îŸèÙ|:HîõHj6WÉknÂ]²òEµ¹™®­@´z'ˆåÀ·”]jSã~NkØÒ†K„#J2eS¼|zjK±ïH=ÎÇ–’Ågÿ‚4šµ¶t~ã=¥`õ»!2$'+­ýö	"‡b÷4SÈ›Fb|ö XNÎ¬LOk^6žä%†3˜PÕâ¹¬,öÒJý$/2Y„	´ßqc'…W«$ÛË8lC¡À:h%„Y è6"®05ë¯*‰˜¹PÝ1²ÚÛe¡^žÃ(Ð¡h¯è°`%îdÞVu}\X;µ®ëÿûŸàþÎé¾—ëøŸéÖý£)þýÏáŸÿù×Zæû?ª¦ïÿýÏcíÿÏÿšÿï?ÿq6Åþý÷?aúßÿüÇ·lêïþ_¯þÎówøû«(«í¿^ÃÿÓñÿíä=âïœÿõzø/`ûÕÿùýqy'S 
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[29]=<<<'PACKAGER_GZIP'
+‹      ÕWks¢Hý¾¿‚!µU“—ÍCMLÄ©nPLL|ÇLÍÞ°‚$€¢nÍßnòR#“Ý­šMU}9}Ïés/WSý²ð=jn†‘Lš-04ÅêÔP½`j
+ô4 ¿Ô~«~’:âpÜ­SÑÜ¦º
+º¹)ú€/ %jp'Sl Þ¦)Ú‰ã‡ ’$)$|!m ‡êƒãêÀ@@€xÀÉX¶`Ä)HæÄ5b«`˜ßiÊ1]Û‰_VkYšÂ¢§‘ÁÃ1Cò>C.ž;dÙJ¥Ò§t­j˜VT«FñÒ3kà¨úé›(Á!üv
+>û§åzÞÅeY—?
+>ó¼Ä4x©³¯K¾¤ª$Â=GÊZÅL·èük¶È/€£ïßkG 
+žøªXƒ©†Ø Ã5§1åm‡X?+Ð¸.½,ŸVK¼bi"5x ËŠLl±‡NõÀB>P5M·,lážŒÜ@š¼YyB‚Mµª¯F“TŒîcB»VM=¦tO°ñ>®Áîb-0³Ìý’Z¾ÄâPFVúÞzjl~fNN¹ÃwÒq¹%n#©Å»Ä§Ü	“l ¦­[÷ï9Ç¹ï ü;øÏJÏÿréùðbz§üÒI)Ý¿µ7Ì»wŸÃ¥‡·Åiy	ö:PÊ$s¼žà}&|”M*ð4:mŠ,zzŸtÿð…–L¾ç¨îiR¿ÍD‡[òõ½·ÝNúsÛäÅc–éËŸ3ÿúDÚ±eO»fÉýPº¿>ýéØÃÌbøYÅØ4/LY§[¤œùð¤‹ŒI¼3?·ÖÀ;¶ì~Yr?ŽËJÇ~8»6š7ŠáÅ¤®¯Úæú[¼öj‡¦%Ð†«)
+<LíKMÌrñÄ½C~Â´d;€ø§=Pœºb“[…üi x‹/ô†ó	 Ù@C¥áÜÁÂA½¶R&†[gfgBc¥¾Púé3È>Úøw~Þ»J¯ €2- šKOêÕWc‚‘ŒÆuGI¤ëì.)¶ÓØý@é£;øÇ×1úõnW÷v]ÄO›°3†Èèq
+ã’'uÃ”©î5†“Á¬ç‹b¦SášSyÆô/c§ö®ÜÌ Òž<b[Ë£ùRRÖ,E <ŽšÇ«hÓRõïe˜Ä²E‘eteØÄÒ$‚	è[K.—¥žöfiž¦ÿ›¥EhÅÒ¬?öw)»RÆ­oÊKÇíqr+_;õ&D•9œ7&îf™¯KµŒ.ÍõQüË˜kfšëcS|wuP”5lpÇkaƒÝ^{¢®t\î(Úñ,!1õm •ä£+Äµ¾ÞÛŠ<f"äx¨lè-zíXk…çg©vtÝWJõprmÛ¶ ¼~Äÿ
+ÖþŠXÆlä  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[30]=<<<'PACKAGER_GZIP'
+‹      Õ—ûs¢HÇ¿¿‚eëª6q“|gÕ­@|EÅ×Öþ ÈCÍááÖþï7`²QO£›»«ÚKU„i¾ÓÝóé¦MÊŸCÛ"|ÍqçëU…¤nÓ$ázòj&[ë•V!Wkòsõò;¶Ã&]Žp}ƒèJ¨Ý`ò€Q†€°DÈÔ- 'izÞÃ AÜ™Ûµc Þ‘Ì¹ê,±oØEÝÎ¼‰CÄžƒùÌ3qéôŸ$ajsÃôžW;)R$“^¹•#qèt:û}’Ü…Ö|µ<&¤J¥Hž’ÕòLÓÝjÙõ"K«‚ëò»/ðË5¸µ©ïúÜ²îÞëºþéÇ­~Zâ0x©R?—™œ,ÇúÉ’WJZ²EÍüô@eéì§àúë×ê5(ƒm¼2ÎA“h6×V1ŸUHÃÁùS#¤“K´]ExE‘qªëb­ë®†ÅxbÃº¶ÖN…|/+Šªë$8ÐmAî)µŒVÚ*Á~Õ²-»Ë$ÕÆjÙÑTP-ÙÅàm\ƒÓÅâô	1ýJ"z¶yŽ¼rõµcWÈäÖ’=íCúã}õŠ;úâ•Døjàúc:	0"CÛE÷ï‘Ë¼Yyî ™WðŸ•>óÊó¥Ïœ<€å‘'ÓÏ½É%ûö:—î=G8÷Lø09åÒ g	äŽp.ðó¯GÂGÙ¶£Ó âe…|t¬ïUûê9l<ùž¬†su¦qâúí;º:H_=Ù{‡í¤>µÍ¥úL”¼üúßH'¶œi×cé¾ÉÝßŸJýwÔÕÑbØÇŠ±?hž#;]˜Ä¼L#<2‰Oú§wøÄ–3ÃïXºopGsG½Ùµ3š÷Šayq5æ¶lh»oñÎ«íhz…œÉž|—¨ÀÃÊø¤È®–Ï~œQ§¤[¼±†øGèK&'ñ­Ô¼ÇÄ?ŠˆŸ¡ÄAØæ»M$&²´œ1°UèÔ;ËØ0‘¸Pê%Ï õÍÀ¿~Ql$W @>u ê‘ÅŠÜfkØY­Ù‘öA/ƒ¬Ø¦}©‡†p1žÐ°¯Žx¿™ƒŸÖag‘	Ñ·ôrÛí’HœU,û¢Í0GI9;¤.Ó¿NåUœô£@IX~ÃXó#?b¥¤ä'n=µq÷‘fPoÊÃÀ3‘Á0ÔhÂ£ÆÌˆ‘.€XÔ#ú"¤–ò‚ô’/¦ÿÒ,Ô=ö±ç¯Ïwiw%[_ã#'Â$¸ç›&W‡¨äC¿¶¬Ñíè².UŽtéE_Å¿\í(\Cð½×UA–W0àŽÕÂ€ç¢°”wÇ Jå;’’zb›ü2Ð†µQÑ­ñÔøIÚE¦…jÈ€V(
+žÒrŠ…$wÔìI9ÎY6Ã¨Tž!o‰>q)¼À*ìÿÅ“=9€©íLxN5þ¨3	Nv³héf'#0ý¡Ø`àBÉJ Q*ºrc„3È5‚öª/1‹¬ž
+øBÄoü®°bÝ`fyÌ‡ÃNÞò©‡Ò˜j÷:!n_6`uÈZç[ƒ¥¶¢»)3‹Í¶R5ƒÍ6¡ù ²h ì7ò BrM8È6Ûtì—Øƒô<@JÏcŸ25ZkÉqŽÌ5Fãø,n´9£ÞÏŒÅøYwiq">“=Œ¬&,r)a1™²K‹Ÿ®¤ÑtÁ5…Á¤#ö§tÛ°ÌÖ˜ªÒ´ÇÚ9Ç_39^±rawf-†½Š¢Ù€’'2ECÐ‘šp„}iØéµrÌ¤ÑØ–ÿ—_ý§Ý‚}¿  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[31]=<<<'PACKAGER_GZIP'
+‹      Õ—ÛrÚH†ï÷)”qmUìØŒ€O@j$dŒ‰-[NåBètÀ’Œ€­¼ûÎÈ FñîVeMa1­º{¾n5EíãÌ÷¨©ÅnÔS¢'Z`h^˜u„àcãÚ»¦$Ô®HÅS›ê*ü§¶@ï9Âæ Iõ‡-Š)1Šw€N’L. LÓ´”r¥0²a+Ò&Ž«Ç!âM;c˜’‘ ‡ žS×HœMÿ	(Çtm'Y­ÖRd …“âzN–¦iâw)¹˜yn0Î2ççç0»5Ã´âF-NæžÙ€GµwŸ…& ÏG°ä3Y®ç]X–uù­äÓË%ƒ—úê.§•ÙÓÌÂ.-š¦™zfá–ÓâÎØòå7xôåKãÖàK¼ÎÁÔ"ÈpÍ ¡\£ìçÏÔ.ÆŒÍ.ó—Õ¯@R'ThY±‰<Äp¢‡^ÕÁI“€[ºJË /¢„›i4j¾³dt´µÈÔJ÷´ƒ÷qvn‰ébö”Ô|eK"-ˆ­0òë ûèi‰ùž>>a_qÇNq[IÍ^|ÂÓY`ˆAmÝ¿GŽ{³rß¸WðŸ•žûåþÒs;à%`gú•A*Ùþ­½QÑ½ûWV„·“°—@%7@T8À÷¼	e3|6E–uðyïtÿp–L¾¥ÕŽ÷4©ß¦£Ã­ôõ½·ÝNú²mŠê	˜yöðô¿>‘vlÙÓ®yé¾ÉÝÏƒOgþ;æ0·~^16Í*RÞéfYÌbzRŒYÎ$ÞéŸ]kà[ö¿¼tßàŽÍsÇ¼Ù³6š7Šá%¤®¯ÙæúS¼öhG¦U†–h™
+Nûr¤Åfµ|ìy©—Ò–"üw×WQ±ÉG…ü»âÑ-¾ðPLï‰oü@úÔê
+pæðr&[(cC@SéZÃHgJÜkN¼¥³ò¹v!„çt¥Ã–áýt*ÏÙi×Œ2'MãêFRRVÕøúÃ"&¶Ç¾Òã‡èëƒÊòŠ~äÁâÑVZñz$ñâOÇh!>~HnÈ$zWƒqÿYöPy¸¢5\EfõoÃÔÜË´úôœ¶0×è©ïW‘â8é×æÄ:¦å;u“+‡zªÒ…ÇÛÂí§·¼|ŠšNOGÜ­å°_'Å¸z£\‹|Eý_¸–—\Ï^¸Î÷=.ÂUR[©£ë	/§Ú\VoB[BB§ƒ˜‡GÙªêûu”Ó¯…¾™ÂãŸ“wS]Ñîðo0ÜÁg×"=z„v»“l
+ˆKÒ¡õp.õÕy–Lkì‰òPn3ìm¤‰ý„z®7S„f+0x{îÈvŠ:0o›£“mA}e(õ:Am·ëßi“Ÿˆ¿oòmü  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[32]=<<<'PACKAGER_GZIP'
+‹      Õ—ÛrÚH†ï÷)¥¶*61£ÛR£ƒˆT.„Ž€$°$#‰­¼ûÎHÀC¼»UY($Í¨§ûŸ¯[?Ç®C,?˜Ì½Ig)’BÕÓUgî%Ò›“ŸËß	m¾§tD"XZDGæšuž ¯ °< BO ºý*Agi ÄIv.î ˆ¢(±Ù¹oª¯.ì‰ d°!Z3šÎê¡N¢Øs4ÑC© ¨?IÂ6&–nG;i’@¢½ t CQö»1¹‹‰7;dHßÞÞ‚ô.Y.ê†”‹A˜8F\ß}áØƒ_.AÖ¥ÿ2'Žs÷Þ4ÍOß².µ¢0h¨mï²jŽ)¤3ÌfFUUCKgØÍŒa²7LîÓ7pùõkùÁ:^i0TÒ'†½DZ>ÒO—H”Œ˜IOÉz” Mb©ó17ÍÀ@€0<q¥Í¹_"ß~“à…Ýäž¥©ã7¶û2ÊEWf©ÍE­rÑ7´Ð5@à]”ƒãÉ/Œ©#ÆÌ/XÉv.ôU/0ç¾["ÓKGÔÇ+æâwÌÙ_Zñ«¯˜T D CÛE÷ï‘cßlyjì+øÏRÏþ‚åéÔ³G7à„äQùùAòéúkýs×ž"œß~)n|n€“òøgø¾ƒ×#¡­ì‡ëÖixX"Ÿ}çÃ{Í½Ø†Åo3kù'
+çoßÑÅùÚÑÚ{YNÚ¦lÎµÇ`’ôá?ÓÿnG:²äD¹’û&w?7>þîè‹ƒÉp%c¿Ñl#Ú]œÆ<Ï'#>Ð‰úgv
+øÈ’ÍïÜ7¸c¹£ßìŽÞiÍ{ÉpBœ‰«ZÆîS¼óhû†Y"u5TïR+°ð¬Oc50®s'}®ýQª5‡èÕêÊ¶([øRÆ‡
+Ð‰Ro9À\Uçz²a³ÚáAlsRj¶’g:…v­=ÃcYŒåG|OXðþ´or÷øÜ ÜRù“ƒåRJ˜eÇðS'‚^¹oË®• –YxnÔ•¹>œ†“µ”z«‘%Wƒ–Rƒmr6ä
+3¸G™px@Ñ©ôfÝgÉåy’8„ËßÁuN¯þm˜'™^?=GUÄÕêº×P¶íh‡«°0ý(×Rö¹²ðQqa´r8‹¿§Üè“
+Pà‘<²¦ÍLçquÆ?¸žóõášÛp½YsW›šÃµ­T!TÆµ'Ej")=¾Þ†|£éáH2¯µ3ëu| ^ÏúfþmÏ~"Œ?DuK»ÓCÿÁPßÔDjüÔó0m/˜ui7¤çæð¶ÝU’TLuæˆR_ªÓLËÒ£Ðz‚'–y¡êéœ•Ø’ÁÄ‡‘×éØ•ûíÇFžWêõÒwÚk´@…Ô
+û¿„rG3½noâšAO¹
+«iÃ´S¡l‹ï¢½ñp:ÎÉ µö¹‡¾8œ²ú*á$!ìMW6ªO'ô›Ëâ:ô¦×™•qM}yµ’f,XÂ4ßîE»EÖI3©@ašËt¼@]>Ë"º6Åë’¿”gÍiÁ`Ùä3&òëC¹T,î9XÞ0X?äêƒ!ÖtÑ¡)Zµ.;,Üà{qwÐ±œ‘$+Œ6T\Îul¥§¸#+ÇÕ¼|^ê˜º$r¯2Ò$nî7i–ÀÌ _Õ]'S‡T%
+VvNšC‘åá"ÍÅ8úé‰Á)DÿðË,×x»  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[33]=<<<'PACKAGER_GZIP'
+‹      ÍWisÚHý¾¿B‘k«‚F‡I‚ƒH„À`FœÊ¡cÑáH
+ÞÚÿ¾3Â`ado¶²ªM¯ûõ¼nµŠÚ—Ôs©…FNà4[fh*ŠußÔÝÀ·Úè/õ?jï}i8¹’©h¨«‘xÙ–(ú€1/Ð6(UkQl™@îÑ=‹ãÛ3 ’$)'|9h…úíÌ1"€€ ±ÀÁX¶lÆ&)HäÄ1ãÎ‚aþ¤©™å Yü`­¥ÈÒNÚ„Ža÷r–ºŽ?Ï²Õjd¿ÒõšiÙQ½ÅK×ªƒÃÚ»oRá·CPöØ¿lÇuÏlÛþüwÙcîMLƒMƒ}4ùŠ®“î~çÃ´jpøý{ýÔÀ*z3Zzˆå0Ë)ÇhâlYÆÒ§\v[®¬%¶Xš$ÜRmG–ƒˆA6NŒÀB>Ð§SÃ¶i°…[É¶´x«ºB‚Í4ê5OæY2†‡	Q½ZFL®a™=¬øîÒ€-0³Ì½I-öâP÷#;=Î–®[ï™ã®ôB8®pŠÛH*}‘ø„;f2b€%D´ué~rü›‘ûÀ¿p€ÿ¬ôü+ûKÏï<€Ó;Ó¯<‘T2ÿ-ß°¨ï>…+
+o'7-J°WJ.AX˜àñ/3á£lRÕ D1úgè¾?0¼Ò-™|÷»(,íiR¿Í@¥­ô½—×Nä(…ñl†çŠâõ‰´ÃeO»æ¥û¦pÏŸÁþ‹pl)·^^16ÍSÞéÒŒ³ žÍðÏ&ñ.<)FšÛUO.{†_^ºoÇå„3Ø7‡c×FóF1Ü˜TÃñtd­?ÅkvhÙmê±~–¡À­>OõÈúpzìhb_I˜‹
+ ¾zêh&YŽÈWS„]|Á`¸“È÷$U´%x3=ÙÔÄ®& |‚==ÀŸðq-¥§Ä?–›’I°"¯¨C·Í£€\ÒlÙ·³Àn¢6Ý;¼¸”qT)m‹LÌÌÉí(rs$uÜ›ISI'¢ØS9q Þ]#£ÑC°%ÃsH•…kv7‹¦Ž´¾rQ‘&í¶«Z¸¦Z‘‘ý{¤=wó¤­†þâÓøÚ^íuü9„©ŒÑR-ŽTâ'ù›2“KNÇçñ+¤V›½ù¤ƒ*_'±/_ˆÈïàd v˜ ‘~0'Å¤v§ORyyýŸ¥FPT²¶4žÞü*©—M 8»Sà¹¸8ïKƒeWGsØþa4nÙ›U)ØÕÓœ®.ôÿ=¢·ŸŽ!u$z+á'×`MøY›Ä»¸:Ò2‰.<¸ëÚ“;†<»6’LtlF*4/M{‘õ¬®ŽQƒÎõ„“úL u9ÂqKvåV7ÐZø3MÔ‘a)U's;Ê¨"‡óBHxŸü™¬ÿçµ£û&  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[34]=<<<'PACKAGER_GZIP'
+‹      Í–is¢X†¿Ï¯ éšªIìx%Æ´ÚÅæ..€[W@–ëÂ’Ð©ùïsÁ,š`bgzª‡*•{}ÏrŸs8ZùÛž¿r*Næ	óÕÑUËuŒ*î¸ø—Úo•|Ÿ“góCˆ¶Ûâ0ü
+€I€—yL702O ˆ8†/ƒàî€(ŠòQ!ïz4<õn¹Ò|€„ "#€œ‘d^t…H<G+=X¢,âw[+¸V)’8†’vüjFŠ ˆÄï½ä6¶VÎ&KH–Ëe~‹×*ºaúµŠl-£.+¾r<#3_/AÞ&ÿ2W–uûÑ4ÍÏçmâ~‰Â ¥F>.´ª&;ÔýÎõ¢l$&àòÛ·Ú%¨€½÷
+Šh¨Â¡¯'ÀVz‡Ê–¬â}L¥Ûýj‹V$ž$æÞa®iúÂ‘ÀH6®4×r½*þQ],4ÓÄÁ3ÝÛ‘Ò(å½§Q«Øª¿I“ÑlÖ*ž¡˜f©>Âl#â§Kž‰‰bê”Øöa/ðTÇ7]Ï®âé­¥ÆÄ§+êâwÔÙ)>Wbñ«¯¨OD D vˆîç‘+¼[ùÖ
+¯à?+}á”o—¾pò V€ŸLŸ~
+B§öÏl½smß"L?~žÜâÜ o 3xgx<Áë‘ÐQŽCý „X²¬âß=ëš}ñ6™|÷»Ð»x£q’ú;ºx–¾v²÷²Ú)9ÊÙz2ÕSçêµÃ‰tÂävÍJ÷]î^>üîÈ‹ÌbØYÅ84‘²N§1ÏÔ“©þÅ$>¥OŠgvÕ“ÉÃ/+Ýw¸£2Üiä»Ý‘£ù¨VTce«Ð8|ŠmÏ0«¸®êmªwü¼P}ãºøi5fû£ˆè4 Ë K””¥ ÀäVIÞê,ÓC,Êá$Ù`
+"'‡-ŽY/Š
+H•õ1ÛS À#ª.zy÷\\Lì¡Îé‰–-Œ$Ùê1z®’‹[nûfêØŠ¤ºµC7]yåâKd¤FV{$Ô®m­gõQ<cYQ¢Ø¡´›C!Ó˜&t9:c³—z“”qÔ¡¹Y«UÍ¤æP;gdÿ´M+mÙsÂ›ÉÜÜïµÃÄRs}æ¤ÄŽsŽ1'—OšÁ –êâfÖ†ôtÆ³}¡ÃBMØ1³!Û&\>Öw3‰ÎCm-žPŸóãõFv”z0¹Ébý³Poùœ1ìr7bšlØìsÃmO…¦õ§Æß‘ëRÙ&ÎìêEFWŸõ3þk ·^Ž¹0È±öülÀ/[‰¿Î 7Np…—àÁ®gÎRÓÖ„å\‹RèhéKŒÞÕÍ0íYURFì˜YÍg×ïØLÄÝ¡ÌLc¹'4zî¸1d¾Ç‘¤hÆ¨¼JMØöH¡oÓ†VáïIßó*=A,ÿ‹*žêä~¶¼³–¶-—bæwëŽ¹<…yA¦˜Y”ÝŠºŽ¤pë¢™‹#„â¶±&jIþ¦	9ý:«ñ¸í‰×¹»ò”ìŽúßcD–øR“á-E-yc8Ô ·,¢m{ruÈÛŒºÁÖ¢ °eaF Ä"[¢ÛŒ\lC;ÜšÈ/)Û2±Š#3¯‘OTœ:etÔ´œS¶5™öö¥JŸ—¦T˜–n’ïK¢3ÙqMçÄõlÎo¬ÆÜQ&óµÐåY(Í©.´–©0Ö”ùˆ·i–™
+úRh,,:¬Y½Ãñ½èfˆZD	†ÜMVÓ²Ÿ-?„µ Y)ŠZ  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[35]=<<<'PACKAGER_GZIP'
+‹      ÍWks¢Hý¾¿‚!µU“—Í#&cFœ¢&êjÆLÍÂ£!ò0Àfjÿûv“¸Qƒ‘ÉÎÖ,–B_Î½çö¹—KYÿ”ù5·¢Øf+MÅ‰˜º–@!ý©ñGýÜ—†“Ï
+Ïõy¯ÚEpÍK ÈC™ÒÆ-Š­° (=š¢$™¦i%å+a„@+ÒgŽkÄ b'€ƒ±lÅLLSÈ©k&Î‚aþ¤)Çr‘“,W+)²4…“b¡€‡c†Ä}‚œgžL‹€l­Vù]ºQ7-;nÔãdáYpP÷U’Å¡øõ T|ö‡ízÞùžmÛÿªøÌÓÓà¥±¼Ëë'ÜYnáž,º®[¶€ƒoß £×1£¥GXÓµ‚„rMFÎ–h,}Æå§ÅãjW,MgThÛ±…å bÃ±za$Ð{C>4ØÀ=Ê¶†´Mò!H°žF£îëñ4OÆð1!jÔ#ËH(ÃÓc,³ß^°f¶€¹Ÿ@R‹¥-‰ô ¶ÃÈèüÒÓë=stÌí¿Ž+â&’Ê^%>æŽ˜œ`‰ mUº_§ÿfä®ð¯là?+=ÿÈÝ¥ç·nÀKè­éWŸIª¹ÿ†oTÖw—ÂÕ¥Â›ÉÝ–%Ø©@µ *MðÏ^gÂ[Y§ƒQd)Ðß#ïýžáï/iÉä{²¢hGãú­ÚßHßØÚ{EíD¶RÏæx®,ÞXH[\v´kQºo
+÷rðì¿ÇîÃ/*Æú Y2í.Ë9KâÙÿboÃ“bd…]õì²cø¥û†p\A8ƒ}s8ve4¯ÃKH5\_GÖêS¼òhG–-Ð¦žèç9
+ÌôñV­Ó“#wûjÊ\¶P(â£§e„Èåˆü4¡ØÅ'Ãù51ˆ|OÒÆƒ¶$ÞÝžŒ@ŽlŽaw¬| |8"þÊËëK0BÎ|–c!¯jC¯+š‡g€’³èÛy`/ÕšÞ¾¸R0RÊÚIØC;yUiŽ¤Žw7iªÙÂžÆÁöpƒ¹‡Ä–"^ PªÎÕdlwóhÚhÜW/«Ò¤ÝhªH¶hE¶23û÷h{ái{xÅ’äÜt‰mvÅŠ-ˆb‹ñ†'÷ÄO
+Öu&‡’]_$?¡µÖìM'Tý2‘a_¹„ÈPÄÉ v˜PÎŒ œ^§%µönŸµ.óúúkÍ|h>i}çJw¿Jë…¬¢‰U¼€ó‹¾4Xtu4Û÷†<cïÎj>S¶¯oúºÔ›ü÷¨Þ~9=˜šmÃ¬×"ÊËÎl°T¾SÒqÒÜÚ7¹òüKåÁC×ž8mr»c(Î‘æªãe¬‰æ•iÏó®Õµ‘
+Ç¢{3á¤þ¥/¦¢u5Š×­ñ°«´ºá¸5¿g©62,µææ.°£ŽªJ4í „„gõÉÊÆß‡sÙº*  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[36]=<<<'PACKAGER_GZIP'
+‹      Í–ks¢H†¿ï¯`˜ÚªMœ¤¹hL2êx¿oSó µˆ€[ûß·ãFMœìlÍbE»›·Ï9ýœÃ!…/±ƒ¨•á3Ï-Òì%CSA¨¹Sy®Q¤]þRú­ðAêˆýñL+‹ºSa³&Rô C^@êKToP¡ØK ¹MS´†Ë[ ¢(ºŒøKÏ·@Å×–öL "Ä› 6Æ²—ÓpJcÄr4›†6Ž‚a~§)Û˜Yv¸í„ÈÒÚŠüpÃ»’ÛÍÜÅ!!{ssÒ»t©05Ì TÂ%p^øðU”„¾ðõ\:ìŸæ¡Û¦i~þëÒa§ØžêÛ»¼–åòé
+÷¸¢iš¡ãpþí[éÀÆz{44ã˜Î7¤fÓ"mù8Z¶Hcô1—þ$›Y‚g,Mó–”gšqdáB÷çéC>4x¦Û`ÛSšSò!J°F©àhÁ"Fw°C«Tð=¤t¤³ƒ‰Ox&fŽˆ¹PRÉv-ô570=ß)Òéi¡ñóé‚;{ÅwrˆÏ•Tüªãî“: ÐvÑý<rü»•o€å ÿYêùP¾zþèPH?÷ä$—î¶×?uï[„s[ÂÏƒ»?ÕÁ›rø';øç¯{ÂGÙw6Ò¢È´H?øèºs¶uK:ßãªåŸ½Q8$û†Îž…¯­½CåDŽr²žMõÜ©z}·#ÙòF¹
+÷]æ^6>ýæØ³ƒÉp%c¿Ñl=:]œú<QÏ¦úø˜ž$#>XUO[Þh~‡Â}‡9î€9}·9v§5ï%…$3G³ŒÝ§xçÑö³HOµP»MU`éZŸïµÀ¸Ê~š`§1Šå	øj÷T[V-2TÉW
+-üÒ_É‚À·ÅÞ@©‰Âü>«‚TYÀÖ@ ®¯WÀÒvÜ ‚Rœðqª…|·×G-ašÉr‰vÒ1SÃ(ê•Ñš2VŠq2!›é&TïÊeU¬£ù¸ÜÇ¶{Tzë‰¥KmK¨ÈBÕòÄÜªÌVj­§:ÝFN×jEš:„ÍßÁvJÏþ5l«èÛÌw?E{Ò"kË&+T [êg¿“}¢»Ï™\r<¬†?ÀºWn/Æu+7K°#7 ¥Ëka¬À:ãI±îz‹at"ktÿÄú”××ÿ˜5s]~d=GWâüg±N¤®5 ½î
+U¸ªvD%iiÖB¨}×¥%;Ïß8Ì©u} ®Oz“ÿêµ—Ýƒ¹1M·+„¼d/•-ù
+ŒHÅ‰«ÙÂœ¤äù—äÁºeŽí¹]×e{¢G)u<zÂ´95WiÕj=µÂl2æÄNÃ"Áh*}aXô[r¥å*ŠðG=U7º7³t¬wÕœì/ê–eŸèoP?Ë?QÌïÿ'•=ÚØÙM{yg=-\1å,­çÓ>Æy´á<ç§ë*RØŸ¯mL…~sÕ† rçW™5ŠîóqU¹ê(j'ÍX²¤y®Óv?É<J3)Ò<›¹smõ ÊxlH,éò5Å_©‹æ<oð‰„5¹Œ‰íúÁHÍ'e>«k.ÍÛÖ†£Ö&'é“Qíñ£ü5¹w'#YÁ±;Ã;MuÌé£±dûcgbeaÕÍå”Á„«)2,»å‰®@ÏoÊ"2Ã\eê LM`ÊQ°¶³Š'È¼(,³‘'Ç›v%£rÑ{PQLß§ÁÊ*ýË§é  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[37]=<<<'PACKAGER_GZIP'
+‹      å][sÛ¸~×Ìþv2[ÇP¦$Ëq¤ñì¶í´ûÒ}ÜÙP„$ÖÉTlG£ÿ^ÜHÄUN,»íî$‘ˆ8œœ’GW‚«ºMººZÕõU…jÔÔcü1øpõÃhÛì2ÉHÒ/ .a`Yf¨Eüo´j@º®àíl§`;Ûk°ƒí(Aœ«ûÏû¢A ¬€ Æqàª*ò§€I‚iÕ N7`•bÌªHHP’uÐ¬‹¿Û€4¯Á}œ€Ï 5Ü• ÞÁ,uS¥÷ˆüSäPïcü§M¾À
+Ä`R°Byƒ*à1$ ÈÀ>Y
+Ö)Ê,(&Rí@cL6C”' q†™e“9h¨ìÍº(ÐlÄíþ šä°ƒÕ&ÍÑ²Ä¢¤ùŠ‹*AþPì›,ÍþD¤ëô+ZL¢èÇåTaMÃ,„YºÉ1¬.c¸ºßTÅ>OMs¬è
+ó~¤²´Æc4OZäEŽŽ‚b?è¿õ°a×DòÏü_¡¡ka+Ì &Åø°X«}>,àªI¿ C'Èñ‡Ñ£+ÙVŠ,	ãªx¨QU‡°Ê±:Ë­mã¡,ê”èuãºÈöZ~Ó<A‹OíË¦(±Þ2´nð?iÒl™ê¶(ÝlöYP×»õz½\§–e³rß%Äõt÷)º\6è±áºfÆü)Ý•EÕÀ¼æf•JËîÒìi«fBãQ'Ù¨ìe«P‰ò¨$ÓùËU‘Õâ]E"¢×°j<G;íÀA9Šú(“l€wyÔÌ÷Žý3q…¢°¿>aq“¡Í>ƒÕÅ²®V‹}•½¿ ³4.·åOÄ`ª"ËPu×ü3±—"¿ƒ5öª?—°ÙÞµ´)Ý«÷ÅeUH_ÂŠÑÂ’Ä:FEsqùJ„z—¢uúxq…6ï/Ð.FI‚’°(±ý<•èâŒÎÌØC±^,±¯gç¢iD&šj^Iõ—Í;ÙL{¶p6Ñ3rÒ’q_çk(¹r´{Àoh—þ;ÕY\ ÆÄˆŸßt”ß†(œ½Ž(l¼š(œô~Ð«ÍH_Tìgs‚×q€·iüoÀðß†ÑÞËØ5¦®	‹p*¡f;}po	ŽÀ_Hdþ²/ˆõ89Ékì¦UºVƒ;1¸)¥G½Çñ*CGãäoÌ}³=Žw°ÆkHôñpÕÃs¬.9ƒ3üy÷MÐ–|:¦y¹ÇSF"_ÌÆýAŸ[ôÉJ—¿!öå‘ç,¹þôqÍ»àIišb·˜`‚8ŠO“ m·E’tÌ­Š
+Ò(™äËÕ¾ªñøe‘’ØüÛgH ò4ò4dÈ‡¯²NÃ«<“á’Lofñ§FIÄä.¾¤8¤GIÛ÷f6KlZ`í}¿Nšö{+UûýÙ¬yÖvhçn:ØÉŠøHLÒ}½˜DñÖ[˜‹(ˆ‚	îT›¾ ý|sÙÀ1IxÃ¸Éë¬€Í¢"æÜµ¶“ÖM&Ä
+£€0h]†m"½Ì¦å#(ÁÆº:„X#»úÐ'|Úö çÞ#]ÃgäB²GÒGÓ c*‡qÖ,ÖÊ­2‡cí%ÕHÄxØâ!žêY·*XÇ¨ªŠªæúîl#"Z¤M­­§SþûhVeƒ,¢ï„×˜¬Ï)O±eDÏHIZ—|ZÐó„åPß> ø90ê:¥9]Y_6Ï‰Ù5Ý.HaÅ~,¥È
+upn(³¨_%µ(ÆOd}íÌk ‰÷¸k>®QÞì„ôâvÎãó¦ygòsjòøƒJÛ|hÉUè‚±ÕZÂŠ¢MÑsÞK€Éw˜é¤GF#ê†„uHU½­©¬×òhœº(>éßÃÅÃã"(ãd
+~·cØ¢9²ƒøJ*s9ODª]Â<	y¬ÒPjÍíP·ÄÎÈªò´Xxº–²{ôŠVæ]•6â~ÙþÆh*Ým®(ÓWd¡7ãƒ0“ã]šY¤ÛÞ!ˆVë9·„éìLg7`z[Æç—Ç^)Lÿ@PSÀÌ\ºD¦‹¥‹5"žt‰-Kýè¬peÔž×jÙzýO1Â_®ðK‡á$±ãÏ‹‹¥ùprMèa± êäóÒÌVïÉv„Žë.ÛcJåºbï&óédÅ†t7èû¾›zeú~'1ü™¤?$õÄ~°OùgG•±íðâjl­ñŠ¼Ú›dîŠudjûp—À{î°-4Ó¹ëB÷faöñ.5k’ÞW1¶Ò‰7¶2×úã9î6bîvd­~ÄÿC¶CðE¬ääO!$¹µÑ[i…JÉÁÿä»ºõ·Añ@Ÿ¤0R¾4k7gq([õ´Ú¢Õ=^à$ \„ÅXN:$éC"zÈå¢ÈÀ7ÜƒÈ0ÉÇ–Ûüw¿þöÏ_°¬ã‹?‡˜{Oœ½»(À¬·osòõânÅv9¢QË5_²Ð™üãð’–ÉígO+cñ™³jëüK²AWŽž¢9H~E/´Úždû{ZámòÑ“†Öw4þ¶­Šòãv(Æ­@»êh&™Ê¨];Ã"¶$Ü=Ä_HÔ‰SÚ‡	©—!Û+ü¸¨µOÜñ^xó‘œeæö•uš¡N“×2®Ý„Ö—ð%ÁF„FÐf'Kr®wŸâÜ¤Äãã±Vìö6žâ«zñžX’z¹Ðt¯•kÃïƒs'“ŸÊ&ÚF®~ŽÙªWÜ^è=vã¢ði¬@Î†oä¹f˜Å‚q¶tñ-%öb•6VÎgEË“<|"x8Îg#ºÓåË²w"—²xâëù§¹¢–qœnªé!&õô“Šz„YM#„kTj“ææÊò+knÆ47;Isÿ/yB·Ñ¾vÑïX/—
+Òé¦LÔcv/D=P½‚-Z§_„XŒ@„MA™BÄÍBæÛ5ŒÞDD„ÉPŒÑ\ÄqLF#ñ«7b6 ~|3¢´<¬H°Ÿß+ôyLó:ÑÙÊíÈd¶äÆq{r‰M¹QÄ®Ü(f[N·/÷xÌÆ<d væ†Q[3ÀZ«ë›_gkÉŸ²’Ù$×®i¾<¬R]ç|Ñ:\û|±.kU×CO´‡åªk¤·„.+VÖM‡-sü¹-Z^K=sˆC·<{2º$o~å˜B¹$¥6/Ç#àêp^^|ëÉØwM†<‹êÕd·?Qs2yŠt*|y/pXšÞ^?9…0uHižŠ·ƒv3Ø†àO¹âK+­e£×£ì4yH`¥ØblôZŒ‹(¬Ä8ÄF‹Cì¤x8b¥ÕblÄZŒ‰fâŠìDHd%B6"`'Ââ'+±â+)|ÙHµ©b—ŠEnV©8Ä&‡8L„}v[ «1P„­tÂF‡!4tÚXM¿kQÆíZä'£¨åŒžo_ð!MÈ˜;%3èXÅé5­âLóªÍí<¨»v=Ö‡ûî Cº9píjêAÞºkh€>Äí;ˆé&ïÚM†²—íy	nÝ_†É¶YË^£À|ÈZ÷ÐMÚ±©Ç nâßa?RÏ<d¶îM —yYö)ça`Ö=K9ëð lÛ¿Tœec`ó^ÆÛ;o›ûK=Ûšö|ÑÔXgz#`=ONtx¯äÇ›#ådÔ'!òäFEû$Iž¬(`wâäÍˆr¢ë“Ly²¢¢Ý	–·Ýz+d u§_ž, ®”Ì›…áá¶GšæÉ†öIÝüQÁîíÓ[#Ã#yÏS#
+Ø#íóµÐÖ™
+zs1¸àN=¹b-›­ºcÜtjomã•Êo»Ñç›c:§ËÖã¤¼ó$Þü7hW¯²Ò“8ôÝ²í}üsÖ“˜óÜÄ­]NÈhOâÍw[·÷ñÍwOôˆ•æ¹Ý›o={æÅ'1å Øîq{gÍ'1æØn¨{çÔ§°æ$ØîÞ{çÝ'iÍ;l°<*à›•Ÿfüž„å©ßœý$¾N-†÷u]½O˜¡ ßf°!eù>÷—UÝðëŠ&øõ·#·|×Úv²!Þ}7	l:Ü‘ZßœðîSá“&ùmN  ÞœN	²õØíÂ­7¼@èlÅçù,¤±G;ìg:c=Éá{bÊž±ã-±“bXIqˆ‡ØIñgX¬´ZŒX‹ÑPcM*~]•_éü&¹‘íôLÙ8¦ÉûAÅ×Ùr*=ýÓ•V…º?£gÿfÒó(·ýŸÑµ»KþlâýÏÕY·H´WUónwýº7¨ÉzñáB¬"!¼Ä}­y+èˆåå¯ÔQa™ÁÚÒ²o­•Âk¯æb!Ë‹@L}ß8Ê’—c]LŽ‹ï> yíí;Éú]Ç2ŽpÒ{Wúg|‡Ï6º æôç“ùíÇkµü-}ß5m`–®,Ìžã%¯1’êÄšÂ¾¤ÆUœfd¢¶i’ \¬ÎÁ\B¸À_¦{U—Â_ÍŽÚ7à¢®FG8éjyœg•ýÖÒw'=BsbjXó2T@ŸƒØyE<Ï$:BÓ@Wùˆ{JÈ¼+{Ç¤Ú›¶`—øšéµðFýð½që»á“ºYž/›Þ'ù˜Š+GS<I[Ã°-D1’ªcIU–Ä"K£ö‚¡ÈKá´A%iZ¦ƒii_§5‹&â•¾´šV(ÛñƒÒ«Ç·å#c> m}ÕrV’5±›‚0scñõà3çÁH,êâ#ñŠH[‚Q„HDGr“Ž¶\ÑÂùb›¥H­viœa«…#TÃžëÇ.Þ?›<É8¦ªqÐr2}G!^k(	‘ŠgmlhßåÀæö/äÜ”Ëz\æ$OÒŠ0(¸ðÑ Y·J­Sú`XRgM;®Úy¯	¯h¼[ci-£©`8XnLÌZÆ¢ëï\]An\b˜ÇŒ´ÜM§NUÊöË­uf`Dp7Ñf@ïd ó,‡¢ç·sãD„žád‚Öš›Ü:íÊ©éÒLtqYäâMuªÌŸ;Qw¤vœ zU¥ô‡`ë´ª›°X‡ä0©­‘ÉL¯ïÅ÷3”ýž	Ãñ0kPhóøó%)ÞïàcÈÒœàY„/§ód¦ùîÈr0öùm§_m@¦œs±ig	1J€b !´ bHq†ß<ÙMWµ{Õ¼%+Öm–@Ÿ–Ôìã|ú•¥Þš’š}i5VN•)†e5Â{8lZ­QÌ«p‘³‚á‰Õ„iÉÛi[£Ü?èX±0R[Idš³ˆ÷Š‘Z[ ¶u@ÅKm!P±ôg[F[,ñª”E-N»òŸÊ/Q£ ¹Î¨%#ìÁÿHre(H+M[’¤¹ˆêª´J?%k½Ÿ¹‰û§¤þËµ›MíT1öZB]¾DªŽ›+ëÎ¢éÐ³åŸ7˜Î…Ÿ¸ZŠe÷F´œð-Yhz¶l	*FÃ)¼‰¡:ÌæsÐþ‰ÆÓ¡0£f{ž‹…²^½ê®JˆèVá†Ô2Å6ö^#æäh¯~ûïmø°i¶Zo°ÕT%' ÒWþ…W\•æ—ü ŸeÁ§BYÁige“ÖÌä!ÈÏypçæÇ3—Î ©ª'7SLnnð_·ø/bj’‘pFÇÝ7á_G>h’E…hMâe u%GvRG÷ZÐ‚Ôj¥væwVÒNjºt¿U~›Á4GCÜ °…ûŽŸr  
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[38]=<<<'PACKAGER_GZIP'
 ‹      ­[ësÛ¶–ÿÞ™þ2¦k“LËm·÷–«ë8I“4¯iÒ6­¬ÛI¢M‰^’òceýï{ÎÀ—h7Ý¹_D ƒÎÐÑ£ÑQY‰*ÎË£,Ê£0eé,Ó•s^Ž}ùÅ•(F§XéÇëUX¥ùÊÊì)„eo°Kà'°D‘¬—rU•¶—Æ+«"]%Ì÷«ÛK™Ç£`6™Û…¬Ö|è”¾óãÇ“ÉUR-¦Áìxîn¶¶‡£åª™ÑäêfÂÎ[±”å¥åÜgL×=_gÙ
 ê¡JuöôÁ©X¯"§+±=CHæPGC‹~õžëU9—E^åØ×	ÒUtwgÝÓÒ`"Z˜D€‰9qÄåevkU‹´¥+ {"ák\Ác'ÌW¡¨,é„"ËZÚö¶1„i-¦–bÖ‚ÙÕ¢È¯G+y=úµÏŠ"/,vÑ£ÃÑõBT# ¨*naƒFU>
 ä(È)¬]åÕ‰A&xÜ^éÏæN™¥¡ä±ß'•Û<ñ‘šéö÷­°yó»¶µÚôÐì[, œÓœðªJó£¬h‡~I#—µ^‡——VÓØzgüåj!‹´’ÐTvSÉT©'ãH\¦žŒÓÔÅ:¬òÂe­Æ‘ÿ\†¿ªL¼¨*¨È¸áF—™ãLIsM—2‹á~¿Àè2õd[³vœ¶ï‰\ˆ«4_þ†6öeü6¯žãf¹þæhUó§9¼,`WÝ¯i ÔG¹¼ÌD%}F¾™l´¶ j:6Õ}Bƒ	õHý	üfôÓoÒRÂÏœPœ@ŒGð–åÀáÐAï/ËƒsV^ûû{ ð«× ¥ûû‡Ç…³.eq’ p¬¼y¼ï¼}ö‘Ùûû;ŸGP'€{+7ÈÄê"gQÈªššKQ-p7¦{wïxk‹­Ë*_¦ÿ+?Ü®*qÓ¬$PK‰@ww°ò
@@ -3879,17 +4724,885 @@ J|%!V%Ò“ñ½‰šäLýé"Í" Ä¨–,ÂUÂ—FPµåhmæ›q…W -¶[þ~—?£ÛïM{áí¡…äëëÉ„#çQb
 ™þÉ‘>üïÜsûFàêÃX:õÕ7÷­ÕvÀ7úÏ(sÀ%`[×Iî;}xï˜¯@tþÆÒçûNçÖŸwÐ"uô:OµØ­:óO+‘Å{@ *A%ó~Ï]²ŒŸ¯d÷r‰whÉã4“ôŽäaž©Yô]ÎÞ„šoòÕØµóò¤0]ŠìW‘­¥…Ã×øçÁXoM7þ·ZM¦«½˜Y¿fnïùõYØAsíˆ·Egó¹Cùz­ê–æ6ºÆý¬5éÎ6_éç}aþmCÿ±	ãÏûà£ípÍž¬—+·ÙI>\•'¤òô³Fm}`»< ÓWÊâóHªÿGÔü!Èæx‹/¸M«©j[tu0Å;“EŽ—˜üò¶¬är_úçå!ÑV‚†8àêÌ×=À\ï:ÝÄŸmr‚+RE!NÂØóaú‘HW—ëJñ6á_3©jâ;•þÁäøëo¾ýïïþñÏïOžœ>}öü€çë
 :ø ÝM­¨ñoXéc3’Ñ×éxlonüººŽ¥¶§Æû4µA½uóÃ?|kïOn&Ïíq§éFUzÛ/4 j €ÀöþFkâå::  
 PACKAGER_GZIP;
-\Packager_Php_Wrapper::$Contents[29]=<<<'PACKAGER_GZIP'
+\Packager_Php_Wrapper::$Contents[39]=<<<'PACKAGER_GZIP'
+‹      A
+ƒ0E÷…ÞÁ®’ˆ${Å•mWí!ÄLèˆL$3ÁñîU·ÿ}ÞseáXzÁÁìž)’Ø‘‹Ò]/ÝÔ3Û;$ÐêDªZ_òõ;ú<AÕEbIy˜êiŒ¤Í*d;÷	H´i0hùÍƒ~!‹¹µ*“?µ^‚¥8æý·m¦Y|\l8jíÁÎîÿ}Ûc©   
+PACKAGER_GZIP;
+\Packager_Php_Wrapper::$Contents[40]=<<<'PACKAGER_GZIP'
 ‹      uQËNÃ0¼Wê?¤½Ä.ÅkƒAPÊ‰Ç…â’uëÊ±+{Ý‡ÿŽ7TH ÕÛÚÙ™‹IV¬P×Å:: X‡lRsS… îAi,'$ŸvsgúX£ó3mÚYÆ»må3å|dãêØ‚E±\ k¸;¼VËçªM2Ô”ó)eÚµ¼˜ÙÓ…»ÄU©¯L©Ïä%ï¨üƒ½é÷R+FwQ“7RÚ6°Q,oÀ BÎ¯Ï,‘¬ÆV£ü5
 ¼	ŸŸ»Är;ÛäŽ4Gµ³Jû–o=d³=ÜŒ9ï
 bãûÖ”EòÿÆK½ÍTe”_ýâåp0ò}ðÎž¸‡RÂ‹=‚mfO®‰¦'òÆ•bSùä!Oñ°§ýÉ<¦TH¶É¹…]FåÔGžŽOW4MÖÏMà7›#7ì	  
 PACKAGER_GZIP;
-\Packager_Php_Wrapper::$Contents[30]=<<<'PACKAGER_TEXT'
+\Packager_Php_Wrapper::$Contents[41]=<<<'PACKAGER_TEXT'
 <div id="mvccore-dumps"><div id="mvccore-dumps-items">%mvccoreDumps%</div><input id="mvccore-dumps-btn" type="button" value="Dumps(%mvccoreDumpsCount%)" /></div>
 <style>#mvccore-dumps{display:table;position:fixed;bottom:0;right:0;z-index:999999;margin:10px;overflow:auto;background:#e8e8e8;box-shadow:0 0 10px rgba(0,0,0,0.5);border-radius:5px;opacity:0;}#mvccore-dumps *{font-family:consolas,courier !important;}#mvccore-dumps-items .item{background:#fff;margin:5px 5px 0 5px;border-radius:3px;white-space:pre-wrap;}#mvccore-dumps-items .title{background:#888;color:#fff;font-weight:bold;padding:5px;margin:0;}#mvccore-dumps-items .value{padding:0 3px 0 3px;overflow:auto;}#mvccore-dumps-items .value pre{margin:0;}#mvccore-dumps-items .value small.file{display:block;font-size:10px;color:#888;}#mvccore-dumps input{font-weight:bold;float:right;margin:5px;padding:2px 7px 2px 10px;}#mvccore-dumps a.editor{position:relative;top:1px;font-size:8px;white-space:nowrap;display:block;}#mvccore-dumps-items pre.xdebug-var-dump{padding:0px 7px 7px 7px;</style>
 <script>(function(){var a=/MSIE [5-8]/g.test(navigator.userAgent),i="getElementById",j="style",o="height",y="width",r="block",s="auto",t="display",x="px",v=20,b=document,c=window,d=b[i]("mvccore-dumps"),e=b[i]("mvccore-dumps-items"),f=b[i]("mvccore-dumps-btn"),g=a?"attachEvent":"addEventListener",h=d[j],k=e[j],m=d.offsetHeight,w=d.offsetWidth,n=!1,z=localStorage||{},_="mvccoreDumpsVisible";function p(){if(n){var l=c.innerHeight-v,u=c.innerWidth-v;h.overflow=l>m&&u<w?"hidden":s;h[o]=Math.min(l,m)+x;h[y]=Math.min(u,w)+x}}function q(a){var x=typeof(a),g=x=="boolean",i=x=="undefined";if(g)n=a;if(!g&&!i){n=!n;z[_]=n};n?k[t]=r:(k[t]="none",h[o]=s,h[y]=s);p()}n=z?z[_]==="true":n;h[t]=r;c[g]("resize",p);f[g]("click",q);p();%mvccoreDumpsClose%h.opacity=1})();</script>
 PACKAGER_TEXT;
-\Packager_Php_Wrapper::$Contents[31]='';
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Application{
+
+/**
+ * Trait as partial class for `\MvcCore\Application`:
+ * - Main application objects container (request, response, controller, etc.).
+ * - MvcCore compile mode managing (single file mode, php, phar, or no package).
+ * - Global store for all main core class names, to use them as modules,
+ *   to be changed any time (request class, response class, debug class, etc.).
+ */
+trait GettersSetters
+{
+	/***********************************************************************************
+	 *                       `\MvcCore\Application` - Properties                       *
+	 ***********************************************************************************/
+
+	/**
+	 * Application instance for current request. Singleton instance storrage.
+	 * @var \MvcCore\Application
+	 */
+	protected static $instance;
+
+	/**
+	 * Describes if application is running as standard php project or as single file application.
+	 * It shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * @var string
+	 */
+	protected $compiled = NULL;
+
+	/**
+	 * Top most parent controller instance currently dispatched by application.
+	 * @var \MvcCore\Controller
+	 */
+	protected $controller = NULL;
+
+	/**
+	 * Request object - parsed uri, query params, app paths...
+	 * @var \MvcCore\Request
+	 */
+	protected $request = NULL;
+
+	/**
+	 * Response object - storrage for response headers and rendered body.
+	 * @var \MvcCore\Response
+	 */
+	protected $response = NULL;
+
+	/**
+	 * Application http router to route request and build url addresses.
+	 * @var \MvcCore\Router
+	 */
+	protected $router = NULL;
+
+
+	/**
+	 * Pre route custom closure calls storrage.
+	 * Every item in this array has to be array with `callable`
+	 * and `boolean` if `callable` is closure instance.
+	 * Params in callable should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreRouteHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @var \array[]
+	 */
+	protected $preRouteHandlers = array();
+
+	/**
+	 * Pre dispatch custom calls storrage.
+	 * Every item in this array has to be array with `callable`
+	 * and `boolean` if `callable` is closure instance.
+	 * Params in `callable` should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @var \array[]
+	 */
+	protected $preDispatchHandlers = array();
+
+	/**
+	 * Post dispatch custom calls storrage.
+	 * Every item in this array has to be array with `callable`
+	 * and `boolean` if `callable` is closure instance.
+	 * Params in `callable` should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPostDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @var \array[]
+	 */
+	protected $postDispatchHandlers = array();
+
+
+	/**
+	 * Class to load and parse (system) config(s) and manage environment string.
+	 * @var string
+	 */
+	protected $configClass = '\MvcCore\Config';
+
+	/**
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * @var string
+	 */
+	protected $controllerClass = '\MvcCore\Controller';
+
+	/**
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * @var string
+	 */
+	protected $debugClass = '\MvcCore\Debug';
+
+	/**
+	 * Class to create describing HTTP request object.
+	 * @var string
+	 */
+	protected $requestClass = '\MvcCore\Request';
+
+	/**
+	 * Class to create HTTP response object to store response headers and response content.
+	 * @var string
+	 */
+	protected $responseClass = '\MvcCore\Response';
+
+	/**
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * @var string
+	 */
+	protected $routeClass = '\MvcCore\Route';
+
+	/**
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * @var string
+	 */
+	protected $routerClass = '\MvcCore\Router';
+
+	/**
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * @var string
+	 */
+	protected $sessionClass = '\MvcCore\Session';
+
+	/**
+	 * Class to handle helper calls from MvcCore core modules.
+	 * @var string
+	 */
+	protected $toolClass = '\MvcCore\Tool';
+
+	/**
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * @var string
+	 */
+	protected $viewClass = '\MvcCore\View';
+
+
+	/**
+	 * Application scripts and views directory name as `"App"` by default,
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * @var string
+	 */
+	protected $appDir = 'App';
+
+	/**
+	 * Controllers directory name as `"Controllers"` by default, for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @var string
+	 */
+	protected $controllersDir = 'Controllers';
+
+	/**
+	 * Views directory name as `"views"` by default, for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @var string
+	 */
+	protected $viewsDir = 'Views';
+
+
+	/**
+	 * Default controller name, `"Index"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerName = 'Index';
+
+	/**
+	 * Default controller default action name, `"Index"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerDefaultActionName = 'Index';
+
+	/**
+	 * Default controller error action name, `"Error"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerErrorActionName = 'Error';
+
+	/**
+	 * Default controller not found error action name, `"NotFound"` by default.
+	 * @var string
+	 */
+	protected $defaultControllerNotFoundActionName = 'NotFound';
+
+
+	/***********************************************************************************
+	 *                        `\MvcCore\Application` - Getters                         *
+	 ***********************************************************************************/
+
+	/**
+	 * Get if application is running as standard php project or as single file application.
+	 * It shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * @return string
+	 */
+	public function GetCompiled () {
+		if ($this->compiled === NULL) {
+			$compiled = static::NOT_COMPILED;
+			if (strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Application/GettersSetters.php', 'phar://') === 0) {
+				$compiled = static::COMPILED_PHAR;
+			} else if (class_exists('\Packager_Php_Wrapper')) {
+				$compiled = constant('\Packager_Php_Wrapper::FS_MODE');
+			}
+			$this->compiled = $compiled;
+		}
+		return $this->compiled;
+	}
+
+
+	/**
+	 * Get application config class implementing `\MvcCore\Interfaces\IConfig`.
+	 * Class to load and parse (system) config(s) and manage environment string.
+	 * @return string
+	 */
+	public function GetConfigClass () {
+		return $this->configClass;
+	}
+
+	/**
+	 * Get application controller class implementing `\MvcCore\Interfaces\IController`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * @return string
+	 */
+	public function GetControllerClass () {
+		return $this->controllerClass;
+	}
+
+	/**
+	 * Get application debug class implementing `\MvcCore\Interfaces\IDebug`.
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * @return string
+	 */
+	public function GetDebugClass () {
+		return $this->debugClass;
+	}
+
+	/**
+	 * Get application request class implementing `\MvcCore\Interfaces\IRequest`.
+	 * Class to create describing HTTP request object.
+	 * @return string
+	 */
+	public function GetRequestClass () {
+		return $this->requestClass;
+	}
+
+	/**
+	 * Get application response class implementing `\MvcCore\Interfaces\IResponse`.
+	 * Class to create HTTP response object to store response headers and response content.
+	 * @return string
+	 */
+	public function GetResponseClass () {
+		return $this->responseClass;
+	}
+
+	/**
+	 * Get application route class implementing `\MvcCore\Interfaces\IRoute`.
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * @return string
+	 */
+	public function GetRouteClass () {
+		return $this->routeClass;
+	}
+
+	/**
+	 * Get application router class implementing `\MvcCore\Interfaces\IRouter`.
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * @return string
+	 */
+	public function GetRouterClass () {
+		return $this->routerClass;
+	}
+
+	/**
+	 * Get application session class implementing `\MvcCore\Interfaces\ISession`.
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * @return string
+	 */
+	public function GetSessionClass () {
+		return $this->sessionClass;
+	}
+
+	/**
+	 * Get application tool class implementing `\MvcCore\Interfaces\ITool`.
+	 * Class to handle helper calls from MvcCore core modules.
+	 * @return string
+	 */
+	public function GetToolClass () {
+		return $this->toolClass;
+	}
+
+	/**
+	 * Get application view class implementing `\MvcCore\Interfaces\IView`.
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * @return string
+	 */
+	public function GetViewClass () {
+		return $this->viewClass;
+	}
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::$router;`.
+	 * @return \MvcCore\Router
+	 */
+	public function & GetRouter () {
+		if ($this->router === NULL) {
+			$routerClass = $this->routerClass;
+			$this->router = $routerClass::GetInstance()->SetRequest($this->GetRequest());
+		}
+		return $this->router;
+	}
+
+	/**
+	 * Returns currently dispatched instance of protected `\MvcCore\Application::$controller;`.
+	 * @return \MvcCore\Controller
+	 */
+	public function & GetController () {
+		return $this->controller;
+	}
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::$request;`.
+	 * @return \MvcCore\Request
+	 */
+	public function & GetRequest () {
+		if ($this->request === NULL) {
+			$requestClass = $this->requestClass;
+			$this->request = $requestClass::GetInstance($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
+		}
+		return $this->request;
+	}
+
+	/**
+	 * Returns currently used instance of protected `\MvcCore\Application::response;`.
+	 * @return \MvcCore\Response
+	 */
+	public function & GetResponse () {
+		if ($this->response === NULL) {
+			$responseClass = $this->responseClass;
+			$this->response = $responseClass::GetInstance();
+		}
+		return $this->response;
+	}
+
+	/**
+	 * Get application scripts and views directory name as `"App"` by default,
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetAppDir () {
+		return $this->appDir;
+	}
+
+	/**
+	 * Get controllers directory name as `"Controllers"` by default, for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetControllersDir () {
+		return $this->controllersDir;
+	}
+
+	/**
+	 * Get views directory name as `"views"` by default, for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * @return string
+	 */
+	public function GetViewsDir () {
+		return $this->viewsDir;
+	}
+
+	/**
+	 * Returns array with:
+	 * - `0 => "index"` - Default controller name, from protected `\MvcCore\Application::$defaultControllerName`.
+	 * - `1 => "index"` - Default action name, from protected `\MvcCore\Application::$defaultControllerDefaultActionName`.
+	 * @return string[]
+	 */
+	public function GetDefaultControllerAndActionNames () {
+		return array($this->defaultControllerName, $this->defaultControllerDefaultActionName);
+	}
+
+
+	/***********************************************************************************
+	 *                        `\MvcCore\Application` - Setters                         *
+	 ***********************************************************************************/
+
+	/**
+	 * Set if application is running as standard php project or as single file application.
+	 * First param `$compiled` shoud has values from:
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
+	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
+	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
+	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
+	 * Core configuration method.
+	 * @param string $compiled
+	 * @return \MvcCore\Application
+	 */
+	public function & SetCompiled ($compiled = '') {
+		$this->compiled = $compiled;
+		return $this;
+	}
+
+
+	/**
+	 * Set application config class implementing `\MvcCore\Interfaces\IConfig`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * Core configuration method.
+	 * @param string $configClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetConfigClass ($configClass) {
+		return $this->setCoreClass($configClass, 'configClass', 'MvcCore\Interfaces\IConfig');
+	}
+
+	/**
+	 * Set application controller class implementing `\MvcCore\Interfaces\IController`.
+	 * Class to create default controller for request targeting views only
+	 * and to handle small assets inside packed application.
+	 * Core configuration method.
+	 * @param string $controllerClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetControllerClass ($controllerClass) {
+		return $this->setCoreClass($controllerClass, 'configClass', 'MvcCore\Interfaces\IController');
+	}
+
+	/**
+	 * Set application debug class implementing `\MvcCore\Interfaces\IDebug`.
+	 * Class to handle any application error to render the error in browser or log in HDD.
+	 * Core configuration method.
+	 * @param string $debugClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDebugClass ($debugClass) {
+		return $this->setCoreClass($debugClass, 'debugClass', 'MvcCore\Interfaces\IDebug');
+	}
+
+	/**
+	 * Set application request class implementing `\MvcCore\Interfaces\IRequest`.
+	 * Class to create describing HTTP request object.
+	 * Core configuration method.
+	 * @param string $requestClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetRequestClass ($requestClass) {
+		return $this->setCoreClass($requestClass, 'requestClass', 'MvcCore\Interfaces\IRequest');
+	}
+
+	/**
+	 * Set application response class implementing `\MvcCore\Interfaces\IResponse`.
+	 * Class to create HTTP response object to store response headers and response content.
+	 * Core configuration method.
+	 * @param string $responseClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetResponseClass ($responseClass) {
+		return $this->setCoreClass($responseClass, 'responseClass', 'MvcCore\Interfaces\IResponse');
+	}
+
+	/**
+	 * Set application route class implementing `\MvcCore\Interfaces\IRoute`.
+	 * Class to describe single route with match and replace pattern,
+	 * controller, action, params default values and params constraints.
+	 * Core configuration method.
+	 * @param string $routeClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetRouteClass ($routeClass) {
+		return $this->setCoreClass($routeClass, 'routerClass', 'MvcCore\Interfaces\IRoute');
+	}
+
+	/**
+	 * Set application router class implementing `\MvcCore\Interfaces\IRouter`.
+	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
+	 * Core configuration method.
+	 * @param string $routerClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetRouterClass ($routerClass) {
+		return $this->setCoreClass($routerClass, 'routerClass', 'MvcCore\Interfaces\IRouter');
+	}
+
+	/**
+	 * Set application session class implementing `\MvcCore\Interfaces\ISession`.
+	 * Class to configure session namespaces, session opening, writing and expirations.
+	 * Core configuration method.
+	 * @param string $sessionClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetSessionClass ($sessionClass) {
+		return $this->setCoreClass($sessionClass, 'sessionClass', 'MvcCore\Interfaces\ISession');
+	}
+
+	/**
+	 * Set application tool class implementing `\MvcCore\Interfaces\ITool`.
+	 * Class to handle helper calls from MvcCore core modules.
+	 * Core configuration method.
+	 * @param string $toolClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetToolClass ($toolClass) {
+		return $this->setCoreClass($toolClass, 'toolClass', 'MvcCore\Interfaces\ITool');
+	}
+
+	/**
+	 * Set application view class implementing `\MvcCore\Interfaces\IView`.
+	 * Class to prepare and render controller view, subviews and wrapper layout.
+	 * Core configuration method.
+	 * @param string $viewClass
+	 * @return \MvcCore\Application
+	 */
+	public function & SetViewClass ($viewClass) {
+		return $this->setCoreClass($viewClass, 'viewClass', 'MvcCore\Interfaces\IView');
+	}
+
+
+	/**
+	 * Set application scripts and views directory name (`"App"` by default),
+	 * where are following subdirectories by default:
+	 * - `/App/Controllers`
+	 * - `/App/Models`
+	 * - `/App/Views`
+	 * It should by refonfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $appDir
+	 * @return \MvcCore\Application
+	 */
+	public function & SetAppDir ($appDir) {
+		$this->appDir = $appDir;
+		return $this;
+	}
+
+	/**
+	 * Set controllers directory name (`"Controllers"` by default), for all controller classes,
+	 * it's placed directly in application directory by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $controllersDir
+	 * @return \MvcCore\Application
+	 */
+	public function & SetControllersDir ($controllersDir) {
+		$this->controllersDir = $controllersDir;
+		return $this;
+	}
+
+	/**
+	 * Set views directory name (`"views"` by default), for all view elements,
+	 * it's placed directly in application directory above by default.
+	 * It should by reconfigured to custom value in the very application beginning.
+	 * Core configuration method.
+	 * @param string $viewsDir
+	 * @return \MvcCore\Application
+	 */
+	public function & SetViewsDir ($viewsDir) {
+		$this->viewsDir = $viewsDir;
+		return $this;
+	}
+
+	/**
+	 * Set default controller name. `"Index"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerName ($defaultControllerName) {
+		$this->defaultControllerName = $defaultControllerName;
+		return $this;
+	}
+
+	/**
+	 * Set default controller default action name. `"Index"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultActionName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerDefaultActionName ($defaultActionName) {
+		$this->defaultControllerDefaultActionName = $defaultActionName;
+		return $this;
+	}
+
+	/**
+	 * Set default controller common error action name. `"Error"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerErrorActionName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerErrorActionName ($defaultControllerErrorActionName) {
+		$this->defaultControllerErrorActionName = $defaultControllerErrorActionName;
+		return $this;
+	}
+
+	/**
+	 * Set default controller not found error action name. `"Not Found"` value by default.
+	 * Core configuration method.
+	 * @param string $defaultControllerNotFoundActionName
+	 * @return \MvcCore\Application
+	 */
+	public function & SetDefaultControllerNotFoundActionName ($defaultControllerNotFoundActionName) {
+		$this->defaultControllerNotFoundActionName = $defaultControllerNotFoundActionName;
+		return $this;
+	}
+
+	/**
+	 * Add pre route handler into pre route handlers queue to process them after
+	 * every request has been completed into `\MvcCore\Request` describing object and before
+	 * every request will be routed by `\MvcCore\Router::Route();` call.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreRouteHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	public function & AddPreRouteHandler (callable $handler, $priorityIndex = NULL) {
+		if (!is_callable($handler)) throw new \InvalidArgumentException(
+			"[".__CLASS__."] Pre route handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
+		);
+		return $this->setHandler($this->preRouteHandlers, $handler, $priorityIndex);
+	}
+
+	/**
+	 * Add pre dispatch handler into pre dispatch handlers queue to process them after
+	 * every request has been routed by `\MvcCore\Router::Route();` call and before
+	 * every request will be dispatched by `\MvcCore\Controller::Dispatch();`, which triggers
+	 * methods `\MvcCore\Controller::Init();`, `\MvcCore\Controller::PreDispatch();` etc.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPreDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	public function & AddPreDispatchHandler (callable $handler, $priorityIndex = NULL) {
+		if (!is_callable($handler)) throw new \InvalidArgumentException(
+			"[".__CLASS__."] Pre dispatch handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
+		);
+		return $this->setHandler($this->preDispatchHandlers, $handler, $priorityIndex);
+	}
+
+	/**
+	 * Add post dispatch handler into post dispatch handlers queue to process them
+	 * before every request is terminated by `\MvcCore\Application::Terminate();`.
+	 * Every request terminated sooner has executed this post dispatch handlers queue.
+	 * Callable should be void and it's params should be two with following types:
+	 *	- `\MvcCore\Request`
+	 *	- `\MvcCore\Response`
+	 * Example:
+	 * `\MvcCore\Application::GetInstance()->AddPostDispatchHandler(function(
+	 *		\MvcCore\Request & $request,
+	 *		\MvcCore\Response & $response
+	 * ) {
+	 *		$request->customVar = 'custom_value';
+	 * });`
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	public function & AddPostDispatchHandler (callable $handler, $priorityIndex = NULL) {
+		if (!is_callable($handler)) throw new \InvalidArgumentException(
+			"[".__CLASS__."] Post dispatch handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
+		);
+		return $this->setHandler($this->postDispatchHandlers, $handler, $priorityIndex);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Application{
+
+//include_once(__DIR__.'/../Tools.php');
+
+/**
+ * Trait as partial class for `\MvcCore\Application`:
+ * - Helper methods for normal requests and error requests dispatching.
+ * - Helper methods for core classes configuration.
+ */
+trait Helpers
+{
+	/***********************************************************************************
+	 *                     `\MvcCore\Application` - Helper Methods                     *
+	 ***********************************************************************************/
+
+	/**
+	 * Check if default application controller (`\App\Controllers\Index` by default) has specific action.
+	 * If default controller has specific action - return default controller full name, else empty string.
+	 * @param string $actionName
+	 * @return string
+	 */
+	public function GetDefaultControllerIfHasAction ($actionName) {
+		$defaultControllerName = $this->CompleteControllerName($this->defaultControllerName);
+		if (class_exists($defaultControllerName) && method_exists($defaultControllerName, $actionName.'Action')) {
+			return $defaultControllerName;
+		}
+		return '';
+	}
+
+	/**
+	 * Complete standard MvcCore application controller full name in form:
+	 * `\App\Controllers\<$controllerNamePascalCase>`.
+	 * @param string $controllerNamePascalCase
+	 * @return string
+	 */
+	public function CompleteControllerName ($controllerNamePascalCase) {
+		$firstChar = substr($controllerNamePascalCase, 0, 1);
+		if ($firstChar == '\\') return str_replace('/', '\\', $controllerNamePascalCase);
+		return '\\' . implode('\\', array(
+			$this->appDir,
+			$this->controllersDir,
+			str_replace('/', '\\', $controllerNamePascalCase)
+		));
+	}
+
+	/**
+	 * Return `TRUE` if current request is default controller error action dispatching process.
+	 * @return bool
+	 */
+	public function IsErrorDispatched () {
+		$toolClass = $this->toolClass;
+		$defaultCtrlName = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
+		$errorActionName = $toolClass::GetDashedFromPascalCase($this->defaultControllerErrorActionName);
+		return $this->request->GetControllerName() == $defaultCtrlName &&
+			$this->request->GetActionName() == $errorActionName;
+	}
+
+	/**
+	 * Return `TRUE` if current request is default controller not found error action dispatching process.
+	 * @return bool
+	 */
+	public function IsNotFoundDispatched () {
+		$toolClass = $this->toolClass;
+		$defaultCtrlName = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
+		$errorActionName = $toolClass::GetDashedFromPascalCase($this->defaultControllerNotFoundActionName);
+		return $this->request->GetControllerName() == $defaultCtrlName &&
+			$this->request->GetActionName() == $errorActionName;
+	}
+
+	/**
+	 * Set core class name only if given class string implements
+	 * given core interface, else thrown an exception.
+	 * @param string $newCoreClassName
+	 * @param string $coreClassVar
+	 * @param string $coreClassInterface
+	 * @throws \Exception
+	 * @return \MvcCore\Application
+	 */
+	protected function & setCoreClass ($newCoreClassName, $coreClassVar, $coreClassInterface) {
+		if (call_user_func(array($this->toolClass, 'CheckClassInterface'), $newCoreClassName, $coreClassInterface))
+			$this->$coreClassVar = $newCoreClassName;
+		return $this;
+	}
+
+	/**
+	 * Set preroute, predispatch or post dispatche handler under specific priority index.
+	 * @param array $handlers Application handlers collection reference.
+	 * @param callable $handler
+	 * @param int|NULL $priorityIndex
+	 * @return \MvcCore\Application
+	 */
+	protected function & setHandler (array & $handlers, callable $handler, $priorityIndex = NULL) {
+		$reflection = new \ReflectionFunction($handler);
+		$isClosure = $reflection->isClosure();
+		if ($priorityIndex === NULL) {
+			$handlers[] = array($handler, $isClosure);
+		} else {
+			if (isset($handlers[$priorityIndex])) {
+				array_splice($handlers, $priorityIndex, 0, array($handler, $isClosure));
+			} else {
+				$handlers[$priorityIndex] = array($handler, $isClosure);
+			}
+		}
+		return $this;
+	}
+}
 }
 /**
  * MvcCore
@@ -5068,858 +6781,293 @@ trait Dispatching
  * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
  */
 
-namespace MvcCore\Application{
+namespace MvcCore\Interfaces{
+
+//include_once('IController.php');
 
 /**
- * Trait as partial class for `\MvcCore\Application`:
- * - Main application objects container (request, response, controller, etc.).
- * - MvcCore compile mode managing (single file mode, php, phar, or no package).
- * - Global store for all main core class names, to use them as modules,
- *   to be changed any time (request class, response class, debug class, etc.).
- */
-trait GettersSetters
-{
-	/***********************************************************************************
-	 *                       `\MvcCore\Application` - Properties                       *
-	 ***********************************************************************************/
-
-	/**
-	 * Application instance for current request. Singleton instance storrage.
-	 * @var \MvcCore\Application
-	 */
-	protected static $instance;
-
-	/**
-	 * Describes if application is running as standard php project or as single file application.
-	 * It shoud has values from:
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
-	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
-	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
-	 * @var string
-	 */
-	protected $compiled = NULL;
-
-	/**
-	 * Top most parent controller instance currently dispatched by application.
-	 * @var \MvcCore\Controller
-	 */
-	protected $controller = NULL;
-
-	/**
-	 * Request object - parsed uri, query params, app paths...
-	 * @var \MvcCore\Request
-	 */
-	protected $request = NULL;
-
-	/**
-	 * Response object - storrage for response headers and rendered body.
-	 * @var \MvcCore\Response
-	 */
-	protected $response = NULL;
-
-	/**
-	 * Application http router to route request and build url addresses.
-	 * @var \MvcCore\Router
-	 */
-	protected $router = NULL;
-
-
-	/**
-	 * Pre route custom closure calls storrage.
-	 * Every item in this array has to be array with `callable`
-	 * and `boolean` if `callable` is closure instance.
-	 * Params in callable should be two with following types:
-	 *	- `\MvcCore\Request`
-	 *	- `\MvcCore\Response`
-	 * Example:
-	 * `\MvcCore\Application::GetInstance()->AddPreRouteHandler(function(
-	 *		\MvcCore\Request & $request,
-	 *		\MvcCore\Response & $response
-	 * ) {
-	 *		$request->customVar = 'custom_value';
-	 * });`
-	 * @var \array[]
-	 */
-	protected $preRouteHandlers = array();
-
-	/**
-	 * Pre dispatch custom calls storrage.
-	 * Every item in this array has to be array with `callable`
-	 * and `boolean` if `callable` is closure instance.
-	 * Params in `callable` should be two with following types:
-	 *	- `\MvcCore\Request`
-	 *	- `\MvcCore\Response`
-	 * Example:
-	 * `\MvcCore\Application::GetInstance()->AddPreDispatchHandler(function(
-	 *		\MvcCore\Request & $request,
-	 *		\MvcCore\Response & $response
-	 * ) {
-	 *		$request->customVar = 'custom_value';
-	 * });`
-	 * @var \array[]
-	 */
-	protected $preDispatchHandlers = array();
-
-	/**
-	 * Post dispatch custom calls storrage.
-	 * Every item in this array has to be array with `callable`
-	 * and `boolean` if `callable` is closure instance.
-	 * Params in `callable` should be two with following types:
-	 *	- `\MvcCore\Request`
-	 *	- `\MvcCore\Response`
-	 * Example:
-	 * `\MvcCore\Application::GetInstance()->AddPostDispatchHandler(function(
-	 *		\MvcCore\Request & $request,
-	 *		\MvcCore\Response & $response
-	 * ) {
-	 *		$request->customVar = 'custom_value';
-	 * });`
-	 * @var \array[]
-	 */
-	protected $postDispatchHandlers = array();
-
-
-	/**
-	 * Class to load and parse (system) config(s) and manage environment string.
-	 * @var string
-	 */
-	protected $configClass = '\MvcCore\Config';
-
-	/**
-	 * Class to create default controller for request targeting views only
-	 * and to handle small assets inside packed application.
-	 * @var string
-	 */
-	protected $controllerClass = '\MvcCore\Controller';
-
-	/**
-	 * Class to handle any application error to render the error in browser or log in HDD.
-	 * @var string
-	 */
-	protected $debugClass = '\MvcCore\Debug';
-
-	/**
-	 * Class to create describing HTTP request object.
-	 * @var string
-	 */
-	protected $requestClass = '\MvcCore\Request';
-
-	/**
-	 * Class to create HTTP response object to store response headers and response content.
-	 * @var string
-	 */
-	protected $responseClass = '\MvcCore\Response';
-
-	/**
-	 * Class to describe single route with match and replace pattern,
-	 * controller, action, params default values and params constraints.
-	 * @var string
-	 */
-	protected $routeClass = '\MvcCore\Route';
-
-	/**
-	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
-	 * @var string
-	 */
-	protected $routerClass = '\MvcCore\Router';
-
-	/**
-	 * Class to configure session namespaces, session opening, writing and expirations.
-	 * @var string
-	 */
-	protected $sessionClass = '\MvcCore\Session';
-
-	/**
-	 * Class to handle helper calls from MvcCore core modules.
-	 * @var string
-	 */
-	protected $toolClass = '\MvcCore\Tool';
-
-	/**
-	 * Class to prepare and render controller view, subviews and wrapper layout.
-	 * @var string
-	 */
-	protected $viewClass = '\MvcCore\View';
-
-
-	/**
-	 * Application scripts and views directory name as `"App"` by default,
-	 * where are following subdirectories by default:
-	 * - `/App/Controllers`
-	 * - `/App/Models`
-	 * - `/App/Views`
-	 * It should by refonfigured to custom value in the very application beginning.
-	 * @var string
-	 */
-	protected $appDir = 'App';
-
-	/**
-	 * Controllers directory name as `"Controllers"` by default, for all controller classes,
-	 * it's placed directly in application directory by default.
-	 * It should by reconfigured to custom value in the very application beginning.
-	 * @var string
-	 */
-	protected $controllersDir = 'Controllers';
-
-	/**
-	 * Views directory name as `"views"` by default, for all view elements,
-	 * it's placed directly in application directory above by default.
-	 * It should by reconfigured to custom value in the very application beginning.
-	 * @var string
-	 */
-	protected $viewsDir = 'Views';
-
-
-	/**
-	 * Default controller name, `"Index"` by default.
-	 * @var string
-	 */
-	protected $defaultControllerName = 'Index';
-
-	/**
-	 * Default controller default action name, `"Index"` by default.
-	 * @var string
-	 */
-	protected $defaultControllerDefaultActionName = 'Index';
-
-	/**
-	 * Default controller error action name, `"Error"` by default.
-	 * @var string
-	 */
-	protected $defaultControllerErrorActionName = 'Error';
-
-	/**
-	 * Default controller not found error action name, `"NotFound"` by default.
-	 * @var string
-	 */
-	protected $defaultControllerNotFoundActionName = 'NotFound';
-
-
-	/***********************************************************************************
-	 *                        `\MvcCore\Application` - Getters                         *
-	 ***********************************************************************************/
-
-	/**
-	 * Get if application is running as standard php project or as single file application.
-	 * It shoud has values from:
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
-	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
-	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
-	 * @return string
-	 */
-	public function GetCompiled () {
-		if ($this->compiled === NULL) {
-			$compiled = static::NOT_COMPILED;
-			if (strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Application/GettersSetters.php', 'phar://') === 0) {
-				$compiled = static::COMPILED_PHAR;
-			} else if (class_exists('\Packager_Php_Wrapper')) {
-				$compiled = constant('\Packager_Php_Wrapper::FS_MODE');
-			}
-			$this->compiled = $compiled;
-		}
-		return $this->compiled;
-	}
-
-
-	/**
-	 * Get application config class implementing `\MvcCore\Interfaces\IConfig`.
-	 * Class to load and parse (system) config(s) and manage environment string.
-	 * @return string
-	 */
-	public function GetConfigClass () {
-		return $this->configClass;
-	}
-
-	/**
-	 * Get application controller class implementing `\MvcCore\Interfaces\IController`.
-	 * Class to create default controller for request targeting views only
-	 * and to handle small assets inside packed application.
-	 * @return string
-	 */
-	public function GetControllerClass () {
-		return $this->controllerClass;
-	}
-
-	/**
-	 * Get application debug class implementing `\MvcCore\Interfaces\IDebug`.
-	 * Class to handle any application error to render the error in browser or log in HDD.
-	 * @return string
-	 */
-	public function GetDebugClass () {
-		return $this->debugClass;
-	}
-
-	/**
-	 * Get application request class implementing `\MvcCore\Interfaces\IRequest`.
-	 * Class to create describing HTTP request object.
-	 * @return string
-	 */
-	public function GetRequestClass () {
-		return $this->requestClass;
-	}
-
-	/**
-	 * Get application response class implementing `\MvcCore\Interfaces\IResponse`.
-	 * Class to create HTTP response object to store response headers and response content.
-	 * @return string
-	 */
-	public function GetResponseClass () {
-		return $this->responseClass;
-	}
-
-	/**
-	 * Get application route class implementing `\MvcCore\Interfaces\IRoute`.
-	 * Class to describe single route with match and replace pattern,
-	 * controller, action, params default values and params constraints.
-	 * @return string
-	 */
-	public function GetRouteClass () {
-		return $this->routeClass;
-	}
-
-	/**
-	 * Get application router class implementing `\MvcCore\Interfaces\IRouter`.
-	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
-	 * @return string
-	 */
-	public function GetRouterClass () {
-		return $this->routerClass;
-	}
-
-	/**
-	 * Get application session class implementing `\MvcCore\Interfaces\ISession`.
-	 * Class to configure session namespaces, session opening, writing and expirations.
-	 * @return string
-	 */
-	public function GetSessionClass () {
-		return $this->sessionClass;
-	}
-
-	/**
-	 * Get application tool class implementing `\MvcCore\Interfaces\ITool`.
-	 * Class to handle helper calls from MvcCore core modules.
-	 * @return string
-	 */
-	public function GetToolClass () {
-		return $this->toolClass;
-	}
-
-	/**
-	 * Get application view class implementing `\MvcCore\Interfaces\IView`.
-	 * Class to prepare and render controller view, subviews and wrapper layout.
-	 * @return string
-	 */
-	public function GetViewClass () {
-		return $this->viewClass;
-	}
-
-	/**
-	 * Returns currently used instance of protected `\MvcCore\Application::$router;`.
-	 * @return \MvcCore\Router
-	 */
-	public function & GetRouter () {
-		if ($this->router === NULL) {
-			$routerClass = $this->routerClass;
-			$this->router = $routerClass::GetInstance()->SetRequest($this->GetRequest());
-		}
-		return $this->router;
-	}
-
-	/**
-	 * Returns currently dispatched instance of protected `\MvcCore\Application::$controller;`.
-	 * @return \MvcCore\Controller
-	 */
-	public function & GetController () {
-		return $this->controller;
-	}
-
-	/**
-	 * Returns currently used instance of protected `\MvcCore\Application::$request;`.
-	 * @return \MvcCore\Request
-	 */
-	public function & GetRequest () {
-		if ($this->request === NULL) {
-			$requestClass = $this->requestClass;
-			$this->request = $requestClass::GetInstance($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
-		}
-		return $this->request;
-	}
-
-	/**
-	 * Returns currently used instance of protected `\MvcCore\Application::response;`.
-	 * @return \MvcCore\Response
-	 */
-	public function & GetResponse () {
-		if ($this->response === NULL) {
-			$responseClass = $this->responseClass;
-			$this->response = $responseClass::GetInstance();
-		}
-		return $this->response;
-	}
-
-	/**
-	 * Get application scripts and views directory name as `"App"` by default,
-	 * where are following subdirectories by default:
-	 * - `/App/Controllers`
-	 * - `/App/Models`
-	 * - `/App/Views`
-	 * It should by refonfigured to custom value in the very application beginning.
-	 * @return string
-	 */
-	public function GetAppDir () {
-		return $this->appDir;
-	}
-
-	/**
-	 * Get controllers directory name as `"Controllers"` by default, for all controller classes,
-	 * it's placed directly in application directory by default.
-	 * It should by reconfigured to custom value in the very application beginning.
-	 * @return string
-	 */
-	public function GetControllersDir () {
-		return $this->controllersDir;
-	}
-
-	/**
-	 * Get views directory name as `"views"` by default, for all view elements,
-	 * it's placed directly in application directory above by default.
-	 * It should by reconfigured to custom value in the very application beginning.
-	 * @return string
-	 */
-	public function GetViewsDir () {
-		return $this->viewsDir;
-	}
-
-	/**
-	 * Returns array with:
-	 * - `0 => "index"` - Default controller name, from protected `\MvcCore\Application::$defaultControllerName`.
-	 * - `1 => "index"` - Default action name, from protected `\MvcCore\Application::$defaultControllerDefaultActionName`.
-	 * @return string[]
-	 */
-	public function GetDefaultControllerAndActionNames () {
-		return array($this->defaultControllerName, $this->defaultControllerDefaultActionName);
-	}
-
-
-	/***********************************************************************************
-	 *                        `\MvcCore\Application` - Setters                         *
-	 ***********************************************************************************/
-
-	/**
-	 * Set if application is running as standard php project or as single file application.
-	 * First param `$compiled` shoud has values from:
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHP`
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_PHAR`
-	 * - `\MvcCore\Interfaces\IApplication::COMPILED_SFU`
-	 * - `\MvcCore\Interfaces\IApplication::NOT_COMPILED`
-	 * Read more about every mode in interface: `\MvcCore\Interfaces\IApplication`.
-	 * Core configuration method.
-	 * @param string $compiled
-	 * @return \MvcCore\Application
-	 */
-	public function & SetCompiled ($compiled = '') {
-		$this->compiled = $compiled;
-		return $this;
-	}
-
-
-	/**
-	 * Set application config class implementing `\MvcCore\Interfaces\IConfig`.
-	 * Class to create default controller for request targeting views only
-	 * and to handle small assets inside packed application.
-	 * Core configuration method.
-	 * @param string $configClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetConfigClass ($configClass) {
-		return $this->setCoreClass($configClass, 'configClass', 'MvcCore\Interfaces\IConfig');
-	}
-
-	/**
-	 * Set application controller class implementing `\MvcCore\Interfaces\IController`.
-	 * Class to create default controller for request targeting views only
-	 * and to handle small assets inside packed application.
-	 * Core configuration method.
-	 * @param string $controllerClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetControllerClass ($controllerClass) {
-		return $this->setCoreClass($controllerClass, 'configClass', 'MvcCore\Interfaces\IController');
-	}
-
-	/**
-	 * Set application debug class implementing `\MvcCore\Interfaces\IDebug`.
-	 * Class to handle any application error to render the error in browser or log in HDD.
-	 * Core configuration method.
-	 * @param string $debugClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetDebugClass ($debugClass) {
-		return $this->setCoreClass($debugClass, 'debugClass', 'MvcCore\Interfaces\IDebug');
-	}
-
-	/**
-	 * Set application request class implementing `\MvcCore\Interfaces\IRequest`.
-	 * Class to create describing HTTP request object.
-	 * Core configuration method.
-	 * @param string $requestClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetRequestClass ($requestClass) {
-		return $this->setCoreClass($requestClass, 'requestClass', 'MvcCore\Interfaces\IRequest');
-	}
-
-	/**
-	 * Set application response class implementing `\MvcCore\Interfaces\IResponse`.
-	 * Class to create HTTP response object to store response headers and response content.
-	 * Core configuration method.
-	 * @param string $responseClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetResponseClass ($responseClass) {
-		return $this->setCoreClass($responseClass, 'responseClass', 'MvcCore\Interfaces\IResponse');
-	}
-
-	/**
-	 * Set application route class implementing `\MvcCore\Interfaces\IRoute`.
-	 * Class to describe single route with match and replace pattern,
-	 * controller, action, params default values and params constraints.
-	 * Core configuration method.
-	 * @param string $routeClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetRouteClass ($routeClass) {
-		return $this->setCoreClass($routeClass, 'routerClass', 'MvcCore\Interfaces\IRoute');
-	}
-
-	/**
-	 * Set application router class implementing `\MvcCore\Interfaces\IRouter`.
-	 * Class to store all routes, dispatch request by routes and generate url addresses by routes.
-	 * Core configuration method.
-	 * @param string $routerClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetRouterClass ($routerClass) {
-		return $this->setCoreClass($routerClass, 'routerClass', 'MvcCore\Interfaces\IRouter');
-	}
-
-	/**
-	 * Set application session class implementing `\MvcCore\Interfaces\ISession`.
-	 * Class to configure session namespaces, session opening, writing and expirations.
-	 * Core configuration method.
-	 * @param string $sessionClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetSessionClass ($sessionClass) {
-		return $this->setCoreClass($sessionClass, 'sessionClass', 'MvcCore\Interfaces\ISession');
-	}
-
-	/**
-	 * Set application tool class implementing `\MvcCore\Interfaces\ITool`.
-	 * Class to handle helper calls from MvcCore core modules.
-	 * Core configuration method.
-	 * @param string $toolClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetToolClass ($toolClass) {
-		return $this->setCoreClass($toolClass, 'toolClass', 'MvcCore\Interfaces\ITool');
-	}
-
-	/**
-	 * Set application view class implementing `\MvcCore\Interfaces\IView`.
-	 * Class to prepare and render controller view, subviews and wrapper layout.
-	 * Core configuration method.
-	 * @param string $viewClass
-	 * @return \MvcCore\Application
-	 */
-	public function & SetViewClass ($viewClass) {
-		return $this->setCoreClass($viewClass, 'viewClass', 'MvcCore\Interfaces\IView');
-	}
-
-
-	/**
-	 * Set application scripts and views directory name (`"App"` by default),
-	 * where are following subdirectories by default:
-	 * - `/App/Controllers`
-	 * - `/App/Models`
-	 * - `/App/Views`
-	 * It should by refonfigured to custom value in the very application beginning.
-	 * Core configuration method.
-	 * @param string $appDir
-	 * @return \MvcCore\Application
-	 */
-	public function & SetAppDir ($appDir) {
-		$this->appDir = $appDir;
-		return $this;
-	}
-
-	/**
-	 * Set controllers directory name (`"Controllers"` by default), for all controller classes,
-	 * it's placed directly in application directory by default.
-	 * It should by reconfigured to custom value in the very application beginning.
-	 * Core configuration method.
-	 * @param string $controllersDir
-	 * @return \MvcCore\Application
-	 */
-	public function & SetControllersDir ($controllersDir) {
-		$this->controllersDir = $controllersDir;
-		return $this;
-	}
-
-	/**
-	 * Set views directory name (`"views"` by default), for all view elements,
-	 * it's placed directly in application directory above by default.
-	 * It should by reconfigured to custom value in the very application beginning.
-	 * Core configuration method.
-	 * @param string $viewsDir
-	 * @return \MvcCore\Application
-	 */
-	public function & SetViewsDir ($viewsDir) {
-		$this->viewsDir = $viewsDir;
-		return $this;
-	}
-
-	/**
-	 * Set default controller name. `"Index"` value by default.
-	 * Core configuration method.
-	 * @param string $defaultControllerName
-	 * @return \MvcCore\Application
-	 */
-	public function & SetDefaultControllerName ($defaultControllerName) {
-		$this->defaultControllerName = $defaultControllerName;
-		return $this;
-	}
-
-	/**
-	 * Set default controller default action name. `"Index"` value by default.
-	 * Core configuration method.
-	 * @param string $defaultActionName
-	 * @return \MvcCore\Application
-	 */
-	public function & SetDefaultControllerDefaultActionName ($defaultActionName) {
-		$this->defaultControllerDefaultActionName = $defaultActionName;
-		return $this;
-	}
-
-	/**
-	 * Set default controller common error action name. `"Error"` value by default.
-	 * Core configuration method.
-	 * @param string $defaultControllerErrorActionName
-	 * @return \MvcCore\Application
-	 */
-	public function & SetDefaultControllerErrorActionName ($defaultControllerErrorActionName) {
-		$this->defaultControllerErrorActionName = $defaultControllerErrorActionName;
-		return $this;
-	}
-
-	/**
-	 * Set default controller not found error action name. `"Not Found"` value by default.
-	 * Core configuration method.
-	 * @param string $defaultControllerNotFoundActionName
-	 * @return \MvcCore\Application
-	 */
-	public function & SetDefaultControllerNotFoundActionName ($defaultControllerNotFoundActionName) {
-		$this->defaultControllerNotFoundActionName = $defaultControllerNotFoundActionName;
-		return $this;
-	}
-
-	/**
-	 * Add pre route handler into pre route handlers queue to process them after
-	 * every request has been completed into `\MvcCore\Request` describing object and before
-	 * every request will be routed by `\MvcCore\Router::Route();` call.
-	 * Callable should be void and it's params should be two with following types:
-	 *	- `\MvcCore\Request`
-	 *	- `\MvcCore\Response`
-	 * Example:
-	 * `\MvcCore\Application::GetInstance()->AddPreRouteHandler(function(
-	 *		\MvcCore\Request & $request,
-	 *		\MvcCore\Response & $response
-	 * ) {
-	 *		$request->customVar = 'custom_value';
-	 * });`
-	 * @param callable $handler
-	 * @param int|NULL $priorityIndex
-	 * @return \MvcCore\Application
-	 */
-	public function & AddPreRouteHandler (callable $handler, $priorityIndex = NULL) {
-		if (!is_callable($handler)) throw new \InvalidArgumentException(
-			"[".__CLASS__."] Pre route handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
-		);
-		return $this->setHandler($this->preRouteHandlers, $handler, $priorityIndex);
-	}
-
-	/**
-	 * Add pre dispatch handler into pre dispatch handlers queue to process them after
-	 * every request has been routed by `\MvcCore\Router::Route();` call and before
-	 * every request will be dispatched by `\MvcCore\Controller::Dispatch();`, which triggers
-	 * methods `\MvcCore\Controller::Init();`, `\MvcCore\Controller::PreDispatch();` etc.
-	 * Callable should be void and it's params should be two with following types:
-	 *	- `\MvcCore\Request`
-	 *	- `\MvcCore\Response`
-	 * Example:
-	 * `\MvcCore\Application::GetInstance()->AddPreDispatchHandler(function(
-	 *		\MvcCore\Request & $request,
-	 *		\MvcCore\Response & $response
-	 * ) {
-	 *		$request->customVar = 'custom_value';
-	 * });`
-	 * @param callable $handler
-	 * @param int|NULL $priorityIndex
-	 * @return \MvcCore\Application
-	 */
-	public function & AddPreDispatchHandler (callable $handler, $priorityIndex = NULL) {
-		if (!is_callable($handler)) throw new \InvalidArgumentException(
-			"[".__CLASS__."] Pre dispatch handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
-		);
-		return $this->setHandler($this->preDispatchHandlers, $handler, $priorityIndex);
-	}
-
-	/**
-	 * Add post dispatch handler into post dispatch handlers queue to process them
-	 * before every request is terminated by `\MvcCore\Application::Terminate();`.
-	 * Every request terminated sooner has executed this post dispatch handlers queue.
-	 * Callable should be void and it's params should be two with following types:
-	 *	- `\MvcCore\Request`
-	 *	- `\MvcCore\Response`
-	 * Example:
-	 * `\MvcCore\Application::GetInstance()->AddPostDispatchHandler(function(
-	 *		\MvcCore\Request & $request,
-	 *		\MvcCore\Response & $response
-	 * ) {
-	 *		$request->customVar = 'custom_value';
-	 * });`
-	 * @param callable $handler
-	 * @param int|NULL $priorityIndex
-	 * @return \MvcCore\Application
-	 */
-	public function & AddPostDispatchHandler (callable $handler, $priorityIndex = NULL) {
-		if (!is_callable($handler)) throw new \InvalidArgumentException(
-			"[".__CLASS__."] Post dispatch handler is not callable (handler: $handler, priorityIndex: $priorityIndex)."
-		);
-		return $this->setHandler($this->postDispatchHandlers, $handler, $priorityIndex);
-	}
-}
-}
-/**
- * MvcCore
+ * Core view:
+ * - Static storage for
+ *   - commonly used doctype
+ *   - common views extension
+ *   - common directories names containing view scripts
+ *   - common views helpers namespaces
+ * - It's possible to use this class for any controller, subcontroller or form.
+ * - View prerender preparing and rendering.
+ * - View helpers management on demand:
+ *   - Creating by predefined class namespaces.
+ *   - global static helpers instances storage and repeatable calling.
+ * - Views sub scripts relative path solving in:
+ *   `<?php $this->renderScript('./any-subdirectory/script-to-render.php'); ?>`
+ * - `Url()` - proxy method from `\MvcCore\Router` targeting to configured router.
+ * - `AssetUrl()` - proxy method from `\MvcCore\Controller`.
+ * - Magic calls:
+ *   - __call() - To handler any view helper, if no helper found - exception thrown.
+ *   - __set() - To set anything from controller to get it back in view.
+ *   - __get() - To get anything in view previously initialized from controller.
+ * - Optional direct code evaluation.
+ * - No special view language implemented.
+ *   - Why to use such stupid things, if we have configured `short_open_tags` by default? `<?=...?>`
  *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ * MvcCore view helpers:
+ * @method MvcCore\Ext\View\Helpers\Css Css($groupName = self::GROUP_NAME_DEFAULT) Get css helper instance by group name ("mvccore/ext-view-helper-assets").
+ * @method MvcCore\Ext\View\Helpers\Js Js($groupName = self::GROUP_NAME_DEFAULT) Get js helper instance by group name ("mvccore/ext-view-helper-assets").
+ * @method string FormatDateTime($dateTimeOrTimestamp = NULL, $dateTypeOrFormatMask = NULL, $timeType = NULL, $timeZone = NULL, $calendar = NULL) Format given datetime by `Intl` extension or by `strftime()` as fallback ("mvccore/ext-view-helper-formatdatetime").
+ * @method string FormatNumber($number = 0.0, $decimals = 0, $dec_point = NULL , $thousands_sep = NULL) ("mvccore/ext-view-helper-formatnumber")
+ * @method string FormatMoney($number = 0.0, $decimals = 0, $dec_point = NULL , $thousands_sep = NULL) ("mvccore/ext-view-helper-formatmoney")
  */
-
-namespace MvcCore\Application{
-
-//include_once(__DIR__.'/../Tools.php');
-
-/**
- * Trait as partial class for `\MvcCore\Application`:
- * - Helper methods for normal requests and error requests dispatching.
- * - Helper methods for core classes configuration.
- */
-trait Helpers
+interface IView
 {
-	/***********************************************************************************
-	 *                     `\MvcCore\Application` - Helper Methods                     *
-	 ***********************************************************************************/
+	/**
+	 * View output document type HTML4.
+	 * @var string
+	 */
+	const DOCTYPE_HTML4 = 'HTML4';
 
 	/**
-	 * Check if default application controller (`\App\Controllers\Index` by default) has specific action.
-	 * If default controller has specific action - return default controller full name, else empty string.
-	 * @param string $actionName
+	 * View output document type XHTML.
+	 * @var string
+	 */
+	const DOCTYPE_XHTML = 'XHTML';
+
+	/**
+	 * View output document type HTML5.
+	 * @var string
+	 */
+	const DOCTYPE_HTML5 = 'HTML5';
+
+	/**
+	 * Static initialization to complete
+	 * `static::$HelpersClassesNamespaces` by application configuration.
+	 * @return void
+	 */
+	public static function StaticInit ();
+
+	/**
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore\Controller::PreDispatch()`.
+	 * This is place where to customize any view creation process,
+	 * before it's created by MvcCore framework to fill and render it.
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public static function GetInstance ();
+
+	/**
+	 * Add view helpers classes namespace(s),
+	 * Example: `\MvcCore\View::AddHelpersClassNamespaces('\Any\Other\ViewHelpers\Place\', '...');`.
+	 * @param string $helperNamespace,... View helper classes namespace(s)
+	 * @return void
+	 */
+	public static function AddHelpersClassNamespaces (/*...$helperNamespace*/);
+
+	/**
+	 * Get view script full path by internal application configuration,
+	 * by `$typePath` param and by `$corectedRelativePath` param.
+	 * @param string $typePath Usually `"Layouts"` or `"Scripts"`.
+	 * @param string $corectedRelativePath
 	 * @return string
 	 */
-	public function GetDefaultControllerIfHasAction ($actionName) {
-		$defaultControllerName = $this->CompleteControllerName($this->defaultControllerName);
-		if (class_exists($defaultControllerName) && method_exists($defaultControllerName, $actionName.'Action')) {
-			return $defaultControllerName;
-		}
-		return '';
-	}
+	public static function GetViewScriptFullPath ($typePath = '', $corectedRelativePath = '');
 
 	/**
-	 * Complete standard MvcCore application controller full name in form:
-	 * `\App\Controllers\<$controllerNamePascalCase>`.
-	 * @param string $controllerNamePascalCase
+	 * Set controller instance.
+	 * @param \MvcCore\Interfaces\IController $controller
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public function & SetController (\MvcCore\Interfaces\IController & $controller);
+
+	/**
+	 * Get controller instance as reference.
+	 * @return \MvcCore\Interfaces\IController
+	 */
+	public function & GetController ();
+
+	/**
+	 * Set up all from given view object variables store into current store,
+	 * if there is any already existing key - overwrite it.
+	 * @param \MvcCore\Interfaces\IView $view
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public function & SetValues (\MvcCore\Interfaces\IView & $view);
+
+	/**
+	 * Return rendered controller/action template content as reference.
 	 * @return string
 	 */
-	public function CompleteControllerName ($controllerNamePascalCase) {
-		$firstChar = substr($controllerNamePascalCase, 0, 1);
-		if ($firstChar == '\\') return str_replace('/', '\\', $controllerNamePascalCase);
-		return '\\' . implode('\\', array(
-			$this->appDir,
-			$this->controllersDir,
-			str_replace('/', '\\', $controllerNamePascalCase)
-		));
-	}
+	public function & GetContent ();
 
 	/**
-	 * Return `TRUE` if current request is default controller error action dispatching process.
-	 * @return bool
+	 * Get currently rendered view file full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
 	 */
-	public function IsErrorDispatched () {
-		$toolClass = $this->toolClass;
-		$defaultCtrlName = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
-		$errorActionName = $toolClass::GetDashedFromPascalCase($this->defaultControllerErrorActionName);
-		return $this->request->GetControllerName() == $defaultCtrlName &&
-			$this->request->GetActionName() == $errorActionName;
-	}
+	public function GetCurrentViewFullPath ();
 
 	/**
-	 * Return `TRUE` if current request is default controller not found error action dispatching process.
-	 * @return bool
+	 * Get currently rendered view file directory full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
 	 */
-	public function IsNotFoundDispatched () {
-		$toolClass = $this->toolClass;
-		$defaultCtrlName = $toolClass::GetDashedFromPascalCase($this->defaultControllerName);
-		$errorActionName = $toolClass::GetDashedFromPascalCase($this->defaultControllerNotFoundActionName);
-		return $this->request->GetControllerName() == $defaultCtrlName &&
-			$this->request->GetActionName() == $errorActionName;
-	}
+	public function GetCurrentViewDirectory ();
 
 	/**
-	 * Set core class name only if given class string implements
-	 * given core interface, else thrown an exception.
-	 * @param string $newCoreClassName
-	 * @param string $coreClassVar
-	 * @param string $coreClassInterface
+	 * Get currently rendered parent view file full path.
+	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
+	 * method to render sub-view file (actual view file) or it could be any view file
+	 * from parent controller or if current controller has no parent controller,
+	 * it could be layout view script full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetParentViewFullPath ();
+
+	/**
+	 * Get currently rendered parent view file directory full path.
+	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
+	 * method to render sub-view file (actual view file) or it could be any view file
+	 * from parent controller or if current controller has no parent controller,
+	 * it could be layout view script full path.
+	 * If this method is called outside of rendering process, `NULL` is returned.
+	 * @return string|NULL
+	 */
+	public function GetParentViewDirectory ();
+
+	/**
+	 * Render controller/action template script and return it's result as reference.
+	 * @param string $relativePath
+	 * @return string
+	 */
+	public function & RenderScript ($relativePath = '');
+
+	/**
+	 * Render layout template script and return it's result as reference.
+	 * @param string $relativePath
+	 * @return string
+	 */
+	public function & RenderLayout ($relativePath = '');
+
+	/**
+	 * Render layout template script and return it's result
+	 * as reference with inner rendered content.
+	 * @param string $relativePatht.
+	 * @param string $content
+	 * @return string
+	 */
+	public function & RenderLayoutAndContent ($relativePath = '', $content = '');
+
+	/**
+	 * Render controller template and all necessary layout
+	 * templates and return rendered result as reference.
+	 * @param string $typePath
+	 * @param string $relativePath
 	 * @throws \Exception
-	 * @return \MvcCore\Application
+	 * @return string
 	 */
-	protected function & setCoreClass ($newCoreClassName, $coreClassVar, $coreClassInterface) {
-		if (call_user_func(array($this->toolClass, 'CheckClassInterface'), $newCoreClassName, $coreClassInterface))
-			$this->$coreClassVar = $newCoreClassName;
-		return $this;
-	}
+	public function & Render ($typePath = '', $relativePath = '');
 
 	/**
-	 * Set preroute, predispatch or post dispatche handler under specific priority index.
-	 * @param array $handlers Application handlers collection reference.
-	 * @param callable $handler
-	 * @param int|NULL $priorityIndex
-	 * @return \MvcCore\Application
+	 * Evaluate given code as PHP code by `eval()` in current view context,
+	 * any `$this` keyword will be used as current view context.
+	 * Returned result is content from output buffer as reference.
+	 * @param string $content
+	 * @return string
 	 */
-	protected function & setHandler (array & $handlers, callable $handler, $priorityIndex = NULL) {
-		$reflection = new \ReflectionFunction($handler);
-		$isClosure = $reflection->isClosure();
-		if ($priorityIndex === NULL) {
-			$handlers[] = array($handler, $isClosure);
-		} else {
-			if (isset($handlers[$priorityIndex])) {
-				array_splice($handlers, $priorityIndex, 0, array($handler, $isClosure));
-			} else {
-				$handlers[$priorityIndex] = array($handler, $isClosure);
-			}
-		}
-		return $this;
-	}
+	public function Evaluate ($content = '');
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
+
+	/**
+	 * Return asset path or single file mode url for small assets
+	 * handled by internal controller action `"Controller:Asset"`.
+	 * @param string $path
+	 * @return string
+	 */
+	public function AssetUrl ($path = '');
+
+	/**
+	 * Try to get view helper.
+	 * If view helper doesn't exist in global helpers store - create new helper instance.
+	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
+	 * @param string $helperName View helper method name in pascal case.
+	 * @throws \InvalidArgumentException If view doesn't exist in configured namespaces.
+	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed View helper instance.
+	 */
+	public function & GetHelper ($helperName);
+
+	/**
+	 * Set view helper for current template or for all templates globaly by default.
+	 * If view helper already exist in global helpers store - it's overwritten.
+	 * @param string $helperName View helper method name in pascal case.
+	 * @param \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed $instance View helper instance.
+	 * @param bool $forAllTemplates register this helper instance for all rendered views in the future.
+	 * @return \MvcCore\Interfaces\IView
+	 */
+	public function & SetHelper ($helperName, & $instance, $forAllTemplates = TRUE);
+
+	/**
+	 * Set any value into view context internal store
+	 * except system keys declared in `static::$originalyDeclaredProperties`.
+	 * @param string $name
+	 * @param mixed $value
+	 * @throws \Exception
+	 * @return bool
+	 */
+	public function __set ($name, $value);
+
+	/**
+	 * Get any value from view context internal store
+	 * except system keys declared in `static::$originalyDeclaredProperties`.
+	 * @param string $name
+	 * @throws \Exception
+	 * @return mixed
+	 */
+	public function __get ($name);
+
+	/**
+	 * Get if any value from view context internal store exists
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @return bool
+	 */
+	public function __isset ($name);
+
+	/**
+	 * Unset any value from view context internal store
+	 * except system keys declared in `static::$protectedProperties`.
+	 * @param string $name
+	 * @return void
+	 */
+	public function __unset ($name);
+
+	/**
+	 * Try to call view helper.
+	 * If view helper doesn't exist in global helpers store - create new helper instance.
+	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
+	 * Then call it's public method named in the same way as helper and return result
+	 * as it is, without any conversion. So then there could be called any other helper method if whole helper instance is returned.
+	 * @param string $method
+	 * @param mixed $arguments
+	 * @return string|mixed
+	 */
+	public function __call ($method, $arguments);
 }
 }
 /**
@@ -6353,306 +7501,6 @@ interface IController
  * MvcCore
  *
  * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
- */
-
-namespace MvcCore\Interfaces{
-
-//include_once('IController.php');
-
-/**
- * Core view:
- * - Static storage for
- *   - commonly used doctype
- *   - common views extension
- *   - common directories names containing view scripts
- *   - common views helpers namespaces
- * - It's possible to use this class for any controller, subcontroller or form.
- * - View prerender preparing and rendering.
- * - View helpers management on demand:
- *   - Creating by predefined class namespaces.
- *   - global static helpers instances storage and repeatable calling.
- * - Views sub scripts relative path solving in:
- *   `<?php $this->renderScript('./any-subdirectory/script-to-render.php'); ?>`
- * - `Url()` - proxy method from `\MvcCore\Router` targeting to configured router.
- * - `AssetUrl()` - proxy method from `\MvcCore\Controller`.
- * - Magic calls:
- *   - __call() - To handler any view helper, if no helper found - exception thrown.
- *   - __set() - To set anything from controller to get it back in view.
- *   - __get() - To get anything in view previously initialized from controller.
- * - Optional direct code evaluation.
- * - No special view language implemented.
- *   - Why to use such stupid things, if we have configured `short_open_tags` by default? `<?=...?>`
- *
- * MvcCore view helpers:
- * @method MvcCore\Ext\View\Helpers\Css Css($groupName = self::GROUP_NAME_DEFAULT) Get css helper instance by group name ("mvccore/ext-view-helper-assets").
- * @method MvcCore\Ext\View\Helpers\Js Js($groupName = self::GROUP_NAME_DEFAULT) Get js helper instance by group name ("mvccore/ext-view-helper-assets").
- * @method string FormatDateTime($dateTimeOrTimestamp = NULL, $dateTypeOrFormatMask = NULL, $timeType = NULL, $timeZone = NULL, $calendar = NULL) Format given datetime by `Intl` extension or by `strftime()` as fallback ("mvccore/ext-view-helper-formatdatetime").
- * @method string FormatNumber($number = 0.0, $decimals = 0, $dec_point = NULL , $thousands_sep = NULL) ("mvccore/ext-view-helper-formatnumber")
- * @method string FormatMoney($number = 0.0, $decimals = 0, $dec_point = NULL , $thousands_sep = NULL) ("mvccore/ext-view-helper-formatmoney")
- */
-interface IView
-{
-	/**
-	 * View output document type HTML4.
-	 * @var string
-	 */
-	const DOCTYPE_HTML4 = 'HTML4';
-
-	/**
-	 * View output document type XHTML.
-	 * @var string
-	 */
-	const DOCTYPE_XHTML = 'XHTML';
-
-	/**
-	 * View output document type HTML5.
-	 * @var string
-	 */
-	const DOCTYPE_HTML5 = 'HTML5';
-
-	/**
-	 * Static initialization to complete
-	 * `static::$HelpersClassesNamespaces` by application configuration.
-	 * @return void
-	 */
-	public static function StaticInit ();
-
-	/**
-	 * Return always new instance of staticly called class, no singleton.
-	 * Always called from `\MvcCore\Controller::PreDispatch()`.
-	 * This is place where to customize any view creation process,
-	 * before it's created by MvcCore framework to fill and render it.
-	 * @return \MvcCore\Interfaces\IView
-	 */
-	public static function GetInstance ();
-
-	/**
-	 * Add view helpers classes namespace(s),
-	 * Example: `\MvcCore\View::AddHelpersClassNamespaces('\Any\Other\ViewHelpers\Place\', '...');`.
-	 * @param string $helperNamespace,... View helper classes namespace(s)
-	 * @return void
-	 */
-	public static function AddHelpersClassNamespaces (/*...$helperNamespace*/);
-
-	/**
-	 * Get view script full path by internal application configuration,
-	 * by `$typePath` param and by `$corectedRelativePath` param.
-	 * @param string $typePath Usually `"Layouts"` or `"Scripts"`.
-	 * @param string $corectedRelativePath
-	 * @return string
-	 */
-	public static function GetViewScriptFullPath ($typePath = '', $corectedRelativePath = '');
-
-	/**
-	 * Set controller instance.
-	 * @param \MvcCore\Interfaces\IController $controller
-	 * @return \MvcCore\Interfaces\IView
-	 */
-	public function & SetController (\MvcCore\Interfaces\IController & $controller);
-
-	/**
-	 * Get controller instance as reference.
-	 * @return \MvcCore\Interfaces\IController
-	 */
-	public function & GetController ();
-
-	/**
-	 * Set up all from given view object variables store into current store,
-	 * if there is any already existing key - overwrite it.
-	 * @param \MvcCore\Interfaces\IView $view
-	 * @return \MvcCore\Interfaces\IView
-	 */
-	public function & SetValues (\MvcCore\Interfaces\IView & $view);
-
-	/**
-	 * Return rendered controller/action template content as reference.
-	 * @return string
-	 */
-	public function & GetContent ();
-
-	/**
-	 * Get currently rendered view file full path.
-	 * If this method is called outside of rendering process, `NULL` is returned.
-	 * @return string|NULL
-	 */
-	public function GetCurrentViewFullPath ();
-
-	/**
-	 * Get currently rendered view file directory full path.
-	 * If this method is called outside of rendering process, `NULL` is returned.
-	 * @return string|NULL
-	 */
-	public function GetCurrentViewDirectory ();
-
-	/**
-	 * Get currently rendered parent view file full path.
-	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
-	 * method to render sub-view file (actual view file) or it could be any view file
-	 * from parent controller or if current controller has no parent controller,
-	 * it could be layout view script full path.
-	 * If this method is called outside of rendering process, `NULL` is returned.
-	 * @return string|NULL
-	 */
-	public function GetParentViewFullPath ();
-
-	/**
-	 * Get currently rendered parent view file directory full path.
-	 * Parent view file could be any view file, where is called `$this->RenderScript(...);`
-	 * method to render sub-view file (actual view file) or it could be any view file
-	 * from parent controller or if current controller has no parent controller,
-	 * it could be layout view script full path.
-	 * If this method is called outside of rendering process, `NULL` is returned.
-	 * @return string|NULL
-	 */
-	public function GetParentViewDirectory ();
-
-	/**
-	 * Render controller/action template script and return it's result as reference.
-	 * @param string $relativePath
-	 * @return string
-	 */
-	public function & RenderScript ($relativePath = '');
-
-	/**
-	 * Render layout template script and return it's result as reference.
-	 * @param string $relativePath
-	 * @return string
-	 */
-	public function & RenderLayout ($relativePath = '');
-
-	/**
-	 * Render layout template script and return it's result
-	 * as reference with inner rendered content.
-	 * @param string $relativePatht.
-	 * @param string $content
-	 * @return string
-	 */
-	public function & RenderLayoutAndContent ($relativePath = '', $content = '');
-
-	/**
-	 * Render controller template and all necessary layout
-	 * templates and return rendered result as reference.
-	 * @param string $typePath
-	 * @param string $relativePath
-	 * @throws \Exception
-	 * @return string
-	 */
-	public function & Render ($typePath = '', $relativePath = '');
-
-	/**
-	 * Evaluate given code as PHP code by `eval()` in current view context,
-	 * any `$this` keyword will be used as current view context.
-	 * Returned result is content from output buffer as reference.
-	 * @param string $content
-	 * @return string
-	 */
-	public function Evaluate ($content = '');
-
-	/**
-	 * Generates url:
-	 * - By `"Controller:Action"` name and params array
-	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
-	 *   and routes has not controller name and action name defined inside).
-	 * - By route name and params array
-	 *	 (route name is key in routes configuration array, should be any string
-	 *	 but routes must have information about controller name and action name inside).
-	 * Result address (url string) should have two forms:
-	 * - Nice rewrited url by routes configuration
-	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
-	 *   and when first param is key in routes configuration array).
-	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
-	 *	 (when first param is not founded in routes configuration array).
-	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
-	 * @param array  $params						Optional, array with params, key is param name, value is param value.
-	 * @return string
-	 */
-	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
-
-	/**
-	 * Return asset path or single file mode url for small assets
-	 * handled by internal controller action `"Controller:Asset"`.
-	 * @param string $path
-	 * @return string
-	 */
-	public function AssetUrl ($path = '');
-
-	/**
-	 * Try to get view helper.
-	 * If view helper doesn't exist in global helpers store - create new helper instance.
-	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
-	 * @param string $helperName View helper method name in pascal case.
-	 * @throws \InvalidArgumentException If view doesn't exist in configured namespaces.
-	 * @return \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed View helper instance.
-	 */
-	public function & GetHelper ($helperName);
-
-	/**
-	 * Set view helper for current template or for all templates globaly by default.
-	 * If view helper already exist in global helpers store - it's overwritten.
-	 * @param string $helperName View helper method name in pascal case.
-	 * @param \MvcCore\Ext\View\Helpers\AbstractHelper|\MvcCore\Ext\View\Helpers\IHelper|mixed $instance View helper instance.
-	 * @param bool $forAllTemplates register this helper instance for all rendered views in the future.
-	 * @return \MvcCore\Interfaces\IView
-	 */
-	public function & SetHelper ($helperName, & $instance, $forAllTemplates = TRUE);
-
-	/**
-	 * Set any value into view context internal store
-	 * except system keys declared in `static::$originalyDeclaredProperties`.
-	 * @param string $name
-	 * @param mixed $value
-	 * @throws \Exception
-	 * @return bool
-	 */
-	public function __set ($name, $value);
-
-	/**
-	 * Get any value from view context internal store
-	 * except system keys declared in `static::$originalyDeclaredProperties`.
-	 * @param string $name
-	 * @throws \Exception
-	 * @return mixed
-	 */
-	public function __get ($name);
-
-	/**
-	 * Get if any value from view context internal store exists
-	 * except system keys declared in `static::$protectedProperties`.
-	 * @param string $name
-	 * @return bool
-	 */
-	public function __isset ($name);
-
-	/**
-	 * Unset any value from view context internal store
-	 * except system keys declared in `static::$protectedProperties`.
-	 * @param string $name
-	 * @return void
-	 */
-	public function __unset ($name);
-
-	/**
-	 * Try to call view helper.
-	 * If view helper doesn't exist in global helpers store - create new helper instance.
-	 * If helper already exists in global helpers store - do not create it again - use instance from the store.
-	 * Then call it's public method named in the same way as helper and return result
-	 * as it is, without any conversion. So then there could be called any other helper method if whole helper instance is returned.
-	 * @param string $method
-	 * @param mixed $arguments
-	 * @return string|mixed
-	 */
-	public function __call ($method, $arguments);
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
  * For the full copyright and license information, please view 
  * the LICENSE.md file that are distributed with this source code.
  *
@@ -6942,6 +7790,227 @@ interface IHelper
  * the LICENSE.md file that are distributed with this source code.
  *
  * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth\Interfaces{
+
+interface IUser
+{
+	public function GetId ();
+
+	public function & SetId ($id);
+
+	public function GetUserName ();
+
+	public function & SetUserName ($userName);
+
+	public function GetFullName ();
+
+	public function & SetFullName ($fullName);
+
+	public function GetPasswordHash ();
+
+	public function & SetPasswordHash ($passwordHash);
+
+	public function & GetRoles ();
+
+	public function & SetRoles ($roles = array());
+
+	public function & AddRole ($role);
+
+	public function & RemoveRole ($role);
+
+		/**
+	 * Try to get user model instance from
+	 * any place by session username record
+	 * if there is any or return null.
+	 * @return \MvcCore\Ext\Auth\User|null
+	 */
+	public static function SetUpUserBySession ();
+
+	/**
+	 * Get user instance if the username exists and hashed password is the same
+	 * @param string $username
+	 * @param string $password
+	 * @return \MvcCore\Ext\Auth\User|null
+	 */
+	public static function LogIn ($username = '', $password = '');
+
+	/**
+	 * Destroy user credentials in session storrage.
+	 * @return void
+	 */
+	public static function LogOut ();
+
+	/**
+	 * Get any password hash with salt by Auth extension configuration
+	 * @param string $password
+	 * @return string
+	 */
+	public static function EncodePasswordToHash ($password = '');
+
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth\Traits{
+
+trait User {
+
+	/** @var int */
+	protected $id = NULL;
+
+	/** @var string */
+	protected $userName = NULL;
+
+	/** @var string */
+	protected $fullName = NULL;
+
+	/** @var string */
+	protected $passwordHash = NULL;
+
+	/** @var \MvcCore\Session */
+	protected static $userSessionNamespace = NULL;
+
+
+
+	public function GetId () {
+		return $this->id;
+	}
+
+	public function & SetId ($id) {
+		$this->id = $id;
+		return $this;
+	}
+
+	public function GetUserName () {
+		return $this->userName;
+	}
+
+	public function & SetUserName ($userName) {
+		$this->userName = $userName;
+		return $this;
+	}
+
+	public function GetFullName () {
+		return $this->fullName;
+	}
+
+	public function & SetFullName ($fullName) {
+		$this->fullName = $fullName;
+		return $this;
+	}
+
+	public function GetPasswordHash () {
+		return $this->passwordHash;
+	}
+
+	public function & SetPasswordHash ($passwordHash) {
+		$this->passwordHash = $passwordHash;
+		return $this;
+	}
+
+
+	public static function SetUpUserBySession () {
+		$userSessionNamespace = static::getUserSessionNamespace();
+		if (isset($userSessionNamespace->userName)) {
+			return static::GetByUserName($userSessionNamespace->userName);
+		}
+		return NULL;
+	}
+
+	public static function LogIn ($userName = '', $password = '') {
+		$hashedPassword = static::EncodePasswordToHash($password);
+		$user = static::GetByUserName($userName);
+		if ($user && $user->passwordHash === $hashedPassword) {
+			static::getUserSessionNamespace()->userName = $user->userName;
+			return $user;
+		}
+		return NULL;
+	}
+
+	/**
+	 * Destroy user credentials in session storrage.
+	 * @return void
+	 */
+	public static function LogOut () {
+		static::getUserSessionNamespace()->Destroy();
+	}
+
+	public function & GetRoles () {
+		return $this;
+	}
+
+	public function & SetRoles ($roles = array()){
+		return $this;
+	}
+
+	public function & AddRole ($role){
+		return $this;
+	}
+
+	public function & RemoveRole ($role){
+		return $this;
+	}
+
+	/**
+	 * Get any password hash with salt by Auth extension configuration
+	 * @param string $password
+	 * @return string
+	 */
+	public static function EncodePasswordToHash ($password = '', $options = array()) {
+		if (!isset($options['salt'])) {
+			$configuredSalt = \MvcCore\Ext\Auth::GetInstance()->GetConfig()->passwordHashSalt;
+			if ($configuredSalt !== NULL) $options['salt'] = $configuredSalt;
+		}
+		if (isset($options['cost']) && ($options['cost'] < 4 || $options['cost'] > 31))
+			throw new \InvalidArgumentException(
+				'['.__CLASS__.'] Cost option has to be from `4` to `31`, `' . $options['cost'] . '` given.'
+			);
+		$result = password_hash($password, PASSWORD_BCRYPT, $options);
+		if ($result === FALSE || strlen($result) < 60) throw new \RuntimeException(
+			'['.__CLASS__.'] Hash computed by `password_hash()` is invalid.'
+		);
+		return $result;
+	}
+
+	/**
+	 * Get session to get/set/clear username,
+	 * if session is not started - start the session.
+	 * @return \MvcCore\Session
+	 */
+	protected static function & getUserSessionNamespace () {
+		if (static::$userSessionNamespace === NULL) {
+			$app = \MvcCore\Application::GetInstance();
+			$app->SessionStart(); // start session if not started or do nothing if session has been started already
+			$sessionClass = $app->GetSessionClass();
+			static::$userSessionNamespace = $sessionClass::GetNamespace(\MvcCore\Ext\Auth::class);
+			static::$userSessionNamespace->SetExpirationSeconds(
+				\MvcCore\Ext\Auth::GetInstance()->GetConfig()->expirationSeconds
+			);
+		}
+		return static::$userSessionNamespace;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
  * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
  */
 
@@ -7025,111 +8094,16 @@ interface ITool
 	public static function CheckClassInterface ($testClassName, $interfaceName);
 }
 }
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
- */
+namespace MvcCore\Ext\Auth\Interfaces{
 
-namespace MvcCore\Interfaces{
-
-//include_once(__DIR__.'/../Application.php');
-
-/**
- * Responsibility - reading config file(s), detecting environment in system config.
- * - Config file(s) reading:
- *   - Reading any `config.ini` file by relative path.
- *   - Parsing and typing ini data into `stdClass|array` by key types or typing
- *     ini values into `int|float|bool|string` for all other detected primitives.
- * - Environment management:
- *   - Simple environment name detection by comparing server and client ip.
- *   - Environment name detection by config records about computer name or ip.
- */
-interface IConfig
+interface ISignForm
 {
-	const ENVIRONMENT_DEVELOPMENT = 'development';
-	const ENVIRONMENT_BETA = 'beta';
-	const ENVIRONMENT_ALPHA = 'alpha';
-	const ENVIRONMENT_PRODUCTION = 'production';
-
-	/**
-	 * Return `TRUE` if environment is `"development"`.
-	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
-	 * @return bool
-	 */
-	public static function IsDevelopment ($autoloadSystemConfig = FALSE);
-
-	/**
-	 * Return `TRUE` if environment is `"beta"`.
-	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
-	 * @return bool
-	 */
-	public static function IsBeta ($autoloadSystemConfig = FALSE);
-
-	/**
-	 * Return `TRUE` if environment is `"alpha"`.
-	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
-	 * @return bool
-	 */
-	public static function IsAlpha ($autoloadSystemConfig = FALSE);
-
-	/**
-	 * Return `TRUE` if environment is `"production"`.
-	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
-	 * @return bool
-	 */
-	public static function IsProduction ($autoloadSystemConfig = FALSE);
-
-	/**
-	 * Get environment name as string,
-	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
-	 * @return string
-	 */
-	public static function GetEnvironment ();
-
-	/**
-	 * Set environment name as string,
-	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
-	 * @param string $environment
-	 * @return string
-	 */
-	public static function SetEnvironment ($environment = \MvcCore\Interfaces\IConfig::ENVIRONMENT_PRODUCTION);
-
-	/**
-	 * This is INTERNAL method.
-	 * Return always new instance of staticly called class, no singleton.
-	 * Always called from `\MvcCore\Config::GetSystem()` before system config is loaded.
-	 * This is place where to customize any config creation process,
-	 * before it's created by MvcCore framework.
-	 * @return \MvcCore\Config
-	 */
-	public static function & GetInstance ();
-
-	/**
-	 * Get system config ini file as `stdClass`es and `array`s,
-	 * placed by default in: `"/App/config.ini"`.
-	 * @return \stdClass|array|boolean
-	 */
-	public static function & GetSystem ();
-
-	/**
-	 * Load ini file and return parsed configuration or `FALSE` in failure.
-	 * - Second environment value setup:
-	 *   - Only if `$systemConfig` param is defined as `TRUE`.
-	 *   - By defined IPs or computer names in ini `[environments]` section.
-	 * - Load only sections for current environment name.
-	 * - Retype all `raw string` values into `array`, `float`, `int` or `boolean` types.
-	 * - Retype whole values level into `\stdClass`, if there are no numeric keys.
-	 * @param string $configPath
-	 * @param bool   $systemConfig
-	 * @return array|boolean
-	 */
-	public function & Load ($configPath = '');
+	public function & SetAction ($url = '');
+	public function & SetSuccessUrl ($url = '');
+	public function & SetErrorUrl ($url = '');
+	public function & SetTranslator (callable $translator = null);
+	public function Init ();
+	public function Submit ($rawParams = array());
 }
 }
 /**
@@ -7140,102 +8114,32 @@ interface IConfig
  * the LICENSE.md file that are distributed with this source code.
  *
  * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
  */
 
-namespace MvcCore\Interfaces{
+namespace MvcCore\Ext\Auth\Traits{
 
-/**
- * Responsibility - any devel and logging messages and exceptions printing and logging.
- * - Printing any variable in content body.
- * - Printing any variable in browser debug bar.
- * - Catched exceptions printing.
- * - Any variables and catched exceptions file logging.
- * - Time printing.
- */
-interface IDebug
+trait SignForm
 {
 	/**
-	 * Logging levels and file names.
-	 */
-	const
-		DEBUG = 'debug',
-		INFO = 'info',
-		WARNING = 'warning',
-		ERROR = 'error',
-		EXCEPTION = 'exception',
-		CRITICAL = 'critical',
-		JAVASCRIPT = 'javascript';
-
-	/**
-	 * Initialize debugging and logging, once only.
-	 * @param bool $forceDevelopmentMode If defined as `TRUE` or `FALSE`,
-	 *                                   debug mode will be set not by config but by this value.
+	 * Add success and error url which are used
+	 * to redirect user to success url or error url
+	 * after form is submitted.
 	 * @return void
 	 */
-	public static function Init ();
-
-	/**
-	 * Starts/stops stopwatch.
-	 * @param  string $name Time pointer name.
-	 * @return float        Elapsed seconds.
-	 */
-	public static function Timer ($name = NULL);
-
-	/**
-	 * Dumps information about any variable in readable format and return it.
-	 * In non-development mode - store dumped variable in `debug.log`.
-	 * @param  mixed  $value	Variable to dump.
-	 * @param  bool   $return	Return output instead of printing it.
-	 * @param  bool   $exit		`TRUE` for last dump call by `xxx();` method to dump and `exit;`.
-	 * @return mixed			Variable itself or dumped variable string.
-	 */
-	public static function Dump ($value, $return = FALSE, $exit = FALSE);
-
-	/**
-	 * Dump any variable with output buffering in browser debug bar.
-	 * In non-development mode - store dumped variable in `debug.log`.
-	 * Return printed variable as string.
-	 * @param  mixed	$value		Variable to dump.
-	 * @param  string	$title		Optional title.
-	 * @param  array	$options	Dumper options.
-	 * @return mixed				Variable itself.
-	 */
-	public static function BarDump ($value, $title = NULL, $options = array());
-
-	/**
-	 * Logs any message or exception with log datetime, in `*.log` file
-	 * by given log level, in configured logging directory.
-	 * @param  string|\Exception|\Throwable	$value
-	 * @param  string						$priority
-	 * @return string						Logging filename fullpath.
-	 */
-	public static function Log ($value, $priority = \MvcCore\Interfaces\IDebug::INFO);
-
-	/**
-	 * Sends given `$value` into FireLogger console.
-	 * @param	mixed	$value	Message to log.
-	 * @param	string	$priority	Priority.
-	 * @return	bool				Was successful?
-	 */
-	public static function FireLog ($value, $priority = \MvcCore\Interfaces\IDebug::DEBUG);
-
-	/**
-	 * Print catched exception in browser.
-	 * In non-development mode - store dumped exception in `exception.log`.
-	 * @param \Exception|\Error|\Throwable|array $exception
-	 * @param bool $exit
-	 * @return void
-	 */
-	public static function Exception ($exception, $exit = TRUE);
-
-	/**
-	 * Print all stored dumps at the end of sended response body as browser debug bar.
-	 * This function is called from registered shutdown handler by
-	 * `register_shutdown_function()` from `\MvcCore\Debug::initHandlers();`.
-	 * @return void
-	 */
-	public static function ShutdownHandler ();
+	protected function addSuccessAndErrorUrlHiddenControls () {
+		$cfg = \MvcCore\Ext\Auth::GetInstance()->GetConfig();
+		$this->AddField(new \MvcCore\Ext\Form\Hidden(array(
+			'name'			=> 'successUrl',
+			'value'			=> $cfg->signedInUrl,
+			'validators'	=> array('Url'),
+		)));
+		$this->AddField(new \MvcCore\Ext\Form\Hidden(array(
+			'name'			=> 'errorUrl',
+			'value'			=> $cfg->signErrorUrl,
+			'validators'	=> array('Url'),
+		)));
+	}
 }
 }
 /**
@@ -7787,6 +8691,687 @@ interface IRequest
 	 * @return bool
 	 */
 	public function IsAjax ();
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+/**
+ * Responsibility - any devel and logging messages and exceptions printing and logging.
+ * - Printing any variable in content body.
+ * - Printing any variable in browser debug bar.
+ * - Catched exceptions printing.
+ * - Any variables and catched exceptions file logging.
+ * - Time printing.
+ */
+interface IDebug
+{
+	/**
+	 * Logging levels and file names.
+	 */
+	const
+		DEBUG = 'debug',
+		INFO = 'info',
+		WARNING = 'warning',
+		ERROR = 'error',
+		EXCEPTION = 'exception',
+		CRITICAL = 'critical',
+		JAVASCRIPT = 'javascript';
+
+	/**
+	 * Initialize debugging and logging, once only.
+	 * @param bool $forceDevelopmentMode If defined as `TRUE` or `FALSE`,
+	 *                                   debug mode will be set not by config but by this value.
+	 * @return void
+	 */
+	public static function Init ();
+
+	/**
+	 * Starts/stops stopwatch.
+	 * @param  string $name Time pointer name.
+	 * @return float        Elapsed seconds.
+	 */
+	public static function Timer ($name = NULL);
+
+	/**
+	 * Dumps information about any variable in readable format and return it.
+	 * In non-development mode - store dumped variable in `debug.log`.
+	 * @param  mixed  $value	Variable to dump.
+	 * @param  bool   $return	Return output instead of printing it.
+	 * @param  bool   $exit		`TRUE` for last dump call by `xxx();` method to dump and `exit;`.
+	 * @return mixed			Variable itself or dumped variable string.
+	 */
+	public static function Dump ($value, $return = FALSE, $exit = FALSE);
+
+	/**
+	 * Dump any variable with output buffering in browser debug bar.
+	 * In non-development mode - store dumped variable in `debug.log`.
+	 * Return printed variable as string.
+	 * @param  mixed	$value		Variable to dump.
+	 * @param  string	$title		Optional title.
+	 * @param  array	$options	Dumper options.
+	 * @return mixed				Variable itself.
+	 */
+	public static function BarDump ($value, $title = NULL, $options = array());
+
+	/**
+	 * Logs any message or exception with log datetime, in `*.log` file
+	 * by given log level, in configured logging directory.
+	 * @param  string|\Exception|\Throwable	$value
+	 * @param  string						$priority
+	 * @return string						Logging filename fullpath.
+	 */
+	public static function Log ($value, $priority = \MvcCore\Interfaces\IDebug::INFO);
+
+	/**
+	 * Sends given `$value` into FireLogger console.
+	 * @param	mixed	$value	Message to log.
+	 * @param	string	$priority	Priority.
+	 * @return	bool				Was successful?
+	 */
+	public static function FireLog ($value, $priority = \MvcCore\Interfaces\IDebug::DEBUG);
+
+	/**
+	 * Print catched exception in browser.
+	 * In non-development mode - store dumped exception in `exception.log`.
+	 * @param \Exception|\Error|\Throwable|array $exception
+	 * @param bool $exit
+	 * @return void
+	 */
+	public static function Exception ($exception, $exit = TRUE);
+
+	/**
+	 * Print all stored dumps at the end of sended response body as browser debug bar.
+	 * This function is called from registered shutdown handler by
+	 * `register_shutdown_function()` from `\MvcCore\Debug::initHandlers();`.
+	 * @return void
+	 */
+	public static function ShutdownHandler ();
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once(__DIR__.'/../Application.php');
+
+/**
+ * Responsibility - reading config file(s), detecting environment in system config.
+ * - Config file(s) reading:
+ *   - Reading any `config.ini` file by relative path.
+ *   - Parsing and typing ini data into `stdClass|array` by key types or typing
+ *     ini values into `int|float|bool|string` for all other detected primitives.
+ * - Environment management:
+ *   - Simple environment name detection by comparing server and client ip.
+ *   - Environment name detection by config records about computer name or ip.
+ */
+interface IConfig
+{
+	const ENVIRONMENT_DEVELOPMENT = 'development';
+	const ENVIRONMENT_BETA = 'beta';
+	const ENVIRONMENT_ALPHA = 'alpha';
+	const ENVIRONMENT_PRODUCTION = 'production';
+
+	/**
+	 * Return `TRUE` if environment is `"development"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsDevelopment ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Return `TRUE` if environment is `"beta"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsBeta ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Return `TRUE` if environment is `"alpha"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsAlpha ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Return `TRUE` if environment is `"production"`.
+	 * @param bool $autoloadSystemConfig If `TRUE`, environment will be detected by loaded system config.
+	 * @return bool
+	 */
+	public static function IsProduction ($autoloadSystemConfig = FALSE);
+
+	/**
+	 * Get environment name as string,
+	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
+	 * @return string
+	 */
+	public static function GetEnvironment ();
+
+	/**
+	 * Set environment name as string,
+	 * defined by constants: `\MvcCore\Interfaces\IConfig::ENVIRONMENT_<environment>`.
+	 * @param string $environment
+	 * @return string
+	 */
+	public static function SetEnvironment ($environment = \MvcCore\Interfaces\IConfig::ENVIRONMENT_PRODUCTION);
+
+	/**
+	 * This is INTERNAL method.
+	 * Return always new instance of staticly called class, no singleton.
+	 * Always called from `\MvcCore\Config::GetSystem()` before system config is loaded.
+	 * This is place where to customize any config creation process,
+	 * before it's created by MvcCore framework.
+	 * @return \MvcCore\Config
+	 */
+	public static function & GetInstance ();
+
+	/**
+	 * Get system config ini file as `stdClass`es and `array`s,
+	 * placed by default in: `"/App/config.ini"`.
+	 * @return \stdClass|array|boolean
+	 */
+	public static function & GetSystem ();
+
+	/**
+	 * Load ini file and return parsed configuration or `FALSE` in failure.
+	 * - Second environment value setup:
+	 *   - Only if `$systemConfig` param is defined as `TRUE`.
+	 *   - By defined IPs or computer names in ini `[environments]` section.
+	 * - Load only sections for current environment name.
+	 * - Retype all `raw string` values into `array`, `float`, `int` or `boolean` types.
+	 * - Retype whole values level into `\stdClass`, if there are no numeric keys.
+	 * @param string $configPath
+	 * @param bool   $systemConfig
+	 * @return array|boolean
+	 */
+	public function & Load ($configPath = '');
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+//include_once('IRequest.php');
+//include_once('IRoute.php');
+
+/**
+ * Responsibility - singleton, routes instancing, request routing and url building.
+ * - Application router singleton instance managing.
+ * - Global storage for all configured routes.
+ *	 - Instancing all route(s) from application start
+ *	   configuration somewhere in `Bootstrap` class.
+ * - Global storage for currently matched route.
+ * - Matching proper route object in `\MvcCore\Router::Route();`
+ *   by `\MvcCore\Request::$Path`, always called from core in
+ *   `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+ * - Application url addresses completing:
+ *   - Into `mod_rewrite` form by configured route instances.
+ *   - Into `index.php?` + query string form, containing
+ *     `controller`, `action` and all other params.
+ */
+interface IRouter
+{
+	/**
+	 * Get singleton instance of `\MvcCore\Router` stored always here.
+	 * Optionaly set routes as first argument.
+	 * Create proper router instance type at first time by
+	 * configured class name in `\MvcCore\Application` singleton.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
+	 *													 keys are route names or route
+	 *													 `Controller::Action` definitions.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public static function & GetInstance ($routes = array());
+
+	/**
+	 * Clear all possible previously configured routes
+	 * and set new given request routes again.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
+	 *													 keys are route names or route
+	 *													 `Controller::Action` definitions.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & SetRoutes ($routes = array());
+
+	/**
+	 * Append or prepend new request routes.
+	 * If there is no name configured in route array configuration,
+	 * set route name by given `$routes` array key, if key is not numeric.
+	 *
+	 * Routes could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		"Products:List"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		'products_list'	=> array(
+	 *			"pattern"			=> "/products-list/<name>/<color>",
+	 *			"controllerAction"	=> "Products:List",
+	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *		)
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		new Route(
+	 *			"/products-list/<name>/<color>",
+	 *			"Products:List",
+	 *			array("name" => "default-name",	"color" => "red"),
+	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *		)
+	 *	);`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
+	 *		new Route(
+	 *			"name"			=> "products_list",
+	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *			"reverse"		=> "/products-list/<name>/<color>",
+	 *			"controller"	=> "Products",
+	 *			"action"		=> "List",
+	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *		)
+	 *	);`
+	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
+	 *											 keys are route names or route
+	 *											 `Controller::Action` definitions.
+	 * @param bool $prepend Optional, if `TRUE`, all given routes will
+	 *						be prepended from the last to the first in
+	 *						given list, not appended.
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & AddRoutes (array $routes = array(), $prepend = FALSE);
+
+	/**
+	 * Append or prepend new request route.
+	 * Set up route by route name into `\MvcCore\Router::$routes` array
+	 * to route incoming request and also set up route by route name and
+	 * by `Controller:Action` combination into `\MvcCore\Router::$urlRoutes`
+	 * array to build url addresses.
+	 *
+	 * Route could be defined in various forms:
+	 * Example:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
+	 *		"name"		=> "Products:List",
+	 *		"pattern"	=> "/products-list/<name>/<color>",
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
+	 *		"name"				=> "products_list",
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 *	));`
+	 * or:
+	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 *	));`
+	 * @param \MvcCore\Interfaces\IRoute|array $route Route instance or
+	 *												  route config array.
+	 * @param bool $prepend
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & AddRoute ($route, $prepend = FALSE);
+
+	/**
+	 * Get all configured route(s) as `\MvcCore\Route` instances.
+	 * Keys in returned array are route names, values are route objects.
+	 * @return \MvcCore\Interfaces\IRoute[]
+	 */
+	public function & GetRoutes ();
+
+	/**
+	 * Get `\MvcCore\Request` object as reference, used internally for:
+	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
+	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
+	 * @return \MvcCore\Interfaces\IRequest
+	 */
+	public function & GetRequest ();
+
+	/**
+	 * Sets up `\MvcCore\Request` object as reference to use it internally for:
+	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
+	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
+	 * This is INTERNAL, not TEMPLATE method, internally called in
+	 * `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+	 * @param \MvcCore\Interfaces\IRequest $request
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & SetRequest (\MvcCore\Interfaces\IRequest & $request);
+
+	/**
+	 * Set matched route instance for given request object
+	 * into `\MvcCore\Route::Route($request);` method. Currently
+	 * matched route is always assigned internally in that method.
+	 * @param \MvcCore\Interfaces\IRoute $currentRoute
+	 * @return \MvcCore\Interfaces\IRouter
+	 */
+	public function & SetCurrentRoute (\MvcCore\Interfaces\IRoute $currentRoute);
+
+	/**
+	 * Get matched route instance reference for given request object
+	 * into `\MvcCore\Route::Route($request);` method. Currently
+	 * matched route is always assigned internally in that method.
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & GetCurrentRoute ();
+
+	/**
+	 * Get `TRUE` if request has to be automaticly dispatched as default
+	 * `Index:Index` route, if there was no route matching current request.
+	 * Default protected property value: `FALSE`.
+	 * @param bool $enable
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function GetRouteToDefaultIfNotMatch ();
+
+	/**
+	 * Set `TRUE` if request has to be automaticly dispatched as default
+	 * `Index:Index` route, if there was no route matching current request.
+	 * Default protected property value: `FALSE`.
+	 * @param bool $enable
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & SetRouteToDefaultIfNotMatch ($enable = TRUE);
+
+	/**
+	 * Route current application request by configured routes list or by query string data.
+	 * - If there is strictly defined `controller` and `action` value in query string,
+	 *   route request by given values, add new route and complete new empty
+	 *   `\MvcCore\Router::$currentRoute` route with `controller` and `action` values from query string.
+	 * - If there is no strictly defined `controller` and `action` value in query string,
+	 *   go throught all configured routes and try to find matching route:
+	 *   - If there is catched any matching route:
+	 *     - Set up `\MvcCore\Router::$currentRoute`.
+	 *     - Reset `\MvcCore\Request::$params` again with with default route params,
+	 *       with request params itself and with params parsed from matching process.
+	 * - If there is no route matching the request and also if the request is targeting homepage
+	 *   or there is no route matching the request and also if the request is targeting something
+	 *   else and also router is configured to route to default controller and action if no route
+	 *   founded, complete `\MvcCore\Router::$currentRoute` with new empty automaticly created route
+	 *   targeting default controller and action by configuration in application instance (`Index:Index`)
+	 *   and route type create by configured `\MvcCore\Application::$routeClass` class name.
+	 * - Return completed `\MvcCore\Router::$currentRoute` or NULL.
+	 *
+	 * This method is always called from core routing by:
+	 * - `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
+	 * @return \MvcCore\Interfaces\IRoute
+	 */
+	public function & Route ();
+
+	/**
+	 * Generates url:
+	 * - By `"Controller:Action"` name and params array
+	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
+	 *   and routes has not controller name and action name defined inside).
+	 * - By route name and params array
+	 *	 (route name is key in routes configuration array, should be any string
+	 *	 but routes must have information about controller name and action name inside).
+	 * Result address (url string) should have two forms:
+	 * - Nice rewrited url by routes configuration
+	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
+	 *   and when first param is key in routes configuration array).
+	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
+	 *	 (when first param is not founded in routes configuration array).
+	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
+	 * @param array  $params						Optional, array with params, key is param name, value is param value.
+	 * @return string
+	 */
+	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Interfaces{
+
+/**
+ * Responsibility - session data management - starting, writing and expirations.
+ * - Safe start (only once)
+ *   - By `\MvcCore\Interfaces\ISession::Start()`
+ *     - Called by `\MvcCore\Application::GetInstance()->SessionStart();`
+ *	     - Called by `\MvcCore\Controller::Init();`.
+ * - Session writing and closing at request end:
+ *   - In `\MvcCore\Interfaces\ISession::Close()`
+ *     - Called over `register_shutdown_function()`
+ *       from `\MvcCore::Terminate();`
+ * - Session namespaces management:
+ *   - Variables expiration by seconds.
+ *   - Variables expiration by request hoops.
+ */
+interface ISession
+{
+	/**
+	 * Metadata key in `$_SESSION` storrage.
+	 * @var string
+	 */
+	const SESSION_METADATA_KEY = '__MC';
+
+	/**
+	 * Default session namespace name.
+	 * @var string
+	 */
+	const DEFAULT_NAMESPACE_NAME = 'default';
+
+	/**
+	 * Session safe start only once.
+	 * - called by `\MvcCore\Application::GetInstance()->SessionStart();`
+	 *   - called by `\MvcCore\Controller::Init();`
+	 * It's free to call this function anywhere sooner for custom purposes,
+	 * for example in `Bootstrap.php` by: `\MvcCore\Application::GetInstance()->SessionStart();`
+	 * @return void
+	 */
+	public static function Start ();
+
+	/**
+	 * Get unix epoch for current request session start moment.
+	 * @return int
+	 */
+	public static function GetSessionStartTime ();
+
+	/**
+	 * Get session metadata about session namespaces.
+	 * This method is used for debuging purposses.
+	 * @return \stdClass
+	 */
+	public static function GetSessionMetadata ();
+
+	/**
+	 * Write and close session in `\MvcCore::Terminate();`.
+	 * Serialize all metadata and call php function to write session into php session storrage.
+	 * (HDD, Redis, database, etc., depends on php configuration).
+	 * @return void
+	 */
+	public static function Close ();
+
+	/**
+	 * Get new or existing MvcCore session namespace instance.
+	 * @param string $name
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public static function & GetNamespace ($name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME);
+
+	/**
+	 * Set MvcCore session namespace expiration by page request(s) count.
+	 * @param int $hoops
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public function & SetExpirationHoops ($hoops);
+
+	/**
+	 * Set MvcCore session namespace expiration by expiration seconds.
+	 * @param int $seconds
+	 * @return \MvcCore\Interfaces\ISession
+	 */
+	public function & SetExpirationSeconds ($seconds);
+
+	/**
+	 * Destroy whole session namespace in `$_SESSION` storrage
+	 * and internal static storrages.
+	 * @return void
+	 */
+	public function Destroy ();
+
+	/**
+	 * Destroy all existing session namespaces in `$_SESSION` storrage
+	 * and internal static storrages, destroy whole PHP session.
+	 * @return void
+	 */
+	public static function DestroyAll ();
+
+	/**
+	 * Magic function triggered by: `isset(\MvcCore\Interfaces\ISession->key);`.
+	 * @param string $key
+	 * @return bool
+	 */
+	public function __isset ($key);
+
+	/**
+	 * Magic function triggered by: `unset(\MvcCore\Interfaces\ISession->key);`.
+	 * @param string $key
+	 * @return void
+	 */
+	public function __unset ($key);
+
+	/**
+	 * Magic function triggered by: `$value = \MvcCore\Interfaces\ISession->key;`.
+	 * @param string $key
+	 * @return mixed
+	 */
+	public function __get ($key);
+
+	/**
+	 * Magic function triggered by: `\MvcCore\Interfaces\ISession->key = "value";`.
+	 * @param string $key
+	 * @param mixed $value
+	 * @return void
+	 */
+	public function __set ($key, $value);
+
+	/**
+	 * Magic `\ArrayObject` function triggered by: `count(\MvcCore\Interfaces\ISession);`.
+	 * @return int
+	 */
+	public function count ();
 }
 }
 /**
@@ -8452,7 +10037,13 @@ interface IRoute
 	 * @param array $cleanedGetRequestParams Request query params with escaped chars: `<` and `>`.;
 	 * @return string
 	 */
-	public function Url (& $params, & $cleanedGetRequestParams);
+	public function Url (& $params = array(), & $cleanedGetRequestParams = array());
+
+	/**
+	 * Render all instance properties values into string.
+	 * @return string
+	 */
+	public function __toString ();
 
 	/**
 	 * Initialize all possible protected values (`match`, `reverse` etc...)
@@ -8463,329 +10054,11 @@ interface IRoute
 	public function & InitAll ();
 }
 }
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
- */
+namespace MvcCore\Ext\Auth\Interfaces{
 
-namespace MvcCore\Interfaces{
-
-//include_once('IRequest.php');
-//include_once('IRoute.php');
-
-/**
- * Responsibility - singleton, routes instancing, request routing and url building.
- * - Application router singleton instance managing.
- * - Global storage for all configured routes.
- *	 - Instancing all route(s) from application start
- *	   configuration somewhere in `Bootstrap` class.
- * - Global storage for currently matched route.
- * - Matching proper route object in `\MvcCore\Router::Route();`
- *   by `\MvcCore\Request::$Path`, always called from core in
- *   `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
- * - Application url addresses completing:
- *   - Into `mod_rewrite` form by configured route instances.
- *   - Into `index.php?` + query string form, containing
- *     `controller`, `action` and all other params.
- */
-interface IRouter
+interface IDatabaseUser
 {
-	/**
-	 * Get singleton instance of `\MvcCore\Router` stored always here.
-	 * Optionaly set routes as first argument.
-	 * Create proper router instance type at first time by
-	 * configured class name in `\MvcCore\Application` singleton.
-	 *
-	 * Routes could be defined in various forms:
-	 * Example:
-	 *	`\MvcCore\Router::GetInstance(array(
-	 *		"Products:List"	=> "/products-list/<name>/<color>",
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance(array(
-	 *		'products_list'	=> array(
-	 *			"pattern"			=> "/products-list/<name>/<color>",
-	 *			"controllerAction"	=> "Products:List",
-	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
-	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
-	 *		)
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance(array(
-	 *		new Route(
-	 *			"/products-list/<name>/<color>",
-	 *			"Products:List",
-	 *			array("name" => "default-name",	"color" => "red"),
-	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
-	 *		)
-	 *	);`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance(array(
-	 *		new Route(
-	 *			"name"			=> "products_list",
-	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
-	 *			"reverse"		=> "/products-list/<name>/<color>",
-	 *			"controller"	=> "Products",
-	 *			"action"		=> "List",
-	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
-	 *		)
-	 *	);`
-	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
-	 *													 keys are route names or route
-	 *													 `Controller::Action` definitions.
-	 * @return \MvcCore\Interfaces\IRouter
-	 */
-	public static function & GetInstance ($routes = array());
-
-	/**
-	 * Clear all possible previously configured routes
-	 * and set new given request routes again.
-	 *
-	 * Routes could be defined in various forms:
-	 * Example:
-	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
-	 *		"Products:List"	=> "/products-list/<name>/<color>",
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
-	 *		'products_list'	=> array(
-	 *			"pattern"			=> "/products-list/<name>/<color>",
-	 *			"controllerAction"	=> "Products:List",
-	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
-	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
-	 *		)
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
-	 *		new Route(
-	 *			"/products-list/<name>/<color>",
-	 *			"Products:List",
-	 *			array("name" => "default-name",	"color" => "red"),
-	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
-	 *		)
-	 *	);`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->SetRoutes(array(
-	 *		new Route(
-	 *			"name"			=> "products_list",
-	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
-	 *			"reverse"		=> "/products-list/<name>/<color>",
-	 *			"controller"	=> "Products",
-	 *			"action"		=> "List",
-	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
-	 *		)
-	 *	);`
-	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
-	 *													 keys are route names or route
-	 *													 `Controller::Action` definitions.
-	 * @return \MvcCore\Interfaces\IRouter
-	 */
-	public function & SetRoutes ($routes = array());
-
-	/**
-	 * Append or prepend new request routes.
-	 * If there is no name configured in route array configuration,
-	 * set route name by given `$routes` array key, if key is not numeric.
-	 *
-	 * Routes could be defined in various forms:
-	 * Example:
-	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
-	 *		"Products:List"	=> "/products-list/<name>/<color>",
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
-	 *		'products_list'	=> array(
-	 *			"pattern"			=> "/products-list/<name>/<color>",
-	 *			"controllerAction"	=> "Products:List",
-	 *			"defaults"			=> array("name" => "default-name",	"color" => "red"),
-	 *			"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
-	 *		)
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
-	 *		new Route(
-	 *			"/products-list/<name>/<color>",
-	 *			"Products:List",
-	 *			array("name" => "default-name",	"color" => "red"),
-	 *			array("name" => "[^/]*",		"color" => "[a-z]*")
-	 *		)
-	 *	);`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->AddRoutes(array(
-	 *		new Route(
-	 *			"name"			=> "products_list",
-	 *			"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
-	 *			"reverse"		=> "/products-list/<name>/<color>",
-	 *			"controller"	=> "Products",
-	 *			"action"		=> "List",
-	 *			"defaults"		=> array("name" => "default-name",	"color" => "red"),
-	 *		)
-	 *	);`
-	 * @param \MvcCore\Interfaces\IRoute[]|array $routes Keyed array with routes,
-	 *											 keys are route names or route
-	 *											 `Controller::Action` definitions.
-	 * @param bool $prepend Optional, if `TRUE`, all given routes will
-	 *						be prepended from the last to the first in
-	 *						given list, not appended.
-	 * @return \MvcCore\Interfaces\IRouter
-	 */
-	public function & AddRoutes (array $routes = array(), $prepend = FALSE);
-
-	/**
-	 * Append or prepend new request route.
-	 * Set up route by route name into `\MvcCore\Router::$routes` array
-	 * to route incoming request and also set up route by route name and
-	 * by `Controller:Action` combination into `\MvcCore\Router::$urlRoutes`
-	 * array to build url addresses.
-	 *
-	 * Route could be defined in various forms:
-	 * Example:
-	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
-	 *		"name"		=> "Products:List",
-	 *		"pattern"	=> "/products-list/<name>/<color>",
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->AddRoute(array(
-	 *		"name"				=> "products_list",
-	 *		"pattern"			=> "/products-list/<name>/<color>",
-	 *		"controllerAction"	=> "Products:List",
-	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
-	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
-	 *		"/products-list/<name>/<color>",
-	 *		"Products:List",
-	 *		array("name" => "default-name",	"color" => "red"),
-	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
-	 *	));`
-	 * or:
-	 *	`\MvcCore\Router::GetInstance()->AddRoute(new Route(
-	 *		"name"			=> "products_list",
-	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
-	 *		"reverse"		=> "/products-list/<name>/<color>",
-	 *		"controller"	=> "Products",
-	 *		"action"		=> "List",
-	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
-	 *	));`
-	 * @param \MvcCore\Interfaces\IRoute|array $route Route instance or
-	 *												  route config array.
-	 * @param bool $prepend
-	 * @return \MvcCore\Interfaces\IRouter
-	 */
-	public function & AddRoute ($route, $prepend = FALSE);
-
-	/**
-	 * Get all configured route(s) as `\MvcCore\Route` instances.
-	 * Keys in returned array are route names, values are route objects.
-	 * @return \MvcCore\Interfaces\IRoute[]
-	 */
-	public function & GetRoutes ();
-
-	/**
-	 * Get `\MvcCore\Request` object as reference, used internally for:
-	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
-	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
-	 * @return \MvcCore\Interfaces\IRequest
-	 */
-	public function & GetRequest ();
-
-	/**
-	 * Sets up `\MvcCore\Request` object as reference to use it internally for:
-	 * - Routing process in `\MvcCore\Router::Route();` and it's protected submethods.
-	 * - URL addresses completing in `\MvcCore\Router::Url()` and it's protected submethods.
-	 * This is INTERNAL, not TEMPLATE method, internally called in
-	 * `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
-	 * @param \MvcCore\Interfaces\IRequest $request
-	 * @return \MvcCore\Interfaces\IRouter
-	 */
-	public function & SetRequest (\MvcCore\Interfaces\IRequest & $request);
-
-	/**
-	 * Set matched route instance for given request object
-	 * into `\MvcCore\Route::Route($request);` method. Currently
-	 * matched route is always assigned internally in that method.
-	 * @param \MvcCore\Interfaces\IRoute $currentRoute
-	 * @return \MvcCore\Interfaces\IRouter
-	 */
-	public function & SetCurrentRoute (\MvcCore\Interfaces\IRoute $currentRoute);
-
-	/**
-	 * Get matched route instance reference for given request object
-	 * into `\MvcCore\Route::Route($request);` method. Currently
-	 * matched route is always assigned internally in that method.
-	 * @return \MvcCore\Interfaces\IRoute
-	 */
-	public function & GetCurrentRoute ();
-
-	/**
-	 * Get `TRUE` if request has to be automaticly dispatched as default
-	 * `Index:Index` route, if there was no route matching current request.
-	 * Default protected property value: `FALSE`.
-	 * @param bool $enable
-	 * @return \MvcCore\Interfaces\IRoute
-	 */
-	public function GetRouteToDefaultIfNotMatch ();
-
-	/**
-	 * Set `TRUE` if request has to be automaticly dispatched as default
-	 * `Index:Index` route, if there was no route matching current request.
-	 * Default protected property value: `FALSE`.
-	 * @param bool $enable
-	 * @return \MvcCore\Interfaces\IRoute
-	 */
-	public function & SetRouteToDefaultIfNotMatch ($enable = TRUE);
-
-	/**
-	 * Route current application request by configured routes list or by query string data.
-	 * - If there is strictly defined `controller` and `action` value in query string,
-	 *   route request by given values, add new route and complete new empty
-	 *   `\MvcCore\Router::$currentRoute` route with `controller` and `action` values from query string.
-	 * - If there is no strictly defined `controller` and `action` value in query string,
-	 *   go throught all configured routes and try to find matching route:
-	 *   - If there is catched any matching route:
-	 *     - Set up `\MvcCore\Router::$currentRoute`.
-	 *     - Reset `\MvcCore\Request::$params` again with with default route params,
-	 *       with request params itself and with params parsed from matching process.
-	 * - If there is no route matching the request and also if the request is targeting homepage
-	 *   or there is no route matching the request and also if the request is targeting something
-	 *   else and also router is configured to route to default controller and action if no route
-	 *   founded, complete `\MvcCore\Router::$currentRoute` with new empty automaticly created route
-	 *   targeting default controller and action by configuration in application instance (`Index:Index`)
-	 *   and route type create by configured `\MvcCore\Application::$routeClass` class name.
-	 * - Return completed `\MvcCore\Router::$currentRoute` or NULL.
-	 *
-	 * This method is always called from core routing by:
-	 * - `\MvcCore\Application::Run();` => `\MvcCore\Application::routeRequest();`.
-	 * @return \MvcCore\Interfaces\IRoute
-	 */
-	public function & Route ();
-
-	/**
-	 * Generates url:
-	 * - By `"Controller:Action"` name and params array
-	 *   (for routes configuration when routes array has keys with `"Controller:Action"` strings
-	 *   and routes has not controller name and action name defined inside).
-	 * - By route name and params array
-	 *	 (route name is key in routes configuration array, should be any string
-	 *	 but routes must have information about controller name and action name inside).
-	 * Result address (url string) should have two forms:
-	 * - Nice rewrited url by routes configuration
-	 *   (for apps with URL rewrite support (Apache `.htaccess` or IIS URL rewrite module)
-	 *   and when first param is key in routes configuration array).
-	 * - For all other cases is url form like: `"index.php?controller=ctrlName&amp;action=actionName"`
-	 *	 (when first param is not founded in routes configuration array).
-	 * @param string $controllerActionOrRouteName	Should be `"Controller:Action"` combination or just any route name as custom specific string.
-	 * @param array  $params						Optional, array with params, key is param name, value is param value.
-	 * @return string
-	 */
-	public function Url ($controllerActionOrRouteName = 'Index:Index', $params = array());
+	public static function SetUsersTableStructure ($tableName = NULL, $columnNames = NULL);
 }
 }
 /**
@@ -8796,139 +10069,52 @@ interface IRouter
  * the LICENSE.md file that are distributed with this source code.
  *
  * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
  */
 
-namespace MvcCore\Interfaces{
+namespace MvcCore\Ext\Auth\Traits{
 
-/**
- * Responsibility - session data management - starting, writing and expirations.
- * - Safe start (only once)
- *   - By `\MvcCore\Interfaces\ISession::Start()`
- *     - Called by `\MvcCore\Application::GetInstance()->SessionStart();`
- *	     - Called by `\MvcCore\Controller::Init();`.
- * - Session writing and closing at request end:
- *   - In `\MvcCore\Interfaces\ISession::Close()`
- *     - Called over `register_shutdown_function()`
- *       from `\MvcCore::Terminate();`
- * - Session namespaces management:
- *   - Variables expiration by seconds.
- *   - Variables expiration by request hoops.
- */
-interface ISession
+trait SignController {
+	/**
+	 * Authentication form submit action to sign in.
+	 * Routed by route configured by:
+	 * MvcCore\Ext\Auth::GetInstance()->SetSignInRoute();
+	 * @return void
+	 */
+	public function SignInAction () {
+		/** @var $form \MvcCore\Ext\Auth\SignInForm */
+		$form = \MvcCore\Ext\Auth::GetInstance()->GetForm();
+		list ($result, $data, $errors) = $form->Submit();
+		if ($result !== \MvcCore\Ext\Form::RESULT_SUCCESS) {
+			// here you can count bad login requests
+			// to ban danger user for some time or anything else...
+
+		}
+		$form->ClearSession(); // to remove all submited data from session
+		$form->RedirectAfterSubmit();
+	}
+
+	/**
+	 * Authentication form submit action to sign out.
+	 * Routed by route configured by:
+	 * MvcCore\Ext\Auth::GetInstance()->SetSignOutRoute();
+	 * @return void
+	 */
+	public function SignOutAction () {
+		/** @var $form \MvcCore\Ext\Auth\SignOutForm */
+		$form = \MvcCore\Ext\Auth::GetInstance()->GetForm();
+		/*list ($result, $data, $errors) = */$form->Submit();
+		$form->ClearSession(); // to remove all submited data from session
+		$form->RedirectAfterSubmit();
+	}
+}
+}
+namespace MvcCore\Ext\Auth\Interfaces{
+
+interface ISignController
 {
-	/**
-	 * Metadata key in `$_SESSION` storrage.
-	 * @var string
-	 */
-	const SESSION_METADATA_KEY = '__MC';
-
-	/**
-	 * Default session namespace name.
-	 * @var string
-	 */
-	const DEFAULT_NAMESPACE_NAME = 'default';
-
-	/**
-	 * Session safe start only once.
-	 * - called by `\MvcCore\Application::GetInstance()->SessionStart();`
-	 *   - called by `\MvcCore\Controller::Init();`
-	 * It's free to call this function anywhere sooner for custom purposes,
-	 * for example in `Bootstrap.php` by: `\MvcCore\Application::GetInstance()->SessionStart();`
-	 * @return void
-	 */
-	public static function Start ();
-
-	/**
-	 * Get unix epoch for current request session start moment.
-	 * @return int
-	 */
-	public static function GetSessionStartTime ();
-
-	/**
-	 * Get session metadata about session namespaces.
-	 * This method is used for debuging purposses.
-	 * @return \stdClass
-	 */
-	public static function GetSessionMetadata ();
-
-	/**
-	 * Write and close session in `\MvcCore::Terminate();`.
-	 * Serialize all metadata and call php function to write session into php session storrage.
-	 * (HDD, Redis, database, etc., depends on php configuration).
-	 * @return void
-	 */
-	public static function Close ();
-
-	/**
-	 * Get new or existing MvcCore session namespace instance.
-	 * @param string $name
-	 * @return \MvcCore\Interfaces\ISession
-	 */
-	public static function & GetNamespace ($name = \MvcCore\Interfaces\ISession::DEFAULT_NAMESPACE_NAME);
-
-	/**
-	 * Set MvcCore session namespace expiration by page request(s) count.
-	 * @param int $hoops
-	 * @return \MvcCore\Interfaces\ISession
-	 */
-	public function & SetExpirationHoops ($hoops);
-
-	/**
-	 * Set MvcCore session namespace expiration by expiration seconds.
-	 * @param int $seconds
-	 * @return \MvcCore\Interfaces\ISession
-	 */
-	public function & SetExpirationSeconds ($seconds);
-
-	/**
-	 * Destroy whole session namespace in `$_SESSION` storrage
-	 * and internal static storrages.
-	 * @return void
-	 */
-	public function Destroy ();
-
-	/**
-	 * Destroy all existing session namespaces in `$_SESSION` storrage
-	 * and internal static storrages, destroy whole PHP session.
-	 * @return void
-	 */
-	public static function DestroyAll ();
-
-	/**
-	 * Magic function triggered by: `isset(\MvcCore\Interfaces\ISession->key);`.
-	 * @param string $key
-	 * @return bool
-	 */
-	public function __isset ($key);
-
-	/**
-	 * Magic function triggered by: `unset(\MvcCore\Interfaces\ISession->key);`.
-	 * @param string $key
-	 * @return void
-	 */
-	public function __unset ($key);
-
-	/**
-	 * Magic function triggered by: `$value = \MvcCore\Interfaces\ISession->key;`.
-	 * @param string $key
-	 * @return mixed
-	 */
-	public function __get ($key);
-
-	/**
-	 * Magic function triggered by: `\MvcCore\Interfaces\ISession->key = "value";`.
-	 * @param string $key
-	 * @param mixed $value
-	 * @return void
-	 */
-	public function __set ($key, $value);
-
-	/**
-	 * Magic `\ArrayObject` function triggered by: `count(\MvcCore\Interfaces\ISession);`.
-	 * @return int
-	 */
-	public function count ();
+	public function SignInAction ();
+	public function SignOutAction ();
 }
 }
 namespace App{
@@ -8945,8 +10131,17 @@ class Bootstrap
 			$app->SetDebugClass(\MvcCore\Ext\Debug\Tracy::class);
 		}
 
+
 		// Initialize authentication service extension and set custom user class
-		\MvcCore\Ext\Auth::GetInstance()->Init()->SetUserClass(\App\Models\User::class);
+		\MvcCore\Ext\Auth::GetInstance()
+			->SetPasswordHashSalt('!fa*RN+twe65ts1E9$8z16d')
+			->SetUserClass(\MvcCore\Ext\Auth\Users\Database::class)
+			/*->SetTableStructureForDbUsers('users', array(
+				'id'			=> 'id',
+				'userName'		=> 'user_name',
+				'passwordHash'	=> 'password_hash',
+				'fullName'		=> 'full_name',
+			))*/;
 
 		// set up application routes without custom names, defined basicly as Controller::Action
 		\MvcCore\Router::GetInstance(array(
@@ -8976,29 +10171,65 @@ class Bootstrap
 
 namespace MvcCore\Ext{
 
-class Auth {
+class Auth
+{
 	/**
 	 * MvcCore Extension - Auth - version:
 	 * Comparation by PHP function version_compare();
 	 * @see http://php.net/manual/en/function.version-compare.php
 	 */
 	const VERSION = '5.0.0-alpha';
+
 	/**
 	 * Singleton instance of authentication extension service.
 	 * @var \MvcCore\Ext\Auth
 	 */
 	protected static $instance = NULL;
+
 	/**
 	 * User model isntace or null if user is not authenticated in session.
-	 * @var \MvcCore\Ext\Auth\Virtual\User
+	 * @var \MvcCore\Ext\Auth\Traits\User|\MvcCore\Ext\Auth\Interfaces\IUser
 	 */
 	protected $user = NULL;
+
 	/**
 	 * If user is authenticated in session, there is scompleted
 	 * sign in form, else there is sign out form.
-	 * @var \MvcCore\Ext\Auth\Virtual\Form
+	 * @var \MvcCore\Ext\Auth\Traits\SignForm|\MvcCore\Ext\Auth\Interfaces\ISignForm|\MvcCore\Ext\Auth\SignInForm|\MvcCore\Ext\Auth\SignOutForm
 	 */
 	protected $form = NULL;
+
+	/**
+	 * MvcCore application instance reference.
+	 * @var \MvcCore\Application|\MvcCore\Interfaces\IApplication
+	 */
+	protected $application = NULL;
+
+	/**
+	 * Sign in route instance by configured core class.
+	 * @var \MvcCore\Route|\MvcCore\Interfaces\IRoute
+	 */
+	protected $signInRoute = NULL;
+
+	/**
+	 * Sign out route instance by configured core class.
+	 * @var \MvcCore\Route|\MvcCore\Interfaces\IRoute
+	 */
+	protected $signOutRoute = NULL;
+
+	/**
+	 * Sign error route instance by configured core class.
+	 * @var \MvcCore\Route|\MvcCore\Interfaces\IRoute
+	 */
+	protected $signErrorRoute = NULL;
+
+	/**
+	 * `TRUE`if there was already called method `GetUser()`
+	 * with any result or `SetUSer()` with any param.
+	 * @var bool
+	 */
+	protected $userInitialized = FALSE;
+
 	/**
 	 * Authentication configuration, there is possible to change
 	 * any configuration option ne by one by any setter method
@@ -9008,50 +10239,65 @@ class Auth {
 	 */
 	protected $config = array(
 		'expirationSeconds'	=> 600, // 10 minutes
+		/** @var string Full class name to use for user instance. */
 		'userClass'			=> '\User',
-		'controllerClass'	=> '\Controller',
+		/** @var string Full class name to use for controller instance to submit sign in/out form. */
+		'controllerClass'	=> '\SignController',
+		/** @var string Full class name to use for sign in form instance. */
 		'signInFormClass'	=> '\SignInForm',
+		/** @var string Full class name to use for sign out form instance. */
 		'signOutFormClass'	=> '\SignOutForm',
-		'signedInUrl'		=> '',
-		'signedOutUrl'		=> '',
-		'errorUrl'			=> '',
+		/** @var string|NULL Optional custom url to redirect signed in user. Null means the same url where is sign in/out form rendered */
+		'signedInUrl'		=> NULL,
+		/** @var string|NULL Optional custom url to redirect signed out user. Null means the same url where is sign in/out form rendered */
+		'signedOutUrl'		=> NULL,
+		/** @var string|NULL Optional custom url to redirect user with wrong credentials. Null means the same url where is sign in/out form rendered */
+		'signErrorUrl'		=> NULL,
+		/** @var string|array|\MvcCore\Route|\MvcCore\Interfaces\IRoute Route to submit sign in form to */
 		'signInRoute'		=> array('match' => '#^/signin#', 'reverse' => '/signin'),
+		/** @var string|array|\MvcCore\Route|\MvcCore\Interfaces\IRoute Route to submit sign out form to */
 		'signOutRoute'		=> array('match' => '#^/signout#', 'reverse' => '/signout'),
-		'passwordHashSalt'	=> 'S3F8OI2P3X6ER1F6XY2Q9ZCY',
+		/** @var string|NULL Optional custom salt for `passord_hash();`. */
+		'passwordHashSalt'	=> NULL,
+		/** @var callable Valid callable to set up sign in/out form translator */
 		'translator'		=> NULL,
 	);
-	/**
-	 * If true, authentication service allready try to load
-	 * user from session and authentication detection os not
-	 * necessary to run again. False by default.
-	 * @var bool
-	 */
-	protected $userInitialized = FALSE;
 
 	/**
 	 * Return singleton instance. If instance exists, return existing instance,
 	 * if not, create new Auth service instance, store it and return it.
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public static function GetInstance () {
-		if (is_null(static::$instance)) {
-			static::$instance = new static();
+	public static function GetInstance ($config = array()) {
+		if (static::$instance === NULL) {
+			static::$instance = new static($config);
 		}
 		return static::$instance;
 	}
+
 	/**
 	 * Create new Auth service instance.
 	 * For each configuration item- check if it is class definition
 	 * and if it is, complete whole class definition.
 	 */
-	public function __construct () {
+	public function __construct ($config = array()) {
+		// initialize default configuration
 		foreach ($this->config as $key => & $value) {
-			if (strpos($key, 'Class') !== FALSE) {
-				$value = __CLASS__ . $value;
-			}
+			if (strpos($key, 'Class') !== FALSE)
+				$value = get_called_class() . $value;
 		}
 		$this->config = (object) $this->config;
+		// merge another possible configuration
+		if ($config) $this->Configure($config);
+		// set up application reference
+		$this->application = & \MvcCore\Application::GetInstance();
+		// add sing in or sing out forms routes, complete form success and error addresses
+		$this->application
+			->AddPreRouteHandler(function (\MvcCore\Interfaces\IRequest & $request) {
+				$this->PrepareHandler($request);
+		});
 	}
+
 	/**
 	 * Return configuration object.
 	 * @return \stdClass
@@ -9059,6 +10305,16 @@ class Auth {
 	public function & GetConfig () {
 		return $this->config;
 	}
+
+	/**
+	 * Replace whole configuration by new values, no merging with default configuration.
+	 * @return \MvcCore\Ext\Auth
+	 */
+	public function & SetConfig ($config = array()) {
+		$this->config = (object) $config;
+		return $this;
+	}
+
 	/**
 	 * Set up authorization service configuration.
 	 * Each array key must have key by default configuration item.
@@ -9067,91 +10323,99 @@ class Auth {
 	 * @return \MvcCore\Ext\Auth
 	 */
 	public function Configure ($config = array()) {
-		foreach ($config as $key => $value) {
-			if (isset($this->config->$key)) {
-				if (strpos($key, 'Class') !== FALSE) {
-					$this->_checkClass($value);
-				}
-				$this->config->$key = $value;
+		$configEntries = array_keys((array) $this->config);
+		foreach ($config as $key => & $value) {
+			if (in_array($key, $configEntries)) {
+				if (strpos($key, 'Class') !== FALSE)
+					$this->checkClassExistence($value);
+				$this->config->$key = & $value;
 			}
 		}
 		return $this;
 	}
+
 	/**
 	 * Set authorization expiration seconds, 10 minutes by default.
 	 * @param int $expirationSeconds
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetExpirationSeconds ($expirationSeconds = 600) {
+	public function & SetExpirationSeconds ($expirationSeconds = 600) {
 		$this->config->expirationSeconds = $expirationSeconds;
 		return $this;
 	}
+
 	/**
 	 * Set user's passwords hash salt, put here any string, every request the same.
 	 * @param string $passwordHashSalt
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetPasswordHashSalt ($passwordHashSalt = '') {
+	public function & SetPasswordHashSalt ($passwordHashSalt = '') {
 		$this->config->passwordHashSalt = $passwordHashSalt;
 		return $this;
 	}
+
 	/**
 	 * Set authorization service user class
 	 * to get store username from session stored from previous
 	 * requests for 10 minutes by default, by sign in action to compare
 	 * sender credentials with any user from your custom place
 	 * and by sign out action to remove username from session.
-	 * It has to extend \MvcCore\Ext\Auth\Virtual\User.
+	 * It has to extend \MvcCore\Ext\Auth\Abstracts\User.
 	 * @param string $userClass
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetUserClass ($userClass = '') {
-		$this->config->userClass = $this->_checkClass($userClass);
+	public function & SetUserClass ($userClass = '') {
+		$this->config->userClass = $this->checkClassExistence($userClass);
 		return $this;
 	}
+
 	/**
 	 * Set authorization service controller class
 	 * to handle signin and signout actions,
-	 * it has to extend \MvcCore\Ext\Auth\Virtual\Controller.
+	 * it has to extend \MvcCore\Ext\Auth\Abstracts\Controller.
 	 * @param string $controllerClass
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetControllerClass ($controllerClass = '') {
-		$this->config->controllerClass = $this->_checkClass($controllerClass);
+	public function & SetControllerClass ($controllerClass = '') {
+		$this->config->controllerClass = $this->checkClassExistence($controllerClass);
 		return $this;
 	}
+
 	/**
 	 * Set authorization service sign in form class,
 	 * to create, render and submit sign in user.
-	 * it has to implement \MvcCore\Ext\Auth\Virtual\Form.
+	 * it has to implement \MvcCore\Ext\Auth\Abstracts\Form.
 	 * @param string $signInFormClass
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetSignInFormClass ($signInFormClass = '') {
-		$this->config->signInFormClass = $this->_checkClass($signInFormClass);
+	public function & SetSignInFormClass ($signInFormClass = '') {
+		$this->config->signInFormClass = $this->checkClassExistence($signInFormClass);
 		return $this;
 	}
+
 	/**
 	 * Set authorization service sign out form class,
 	 * to create, render and submit sign out user.
-	 * it has to implement \MvcCore\Ext\Auth\Virtual\Form.
+	 * it has to implement \MvcCore\Ext\Auth\Abstracts\Form.
 	 * @param string $signInFormClass
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetSignOutFormClass ($signOutFormClass = '') {
-		$this->config->signOutFormClass = $this->_checkClass($signOutFormClass);
+	public function & SetSignOutFormClass ($signOutFormClass = '') {
+		$this->config->signOutFormClass = $this->checkClassExistence($signOutFormClass);
 		return $this;
 	}
+
 	/**
 	 * Set translator callable if you want to translate
 	 * sign in and sign out forms labels, placeholders and error messages.
 	 * @param callable $translator
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetTranslator (callable $translator = NULL) {
+	public function & SetTranslator (callable $translator = NULL) {
 		$this->config->translator = $translator;
 		return $this;
 	}
+
 	/**
 	 * Set url to redirect user after sign in process was successfull.
 	 * By default signed in url is the same as current request url,
@@ -9159,10 +10423,11 @@ class Auth {
 	 * @param string $signedInUrl
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetSignedInUrl ($signedInUrl ='') {
+	public function & SetSignedInUrl ($signedInUrl ='') {
 		$this->config->signedInUrl = $signedInUrl;
 		return $this;
 	}
+
 	/**
 	 * Set url to redirect user after sign out process was successfull.
 	 * By default signed out url is the same as current request url,
@@ -9170,22 +10435,24 @@ class Auth {
 	 * @param string $signedOutUrl
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetSignedOutUrl ($signedOutUrl ='') {
+	public function & SetSignedOutUrl ($signedOutUrl ='') {
 		$this->config->signedOutUrl = $signedOutUrl;
 		return $this;
 	}
+
 	/**
 	 * Set url to redirect user after sign in or sign out process was
 	 * not successfull. By default signed in/out error url is the same as
 	 * current request url, internaly configured by default
 	 * authentication service pre request handler.
-	 * @param string $errorUrl
+	 * @param string $signErrorUrl
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetErrorUrl ($errorUrl ='') {
-		$this->config->errorUrl = $errorUrl;
+	public function & SetSignErrorUrl ($signErrorUrl = NULL) {
+		$this->config->signErrorUrl = $signErrorUrl;
 		return $this;
 	}
+
 	/**
 	 * Set sign in route, where to navigate user browser after
 	 * user clicks on submit button in sign in form and
@@ -9197,10 +10464,11 @@ class Auth {
 	 * @param string|array|\MvcCore\Interfaces\IRoute $signInRoute
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetSignInRoute ($signInRoute = NULL) {
+	public function & SetSignInRoute ($signInRoute = NULL) {
 		$this->config->signInRoute = $signInRoute;
 		return $this;
 	}
+
 	/**
 	 * Set sign out route, where to navigate user browser after
 	 * user clicks on submit button in sign out form and
@@ -9212,10 +10480,11 @@ class Auth {
 	 * @param string|array|\MvcCore\Interfaces\IRoute $signInRoute
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetSignOutRoute ($signOutRoute = NULL) {
+	public function & SetSignOutRoute ($signOutRoute = NULL) {
 		$this->config->signOutRoute = $signOutRoute;
 		return $this;
 	}
+
 	/**
 	 * Return TRUE if user is authenticated/signed in.
 	 * If user is not loaded yet, load the user internaly by $auth->GetUser();
@@ -9223,34 +10492,49 @@ class Auth {
 	 * @return bool
 	 */
 	public function IsAuthenticated () {
-		return !is_null($this->GetUser());
+		return $this->GetUser() !== NULL;
 	}
+
 	/**
 	 * Get authenticated user instance reference or null if user is not authenticated.
 	 * If user is not loaded yet, load the user internaly by $auth->GetUser();
 	 * to start session and try to load user by session username record.
-	 * @return \MvcCore\Ext\Auth\Virtual\User
+	 * @return \MvcCore\Ext\Auth\Traits\User|\MvcCore\Ext\Auth\Interfaces\IUser
 	 */
 	public function & GetUser () {
-		if (!$this->userInitialized && is_null($this->user)) {
+		if (!$this->userInitialized && $this->user === NULL) {
 			$userClass = $this->config->userClass;
-			$this->user = $userClass::GetUserBySession();
+			$this->user = $userClass::SetUpUserBySession();
 			$this->userInitialized = TRUE;
 		}
 		return $this->user;
 	}
+
 	/**
 	 * Set user instance by you custom external authorization service.
-	 * If user instance is not null, set internal $auth->userInitialized property
-	 * to TRUE to not load user internaly again.
-	 * @param \MvcCore\Ext\Auth\Virtual\User $user
+	 * @param \MvcCore\Ext\Auth\Traits\User|\MvcCore\Ext\Auth\Interfaces\IUser $user
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetUser (\MvcCore\Ext\Auth\Virtual\User & $user) {
+	public function & SetUser (\MvcCore\Ext\Auth\Interfaces\IUser & $user) {
 		$this->user = $user;
-		if (!is_null($user)) $this->userInitialized = TRUE;
+		$this->userInitialized = TRUE;
 		return $this;
 	}
+
+	/**
+	 * Alias for `\MvcCore\Ext\Auth\Users\Database::SetUsersTableStructure($tableName, $columnNames);`.
+	 * @param string|NULL	$tableName
+	 * @param string[]|NULL	$columnNames
+	 */
+	public function & SetTableStructureForDbUsers ($tableName = NULL, $columnNames = NULL) {
+		$userClass = $this->config->userClass;
+		$toolClass = $this->application->GetToolClass();
+		if ($toolClass::CheckClassInterface($userClass, 'MvcCore\Ext\Auth\Interfaces\IDatabaseUser', TRUE)) {
+			$userClass::SetUsersTableStructure($tableName, $columnNames);
+		};
+		return $this;
+	}
+
 	/**
 	 * Return completed signin/signout form instance.
 	 * Form instance completiion is processed only once,
@@ -9259,50 +10543,46 @@ class Auth {
 	 * to set form into you custom template to render it for user.
 	 * If user is not authenticated, sign in form is returned and
 	 * if user is authenticated, opposite sign out form is returned.
-	 * @return \MvcCore\Ext\Auth\SignInForm|\MvcCore\Ext\Auth\SignOutForm|mixed
+	 * @return \MvcCore\Ext\Auth\Interfaces\ISignForm
 	 */
 	public function & GetForm () {
-		if (is_null($this->form)) {
-			$controller = \MvcCore\Application::GetInstance()->GetController();
+		if ($this->form === NULL) {
+			$controller = $this->application->GetController();
+			$routerClass = $this->application->GetRouterClass();
+			$router = $routerClass::GetInstance();
+			$action = '';
+			$successUrl = '';
 			if ($this->IsAuthenticated()) {
 				$this->form = new \MvcCore\Ext\Auth\SignOutForm($controller);
-				$this->form->Action = \MvcCore\Application::GetInstance()->Url($this->config->signOutRoute->GetName());
-				$this->form->SuccessUrl = $this->config->signedOutUrl;
+				$action = $router->Url($this->signOutRoute->GetName());
+				$successUrl = $this->config->signedOutUrl;
 			} else {
 				$this->form = new \MvcCore\Ext\Auth\SignInForm($controller);
-				$this->form->Action = \MvcCore\Application::GetInstance()->Url($this->config->signInRoute->GetName());
-				$this->form->SuccessUrl = $this->config->signedInUrl;
+				$action = $router->Url($this->signInRoute->GetName());
+				$successUrl = $this->config->signedInUrl;
 			}
-			$this->form->ErrorUrl = $this->config->errorUrl;
-			$this->form->SetTranslator($this->config->translator);
+			$this->form
+				->SetAction($action)
+				->SetSuccessUrl($successUrl)
+				->SetErrorUrl($this->config->signErrorUrl)
+				->SetTranslator($this->config->translator)
+				->Init();
 		}
 		return $this->form;
 	}
+
 	/**
 	 * Set sign in/sign out form instance.
 	 * Use this method only if you need sometimes to
 	 * complete different form to render.
-	 * @param \MvcCore\Ext\Auth\Virtual\Form $form
+	 * @param \MvcCore\Ext\Auth\SignInForm|\MvcCore\Ext\Auth\SignOutForm|\MvcCore\Ext\Auth\Traits\SignForm|\MvcCore\Ext\Auth\Interfaces\ISignForm $form
 	 * @return \MvcCore\Ext\Auth
 	 */
-	public function SetForm (& $form) {
+	public function & SetForm (\MvcCore\Ext\Auth\Interfaces\ISignForm & $form) {
 		$this->form = $form;
 		return $this;
 	}
-	/**
-	 * Initialize necessary authentication service handlers.
-	 * Call this method always in Bootstrap before request is routed by:
-	 * MvcCore\Ext\Auth::GetInstance()->Init();
-	 * @return \MvcCore\Ext\Auth
-	 */
-	public function Init () {
-		// add sing in or sing out forms routes, complete form success and error addresses
-		\MvcCore\Application::GetInstance()
-			->AddPreRouteHandler(function (\MvcCore\Interfaces\IRequest & $request) {
-				$this->PrepareHandler($request);
-			});
-		return $this;
-	}
+
 	/**
 	 * Process necessary operations before request is routed.
 	 * This method is called internaly by default and it's called
@@ -9334,6 +10614,7 @@ class Auth {
 		$this->PrepareAdresses();
 		$this->PrepareRouter();
 	}
+
 	/**
 	 * Second prepare handler internal method:
 	 * - If controller class begins with substring containing this
@@ -9348,28 +10629,30 @@ class Auth {
 	 */
 	public function PrepareRoutes () {
 		$authControllerClass = & $this->config->controllerClass;
-		if (strpos($authControllerClass, __CLASS__) === 0) {
+		if (strpos($authControllerClass, get_called_class()) === 0) {
 			$authControllerClass = '\\'.$authControllerClass;
 		}
 		$authenticated = $this->IsAuthenticated();
 		if (!$authenticated)
-			$this->prepareConfiguredRoute($authControllerClass, 'signInRoute');
+			$this->prepareConfiguredRoute($authControllerClass.':SignIn', 'signInRoute');
 		if ($authenticated)
-			$this->prepareConfiguredRoute($authControllerClass, 'signOutRoute');
+			$this->prepareConfiguredRoute($authControllerClass.':SignOut', 'signOutRoute');
 	}
+
 	/**
 	 * Third prepare handler internal method:
 	 * - Set up sign in form success url, sign out form success url and error
-	 *   url for both ign in/out forms, as current request url by default.
+	 *   url for both sign in/out forms, as current request url by default.
 	 *   If any url is configured already, nothing is changed.
 	 * @return void
 	 */
 	public function PrepareAdresses () {
-		$request = & \MvcCore\Application::GetInstance()->GetRequest();
-		if (!$this->config->signedInUrl)	$this->config->signedInUrl = $request->FullUrl;
-		if (!$this->config->signedOutUrl)	$this->config->signedOutUrl = $request->FullUrl;
-		if (!$this->config->errorUrl)		$this->config->errorUrl = $request->FullUrl;
+		$currentFullUrl = $this->application->GetRequest()->GetFullUrl();
+		if ($this->config->signedInUrl === NULL)	$this->config->signedInUrl = $currentFullUrl;
+		if ($this->config->signedOutUrl === NULL)	$this->config->signedOutUrl = $currentFullUrl;
+		if ($this->config->signErrorUrl === NULL)	$this->config->signErrorUrl = $currentFullUrl;
 	}
+
 	/**
 	 * Fourth prepare handler internal method:
 	 * - Set up sign in or sign out route into router, only route which
@@ -9378,48 +10661,51 @@ class Auth {
 	 * @return void
 	 */
 	public function PrepareRouter () {
+		$routerClass = $this->application->GetRouterClass();
 		if ($this->IsAuthenticated()) {
-			\MvcCore\Router::GetInstance()->AddRoute(
-				$this->config->signOutRoute, TRUE
+			$routerClass::GetInstance()->AddRoute(
+				$this->signOutRoute, TRUE
 			);
 		} else {
-			\MvcCore\Router::GetInstance()->AddRoute(
-				$this->config->signInRoute, TRUE
+			$routerClass::GetInstance()->AddRoute(
+				$this->signInRoute, TRUE
 			);
 		}
 	}
 
 	/**
 	 * Prepare configured route record into route instance if record is string or array.
-	 * @param string $authControllerClass
-	 * @param string $configRouteKey
+	 * @param string $authCtrlAndActionName
+	 * @param string $routeName
 	 * @return void
 	 */
-	protected function prepareConfiguredRoute ($authControllerClass, $configRouteKey) {
-		$route = & $this->config->$configRouteKey;
-		if (!is_string($route) && !is_array($route)) return;
-		$routeClass = \MvcCore\Application::GetInstance()->GetRouteClass();
-		$routeInitData = array('name' => $authControllerClass . ':SignIn');
-		$this->config->$configRouteKey = $routeClass::GetInstance(
-			gettype($route) == 'array'
-				? array_merge($route, $routeInitData)
-				: array_merge(array('pattern' => $route), $routeInitData)
-		);
+	protected function prepareConfiguredRoute ($authCtrlAndActionName, $routeName) {
+		$route = & $this->config->$routeName;
+		if ($route instanceof \MvcCore\Interfaces\IRoute) {
+			$this->$routeName = & $route;
+		} else {
+			$routeClass = $this->application->GetRouteClass();
+			$routeInitData = array('name' => $authCtrlAndActionName);
+			$this->$routeName = $routeClass::GetInstance(
+				gettype($route) == 'array'
+					? array_merge($routeInitData, $route)
+					: array_merge(array('pattern' => $route), $routeInitData)
+			);
+		}
 	}
+
 	/**
 	 * Check if configured class exists and thrown exception if not.
 	 * @param string $className
 	 * @throws \Exception
 	 * @return string
 	 */
-	private function _checkClass (& $className) {
-		if (!class_exists($className)) {
-			throw new \Exception("[".__CLASS__."] Configured class: '$className' doesn't exists.'");
-		}
+	protected function checkClassExistence ($className, $thrownException = TRUE) {
+		if (!class_exists($className) && $thrownException) throw new \InvalidArgumentException(
+			"[".__CLASS__."] Configured class: '$className' doesn't exists.'"
+		);
 		return $className;
 	}
-
-
 }
 }
 namespace App\Views\Helpers{
@@ -9434,6 +10720,30 @@ class JsonAttr
 	public function JsonAttr ($object = NULL) {
 		return rawurlencode(\MvcCore\Tool::EncodeJson($object));
 	}
+}
+}
+namespace MvcCore\Ext\Auth\Interfaces{
+
+interface IRole
+{
+	public function GetId ();
+	public function & SetId ($id);
+	public function GetName ();
+	public function & SetName ($userName);
+	public function GetByName ($name);
+}
+}
+namespace{
+/**
+ * Role short summary.
+ *
+ * Role description.
+ *
+ * @version 1.0
+ * @author Administrator
+ */
+class Role
+{
 }
 }
 /**
@@ -9668,12 +10978,15 @@ class Controller implements Interfaces\IController
 	public function Dispatch ($actionName = "IndexAction") {
 		// \MvcCore\Debug::Timer('dispatch');
 		$this->Init();
+		if ($this->dispatchState == 5) return; // terminated or redirected
 		if ($this->dispatchState < 1) $this->dispatchState = 1;
 		// \MvcCore\Debug::Timer('dispatch');
 		$this->PreDispatch();
+		if ($this->dispatchState == 5) return; // terminated or redirected
 		if ($this->dispatchState < 2) $this->dispatchState = 2;
 		// \MvcCore\Debug::Timer('dispatch');
 		if (method_exists($this, $actionName)) $this->$actionName();
+		if ($this->dispatchState == 5) return; // terminated or redirected
 		if ($this->dispatchState < 3) $this->dispatchState = 3;
 		// \MvcCore\Debug::Timer('dispatch');
 		$this->Render(
@@ -10251,6 +11564,7 @@ class Controller implements Interfaces\IController
 	 * @return void
 	 */
 	public function Terminate () {
+		$this->dispatchState = 5;
 		$this->application->Terminate();
 	}
 
@@ -10276,7 +11590,9 @@ class Controller implements Interfaces\IController
 		$app = \MvcCore\Application::GetInstance();
 		$app->GetResponse()
 			->SetCode($code)
+			//->SetHeader('Refresh', '0;url='.$location);
 			->SetHeader('Location', $location);
+		$app->GetController()->dispatchState = 5;
 		$app->Terminate();
 	}
 }
@@ -10482,7 +11798,9 @@ class Model implements Interfaces\IModel {
 	public function & SetUp ($data = array(), $keysInsensitive = FALSE, $includeInheritProperties = TRUE, $publicOnly = TRUE) {
 		$modelClassName = get_class($this);
 		$classReflector = new \ReflectionClass($modelClassName);
-		$properties = $publicOnly ? $classReflector->getProperties(\ReflectionProperty::IS_PUBLIC) : $classReflector->getProperties();
+		$properties = $publicOnly
+			? $classReflector->getProperties(\ReflectionProperty::IS_PUBLIC)
+			: $classReflector->getProperties();
 		$dataKeys = $keysInsensitive ? ','.implode(',', array_keys($data)).',' : '' ;
 		foreach ($properties as $property) {
 			if (!$includeInheritProperties && $property->class != $modelClassName) continue;
@@ -11111,2826 +12429,6 @@ class Tool implements Interfaces\ITool
 
 namespace MvcCore{
 
-//include_once(__DIR__ . '/Interfaces/IRequest.php');
-//include_once('Tool.php');
-//include_once('Application.php');
-
-/**
- * Responsibility - request description - url and params inputs parsing and cleaning.
- * - Linear request url parsing from referenced `$_SERVER` global variable
- *   (as constructor argument) into local properties, describing url sections.
- * - Params reading from referenced `$_GET` and `$_POST` global variables
- *   (as constructor arguments) or reading data from direct PHP
- *   input `"php://input"` (as encoded JSON data or as query string).
- * - Headers cleaning and reading by `getallheaders()` or from referenced `$_SERVER['HTTP_...']`.
- * - Cookies cleaning and reading from referenced `$_COOKIE['...']`.
- * - Uploaded files by wrapped referenced `$_FILES` global array.
- * - Primitive values cleaning or array recursive cleaning by called
- *	 developer rules from params array, headers array and cookies array.
- */
-class Request implements Interfaces\IRequest
-{
-	/**
-	 * Language international code, lowercase, not used by default.
-	 * To use this variable - install  `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
-	 * Or use this variable by your own decision.
-	 * Example: `"en" | "de"`
-	 * @var string|NULL
-	 */
-	protected $lang				= NULL;
-
-	/**
-	 * Country/locale code, uppercase, not used by default.
-	 * To use this variable - install `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
-	 * Or use this variable by your own decision.
-	 * Example: `"US" | "UK"`
-	 * @var string|NULL
-	 */
-	protected $locale			= NULL;
-
-	/**
-	 * Media site key - `"full" | "tablet" | "mobile"`.
-	 * To use this variable - install `\MvcCore\Router` extension `\MvcCoreExt\Router\Media`
-	 * Or use this variable by your own decision.
-	 * Example: `"full" | "tablet" | "mobile"`
-	 * @var string|NULL
-	 */
-	protected $mediaSiteKey = '';
-
-	/**
-	 * Http protocol: `"http:" | "https:"`
-	 * Example: `"http:"`
-	 * @var string|NULL
-	 */
-	protected $protocol			= NULL;
-
-	/**
-	 * `TRUE` if http protocol is `"https:"`
-	 * @var bool|NULL
-	 */
-	protected $secure			= NULL;
-
-	/**
-	 * Application server name - domain without any port.
-	 * Example: `"localhost"`
-	 * @var string|NULL
-	 */
-	protected $serverName		= NULL;
-
-	/**
-	 * Application host with port if there is any.
-	 * Example: `"localhost:88"`
-	 * @var string|NULL
-	 */
-	protected $host				= NULL;
-
-	/**
-	 * Http port defined in requested url if any, parsed by `parse_url().
-	 * Empty string if there is no port number in requested address.`.
-	 * Example: `"88" | ""`
-	 * @var string|NULL
-	 */
-	protected $port				= NULL;
-
-	/**
-	 * Requested path in from application root (if `mod_rewrite` enabled), never with query string.
-	 * Example: `"/products/page/2"`
-	 * @var string|NULL
-	 */
-	protected $path				= NULL;
-
-	/**
-	 * Uri query string without question mark.
-	 * Example: `"param-1=value-1&param-2=value-2&param-3[]=value-3-a&param-3[]=value-3-b"`
-	 * @var string|NULL
-	 */
-	protected $query			= NULL;
-
-	/**
-	 * Uri fragment parsed by `parse_url()` including hash.
-	 * Example: `"#any-sublink-path"`
-	 * @var string|NULL
-	 */
-	protected $fragment			= NULL;
-
-	/**
-	 * `TRUE` if request is requested from browser by `XmlHttpRequest` object
-	 * with http header: `X-Requested-With: AnyJavascriptFrameworkName`, `FALSE` otherwise.
-	 * @var bool|null
-	 */
-	protected $ajax				= NULL;
-
-	/**
-	 * Php requested script name path from application root.
-	 * Example: `"/index.php"`
-	 * @var string|NULL
-	 */
-	protected $scriptName		= NULL;
-
-	/**
-	 * Application root path on hard drive.
-	 * Example: `"C:/www/my/development/direcotry/www"`
-	 * @var string|NULL
-	 */
-	protected $appRoot			= NULL;
-
-	/**
-	 * Base app directory path after domain, if application is placed in domain subdirectory
-	 * Example:
-	 * - full url:  `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
-	 * - base path: `"/my/development/direcotry/www"`
-	 * @var string|NULL
-	 */
-	protected $basePath			= NULL;
-
-	/**
-	 * Request path after domain with possible query string
-	 * Example: `"/requested/path/after/app/root?with=possible&query=string"`
-	 * @var string|NULL
-	 */
-	protected $requestPath		= NULL;
-
-	/**
-	 * Url to requested domain and possible port.
-	 * Example: `"https://domain.com" | "http://domain:88"` if any port.
-	 * @var string|NULL
-	 */
-	protected $domainUrl		= NULL;
-
-	/**
-	 * Base url to application root.
-	 * Example: `"http://domain:88/my/development/direcotry/www"`
-	 * @var string|NULL
-	 */
-	protected $baseUrl			= NULL;
-
-	/**
-	 * Request url including scheme, domain, port, path, without any query string
-	 * Example: "`http://localhost:88/my/development/direcotry/www/requested/path/after/domain"`
-	 * @var string|NULL
-	 */
-	protected $requestUrl		= NULL;
-
-	/**
-	 * Request url including scheme, domain, port, path and with query string
-	 * Example: `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
-	 * @var string|NULL
-	 */
-	protected $fullUrl			= NULL;
-
-	/**
-	 * Http method (uppercase) - `GET`, `POST`, `PUT`, `HEAD`...
-	 * Example: `"GET"`
-	 * @var string|NULL
-	 */
-	protected $method			= NULL;
-
-	/**
-	 * Referer url if any, safely readed by:
-	 * `filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);`
-	 * Example: `"http://foreing.domain.com/path/where/is/link/to/?my=app"`
-	 * @var string|NULL
-	 */
-	protected $referer			= NULL;
-
-	/**
-	 * Server ip address string.
-	 * @var string|NULL
-	 */
-	protected $serverIp			= NULL;
-
-	/**
-	 * Client ip address string.
-	 * @var string|NULL
-	 */
-	protected $clientIp			= NULL;
-
-	/**
-	 * Timestamp of the start of the request, with microsecond precision.
-	 * @var float
-	 */
-	protected $microtime		= NULL;
-
-	/**
-	 * All raw http headers without any conversion, initialized by
-	 * `getallheaders()` or from `$_SERVER['HTTP_...']`.
-	 * Headers are `key => value` array, headers keys are
-	 * in standard format like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
-	 * @var array|NULL
-	 */
-	protected $headers			= NULL;
-
-	/**
-	 * Raw request params array, with keys defined in route or by query string,
-	 * always with controller and action keys completed by router.
-	 * Do not read this `$Params` array directly, read it's values by:
-	 * `\MvcCore\Request::GetParam($paramName, $allowedChars, $defaultValueIfNull, $targetType);`.
-	 * Example:
-	 *	`\MvcCore\Request:$Params = array(
-	 *		"controller"	=> "default",
-	 *		"action"		=> "default",
-	 *		"username"		=> "' OR 1=1;-- ",	// be carefull for this content with raw (danger) value!
-	 *	);`
-	 *	// Do not read `$Params` array directly,
-	 *	// to get safe param value use:
-	 *	`\MvcCore\Request::GetParam("username", "a-zA-Z0-9_");` // return `OR` string without danger chars.
-	 * @var array|NULL
-	 */
-	protected $params			= NULL;
-
-	/**
-	 * Request flag if request targets internal package asset or not,
-	 * - 0 => Means request is `Controller:Asset` call for internal package asset.
-	 * - 1 => Means request is classic application request.
-	 * @var bool|NULL
-	 */
-	protected $appRequest		= NULL;
-
-	/**
-	 * Cleaned input param `"controller"`, containing only chars: `"a-zA-Z0-9\-_/"`.
-	 * @var string
-	 */
-	protected $controllerName	= NULL;
-
-	/**
-	 * Cleaned input param `"action"`, containing only chars: `"a-zA-Z0-9\-_/"`.
-	 * @var string
-	 */
-	protected $actionName		= NULL;
-
-	/**
-	 * Content of referenced `$_SERVER` global variable.
-	 * @var array
-	 */
-	protected $globalServer	= array();
-
-	/**
-	 * Content of referenced `$_GET` global variable.
-	 * @var array
-	 */
-	protected $globalGet		= array();
-
-	/**
-	 * Content of referenced `$_POST` global variable.
-	 * @var array
-	 */
-	protected $globalPost		= array();
-
-	/**
-	 * Content of referenced `$_COOKIE` global variable.
-	 * @var array
-	 */
-	protected $globalCookies	= array();
-
-	/**
-	 * Content of referenced `$_FILES` global variable.
-	 * @var array
-	 */
-	protected $globalFiles		= array();
-
-	/**
-	 * Static factory to get everytime new instance of http request object.
-	 * Global variables for constructor arguments (`$_SERVER`, `$_GET`, `$_POST`...)
-	 * should be changed to any arrays with any values and injected here to get
-	 * different request object then currently called real request object.
-	 * For example to create fake request object for testing purposes
-	 * or for non-real request rendering into request output cache.
-	 * @param array $server
-	 * @param array $get
-	 * @param array $post
-	 * @param array $cookie
-	 * @param array $files
-	 * @return \MvcCore\Request
-	 */
-	public static function GetInstance (
-		array & $server = array(),
-		array & $get = array(),
-		array & $post = array(),
-		array & $cookie = array(),
-		array & $files = array()
-	) {
-		$requestClass = \MvcCore\Application::GetInstance()->GetRequestClass();
-		return new $requestClass($server, $get, $post, $cookie, $files);
-	}
-
-
-	/**
-	 * Create new instance of http request object.
-	 * Global variables for constructor arguments (`$_SERVER`, `$_GET`, `$_POST`...)
-	 * should be changed to any arrays with any values and injected here to get
-	 * different request object then currently called real request object.
-	 * For example to create fake request object for testing purposes
-	 * or for non-real request rendering into request output cache.
-	 * @param array $server
-	 * @param array $get
-	 * @param array $post
-	 * @param array $cookie
-	 * @param array $files
-	 * @return \MvcCore\Request
-	 */
-	public function __construct (
-		array & $server = array(),
-		array & $get = array(),
-		array & $post = array(),
-		array & $cookie = array(),
-		array & $files = array()
-	) {
-		$this->globalServer = & $server;
-		$this->globalGet = & $get;
-		$this->globalPost = & $post;
-		$this->globalCookies = & $cookie;
-		$this->globalFiles = & $files;
-	}
-
-	/**
-	 * Get one of the global data collections stored as protected properties inside request object.
-	 * Example:
-	 *  // to get global `$_GET` with raw values:
-	 *  `$globalGet = $request->GetGlobalCollection('get');`
-	 * @param string $type
-	 * @return array
-	 */
-	public function & GetGlobalCollection ($type) {
-		$collection = 'global'.ucfirst(strtolower($type));
-		return $this->$collection;
-	}
-
-	/**
-	 * Set directly all raw http headers without any conversion at once.
-	 * Header name(s) as array keys should be in standard format like:
-	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
-	 * @param array $headers
-	 * @return \MvcCore\Request
-	 */
-	public function & SetHeaders (array & $headers = array()) {
-		$this->headers = & $headers;
-		return $this;
-	}
-
-	/**
-	 * Get directly all raw http headers at once (with/without conversion).
-	 * If headers are not initialized, initialize headers by
-	 * `getallheaders()` or from `$_SERVER['HTTP_...']`.
-	 * Headers are returned as `key => value` array, headers keys are
-	 * in standard format like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @return array
-	 */
-	public function & GetHeaders ($pregReplaceAllowedChars = array('#\<\>#', '')) {
-		if ($this->headers === NULL) $this->initHeaders();
-		if ($pregReplaceAllowedChars === '' || $pregReplaceAllowedChars === '.*') return $this->headers;
-		$cleanedHeaders = array();
-		foreach ($this->headers as $key => & $value) {
-			$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
-			$cleanedHeaders[$cleanedKey] = $this->GetHeader($key, $pregReplaceAllowedChars);
-		}
-		return $cleanedHeaders;
-	}
-
-	/**
-	 * Set directly raw http header value without any conversion.
-	 * Header name should be in standard format like:
-	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
-	 * @param string $name
-	 * @param string|string[] $value
-	 * @return \MvcCore\Request
-	 */
-	public function & SetHeader ($name = "", $value = "") {
-		if ($this->headers === NULL) $this->initHeaders();
-		$this->headers[$name] = $value;
-		return $this;
-	}
-
-	/**
-	 * Get http header value filtered by "rule to keep defined characters only",
-	 * defined in second argument (by `preg_replace()`). Place into second argument
-	 * only char groups you want to keep. Header has to be in format like:
-	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
-	 * @param string $name Http header string name.
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @param mixed $ifNullValue Default value returned if given param name is null.
-	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
-	 * @return string|string[]|mixed
-	 */
-	public function GetHeader (
-		$name = "",
-		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
-		$ifNullValue = NULL,
-		$targetType = NULL
-	) {
-		if ($this->headers === NULL) $this->initHeaders();
-		return $this->getParamFromCollection(
-			$this->headers, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
-		);
-	}
-
-
-	/**
-	 * Set directly all raw parameters without any conversion at once.
-	 * @param array $params
-	 * @return \MvcCore\Request
-	 */
-	public function & SetParams (array & $params = array()) {
-		$this->params = & $params;
-		return $this;
-	}
-
-	/**
-	 * Get directly all raw parameters at once (with/without conversion).
-	 * If any defined char groups in `$pregReplaceAllowedChars`, there will be returned
-	 * all params filtered by given rule in `preg_replace()`.
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @return array
-	 */
-	public function & GetParams ($pregReplaceAllowedChars = array('#\<\>#', '')) {
-		if ($this->params === NULL) $this->initParams();
-		if ($pregReplaceAllowedChars === '') return $this->params;
-		$cleanedParams = array();
-		foreach ($this->params as $key => & $value) {
-			$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
-			$cleanedParams[$cleanedKey] = $this->GetParam($key, $pregReplaceAllowedChars);
-		}
-		return $cleanedParams;
-	}
-
-	/**
-	 * Set directly raw parameter value without any conversion.
-	 * @param string $name
-	 * @param string|string[] $value
-	 * @return \MvcCore\Request
-	 */
-	public function & SetParam ($name = "", $value = "") {
-		if ($this->params === NULL) $this->initParams();
-		$this->params[$name] = $value;
-		return $this;
-	}
-
-	/**
-	 * Get param value from `$_GET`, `$_POST` or `php://input`, filtered by
-	 * "rule to keep defined characters only", defined in second argument (by `preg_replace()`).
-	 * Place into second argument only char groups you want to keep.
-	 * @param string $name Parametter string name.
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @param mixed $ifNullValue Default value returned if given param name is null.
-	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
-	 * @return string|string[]|mixed
-	 */
-	public function GetParam (
-		$name = "",
-		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
-		$ifNullValue = NULL,
-		$targetType = NULL
-	) {
-		if ($this->params === NULL) $this->initParams();
-		return $this->getParamFromCollection(
-			$this->params, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
-		);
-	}
-
-
-	/**
-	 * Set directly whole raw global `$_FILES` without any conversion at once.
-	 * @param array $files
-	 * @return \MvcCore\Request
-	 */
-	public function & SetFiles (array & $files = array()) {
-		$this->globalFiles = & $files;
-		return $this;
-	}
-
-	/**
-	 * Return reference to configured global `$_FILES`
-	 * or reference to any other testing array representing it.
-	 * @return array
-	 */
-	public function & GetFiles () {
-		return $this->globalFiles;
-	}
-
-	/**
-	 * Set file item into global `$_FILES` without any conversion at once.
-	 * @param string $file
-	 * @param array $data
-	 * @return \MvcCore\Request
-	 */
-	public function & SetFile ($file = '', $data = array()) {
-		$this->globalFiles[$file] = $data;
-		return $this;
-	}
-
-	/**
-	 * Return item by file name from referenced global `$_FILES`
-	 * or reference to any other testing array item representing it.
-	 * @return array
-	 */
-	public function GetFile ($file = '') {
-		if (isset($this->globalFiles[$file])) return $this->globalFiles[$file];
-		return array();
-	}
-
-
-	/**
-	 * Set directly whole raw global `$_COOKIE` without any conversion at once.
-	 * @param array $cookies
-	 * @return \MvcCore\Request
-	 */
-	public function & SetCookies (array & $cookies = array()) {
-		$this->globalCookies = & $cookies;
-		return $this;
-	}
-
-	/**
-	 * Return reference to configured global `$_COOKIE`
-	 * or reference to any other testing array representing it.
-	 * @return array
-	 */
-	public function & GetCookies () {
-		return $this->globalCookies;
-	}
-
-	/**
-	 * Set raw request cookie into referenced global `$_COOKIE` without any conversion.
-	 * @param string $name
-	 * @param string|string[] $value
-	 * @return \MvcCore\Request
-	 */
-	public function & SetCookie ($name = "", $value = "") {
-		$this->globalCookies[$name] = $value;
-		return $this;
-	}
-
-	/**
-	 * Get request cookie value from referenced global `$_COOKIE` variable,
-	 * filtered by characters defined in second argument throught `preg_replace()`.
-	 * Place into second argument only char groups you want to keep.
-	 * @param string $name Cookie string name.
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @param mixed $ifNullValue Default value returned if given param name is null.
-	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
-	 * @return string|string[]|mixed
-	 */
-	public function GetCookie (
-		$name = "",
-		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
-		$ifNullValue = NULL,
-		$targetType = NULL
-	) {
-		return $this->getParamFromCollection(
-			$this->globalCookies, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
-		);
-	}
-
-
-	/**
-	 * Initialize all possible protected values from all globals,
-	 * including all http headers, all params and application inputs.
-	 * This method is not recomanded to use in production mode, it's
-	 * designed mostly for development purposes, to see in one moment,
-	 * what could be inside request after calling any getter method.
-	 * @return \MvcCore\Request
-	 */
-	public function & InitAll () {
-		$this->GetScriptName();
-		$this->GetAppRoot();
-		$this->GetMethod();
-		$this->GetBasePath();
-		$this->GetProtocol();
-		$this->IsSecure();
-		$this->GetServerName();
-		$this->GetHost();
-		$this->GetRequestPath();
-		$this->GetFullUrl();
-		$this->GetReferer();
-		$this->GetMicrotime();
-		$this->IsAjax();
-		if ($this->port === NULL) $this->initUrlSegments();
-		if ($this->headers === NULL) $this->initHeaders();
-		if ($this->params === NULL) $this->initParams();
-		$this->GetServerIp();
-		$this->GetClientIp();
-		return $this;
-	}
-
-	/**
-	 * Return `TRUE` boolean flag if request targets `Controller:Asset`.
-	 * @return bool
-	 */
-	public function IsInternalRequest () {
-		if ($this->appRequest === NULL) {
-			$ctrl = $this->GetControllerName();
-			$action = $this->GetActionName();
-			if ($ctrl !== NULL && $action !== NULL) {
-				$this->appRequest = FALSE;
-				if ($ctrl === 'controller' && $action === 'asset')
-					$this->appRequest = TRUE;
-			}
-		}
-		return $this->appRequest;
-	}
-
-	/**
-	 * Set cleaned requested controller name into `\MvcCore\Request::$controllerName;`
-	 * and into `\MvcCore\Request::$Params['controller'];`.
-	 * @param string $controllerName
-	 * @return \MvcCore\Request
-	 */
-	public function & SetControllerName ($controllerName) {
-		$this->controllerName = $controllerName;
-		$this->params['controller'] = $controllerName;
-		return $this;
-	}
-
-	/**
-	 * Return cleaned requested controller name from `\MvcCore\Request::$Params['controller'];`.
-	 * @return string
-	 */
-	public function GetControllerName () {
-		if ($this->controllerName === NULL) {
-			if (isset($this->globalGet['controller']))
-				$this->controllerName = $this->GetParam('controller', 'a-zA-Z0-9\-_/', '', 'string');
-		}
-		return $this->controllerName;
-	}
-
-	/**
-	 * Set cleaned requested controller name into `\MvcCore\Request::$actionName;`
-	 * and into `\MvcCore\Request::$Params['action'];`.
-	 * @param string $actionName
-	 * @return \MvcCore\Request
-	 */
-	public function & SetActionName ($actionName) {
-		$this->actionName = $actionName;
-		$this->params['action'] = $actionName;
-		return $this;
-	}
-
-	/**
-	 * Return cleaned requested action name from `\MvcCore\Request::$Params['action'];`.
-	 * @return string
-	 */
-	public function GetActionName () {
-		if ($this->actionName === NULL) {
-			if (isset($this->globalGet['action']))
-				$this->actionName = $this->GetParam('action', 'a-zA-Z0-9\-_', '', 'string');
-		}
-		return $this->actionName;
-	}
-
-	/**
-	 * Set language international code.
-	 * Use this lang storage by your own decision.
-	 * Example: `"en" | "de"`
-	 * @var string|NULL
-	 */
-	public function & SetLang ($lang) {
-		$this->lang = $lang;
-		return $this;
-	}
-
-	/**
-	 * Get language international code, lowercase, not used by default.
-	 * To use this variable - install  `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
-	 * Or use this variable by your own decision.
-	 * Example: `"en" | "de"`
-	 * @var string|NULL
-	 */
-	public function GetLang () {
-		if ($this->lang === NULL) $this->initLangAndLocale();
-		return $this->lang;
-	}
-
-	/**
-	 * Set country/locale code, uppercase.
-	 * Use this locale storage by your own decision.
-	 * Example: `"US" | "UK"`
-	 * @var string|NULL
-	 */
-	public function & SetLocale ($locale) {
-		$this->locale = $locale;
-		return $this;
-	}
-
-	/**
-	 * Get country/locale code, uppercase, not used by default.
-	 * To use this variable - install `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
-	 * Or use this variable by your own decision.
-	 * Example: `"US" | "UK"`
-	 * @var string|NULL
-	 */
-	public function GetLocale () {
-		if ($this->locale === NULL) $this->initLangAndLocale();
-		return $this->locale;
-	}
-
-	/**
-	 * Set media site key - `"full" | "tablet" | "mobile"`.
-	 * Use this media site key storage by your own decision.
-	 * Example: `"full" | "tablet" | "mobile"`
-	 * @var string|NULL
-	 */
-	public function & SetMediaSiteKey ($mediaSiteKey) {
-		$this->mediaSiteKey = $mediaSiteKey;
-		return $this;
-	}
-
-	/**
-	 * Get media site key - `"full" | "tablet" | "mobile"`.
-	 * To use this variable - install `\MvcCore\Router` extension `\MvcCoreExt\Router\Media`
-	 * Or use this variable by your own decision.
-	 * Example: `"full" | "tablet" | "mobile"`
-	 * @var string|NULL
-	 */
-	public function GetMediaSiteKey () {
-		return $this->mediaSiteKey;
-	}
-
-
-	/**
-	 * Sets any custom property `"PropertyName"` by `\MvcCore\Request::SetPropertyName("value")`,
-	 * which is not necessary to define previously or gets previously defined
-	 * property `"PropertyName"` by `\MvcCore\Request::GetPropertyName();`.
-	 * Throws exception if no property defined by get call or if virtual call
-	 * begins with anything different from 'Set' or 'Get'.
-	 * This method returns custom value for get and `\MvcCore\Request` instance for set.
-	 * @param string $name
-	 * @param array  $arguments
-	 * @throws \InvalidArgumentException
-	 * @return mixed|\MvcCore\Request
-	 */
-	public function __call ($name, $arguments = array()) {
-		$nameBegin = strtolower(substr($name, 0, 3));
-		$prop = substr($name, 3);
-		if ($nameBegin == 'get' && isset($this->$prop)) {
-			return $this->$prop;
-		} else if ($nameBegin == 'set') {
-			$this->$prop = isset($arguments[0]) ? $arguments[0] : NULL;
-			return $this;
-		} else {
-			throw new \InvalidArgumentException('['.__CLASS__."] No property with name '$prop' defined.");
-		}
-	}
-
-	/**
-	 * Universal getter, if property not defined, `NULL` is returned.
-	 * @param string $name
-	 * @return mixed
-	 */
-	public function __get ($name) {
-		return isset($this->$name) ? $this->$name : NULL ;
-	}
-
-	/**
-	 * Universal setter, if property not defined, it's automaticly declarated.
-	 * @param string $name
-	 * @param mixed	 $value
-	 * @return \MvcCore\Request
-	 */
-	public function __set ($name, $value) {
-		$this->$name = $value;
-		return $this;
-	}
-
-
-	/**
-	 * Php requested script name path from application root.
-	 * Example: `"/index.php"`
-	 * @return string
-	 */
-	public function GetScriptName () {
-		if ($this->scriptName === NULL) $this->initScriptNameAndBasePath();
-		return $this->scriptName;
-	}
-
-	/**
-	 * Get application root path on hard drive.
-	 * Example: `"C:/www/my/development/direcotry/www"`
-	 * @return string
-	 */
-	public function GetAppRoot () {
-		if ($this->appRoot === NULL) {
-			// ucfirst - cause IIS has lower case drive name here - different from __DIR__ value
-			$indexFilePath = ucfirst(str_replace(array('\\', '//'), '/', $this->globalServer['SCRIPT_FILENAME']));
-			if (strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Request.php', 'phar://') === 0) {
-				$this->appRoot = 'phar://' . $indexFilePath;
-			} else {
-				$this->appRoot = substr($indexFilePath, 0, mb_strrpos($indexFilePath, '/'));
-			}
-		}
-		return $this->appRoot;
-	}
-
-	/**
-	 * Get uppercased http method from global `$_SERVER['REQUEST_METHOD']`.
-	 * Example: `"GET" | "POST" | "PUT" | "HEAD"...`
-	 * @return string
-	 */
-	public function GetMethod () {
-		if ($this->method === NULL) {
-			$this->method = strtoupper($this->globalServer['REQUEST_METHOD']);
-		}
-		return $this->method;
-	}
-
-	/**
-	 * Get base app directory path after domain,
-	 * if application is placed in domain subdirectory.
-	 * Example:
-	 * - full url:  `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
-	 * - base path: `"/my/development/direcotry/www"`
-	 * @return string
-	 */
-	public function GetBasePath () {
-		if ($this->basePath === NULL) $this->initScriptNameAndBasePath();
-		return $this->basePath;
-	}
-
-	/**
-	 * Get http protocol string.
-	 * Example: `"http:" | "https:"`
-	 * @return string
-	 */
-	public function GetProtocol () {
-		if ($this->protocol === NULL) {
-			$this->protocol = (
-				isset($this->globalServer['HTTPS']) &&
-				strtolower($this->globalServer['HTTPS']) == 'on'
-			)
-				? static::PROTOCOL_HTTPS
-				: static::PROTOCOL_HTTP;
-		}
-		return $this->protocol;
-	}
-
-	/**
-	 * Get `TRUE` if http protocol is `"https:"`.
-	 * @return bool
-	 */
-	public function IsSecure () {
-		if ($this->secure === NULL)
-			$this->secure = $this->GetProtocol() == static::PROTOCOL_HTTPS;
-		return $this->secure;
-	}
-
-	/**
-	 * Get referer url if any, safely readed by:
-	 * `filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);`
-	 * Example: `"http://foreing.domain.com/path/where/is/link/to/?my=app"`
-	 * @return string
-	 */
-	public function GetReferer () {
-		if ($this->referer === NULL) {
-			$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
-			if ($referer) $referer = filter_var($referer, FILTER_SANITIZE_URL) ?: '';
-			$this->referer = $referer;
-		}
-		return $this->referer;
-	}
-
-	/**
-	 * Get timestamp of the start of the request, with microsecond precision.
-	 * @return float
-	 */
-	public function GetMicrotime () {
-		if ($this->microtime === NULL) $this->microtime = $this->globalServer['REQUEST_TIME_FLOAT'];
-		return $this->microtime;
-	}
-
-	/**
-	 * Get application server name - domain without any port.
-	 * Example: `"localhost"`
-	 * @return string
-	 */
-	public function GetServerName () {
-		if ($this->serverName === NULL) $this->serverName = $this->globalServer['SERVER_NAME'];
-		return $this->serverName;
-	}
-
-	/**
-	 * Get application host with port if there is any.
-	 * Example: `"localhost:88"`
-	 * @return string
-	 */
-	public function GetHost () {
-		if ($this->host === NULL) $this->host = $this->globalServer['HTTP_HOST'];
-		return $this->host;
-	}
-
-	/**
-	 * Http port defined in requested url if any, parsed by `parse_url().
-	 * Empty string if there is no port number in requested address.`.
-	 * Example: `"88" | ""`
-	 * @return string
-	 */
-	public function GetPort () {
-		if ($this->port === NULL) $this->initUrlSegments();
-		return $this->port;
-	}
-
-	/**
-	 * Get requested path in from application root (if `mod_rewrite` enabled), never with query string.
-	 * Example: `"/products/page/2"`
-	 * @return string
-	 */
-	public function GetPath () {
-		if ($this->path === NULL) $this->initUrlSegments();
-		return $this->path;
-	}
-
-	/**
-	 * Get uri query string without question mark.
-	 * Example: `"param-1=value-1&param-2=value-2&param-3[]=value-3-a&param-3[]=value-3-b"`
-	 * @return string
-	 */
-	public function GetQuery () {
-		if ($this->query === NULL) $this->initUrlSegments();
-		return $this->query;
-	}
-
-	/**
-	 * Get request path after domain with possible query string
-	 * Example: `"/requested/path/after/app/root?with=possible&query=string"`
-	 * @return string
-	 */
-	public function GetRequestPath () {
-		if ($this->requestPath === NULL) {
-			$query = $this->GetQuery();
-			$this->requestPath = $this->GetPath() . ($query ? '?' . $query : '') . $this->GetFragment();
-		}
-		return $this->requestPath;
-	}
-
-	/**
-	 * Get url to requested domain and possible port.
-	 * Example: `"https://domain.com" | "http://domain:88"` if any port.
-	 * @return string
-	 */
-	public function GetDomainUrl () {
-		if ($this->domainUrl === NULL) $this->domainUrl = $this->GetProtocol() . '//' . $this->GetHost();
-		return $this->domainUrl;
-	}
-
-	/**
-	 * Get base url to application root.
-	 * Example: `"http://domain:88/my/development/direcotry/www"`
-	 * @return string
-	 */
-	public function GetBaseUrl () {
-		if ($this->baseUrl === NULL) $this->baseUrl = $this->GetDomainUrl() . $this->GetBasePath();
-		return $this->baseUrl;
-	}
-
-	/**
-	 * Get request url including scheme, domain, port, path, without any query string
-	 * Example: "`http://localhost:88/my/development/direcotry/www/requested/path/after/domain"`
-	 * @return string
-	 */
-	public function GetRequestUrl () {
-		if ($this->requestUrl === NULL) $this->requestUrl = $this->GetBaseUrl() . $this->GetPath();
-		return $this->requestUrl;
-	}
-
-	/**
-	 * Get request url including scheme, domain, port, path and with query string
-	 * Example: `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
-	 * @return string
-	 */
-	public function GetFullUrl () {
-		if ($this->fullUrl === NULL) {
-			$query = $this->GetQuery();
-			$this->fullUrl = $this->GetRequestUrl() . ($query ? '?' . $query : '') . $this->GetFragment();
-		}
-		return $this->fullUrl;
-	}
-
-	/**
-	 * Get uri fragment parsed by `parse_url()` including hash.
-	 * Example: `"#any-sublink-path"`
-	 * @return string
-	 */
-	public function GetFragment () {
-		if ($this->fragment === NULL) $this->initUrlSegments();
-		return $this->fragment;
-	}
-
-	/**
-	 * Get server IP from `$_SERVER` global variable.
-	 * @return string
-	 */
-	public function GetServerIp () {
-		if ($this->serverIp === NULL) {
-			$this->serverIp = (isset($this->globalServer['SERVER_ADDR'])
-				? $this->globalServer['SERVER_ADDR']
-				: (isset($this->globalServer['LOCAL_ADDR'])
-					? $this->globalServer['LOCAL_ADDR']
-					: ''));
-		}
-		return $this->serverIp;
-	}
-
-	/**
-	 * Get client IP from `$_SERVER` global variable.
-	 * @return string
-	 */
-	public function GetClientIp () {
-		if ($this->clientIp === NULL) {
-			$this->clientIp = (isset($this->globalServer['REMOTE_ADDR'])
-				? $this->globalServer['REMOTE_ADDR']
-				: (isset($this->globalServer['HTTP_X_CLIENT_IP'])
-					? $this->globalServer['HTTP_X_CLIENT_IP']
-					: ''));
-		}
-		return $this->clientIp;
-	}
-
-	/**
-	 * Get `TRUE` if request is requested on the background
-	 * with usual Javascript HTTP header containing:
-	 * `X-Requested-With: AnyJsFrameworkName`.
-	 * @return bool
-	 */
-	public function IsAjax () {
-		if ($this->ajax === NULL) {
-			$this->ajax = (
-				isset($this->globalServer['HTTP_X_REQUESTED_WITH']) &&
-				strlen($this->globalServer['HTTP_X_REQUESTED_WITH']) > 0
-			);
-		}
-		return $this->ajax;
-	}
-
-	/**
-	 * Parse list of comma separated language tags and sort it by the
-	 * quality value from `$this->globalServer['HTTP_ACCEPT_LANGUAGE']`.
-	 * @param string[] $languagesList
-	 * @return array
-	 */
-	public static function ParseHttpAcceptLang ($languagesList) {
-		$languages = array();
-		$languageRanges = explode(',', trim($languagesList));
-		foreach ($languageRanges as $languageRange) {
-			$regExpResult = preg_match(
-				"/(\*|[a-zA-Z0-9]{1,8}(?:-[a-zA-Z0-9]{1,8})*)(?:\s*;\s*q\s*=\s*(0(?:\.\d{0,3})|1(?:\.0{0,3})))?/",
-				trim($languageRange),
-				$match
-			);
-			if ($regExpResult) {
-				$priority = isset($match[2])
-					? (string) floatval($match[2])
-					: '1.0';
-				if (!isset($languages[$priority])) $languages[$priority] = array();
-				$langOrLangWithLocale = str_replace('-', '_', $match[1]);
-				$delimiterPos = strpos($langOrLangWithLocale, '_');
-				if ($delimiterPos !== FALSE) {
-					$languages[$priority][] = array(
-						strtolower(substr($langOrLangWithLocale, 0, $delimiterPos)),
-						strtoupper(substr($langOrLangWithLocale, $delimiterPos + 1))
-					);
-				} else {
-					$languages[$priority][] = array(
-						strtolower($langOrLangWithLocale),
-						NULL
-					);
-				}
-			}
-		}
-		krsort($languages);
-		reset($languages);
-		return $languages;
-	}
-
-
-	/**
-	 * Initialize url segments parsed by `parse_url()`
-	 * php method: port, path, query and fragment.
-	 * @return void
-	 */
-	protected function initUrlSegments () {
-		$absoluteUrl = $this->GetProtocol() . '//'
-			. $this->globalServer['HTTP_HOST']
-			. $this->globalServer['REQUEST_URI'];
-		$parsedUrl = parse_url($absoluteUrl);
-		$this->port = isset($parsedUrl['port']) ? $parsedUrl['port'] : '';
-		$this->path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
-		$this->path = mb_substr($this->path, mb_strlen($this->GetBasePath()));
-		$this->query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
-		$this->fragment = isset($parsedUrl['fragment']) ? $parsedUrl['fragment'] : '';
-	}
-
-	/**
-	 * Init raw http headers by `getallheaders()` or from `$_SERVER['HTTP_...']`.
-	 * Headers has to be `key => value` array, headers keys in standard format
-	 * like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
-	 * @return void
-	 */
-	protected function initHeaders () {
-		if (function_exists('getallheaders')) {
-			$headers = getallheaders();
-		} else {
-			$headers = array();
-			foreach ($this->globalServer as $name => $value) {
-				if (substr($name, 0, 5) == 'HTTP_') {
-					$headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
-				} else if ($name == "CONTENT_TYPE") {
-					$headers["Content-Type"] = $value;
-				} else if ($name == "CONTENT_LENGTH") {
-					$headers["Content-Length"] = $value;
-				}
-			}
-		}
-		$this->headers = $headers;
-	}
-
-	/**
-	 * Initialize params from global `$_GET` and (global `$_POST` or direct `php://input`).
-	 * @return void
-	 */
-	protected function initParams () {
-		$params = array_merge($this->globalGet);
-		if ($this->GetMethod() == self::METHOD_POST) {
-			$postValues = array();
-			if (count($this->globalPost) > 0) {
-				$postValues = $this->globalPost;
-			} else {
-				$postValues = $this->initParamsCompletePostData();
-			}
-			$params = array_merge($params, $postValues);
-		}
-		$this->params = $params;
-	}
-
-	/**
-	 * Read and return direct php `POST` input from `php://input`.
-	 * @return array
-	 */
-	protected function initParamsCompletePostData () {
-		$result = array();
-		$rawPhpInput = \Packager_Php_Wrapper::FileGetContents('php://input');
-		$decodedJsonResult = \MvcCore\Tool::DecodeJson($rawPhpInput);
-		if ($decodedJsonResult->success) {
-			$result = (array) $decodedJsonResult->data;
-		} else {
-			$rows = explode('&', $rawPhpInput);
-			foreach ($rows as $row) {
-				list($key, $value) = explode('=', $row);
-				$result[$key] = $value;
-			}
-		}
-		return $result;
-	}
-
-	/**
-	 * Get param value from given collection (`$_GET`, `$_POST`, `php://input` or http headers),
-	 * filtered by characters defined in second argument throught `preg_replace()`.
-	 * Place into second argument only char groups you want to keep.
-	 * @param array $collection Array with request params or array with request headers.
-	 * @param string $name Parametter string name.
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @param mixed $ifNullValue Default value returned if given param name is null.
-	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
-	 * @return string|string[]|mixed
-	 */
-	protected function getParamFromCollection (
-		& $paramsCollection = array(),
-		$name = "",
-		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
-		$ifNullValue = NULL,
-		$targetType = NULL
-	) {
-		if (!isset($paramsCollection[$name])) return NULL;
-		if (gettype($paramsCollection[$name]) == 'array') {
-			$result = array();
-			$paramsCollection = $paramsCollection[$name];
-			foreach ($paramsCollection as $key => & $value) {
-				$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
-				$result[$cleanedKey] = $this->getParamItem(
-					$value, $pregReplaceAllowedChars, $ifNullValue, $targetType
-				);
-			}
-			return $result;
-		} else {
-			return $this->getParamItem(
-				$paramsCollection[$name], $pregReplaceAllowedChars, $ifNullValue, $targetType
-			);
-		}
-	}
-
-	/**
-	 * Get filtered param or header value for characters defined as second argument to use them in `preg_replace()`.
-	 * @param string|string[]|NULL $rawValue
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @param mixed $ifNullValue Default value returned if given param name is null.
-	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
-	 * @return string|string[]|mixed
-	 */
-	protected function getParamItem (
-		& $rawValue = NULL,
-		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
-		$ifNullValue = NULL,
-		$targetType = NULL
-	) {
-		if ($rawValue === NULL) {
-			// if there is NULL in target collection
-			if ($targetType === NULL) return $ifNullValue;
-			$result = is_scalar($ifNullValue) ? $ifNullValue : clone $ifNullValue;
-			settype($result, $targetType);
-			return $result;
-		} else {
-			// if there is not NULL in target collection
-			$rawValue = trim($rawValue);
-			if (mb_strlen($rawValue) === 0) {
-				// if value after trim is empty string, return empty string (retyped if necessary)
-				$result = "";
-				if ($targetType === NULL) return $result;
-				settype($result, $targetType);
-				return $result;
-			} else if ($pregReplaceAllowedChars == '.*') {
-				// if there is something in target collection and all chars are allowed
-				$result = $rawValue;
-				if ($targetType === NULL) return $result;
-				settype($result, $targetType);
-				return $result;
-			} else if (gettype($rawValue) == 'array') {
-				// if there is something in target collection and it's an array
-				$result = array();
-				foreach ((array) $rawValue as $key => & $value) {
-					$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
-					$result[$cleanedKey] = $this->getParamItem(
-						$value, $pregReplaceAllowedChars, $ifNullValue, $targetType
-					);
-				}
-				return $result;
-			} else {
-				// if there is something in target collection and it's not an array
-				$result = $this->cleanParamValue($rawValue, $pregReplaceAllowedChars);
-				if ($targetType === NULL) return $result;
-				settype($result, $targetType);
-				return $result;
-			}
-		}
-	}
-
-	/**
-	 * Clean param value by given list of allowed chars or by given `preg_replace()` pattern and reverse.
-	 * @param string $rawValue
-	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
-	 * @return string
-	 */
-	protected function cleanParamValue ($rawValue, $pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:") {
-		if (is_array($pregReplaceAllowedChars)) {
-			return preg_replace($pregReplaceAllowedChars[0], $pregReplaceAllowedChars[1], $rawValue);
-		} else {
-			return preg_replace("#[^" . $pregReplaceAllowedChars . "]#", "", $rawValue);
-		}
-	}
-
-	/**
-	 * Init script name from `$_SERVER['SCRIPT_NAME']` and request base path.
-	 * @return void
-	 */
-	protected function initScriptNameAndBasePath () {
-		$this->basePath = '';
-		$this->scriptName = str_replace('\\', '/', $this->globalServer['SCRIPT_NAME']);
-		$lastSlashPos = mb_strrpos($this->scriptName, '/');
-		if ($lastSlashPos !== 0) {
-			$redirectUrl = isset($this->globalServer['REDIRECT_URL']) ? $this->globalServer['REDIRECT_URL'] : '';
-			$redirectUrlLength = mb_strlen($redirectUrl);
-			$requestUri = $this->globalServer['REQUEST_URI'];
-			$questionMarkPos = mb_strpos($requestUri, '?');
-			if ($questionMarkPos !== FALSE) $requestUri = mb_substr($requestUri, 0, $questionMarkPos);
-			if ($redirectUrlLength === 0 || ($redirectUrlLength > 0 && $redirectUrl === $requestUri)) {
-				$this->basePath = mb_substr($this->scriptName, 0, $lastSlashPos);
-				$this->scriptName = '/' . mb_substr($this->scriptName, $lastSlashPos + 1);
-			} else {
-				// request was redirected by Apache `mod_rewrite` with `DPI` flag:
-				$requestUriPosInRedirectUri = mb_strrpos($redirectUrl, $requestUri);
-				$apacheRedirectedPath = mb_substr($redirectUrl, 0, $requestUriPosInRedirectUri);
-				$this->scriptName = mb_substr($this->scriptName, mb_strlen($apacheRedirectedPath));
-				$lastSlashPos = mb_strrpos($this->scriptName, '/');
-				$this->basePath = mb_substr($this->scriptName, 0, $lastSlashPos);
-			}
-		} else {
-			$this->scriptName = '/' . mb_substr($this->scriptName, $lastSlashPos + 1);
-		}
-	}
-
-	protected function initLangAndLocale () {
-		$rawUaLanguages = $this->globalServer['HTTP_ACCEPT_LANGUAGE'];
-		if (extension_loaded('Intl')) {
-			$langAndLocaleStr = \locale_accept_from_http($rawUaLanguages);
-			$langAndLocaleArr = $langAndLocaleStr !== NULL
-				? explode('_', $langAndLocaleStr)
-				: array(NULL, NULL);
-		} else {
-			$languagesAndLocales = static::ParseHttpAcceptLang($rawUaLanguages);
-			$langAndLocaleArr = current($languagesAndLocales);
-			if (gettype($langAndLocaleArr) == 'array') $langAndLocaleArr = current($langAndLocaleArr);
-		}
-		list($this->lang, $this->locale) = $langAndLocaleArr;
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
- */
-
-namespace MvcCore{
-
-//include_once(__DIR__ . '/Interfaces/IResponse.php');
-
-use \MvcCore\Interfaces\IResponse;
-
-/**
- * Responsibility - completing all information for response - headers (cookies) and content.
- * - HTTP response wrapper carrying response headers and response body.
- * - PHP `setcookie` function wrapper to complete default values such domain or http only etc.
- * - Sending response at application terminate process by `\MvcCore\Interfaces\IResponse::Send();`.
- * - Completing MvcCore performance header at response end.
- */
-class Response implements Interfaces\IResponse
-{
-	public static $CodeMessages = array(
-		IResponse::OK						=> 'OK',
-		IResponse::MOVED_PERMANENTLY		=> 'Moved Permanently',
-		IResponse::SEE_OTHER				=> 'See Other',
-		IResponse::NOT_FOUND				=> 'Not Found',
-		IResponse::INTERNAL_SERVER_ERROR	=> 'Internal Server Error',
-	);
-
-	/**
-	 * Response HTTP code.
-	 * Example: `200 | 301 | 404`
-	 * @var int|NULL
-	 */
-	protected $code = NULL;
-
-	/**
-	 * Response HTTP headers as `key => value` array.
-	 * Example:
-	 *	`array(
-	 *		'Content-Type'		=> 'text/html',
-	 *		'Content-Encoding'	=> 'utf-8'
-	 *	);`
-	 * @var \string[]
-	 */
-	protected $headers = array();
-
-	/**
-	 * Response content encoding.
-	 * Example: `"utf-8" | "windows-1250" | "ISO-8859-2"`
-	 * @var \string|NULL
-	 */
-	protected $encoding = NULL;
-
-	/**
-	 * Response HTTP body.
-	 * Example: `"<!DOCTYPE html><html lang="en"><head><meta ..."`
-	 * @var \string|NULL
-	 */
-	protected $body = NULL;
-
-	/**
-	 * `TRUE` if headers or body has been sent.
-	 * @var bool
-	 */
-	protected $sent = FALSE;
-
-
-	/**
-	 * No singleton, get everytime new instance of configured HTTP response
-	 * class in `\MvcCore\Application::GetInstance()->GetResponseClass();`.
-	 * @param int		$code
-	 * @param array		$headers
-	 * @param string	$body
-	 * @return \MvcCore\Response
-	 */
-	public static function GetInstance (
-		$code = \MvcCore\Interfaces\IResponse::OK,
-		$headers = array(),
-		$body = ''
-	) {
-		$responseClass = \MvcCore\Application::GetInstance()->GetResponseClass();
-		return new $responseClass($code, $headers, $body);
-	}
-
-	/**
-	 * Create new HTTP response instance.
-	 * @param int		$code
-	 * @param array		$headers
-	 * @param string	$body
-	 * @return \MvcCore\Response
-	 */
-	public function __construct (
-		$code = \MvcCore\Interfaces\IResponse::OK,
-		$headers = array(),
-		$body = ''
-	) {
-		$this->code = $code;
-		$this->headers = $headers;
-		$this->body = $body;
-	}
-
-	/**
-	 * Set HTTP response code.
-	 * @param int $code
-	 * @return \MvcCore\Response
-	 */
-	public function & SetCode ($code) {
-		$this->code = $code;
-		http_response_code($code);
-		return $this;
-	}
-
-	/**
-	 * Get HTTP response code.
-	 * @return int
-	 */
-	public function GetCode () {
-		if ($this->code === NULL) {
-			$phpCode = http_response_code();
-			$this->code = $phpCode === FALSE ? static::OK : $phpCode;
-		}
-		return $this->code;
-	}
-
-	/**
-	 * Set multiple HTTP response headers as `key => value` array.
-	 * All given headers are automaticly merged with previously setted headers.
-	 * If you change second argument to true, all previous request object and PHP
-	 * headers are removed and given headers will be only headers for output.
-	 * There is automaticly set response encoding from value for
-	 * `Content-Type` header, if contains any `charset=...`.
-	 * There is automaticly set response encoding from value for
-	 * `Content-Encoding` header.
-	 * Example: `$request->SetHeader(array('Content-Type' => 'text/plain; charset=utf-8'));`
-	 * @param array $headers
-	 * @param bool $cleanAllPrevious `FALSE` by default. If `TRUE`, all previous headers
-	 *								 set by PHP `header()` or by this object will be removed.
-	 * @return \MvcCore\Response
-	 */
-	public function & SetHeaders (array $headers = array(), $cleanAllPrevious = FALSE) {
-		if ($cleanAllPrevious) {
-			$this->UpdateHeaders();
-			foreach ($this->headers as $name => $value) header_remove($name);
-			$this->headers = array();
-		}
-		foreach ($headers as $name => $value) {
-			$this->SetHeader($name, $value);
-		}
-		return $this;
-	}
-
-	/**
-	 * Set HTTP response header.
-	 * There is automaticly set response encoding from value for
-	 * `Content-Type` header, if contains any `charset=...`.
-	 * There is automaticly set response encoding from value for
-	 * `Content-Encoding` header.
-	 * Example: `$request->SetHeader('Content-Type', 'text/plain; charset=utf-8');`
-	 * @param string $name
-	 * @param string $value
-	 * @return \MvcCore\Response
-	 */
-	public function & SetHeader ($name, $value) {
-		header($name . ": " . $value);
-		$this->headers[$name] = $value;
-		if ($name === 'Content-Type') {
-			$charsetPos = strpos($value, 'charset');
-			if ($charsetPos !== FALSE) {
-				$equalPos = strpos($value, '=', $charsetPos);
-				if ($equalPos !== FALSE) $this->SetEncoding(
-					trim(substr($value, $equalPos + 1))
-				);
-			}
-		}
-		if ($name === 'Content-Encoding') $this->encoding = $value;
-		return $this;
-	}
-
-	/**
-	 * Get HTTP response header by name. If header dowsn't exists, null is returned.
-	 * Example: `$request->GetHeader('Content-Type'); // returns 'text/plain; charset=utf-8'`
-	 * @param string $name
-	 * @return string|NULL
-	 */
-	public function GetHeader ($name) {
-		return isset($this->headers[$name]) ? $this->headers[$name] : NULL;
-	}
-
-	/**
-	 * Get if response has any HTTP response header by given `$name`.
-	 * Example:
-	 *	`$request->GetHeader('Content-Type'); // returns TRUE if there is header 'Content-Type'
-	 *	`$request->GetHeader('content-type'); // returns FALSE if there is header 'Content-Type'
-	 * @param string $name
-	 * @return bool
-	 */
-	public function HasHeader ($name) {
-		return isset($this->headers[$name]);
-	}
-
-	/**
-	 * Set HTTP response content encoding.
-	 * Example: `$response->SetEncoding('utf-8');`
-	 * @param string $encoding
-	 * @return \MvcCore\Response
-	 */
-	public function & SetEncoding ($encoding = 'utf-8') {
-		$this->encoding = $encoding;
-		$this->headers['Content-Encoding'] = $encoding;
-		return $this;
-	}
-
-	/**
-	 * Get HTTP response content encoding.
-	 * Example: `$response->GetEncoding(); // returns 'utf-8'`
-	 * @return string|NULL
-	 */
-	public function GetEncoding () {
-		return $this->encoding;
-	}
-
-	/**
-	 * Set HTTP response body.
-	 * @param string $body
-	 * @return \MvcCore\Response
-	 */
-	public function & SetBody ($body) {
-		$this->body = & $body;
-		return $this;
-	}
-
-	/**
-	 * Prepend HTTP response body.
-	 * @param string $body
-	 * @return \MvcCore\Response
-	 */
-	public function & PrependBody ($body) {
-		$this->body = $body . $this->body;
-		return $this;
-	}
-
-	/**
-	 * Append HTTP response body.
-	 * @param string $body
-	 * @return \MvcCore\Response
-	 */
-	public function & AppendBody ($body) {
-		$this->body .= $body;
-		return $this;
-	}
-
-	/**
-	 * Get HTTP response body.
-	 * @return string|NULL
-	 */
-	public function & GetBody () {
-		return $this->body;
-	}
-
-	/**
-	 * Consolidate all headers from PHP response
-	 * by calling `headers_list()` into local headers list.
-	 * @return void
-	 */
-	public function UpdateHeaders () {
-		$rawHeaders = headers_list();
-		$name = '';
-		$value = '';
-		foreach ($rawHeaders as $rawHeader) {
-			$doubleDotPos = strpos($rawHeader, ':');
-			if ($doubleDotPos !== FALSE) {
-				$name = trim(substr($rawHeader, 0, $doubleDotPos));
-				$value = trim(substr($rawHeader, $doubleDotPos + 1));
-			} else {
-				$name = $rawHeader;
-				$value = '';
-			}
-  			$this->headers[$name] = $value;
-		}
-	}
-
-	/**
-	 * Return if response has any redirect `"Location: ..."` header inside.
-	 * @return bool
-	 */
-	public function IsRedirect () {
-		return isset($this->headers['Location']);
-	}
-
-	/**
-	 * Returns if response has any `text/html` or `application/xhtml+xml` 
-	 * substring in `Content-Type` header.
-	 * @return bool
-	 */
-	public function IsHtmlOutput () {
-		if (isset($this->headers['Content-Type'])) {
-			$value = $this->headers['Content-Type'];
-			return strpos($value, 'text/html') !== FALSE || strpos($value, 'application/xhtml+xml') !== FALSE;
-		}
-		return FALSE;
-	}
-
-	/**
-	 * `TRUE` if headers or body has been sent.
-	 * @return bool
-	 */
-	public function IsSent () {
-		return $this->sent || headers_sent();
-	}
-
-	/**
-	 * Send all HTTP headers and send response body.
-	 * @return void
-	 */
-	public function Send () {
-		if ($this->IsSent()) return;
-		$code = $this->GetCode();
-		$status = isset(static::$CodeMessages[$code]) ? ' ' . static::$CodeMessages[$code] : '';
-		if (!isset($this->headers['Content-Encoding'])) {
-			if (!$this->encoding) $this->encoding = 'utf-8';
-			$this->headers['Content-Encoding'] = $this->encoding;
-		}
-		header("HTTP/1.0 $code $status");
-		foreach ($this->headers as $name => $value) {
-			if ($name == 'Content-Type') {
-				$charsetMatched = FALSE;
-				$charsetPos = strpos($value, 'charset');
-				if ($charsetPos !== FALSE) {
-					$equalPos = strpos($value, '=', $charsetPos);
-					if ($equalPos !== FALSE) $charsetMatched = TRUE;
-				}
-				if (!$charsetMatched) $value .= ';charset=' . $this->encoding;
-			}
-			header($name . ": " . $value);
-		}
-		$this->addTimeAndMemoryHeader();
-		echo $this->body;
-		$this->sent = TRUE;
-	}
-
-	/**
-	 * Send a cookie.
-	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
-	 * @param string $value       The value of the cookie. This value is stored on the clients computer; do not store sensitive information.
-	 * @param int    $lifetime    Life time in seconds to expire. 0 means "until the browser is closed".
-	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
-	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
-	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
-	 * @param bool   $httpOnly    HTTP only cookie, `TRUE` by default.
-	 * @throws \RuntimeException  If HTTP headers have been sent.
-	 * @return bool               True if cookie has been set.
-	 */
-	public function SetCookie (
-		$name, $value,
-		$lifetime = 0, $path = '/',
-		$domain = NULL, $secure = NULL, $httpOnly = TRUE
-	) {
-		if ($this->IsSent()) throw new \RuntimeException(
-			"[".__CLASS__."] Cannot set cookie after HTTP headers have been sent."
-		);
-		$request = \MvcCore\Application::GetInstance()->GetRequest();
-		return setcookie(
-			$name, $value,
-			$lifetime === 0 ? 0 : time() + $lifetime,
-			$path,
-			$domain === NULL ? $request->GetServerName() : $domain,
-			$secure === NULL ? $request->IsSecure() : $secure,
-			$httpOnly
-		);
-	}
-
-	/**
-	 * Delete cookie - set value to empty string and
-	 * set expiration to "until the browser is closed".
-	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
-	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
-	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
-	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
-	 * @throws \RuntimeException  If HTTP headers have been sent.
-	 * @return bool               True if cookie has been set.
-	 */
-	public function DeleteCookie ($name, $path = '/', $domain = NULL, $secure = NULL) {
-		return $this->SetCookie($name, '', 0, $path, $domain, $secure);
-	}
-
-	/**
-	 * Add CPU and RAM usage header at HTML/JSON response end.
-	 * @return void
-	 */
-	protected function addTimeAndMemoryHeader () {
-		$mtBegin = \MvcCore\Application::GetInstance()->GetRequest()->GetMicrotime();
-		$time = number_format((microtime(TRUE) - $mtBegin) * 1000, 1, '.', ' ');
-		$ram = function_exists('memory_get_peak_usage') ? number_format(memory_get_peak_usage() / 1000000, 2, '.', ' ') : 'n/a';
-		header("X-MvcCore-Cpu-Ram: $time ms, $ram MB");
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
- */
-
-namespace MvcCore{
-
-//include_once(__DIR__ . '/Interfaces/IRoute.php');
-
-/**
- * Responsibility - describing request(s) to match and reversely build url addresses.
- * - Describing request to match it (read more about properties).
- * - Matching request by given request object, see `\MvcCore\Route::Matches()`.
- * - Completing url address by given params array, see `\MvcCore\Route::Url()`.
- *
- * Main Properties:
- * - `$Pattern`
- *   Required, if you have not configured `\MvcCore\Route::$match` and
- *   `\MvcCore\Route::$reverse` property instead. Very basic URL address
- *   form to match and parse rewrited params by it. Address to parse
- *   and prepare `\MvcCore\Route::$match` property and `\MvcCore\Route::$reverse`
- *   property. automaticly in `\MvcCore\Route::Prepare();` call.
- * - `$Match`
- *   Required together with `\MvcCore\Route::$reverse` property, if you
- *   have not configured `\MvcCore\Route::$pattern` property instead.
- *   This property is always used to match request by `\MvcCore\Request::Path`
- *   by classic PHP regualar expression matching by `preg_match_all();`.
- * - `$Reverse`
- *   Required together with `\MvcCore\Route::$match` property, if you
- *   have not configured `\MvcCore\Route::$pattern` property instead.
- *   This property is always used to complete url address by called params
- *   array and by this string with rewrite params replacements inside.
- * - `$Controller`
- *   Required, if there is no `controller` param inside `\MvcCore\Route::$pattern`
- *   or inside `\MvcCore\Route::$match property`. Controller class name to dispatch
- *   in pascal case form, namespaces and including slashes as namespace delimiters.
- * - `$Action`
- *   Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
- *   or inside `\MvcCore\Route::$match property`. Public method in controller
- *   in pascal case form, but in controller named as `public function <CoolName>Action () {...`.
- * - `$Name`
- *   Not required, if you want to create url addresses always by `Controller:Action`
- *   named records. It could be any string, representing route custom name to
- *   complete url address by that name inside your application.
- * - `$Defaults`
- *   Not required, matched route params default values and query params default values.
- *   Last entry in array may be used for property `\MvcCore\Route::$lastPatternParam`
- *   describing last rewrited param inside match pattern to be automaticly trimmed
- *   from right side for possible address trailing slash in route matched moment.
- * - `$Constraints`
- *   not required, array with param names and their custom regular expression
- *   matching rules. If no constraint string for any param defined, there is used
- *   for all rewrited params default constraint rule to match everything except next slash.
- *   Default static property for matching rule shoud be changed here:
- *   - by default: `\MvcCore\Route::$DefaultConstraint = '[^/]*';`
- */
-class Route implements Interfaces\IRoute
-{
-	/**
-	 * Default constraint used for all rewrited params, if no
-	 * constraint for rewrited param has been specified.
-	 * configured as `"[^/]*"` by default. This value means:
-	 * - "Any character(s) in any length, except next slash."
-	 * @var string
-	 */
-	public static $DefaultConstraint = '[^/]*';
-
-	/**
-	 * Route pattern to match request url and to build url address.
-	 *
-	 * To define route by this form is the most comfortable way,
-	 * but a way slower, because there is necessary every request
-	 * to convert this value into `\MvcCore\Route::$match` and into
-	 * `\MvcCore\Route::$reverse` properties correctly and you can
-	 * specify those both properties manualy, if you are not too lazy.
-	 *
-	 * This match and reverse definition has to be in very basic form
-	 * without regular expression escaping or advanced rules:
-	 * - No regular expression border `#` characters, it will be
-	 *   used internally in route parsing.
-	 * - No start `^` or end `$` regular expression characters,
-	 *   those characters will be added automaticly.
-	 * - No escaping of regular expression characters:
-	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
-	 *   in route preparing process.
-	 * - star char inside param name (`<color*>`) means greedy param
-	 *   matching all to the end of address. It has to be the last one.
-	 *
-	 * Example: `"/products-list/<name>/<color*>"`.
-	 * @var string|NULL
-	 */
-	protected $pattern		= NULL;
-
-	/**
-	 * Route match pattern in raw form (to use it as it is) to match proper request.
-	 * This property is always used to match request by `\MvcCore\Request::Path`
-	 * by classic PHP regualar expression matching by `preg_match_all();`.
-	 *
-	 * Required together with `\MvcCore\Route::$reverse` property, if you
-	 * have not configured `\MvcCore\Route::$pattern` property instead.
-	 *
-	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
-	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
-	 * (because you have to write almost the same information twice), but it's the best
-	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
-	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
-	 *
-	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
-	 * @var string|NULL
-	 */
-	protected $match		= NULL;
-
-	/**
-	 * Route reverse address replacements pattern to build url.
-	 * - No regular expression border `#` characters.
-	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
-	 * - No start `^` or end `$` regular expression characters.
-	 *
-	 * Required together with `\MvcCore\Route::$match` property, if you
-	 * have not configured `\MvcCore\Route::$pattern` property instead.
-	 *
-	 * This is only very simple string with replacement places (like `<name>` or
-	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
-	 *
-	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
-	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
-	 * (because you have to write almost the same information twice), but it's the best
-	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
-	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
-	 *
-	 * Example: `"/products-list/<name>/<color>"`
-	 * @var string|NULL
-	 */
-	protected $reverse		= NULL;
-
-	/**
-	 * Not required. Route name is your custom keyword/term
-	 * or pascal case combination of controller and action
-	 * describing `"Controller:Action"` target to be dispatched.
-	 *
-	 * By this name there is selected proper route object to
-	 * complete url string by given params in router method:
-	 * `\MvcCore\Router:Url($name, $params);`.
-	 *
-	 * Example: `"products_list" | "Products:Gallery"`
-	 * @var string
-	 */
-	protected $name		= '';
-
-	/**
-	 * Controller name to dispatch, in pascal case. Required only if
-	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
-	 * or inside `\MvcCore\Route::$match properties as url params`.
-	 *
-	 * It should contain controller class namespaces defined in standard PHP notation.
-	 * If there is backslash at the beginning - controller class will not be loaded from
-	 * standard controllers directory (`/App/Controllers`) but from different specified place
-	 * by full controller class name.
-	 *
-	 * Example:
-	 *  `"Products"                             // placed in /App/Controllers/Products.php`
-	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
-	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
-	 * @var string
-	 */
-	protected $controller	= '';
-
-	/**
-	 * Action name to call in controller dispatching, in pascal case.
-	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
-	 * or inside `\MvcCore\Route::$match property`.
-	 *
-	 * If this property has value `"List"`, then public
-	 * method in target controller has to be named as:
-	 * `public function ListAction () {...}`.
-	 *
-	 * Example: `"List"`
-	 * @var string
-	 */
-	protected $action		= '';
-
-	/**
-	 * Route rewrited params default values and also any other params default values.
-	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
-	 *
-	 * Example: `array("name" => "default-name", "color" => "red",);`.
-	 * @var array
-	 */
-	protected $defaults		= array();
-
-	/**
-	 * Array with param names and their custom regular expression
-	 * matching rules. Not required, for all rewrited params there is used
-	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
-	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
-	 * It means "Any character(s) in any length, except next slash".
-	 *
-	 * Example:
-	 *	`array(
-	 *		"name"	=> "[^/]*",
-	 *		"color"	=> "[a-z]*",
-	 *	);`
-	 * @var array
-	 */
-	protected $constraints		= array();
-
-	/**
-	 * Optional, param name, which has to be also inside `\MvcCore\Route::$pattern` or
-	 * inside `\MvcCore\Route::$match` or inside `\MvcCore\Route::$reverse` pattern property
-	 * as the last one. And after it's value, there could be only trailing slash or nothing
-	 * (pattern end). This trailing slash param definition automaticly trims this last param
-	 * value for right trailing slash when route is matched.
-	 *
-	 * This property is automaticly completed by method `\MvcCore\Route::initMatch()`,
-	 * when there is parsed `\MvcCore\Route::$pattern` string into `\MvcCore\Route::$match` property
-	 * or it is automaticly completed by method `\MvcCore\Route::initReverse()`, when
-	 * there is parsed `\MvcCore\Route::$reverse` string into `\MvcCore\Route::$reverseParams`
-	 * array to build url addresses.
-	 *
-	 * @var string|NULL
-	 */
-	protected $lastPatternParam = NULL;
-
-	/**
-	 * Array with strings, containing all reverse pattern params, parsed automaticly
-	 * by method `\MvcCore\Route::initMatchm();` if necessary or by method
-	 * `\MvcCore\Route::initReverse();` after it's necessary
-	 * to complete url address string in method `\MvcCore\Route::Url();`.
-	 * @var string[]|NULL
-	 */
-	protected $reverseParams = NULL;
-
-
-	/**
-	 * Create every time new route instance, no singleton managing!
-	 * Called usually from core methods:
-	 * - `\MvcCore\Router::AddRoutes();`
-	 * - `\MvcCore\Router::AddRoute();`
-	 * - `\MvcCore\Router::routeByControllerAndActionQueryString();`
-	 * This method is the best place where to implement custom
-	 * route initialization for core.
-	 * First argument should be configuration array or
-	 * route pattern value to parse into match and reverse patterns.
-	 * Example:
-	 * `new Route(array(
-	 *		"pattern"			=> "/products-list/<name>/<color>",
-	 *		"controllerAction"	=> "Products:List",
-	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
-	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
-	 * ));`
-	 * or:
-	 * `new Route(
-	 *		"/products-list/<name>/<color>",
-	 *		"Products:List",
-	 *		array("name" => "default-name",	"color" => "red"),
-	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
-	 * );`
-	 * or:
-	 * `new Route(array(
-	 *		"name"			=> "products_list",
-	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
-	 *		"reverse"		=> "/products-list/<name>/<color>",
-	 *		"controller"	=> "Products",
-	 *		"action"		=> "List",
-	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
-	 * ));`
-	 * @param $patternOrConfig	string|array	Required, configuration array or route pattern value to parse into match and reverse patterns.
-	 * @param $controllerAction	string			Optional, controller and action name in pascale case like: `"Photogallery:List"`.
-	 * @param $defaults			string			Optional, default param values like: `array("name" => "default-name", "page" => 1)`.
-	 * @param $constraints		array			Optional, params regex constraints for regular expression match fn no `"match"` record in configuration array as first argument defined.
-	 * @return \MvcCore\Route
-	 */
-	public static function GetInstance (
-		$patternOrConfig = NULL,
-		$controllerAction = NULL,
-		$defaults = array(),
-		$constraints = array()
-	) {
-		return (new \ReflectionClass(get_called_class()))
-			->newInstanceArgs(func_get_args());
-	}
-
-	/**
-	 * Create new route instance.
-	 * First argument should be configuration array or
-	 * route pattern value to parse into match and reverse patterns.
-	 * Example:
-	 * `new Route(array(
-	 *		"pattern"			=> "/products-list/<name>/<color>",
-	 *		"controllerAction"	=> "Products:List",
-	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
-	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
-	 * ));`
-	 * or:
-	 * `new Route(
-	 *		"/products-list/<name>/<color>",
-	 *		"Products:List",
-	 *		array("name" => "default-name",	"color" => "red"),
-	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
-	 * );`
-	 * or:
-	 * `new Route(array(
-	 *		"name"			=> "products_list",
-	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
-	 *		"reverse"		=> "/products-list/<name>/<color>",
-	 *		"controller"	=> "Products",
-	 *		"action"		=> "List",
-	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
-	 * ));`
-	 * @param $patternOrConfig	string|array	Required, configuration array or route pattern value to parse into match and reverse patterns.
-	 * @param $controllerAction	string			Optional, controller and action name in pascale case like: `"Photogallery:List"`.
-	 * @param $defaults			array			Optional, default param values like: `array("name" => "default-name", "page" => 1)`.
-	 * @param $constraints		array			Optional, params regex constraints for regular expression match fn no `"match"` record in configuration array as first argument defined.
-	 * @return \MvcCore\Route
-	 */
-	public function __construct (
-		$patternOrConfig = NULL,
-		$controllerAction = NULL,
-		$defaults = array(),
-		$constraints = array()
-	) {
-		$args = func_get_args();
-		$argsCount = count($args);
-		if ($argsCount === 0) return $this;
-		if (gettype($patternOrConfig) == 'array') {
-			$data = (object) $patternOrConfig;
-			$this->name = isset($data->name) ? $data->name : '';
-			if (isset($data->controllerAction)) {
-				list($this->controller, $this->action) = explode(':', $data->controllerAction);
-			} else {
-				$this->controller = isset($data->controller) ? $data->controller : '';
-				$this->action = isset($data->action) ? $data->action : '';
-			}
-			$this->pattern = isset($data->pattern) ? $data->pattern : NULL;
-			$this->match = isset($data->match) ? $data->match : NULL;
-			$this->reverse = isset($data->reverse) ? $data->reverse : NULL;
-			$this->defaults = isset($data->defaults) ? $data->defaults : array();
-			$this->constraints = isset($data->constraints) ? $data->constraints : array();
-		} else {
-			$this->pattern = $patternOrConfig;
-			list($this->controller, $this->action) = explode(':', $controllerAction);
-			$this->name = '';
-			$this->match = NULL;
-			$this->reverse = NULL;
-			$this->defaults = $defaults;
-			$this->constraints = $constraints;
-		}
-		if (!$this->controller && !$this->action && strpos($this->name, ':') !== FALSE) {
-			list($this->controller, $this->action) = explode(':', $this->name);
-		}
-	}
-
-	/**
-	 * Get route pattern to match request url and to build url address.
-	 *
-	 * To define route by this form is the most comfortable way,
-	 * but a way slower, because there is necessary every request
-	 * to convert this value into `\MvcCore\Route::$match` and into
-	 * `\MvcCore\Route::$reverse` properties correctly and you can
-	 * specify those both properties manualy, if you are not too lazy.
-	 *
-	 * This match and reverse definition has to be in very basic form
-	 * without regular expression escaping or advanced rules:
-	 * - No regular expression border `#` characters, it will be
-	 *   used internally in route parsing.
-	 * - No start `^` or end `$` regular expression characters,
-	 *   those characters will be added automaticly.
-	 * - No escaping of regular expression characters:
-	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
-	 *   in route preparing process.
-	 * - star char inside param name (`<color*>`) means greedy param
-	 *   matching all to the end of address. It has to be the last one.
-	 *
-	 * Example: `"/products-list/<name>/<color*>"`.
-	 * @return string|NULL
-	 */
-	public function GetPattern () {
-		return $this->pattern;
-	}
-
-	/**
-	 * Set route pattern to match request url and to build url address.
-	 *
-	 * To define route by this form is the most comfortable way,
-	 * but a way slower, because there is necessary every request
-	 * to convert this value into `\MvcCore\Route::$match` and into
-	 * `\MvcCore\Route::$reverse` properties correctly and you can
-	 * specify those both properties manualy, if you are not too lazy.
-	 *
-	 * This match and reverse definition has to be in very basic form
-	 * without regular expression escaping or advanced rules:
-	 * - No regular expression border `#` characters, it will be
-	 *   used internally in route parsing.
-	 * - No start `^` or end `$` regular expression characters,
-	 *   those characters will be added automaticly.
-	 * - No escaping of regular expression characters:
-	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
-	 *   in route preparing process.
-	 * - star char inside param name (`<color*>`) means greedy param
-	 *   matching all to the end of address. It has to be the last one.
-	 *
-	 * Example: `"/products-list/<name>/<color*>"`.
-	 * @param string $pattern
-	 * @return \MvcCore\Route
-	 */
-	public function & SetPattern ($pattern) {
-		$this->pattern = $pattern;
-		return $this;
-	}
-
-	/**
-	 * Get route match pattern in raw form (to use it as it is) to match proper request.
-	 * This property is always used to match request by `\MvcCore\Request::Path`
-	 * by classic PHP regualar expression matching by `preg_match_all();`.
-	 *
-	 * Required together with `\MvcCore\Route::$reverse` property, if you
-	 * have not configured `\MvcCore\Route::$pattern` property instead.
-	 *
-	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
-	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
-	 * (because you have to write almost the same information twice), but it's the best
-	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
-	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
-	 *
-	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
-	 * @return string|NULL
-	 */
-	public function GetMatch () {
-		return $this->match;
-	}
-
-	/**
-	 * Set route match pattern in raw form (to use it as it is) to match proper request.
-	 * This property is always used to match request by `\MvcCore\Request::Path`
-	 * by classic PHP regualar expression matching by `preg_match_all();`.
-	 *
-	 * Required together with `\MvcCore\Route::$reverse` property, if you
-	 * have not configured `\MvcCore\Route::$pattern` property instead.
-	 *
-	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
-	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
-	 * (because you have to write almost the same information twice), but it's the best
-	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
-	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
-	 *
-	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
-	 * @param string $match
-	 * @return \MvcCore\Route
-	 */
-	public function & SetMatch ($match) {
-		$this->match = $match;
-		return $this;
-	}
-
-	/**
-	 * Get route reverse address replacements pattern to build url.
-	 * - No regular expression border `#` characters.
-	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
-	 * - No start `^` or end `$` regular expression characters.
-	 *
-	 * Required together with `\MvcCore\Route::$match` property, if you
-	 * have not configured `\MvcCore\Route::$pattern` property instead.
-	 *
-	 * This is only very simple string with replacement places (like `<name>` or
-	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
-	 *
-	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
-	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
-	 * (because you have to write almost the same information twice), but it's the best
-	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
-	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
-	 *
-	 * Example: `"/products-list/<name>/<color>"`
-	 * @return string|NULL
-	 */
-	public function GetReverse () {
-		return $this->reverse;
-	}
-
-	/**
-	 * Set route reverse address replacements pattern to build url.
-	 * - No regular expression border `#` characters.
-	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
-	 * - No start `^` or end `$` regular expression characters.
-	 *
-	 * Required together with `\MvcCore\Route::$match` property, if you
-	 * have not configured `\MvcCore\Route::$pattern` property instead.
-	 *
-	 * This is only very simple string with replacement places (like `<name>` or
-	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
-	 *
-	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
-	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
-	 * (because you have to write almost the same information twice), but it's the best
-	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
-	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
-	 *
-	 * Example: `"/products-list/<name>/<color>"`
-	 * @param string $reverse
-	 * @return \MvcCore\Route
-	 */
-	public function & SetReverse ($reverse) {
-		$this->reverse = $reverse;
-		return $this;
-	}
-
-	/**
-	 * Get route name. It's your custom keyword/term
-	 * or pascal case combination of controller and action
-	 * describing `"Controller:Action"` target to be dispatched.
-	 *
-	 * By this name there is selected proper route object to
-	 * complete url string by given params in router method:
-	 * `\MvcCore\Router:Url($name, $params);`.
-	 *
-	 * Example: `"products_list" | "Products:Gallery"`
-	 * @return string
-	 */
-	public function GetName () {
-		return $this->name;
-	}
-
-	/**
-	 * Set route name. Not required. It's your custom keyword/term
-	 * or pascal case combination of controller and action
-	 * describing `"Controller:Action"` target to be dispatched.
-	 *
-	 * By this name there is selected proper route object to
-	 * complete url string by given params in router method:
-	 * `\MvcCore\Router:Url($name, $params);`.
-	 *
-	 * Example: `"products_list" | "Products:Gallery"`
-	 * @param string $name
-	 * @return \MvcCore\Route
-	 */
-	public function & SetName ($name) {
-		$this->name = $name;
-		return $this;
-	}
-
-	/**
-	 * Get controller name to dispatch, in pascal case. Required only if
-	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
-	 * or inside `\MvcCore\Route::$match properties as url params`.
-	 *
-	 * It should contain controller class namespaces defined in standard PHP notation.
-	 * If there is backslash at the beginning - controller class will not be loaded from
-	 * standard controllers directory (`/App/Controllers`) but from different specified place
-	 * by full controller class name.
-	 *
-	 * Example:
-	 *  `"Products"                             // placed in /App/Controllers/Products.php`
-	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
-	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
-	 * @return string
-	 */
-	public function GetController () {
-		return $this->controller;
-	}
-
-	/**
-	 * Set controller name to dispatch, in pascal case. Required only if
-	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
-	 * or inside `\MvcCore\Route::$match properties as url params`.
-	 *
-	 * It should contain controller class namespaces defined in standard PHP notation.
-	 * If there is backslash at the beginning - controller class will not be loaded from
-	 * standard controllers directory (`/App/Controllers`) but from different specified place
-	 * by full controller class name.
-	 *
-	 * Example:
-	 *  `"Products"                             // placed in /App/Controllers/Products.php`
-	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
-	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
-	 * @param string $controller
-	 * @return \MvcCore\Route
-	 */
-	public function & SetController ($controller) {
-		$this->controller = $controller;
-		return $this;
-	}
-
-	/**
-	 * Get action name to call it in controller dispatch processing, in pascal case.
-	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
-	 * or inside `\MvcCore\Route::$match properties as url params`.
-	 *
-	 * If this property has value `"List"`, then public
-	 * method in target controller has to be named as:
-	 * `public function ListAction () {...}`.
-	 *
-	 * Example: `"List"`
-	 * @return string
-	 */
-	public function GetAction () {
-		return $this->action;
-	}
-
-	/**
-	 * Set action name to call it in controller dispatch processing, in pascal case.
-	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
-	 * or inside `\MvcCore\Route::$match properties as url params`.
-	 *
-	 * If this property has value `"List"`, then public
-	 * method in target controller has to be named as:
-	 * `public function ListAction () {...}`.
-	 *
-	 * Example: `"List"`
-	 * @param string $action
-	 * @return \MvcCore\Route
-	 */
-	public function & SetAction ($action) {
-		$this->action = $action;
-		return $this;
-	}
-
-	/**
-	 * Get target controller name and controller action name
-	 * together in one setter, in pascal case, separated by colon.
-	 * There are also controller namespace definition posibilities as
-	 * in `\MvcCore\Route::GetController();` getter method.
-	 *
-	 * Example: `"Products:List"`
-	 * @return string
-	 */
-	public function GetControllerAction () {
-		return $this->controller . ':' . $this->action;
-	}
-
-	/**
-	 * Set target controller name and controller action name
-	 * together in one setter, in pascal case, separated by colon.
-	 * There are also controller namespace definition posibilities as
-	 * in `\MvcCore\Route::SetController();` setter method.
-	 *
-	 * Example: `"Products:List"`
-	 * @return \MvcCore\Route
-	 */
-	public function & SetControllerAction ($controllerAction) {
-		list($this->controller, $this->action) = explode(':', $controllerAction);
-		return $this;
-	}
-
-	/**
-	 * Get route rewrited params default values and also any other params default values.
-	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
-	 *
-	 * Example:
-	 *  `array(
-	 *      "name"  => "default-name",
-	 *      "color" => "red"
-	 *  );`.
-	 * @return array
-	 */
-	public function & GetDefaults () {
-		return $this->defaults;
-	}
-
-	/**
-	 * Set route rewrited params default values and also any other params default values.
-	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
-	 *
-	 * Example:
-	 *  `array(
-	 *      "name"  => "default-name",
-	 *      "color" => "red"
-	 *  );`.
-	 * @param array $defaults
-	 * @return \MvcCore\Route
-	 */
-	public function & SetDefaults ($defaults = array()) {
-		$this->defaults = $defaults;
-		return $this;
-	}
-
-	/**
-	 * Get array with param names and their custom regular expression
-	 * matching rules. Not required, for all rewrited params there is used
-	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
-	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
-	 * It means "Any character(s) in any length, except next slash".
-	 *
-	 * Example:
-	 *	`array(
-	 *		"name"	=> "[^/]*",
-	 *		"color"	=> "[a-z]*",
-	 *	);`
-	 * @return array
-	 */
-	public function & GetConstraints () {
-		return $this->constraints;
-	}
-
-	/**
-	 * Set array with param names and their custom regular expression
-	 * matching rules. Not required, for all rewrited params there is used
-	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
-	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
-	 * It means "Any character(s) in any length, except next slash".
-	 *
-	 * Example:
-	 *	`array(
-	 *		"name"	=> "[^/]*",
-	 *		"color"	=> "[a-z]*",
-	 *	);`
-	 * @param array $constraints
-	 * @return \MvcCore\Route
-	 */
-	public function & SetConstraints ($constraints = array()) {
-		$this->constraints = $constraints;
-		return $this;
-	}
-
-	/**
-	 * Return array of matched params, with matched controller and action names,
-	 * if route matches request `\MvcCore\Request::$Path` property by `preg_match_all()`.
-	 *
-	 * This method is usually called in core request routing process
-	 * from `\MvcCore\Router::Route();` method and it's submethods.
-	 *
-	 * @param string $requestPath
-	 * @return array Matched and params array, keys are matched
-	 *				 params or controller and action params.
-	 */
-	public function Matches (& $requestPath) {
-		$matchedParams = array();
-		if ($this->match === NULL) $this->initMatch();
-		preg_match_all($this->match, $requestPath, $matchedValues, PREG_OFFSET_CAPTURE);
-		if (isset($matchedValues[0]) && count($matchedValues[0])) {
-			$controllerName = $this->controller ?: '';
-			$toolClass = \MvcCore\Application::GetInstance()->GetToolClass();
-			$matchedParams = array(
-				'controller'	=>	$toolClass::GetDashedFromPascalCase(str_replace(array('_', '\\'), '/', $controllerName)),
-				'action'		=>	$toolClass::GetDashedFromPascalCase($this->action ?: ''),
-			);
-			array_shift($matchedValues); // first item is always matched whole `$request->GetPath()` string.
-			$index = 0;
-			$matchedKeys = array_keys($matchedValues);
-			$matchedKeysCount = count($matchedKeys) - 1;
-			while ($index < $matchedKeysCount) {
-				$matchedKey = $matchedKeys[$index];
-				$matchedValue = $matchedValues[$matchedKey];
-				// if captured offset value is the same like in next matched record - skip next matched record:
-				if (isset($matchedKeys[$index + 1])) {
-					$nextKey = $matchedKeys[$index + 1];
-					$nextValue = $matchedValues[$nextKey];
-					if ($matchedValue[0][1] === $nextValue[0][1]) $index += 1;
-				}
-				// 1 line bellow is only for route debug panel, only for cases when you
-				// forget to define current rewrite param, this defines null value by default
-				if (!isset($this->defaults[$matchedKey])) $this->defaults[$matchedKey] = NULL;
-				$matchedParams[$matchedKey] = $matchedValue[0][0];
-				$index += 1;
-			}
-			if ($this->lastPatternParam === NULL) $this->initReverse();
-			if (isset($matchedParams[$this->lastPatternParam])) {
-				$matchedParams[$this->lastPatternParam] = rtrim($matchedParams[$this->lastPatternParam], '/');
-			}
-		}
-		return $matchedParams;
-	}
-
-	/**
-	 * Complete route url by given params array and route
-	 * internal reverse replacements pattern string.
-	 * If there are more given params in first argument
-	 * than count of replacement places in reverse pattern,
-	 * then create url with query string params after reverse
-	 * pattern, containing that extra record(s) value(s).
-	 *
-	 * Example:
-	 *	Input (`$params`):
-	 *		`array(
-	 *			"name"		=> "cool-product-name",
-	 *			"color"		=> "blue",
-	 *			"variants"	=> array("L", "XL"),
-	 *		);`
-	 *	Input (`\MvcCore\Route::$reverse`):
-	 *		`"/products-list/<name>/<color*>"`
-	 *	Output:
-	 *		`"/products-list/cool-product-name/blue?variant[]=L&amp;variant[]=XL"`
-	 * @param array $params
-	 * @param array $cleanedGetRequestParams Request query params with escaped chars: `<` and `>`.;
-	 * @return string
-	 */
-	public function Url (& $params, & $cleanedGetRequestParams) {
-		if ($this->reverseParams === NULL) $this->initReverse();
-		$result = $this->reverse;
-		$givenParamsKeys = array_merge(array(), $params);
-		foreach ($this->reverseParams as $paramName) {
-			$paramKeyReplacement = '<'.$paramName.'>';
-			$paramValue = (
-				isset($params[$paramName])
-					? $params[$paramName]
-					: (isset($cleanedGetRequestParams[$paramName])
-						? $cleanedGetRequestParams[$paramName]
-						: (isset($this->defaults[$paramName])
-							? $this->defaults[$paramName]
-							: ''))
-			);
-			$result = str_replace($paramKeyReplacement, $paramValue, $result);
-			unset($givenParamsKeys[$paramName]);
-		}
-		if ($givenParamsKeys)
-			$result .= ($this->reverseParams ? '&amp;' : '?')
-				. http_build_query($givenParamsKeys);
-		return $result;
-	}
-
-	/**
-	 * Initialize `\MvcCore\Router::$Match` property (and `\MvcCore\Router::$lastPatternParam`
-	 * property) from `\MvcCore\Router::$Pattern`, optionaly initialize
-	 * `\MvcCore\Router::$Reverse` property if there is nothing inside.
-	 * - Add backslashes for all special regex chars excluding `<` and `>` chars.
-	 * - Parse all `<param>` occurrances in pattern into statistics array `$matchPatternParams`.
-	 * - Complete from the statistic array the match property and if there no reverse property,
-	 *   complete also reverse property.
-	 * This method is usually called in core request routing process from
-	 * `\MvcCore\Router::Matches();` method.
-	 * @return void
-	 */
-	public function initMatch () {
-		// if there is no match regular expression - parse `\MvcCore\Route::\$Pattern`
-		// and compile `\MvcCore\Route::\$Match` regular expression property.
-		if (mb_strlen($this->pattern) === 0) throw new \LogicException(
-			"[".__CLASS__."] Route configuration property `\MvcCore\Route::\$Pattern` is missing "
-			."to parse it and complete property(ies) `\MvcCore\Route::\$Match` (and `\MvcCore\Route::\$Reverse`) correctly."
-		);
-		// escape all regular expression special characters before parsing except `<` and `>`:
-		$matchPattern = addcslashes($this->pattern, "#[](){}-?!=^$.+|:\\");
-		// parse all presented `<param>` occurances in `$pattern` argument:
-		$matchPatternParams = $this->parsePatternParams($matchPattern);
-		// compile match regular expression from parsed params and custom constraints:
-		if ($this->reverse === NULL) {
-			list($this->match, $this->reverse) = $this->compileMatchAndReversePattern(
-				$matchPattern, $matchPatternParams, TRUE
-			);
-		} else {
-			list($this->match, $reverse) = $this->compileMatchAndReversePattern(
-				$matchPattern, $matchPatternParams, FALSE
-			);
-		}
-	}
-
-	/**
-	 * Initialize all possible protected values (`match`, `reverse` etc...)
-	 * This method is not recomanded to use in production mode, it's
-	 * designed mostly for development purposes, to see what could be inside route.
-	 * @return \MvcCore\Route|\MvcCore\Interfaces\IRoute
-	 */
-	public function & InitAll () {
-		if ($this->match === NULL) $this->initMatch();
-		if ($this->lastPatternParam === NULL) $this->initReverse();
-		if ($this->reverseParams === NULL) $this->initReverse();
-		return $this;
-	}
-
-	/**
-	 * Internal method for `\MvcCore\Route::initMatch();` processing,
-	 * always called from `\MvcCore\Router::Matches();` request routing.
-	 *
-	 * Go throught given route pattern value and try to search for
-	 * any url param occurances inside, like `<name>` or `<color*>`.
-	 * Return and array with describing records for each founded param.
-	 * Example:
-	 *	Input (`$match`):
-	 *		`"/products-list/<name>/<color*>"`
-	 *	Output:
-	 *		`array(
-	 *			array(
-	 *				"name",		// param name
-	 *				"<name>",	// param name for regex match pattern
-	 *				15,			// `"<name>"` occurance position
-	 *				6,			// `"<name>"` string length
-	 *				FALSE		// greedy param star flag
-	 *			),
-	 *			array(
-	 *				"color",	// param name
-	 *				"<color>",	// param name for regex match pattern
-	 *				22,			// `"<color*>"` occurance position
-	 *				8,			// `"<color*>"` string length
-	 *				TRUE		// greedy param star flag
-	 *			)
-	 *		);
-	 * @param string $match Route pattern with escaped all special regex characters except `<` and `>`.
-	 * @throws \LogicException Thrown, when founded any other param after greedy param.
-	 * @return array[] Statistics about founded params occurances.
-	 */
-	protected function & parsePatternParams (& $match) {
-		$matched = array();
-		$index = 0;
-		$matchLength = mb_strlen($match);
-		$greedyCatched = FALSE;
-		while ($index < $matchLength) {
-			$openPos = mb_strpos($match, '<', $index);
-			if ($openPos === FALSE) break;
-			$closePos = mb_strpos($match, '>', $openPos);
-			if ($closePos === FALSE) break;
-			$closePos += 1;
-			$index = $closePos;
-			$length = $closePos - $openPos;
-			$paramName = mb_substr($match, $openPos + 1, $length - 2);
-			$greedy = mb_strpos($paramName, '*');
-			if ($greedy) {
-				if ($greedyCatched) throw new \LogicException(
-					"[".__CLASS__."] Route could have greedy `<param_name*>` with star "
-					."to include slashes only as the very last parameter."
-				);
-				$greedyCatched = TRUE;
-				$paramName = str_replace('*', '', $paramName);
-			}
-			$matched[] = array($paramName, '<'.$paramName.'>', $openPos, $length, $greedy);
-		}
-		return $matched;
-	}
-
-	/**
-	 * Internal method for `\MvcCore\Route::initMatch();` processing,
-	 * always called from `\MvcCore\Router::Matches();` request routing.
-	 *
-	 * Compile and return value for `\MvcCore\Route::$match` pattern,
-	 * (optionaly by `$compileReverse` also for `\MvcCore\Route::$reverse`)
-	 * from escaped `\MvcCore\Route::$pattern` and given params statistics
-	 * and from configured route constraints for regular expression:
-	 * - If pattern starts with slash `/`, set automaticly into
-	 *   result regular expression start rule (`#^/...`).
-	 * - If there is detected trailing slash in match pattern,
-	 *   set automaticly into result regular expression end rule
-	 *   for trailing slash `...(?=/$|$)#` or just only end rule `...$#`.
-	 * - If there is detected any last param with possible trailing slash
-	 *   after, complete `\MvcCore\Route::$lastPatternParam` property
-	 *   by this detected param name.
-	 *
-	 * Example:
-	 *	Input (`$matchPattern`):
-	 *		`"/products-list/<name>/<color*>"`
-	 *	Input (`$matchPatternParams`):
-	 *		`array(
-	 *			array(
-	 *				"name",		// param name
-	 *				"<name>",	// param name for regex match pattern
-	 *				15,			// `"<name>"` occurance position
-	 *				6,			// `"<name>"` string length
-	 *				FALSE		// greedy param star flag
-	 *			),
-	 *			array(
-	 *				"color",	// param name
-	 *				"<color>",	// param name for regex match pattern
-	 *				22,			// `"<color*>"` occurance position
-	 *				8,			// `"<color*>"` string length
-	 *				TRUE		// greedy param star flag
-	 *			)
-	 *		);`
-	 *	Input (`$compileReverse`):
-	 *		`TRUE`
-	 *	Input (`$this->constraints`):
-	 *		`array(
-	 *			"name"	=> "[^/]*",
-	 *			"color"	=> "[a-z]*",
-	 *		);`
-	 *	Output:
-	 *		`array(
-	 *		    "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
-	 *		    "/products-list/<name>/<color>"
-	 *		)`
-	 * @param string $matchPattern
-	 * @param array[] $matchPatternParams
-	 * @return string[]
-	 */
-	protected function compileMatchAndReversePattern (& $matchPattern, & $matchPatternParams, $compileReverse) {
-		$constraints = $this->constraints;
-		$defaultConstraint = static::$DefaultConstraint;
-		$trailingSlash = FALSE;
-		$reverse = '';
-		if ($matchPatternParams) {
-			$match = mb_substr($matchPattern, 0, $matchPatternParams[0][2]);
-			if ($compileReverse) {
-				$reverse = $match;
-				$this->reverseParams = array();
-			}
-			foreach ($matchPatternParams as $i => $matchPatternParam) {
-				list($paramName, $matchedParamName, $index, $length, $greedy) = $matchPatternParam;
-				$customConstraint = isset($constraints[$paramName]);
-				if (!$customConstraint && $greedy) $defaultConstraint = '.*';
-				if (isset($matchPatternParams[$i + 1])) {
-					// if there is next matched param:
-					$nextItemStart = $matchPatternParams[$i + 1][2];
-					$start = $index + $length;
-					$urlPartBeforeNext = mb_substr($matchPattern, $start, $nextItemStart - $start);
-					$urlPartBeforeNextReverse = $urlPartBeforeNext;
-				} else {
-					// else if this param is the last one:
-					$urlPartBeforeNext = mb_substr($matchPattern, $index + $length);
-					$urlPartBeforeNextReverse = $urlPartBeforeNext;
-					// if there is nothing more in url or just only a slash char `/`:
-					if ($urlPartBeforeNext == '' || $urlPartBeforeNext == '/') {
-						$trailingSlash = TRUE;
-						$this->lastPatternParam = $paramName;
-						$urlPartBeforeNext = '';
-					};
-				}
-				$constraint = $customConstraint
-					? $constraints[$paramName]
-					: $defaultConstraint;
-				$match .= '(?' . $matchedParamName . $constraint . ')' . $urlPartBeforeNext;
-				if ($compileReverse) {
-					$reverse .= $matchedParamName . $urlPartBeforeNextReverse;
-					$this->reverseParams[] = $paramName;
-				}
-			}
-			$matchPattern = $match;
-		} else {
-			if ($matchPattern == '/') {
-				$reverse = '/';
-				$this->reverseParams = array();
-			} else {
-				$lengthWithoutLastChar = mb_strlen($matchPattern) - 1;
-				if (mb_strrpos($matchPattern, '/') === $lengthWithoutLastChar) {
-					$matchPattern = mb_substr($matchPattern, 0, $lengthWithoutLastChar);
-					$trailingSlash = TRUE;
-				}
-				if ($compileReverse) {
-					$reverse = $this->pattern;
-					$this->reverseParams = array();
-				} else {
-					$reverse = '';
-				}
-			}
-		}
-		return array(
-			'#'
-			. (mb_strpos($matchPattern, '/') === 0 ? '^' : '')
-			. $matchPattern
-			. ($trailingSlash ? '(?=/$|$)' : '$')
-			. '#',
-			$reverse
-		);
-	}
-
-	/**
-	 * Internal method, always called from `\MvcCore\Router::Matches();` request routing,
-	 * when route has been matched and when there is still no `\MvcCore\Route::$reverseParams`
-	 * defined (`NULL`). It means that matched route has been defined by match and reverse
-	 * patterns, because there was no pattern property parsing to prepare values bellow before.
-	 * @return void
-	 */
-	protected function initReverse () {
-		$index = 0;
-		$reverse = & $this->reverse;
-		if ($this->reverse == NULL && $this->pattern !== NULL)
-			return $this->initMatch();
-		$reverseParams = array();
-		$closePos = -1;
-		$paramName = '';
-		while (TRUE) {
-			$openPos = mb_strpos($reverse, '<', $index);
-			if ($openPos === FALSE) break;
-			$openPosPlusOne = $openPos + 1;
-			$closePos = mb_strpos($reverse, '<', $openPosPlusOne);
-			if ($closePos === FALSE) break;
-			$paramName = mb_substr($reverse, $openPosPlusOne, $closePos - $openPosPlusOne);
-			$reverseParams[] = $paramName;
-		}
-		$this->reverseParams = $reverseParams;
-		// Init `\MvcCore\Route::$lastPatternParam`.
-		// Init that property only if this function is
-		// called from `\MvcCore\Route::Matches()`, after current route has been matched
-		// and also when there were configured for this route `\MvcCore\Route::$match`
-		// value and `\MvcCore\Route::$reverse` value together:
-		if ($this->lastPatternParam === NULL && $paramName) {
-			$reverseLengthMinusTwo = mb_strlen($reverse) - 2;
-			$lastCharIsSlash = mb_substr($reverse, $reverseLengthMinusTwo, 1) == '/';
-			$closePosPlusOne = $closePos + 1;
-			if ($closePosPlusOne === $reverseLengthMinusTwo + 1 || ($lastCharIsSlash && $closePosPlusOne === $reverseLengthMinusTwo)) {
-				$this->lastPatternParam = $paramName;
-			}
-		}
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
- */
-
-namespace MvcCore{
-
 //include_once(__DIR__ . '/Interfaces/ISession.php');
 //include_once('Application.php');
 //include_once('Request.php');
@@ -14237,6 +12735,484 @@ class Session extends \ArrayObject implements Interfaces\ISession
 		return count((array) $_SESSION[$this->__name]);
 	}
 }
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore {
+
+	//include_once(__DIR__ . '/Interfaces/IDebug.php');
+	//include_once('Application.php');
+	//include_once('Config.php');
+
+	/**
+	 * Responsibility - any devel and logging messages and exceptions printing and logging.
+	 * - Printing any variable in content body.
+	 * - Printing any variable in browser debug bar.
+	 * - Catched exceptions printing.
+	 * - Any variables and catched exceptions file logging.
+	 * - Time printing.
+	 */
+	class Debug implements Interfaces\IDebug
+	{
+		/**
+		 * Email recepient to send information about exceptions or errors,
+		 * `"admin@localhost"` by default.
+		 * @var string
+		 */
+		public static $EmailRecepient = 'admin@localhost';
+
+		/**
+		 * Relative path from app root to store any log information,
+		 * `"/Var/Logs"` by default.
+		 * @var string
+		 */
+		public static $LogDirectory = '/Var/Logs';
+
+		/**
+		 * Initialize global development shorthands.
+		 * @var callable
+		 */
+		public static $InitGlobalShortHands = array();
+
+		/**
+		 * Semaphore to execute `\MvcCore\Debug::Init();` method only once.
+		 * `TRUE` if development, `FALSE` if anything else.
+		 * @var boolean
+		 */
+		protected static $development = NULL;
+
+		/**
+		 * Debuging and loging handlers, this should be customized in extended class.
+		 * @var array
+		 */
+		protected static $handlers = array(
+			'timer'				=> 'timerHandler',
+			'dump'				=> 'dumpHandler',
+			'barDump'			=> 'dumpHandler',
+			'log'				=> 'dumpHandler',
+			'fireLog'			=> 'dumpHandler',
+			'exceptionHandler'	=> 'exceptionHandler',
+			'shutdownHandler'	=> 'ShutdownHandler',
+		);
+
+		/**
+		 * Store for printed dumps by output buffering to send it at response end.
+		 * @var array
+		 */
+		protected static $dumps = array();
+
+		/**
+		 * Store timers start points.
+		 * @var array
+		 */
+		protected static $timers = array();
+
+		/**
+		 * `TRUE` for cofigured debug class as `\MvcCore\Debug`,
+		 * `FALSE` for any other configured extension.
+		 * @var bool
+		 */
+		protected static $originalDebugClass = TRUE;
+
+		/**
+		 * `TRUE` if debug class is MvcCore original debug class and
+		 * if logs directory has been already initialized.
+		 * @var bool
+		 */
+		protected static $logDirectoryInitialized = FALSE;
+
+		/**
+		 * Reference to singleton instance in `\MvcCore\Application::GetInstance();`.
+		 * @var \MvcCore\Application
+		 */
+		protected static $app;
+
+		/**
+		 * Reference to `\MvcCore\Application::GetInstance()->GetRequest()->GetMicrotime();`.
+		 * @var float
+		 */
+		protected static $requestBegin;
+
+		/**
+		 * Initialize debugging and logging, once only.
+		 * @param bool $forceDevelopmentMode If defined as `TRUE` or `FALSE`,
+		 *                                   debug mode will be set not by config but by this value.
+		 * @return void
+		 */
+		public static function Init ($forceDevelopmentMode = NULL) {
+			if (static::$development !== NULL) return;
+
+			static::$app = & \MvcCore\Application::GetInstance();
+			static::$requestBegin = static::$app->GetRequest()->GetMicrotime();
+
+			if (gettype($forceDevelopmentMode) == 'boolean') {
+				static::$development = $forceDevelopmentMode;
+			} else {
+				$configClass = static::$app->GetConfigClass();
+				static::$development = $configClass::IsDevelopment(TRUE);
+			}
+
+			// do not initialize log directory here every time, initialize log
+			//directory only if there is necessary to log something - later.
+
+			static::$originalDebugClass = ltrim(static::$app->GetDebugClass(), '\\') == __CLASS__;
+			static::initHandlers();
+			$initGlobalShortHandsHandler = static::$InitGlobalShortHands;
+			$initGlobalShortHandsHandler(static::$development);
+		}
+
+		/**
+		 * Starts/stops stopwatch.
+		 * @param  string $name Time pointer name.
+		 * @return float        Elapsed seconds.
+		 */
+		public static function Timer ($name = NULL) {
+			return static::BarDump(
+				call_user_func(static::$handlers['timer'], $name),
+				$name,
+				array('backtraceIndex' => 3)
+			);
+		}
+
+		/**
+		 * Dumps information about any variable in readable format and return it.
+		 * In non-development mode - store dumped variable in `debug.log`.
+		 * @param  mixed  $value	Variable to dump.
+		 * @param  bool   $return	Return output instead of printing it.
+		 * @param  bool   $exit		`TRUE` for last dump call by `xxx();` method to dump and `exit;`.
+		 * @return mixed			Variable itself or dumped variable string.
+		 */
+		public static function Dump ($value, $return = FALSE, $exit = FALSE) {
+			if (static::$originalDebugClass) {
+				$options = array('store' => FALSE, 'backtraceIndex' => 1);
+				if ($exit) $options['lastDump'] = TRUE;
+				$dumpedValue = static::dumpHandler($value, NULL, $options);
+			} else {
+				$dumpedValue = @call_user_func(static::$handlers['dump'], $value, $return);
+			}
+			if ($return) return $dumpedValue;
+			if (static::$development) {
+				echo $dumpedValue;
+			} else {
+				static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::DEBUG);
+			}
+			return $value;
+		}
+
+		/**
+		 * Dump any variable with output buffering in browser debug bar.
+		 * In non-development mode - store dumped variable in `debug.log`.
+		 * Return printed variable as string.
+		 * @param  mixed	$value		Variable to dump.
+		 * @param  string	$title		Optional title.
+		 * @param  array	$options	Dumper options.
+		 * @return mixed				Variable itself.
+		 */
+		public static function BarDump ($value, $title = NULL, $options = array()) {
+			if (static::$originalDebugClass) {
+				if (!isset($options['backtraceIndex'])) $options['backtraceIndex'] = 1;
+				$options['store'] = static::$development;
+				$dumpedValue = static::dumpHandler($value, $title, $options);
+			} else {
+				$dumpedValue = @call_user_func_array(static::$handlers['barDump'], func_get_args());
+			}
+			if (!static::$development) {
+				static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::DEBUG);
+			}
+			return $value;
+		}
+
+		/**
+		 * Logs any message or exception with log datetime, in `*.log` file
+		 * by given log level, in configured logging directory.
+		 * @param  string|\Exception|\Throwable	$value
+		 * @param  string						$priority
+		 * @return string						Logging filename fullpath.
+		 */
+		public static function Log ($value, $priority = \MvcCore\Interfaces\IDebug::INFO) {
+			if (static::$originalDebugClass) {
+				$dumpedValue = static::dumpHandler(
+					$value, NULL, array('store' => FALSE, 'backtraceIndex' => 1)
+				);
+				return static::storeLogRecord($dumpedValue, $priority);
+			} else {
+				return @call_user_func_array(static::$handlers['log'], func_get_args());
+			}
+		}
+
+		/**
+		 * Sends given `$value` into FireLogger console.
+		 * @param	mixed	$value	Message to log.
+		 * @param	string	$priority	Priority.
+		 * @return	bool				Was successful?
+		 */
+		public static function FireLog ($value, $priority = \MvcCore\Interfaces\IDebug::DEBUG) {
+			// TODO: implement simple firelog
+			$args = func_get_args();
+			if (static::$originalDebugClass) {
+				$args = array($value, NULL, array('priority' => $priority));
+			}
+			return call_user_func_array(static::$handlers['fireLog'], $args);
+		}
+
+		/**
+		 * Print catched exception in browser.
+		 * In non-development mode - store dumped exception in `exception.log`.
+		 * @param \Exception|\Error|\Throwable|array $exception
+		 * @param bool $exit
+		 * @return void
+		 */
+		public static function Exception ($exception, $exit = TRUE) {
+			if (static::$originalDebugClass) {
+				$dumpedValue = static::dumpHandler(
+					$exception, NULL, array('store' => !$exit, 'backtraceIndex' => 1)
+				);
+				if (static::$development) {
+					echo $dumpedValue;
+				} else {
+					static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::EXCEPTION);
+				}
+			} else {
+				@call_user_func_array(static::$handlers['exceptionHandler'], func_get_args());
+			}
+		}
+
+		/**
+		 * Print all stored dumps at the end of sended response body as browser debug bar.
+		 * This function is called from registered shutdown handler by
+		 * `register_shutdown_function()` from `\MvcCore\Debug::initHandlers();`.
+		 * @return void
+		 */
+		public static function ShutdownHandler () {
+			$error = error_get_last();
+			if (isset($error['type'])) static::Exception($error);
+			$dumpsCount = count(self::$dumps);
+			if (!$dumpsCount) return;
+			$app = \MvcCore\Application::GetInstance();
+			$appRoot = $app->GetRequest()->GetAppRoot();
+			$response = $app->GetResponse();
+			if ($response->HasHeader('Content-Type') && !$response->IsHtmlOutput()) return;
+			$dumps = '';
+			$lastDump = FALSE;
+			foreach (self::$dumps as $values) {
+				$options = $values[2];
+				$dumps .= '<div class="item">';
+				if ($values[1] !== NULL) {
+					$dumps .= '<pre class="title">'.$values[1].'</pre>';
+				}
+				$file = $options['file'];
+				$line = $options['line'];
+				$displayedFile = str_replace('\\', '/', $file);
+				if (strpos($displayedFile, $appRoot) === 0) {
+					$displayedFile = substr($displayedFile, strlen($appRoot));
+				}
+				$link = '<a class="editor" href="editor://open/?file='
+					.rawurlencode($file).'&amp;line='.$line.'">'
+						.$displayedFile.':'.$line
+					.'</a>';
+				$dumps .= '<div class="value">'
+					.preg_replace("#\[([^\]]*)\]=>([^\n]*)\n(\s*)#", "[$1] => ",
+						str_replace("<required>","&lt;required&gt;",$link.$values[0])
+					)
+					.'</div></div>';
+				if (isset($values[2]['lastDump']) && $values[2]['lastDump']) $lastDump = TRUE;
+			}
+			$template = \Packager_Php_Wrapper::FileGetContents(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore'.'/debug.html');
+			echo str_replace(
+				array('%mvccoreDumps%', '%mvccoreDumpsCount%', '%mvccoreDumpsClose%'),
+				array($dumps, count(self::$dumps), $lastDump ? 'q(!0);' : 'q();'),
+				$template
+			);
+		}
+
+		/**
+		 * Starts/stops stopwatch.
+		 * @param  string  Name.
+		 * @return float   Elapsed seconds.
+		 */
+		protected static function timerHandler ($name = NULL) {
+			$now = microtime(TRUE);
+			if ($name === NULL) return $now - static::$requestBegin;
+			$difference = round((isset(static::$timers[$name]) ? $now - static::$timers[$name] : 0) * 1000) / 1000;
+			static::$timers[$name] = $now;
+			return $difference;
+		}
+
+		/**
+		 * Dump any variable as string with output buffering,
+		 * store result for printing later. Return printed variable string.
+		 * @param  mixed	$value		Variable to dump.
+		 * @param  string	$title		Optional title.
+		 * @param  array	$options	Dumper options.
+		 * @return string
+		 */
+		protected static function dumpHandler ($value, $title = NULL, $options = array()) {
+			ob_start();
+			var_dump($value);
+			// format xdebug first small element with file:
+			$content = preg_replace("#\</small\>\n#", '</small>', ob_get_clean(), 1);
+			$content = preg_replace("#\<small\>([^\>]*)\>#", '', $content, 1);
+			$backtraceIndex = isset($options['backtraceIndex']) ? $options['backtraceIndex'] : 2 ;
+			$backtrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $backtraceIndex + 1);
+			$originalPlace = (object) $backtrace[$backtraceIndex];
+			$options['file'] = $originalPlace->file;
+			$options['line'] = $originalPlace->line;
+			if ($options['store']) self::$dumps[] = array($content, $title, $options);
+			return $content;
+		}
+
+		/**
+		 * Store given log record in text file.
+		 * Return full path where the message has been writen.
+		 * @param mixed $value
+		 * @param string $priority
+		 * @return string
+		 */
+		protected static function storeLogRecord ($value, $priority) {
+			$content = date('[Y-m-d H-i-s]') . "\n" . $value;
+			$content = preg_replace("#\n(\s)#", "\n\t$1", $content) . "\n";
+			if (!static::$logDirectoryInitialized) static::initLogDirectory();
+			$fullPath = static::$LogDirectory . '/' . $priority . '.log';
+			if (!\Packager_Php_Wrapper::IsDir(static::$LogDirectory)) {
+				\Packager_Php_Wrapper::MkDir(static::$LogDirectory);
+				if (!is_writable(static::$LogDirectory)) {
+					try {
+						chmod(static::$LogDirectory, 0777);
+					} catch (\Exception $e) {
+						die('['.__CLASS__.'] ' . $e->getMessage());
+					}
+				}
+			}
+			file_put_contents($fullPath, $content, FILE_APPEND);
+			return $fullPath;
+		}
+
+		/**
+		 * Initialize debuging and logging handlers.
+		 * @return void
+		 */
+		protected static function initHandlers () {
+			$className = get_called_class();
+			foreach (static::$handlers as $key => $value) {
+				static::$handlers[$key] = array($className, $value);
+			}
+			register_shutdown_function(static::$handlers['shutdownHandler']);
+		}
+
+		/**
+		 * If log directory doesn't exist, create new directory - relative from app root.
+		 * @param string $logDirAbsPath Absolute directory path.
+		 * @return void
+		 */
+		protected static function initLogDirectory () {
+			if (static::$logDirectoryInitialized) return;
+			$configClass = static::$app->GetConfigClass();
+			$cfg = $configClass::GetSystem();
+			$logDirRelPath = static::$LogDirectory;
+			if ($cfg !== FALSE && isset($cfg->debug)) {
+				$cfgDebug = & $cfg->debug;
+				if (isset($cfgDebug->emailRecepient))
+					static::$EmailRecepient = $cfgDebug->emailRecepient;
+				if (isset($cfgDebug->logDirectory))
+					$logDirRelPath = $cfgDebug->logDirectory; // relative path from app root
+			}
+
+			$scriptFilename = $_SERVER['SCRIPT_FILENAME'];
+			$scriptPath = php_sapi_name() == 'cli'
+				? str_replace('\\', '/', getcwd()) . '/' . $scriptFilename
+				: str_replace('\\', '/', $scriptFilename);
+			$lastSlashPos = strrpos($scriptPath, '/');
+			$appRoot = substr($scriptPath, 0, $lastSlashPos !== FALSE ? $lastSlashPos : strlen($scriptPath));
+			$logDirAbsPath = $appRoot . $logDirRelPath;
+			static::$LogDirectory = $logDirAbsPath;
+
+			if (!\Packager_Php_Wrapper::IsDir($logDirAbsPath)) \Packager_Php_Wrapper::MkDir($logDirAbsPath, 0777, TRUE);
+			if (!is_writable($logDirAbsPath)) {
+				try {
+					chmod($logDirAbsPath, 0777);
+				} catch (\Exception $e) {
+					die('['.__CLASS__.'] ' . $e->getMessage());
+				}
+			}
+
+			static::$logDirectoryInitialized = TRUE;
+		}
+	}
+}
+
+namespace {
+	\MvcCore\Debug::$InitGlobalShortHands = function ($development) {
+		/**
+		 * Dump any variable with output buffering in browser debug bar,
+		 * store result for printing later. Return printed variable as string.
+		 * @param  mixed	$value		Variable to dump.
+		 * @param  string	$title		Optional title.
+		 * @param  array	$options	Dumper options.
+		 * @return mixed				Variable itself.
+		 */
+		function x ($value, $title = NULL, $options = array()) {
+			$options['backtraceIndex'] = 2;
+			return \MvcCore\Debug::BarDump($value, $title, $options);
+		}
+		/**
+		 * Dumps multiple variables with output buffering in browser debug bar.
+		 * store result for printing later.
+		 * @param  ...mixed  Variables to dump.
+		 * @return void
+		 */
+		function xx () {
+			$args = func_get_args();
+			foreach ($args as $arg) \MvcCore\Debug::BarDump($arg, NULL, array('backtraceIndex' => 2));
+		}
+		if ($development) {
+			/**
+			 * Dump variables and die. If no variable, throw stop exception.
+			 * @param  ...mixed  $args	Variables to dump.
+			 * @throws \Exception
+			 * @return void
+			 */
+			function xxx (/*...$args*/) {
+				$args = func_get_args();
+				if (count($args) === 0) {
+					throw new \ErrorException('Stopped.', 500);
+				} else {
+					\MvcCore\Application::GetInstance()->GetResponse()->SetHeader('Content-Type', 'text/html');
+					@header('Content-Type: text/html');
+					echo '<pre><code>';
+					foreach ($args as $arg) {
+						$dumpedArg = \MvcCore\Debug::Dump($arg, TRUE, TRUE);
+						echo preg_replace("#\[([^\]]*)\]=>([^\n]*)\n(\s*)#", "[$1] => ", $dumpedArg);
+						echo '</code></pre>';
+					}
+				}
+				exit;
+			}
+		} else {
+			/**
+			 * Log variables and die. If no variable, throw stop exception.
+			 * @param  ...mixed  $args	Variables to dump.
+			 * @throws \Exception
+			 * @return void
+			 */
+			function xxx (/*...$args*/) {
+				$args = func_get_args();
+				if (count($args) > 0)
+					foreach ($args as $arg)
+						\MvcCore\Debug::Log($arg, \MvcCore\Interfaces\IDebug::DEBUG);
+				echo 'Error 500 - Stopped.';
+				exit;
+			}
+		}
+	};
 }
 /**
  * MvcCore
@@ -14966,472 +13942,2843 @@ class Router implements Interfaces\IRouter
  * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
  */
 
-namespace MvcCore {
+namespace MvcCore{
 
-	//include_once(__DIR__ . '/Interfaces/IDebug.php');
-	//include_once('Application.php');
-	//include_once('Config.php');
+//include_once(__DIR__ . '/Interfaces/IRequest.php');
+//include_once('Tool.php');
+//include_once('Application.php');
+
+/**
+ * Responsibility - request description - url and params inputs parsing and cleaning.
+ * - Linear request url parsing from referenced `$_SERVER` global variable
+ *   (as constructor argument) into local properties, describing url sections.
+ * - Params reading from referenced `$_GET` and `$_POST` global variables
+ *   (as constructor arguments) or reading data from direct PHP
+ *   input `"php://input"` (as encoded JSON data or as query string).
+ * - Headers cleaning and reading by `getallheaders()` or from referenced `$_SERVER['HTTP_...']`.
+ * - Cookies cleaning and reading from referenced `$_COOKIE['...']`.
+ * - Uploaded files by wrapped referenced `$_FILES` global array.
+ * - Primitive values cleaning or array recursive cleaning by called
+ *	 developer rules from params array, headers array and cookies array.
+ */
+class Request implements Interfaces\IRequest
+{
+	/**
+	 * Language international code, lowercase, not used by default.
+	 * To use this variable - install  `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	protected $lang				= NULL;
 
 	/**
-	 * Responsibility - any devel and logging messages and exceptions printing and logging.
-	 * - Printing any variable in content body.
-	 * - Printing any variable in browser debug bar.
-	 * - Catched exceptions printing.
-	 * - Any variables and catched exceptions file logging.
-	 * - Time printing.
+	 * Country/locale code, uppercase, not used by default.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
 	 */
-	class Debug implements Interfaces\IDebug
-	{
-		/**
-		 * Email recepient to send information about exceptions or errors,
-		 * `"admin@localhost"` by default.
-		 * @var string
-		 */
-		public static $EmailRecepient = 'admin@localhost';
+	protected $locale			= NULL;
 
-		/**
-		 * Relative path from app root to store any log information,
-		 * `"/Var/Logs"` by default.
-		 * @var string
-		 */
-		public static $LogDirectory = '/Var/Logs';
+	/**
+	 * Media site key - `"full" | "tablet" | "mobile"`.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCoreExt\Router\Media`
+	 * Or use this variable by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	protected $mediaSiteKey = '';
 
-		/**
-		 * Initialize global development shorthands.
-		 * @var callable
-		 */
-		public static $InitGlobalShortHands = array();
+	/**
+	 * Http protocol: `"http:" | "https:"`
+	 * Example: `"http:"`
+	 * @var string|NULL
+	 */
+	protected $protocol			= NULL;
 
-		/**
-		 * Semaphore to execute `\MvcCore\Debug::Init();` method only once.
-		 * `TRUE` if development, `FALSE` if anything else.
-		 * @var boolean
-		 */
-		protected static $development = NULL;
+	/**
+	 * `TRUE` if http protocol is `"https:"`
+	 * @var bool|NULL
+	 */
+	protected $secure			= NULL;
 
-		/**
-		 * Debuging and loging handlers, this should be customized in extended class.
-		 * @var array
-		 */
-		protected static $handlers = array(
-			'timer'				=> 'timerHandler',
-			'dump'				=> 'dumpHandler',
-			'barDump'			=> 'dumpHandler',
-			'log'				=> 'dumpHandler',
-			'fireLog'			=> 'dumpHandler',
-			'exceptionHandler'	=> 'exceptionHandler',
-			'shutdownHandler'	=> 'ShutdownHandler',
+	/**
+	 * Application server name - domain without any port.
+	 * Example: `"localhost"`
+	 * @var string|NULL
+	 */
+	protected $serverName		= NULL;
+
+	/**
+	 * Application host with port if there is any.
+	 * Example: `"localhost:88"`
+	 * @var string|NULL
+	 */
+	protected $host				= NULL;
+
+	/**
+	 * Http port defined in requested url if any, parsed by `parse_url().
+	 * Empty string if there is no port number in requested address.`.
+	 * Example: `"88" | ""`
+	 * @var string|NULL
+	 */
+	protected $port				= NULL;
+
+	/**
+	 * Requested path in from application root (if `mod_rewrite` enabled), never with query string.
+	 * Example: `"/products/page/2"`
+	 * @var string|NULL
+	 */
+	protected $path				= NULL;
+
+	/**
+	 * Uri query string without question mark.
+	 * Example: `"param-1=value-1&param-2=value-2&param-3[]=value-3-a&param-3[]=value-3-b"`
+	 * @var string|NULL
+	 */
+	protected $query			= NULL;
+
+	/**
+	 * Uri fragment parsed by `parse_url()` including hash.
+	 * Example: `"#any-sublink-path"`
+	 * @var string|NULL
+	 */
+	protected $fragment			= NULL;
+
+	/**
+	 * `TRUE` if request is requested from browser by `XmlHttpRequest` object
+	 * with http header: `X-Requested-With: AnyJavascriptFrameworkName`, `FALSE` otherwise.
+	 * @var bool|null
+	 */
+	protected $ajax				= NULL;
+
+	/**
+	 * Php requested script name path from application root.
+	 * Example: `"/index.php"`
+	 * @var string|NULL
+	 */
+	protected $scriptName		= NULL;
+
+	/**
+	 * Application root path on hard drive.
+	 * Example: `"C:/www/my/development/direcotry/www"`
+	 * @var string|NULL
+	 */
+	protected $appRoot			= NULL;
+
+	/**
+	 * Base app directory path after domain, if application is placed in domain subdirectory
+	 * Example:
+	 * - full url:  `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * - base path: `"/my/development/direcotry/www"`
+	 * @var string|NULL
+	 */
+	protected $basePath			= NULL;
+
+	/**
+	 * Request path after domain with possible query string
+	 * Example: `"/requested/path/after/app/root?with=possible&query=string"`
+	 * @var string|NULL
+	 */
+	protected $requestPath		= NULL;
+
+	/**
+	 * Url to requested domain and possible port.
+	 * Example: `"https://domain.com" | "http://domain:88"` if any port.
+	 * @var string|NULL
+	 */
+	protected $domainUrl		= NULL;
+
+	/**
+	 * Base url to application root.
+	 * Example: `"http://domain:88/my/development/direcotry/www"`
+	 * @var string|NULL
+	 */
+	protected $baseUrl			= NULL;
+
+	/**
+	 * Request url including scheme, domain, port, path, without any query string
+	 * Example: "`http://localhost:88/my/development/direcotry/www/requested/path/after/domain"`
+	 * @var string|NULL
+	 */
+	protected $requestUrl		= NULL;
+
+	/**
+	 * Request url including scheme, domain, port, path and with query string
+	 * Example: `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * @var string|NULL
+	 */
+	protected $fullUrl			= NULL;
+
+	/**
+	 * Http method (uppercase) - `GET`, `POST`, `PUT`, `HEAD`...
+	 * Example: `"GET"`
+	 * @var string|NULL
+	 */
+	protected $method			= NULL;
+
+	/**
+	 * Referer url if any, safely readed by:
+	 * `filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);`
+	 * Example: `"http://foreing.domain.com/path/where/is/link/to/?my=app"`
+	 * @var string|NULL
+	 */
+	protected $referer			= NULL;
+
+	/**
+	 * Server ip address string.
+	 * @var string|NULL
+	 */
+	protected $serverIp			= NULL;
+
+	/**
+	 * Client ip address string.
+	 * @var string|NULL
+	 */
+	protected $clientIp			= NULL;
+
+	/**
+	 * Timestamp of the start of the request, with microsecond precision.
+	 * @var float
+	 */
+	protected $microtime		= NULL;
+
+	/**
+	 * All raw http headers without any conversion, initialized by
+	 * `getallheaders()` or from `$_SERVER['HTTP_...']`.
+	 * Headers are `key => value` array, headers keys are
+	 * in standard format like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @var array|NULL
+	 */
+	protected $headers			= NULL;
+
+	/**
+	 * Raw request params array, with keys defined in route or by query string,
+	 * always with controller and action keys completed by router.
+	 * Do not read this `$Params` array directly, read it's values by:
+	 * `\MvcCore\Request::GetParam($paramName, $allowedChars, $defaultValueIfNull, $targetType);`.
+	 * Example:
+	 *	`\MvcCore\Request:$Params = array(
+	 *		"controller"	=> "default",
+	 *		"action"		=> "default",
+	 *		"username"		=> "' OR 1=1;-- ",	// be carefull for this content with raw (danger) value!
+	 *	);`
+	 *	// Do not read `$Params` array directly,
+	 *	// to get safe param value use:
+	 *	`\MvcCore\Request::GetParam("username", "a-zA-Z0-9_");` // return `OR` string without danger chars.
+	 * @var array|NULL
+	 */
+	protected $params			= NULL;
+
+	/**
+	 * Request flag if request targets internal package asset or not,
+	 * - 0 => Means request is `Controller:Asset` call for internal package asset.
+	 * - 1 => Means request is classic application request.
+	 * @var bool|NULL
+	 */
+	protected $appRequest		= NULL;
+
+	/**
+	 * Cleaned input param `"controller"`, containing only chars: `"a-zA-Z0-9\-_/"`.
+	 * @var string
+	 */
+	protected $controllerName	= NULL;
+
+	/**
+	 * Cleaned input param `"action"`, containing only chars: `"a-zA-Z0-9\-_/"`.
+	 * @var string
+	 */
+	protected $actionName		= NULL;
+
+	/**
+	 * Content of referenced `$_SERVER` global variable.
+	 * @var array
+	 */
+	protected $globalServer	= array();
+
+	/**
+	 * Content of referenced `$_GET` global variable.
+	 * @var array
+	 */
+	protected $globalGet		= array();
+
+	/**
+	 * Content of referenced `$_POST` global variable.
+	 * @var array
+	 */
+	protected $globalPost		= array();
+
+	/**
+	 * Content of referenced `$_COOKIE` global variable.
+	 * @var array
+	 */
+	protected $globalCookies	= array();
+
+	/**
+	 * Content of referenced `$_FILES` global variable.
+	 * @var array
+	 */
+	protected $globalFiles		= array();
+
+	/**
+	 * Static factory to get everytime new instance of http request object.
+	 * Global variables for constructor arguments (`$_SERVER`, `$_GET`, `$_POST`...)
+	 * should be changed to any arrays with any values and injected here to get
+	 * different request object then currently called real request object.
+	 * For example to create fake request object for testing purposes
+	 * or for non-real request rendering into request output cache.
+	 * @param array $server
+	 * @param array $get
+	 * @param array $post
+	 * @param array $cookie
+	 * @param array $files
+	 * @return \MvcCore\Request
+	 */
+	public static function GetInstance (
+		array & $server = array(),
+		array & $get = array(),
+		array & $post = array(),
+		array & $cookie = array(),
+		array & $files = array()
+	) {
+		$requestClass = \MvcCore\Application::GetInstance()->GetRequestClass();
+		return new $requestClass($server, $get, $post, $cookie, $files);
+	}
+
+
+	/**
+	 * Create new instance of http request object.
+	 * Global variables for constructor arguments (`$_SERVER`, `$_GET`, `$_POST`...)
+	 * should be changed to any arrays with any values and injected here to get
+	 * different request object then currently called real request object.
+	 * For example to create fake request object for testing purposes
+	 * or for non-real request rendering into request output cache.
+	 * @param array $server
+	 * @param array $get
+	 * @param array $post
+	 * @param array $cookie
+	 * @param array $files
+	 * @return \MvcCore\Request
+	 */
+	public function __construct (
+		array & $server = array(),
+		array & $get = array(),
+		array & $post = array(),
+		array & $cookie = array(),
+		array & $files = array()
+	) {
+		$this->globalServer = & $server;
+		$this->globalGet = & $get;
+		$this->globalPost = & $post;
+		$this->globalCookies = & $cookie;
+		$this->globalFiles = & $files;
+	}
+
+	/**
+	 * Get one of the global data collections stored as protected properties inside request object.
+	 * Example:
+	 *  // to get global `$_GET` with raw values:
+	 *  `$globalGet = $request->GetGlobalCollection('get');`
+	 * @param string $type
+	 * @return array
+	 */
+	public function & GetGlobalCollection ($type) {
+		$collection = 'global'.ucfirst(strtolower($type));
+		return $this->$collection;
+	}
+
+	/**
+	 * Set directly all raw http headers without any conversion at once.
+	 * Header name(s) as array keys should be in standard format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param array $headers
+	 * @return \MvcCore\Request
+	 */
+	public function & SetHeaders (array & $headers = array()) {
+		$this->headers = & $headers;
+		return $this;
+	}
+
+	/**
+	 * Get directly all raw http headers at once (with/without conversion).
+	 * If headers are not initialized, initialize headers by
+	 * `getallheaders()` or from `$_SERVER['HTTP_...']`.
+	 * Headers are returned as `key => value` array, headers keys are
+	 * in standard format like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return array
+	 */
+	public function & GetHeaders ($pregReplaceAllowedChars = array('#\<\>#', '')) {
+		if ($this->headers === NULL) $this->initHeaders();
+		if ($pregReplaceAllowedChars === '' || $pregReplaceAllowedChars === '.*') return $this->headers;
+		$cleanedHeaders = array();
+		foreach ($this->headers as $key => & $value) {
+			$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+			$cleanedHeaders[$cleanedKey] = $this->GetHeader($key, $pregReplaceAllowedChars);
+		}
+		return $cleanedHeaders;
+	}
+
+	/**
+	 * Set directly raw http header value without any conversion.
+	 * Header name should be in standard format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Request
+	 */
+	public function & SetHeader ($name = "", $value = "") {
+		if ($this->headers === NULL) $this->initHeaders();
+		$this->headers[$name] = $value;
+		return $this;
+	}
+
+	/**
+	 * Get http header value filtered by "rule to keep defined characters only",
+	 * defined in second argument (by `preg_replace()`). Place into second argument
+	 * only char groups you want to keep. Header has to be in format like:
+	 * `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @param string $name Http header string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetHeader (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if ($this->headers === NULL) $this->initHeaders();
+		return $this->getParamFromCollection(
+			$this->headers, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
 		);
+	}
 
-		/**
-		 * Store for printed dumps by output buffering to send it at response end.
-		 * @var array
-		 */
-		protected static $dumps = array();
 
-		/**
-		 * Store timers start points.
-		 * @var array
-		 */
-		protected static $timers = array();
+	/**
+	 * Set directly all raw parameters without any conversion at once.
+	 * @param array $params
+	 * @return \MvcCore\Request
+	 */
+	public function & SetParams (array & $params = array()) {
+		$this->params = & $params;
+		return $this;
+	}
 
-		/**
-		 * `TRUE` for cofigured debug class as `\MvcCore\Debug`,
-		 * `FALSE` for any other configured extension.
-		 * @var bool
-		 */
-		protected static $originalDebugClass = TRUE;
-
-		/**
-		 * `TRUE` if debug class is MvcCore original debug class and
-		 * if logs directory has been already initialized.
-		 * @var bool
-		 */
-		protected static $logDirectoryInitialized = FALSE;
-
-		/**
-		 * Reference to singleton instance in `\MvcCore\Application::GetInstance();`.
-		 * @var \MvcCore\Application
-		 */
-		protected static $app;
-
-		/**
-		 * Reference to `\MvcCore\Application::GetInstance()->GetRequest()->GetMicrotime();`.
-		 * @var float
-		 */
-		protected static $requestBegin;
-
-		/**
-		 * Initialize debugging and logging, once only.
-		 * @param bool $forceDevelopmentMode If defined as `TRUE` or `FALSE`,
-		 *                                   debug mode will be set not by config but by this value.
-		 * @return void
-		 */
-		public static function Init ($forceDevelopmentMode = NULL) {
-			if (static::$development !== NULL) return;
-
-			static::$app = & \MvcCore\Application::GetInstance();
-			static::$requestBegin = static::$app->GetRequest()->GetMicrotime();
-
-			if (gettype($forceDevelopmentMode) == 'boolean') {
-				static::$development = $forceDevelopmentMode;
-			} else {
-				$configClass = static::$app->GetConfigClass();
-				static::$development = $configClass::IsDevelopment(TRUE);
-			}
-
-			// do not initialize log directory here every time, initialize log
-			//directory only if there is necessary to log something - later.
-
-			static::$originalDebugClass = ltrim(static::$app->GetDebugClass(), '\\') == __CLASS__;
-			static::initHandlers();
-			$initGlobalShortHandsHandler = static::$InitGlobalShortHands;
-			$initGlobalShortHandsHandler(static::$development);
+	/**
+	 * Get directly all raw parameters at once (with/without conversion).
+	 * If any defined char groups in `$pregReplaceAllowedChars`, there will be returned
+	 * all params filtered by given rule in `preg_replace()`.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return array
+	 */
+	public function & GetParams ($pregReplaceAllowedChars = array('#\<\>#', '')) {
+		if ($this->params === NULL) $this->initParams();
+		if ($pregReplaceAllowedChars === '' || $pregReplaceAllowedChars === '.*') return $this->params;
+		$cleanedParams = array();
+		foreach ($this->params as $key => & $value) {
+			$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+			$cleanedParams[$cleanedKey] = $this->GetParam($key, $pregReplaceAllowedChars);
 		}
+		return $cleanedParams;
+	}
 
-		/**
-		 * Starts/stops stopwatch.
-		 * @param  string $name Time pointer name.
-		 * @return float        Elapsed seconds.
-		 */
-		public static function Timer ($name = NULL) {
-			return static::BarDump(
-				call_user_func(static::$handlers['timer'], $name),
-				$name,
-				array('backtraceIndex' => 3)
+	/**
+	 * Set directly raw parameter value without any conversion.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Request
+	 */
+	public function & SetParam ($name = "", $value = "") {
+		if ($this->params === NULL) $this->initParams();
+		$this->params[$name] = $value;
+		return $this;
+	}
+
+	/**
+	 * Get param value from `$_GET`, `$_POST` or `php://input`, filtered by
+	 * "rule to keep defined characters only", defined in second argument (by `preg_replace()`).
+	 * Place into second argument only char groups you want to keep.
+	 * @param string $name Parametter string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetParam (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if ($this->params === NULL) $this->initParams();
+		return $this->getParamFromCollection(
+			$this->params, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
+		);
+	}
+
+
+	/**
+	 * Set directly whole raw global `$_FILES` without any conversion at once.
+	 * @param array $files
+	 * @return \MvcCore\Request
+	 */
+	public function & SetFiles (array & $files = array()) {
+		$this->globalFiles = & $files;
+		return $this;
+	}
+
+	/**
+	 * Return reference to configured global `$_FILES`
+	 * or reference to any other testing array representing it.
+	 * @return array
+	 */
+	public function & GetFiles () {
+		return $this->globalFiles;
+	}
+
+	/**
+	 * Set file item into global `$_FILES` without any conversion at once.
+	 * @param string $file
+	 * @param array $data
+	 * @return \MvcCore\Request
+	 */
+	public function & SetFile ($file = '', $data = array()) {
+		$this->globalFiles[$file] = $data;
+		return $this;
+	}
+
+	/**
+	 * Return item by file name from referenced global `$_FILES`
+	 * or reference to any other testing array item representing it.
+	 * @return array
+	 */
+	public function GetFile ($file = '') {
+		if (isset($this->globalFiles[$file])) return $this->globalFiles[$file];
+		return array();
+	}
+
+
+	/**
+	 * Set directly whole raw global `$_COOKIE` without any conversion at once.
+	 * @param array $cookies
+	 * @return \MvcCore\Request
+	 */
+	public function & SetCookies (array & $cookies = array()) {
+		$this->globalCookies = & $cookies;
+		return $this;
+	}
+
+	/**
+	 * Return reference to configured global `$_COOKIE`
+	 * or reference to any other testing array representing it.
+	 * @return array
+	 */
+	public function & GetCookies () {
+		return $this->globalCookies;
+	}
+
+	/**
+	 * Set raw request cookie into referenced global `$_COOKIE` without any conversion.
+	 * @param string $name
+	 * @param string|string[] $value
+	 * @return \MvcCore\Request
+	 */
+	public function & SetCookie ($name = "", $value = "") {
+		$this->globalCookies[$name] = $value;
+		return $this;
+	}
+
+	/**
+	 * Get request cookie value from referenced global `$_COOKIE` variable,
+	 * filtered by characters defined in second argument throught `preg_replace()`.
+	 * Place into second argument only char groups you want to keep.
+	 * @param string $name Cookie string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	public function GetCookie (
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\.\@\=\+\?\!",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		return $this->getParamFromCollection(
+			$this->globalCookies, $name, $pregReplaceAllowedChars, $ifNullValue, $targetType
+		);
+	}
+
+
+	/**
+	 * Initialize all possible protected values from all globals,
+	 * including all http headers, all params and application inputs.
+	 * This method is not recomanded to use in production mode, it's
+	 * designed mostly for development purposes, to see in one moment,
+	 * what could be inside request after calling any getter method.
+	 * @return \MvcCore\Request
+	 */
+	public function & InitAll () {
+		$this->GetScriptName();
+		$this->GetAppRoot();
+		$this->GetMethod();
+		$this->GetBasePath();
+		$this->GetProtocol();
+		$this->IsSecure();
+		$this->GetServerName();
+		$this->GetHost();
+		$this->GetRequestPath();
+		$this->GetFullUrl();
+		$this->GetReferer();
+		$this->GetMicrotime();
+		$this->IsAjax();
+		if ($this->port === NULL) $this->initUrlSegments();
+		if ($this->headers === NULL) $this->initHeaders();
+		if ($this->params === NULL) $this->initParams();
+		$this->GetServerIp();
+		$this->GetClientIp();
+		return $this;
+	}
+
+	/**
+	 * Return `TRUE` boolean flag if request targets `Controller:Asset`.
+	 * @return bool
+	 */
+	public function IsInternalRequest () {
+		if ($this->appRequest === NULL) {
+			$ctrl = $this->GetControllerName();
+			$action = $this->GetActionName();
+			if ($ctrl !== NULL && $action !== NULL) {
+				$this->appRequest = FALSE;
+				if ($ctrl === 'controller' && $action === 'asset')
+					$this->appRequest = TRUE;
+			}
+		}
+		return $this->appRequest;
+	}
+
+	/**
+	 * Set cleaned requested controller name into `\MvcCore\Request::$controllerName;`
+	 * and into `\MvcCore\Request::$Params['controller'];`.
+	 * @param string $controllerName
+	 * @return \MvcCore\Request
+	 */
+	public function & SetControllerName ($controllerName) {
+		$this->controllerName = $controllerName;
+		$this->params['controller'] = $controllerName;
+		return $this;
+	}
+
+	/**
+	 * Return cleaned requested controller name from `\MvcCore\Request::$Params['controller'];`.
+	 * @return string
+	 */
+	public function GetControllerName () {
+		if ($this->controllerName === NULL) {
+			if (isset($this->globalGet['controller']))
+				$this->controllerName = $this->GetParam('controller', 'a-zA-Z0-9\-_/', '', 'string');
+		}
+		return $this->controllerName;
+	}
+
+	/**
+	 * Set cleaned requested controller name into `\MvcCore\Request::$actionName;`
+	 * and into `\MvcCore\Request::$Params['action'];`.
+	 * @param string $actionName
+	 * @return \MvcCore\Request
+	 */
+	public function & SetActionName ($actionName) {
+		$this->actionName = $actionName;
+		$this->params['action'] = $actionName;
+		return $this;
+	}
+
+	/**
+	 * Return cleaned requested action name from `\MvcCore\Request::$Params['action'];`.
+	 * @return string
+	 */
+	public function GetActionName () {
+		if ($this->actionName === NULL) {
+			if (isset($this->globalGet['action']))
+				$this->actionName = $this->GetParam('action', 'a-zA-Z0-9\-_', '', 'string');
+		}
+		return $this->actionName;
+	}
+
+	/**
+	 * Set language international code.
+	 * Use this lang storage by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	public function & SetLang ($lang) {
+		$this->lang = $lang;
+		return $this;
+	}
+
+	/**
+	 * Get language international code, lowercase, not used by default.
+	 * To use this variable - install  `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"en" | "de"`
+	 * @var string|NULL
+	 */
+	public function GetLang () {
+		if ($this->lang === NULL) $this->initLangAndLocale();
+		return $this->lang;
+	}
+
+	/**
+	 * Set country/locale code, uppercase.
+	 * Use this locale storage by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
+	 */
+	public function & SetLocale ($locale) {
+		$this->locale = $locale;
+		return $this;
+	}
+
+	/**
+	 * Get country/locale code, uppercase, not used by default.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCore\Ext\Router\Lang`
+	 * Or use this variable by your own decision.
+	 * Example: `"US" | "UK"`
+	 * @var string|NULL
+	 */
+	public function GetLocale () {
+		if ($this->locale === NULL) $this->initLangAndLocale();
+		return $this->locale;
+	}
+
+	/**
+	 * Set media site key - `"full" | "tablet" | "mobile"`.
+	 * Use this media site key storage by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	public function & SetMediaSiteKey ($mediaSiteKey) {
+		$this->mediaSiteKey = $mediaSiteKey;
+		return $this;
+	}
+
+	/**
+	 * Get media site key - `"full" | "tablet" | "mobile"`.
+	 * To use this variable - install `\MvcCore\Router` extension `\MvcCoreExt\Router\Media`
+	 * Or use this variable by your own decision.
+	 * Example: `"full" | "tablet" | "mobile"`
+	 * @var string|NULL
+	 */
+	public function GetMediaSiteKey () {
+		return $this->mediaSiteKey;
+	}
+
+
+	/**
+	 * Sets any custom property `"PropertyName"` by `\MvcCore\Request::SetPropertyName("value")`,
+	 * which is not necessary to define previously or gets previously defined
+	 * property `"PropertyName"` by `\MvcCore\Request::GetPropertyName();`.
+	 * Throws exception if no property defined by get call or if virtual call
+	 * begins with anything different from 'Set' or 'Get'.
+	 * This method returns custom value for get and `\MvcCore\Request` instance for set.
+	 * @param string $name
+	 * @param array  $arguments
+	 * @throws \InvalidArgumentException
+	 * @return mixed|\MvcCore\Request
+	 */
+	public function __call ($name, $arguments = array()) {
+		$nameBegin = strtolower(substr($name, 0, 3));
+		$prop = substr($name, 3);
+		if ($nameBegin == 'get' && isset($this->$prop)) {
+			return $this->$prop;
+		} else if ($nameBegin == 'set') {
+			$this->$prop = isset($arguments[0]) ? $arguments[0] : NULL;
+			return $this;
+		} else {
+			throw new \InvalidArgumentException('['.__CLASS__."] No property with name '$prop' defined.");
+		}
+	}
+
+	/**
+	 * Universal getter, if property not defined, `NULL` is returned.
+	 * @param string $name
+	 * @return mixed
+	 */
+	public function __get ($name) {
+		return isset($this->$name) ? $this->$name : NULL ;
+	}
+
+	/**
+	 * Universal setter, if property not defined, it's automaticly declarated.
+	 * @param string $name
+	 * @param mixed	 $value
+	 * @return \MvcCore\Request
+	 */
+	public function __set ($name, $value) {
+		$this->$name = $value;
+		return $this;
+	}
+
+
+	/**
+	 * Php requested script name path from application root.
+	 * Example: `"/index.php"`
+	 * @return string
+	 */
+	public function GetScriptName () {
+		if ($this->scriptName === NULL) $this->initScriptNameAndBasePath();
+		return $this->scriptName;
+	}
+
+	/**
+	 * Get application root path on hard drive.
+	 * Example: `"C:/www/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetAppRoot () {
+		if ($this->appRoot === NULL) {
+			// ucfirst - cause IIS has lower case drive name here - different from __DIR__ value
+			$indexFilePath = ucfirst(str_replace(array('\\', '//'), '/', $this->globalServer['SCRIPT_FILENAME']));
+			if (strpos(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore/Request.php', 'phar://') === 0) {
+				$this->appRoot = 'phar://' . $indexFilePath;
+			} else {
+				$this->appRoot = substr($indexFilePath, 0, mb_strrpos($indexFilePath, '/'));
+			}
+		}
+		return $this->appRoot;
+	}
+
+	/**
+	 * Get uppercased http method from global `$_SERVER['REQUEST_METHOD']`.
+	 * Example: `"GET" | "POST" | "PUT" | "HEAD"...`
+	 * @return string
+	 */
+	public function GetMethod () {
+		if ($this->method === NULL) {
+			$this->method = strtoupper($this->globalServer['REQUEST_METHOD']);
+		}
+		return $this->method;
+	}
+
+	/**
+	 * Get base app directory path after domain,
+	 * if application is placed in domain subdirectory.
+	 * Example:
+	 * - full url:  `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * - base path: `"/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetBasePath () {
+		if ($this->basePath === NULL) $this->initScriptNameAndBasePath();
+		return $this->basePath;
+	}
+
+	/**
+	 * Get http protocol string.
+	 * Example: `"http:" | "https:"`
+	 * @return string
+	 */
+	public function GetProtocol () {
+		if ($this->protocol === NULL) {
+			$this->protocol = (
+				isset($this->globalServer['HTTPS']) &&
+				strtolower($this->globalServer['HTTPS']) == 'on'
+			)
+				? static::PROTOCOL_HTTPS
+				: static::PROTOCOL_HTTP;
+		}
+		return $this->protocol;
+	}
+
+	/**
+	 * Get `TRUE` if http protocol is `"https:"`.
+	 * @return bool
+	 */
+	public function IsSecure () {
+		if ($this->secure === NULL)
+			$this->secure = $this->GetProtocol() == static::PROTOCOL_HTTPS;
+		return $this->secure;
+	}
+
+	/**
+	 * Get referer url if any, safely readed by:
+	 * `filter_var($_SERVER['HTTP_REFERER'], FILTER_SANITIZE_URL);`
+	 * Example: `"http://foreing.domain.com/path/where/is/link/to/?my=app"`
+	 * @return string
+	 */
+	public function GetReferer () {
+		if ($this->referer === NULL) {
+			$referer = isset($this->globalServer['HTTP_REFERER'])
+				? $this->globalServer['HTTP_REFERER']
+				: '';
+			if ($referer) $referer = filter_var($referer, FILTER_SANITIZE_URL) ?: '';
+			$this->referer = $referer;
+		}
+		return $this->referer;
+	}
+
+	/**
+	 * Get timestamp of the start of the request, with microsecond precision.
+	 * @return float
+	 */
+	public function GetMicrotime () {
+		if ($this->microtime === NULL) $this->microtime = $this->globalServer['REQUEST_TIME_FLOAT'];
+		return $this->microtime;
+	}
+
+	/**
+	 * Get application server name - domain without any port.
+	 * Example: `"localhost"`
+	 * @return string
+	 */
+	public function GetServerName () {
+		if ($this->serverName === NULL) $this->serverName = $this->globalServer['SERVER_NAME'];
+		return $this->serverName;
+	}
+
+	/**
+	 * Get application host with port if there is any.
+	 * Example: `"localhost:88"`
+	 * @return string
+	 */
+	public function GetHost () {
+		if ($this->host === NULL) $this->host = $this->globalServer['HTTP_HOST'];
+		return $this->host;
+	}
+
+	/**
+	 * Http port defined in requested url if any, parsed by `parse_url().
+	 * Empty string if there is no port number in requested address.`.
+	 * Example: `"88" | ""`
+	 * @return string
+	 */
+	public function GetPort () {
+		if ($this->port === NULL) $this->initUrlSegments();
+		return $this->port;
+	}
+
+	/**
+	 * Get requested path in from application root (if `mod_rewrite` enabled), never with query string.
+	 * Example: `"/products/page/2"`
+	 * @return string
+	 */
+	public function GetPath () {
+		if ($this->path === NULL) $this->initUrlSegments();
+		return $this->path;
+	}
+
+	/**
+	 * Get uri query string without question mark.
+	 * Example: `"param-1=value-1&param-2=value-2&param-3[]=value-3-a&param-3[]=value-3-b"`
+	 * @return string
+	 */
+	public function GetQuery () {
+		if ($this->query === NULL) $this->initUrlSegments();
+		return $this->query;
+	}
+
+	/**
+	 * Get request path after domain with possible query string
+	 * Example: `"/requested/path/after/app/root?with=possible&query=string"`
+	 * @return string
+	 */
+	public function GetRequestPath () {
+		if ($this->requestPath === NULL) {
+			$query = $this->GetQuery();
+			$this->requestPath = $this->GetPath() . ($query ? '?' . $query : '') . $this->GetFragment();
+		}
+		return $this->requestPath;
+	}
+
+	/**
+	 * Get url to requested domain and possible port.
+	 * Example: `"https://domain.com" | "http://domain:88"` if any port.
+	 * @return string
+	 */
+	public function GetDomainUrl () {
+		if ($this->domainUrl === NULL) $this->domainUrl = $this->GetProtocol() . '//' . $this->GetHost();
+		return $this->domainUrl;
+	}
+
+	/**
+	 * Get base url to application root.
+	 * Example: `"http://domain:88/my/development/direcotry/www"`
+	 * @return string
+	 */
+	public function GetBaseUrl () {
+		if ($this->baseUrl === NULL) $this->baseUrl = $this->GetDomainUrl() . $this->GetBasePath();
+		return $this->baseUrl;
+	}
+
+	/**
+	 * Get request url including scheme, domain, port, path, without any query string
+	 * Example: "`http://localhost:88/my/development/direcotry/www/requested/path/after/domain"`
+	 * @return string
+	 */
+	public function GetRequestUrl () {
+		if ($this->requestUrl === NULL) $this->requestUrl = $this->GetBaseUrl() . $this->GetPath();
+		return $this->requestUrl;
+	}
+
+	/**
+	 * Get request url including scheme, domain, port, path and with query string
+	 * Example: `"http://localhost:88/my/development/direcotry/www/requested/path/after/domain?with=possible&query=string"`
+	 * @return string
+	 */
+	public function GetFullUrl () {
+		if ($this->fullUrl === NULL) {
+			$query = $this->GetQuery();
+			$this->fullUrl = $this->GetRequestUrl() . ($query ? '?' . $query : '') . $this->GetFragment();
+		}
+		return $this->fullUrl;
+	}
+
+	/**
+	 * Get uri fragment parsed by `parse_url()` including hash.
+	 * Example: `"#any-sublink-path"`
+	 * @return string
+	 */
+	public function GetFragment () {
+		if ($this->fragment === NULL) $this->initUrlSegments();
+		return $this->fragment;
+	}
+
+	/**
+	 * Get server IP from `$_SERVER` global variable.
+	 * @return string
+	 */
+	public function GetServerIp () {
+		if ($this->serverIp === NULL) {
+			$this->serverIp = (isset($this->globalServer['SERVER_ADDR'])
+				? $this->globalServer['SERVER_ADDR']
+				: (isset($this->globalServer['LOCAL_ADDR'])
+					? $this->globalServer['LOCAL_ADDR']
+					: ''));
+		}
+		return $this->serverIp;
+	}
+
+	/**
+	 * Get client IP from `$_SERVER` global variable.
+	 * @return string
+	 */
+	public function GetClientIp () {
+		if ($this->clientIp === NULL) {
+			$this->clientIp = (isset($this->globalServer['REMOTE_ADDR'])
+				? $this->globalServer['REMOTE_ADDR']
+				: (isset($this->globalServer['HTTP_X_CLIENT_IP'])
+					? $this->globalServer['HTTP_X_CLIENT_IP']
+					: ''));
+		}
+		return $this->clientIp;
+	}
+
+	/**
+	 * Get `TRUE` if request is requested on the background
+	 * with usual Javascript HTTP header containing:
+	 * `X-Requested-With: AnyJsFrameworkName`.
+	 * @return bool
+	 */
+	public function IsAjax () {
+		if ($this->ajax === NULL) {
+			$this->ajax = (
+				isset($this->globalServer['HTTP_X_REQUESTED_WITH']) &&
+				strlen($this->globalServer['HTTP_X_REQUESTED_WITH']) > 0
 			);
 		}
+		return $this->ajax;
+	}
 
-		/**
-		 * Dumps information about any variable in readable format and return it.
-		 * In non-development mode - store dumped variable in `debug.log`.
-		 * @param  mixed  $value	Variable to dump.
-		 * @param  bool   $return	Return output instead of printing it.
-		 * @param  bool   $exit		`TRUE` for last dump call by `xxx();` method to dump and `exit;`.
-		 * @return mixed			Variable itself or dumped variable string.
-		 */
-		public static function Dump ($value, $return = FALSE, $exit = FALSE) {
-			if (static::$originalDebugClass) {
-				$options = array('store' => FALSE, 'backtraceIndex' => 1);
-				if ($exit) $options['lastDump'] = TRUE;
-				$dumpedValue = static::dumpHandler($value, NULL, $options);
-			} else {
-				$dumpedValue = @call_user_func(static::$handlers['dump'], $value, $return);
-			}
-			if ($return) return $dumpedValue;
-			if (static::$development) {
-				echo $dumpedValue;
-			} else {
-				static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::DEBUG);
-			}
-			return $value;
-		}
-
-		/**
-		 * Dump any variable with output buffering in browser debug bar.
-		 * In non-development mode - store dumped variable in `debug.log`.
-		 * Return printed variable as string.
-		 * @param  mixed	$value		Variable to dump.
-		 * @param  string	$title		Optional title.
-		 * @param  array	$options	Dumper options.
-		 * @return mixed				Variable itself.
-		 */
-		public static function BarDump ($value, $title = NULL, $options = array()) {
-			if (static::$originalDebugClass) {
-				if (!isset($options['backtraceIndex'])) $options['backtraceIndex'] = 1;
-				$options['store'] = static::$development;
-				$dumpedValue = static::dumpHandler($value, $title, $options);
-			} else {
-				$dumpedValue = @call_user_func_array(static::$handlers['barDump'], func_get_args());
-			}
-			if (!static::$development) {
-				static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::DEBUG);
-			}
-			return $value;
-		}
-
-		/**
-		 * Logs any message or exception with log datetime, in `*.log` file
-		 * by given log level, in configured logging directory.
-		 * @param  string|\Exception|\Throwable	$value
-		 * @param  string						$priority
-		 * @return string						Logging filename fullpath.
-		 */
-		public static function Log ($value, $priority = \MvcCore\Interfaces\IDebug::INFO) {
-			if (static::$originalDebugClass) {
-				$dumpedValue = static::dumpHandler(
-					$value, NULL, array('store' => FALSE, 'backtraceIndex' => 1)
-				);
-				return static::storeLogRecord($dumpedValue, $priority);
-			} else {
-				return @call_user_func_array(static::$handlers['log'], func_get_args());
-			}
-		}
-
-		/**
-		 * Sends given `$value` into FireLogger console.
-		 * @param	mixed	$value	Message to log.
-		 * @param	string	$priority	Priority.
-		 * @return	bool				Was successful?
-		 */
-		public static function FireLog ($value, $priority = \MvcCore\Interfaces\IDebug::DEBUG) {
-			// TODO: implement simple firelog
-			$args = func_get_args();
-			if (static::$originalDebugClass) {
-				$args = array($value, NULL, array('priority' => $priority));
-			}
-			return call_user_func_array(static::$handlers['fireLog'], $args);
-		}
-
-		/**
-		 * Print catched exception in browser.
-		 * In non-development mode - store dumped exception in `exception.log`.
-		 * @param \Exception|\Error|\Throwable|array $exception
-		 * @param bool $exit
-		 * @return void
-		 */
-		public static function Exception ($exception, $exit = TRUE) {
-			if (static::$originalDebugClass) {
-				$dumpedValue = static::dumpHandler(
-					$exception, NULL, array('store' => !$exit, 'backtraceIndex' => 1)
-				);
-				if (static::$development) {
-					echo $dumpedValue;
+	/**
+	 * Parse list of comma separated language tags and sort it by the
+	 * quality value from `$this->globalServer['HTTP_ACCEPT_LANGUAGE']`.
+	 * @param string[] $languagesList
+	 * @return array
+	 */
+	public static function ParseHttpAcceptLang ($languagesList) {
+		$languages = array();
+		$languageRanges = explode(',', trim($languagesList));
+		foreach ($languageRanges as $languageRange) {
+			$regExpResult = preg_match(
+				"/(\*|[a-zA-Z0-9]{1,8}(?:-[a-zA-Z0-9]{1,8})*)(?:\s*;\s*q\s*=\s*(0(?:\.\d{0,3})|1(?:\.0{0,3})))?/",
+				trim($languageRange),
+				$match
+			);
+			if ($regExpResult) {
+				$priority = isset($match[2])
+					? (string) floatval($match[2])
+					: '1.0';
+				if (!isset($languages[$priority])) $languages[$priority] = array();
+				$langOrLangWithLocale = str_replace('-', '_', $match[1]);
+				$delimiterPos = strpos($langOrLangWithLocale, '_');
+				if ($delimiterPos !== FALSE) {
+					$languages[$priority][] = array(
+						strtolower(substr($langOrLangWithLocale, 0, $delimiterPos)),
+						strtoupper(substr($langOrLangWithLocale, $delimiterPos + 1))
+					);
 				} else {
-					static::storeLogRecord($dumpedValue, \MvcCore\Interfaces\IDebug::EXCEPTION);
+					$languages[$priority][] = array(
+						strtolower($langOrLangWithLocale),
+						NULL
+					);
 				}
-			} else {
-				@call_user_func_array(static::$handlers['exceptionHandler'], func_get_args());
 			}
 		}
+		krsort($languages);
+		reset($languages);
+		return $languages;
+	}
 
-		/**
-		 * Print all stored dumps at the end of sended response body as browser debug bar.
-		 * This function is called from registered shutdown handler by
-		 * `register_shutdown_function()` from `\MvcCore\Debug::initHandlers();`.
-		 * @return void
-		 */
-		public static function ShutdownHandler () {
-			$error = error_get_last();
-			if (isset($error['type'])) static::Exception($error);
-			$dumpsCount = count(self::$dumps);
-			if (!$dumpsCount) return;
-			$app = \MvcCore\Application::GetInstance();
-			$appRoot = $app->GetRequest()->GetAppRoot();
-			$response = $app->GetResponse();
-			if ($response->HasHeader('Content-Type') && !$response->IsHtmlOutput()) return;
-			$dumps = '';
-			$lastDump = FALSE;
-			foreach (self::$dumps as $values) {
-				$options = $values[2];
-				$dumps .= '<div class="item">';
-				if ($values[1] !== NULL) {
-					$dumps .= '<pre class="title">'.$values[1].'</pre>';
+
+	/**
+	 * Initialize url segments parsed by `parse_url()`
+	 * php method: port, path, query and fragment.
+	 * @return void
+	 */
+	protected function initUrlSegments () {
+		$absoluteUrl = $this->GetProtocol() . '//'
+			. $this->globalServer['HTTP_HOST']
+			. $this->globalServer['REQUEST_URI'];
+		$parsedUrl = parse_url($absoluteUrl);
+		$this->port = isset($parsedUrl['port']) ? $parsedUrl['port'] : '';
+		$this->path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
+		$this->path = mb_substr($this->path, mb_strlen($this->GetBasePath()));
+		$this->query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
+		$this->fragment = isset($parsedUrl['fragment']) ? $parsedUrl['fragment'] : '';
+	}
+
+	/**
+	 * Init raw http headers by `getallheaders()` or from `$_SERVER['HTTP_...']`.
+	 * Headers has to be `key => value` array, headers keys in standard format
+	 * like: `"Content-Type" | "Content-Length" | "X-Requested-With" ...`.
+	 * @return void
+	 */
+	protected function initHeaders () {
+		if (function_exists('getallheaders')) {
+			$headers = getallheaders();
+		} else {
+			$headers = array();
+			foreach ($this->globalServer as $name => $value) {
+				if (substr($name, 0, 5) == 'HTTP_') {
+					$headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+				} else if ($name == "CONTENT_TYPE") {
+					$headers["Content-Type"] = $value;
+				} else if ($name == "CONTENT_LENGTH") {
+					$headers["Content-Length"] = $value;
 				}
-				$file = $options['file'];
-				$line = $options['line'];
-				$displayedFile = str_replace('\\', '/', $file);
-				if (strpos($displayedFile, $appRoot) === 0) {
-					$displayedFile = substr($displayedFile, strlen($appRoot));
-				}
-				$link = '<a class="editor" href="editor://open/?file='
-					.rawurlencode($file).'&amp;line='.$line.'">'
-						.$displayedFile.':'.$line
-					.'</a>';
-				$dumps .= '<div class="value">'
-					.preg_replace("#\[([^\]]*)\]=>([^\n]*)\n(\s*)#", "[$1] => ",
-						str_replace("<required>","&lt;required&gt;",$link.$values[0])
-					)
-					.'</div></div>';
-				if (isset($values[2]['lastDump']) && $values[2]['lastDump']) $lastDump = TRUE;
 			}
-			$template = \Packager_Php_Wrapper::FileGetContents(str_replace('\\','/',__DIR__).'/vendor/mvccore/mvccore/src/MvcCore'.'/debug.html');
-			echo str_replace(
-				array('%mvccoreDumps%', '%mvccoreDumpsCount%', '%mvccoreDumpsClose%'),
-				array($dumps, count(self::$dumps), $lastDump ? 'q(!0);' : 'q();'),
-				$template
+		}
+		$this->headers = $headers;
+	}
+
+	/**
+	 * Initialize params from global `$_GET` and (global `$_POST` or direct `php://input`).
+	 * @return void
+	 */
+	protected function initParams () {
+		$params = array_merge($this->globalGet);
+		if ($this->GetMethod() == self::METHOD_POST) {
+			$postValues = array();
+			if (count($this->globalPost) > 0) {
+				$postValues = $this->globalPost;
+			} else {
+				$postValues = $this->initParamsCompletePostData();
+			}
+			$params = array_merge($params, $postValues);
+		}
+		$this->params = $params;
+	}
+
+	/**
+	 * Read and return direct php `POST` input from `php://input`.
+	 * @return array
+	 */
+	protected function initParamsCompletePostData () {
+		$result = array();
+		$rawPhpInput = \Packager_Php_Wrapper::FileGetContents('php://input');
+		$decodedJsonResult = \MvcCore\Tool::DecodeJson($rawPhpInput);
+		if ($decodedJsonResult->success) {
+			$result = (array) $decodedJsonResult->data;
+		} else {
+			$rows = explode('&', $rawPhpInput);
+			foreach ($rows as $row) {
+				list($key, $value) = explode('=', $row);
+				$result[$key] = $value;
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Get param value from given collection (`$_GET`, `$_POST`, `php://input` or http headers),
+	 * filtered by characters defined in second argument throught `preg_replace()`.
+	 * Place into second argument only char groups you want to keep.
+	 * @param array $collection Array with request params or array with request headers.
+	 * @param string $name Parametter string name.
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	protected function getParamFromCollection (
+		& $paramsCollection = array(),
+		$name = "",
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if (!isset($paramsCollection[$name])) return NULL;
+		if (gettype($paramsCollection[$name]) == 'array') {
+			$result = array();
+			$paramsCollection = $paramsCollection[$name];
+			foreach ($paramsCollection as $key => & $value) {
+				$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+				$result[$cleanedKey] = $this->getParamItem(
+					$value, $pregReplaceAllowedChars, $ifNullValue, $targetType
+				);
+			}
+			return $result;
+		} else {
+			return $this->getParamItem(
+				$paramsCollection[$name], $pregReplaceAllowedChars, $ifNullValue, $targetType
 			);
 		}
+	}
 
-		/**
-		 * Starts/stops stopwatch.
-		 * @param  string  Name.
-		 * @return float   Elapsed seconds.
-		 */
-		protected static function timerHandler ($name = NULL) {
-			$now = microtime(TRUE);
-			if ($name === NULL) return $now - static::$requestBegin;
-			$difference = round((isset(static::$timers[$name]) ? $now - static::$timers[$name] : 0) * 1000) / 1000;
-			static::$timers[$name] = $now;
-			return $difference;
+	/**
+	 * Get filtered param or header value for characters defined as second argument to use them in `preg_replace()`.
+	 * @param string|string[]|NULL $rawValue
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @param mixed $ifNullValue Default value returned if given param name is null.
+	 * @param string $targetType Target type to retype param value or default if-null value. If param is an array, every param item will be retyped into given target type.
+	 * @return string|string[]|mixed
+	 */
+	protected function getParamItem (
+		& $rawValue = NULL,
+		$pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:",
+		$ifNullValue = NULL,
+		$targetType = NULL
+	) {
+		if ($rawValue === NULL) {
+			// if there is NULL in target collection
+			if ($targetType === NULL) return $ifNullValue;
+			$result = is_scalar($ifNullValue) ? $ifNullValue : clone $ifNullValue;
+			settype($result, $targetType);
+			return $result;
+		} else {
+			// if there is not NULL in target collection
+			$rawValue = trim($rawValue);
+			if (mb_strlen($rawValue) === 0) {
+				// if value after trim is empty string, return empty string (retyped if necessary)
+				$result = "";
+				if ($targetType === NULL) return $result;
+				settype($result, $targetType);
+				return $result;
+			} else if ($pregReplaceAllowedChars == '.*') {
+				// if there is something in target collection and all chars are allowed
+				$result = $rawValue;
+				if ($targetType === NULL) return $result;
+				settype($result, $targetType);
+				return $result;
+			} else if (gettype($rawValue) == 'array') {
+				// if there is something in target collection and it's an array
+				$result = array();
+				foreach ((array) $rawValue as $key => & $value) {
+					$cleanedKey = $this->cleanParamValue($key, $pregReplaceAllowedChars);
+					$result[$cleanedKey] = $this->getParamItem(
+						$value, $pregReplaceAllowedChars, $ifNullValue, $targetType
+					);
+				}
+				return $result;
+			} else {
+				// if there is something in target collection and it's not an array
+				$result = $this->cleanParamValue($rawValue, $pregReplaceAllowedChars);
+				if ($targetType === NULL) return $result;
+				settype($result, $targetType);
+				return $result;
+			}
 		}
+	}
 
-		/**
-		 * Dump any variable as string with output buffering,
-		 * store result for printing later. Return printed variable string.
-		 * @param  mixed	$value		Variable to dump.
-		 * @param  string	$title		Optional title.
-		 * @param  array	$options	Dumper options.
-		 * @return string
-		 */
-		protected static function dumpHandler ($value, $title = NULL, $options = array()) {
-			ob_start();
-			var_dump($value);
-			// format xdebug first small element with file:
-			$content = preg_replace("#\</small\>\n#", '</small>', ob_get_clean(), 1);
-			$content = preg_replace("#\<small\>([^\>]*)\>#", '', $content, 1);
-			$backtraceIndex = isset($options['backtraceIndex']) ? $options['backtraceIndex'] : 2 ;
-			$backtrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, $backtraceIndex + 1);
-			$originalPlace = (object) $backtrace[$backtraceIndex];
-			$options['file'] = $originalPlace->file;
-			$options['line'] = $originalPlace->line;
-			if ($options['store']) self::$dumps[] = array($content, $title, $options);
-			return $content;
+	/**
+	 * Clean param value by given list of allowed chars or by given `preg_replace()` pattern and reverse.
+	 * @param string $rawValue
+	 * @param string|array $pregReplaceAllowedChars If String - list of regular expression characters to only keep, if array - `preg_replace()` pattern and reverse.
+	 * @return string
+	 */
+	protected function cleanParamValue ($rawValue, $pregReplaceAllowedChars = "a-zA-Z0-9_;, /\-\@\:") {
+		if (is_array($pregReplaceAllowedChars)) {
+			return preg_replace($pregReplaceAllowedChars[0], $pregReplaceAllowedChars[1], $rawValue);
+		} else {
+			return preg_replace("#[^" . $pregReplaceAllowedChars . "]#", "", $rawValue);
 		}
+	}
 
-		/**
-		 * Store given log record in text file.
-		 * Return full path where the message has been writen.
-		 * @param mixed $value
-		 * @param string $priority
-		 * @return string
-		 */
-		protected static function storeLogRecord ($value, $priority) {
-			$content = date('[Y-m-d H-i-s]') . "\n" . $value;
-			$content = preg_replace("#\n(\s)#", "\n\t$1", $content) . "\n";
-			if (!static::$logDirectoryInitialized) static::initLogDirectory();
-			$fullPath = static::$LogDirectory . '/' . $priority . '.log';
-			if (!\Packager_Php_Wrapper::IsDir(static::$LogDirectory)) {
-				\Packager_Php_Wrapper::MkDir(static::$LogDirectory);
-				if (!is_writable(static::$LogDirectory)) {
-					try {
-						chmod(static::$LogDirectory, 0777);
-					} catch (\Exception $e) {
-						die('['.__CLASS__.'] ' . $e->getMessage());
-					}
+	/**
+	 * Init script name from `$_SERVER['SCRIPT_NAME']` and request base path.
+	 * @return void
+	 */
+	protected function initScriptNameAndBasePath () {
+		$this->basePath = '';
+		$this->scriptName = str_replace('\\', '/', $this->globalServer['SCRIPT_NAME']);
+		$lastSlashPos = mb_strrpos($this->scriptName, '/');
+		if ($lastSlashPos !== 0) {
+			$redirectUrl = isset($this->globalServer['REDIRECT_URL']) ? $this->globalServer['REDIRECT_URL'] : '';
+			$redirectUrlLength = mb_strlen($redirectUrl);
+			$requestUri = $this->globalServer['REQUEST_URI'];
+			$questionMarkPos = mb_strpos($requestUri, '?');
+			if ($questionMarkPos !== FALSE) $requestUri = mb_substr($requestUri, 0, $questionMarkPos);
+			if ($redirectUrlLength === 0 || ($redirectUrlLength > 0 && $redirectUrl === $requestUri)) {
+				$this->basePath = mb_substr($this->scriptName, 0, $lastSlashPos);
+				$this->scriptName = '/' . mb_substr($this->scriptName, $lastSlashPos + 1);
+			} else {
+				// request was redirected by Apache `mod_rewrite` with `DPI` flag:
+				$requestUriPosInRedirectUri = mb_strrpos($redirectUrl, $requestUri);
+				$apacheRedirectedPath = mb_substr($redirectUrl, 0, $requestUriPosInRedirectUri);
+				$this->scriptName = mb_substr($this->scriptName, mb_strlen($apacheRedirectedPath));
+				$lastSlashPos = mb_strrpos($this->scriptName, '/');
+				$this->basePath = mb_substr($this->scriptName, 0, $lastSlashPos);
+			}
+		} else {
+			$this->scriptName = '/' . mb_substr($this->scriptName, $lastSlashPos + 1);
+		}
+	}
+
+	protected function initLangAndLocale () {
+		$rawUaLanguages = $this->globalServer['HTTP_ACCEPT_LANGUAGE'];
+		if (extension_loaded('Intl')) {
+			$langAndLocaleStr = \locale_accept_from_http($rawUaLanguages);
+			$langAndLocaleArr = $langAndLocaleStr !== NULL
+				? explode('_', $langAndLocaleStr)
+				: array(NULL, NULL);
+		} else {
+			$languagesAndLocales = static::ParseHttpAcceptLang($rawUaLanguages);
+			$langAndLocaleArr = current($languagesAndLocales);
+			if (gettype($langAndLocaleArr) == 'array') $langAndLocaleArr = current($langAndLocaleArr);
+		}
+		list($this->lang, $this->locale) = $langAndLocaleArr;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
+
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/IRoute.php');
+
+/**
+ * Responsibility - describing request(s) to match and reversely build url addresses.
+ * - Describing request to match it (read more about properties).
+ * - Matching request by given request object, see `\MvcCore\Route::Matches()`.
+ * - Completing url address by given params array, see `\MvcCore\Route::Url()`.
+ *
+ * Main Properties:
+ * - `$Pattern`
+ *   Required, if you have not configured `\MvcCore\Route::$match` and
+ *   `\MvcCore\Route::$reverse` property instead. Very basic URL address
+ *   form to match and parse rewrited params by it. Address to parse
+ *   and prepare `\MvcCore\Route::$match` property and `\MvcCore\Route::$reverse`
+ *   property. automaticly in `\MvcCore\Route::Prepare();` call.
+ * - `$Match`
+ *   Required together with `\MvcCore\Route::$reverse` property, if you
+ *   have not configured `\MvcCore\Route::$pattern` property instead.
+ *   This property is always used to match request by `\MvcCore\Request::Path`
+ *   by classic PHP regualar expression matching by `preg_match_all();`.
+ * - `$Reverse`
+ *   Required together with `\MvcCore\Route::$match` property, if you
+ *   have not configured `\MvcCore\Route::$pattern` property instead.
+ *   This property is always used to complete url address by called params
+ *   array and by this string with rewrite params replacements inside.
+ * - `$Controller`
+ *   Required, if there is no `controller` param inside `\MvcCore\Route::$pattern`
+ *   or inside `\MvcCore\Route::$match property`. Controller class name to dispatch
+ *   in pascal case form, namespaces and including slashes as namespace delimiters.
+ * - `$Action`
+ *   Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+ *   or inside `\MvcCore\Route::$match property`. Public method in controller
+ *   in pascal case form, but in controller named as `public function <CoolName>Action () {...`.
+ * - `$Name`
+ *   Not required, if you want to create url addresses always by `Controller:Action`
+ *   named records. It could be any string, representing route custom name to
+ *   complete url address by that name inside your application.
+ * - `$Defaults`
+ *   Not required, matched route params default values and query params default values.
+ *   Last entry in array may be used for property `\MvcCore\Route::$lastPatternParam`
+ *   describing last rewrited param inside match pattern to be automaticly trimmed
+ *   from right side for possible address trailing slash in route matched moment.
+ * - `$Constraints`
+ *   not required, array with param names and their custom regular expression
+ *   matching rules. If no constraint string for any param defined, there is used
+ *   for all rewrited params default constraint rule to match everything except next slash.
+ *   Default static property for matching rule shoud be changed here:
+ *   - by default: `\MvcCore\Route::$DefaultConstraint = '[^/]*';`
+ */
+class Route implements Interfaces\IRoute
+{
+	/**
+	 * Default constraint used for all rewrited params, if no
+	 * constraint for rewrited param has been specified.
+	 * configured as `"[^/]*"` by default. This value means:
+	 * - "Any character(s) in any length, except next slash."
+	 * @var string
+	 */
+	public static $DefaultConstraint = '[^/]*';
+
+	/**
+	 * Route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @var string|NULL
+	 */
+	protected $pattern		= NULL;
+
+	/**
+	 * Route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @var string|NULL
+	 */
+	protected $match		= NULL;
+
+	/**
+	 * Route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @var string|NULL
+	 */
+	protected $reverse		= NULL;
+
+	/**
+	 * Not required. Route name is your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @var string
+	 */
+	protected $name		= '';
+
+	/**
+	 * Controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @var string
+	 */
+	protected $controller	= '';
+
+	/**
+	 * Action name to call in controller dispatching, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match property`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @var string
+	 */
+	protected $action		= '';
+
+	/**
+	 * Route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example: `array("name" => "default-name", "color" => "red",);`.
+	 * @var array
+	 */
+	protected $defaults		= array();
+
+	/**
+	 * Array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @var array
+	 */
+	protected $constraints		= array();
+
+	/**
+	 * Optional, param name, which has to be also inside `\MvcCore\Route::$pattern` or
+	 * inside `\MvcCore\Route::$match` or inside `\MvcCore\Route::$reverse` pattern property
+	 * as the last one. And after it's value, there could be only trailing slash or nothing
+	 * (pattern end). This trailing slash param definition automaticly trims this last param
+	 * value for right trailing slash when route is matched.
+	 *
+	 * This property is automaticly completed by method `\MvcCore\Route::initMatch()`,
+	 * when there is parsed `\MvcCore\Route::$pattern` string into `\MvcCore\Route::$match` property
+	 * or it is automaticly completed by method `\MvcCore\Route::initReverse()`, when
+	 * there is parsed `\MvcCore\Route::$reverse` string into `\MvcCore\Route::$reverseParams`
+	 * array to build url addresses.
+	 *
+	 * @var string|NULL
+	 */
+	protected $lastPatternParam = NULL;
+
+	/**
+	 * Array with strings, containing all reverse pattern params, parsed automaticly
+	 * by method `\MvcCore\Route::initMatchm();` if necessary or by method
+	 * `\MvcCore\Route::initReverse();` after it's necessary
+	 * to complete url address string in method `\MvcCore\Route::Url();`.
+	 * @var string[]|NULL
+	 */
+	protected $reverseParams = NULL;
+
+
+	/**
+	 * Create every time new route instance, no singleton managing!
+	 * Called usually from core methods:
+	 * - `\MvcCore\Router::AddRoutes();`
+	 * - `\MvcCore\Router::AddRoute();`
+	 * - `\MvcCore\Router::routeByControllerAndActionQueryString();`
+	 * This method is the best place where to implement custom
+	 * route initialization for core.
+	 * First argument should be configuration array or
+	 * route pattern value to parse into match and reverse patterns.
+	 * Example:
+	 * `new Route(array(
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 * ));`
+	 * or:
+	 * `new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 * );`
+	 * or:
+	 * `new Route(array(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 * ));`
+	 * @param $patternOrConfig	string|array	Required, configuration array or route pattern value to parse into match and reverse patterns.
+	 * @param $controllerAction	string			Optional, controller and action name in pascale case like: `"Photogallery:List"`.
+	 * @param $defaults			string			Optional, default param values like: `array("name" => "default-name", "page" => 1)`.
+	 * @param $constraints		array			Optional, params regex constraints for regular expression match fn no `"match"` record in configuration array as first argument defined.
+	 * @return \MvcCore\Route
+	 */
+	public static function GetInstance (
+		$patternOrConfig = NULL,
+		$controllerAction = NULL,
+		$defaults = array(),
+		$constraints = array()
+	) {
+		return (new \ReflectionClass(get_called_class()))
+			->newInstanceArgs(func_get_args());
+	}
+
+	/**
+	 * Create new route instance.
+	 * First argument should be configuration array or
+	 * route pattern value to parse into match and reverse patterns.
+	 * Example:
+	 * `new Route(array(
+	 *		"pattern"			=> "/products-list/<name>/<color>",
+	 *		"controllerAction"	=> "Products:List",
+	 *		"defaults"			=> array("name" => "default-name",	"color" => "red"),
+	 *		"constraints"		=> array("name" => "[^/]*",			"color" => "[a-z]*")
+	 * ));`
+	 * or:
+	 * `new Route(
+	 *		"/products-list/<name>/<color>",
+	 *		"Products:List",
+	 *		array("name" => "default-name",	"color" => "red"),
+	 *		array("name" => "[^/]*",		"color" => "[a-z]*")
+	 * );`
+	 * or:
+	 * `new Route(array(
+	 *		"name"			=> "products_list",
+	 *		"pattern"		=> "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		"reverse"		=> "/products-list/<name>/<color>",
+	 *		"controller"	=> "Products",
+	 *		"action"		=> "List",
+	 *		"defaults"		=> array("name" => "default-name",	"color" => "red"),
+	 * ));`
+	 * @param $patternOrConfig	string|array	Required, configuration array or route pattern value to parse into match and reverse patterns.
+	 * @param $controllerAction	string			Optional, controller and action name in pascale case like: `"Photogallery:List"`.
+	 * @param $defaults			array			Optional, default param values like: `array("name" => "default-name", "page" => 1)`.
+	 * @param $constraints		array			Optional, params regex constraints for regular expression match fn no `"match"` record in configuration array as first argument defined.
+	 * @return \MvcCore\Route
+	 */
+	public function __construct (
+		$patternOrConfig = NULL,
+		$controllerAction = NULL,
+		$defaults = array(),
+		$constraints = array()
+	) {
+		$args = func_get_args();
+		$argsCount = count($args);
+		if ($argsCount === 0) return $this;
+		if (gettype($patternOrConfig) == 'array') {
+			$data = (object) $patternOrConfig;
+			if (isset($data->controllerAction)) {
+				list($this->controller, $this->action) = explode(':', $data->controllerAction);
+				$this->name = isset($data->name) ? $data->name : $data->controllerAction;
+			} else {
+				$this->controller = isset($data->controller) ? $data->controller : '';
+				$this->action = isset($data->action) ? $data->action : '';
+				$this->name = isset($data->name) ? $data->name : $this->controller . ':' . $this->action ;
+			}
+			$this->pattern = isset($data->pattern) ? $data->pattern : NULL;
+			$this->match = isset($data->match) ? $data->match : NULL;
+			$this->reverse = isset($data->reverse) ? $data->reverse : NULL;
+			$this->defaults = isset($data->defaults) ? $data->defaults : array();
+			$this->constraints = isset($data->constraints) ? $data->constraints : array();
+		} else {
+			$this->pattern = $patternOrConfig;
+			list($this->controller, $this->action) = explode(':', $controllerAction);
+			$this->name = '';
+			$this->match = NULL;
+			$this->reverse = NULL;
+			$this->defaults = $defaults;
+			$this->constraints = $constraints;
+		}
+		if (!$this->controller && !$this->action && strpos($this->name, ':') !== FALSE) {
+			list($this->controller, $this->action) = explode(':', $this->name);
+		}
+	}
+
+	/**
+	 * Get route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @return string|NULL
+	 */
+	public function GetPattern () {
+		return $this->pattern;
+	}
+
+	/**
+	 * Set route pattern to match request url and to build url address.
+	 *
+	 * To define route by this form is the most comfortable way,
+	 * but a way slower, because there is necessary every request
+	 * to convert this value into `\MvcCore\Route::$match` and into
+	 * `\MvcCore\Route::$reverse` properties correctly and you can
+	 * specify those both properties manualy, if you are not too lazy.
+	 *
+	 * This match and reverse definition has to be in very basic form
+	 * without regular expression escaping or advanced rules:
+	 * - No regular expression border `#` characters, it will be
+	 *   used internally in route parsing.
+	 * - No start `^` or end `$` regular expression characters,
+	 *   those characters will be added automaticly.
+	 * - No escaping of regular expression characters:
+	 *   `[](){}<>|=+*.!?-/`, those characters will be escaped
+	 *   in route preparing process.
+	 * - star char inside param name (`<color*>`) means greedy param
+	 *   matching all to the end of address. It has to be the last one.
+	 *
+	 * Example: `"/products-list/<name>/<color*>"`.
+	 * @param string $pattern
+	 * @return \MvcCore\Route
+	 */
+	public function & SetPattern ($pattern) {
+		$this->pattern = $pattern;
+		return $this;
+	}
+
+	/**
+	 * Get route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @return string|NULL
+	 */
+	public function GetMatch () {
+		return $this->match;
+	}
+
+	/**
+	 * Set route match pattern in raw form (to use it as it is) to match proper request.
+	 * This property is always used to match request by `\MvcCore\Request::Path`
+	 * by classic PHP regualar expression matching by `preg_match_all();`.
+	 *
+	 * Required together with `\MvcCore\Route::$reverse` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)#"`
+	 * @param string $match
+	 * @return \MvcCore\Route
+	 */
+	public function & SetMatch ($match) {
+		$this->match = $match;
+		return $this;
+	}
+
+	/**
+	 * Get route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @return string|NULL
+	 */
+	public function GetReverse () {
+		return $this->reverse;
+	}
+
+	/**
+	 * Set route reverse address replacements pattern to build url.
+	 * - No regular expression border `#` characters.
+	 * - No regular expression characters escaping (`[](){}<>|=+*.!?-/`).
+	 * - No start `^` or end `$` regular expression characters.
+	 *
+	 * Required together with `\MvcCore\Route::$match` property, if you
+	 * have not configured `\MvcCore\Route::$pattern` property instead.
+	 *
+	 * This is only very simple string with replacement places (like `<name>` or
+	 * `<page>`) for given values by `\MvcCore\Router::Url($name, $params);` method.
+	 *
+	 * To define the route object by assigning properties `\MvcCore\Route::$match` and
+	 * `\MvcCore\Route::$reverse` together is little bit more anoying way to define it
+	 * (because you have to write almost the same information twice), but it's the best
+	 * speed solution, because there is no `\MvcCore\Route::$pattern` parsing and
+	 * conversion into `\MvcCore\Route::$match` and `\MvcCore\Route::$reverse` properties.
+	 *
+	 * Example: `"/products-list/<name>/<color>"`
+	 * @param string $reverse
+	 * @return \MvcCore\Route
+	 */
+	public function & SetReverse ($reverse) {
+		$this->reverse = $reverse;
+		return $this;
+	}
+
+	/**
+	 * Get route name. It's your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @return string
+	 */
+	public function GetName () {
+		return $this->name;
+	}
+
+	/**
+	 * Set route name. Not required. It's your custom keyword/term
+	 * or pascal case combination of controller and action
+	 * describing `"Controller:Action"` target to be dispatched.
+	 *
+	 * By this name there is selected proper route object to
+	 * complete url string by given params in router method:
+	 * `\MvcCore\Router:Url($name, $params);`.
+	 *
+	 * Example: `"products_list" | "Products:Gallery"`
+	 * @param string $name
+	 * @return \MvcCore\Route
+	 */
+	public function & SetName ($name) {
+		$this->name = $name;
+		return $this;
+	}
+
+	/**
+	 * Get controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @return string
+	 */
+	public function GetController () {
+		return $this->controller;
+	}
+
+	/**
+	 * Set controller name to dispatch, in pascal case. Required only if
+	 * there is no `controller` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * It should contain controller class namespaces defined in standard PHP notation.
+	 * If there is backslash at the beginning - controller class will not be loaded from
+	 * standard controllers directory (`/App/Controllers`) but from different specified place
+	 * by full controller class name.
+	 *
+	 * Example:
+	 *  `"Products"                             // placed in /App/Controllers/Products.php`
+	 *  `"Front\Business\Products"              // placed in /App/Controllers/Front/Business/Products.php`
+	 *  `"\Anywhere\Else\Controllers\Products"  // placed in /Anywhere/Else/Controllers/Products.php`
+	 * @param string $controller
+	 * @return \MvcCore\Route
+	 */
+	public function & SetController ($controller) {
+		$this->controller = $controller;
+		return $this;
+	}
+
+	/**
+	 * Get action name to call it in controller dispatch processing, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @return string
+	 */
+	public function GetAction () {
+		return $this->action;
+	}
+
+	/**
+	 * Set action name to call it in controller dispatch processing, in pascal case.
+	 * Required, if there is no `action` param inside `\MvcCore\Route::$pattern`
+	 * or inside `\MvcCore\Route::$match properties as url params`.
+	 *
+	 * If this property has value `"List"`, then public
+	 * method in target controller has to be named as:
+	 * `public function ListAction () {...}`.
+	 *
+	 * Example: `"List"`
+	 * @param string $action
+	 * @return \MvcCore\Route
+	 */
+	public function & SetAction ($action) {
+		$this->action = $action;
+		return $this;
+	}
+
+	/**
+	 * Get target controller name and controller action name
+	 * together in one setter, in pascal case, separated by colon.
+	 * There are also controller namespace definition posibilities as
+	 * in `\MvcCore\Route::GetController();` getter method.
+	 *
+	 * Example: `"Products:List"`
+	 * @return string
+	 */
+	public function GetControllerAction () {
+		return $this->controller . ':' . $this->action;
+	}
+
+	/**
+	 * Set target controller name and controller action name
+	 * together in one setter, in pascal case, separated by colon.
+	 * There are also controller namespace definition posibilities as
+	 * in `\MvcCore\Route::SetController();` setter method.
+	 *
+	 * Example: `"Products:List"`
+	 * @return \MvcCore\Route
+	 */
+	public function & SetControllerAction ($controllerAction) {
+		list($this->controller, $this->action) = explode(':', $controllerAction);
+		return $this;
+	}
+
+	/**
+	 * Get route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example:
+	 *  `array(
+	 *      "name"  => "default-name",
+	 *      "color" => "red"
+	 *  );`.
+	 * @return array
+	 */
+	public function & GetDefaults () {
+		return $this->defaults;
+	}
+
+	/**
+	 * Set route rewrited params default values and also any other params default values.
+	 * It could be used for any application request input - `$_GET`, `$_POST` or `php://input`.
+	 *
+	 * Example:
+	 *  `array(
+	 *      "name"  => "default-name",
+	 *      "color" => "red"
+	 *  );`.
+	 * @param array $defaults
+	 * @return \MvcCore\Route
+	 */
+	public function & SetDefaults ($defaults = array()) {
+		$this->defaults = $defaults;
+		return $this;
+	}
+
+	/**
+	 * Get array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @return array
+	 */
+	public function & GetConstraints () {
+		return $this->constraints;
+	}
+
+	/**
+	 * Set array with param names and their custom regular expression
+	 * matching rules. Not required, for all rewrited params there is used
+	 * default matching rule from `\MvcCore\Route::$DefaultConstraint`.
+	 * It shoud be changed to any value. The value is `"[^/]*"` by default.
+	 * It means "Any character(s) in any length, except next slash".
+	 *
+	 * Example:
+	 *	`array(
+	 *		"name"	=> "[^/]*",
+	 *		"color"	=> "[a-z]*",
+	 *	);`
+	 * @param array $constraints
+	 * @return \MvcCore\Route
+	 */
+	public function & SetConstraints ($constraints = array()) {
+		$this->constraints = $constraints;
+		return $this;
+	}
+
+	/**
+	 * Return array of matched params, with matched controller and action names,
+	 * if route matches request `\MvcCore\Request::$Path` property by `preg_match_all()`.
+	 *
+	 * This method is usually called in core request routing process
+	 * from `\MvcCore\Router::Route();` method and it's submethods.
+	 *
+	 * @param string $requestPath
+	 * @return array Matched and params array, keys are matched
+	 *				 params or controller and action params.
+	 */
+	public function Matches (& $requestPath) {
+		$matchedParams = array();
+		if ($this->match === NULL) $this->initMatch();
+		preg_match_all($this->match, $requestPath, $matchedValues, PREG_OFFSET_CAPTURE);
+		if (isset($matchedValues[0]) && count($matchedValues[0])) {
+			$controllerName = $this->controller ?: '';
+			$toolClass = \MvcCore\Application::GetInstance()->GetToolClass();
+			$matchedParams = array(
+				'controller'	=>	$toolClass::GetDashedFromPascalCase(str_replace(array('_', '\\'), '/', $controllerName)),
+				'action'		=>	$toolClass::GetDashedFromPascalCase($this->action ?: ''),
+			);
+			array_shift($matchedValues); // first item is always matched whole `$request->GetPath()` string.
+			$index = 0;
+			$matchedKeys = array_keys($matchedValues);
+			$matchedKeysCount = count($matchedKeys) - 1;
+			while ($index < $matchedKeysCount) {
+				$matchedKey = $matchedKeys[$index];
+				$matchedValue = $matchedValues[$matchedKey];
+				// if captured offset value is the same like in next matched record - skip next matched record:
+				if (isset($matchedKeys[$index + 1])) {
+					$nextKey = $matchedKeys[$index + 1];
+					$nextValue = $matchedValues[$nextKey];
+					if ($matchedValue[0][1] === $nextValue[0][1]) $index += 1;
+				}
+				// 1 line bellow is only for route debug panel, only for cases when you
+				// forget to define current rewrite param, this defines null value by default
+				if (!isset($this->defaults[$matchedKey])) $this->defaults[$matchedKey] = NULL;
+				$matchedParams[$matchedKey] = $matchedValue[0][0];
+				$index += 1;
+			}
+			if ($this->lastPatternParam === NULL) $this->initReverse();
+			if (isset($matchedParams[$this->lastPatternParam])) {
+				$matchedParams[$this->lastPatternParam] = rtrim($matchedParams[$this->lastPatternParam], '/');
+			}
+		}
+		return $matchedParams;
+	}
+
+	/**
+	 * Complete route url by given params array and route
+	 * internal reverse replacements pattern string.
+	 * If there are more given params in first argument
+	 * than count of replacement places in reverse pattern,
+	 * then create url with query string params after reverse
+	 * pattern, containing that extra record(s) value(s).
+	 *
+	 * Example:
+	 *	Input (`$params`):
+	 *		`array(
+	 *			"name"		=> "cool-product-name",
+	 *			"color"		=> "blue",
+	 *			"variants"	=> array("L", "XL"),
+	 *		);`
+	 *	Input (`\MvcCore\Route::$reverse`):
+	 *		`"/products-list/<name>/<color*>"`
+	 *	Output:
+	 *		`"/products-list/cool-product-name/blue?variant[]=L&amp;variant[]=XL"`
+	 * @param array $params
+	 * @param array $cleanedGetRequestParams Request query params with escaped chars: `<` and `>`.;
+	 * @return string
+	 */
+	public function Url (& $params = array(), & $cleanedGetRequestParams = array()) {
+		if ($this->reverseParams === NULL) $this->initReverse();
+		$result = $this->reverse;
+		$givenParamsKeys = array_merge(array(), $params);
+		foreach ($this->reverseParams as $paramName) {
+			$paramKeyReplacement = '<'.$paramName.'>';
+			$paramValue = (
+				isset($params[$paramName])
+					? $params[$paramName]
+					: (isset($cleanedGetRequestParams[$paramName])
+						? $cleanedGetRequestParams[$paramName]
+						: (isset($this->defaults[$paramName])
+							? $this->defaults[$paramName]
+							: ''))
+			);
+			$result = str_replace($paramKeyReplacement, $paramValue, $result);
+			unset($givenParamsKeys[$paramName]);
+		}
+		if ($givenParamsKeys)
+			$result .= ($this->reverseParams ? '&amp;' : '?')
+				. http_build_query($givenParamsKeys);
+		return $result;
+	}
+
+	/**
+	 * Render all instance properties values into string.
+	 * @return string
+	 */
+	public function __toString () {
+		$type = new \ReflectionClass($this);
+		/** @var $props \ReflectionProperty[] */
+		$allProps = $type->getProperties(
+			\ReflectionProperty::IS_PUBLIC | \ReflectionProperty::IS_PROTECTED | \ReflectionProperty::IS_PRIVATE
+		);
+		$result = array();
+		/** @var $prop \ReflectionProperty */
+		foreach ($allProps as & $prop) {
+			if ($prop->isStatic()) continue;
+			if ($prop->isPrivate()) $prop->setAccessible(TRUE);
+			$value = NULL;
+			try {
+				$value = $prop->getValue($this);
+			} catch (\Exception $e) {};
+			$result[] = '"' . $prop->getName() . '":"' . ($value === NULL ? 'NULL' : var_export($value)) . '"';
+		}
+		return '{'.implode(', ', $result) . '}';
+	}
+
+	/**
+	 * Initialize `\MvcCore\Router::$Match` property (and `\MvcCore\Router::$lastPatternParam`
+	 * property) from `\MvcCore\Router::$Pattern`, optionaly initialize
+	 * `\MvcCore\Router::$Reverse` property if there is nothing inside.
+	 * - Add backslashes for all special regex chars excluding `<` and `>` chars.
+	 * - Parse all `<param>` occurrances in pattern into statistics array `$matchPatternParams`.
+	 * - Complete from the statistic array the match property and if there no reverse property,
+	 *   complete also reverse property.
+	 * This method is usually called in core request routing process from
+	 * `\MvcCore\Router::Matches();` method.
+	 * @return void
+	 */
+	protected function initMatch () {
+		// if there is no match regular expression - parse `\MvcCore\Route::\$Pattern`
+		// and compile `\MvcCore\Route::\$Match` regular expression property.
+		if (mb_strlen($this->pattern) === 0) throw new \LogicException(
+			"[".__CLASS__."] Route configuration property `\MvcCore\Route::\$rattern` is missing "
+			."to parse it and complete property(ies) `\MvcCore\Route::\$match` "
+			."(and `\MvcCore\Route::\$reverse`) correctly ($this)."
+		);
+		// escape all regular expression special characters before parsing except `<` and `>`:
+		$matchPattern = addcslashes($this->pattern, "#[](){}-?!=^$.+|:\\");
+		// parse all presented `<param>` occurances in `$pattern` argument:
+		$matchPatternParams = $this->parsePatternParams($matchPattern);
+		// compile match regular expression from parsed params and custom constraints:
+		if ($this->reverse === NULL) {
+			list($this->match, $this->reverse) = $this->compileMatchAndReversePattern(
+				$matchPattern, $matchPatternParams, TRUE
+			);
+		} else {
+			list($this->match, $reverse) = $this->compileMatchAndReversePattern(
+				$matchPattern, $matchPatternParams, FALSE
+			);
+		}
+	}
+
+	/**
+	 * Initialize all possible protected values (`match`, `reverse` etc...)
+	 * This method is not recomanded to use in production mode, it's
+	 * designed mostly for development purposes, to see what could be inside route.
+	 * @return \MvcCore\Route|\MvcCore\Interfaces\IRoute
+	 */
+	public function & InitAll () {
+		if ($this->match === NULL) $this->initMatch();
+		if ($this->lastPatternParam === NULL) $this->initReverse();
+		if ($this->reverseParams === NULL) $this->initReverse();
+		return $this;
+	}
+
+	/**
+	 * Internal method for `\MvcCore\Route::initMatch();` processing,
+	 * always called from `\MvcCore\Router::Matches();` request routing.
+	 *
+	 * Go throught given route pattern value and try to search for
+	 * any url param occurances inside, like `<name>` or `<color*>`.
+	 * Return and array with describing records for each founded param.
+	 * Example:
+	 *	Input (`$match`):
+	 *		`"/products-list/<name>/<color*>"`
+	 *	Output:
+	 *		`array(
+	 *			array(
+	 *				"name",		// param name
+	 *				"<name>",	// param name for regex match pattern
+	 *				15,			// `"<name>"` occurance position
+	 *				6,			// `"<name>"` string length
+	 *				FALSE		// greedy param star flag
+	 *			),
+	 *			array(
+	 *				"color",	// param name
+	 *				"<color>",	// param name for regex match pattern
+	 *				22,			// `"<color*>"` occurance position
+	 *				8,			// `"<color*>"` string length
+	 *				TRUE		// greedy param star flag
+	 *			)
+	 *		);
+	 * @param string $match Route pattern with escaped all special regex characters except `<` and `>`.
+	 * @throws \LogicException Thrown, when founded any other param after greedy param.
+	 * @return array[] Statistics about founded params occurances.
+	 */
+	protected function & parsePatternParams (& $match) {
+		$matched = array();
+		$index = 0;
+		$matchLength = mb_strlen($match);
+		$greedyCatched = FALSE;
+		while ($index < $matchLength) {
+			$openPos = mb_strpos($match, '<', $index);
+			if ($openPos === FALSE) break;
+			$closePos = mb_strpos($match, '>', $openPos);
+			if ($closePos === FALSE) break;
+			$closePos += 1;
+			$index = $closePos;
+			$length = $closePos - $openPos;
+			$paramName = mb_substr($match, $openPos + 1, $length - 2);
+			$greedy = mb_strpos($paramName, '*');
+			if ($greedy) {
+				if ($greedyCatched) throw new \LogicException(
+					"[".__CLASS__."] Route could have greedy `<param_name*>` with star "
+					."to include slashes only as the very last parameter ($this)."
+				);
+				$greedyCatched = TRUE;
+				$paramName = str_replace('*', '', $paramName);
+			}
+			$matched[] = array($paramName, '<'.$paramName.'>', $openPos, $length, $greedy);
+		}
+		return $matched;
+	}
+
+	/**
+	 * Internal method for `\MvcCore\Route::initMatch();` processing,
+	 * always called from `\MvcCore\Router::Matches();` request routing.
+	 *
+	 * Compile and return value for `\MvcCore\Route::$match` pattern,
+	 * (optionaly by `$compileReverse` also for `\MvcCore\Route::$reverse`)
+	 * from escaped `\MvcCore\Route::$pattern` and given params statistics
+	 * and from configured route constraints for regular expression:
+	 * - If pattern starts with slash `/`, set automaticly into
+	 *   result regular expression start rule (`#^/...`).
+	 * - If there is detected trailing slash in match pattern,
+	 *   set automaticly into result regular expression end rule
+	 *   for trailing slash `...(?=/$|$)#` or just only end rule `...$#`.
+	 * - If there is detected any last param with possible trailing slash
+	 *   after, complete `\MvcCore\Route::$lastPatternParam` property
+	 *   by this detected param name.
+	 *
+	 * Example:
+	 *	Input (`$matchPattern`):
+	 *		`"/products-list/<name>/<color*>"`
+	 *	Input (`$matchPatternParams`):
+	 *		`array(
+	 *			array(
+	 *				"name",		// param name
+	 *				"<name>",	// param name for regex match pattern
+	 *				15,			// `"<name>"` occurance position
+	 *				6,			// `"<name>"` string length
+	 *				FALSE		// greedy param star flag
+	 *			),
+	 *			array(
+	 *				"color",	// param name
+	 *				"<color>",	// param name for regex match pattern
+	 *				22,			// `"<color*>"` occurance position
+	 *				8,			// `"<color*>"` string length
+	 *				TRUE		// greedy param star flag
+	 *			)
+	 *		);`
+	 *	Input (`$compileReverse`):
+	 *		`TRUE`
+	 *	Input (`$this->constraints`):
+	 *		`array(
+	 *			"name"	=> "[^/]*",
+	 *			"color"	=> "[a-z]*",
+	 *		);`
+	 *	Output:
+	 *		`array(
+	 *		    "#^/products\-list/(?<name>[^/]*)/(?<color>[a-z]*)(?=/$|$)#",
+	 *		    "/products-list/<name>/<color>"
+	 *		)`
+	 * @param string $matchPattern
+	 * @param array[] $matchPatternParams
+	 * @return string[]
+	 */
+	protected function compileMatchAndReversePattern (& $matchPattern, & $matchPatternParams, $compileReverse) {
+		$constraints = $this->constraints;
+		$defaultConstraint = static::$DefaultConstraint;
+		$trailingSlash = FALSE;
+		$reverse = '';
+		if ($matchPatternParams) {
+			$match = mb_substr($matchPattern, 0, $matchPatternParams[0][2]);
+			if ($compileReverse) {
+				$reverse = $match;
+				$this->reverseParams = array();
+			}
+			foreach ($matchPatternParams as $i => $matchPatternParam) {
+				list($paramName, $matchedParamName, $index, $length, $greedy) = $matchPatternParam;
+				$customConstraint = isset($constraints[$paramName]);
+				if (!$customConstraint && $greedy) $defaultConstraint = '.*';
+				if (isset($matchPatternParams[$i + 1])) {
+					// if there is next matched param:
+					$nextItemStart = $matchPatternParams[$i + 1][2];
+					$start = $index + $length;
+					$urlPartBeforeNext = mb_substr($matchPattern, $start, $nextItemStart - $start);
+					$urlPartBeforeNextReverse = $urlPartBeforeNext;
+				} else {
+					// else if this param is the last one:
+					$urlPartBeforeNext = mb_substr($matchPattern, $index + $length);
+					$urlPartBeforeNextReverse = $urlPartBeforeNext;
+					// if there is nothing more in url or just only a slash char `/`:
+					if ($urlPartBeforeNext == '' || $urlPartBeforeNext == '/') {
+						$trailingSlash = TRUE;
+						$this->lastPatternParam = $paramName;
+						$urlPartBeforeNext = '';
+					};
+				}
+				$constraint = $customConstraint
+					? $constraints[$paramName]
+					: $defaultConstraint;
+				$match .= '(?' . $matchedParamName . $constraint . ')' . $urlPartBeforeNext;
+				if ($compileReverse) {
+					$reverse .= $matchedParamName . $urlPartBeforeNextReverse;
+					$this->reverseParams[] = $paramName;
 				}
 			}
-			file_put_contents($fullPath, $content, FILE_APPEND);
-			return $fullPath;
-		}
-
-		/**
-		 * Initialize debuging and logging handlers.
-		 * @return void
-		 */
-		protected static function initHandlers () {
-			$className = get_called_class();
-			foreach (static::$handlers as $key => $value) {
-				static::$handlers[$key] = array($className, $value);
-			}
-			register_shutdown_function(static::$handlers['shutdownHandler']);
-		}
-
-		/**
-		 * If log directory doesn't exist, create new directory - relative from app root.
-		 * @param string $logDirAbsPath Absolute directory path.
-		 * @return void
-		 */
-		protected static function initLogDirectory () {
-			if (static::$logDirectoryInitialized) return;
-			$configClass = static::$app->GetConfigClass();
-			$cfg = $configClass::GetSystem();
-			$logDirRelPath = static::$LogDirectory;
-			if ($cfg !== FALSE && isset($cfg->debug)) {
-				$cfgDebug = & $cfg->debug;
-				if (isset($cfgDebug->emailRecepient))
-					static::$EmailRecepient = $cfgDebug->emailRecepient;
-				if (isset($cfgDebug->logDirectory))
-					$logDirRelPath = $cfgDebug->logDirectory; // relative path from app root
-			}
-
-			$scriptFilename = $_SERVER['SCRIPT_FILENAME'];
-			$scriptPath = php_sapi_name() == 'cli'
-				? str_replace('\\', '/', getcwd()) . '/' . $scriptFilename
-				: str_replace('\\', '/', $scriptFilename);
-			$lastSlashPos = strrpos($scriptPath, '/');
-			$appRoot = substr($scriptPath, 0, $lastSlashPos !== FALSE ? $lastSlashPos : strlen($scriptPath));
-			$logDirAbsPath = $appRoot . $logDirRelPath;
-			static::$LogDirectory = $logDirAbsPath;
-
-			if (!\Packager_Php_Wrapper::IsDir($logDirAbsPath)) \Packager_Php_Wrapper::MkDir($logDirAbsPath, 0777, TRUE);
-			if (!is_writable($logDirAbsPath)) {
-				try {
-					chmod($logDirAbsPath, 0777);
-				} catch (\Exception $e) {
-					die('['.__CLASS__.'] ' . $e->getMessage());
+			$matchPattern = $match;
+		} else {
+			if ($matchPattern == '/') {
+				$reverse = '/';
+				$this->reverseParams = array();
+			} else {
+				$lengthWithoutLastChar = mb_strlen($matchPattern) - 1;
+				if (mb_strrpos($matchPattern, '/') === $lengthWithoutLastChar) {
+					$matchPattern = mb_substr($matchPattern, 0, $lengthWithoutLastChar);
+					$trailingSlash = TRUE;
+				}
+				if ($compileReverse) {
+					$reverse = $this->pattern;
+					$this->reverseParams = array();
+				} else {
+					$reverse = '';
 				}
 			}
+		}
+		return array(
+			'#'
+			. (mb_strpos($matchPattern, '/') === 0 ? '^' : '')
+			. $matchPattern
+			. ($trailingSlash ? '(?=/$|$)' : '$')
+			. '#',
+			$reverse
+		);
+	}
 
-			static::$logDirectoryInitialized = TRUE;
+	/**
+	 * Internal method, always called from `\MvcCore\Router::Matches();` request routing,
+	 * when route has been matched and when there is still no `\MvcCore\Route::$reverseParams`
+	 * defined (`NULL`). It means that matched route has been defined by match and reverse
+	 * patterns, because there was no pattern property parsing to prepare values bellow before.
+	 * @return void
+	 */
+	protected function initReverse () {
+		$index = 0;
+		$reverse = & $this->reverse;
+		if ($this->reverse == NULL && $this->pattern !== NULL)
+			return $this->initMatch();
+		$reverseParams = array();
+		$closePos = -1;
+		$paramName = '';
+		while (TRUE) {
+			$openPos = mb_strpos($reverse, '<', $index);
+			if ($openPos === FALSE) break;
+			$openPosPlusOne = $openPos + 1;
+			$closePos = mb_strpos($reverse, '<', $openPosPlusOne);
+			if ($closePos === FALSE) break;
+			$paramName = mb_substr($reverse, $openPosPlusOne, $closePos - $openPosPlusOne);
+			$reverseParams[] = $paramName;
+		}
+		$this->reverseParams = $reverseParams;
+		// Init `\MvcCore\Route::$lastPatternParam`.
+		// Init that property only if this function is
+		// called from `\MvcCore\Route::Matches()`, after current route has been matched
+		// and also when there were configured for this route `\MvcCore\Route::$match`
+		// value and `\MvcCore\Route::$reverse` value together:
+		if ($this->lastPatternParam === NULL && $paramName) {
+			$reverseLengthMinusTwo = mb_strlen($reverse) - 2;
+			$lastCharIsSlash = mb_substr($reverse, $reverseLengthMinusTwo, 1) == '/';
+			$closePosPlusOne = $closePos + 1;
+			if ($closePosPlusOne === $reverseLengthMinusTwo + 1 || ($lastCharIsSlash && $closePosPlusOne === $reverseLengthMinusTwo)) {
+				$this->lastPatternParam = $paramName;
+			}
 		}
 	}
 }
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license  https://mvccore.github.io/docs/mvccore/5.0.0/LICENCE.md
+ */
 
-namespace {
-	\MvcCore\Debug::$InitGlobalShortHands = function ($development) {
-		/**
-		 * Dump any variable with output buffering in browser debug bar,
-		 * store result for printing later. Return printed variable as string.
-		 * @param  mixed	$value		Variable to dump.
-		 * @param  string	$title		Optional title.
-		 * @param  array	$options	Dumper options.
-		 * @return mixed				Variable itself.
-		 */
-		function x ($value, $title = NULL, $options = array()) {
-			$options['backtraceIndex'] = 2;
-			return \MvcCore\Debug::BarDump($value, $title, $options);
+namespace MvcCore{
+
+//include_once(__DIR__ . '/Interfaces/IResponse.php');
+
+use \MvcCore\Interfaces\IResponse;
+
+/**
+ * Responsibility - completing all information for response - headers (cookies) and content.
+ * - HTTP response wrapper carrying response headers and response body.
+ * - PHP `setcookie` function wrapper to complete default values such domain or http only etc.
+ * - Sending response at application terminate process by `\MvcCore\Interfaces\IResponse::Send();`.
+ * - Completing MvcCore performance header at response end.
+ */
+class Response implements Interfaces\IResponse
+{
+	public static $CodeMessages = array(
+		IResponse::OK						=> 'OK',
+		IResponse::MOVED_PERMANENTLY		=> 'Moved Permanently',
+		IResponse::SEE_OTHER				=> 'See Other',
+		IResponse::NOT_FOUND				=> 'Not Found',
+		IResponse::INTERNAL_SERVER_ERROR	=> 'Internal Server Error',
+	);
+
+	/**
+	 * Response HTTP code.
+	 * Example: `200 | 301 | 404`
+	 * @var int|NULL
+	 */
+	protected $code = NULL;
+
+	/**
+	 * Response HTTP headers as `key => value` array.
+	 * Example:
+	 *	`array(
+	 *		'Content-Type'		=> 'text/html',
+	 *		'Content-Encoding'	=> 'utf-8'
+	 *	);`
+	 * @var \string[]
+	 */
+	protected $headers = array();
+
+	/**
+	 * Response content encoding.
+	 * Example: `"utf-8" | "windows-1250" | "ISO-8859-2"`
+	 * @var \string|NULL
+	 */
+	protected $encoding = NULL;
+
+	/**
+	 * Response HTTP body.
+	 * Example: `"<!DOCTYPE html><html lang="en"><head><meta ..."`
+	 * @var \string|NULL
+	 */
+	protected $body = NULL;
+
+	/**
+	 * `TRUE` if headers or body has been sent.
+	 * @var bool
+	 */
+	protected $sent = FALSE;
+
+
+	/**
+	 * No singleton, get everytime new instance of configured HTTP response
+	 * class in `\MvcCore\Application::GetInstance()->GetResponseClass();`.
+	 * @param int		$code
+	 * @param array		$headers
+	 * @param string	$body
+	 * @return \MvcCore\Response
+	 */
+	public static function GetInstance (
+		$code = \MvcCore\Interfaces\IResponse::OK,
+		$headers = array(),
+		$body = ''
+	) {
+		$responseClass = \MvcCore\Application::GetInstance()->GetResponseClass();
+		return new $responseClass($code, $headers, $body);
+	}
+
+	/**
+	 * Create new HTTP response instance.
+	 * @param int		$code
+	 * @param array		$headers
+	 * @param string	$body
+	 * @return \MvcCore\Response
+	 */
+	public function __construct (
+		$code = \MvcCore\Interfaces\IResponse::OK,
+		$headers = array(),
+		$body = ''
+	) {
+		$this->code = $code;
+		$this->headers = $headers;
+		$this->body = $body;
+	}
+
+	/**
+	 * Set HTTP response code.
+	 * @param int $code
+	 * @return \MvcCore\Response
+	 */
+	public function & SetCode ($code) {
+		$this->code = $code;
+		http_response_code($code);
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response code.
+	 * @return int
+	 */
+	public function GetCode () {
+		if ($this->code === NULL) {
+			$phpCode = http_response_code();
+			$this->code = $phpCode === FALSE ? static::OK : $phpCode;
 		}
-		/**
-		 * Dumps multiple variables with output buffering in browser debug bar.
-		 * store result for printing later.
-		 * @param  ...mixed  Variables to dump.
-		 * @return void
-		 */
-		function xx () {
-			$args = func_get_args();
-			foreach ($args as $arg) \MvcCore\Debug::BarDump($arg, NULL, array('backtraceIndex' => 2));
+		return $this->code;
+	}
+
+	/**
+	 * Set multiple HTTP response headers as `key => value` array.
+	 * All given headers are automaticly merged with previously setted headers.
+	 * If you change second argument to true, all previous request object and PHP
+	 * headers are removed and given headers will be only headers for output.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Type` header, if contains any `charset=...`.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Encoding` header.
+	 * Example: `$request->SetHeader(array('Content-Type' => 'text/plain; charset=utf-8'));`
+	 * @param array $headers
+	 * @param bool $cleanAllPrevious `FALSE` by default. If `TRUE`, all previous headers
+	 *								 set by PHP `header()` or by this object will be removed.
+	 * @return \MvcCore\Response
+	 */
+	public function & SetHeaders (array $headers = array(), $cleanAllPrevious = FALSE) {
+		if ($cleanAllPrevious) {
+			$this->UpdateHeaders();
+			foreach ($this->headers as $name => $value) header_remove($name);
+			$this->headers = array();
 		}
-		if ($development) {
-			/**
-			 * Dump variables and die. If no variable, throw stop exception.
-			 * @param  ...mixed  $args	Variables to dump.
-			 * @throws \Exception
-			 * @return void
-			 */
-			function xxx (/*...$args*/) {
-				$args = func_get_args();
-				if (count($args) === 0) {
-					throw new \ErrorException('Stopped.', 500);
-				} else {
-					\MvcCore\Application::GetInstance()->GetResponse()->SetHeader('Content-Type', 'text/html');
-					@header('Content-Type: text/html');
-					echo '<pre><code>';
-					foreach ($args as $arg) {
-						$dumpedArg = \MvcCore\Debug::Dump($arg, TRUE, TRUE);
-						echo preg_replace("#\[([^\]]*)\]=>([^\n]*)\n(\s*)#", "[$1] => ", $dumpedArg);
-						echo '</code></pre>';
-					}
+		foreach ($headers as $name => $value) {
+			$this->SetHeader($name, $value);
+		}
+		return $this;
+	}
+
+	/**
+	 * Set HTTP response header.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Type` header, if contains any `charset=...`.
+	 * There is automaticly set response encoding from value for
+	 * `Content-Encoding` header.
+	 * Example: `$request->SetHeader('Content-Type', 'text/plain; charset=utf-8');`
+	 * @param string $name
+	 * @param string $value
+	 * @return \MvcCore\Response
+	 */
+	public function & SetHeader ($name, $value) {
+		header($name . ": " . $value);
+		$this->headers[$name] = $value;
+		if ($name === 'Content-Type') {
+			$charsetPos = strpos($value, 'charset');
+			if ($charsetPos !== FALSE) {
+				$equalPos = strpos($value, '=', $charsetPos);
+				if ($equalPos !== FALSE) $this->SetEncoding(
+					trim(substr($value, $equalPos + 1))
+				);
+			}
+		}
+		if ($name === 'Content-Encoding') $this->encoding = $value;
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response header by name. If header dowsn't exists, null is returned.
+	 * Example: `$request->GetHeader('Content-Type'); // returns 'text/plain; charset=utf-8'`
+	 * @param string $name
+	 * @return string|NULL
+	 */
+	public function GetHeader ($name) {
+		return isset($this->headers[$name]) ? $this->headers[$name] : NULL;
+	}
+
+	/**
+	 * Get if response has any HTTP response header by given `$name`.
+	 * Example:
+	 *	`$request->GetHeader('Content-Type'); // returns TRUE if there is header 'Content-Type'
+	 *	`$request->GetHeader('content-type'); // returns FALSE if there is header 'Content-Type'
+	 * @param string $name
+	 * @return bool
+	 */
+	public function HasHeader ($name) {
+		return isset($this->headers[$name]);
+	}
+
+	/**
+	 * Set HTTP response content encoding.
+	 * Example: `$response->SetEncoding('utf-8');`
+	 * @param string $encoding
+	 * @return \MvcCore\Response
+	 */
+	public function & SetEncoding ($encoding = 'utf-8') {
+		$this->encoding = $encoding;
+		$this->headers['Content-Encoding'] = $encoding;
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response content encoding.
+	 * Example: `$response->GetEncoding(); // returns 'utf-8'`
+	 * @return string|NULL
+	 */
+	public function GetEncoding () {
+		return $this->encoding;
+	}
+
+	/**
+	 * Set HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Response
+	 */
+	public function & SetBody ($body) {
+		$this->body = & $body;
+		return $this;
+	}
+
+	/**
+	 * Prepend HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Response
+	 */
+	public function & PrependBody ($body) {
+		$this->body = $body . $this->body;
+		return $this;
+	}
+
+	/**
+	 * Append HTTP response body.
+	 * @param string $body
+	 * @return \MvcCore\Response
+	 */
+	public function & AppendBody ($body) {
+		$this->body .= $body;
+		return $this;
+	}
+
+	/**
+	 * Get HTTP response body.
+	 * @return string|NULL
+	 */
+	public function & GetBody () {
+		return $this->body;
+	}
+
+	/**
+	 * Consolidate all headers from PHP response
+	 * by calling `headers_list()` into local headers list.
+	 * @return void
+	 */
+	public function UpdateHeaders () {
+		$rawHeaders = headers_list();
+		$name = '';
+		$value = '';
+		foreach ($rawHeaders as $rawHeader) {
+			$doubleDotPos = strpos($rawHeader, ':');
+			if ($doubleDotPos !== FALSE) {
+				$name = trim(substr($rawHeader, 0, $doubleDotPos));
+				$value = trim(substr($rawHeader, $doubleDotPos + 1));
+			} else {
+				$name = $rawHeader;
+				$value = '';
+			}
+  			$this->headers[$name] = $value;
+		}
+	}
+
+	/**
+	 * Return if response has any redirect `"Location: ..."` header inside.
+	 * @return bool
+	 */
+	public function IsRedirect () {
+		return isset($this->headers['Location']);
+	}
+
+	/**
+	 * Returns if response has any `text/html` or `application/xhtml+xml`
+	 * substring in `Content-Type` header.
+	 * @return bool
+	 */
+	public function IsHtmlOutput () {
+		if (isset($this->headers['Content-Type'])) {
+			$value = $this->headers['Content-Type'];
+			return strpos($value, 'text/html') !== FALSE || strpos($value, 'application/xhtml+xml') !== FALSE;
+		}
+		return FALSE;
+	}
+
+	/**
+	 * `TRUE` if headers or body has been sent.
+	 * @return bool
+	 */
+	public function IsSent () {
+		return $this->sent || headers_sent();
+	}
+
+	/**
+	 * Send all HTTP headers and send response body.
+	 * @return void
+	 */
+	public function Send () {
+		if ($this->IsSent()) return;
+		$code = $this->GetCode();
+		$status = isset(static::$CodeMessages[$code]) ? ' ' . static::$CodeMessages[$code] : '';
+		if (!isset($this->headers['Content-Encoding'])) {
+			if (!$this->encoding) $this->encoding = 'utf-8';
+			$this->headers['Content-Encoding'] = $this->encoding;
+		}
+		header("HTTP/1.0 $code $status");
+		foreach ($this->headers as $name => $value) {
+			if ($name == 'Content-Type') {
+				$charsetMatched = FALSE;
+				$charsetPos = strpos($value, 'charset');
+				if ($charsetPos !== FALSE) {
+					$equalPos = strpos($value, '=', $charsetPos);
+					if ($equalPos !== FALSE) $charsetMatched = TRUE;
 				}
-				exit;
+				if (!$charsetMatched) $value .= ';charset=' . $this->encoding;
 			}
-		} else {
-			/**
-			 * Log variables and die. If no variable, throw stop exception.
-			 * @param  ...mixed  $args	Variables to dump.
-			 * @throws \Exception
-			 * @return void
-			 */
-			function xxx (/*...$args*/) {
-				$args = func_get_args();
-				if (count($args) > 0)
-					foreach ($args as $arg)
-						\MvcCore\Debug::Log($arg, \MvcCore\Interfaces\IDebug::DEBUG);
-				echo 'Error 500 - Stopped.';
-				exit;
-			}
+			header($name . ": " . $value);
 		}
-	};
+		$this->addTimeAndMemoryHeader();
+		echo $this->body;
+		if (ob_get_level()) echo ob_get_clean();
+		$this->sent = TRUE;
+	}
+
+	/**
+	 * Send a cookie.
+	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
+	 * @param string $value       The value of the cookie. This value is stored on the clients computer; do not store sensitive information.
+	 * @param int    $lifetime    Life time in seconds to expire. 0 means "until the browser is closed".
+	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
+	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
+	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
+	 * @param bool   $httpOnly    HTTP only cookie, `TRUE` by default.
+	 * @throws \RuntimeException  If HTTP headers have been sent.
+	 * @return bool               True if cookie has been set.
+	 */
+	public function SetCookie (
+		$name, $value,
+		$lifetime = 0, $path = '/',
+		$domain = NULL, $secure = NULL, $httpOnly = TRUE
+	) {
+		if ($this->IsSent()) throw new \RuntimeException(
+			"[".__CLASS__."] Cannot set cookie after HTTP headers have been sent."
+		);
+		$request = \MvcCore\Application::GetInstance()->GetRequest();
+		return setcookie(
+			$name, $value,
+			$lifetime === 0 ? 0 : time() + $lifetime,
+			$path,
+			$domain === NULL ? $request->GetServerName() : $domain,
+			$secure === NULL ? $request->IsSecure() : $secure,
+			$httpOnly
+		);
+	}
+
+	/**
+	 * Delete cookie - set value to empty string and
+	 * set expiration to "until the browser is closed".
+	 * @param string $name        Cookie name. Assuming the name is `cookiename`, this value is retrieved through `$_COOKIE['cookiename']`.
+	 * @param string $path        The path on the server in which the cookie will be available on. If set to '/', the cookie will be available within the entire domain.
+	 * @param string $domain      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->GetServerName();` .
+	 * @param bool   $secure      If not set, value is completed by `\MvcCore\Application::GetInstance()->GetRequest()->IsSecure();`.
+	 * @throws \RuntimeException  If HTTP headers have been sent.
+	 * @return bool               True if cookie has been set.
+	 */
+	public function DeleteCookie ($name, $path = '/', $domain = NULL, $secure = NULL) {
+		return $this->SetCookie($name, '', 0, $path, $domain, $secure);
+	}
+
+	/**
+	 * Add CPU and RAM usage header at HTML/JSON response end.
+	 * @return void
+	 */
+	protected function addTimeAndMemoryHeader () {
+		$mtBegin = \MvcCore\Application::GetInstance()->GetRequest()->GetMicrotime();
+		$time = number_format((microtime(TRUE) - $mtBegin) * 1000, 1, '.', ' ');
+		$ram = function_exists('memory_get_peak_usage') ? number_format(memory_get_peak_usage() / 1000000, 2, '.', ' ') : 'n/a';
+		header("X-MvcCore-Cpu-Ram: $time ms, $ram MB");
+	}
+}
 }
 namespace App\Controllers{
 
@@ -15440,7 +16787,7 @@ use \MvcCore\Ext\Form,
 
 class Base extends \MvcCore\Controller
 {
-	/** @var \MvcCore\Ext\Auth\Virtual\User */
+	/** @var \App\Models\User|\MvcCore\Ext\Auth\Interfaces\IUser */
 	protected $user = null;
 
 	public function Init() {
@@ -15450,7 +16797,7 @@ class Base extends \MvcCore\Controller
 			Auth\User::ClearFromSession();
 			self::Redirect($this->Url(
 				'Index:Index',
-				array('absolute' => TRUE, 'sourceUrl'	=> urlencode($form->ErrorUrl))
+				array('absolute' => TRUE, 'sourceUrl'	=> rawurlencode($form->ErrorUrl))
 			));
 		});
 	}
@@ -15498,9 +16845,13 @@ class Base extends \MvcCore\Controller
 			));
 		$static = self::$staticPath;
 		$this->view->Css('fixedHead')
+			->Append($static . '/css/resets.css')
+			->Append($static . '/css/old-browsers-warning.css')
 			->AppendRendered($static . '/css/fonts.css')
 			->AppendRendered($static . '/css/all.css')
-			->AppendRendered($static . '/css/button.css');
+			->AppendRendered($static . '/css/forms-and-controls.css')
+			->AppendRendered($static . '/css/content-buttons.css')
+			->AppendRendered($static . '/css/content-tables.css');
 		$this->view->Js('fixedHead')
 			->Append($static . '/js/libs/class.min.js')
 			->Append($static . '/js/libs/ajax.min.js')
@@ -15610,6 +16961,12 @@ class Assets extends AbstractHelper
 	protected static $basePath = NULL;
 
 	/**
+	 * Request script name.
+	 * @var string
+	 */
+	protected static $scriptName = NULL;
+
+	/**
 	 * If true, all messages are logged on hard drive,
 	 * all exceptions are thrown.
 	 * @var boolean
@@ -15651,6 +17008,7 @@ class Assets extends AbstractHelper
 
 		if (self::$appRoot === NULL) self::$appRoot = $this->request->GetAppRoot();
 		if (self::$basePath === NULL) self::$basePath = $this->request->GetBasePath();
+		if (self::$scriptName === NULL) self::$scriptName = ltrim($this->request->GetScriptName(), '/.');
 		$configClass = $view->GetController()->GetApplication()->GetConfigClass();
 		self::$logingAndExceptions = $configClass::IsDevelopment(TRUE);
 		$mvcCoreCompiledMode = $this->controller->GetApplication()->GetCompiled();
@@ -15764,7 +17122,7 @@ class Assets extends AbstractHelper
 		$result = '';
 		if (self::$assetsUrlCompletion) {
 			// for \MvcCore\Application::GetInstance()->GetCompiled() equal to: 'PHAR', 'SFU', 'PHP_STRICT_PACKAGE', 'PHP_PRESERVE_PACKAGE', 'PHP_PRESERVE_HDD'
-			$result = '?controller=controller&action=asset&path=' . $path;
+			$result = self::$scriptName . '?controller=controller&action=asset&path=' . $path;
 		} else {
 			// for \MvcCore\Application::GetInstance()->GetCompiled(), by default equal to: '' (development), 'PHP_STRICT_HDD'
 			//$result = self::$basePath . $path;
@@ -16022,113 +17380,6 @@ class Assets extends AbstractHelper
 
 }
 }
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\Auth\Virtual{
-
-class User extends \MvcCore\Model {
-
-	/** @var int */
-	public $Id = NULL;
-
-	/** @var string */
-	public $UserName = '';
-
-	/** @var string */
-	public $FullName = '';
-
-	/** @var string */
-	public $PasswordHash = '';
-
-	/**
-	 * Try to get user model instance from
-	 * any place by session username record
-	 * if there is any or return null.
-	 * @return \MvcCore\Ext\Auth\User|null
-	 */
-	public static function GetUserBySession () {
-		return NULL;
-	}
-
-	/**
-	 * Get user instance if the username exists and hashed password is the same
-	 * @param string $username
-	 * @param string $password
-	 * @return \MvcCore\Ext\Auth\User|null
-	 */
-	public static function Authenticate ($username = '', $password = '') {
-		return NULL;
-	}
-
-	/**
-	 * Set up unique user name in session namespace
-	 * @param string $uniqueUserName
-	 * @return void
-	 */
-	public static function StoreInSession ($uniqueUserName = '') {
-	}
-
-	/**
-	 * Clear unique user name from session
-	 * @return void
-	 */
-	public static function ClearFromSession () {
-	}
-
-	/**
-	 * Get any password hash with salt by Auth extension configuration
-	 * @param string $password
-	 * @return string
-	 */
-	public static function GetPasswordHash ($password = '') {
-		return sha1(crypt(
-			(string) $password, 
-			\MvcCore\Ext\Auth::GetInstance()->GetConfig()->passwordHashSalt /*. $_SERVER['SERVER_NAME']*/
-		));
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\Auth\Virtual{
-
-class Controller extends \MvcCore\Controller {
-	/**
-	 * Authentication form submit action to sign in.
-	 * Routed by route configured by:
-	 * MvcCore\Ext\Auth::GetInstance()->SetSignInRoute();
-	 * @return void
-	 */
-	public function SignInAction () {
-	}
-	/**
-	 * Authentication form submit action to sign out.
-	 * Routed by route configured by:
-	 * MvcCore\Ext\Auth::GetInstance()->SetSignOutRoute();
-	 * @return void
-	 */
-	public function SignOutAction () {
-	}
-}
-}
 namespace App\Models{
 
 class Album extends \MvcCore\Model
@@ -16276,100 +17527,511 @@ class Album extends \MvcCore\Model
  * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
  */
 
-namespace MvcCore\Ext\Auth{
+namespace MvcCore\Ext\View\Helpers{
 
-class User extends Virtual\User {
-
-	/** @var bool */
-	protected $autoInit = FALSE;
-
-	/** @var \MvcCore\Session */
-	protected static $session = NULL;
+class Js extends Assets
+{
+	protected static $instance = null;
+	/**
+	 * Whatever Expires header is send over http protocol,
+	 * minimal cache time for external files will be one
+	 * day from last download
+	 * @const integer
+	 */
+	const EXTERNAL_MIN_CACHE_TIME = 86400;
 
 	/**
-	 * Try to get user model instance from
-	 * any place by session username record
-	 * if there is any or return null.
-	 * @return \MvcCore\Ext\Auth\User|null
+	 * Array with full class name and public method accepted as first param javascript code and returning minified code
+	 * @var callable
 	 */
-	public static function GetUserBySession () {
-		$result = NULL;
-		$session = static::getSession();
-		if (!isset($session->uname)) return $result;
-		$cfg = \MvcCore\Config::GetSystem();
-		$allCredentials = $cfg->credentials;
-		foreach ($allCredentials as & $credentials) {
-			if ($credentials->username === $session->uname) {
-				$result = new static();
-				$result->setUp(array(
-					'UserName'	=> $credentials->username,
-					'FullName'	=> $credentials->fullname,
-				));
-				break;
-			}
-		}
-		return $result;
+	public static $MinifyCallable = array('\JSMin', 'minify');
+
+	/**
+	 * Array with all defined files to create specific script tags
+	 * @var array
+	 */
+	protected static $scriptsGroupContainer = array();
+
+	/**
+	 * View Helper Method, returns current object instance.
+	 * @param  string $groupName string identifier
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Js ($groupName = self::GROUP_NAME_DEFAULT) {
+		$this->actualGroupName = $groupName;
+		$this->_getScriptsGroupContainer($groupName);
+		return $this;
 	}
 
 	/**
-	 * Get user instance if the username exists and hashed password is the same
-	 * @param string $username
-	 * @param string $password
-	 * @return \MvcCore\Ext\Auth\User|null
+	 * Check if script is already presented in scripts group
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return bool
 	 */
-	public static function Authenticate ($uniqueUserName = '', $password = '') {
-		$result = NULL;
-		$hashedPassword = static::GetPasswordHash($password);
-		$cfg = \MvcCore\Config::GetSystem();
-		$allCredentials = $cfg->credentials;
-		foreach ($allCredentials as & $credentials) {
-			if ($credentials->username === $uniqueUserName) {
-				if ($credentials->password === $hashedPassword) {
-					$result = new static();
-					$result->setUp(array(
-						'UserName'	=> $credentials->username,
-						'FullName'	=> $credentials->fullname,
-					));
+	public function Contains ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		$result = FALSE;
+		$scriptsGroup = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		foreach ($scriptsGroup as & $item) {
+			if ($item->path == $path) {
+				if ($item->async == $async && $item->defer == $defer && $item->doNotMinify == $doNotMinify) {
+					$result = TRUE;
+					break;
 				}
-				break;
 			}
 		}
 		return $result;
 	}
 
 	/**
-	 * Set up unique user name in session namespace
-	 * @param \MvcCore\Ext\Auth\User $user
-	 * @return void
+	 * Append script after all group scripts for later render process with downloading external content
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Js
 	 */
-	public static function StoreInSession ($user = NULL) {
-		static::GetSession()->uname = $user->UserName;
+	public function AppendExternal ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		return $this->Append($path, $async, $defer, $doNotMinify, TRUE);
 	}
 
 	/**
-	 * Clear unique user name from session
-	 * @return void
+	 * Prepend script before all group scripts for later render process with downloading external content
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Js
 	 */
-	public static function ClearFromSession () {
-		static::GetSession()->Destroy();
+	public function PrependExternal ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		return $this->Prepend($path, $async, $defer, $doNotMinify, TRUE);
 	}
 
 	/**
-	 * Get session to get/set/clear username,
-	 * is session is not started - start the session.
-	 * @return \MvcCore\Session
+	 * Add script into given index of scripts group array for later render process with downloading external content
+	 * @param  integer $index
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @return \MvcCore\Ext\View\Helpers\Js
 	 */
-	protected static function & getSession () {
-		if (is_null(static::$session)) {
-			$app = \MvcCore\Application::GetInstance();
-			$app->SessionStart(); // start session if not started or do nothing if session has been started already
-			$sessionClass = $app->GetSessionClass();
-			static::$session = $sessionClass::GetNamespace(__CLASS__);
-			static::$session->SetExpirationSeconds(
-				\MvcCore\Ext\Auth::GetInstance()->GetConfig()->expirationSeconds
+	public function OffsetExternal ($index = 0, $path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
+		return $this->Offset($index, $path, $async, $defer, $doNotMinify, TRUE);
+	}
+
+	/**
+	 * Append script after all group scripts for later render process
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Append ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
+		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
+		$actialGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		array_push($actialGroupItems, $item);
+		return $this;
+	}
+
+	/**
+	 * Prepend script before all group scripts for later render process
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Prepend ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
+		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
+		$actualGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		array_unshift($actualGroupItems, $item);
+		return $this;
+	}
+
+	/**
+	 * Add script into given index of scripts group array for later render process
+	 * @param  integer $index
+	 * @param  string  $path
+	 * @param  boolean $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \MvcCore\Ext\View\Helpers\Js
+	 */
+	public function Offset ($index = 0, $path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
+		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
+		$actialGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		$newItems = array();
+		$added = FALSE;
+		foreach ($actialGroupItems as $key => & $groupItem) {
+			if ($key == $index) {
+				$newItems[] = $item;
+				$added = TRUE;
+			}
+			$newItems[] = $groupItem;
+		}
+		if (!$added) $newItems[] = $item;
+		self::$scriptsGroupContainer[$this->getCtrlActionKey()][$this->actualGroupName] = $newItems;
+		return $this;
+	}
+
+	/**
+	 * Get actualy dispatched controller/action group name
+	 * @param string $name
+	 * @return array
+	 */
+	private function & _getScriptsGroupContainer ($name = '') {
+		$ctrlActionKey = $this->getCtrlActionKey();
+		if (!isset(self::$scriptsGroupContainer[$ctrlActionKey])) {
+			self::$scriptsGroupContainer[$ctrlActionKey] = array();
+		}
+		if (!isset(self::$scriptsGroupContainer[$ctrlActionKey][$name])) {
+			self::$scriptsGroupContainer[$ctrlActionKey][$name] = array();
+		}
+		return self::$scriptsGroupContainer[$ctrlActionKey][$name];
+	}
+
+	/**
+	 * Create data item to store for render process
+	 * @param  string  $path
+	 * @param  string  $async
+	 * @param  boolean $defer
+	 * @param  boolean $doNotMinify
+	 * @param  boolean $external
+	 * @return \stdClass
+	 */
+	private function _completeItem ($path, $async, $defer, $doNotMinify, $external) {
+		if (self::$logingAndExceptions) {
+			if (!$path) $this->exception('Path to *.js can\'t be an empty string.');
+			$duplication = $this->_isDuplicateScript($path);
+			if ($duplication) $this->warning("Script '$path' is already added in js group: '$duplication'.");
+		}
+		return (object) array(
+			'path'			=> $path,
+			'async'			=> $async,
+			'defer'			=> $defer,
+			'doNotMinify'	=> $doNotMinify,
+			'external'		=> $external,
+		);
+	}
+
+	/**
+	 * Is the linked script duplicate?
+	 * @param  string $path
+	 * @return string
+	 */
+	private function _isDuplicateScript ($path) {
+		$result = '';
+		$allGroupItems = & self::$scriptsGroupContainer[$this->getCtrlActionKey()];
+		foreach ($allGroupItems as $groupName => $groupItems) {
+			foreach ($groupItems as $item) {
+				if ($item->path == $path) {
+					$result = $groupName;
+					break;
+				}
+			}
+		}
+		return $result;
+	}
+
+	/**
+	 * Render script elements as html code with links to original files or temporary downloaded files
+	 * @param  int $indent
+	 * @return string
+	 */
+	public function Render ($indent = 0) {
+		$actualGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
+		if (count($actualGroupItems) === 0) return '';
+		$minify = (bool)self::$globalOptions['jsMinify'];
+		$joinTogether = (bool)self::$globalOptions['jsJoin'];
+		if ($joinTogether) {
+			$result = $this->_renderItemsTogether(
+				$this->actualGroupName,
+				$actualGroupItems,
+				$indent,
+				$minify
+			);
+		} else {
+			$result = $this->_renderItemsSeparated(
+				$this->actualGroupName,
+				$actualGroupItems,
+				$indent,
+				$minify
 			);
 		}
-		return static::$session;
+		return $result;
+	}
+
+	/**
+	 * Render data items as separated <script> html tags
+	 * @param string  $actualGroupName
+	 * @param array   $items
+	 * @param int     $indent
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsSeparated ($actualGroupName = '', $items = array(), $indent = 0, $minify = FALSE) {
+		$indentStr = $this->getIndentString($indent);
+		$resultItems = array();
+		if (self::$fileRendering) $resultItems[] = '<!-- js group begin: ' . $actualGroupName . ' -->';
+		$appCompilation = \MvcCore\Application::GetInstance()->GetCompiled();
+		foreach ($items as $item) {
+			if ($item->external) {
+				$item->src = $this->CssJsFileUrl($this->_downloadFileToTmpAndGetNewHref($item, $minify));
+			} else if ($minify && !$item->doNotMinify) {
+				$item->src = $this->CssJsFileUrl($this->_renderFileToTmpAndGetNewHref($item, $minify));
+			} else {
+				$item->src = $this->CssJsFileUrl($item->path);
+			}
+			if (!$appCompilation) {
+				/*if ($item->external) {
+					$tmpOrSrcPath = substr($item->src, strlen(self::$basePath));
+				} else {
+					$tmpOrSrcPath = $item->src;
+				}*/
+				$item->src = $this->addFileModificationImprintToHrefUrl($item->src, $item->path);
+			}
+			$resultItems[] = $this->_renderItemSeparated($item);
+		}
+		if (self::$fileRendering) $resultItems[] = '<!-- js group end: ' . $actualGroupName . ' -->';
+		return $indentStr . implode(PHP_EOL . $indentStr, $resultItems);
+	}
+
+	/**
+	 * Render js file by path and store result in tmp directory and return new href value
+	 * @param \stdClass $item
+	 * @param boolean  $minify
+	 * @return string
+	 */
+	private function _renderFileToTmpAndGetNewHref ($item, $minify = FALSE) {
+		$path = $item->path;
+		$tmpFileName = '/rendered_js_' . self::$systemConfigHash . '_' . trim(str_replace('/', '_', $path), "_");
+		$srcFileFullPath = $this->getAppRoot() . $path;
+		$tmpFileFullPath = $this->getTmpDir() . $tmpFileName;
+		if (self::$fileRendering) {
+			if (\Packager_Php_Wrapper::FileExists($srcFileFullPath)) {
+				$srcFileModDate = \Packager_Php_Wrapper::Filemtime($srcFileFullPath);
+			} else {
+				$srcFileModDate = 1;
+			}
+			if (\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				$tmpFileModDate = \Packager_Php_Wrapper::Filemtime($tmpFileFullPath);
+			} else {
+				$tmpFileModDate = 0;
+			}
+			if ($srcFileModDate !== FALSE && $tmpFileModDate !== FALSE) {
+				if ($srcFileModDate > $tmpFileModDate) {
+					$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+					if ($minify) {
+						$fileContent = $this->_minify($fileContent, $path);
+					}
+					$this->saveFileContent($tmpFileFullPath, $fileContent);
+					$this->log("Js file rendered ('$tmpFileFullPath').", 'debug');
+				}
+			}
+		}
+		$tmpPath = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		return $tmpPath;
+	}
+
+	/**
+	 * Download js file by path and store result in tmp directory and return new href value
+	 * @param \stdClass $item
+	 * @param boolean  $minify
+	 * @return string
+	 */
+	private function _downloadFileToTmpAndGetNewHref ($item, $minify = FALSE) {
+		$path = $item->path;
+		$tmpFileFullPath = $this->getTmpDir() . '/external_js_' . md5($path) . '.js';
+		if (self::$fileRendering) {
+			if (\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				$cacheFileTime = \Packager_Php_Wrapper::Filemtime($tmpFileFullPath);
+			} else {
+				$cacheFileTime = 0;
+			}
+			if (time() > $cacheFileTime + self::EXTERNAL_MIN_CACHE_TIME) {
+				while (TRUE) {
+					$newPath = $this->_getPossiblyRedirectedPath($path);
+					if ($newPath === $path) {
+						break;
+					} else {
+						$path = $newPath;
+					}
+				}
+				$fr = fopen($path, 'r');
+				$fileContent = '';
+				$bufferLength = 102400; // 100 KB
+				$buffer = '';
+				while ($buffer = fread($fr, $bufferLength)) {
+					$fileContent .= $buffer;
+				}
+				fclose($fr);
+				if ($minify) {
+					$fileContent = $this->_minify($fileContent, $path);
+				}
+				$this->saveFileContent($tmpFileFullPath, $fileContent);
+				$this->log("External js file downloaded ('$tmpFileFullPath').", 'debug');
+			}
+		}
+		$tmpPath = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		return $tmpPath;
+	}
+
+	/**
+	 * If there is any redirection in external content path - get redirect path
+	 * @param string $path
+	 * @return string
+	 */
+	private function _getPossiblyRedirectedPath ($path = '') {
+		$fp = fopen($path, 'r');
+		$metaData = stream_get_meta_data($fp);
+		foreach ($metaData['wrapper_data'] as $response) {
+			// Were we redirected? */
+			if (strtolower(substr($response, 0, 10)) == 'location: ') {
+				// update $src with where we were redirected to
+				$path = substr($response, 10);
+			}
+		}
+		return $path;
+	}
+
+	/**
+	 * Create HTML script element from data item
+	 * @param  \stdClass $item
+	 * @return string
+	 */
+	private function _renderItemSeparated (\stdClass $item) {
+		$result = '<script type="text/javascript"';
+		if ($item->async) $result .= ' async="async"';
+		if ($item->async) $result .= ' defer="defer"';
+		if (!$item->external && self::$fileChecking) {
+			$fullPath = $this->getAppRoot() . $item->path;
+			if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
+				$this->log("File not found in CSS view rendering process ('$fullPath').", 'error');
+			}
+		}
+		$result .= ' src="' . $item->src . '"></script>';
+		return $result;
+	}
+
+	/**
+	 * Minify javascript string and return minified result
+	 * @param string $js
+	 * @param string $path
+	 * @return string
+	 */
+	private function _minify (& $js, $path) {
+		$result = '';
+		if (!is_callable(static::$MinifyCallable)) {
+			$this->exception(
+				"Configured callable object for JS minification doesn't exist. "
+				."Use: https://github.com/mrclay/minify -> /min/lib/JSMin.php"
+			);
+		}
+		try {
+			$result = call_user_func(static::$MinifyCallable, $js);
+		} catch (\Exception $e) {
+			$this->exception("Unable to minify javascript ('$path').");
+		}
+		return $result;
+	}
+
+	/**
+	 * Render data items as one <script> html tag or all another <script> html tags after with files which is not possible to minify.
+	 * @param string  $actualGroupName
+	 * @param array   $items
+	 * @param int     $indent
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsTogether ($actualGroupName = '', $items = array(), $indent, $minify = FALSE) {
+
+		// some configurations is not possible to render together and minimized
+		list($itemsToRenderMinimized, $itemsToRenderSeparately) = $this->filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems($items);
+
+		$indentStr = $this->getIndentString($indent);
+		$resultItems = array();
+		if (self::$fileRendering) $resultItems[] = '<!-- js group begin: ' . $actualGroupName . ' -->';
+
+		// process array with groups, which are not possible to minimize
+		foreach ($itemsToRenderSeparately as & $itemsToRender) {
+			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, FALSE);
+		}
+
+		// process array with groups to minimize
+		foreach ($itemsToRenderMinimized as & $itemsToRender) {
+			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, $minify);
+		}
+
+		if (self::$fileRendering) $resultItems[] = $indentStr . '<!-- js group end: ' . $actualGroupName . ' -->';
+
+		return $indentStr . implode(PHP_EOL, $resultItems);
+	}
+
+	/**
+	 * Render all items in group together, when application is compiled, do not check source files and changes.
+	 * @param array   $itemsToRender
+	 * @param boolean $minify
+	 * @return string
+	 */
+	private function _renderItemsTogetherAsGroup ($itemsToRender = array(), $minify = FALSE) {
+
+		// complete tmp filename by source filenames and source files modification times
+		$filesGroupInfo = array();
+		foreach ($itemsToRender as $item) {
+			if ($item->external) {
+				$srcFileFullPath = $this->_downloadFileToTmpAndGetNewHref($item, $minify);
+				$filesGroupInfo[] = $item->path . '?_' . self::getFileImprint($this->getAppRoot() . $srcFileFullPath);
+			} else {
+				if (self::$fileChecking) {
+					$fullPath = $this->getAppRoot() . $item->path;
+					if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
+						$this->exception("File not found in JS view rendering process ('$fullPath').");
+					}
+					$filesGroupInfo[] = $item->path . '?_' . self::getFileImprint($fullPath);
+				} else {
+					$filesGroupInfo[] = $item->path;
+				}
+			}
+		}
+		$tmpFileFullPath = $this->getTmpFileFullPathByPartFilesInfo($filesGroupInfo, $minify, 'js');
+
+		// check, if the rendered, together completed and minimized file is in tmp cache already
+		if (self::$fileRendering) {
+			if (!\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
+				// load all items and join them together
+				$resultContent = '';
+				foreach ($itemsToRender as & $item) {
+					$srcFileFullPath = $this->getAppRoot() . $item->path;
+					if ($item->external) {
+						$srcFileFullPath = $this->_downloadFileToTmpAndGetNewHref($item, $minify);
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($this->getAppRoot() . $srcFileFullPath);
+					} else if ($minify) {
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+						if ($minify) $fileContent = $this->_minify($fileContent, $item->path);
+					} else {
+						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
+					}
+					$resultContent .= PHP_EOL . "/* " . $item->path . " */" . PHP_EOL . $fileContent . PHP_EOL;
+				}
+				// save completed tmp file
+				$this->saveFileContent($tmpFileFullPath, $resultContent);
+				$this->log("Js files group rendered ('$tmpFileFullPath').", 'debug');
+			}
+		}
+
+		// complete <link> tag with tmp file path in $tmpFileFullPath variable
+		$firstItem = array_merge((array) $itemsToRender[0], array());
+		$pathToTmp = substr($tmpFileFullPath, strlen($this->getAppRoot()));
+		$firstItem['src'] = $this->CssJsFileUrl($pathToTmp);
+
+		return $this->_renderItemSeparated((object) $firstItem);
 	}
 }
 }
@@ -16380,11 +18042,11 @@ use \MvcCore\Ext\Form;
 class Index extends Base
 {
 	public function IndexAction () {
-		if ($this->user instanceof \App\Models\User)
+		if ($this->user !== NULL)
 			self::Redirect($this->Url('CdCollection:Index'));
 		$this->view->Title = 'CD Collection';
 		$this->view->User = $this->user;
-		$this->view->SignInForm = $this->getSignInFormCustomized();
+		$this->view->SignInForm = $this->getSignInForm();
 	}
 	public function NotFoundAction(){
 		$this->ErrorAction();
@@ -16399,27 +18061,16 @@ class Index extends Base
 		$this->Render('error');
 	}
 
-	protected function getSignInFormCustomized () {
-		// customize sign in form
+	protected function getSignInForm () {
+		// you can customize sign in form here:
 		/** @var $signInForm \MvcCore\Ext\Auth\SignInForm */
-		$signInForm = \MvcCore\Ext\Auth::GetInstance()->GetForm()
-			// initialize fields
-			->Init()
-			// set signed in url to albums list
-			->SetDefaults(array(
-				'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
-			));
-		// remove username label and create input placeholder text
-		$signInForm->GetFirstFieldsByClass(Form\Text::class, TRUE)
-			->SetLabel('')->SetPlaceholder('login');
-		// remove password label and create input placeholder text
-		$signInForm->GetFirstFieldsByClass(Form\Password::class)
-			->SetLabel('')->SetPlaceholder('password');
-		// get submit button and customize submit button inner code
-		$signInFormSubmitBtn = $signInForm->GetFirstFieldsByClass(Form\SubmitButton::class);
-		$signInFormSubmitBtn->AddCssClass('button-green')->SetValue(
-			'<span><b>' . $signInFormSubmitBtn->GetValue() . '</b></span>'
-		);
+		$signInForm = \MvcCore\Ext\Auth::GetInstance()->GetForm();
+		// add 'theme' css class to style the form by css stylesheet
+		$signInForm->AddCssClass('theme');
+		// set signed in url to albums list by default:
+		$signInForm->SetDefaults(array(
+			'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
+		));
 		return $signInForm;
 	}
 }
@@ -16970,525 +18621,6 @@ class Css extends Assets
 	}
 }
 }
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\View\Helpers{
-
-class Js extends Assets
-{
-	protected static $instance = null;
-	/**
-	 * Whatever Expires header is send over http protocol,
-	 * minimal cache time for external files will be one
-	 * day from last download
-	 * @const integer
-	 */
-	const EXTERNAL_MIN_CACHE_TIME = 86400;
-
-	/**
-	 * Array with full class name and public method accepted as first param javascript code and returning minified code
-	 * @var callable
-	 */
-	public static $MinifyCallable = array('\JSMin', 'minify');
-
-	/**
-	 * Array with all defined files to create specific script tags
-	 * @var array
-	 */
-	protected static $scriptsGroupContainer = array();
-
-	/**
-	 * View Helper Method, returns current object instance.
-	 * @param  string $groupName string identifier
-	 * @return \MvcCore\Ext\View\Helpers\Js
-	 */
-	public function Js ($groupName = self::GROUP_NAME_DEFAULT) {
-		$this->actualGroupName = $groupName;
-		$this->_getScriptsGroupContainer($groupName);
-		return $this;
-	}
-
-	/**
-	 * Check if script is already presented in scripts group
-	 * @param  string  $path
-	 * @param  boolean $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @return bool
-	 */
-	public function Contains ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
-		$result = FALSE;
-		$scriptsGroup = & $this->_getScriptsGroupContainer($this->actualGroupName);
-		foreach ($scriptsGroup as & $item) {
-			if ($item->path == $path) {
-				if ($item->async == $async && $item->defer == $defer && $item->doNotMinify == $doNotMinify) {
-					$result = TRUE;
-					break;
-				}
-			}
-		}
-		return $result;
-	}
-
-	/**
-	 * Append script after all group scripts for later render process with downloading external content
-	 * @param  string  $path
-	 * @param  boolean $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @return \MvcCore\Ext\View\Helpers\Js
-	 */
-	public function AppendExternal ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
-		return $this->Append($path, $async, $defer, $doNotMinify, TRUE);
-	}
-
-	/**
-	 * Prepend script before all group scripts for later render process with downloading external content
-	 * @param  string  $path
-	 * @param  boolean $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @return \MvcCore\Ext\View\Helpers\Js
-	 */
-	public function PrependExternal ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
-		return $this->Prepend($path, $async, $defer, $doNotMinify, TRUE);
-	}
-
-	/**
-	 * Add script into given index of scripts group array for later render process with downloading external content
-	 * @param  integer $index
-	 * @param  string  $path
-	 * @param  boolean $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @return \MvcCore\Ext\View\Helpers\Js
-	 */
-	public function OffsetExternal ($index = 0, $path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE) {
-		return $this->Offset($index, $path, $async, $defer, $doNotMinify, TRUE);
-	}
-
-	/**
-	 * Append script after all group scripts for later render process
-	 * @param  string  $path
-	 * @param  boolean $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @param  boolean $external
-	 * @return \MvcCore\Ext\View\Helpers\Js
-	 */
-	public function Append ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
-		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
-		$actialGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
-		array_push($actialGroupItems, $item);
-		return $this;
-	}
-
-	/**
-	 * Prepend script before all group scripts for later render process
-	 * @param  string  $path
-	 * @param  boolean $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @param  boolean $external
-	 * @return \MvcCore\Ext\View\Helpers\Js
-	 */
-	public function Prepend ($path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
-		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
-		$actualGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
-		array_unshift($actualGroupItems, $item);
-		return $this;
-	}
-
-	/**
-	 * Add script into given index of scripts group array for later render process
-	 * @param  integer $index
-	 * @param  string  $path
-	 * @param  boolean $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @param  boolean $external
-	 * @return \MvcCore\Ext\View\Helpers\Js
-	 */
-	public function Offset ($index = 0, $path = '', $async = FALSE, $defer = FALSE, $doNotMinify = FALSE, $external = FALSE) {
-		$item = $this->_completeItem($path, $async, $defer, $doNotMinify, $external);
-		$actialGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
-		$newItems = array();
-		$added = FALSE;
-		foreach ($actialGroupItems as $key => & $groupItem) {
-			if ($key == $index) {
-				$newItems[] = $item;
-				$added = TRUE;
-			}
-			$newItems[] = $groupItem;
-		}
-		if (!$added) $newItems[] = $item;
-		self::$scriptsGroupContainer[$this->getCtrlActionKey()][$this->actualGroupName] = $newItems;
-		return $this;
-	}
-
-	/**
-	 * Get actualy dispatched controller/action group name
-	 * @param string $name
-	 * @return array
-	 */
-	private function & _getScriptsGroupContainer ($name = '') {
-		$ctrlActionKey = $this->getCtrlActionKey();
-		if (!isset(self::$scriptsGroupContainer[$ctrlActionKey])) {
-			self::$scriptsGroupContainer[$ctrlActionKey] = array();
-		}
-		if (!isset(self::$scriptsGroupContainer[$ctrlActionKey][$name])) {
-			self::$scriptsGroupContainer[$ctrlActionKey][$name] = array();
-		}
-		return self::$scriptsGroupContainer[$ctrlActionKey][$name];
-	}
-
-	/**
-	 * Create data item to store for render process
-	 * @param  string  $path
-	 * @param  string  $async
-	 * @param  boolean $defer
-	 * @param  boolean $doNotMinify
-	 * @param  boolean $external
-	 * @return \stdClass
-	 */
-	private function _completeItem ($path, $async, $defer, $doNotMinify, $external) {
-		if (self::$logingAndExceptions) {
-			if (!$path) $this->exception('Path to *.js can\'t be an empty string.');
-			$duplication = $this->_isDuplicateScript($path);
-			if ($duplication) $this->warning("Script '$path' is already added in js group: '$duplication'.");
-		}
-		return (object) array(
-			'path'			=> $path,
-			'async'			=> $async,
-			'defer'			=> $defer,
-			'doNotMinify'	=> $doNotMinify,
-			'external'		=> $external,
-		);
-	}
-
-	/**
-	 * Is the linked script duplicate?
-	 * @param  string $path
-	 * @return string
-	 */
-	private function _isDuplicateScript ($path) {
-		$result = '';
-		$allGroupItems = & self::$scriptsGroupContainer[$this->getCtrlActionKey()];
-		foreach ($allGroupItems as $groupName => $groupItems) {
-			foreach ($groupItems as $item) {
-				if ($item->path == $path) {
-					$result = $groupName;
-					break;
-				}
-			}
-		}
-		return $result;
-	}
-
-	/**
-	 * Render script elements as html code with links to original files or temporary downloaded files
-	 * @param  int $indent
-	 * @return string
-	 */
-	public function Render ($indent = 0) {
-		$actualGroupItems = & $this->_getScriptsGroupContainer($this->actualGroupName);
-		if (count($actualGroupItems) === 0) return '';
-		$minify = (bool)self::$globalOptions['jsMinify'];
-		$joinTogether = (bool)self::$globalOptions['jsJoin'];
-		if ($joinTogether) {
-			$result = $this->_renderItemsTogether(
-				$this->actualGroupName,
-				$actualGroupItems,
-				$indent,
-				$minify
-			);
-		} else {
-			$result = $this->_renderItemsSeparated(
-				$this->actualGroupName,
-				$actualGroupItems,
-				$indent,
-				$minify
-			);
-		}
-		return $result;
-	}
-
-	/**
-	 * Render data items as separated <script> html tags
-	 * @param string  $actualGroupName
-	 * @param array   $items
-	 * @param int     $indent
-	 * @param boolean $minify
-	 * @return string
-	 */
-	private function _renderItemsSeparated ($actualGroupName = '', $items = array(), $indent = 0, $minify = FALSE) {
-		$indentStr = $this->getIndentString($indent);
-		$resultItems = array();
-		if (self::$fileRendering) $resultItems[] = '<!-- js group begin: ' . $actualGroupName . ' -->';
-		$appCompilation = \MvcCore\Application::GetInstance()->GetCompiled();
-		foreach ($items as $item) {
-			if ($item->external) {
-				$item->src = $this->CssJsFileUrl($this->_downloadFileToTmpAndGetNewHref($item, $minify));
-			} else if ($minify && !$item->doNotMinify) {
-				$item->src = $this->CssJsFileUrl($this->_renderFileToTmpAndGetNewHref($item, $minify));
-			} else {
-				$item->src = $this->CssJsFileUrl($item->path);
-			}
-			if (!$appCompilation) {
-				/*if ($item->external) {
-					$tmpOrSrcPath = substr($item->src, strlen(self::$basePath));
-				} else {
-					$tmpOrSrcPath = $item->src;
-				}*/
-				$item->src = $this->addFileModificationImprintToHrefUrl($item->src, $item->path);
-			}
-			$resultItems[] = $this->_renderItemSeparated($item);
-		}
-		if (self::$fileRendering) $resultItems[] = '<!-- js group end: ' . $actualGroupName . ' -->';
-		return $indentStr . implode(PHP_EOL . $indentStr, $resultItems);
-	}
-
-	/**
-	 * Render js file by path and store result in tmp directory and return new href value
-	 * @param \stdClass $item
-	 * @param boolean  $minify
-	 * @return string
-	 */
-	private function _renderFileToTmpAndGetNewHref ($item, $minify = FALSE) {
-		$path = $item->path;
-		$tmpFileName = '/rendered_js_' . self::$systemConfigHash . '_' . trim(str_replace('/', '_', $path), "_");
-		$srcFileFullPath = $this->getAppRoot() . $path;
-		$tmpFileFullPath = $this->getTmpDir() . $tmpFileName;
-		if (self::$fileRendering) {
-			if (\Packager_Php_Wrapper::FileExists($srcFileFullPath)) {
-				$srcFileModDate = \Packager_Php_Wrapper::Filemtime($srcFileFullPath);
-			} else {
-				$srcFileModDate = 1;
-			}
-			if (\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
-				$tmpFileModDate = \Packager_Php_Wrapper::Filemtime($tmpFileFullPath);
-			} else {
-				$tmpFileModDate = 0;
-			}
-			if ($srcFileModDate !== FALSE && $tmpFileModDate !== FALSE) {
-				if ($srcFileModDate > $tmpFileModDate) {
-					$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
-					if ($minify) {
-						$fileContent = $this->_minify($fileContent, $path);
-					}
-					$this->saveFileContent($tmpFileFullPath, $fileContent);
-					$this->log("Js file rendered ('$tmpFileFullPath').", 'debug');
-				}
-			}
-		}
-		$tmpPath = substr($tmpFileFullPath, strlen($this->getAppRoot()));
-		return $tmpPath;
-	}
-
-	/**
-	 * Download js file by path and store result in tmp directory and return new href value
-	 * @param \stdClass $item
-	 * @param boolean  $minify
-	 * @return string
-	 */
-	private function _downloadFileToTmpAndGetNewHref ($item, $minify = FALSE) {
-		$path = $item->path;
-		$tmpFileFullPath = $this->getTmpDir() . '/external_js_' . md5($path) . '.js';
-		if (self::$fileRendering) {
-			if (\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
-				$cacheFileTime = \Packager_Php_Wrapper::Filemtime($tmpFileFullPath);
-			} else {
-				$cacheFileTime = 0;
-			}
-			if (time() > $cacheFileTime + self::EXTERNAL_MIN_CACHE_TIME) {
-				while (TRUE) {
-					$newPath = $this->_getPossiblyRedirectedPath($path);
-					if ($newPath === $path) {
-						break;
-					} else {
-						$path = $newPath;
-					}
-				}
-				$fr = fopen($path, 'r');
-				$fileContent = '';
-				$bufferLength = 102400; // 100 KB
-				$buffer = '';
-				while ($buffer = fread($fr, $bufferLength)) {
-					$fileContent .= $buffer;
-				}
-				fclose($fr);
-				if ($minify) {
-					$fileContent = $this->_minify($fileContent, $path);
-				}
-				$this->saveFileContent($tmpFileFullPath, $fileContent);
-				$this->log("External js file downloaded ('$tmpFileFullPath').", 'debug');
-			}
-		}
-		$tmpPath = substr($tmpFileFullPath, strlen($this->getAppRoot()));
-		return $tmpPath;
-	}
-
-	/**
-	 * If there is any redirection in external content path - get redirect path
-	 * @param string $path
-	 * @return string
-	 */
-	private function _getPossiblyRedirectedPath ($path = '') {
-		$fp = fopen($path, 'r');
-		$metaData = stream_get_meta_data($fp);
-		foreach ($metaData['wrapper_data'] as $response) {
-			// Were we redirected? */
-			if (strtolower(substr($response, 0, 10)) == 'location: ') {
-				// update $src with where we were redirected to
-				$path = substr($response, 10);
-			}
-		}
-		return $path;
-	}
-
-	/**
-	 * Create HTML script element from data item
-	 * @param  \stdClass $item
-	 * @return string
-	 */
-	private function _renderItemSeparated (\stdClass $item) {
-		$result = '<script type="text/javascript"';
-		if ($item->async) $result .= ' async="async"';
-		if ($item->async) $result .= ' defer="defer"';
-		if (!$item->external && self::$fileChecking) {
-			$fullPath = $this->getAppRoot() . $item->path;
-			if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
-				$this->log("File not found in CSS view rendering process ('$fullPath').", 'error');
-			}
-		}
-		$result .= ' src="' . $item->src . '"></script>';
-		return $result;
-	}
-
-	/**
-	 * Minify javascript string and return minified result
-	 * @param string $js
-	 * @param string $path
-	 * @return string
-	 */
-	private function _minify (& $js, $path) {
-		$result = '';
-		if (!is_callable(static::$MinifyCallable)) {
-			$this->exception(
-				"Configured callable object for JS minification doesn't exist. "
-				."Use: https://github.com/mrclay/minify -> /min/lib/JSMin.php"
-			);
-		}
-		try {
-			$result = call_user_func(static::$MinifyCallable, $js);
-		} catch (\Exception $e) {
-			$this->exception("Unable to minify javascript ('$path').");
-		}
-		return $result;
-	}
-
-	/**
-	 * Render data items as one <script> html tag or all another <script> html tags after with files which is not possible to minify.
-	 * @param string  $actualGroupName
-	 * @param array   $items
-	 * @param int     $indent
-	 * @param boolean $minify
-	 * @return string
-	 */
-	private function _renderItemsTogether ($actualGroupName = '', $items = array(), $indent, $minify = FALSE) {
-
-		// some configurations is not possible to render together and minimized
-		list($itemsToRenderMinimized, $itemsToRenderSeparately) = $this->filterItemsForNotPossibleMinifiedAndPossibleMinifiedItems($items);
-
-		$indentStr = $this->getIndentString($indent);
-		$resultItems = array();
-		if (self::$fileRendering) $resultItems[] = '<!-- js group begin: ' . $actualGroupName . ' -->';
-
-		// process array with groups, which are not possible to minimize
-		foreach ($itemsToRenderSeparately as & $itemsToRender) {
-			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, FALSE);
-		}
-
-		// process array with groups to minimize
-		foreach ($itemsToRenderMinimized as & $itemsToRender) {
-			$resultItems[] = $this->_renderItemsTogetherAsGroup($itemsToRender, $minify);
-		}
-
-		if (self::$fileRendering) $resultItems[] = $indentStr . '<!-- js group end: ' . $actualGroupName . ' -->';
-
-		return $indentStr . implode(PHP_EOL, $resultItems);
-	}
-
-	/**
-	 * Render all items in group together, when application is compiled, do not check source files and changes.
-	 * @param array   $itemsToRender
-	 * @param boolean $minify
-	 * @return string
-	 */
-	private function _renderItemsTogetherAsGroup ($itemsToRender = array(), $minify = FALSE) {
-
-		// complete tmp filename by source filenames and source files modification times
-		$filesGroupInfo = array();
-		foreach ($itemsToRender as $item) {
-			if ($item->external) {
-				$srcFileFullPath = $this->_downloadFileToTmpAndGetNewHref($item, $minify);
-				$filesGroupInfo[] = $item->path . '?_' . self::getFileImprint($this->getAppRoot() . $srcFileFullPath);
-			} else {
-				if (self::$fileChecking) {
-					$fullPath = $this->getAppRoot() . $item->path;
-					if (!\Packager_Php_Wrapper::FileExists($fullPath)) {
-						$this->exception("File not found in JS view rendering process ('$fullPath').");
-					}
-					$filesGroupInfo[] = $item->path . '?_' . self::getFileImprint($fullPath);
-				} else {
-					$filesGroupInfo[] = $item->path;
-				}
-			}
-		}
-		$tmpFileFullPath = $this->getTmpFileFullPathByPartFilesInfo($filesGroupInfo, $minify, 'js');
-
-		// check, if the rendered, together completed and minimized file is in tmp cache already
-		if (self::$fileRendering) {
-			if (!\Packager_Php_Wrapper::FileExists($tmpFileFullPath)) {
-				// load all items and join them together
-				$resultContent = '';
-				foreach ($itemsToRender as & $item) {
-					$srcFileFullPath = $this->getAppRoot() . $item->path;
-					if ($item->external) {
-						$srcFileFullPath = $this->_downloadFileToTmpAndGetNewHref($item, $minify);
-						$fileContent = \Packager_Php_Wrapper::FileGetContents($this->getAppRoot() . $srcFileFullPath);
-					} else if ($minify) {
-						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
-						if ($minify) $fileContent = $this->_minify($fileContent, $item->path);
-					} else {
-						$fileContent = \Packager_Php_Wrapper::FileGetContents($srcFileFullPath);
-					}
-					$resultContent .= PHP_EOL . "/* " . $item->path . " */" . PHP_EOL . $fileContent . PHP_EOL;
-				}
-				// save completed tmp file
-				$this->saveFileContent($tmpFileFullPath, $resultContent);
-				$this->log("Js files group rendered ('$tmpFileFullPath').", 'debug');
-			}
-		}
-
-		// complete <link> tag with tmp file path in $tmpFileFullPath variable
-		$firstItem = array_merge((array) $itemsToRender[0], array());
-		$pathToTmp = substr($tmpFileFullPath, strlen($this->getAppRoot()));
-		$firstItem['src'] = $this->CssJsFileUrl($pathToTmp);
-
-		return $this->_renderItemSeparated((object) $firstItem);
-	}
-}
-}
 namespace App\Controllers{
 
 use \App\Models,
@@ -17498,6 +18630,7 @@ class CdCollection extends Base
 {
 	/** @var \App\Models\Album */
 	protected $album;
+
     /**
 	 * Initialize this controller, before prdispatching and before every action
 	 * executing in current controller. This method is template method - so
@@ -17508,7 +18641,7 @@ class CdCollection extends Base
 		// if user is not authorized, redirect to homepage and exit
 		if (!$this->user) {
 			self::Redirect($this->Url(
-				'Index:Index', array('sourceUrl' => urlencode($this->request->Referer))
+				'Index:Index', array('sourceUrl' => rawurlencode($this->request->GetFullUrl()))
 			));
 		}
 	}
@@ -17603,6 +18736,7 @@ class CdCollection extends Base
 			->SetMethod(Form::METHOD_POST)
 			->SetAction($this->Url(':Submit'))
 			->SetSuccessUrl($this->Url(':Index', array('absolute' => TRUE)))
+			->AddCssClass('theme')
 			->SetFieldsDefaultRenderMode(
 				Form::FIELD_RENDER_MODE_LABEL_AROUND
 			);
@@ -17646,53 +18780,6 @@ class CdCollection extends Base
 			->SetErrorUrl(
 				$this->Url('Index:Index', array('absolute' => TRUE))
 			);
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\Auth{
-
-class Controller extends Virtual\Controller {
-	/**
-	 * Authentication form submit action to sign in.
-	 * Routed by route configured by:
-	 * MvcCore\Ext\Auth::GetInstance()->SetSignInRoute();
-	 * @return void
-	 */
-	public function SignInAction () {
-		/** @var $form \MvcCore\Ext\Auth\SignInForm */
-		$form = \MvcCore\Ext\Auth::GetInstance()->GetForm();
-		list ($result, $data, $errors) = $form->Submit();
-		if ($result !== \MvcCore\Ext\Form::RESULT_SUCCESS) {
-			// here you can count bad login requests
-			// to ban danger user for some time or anything else...
-
-		}
-		$form->ClearSession(); // to remove all submited data from session
-		$form->RedirectAfterSubmit();
-	}
-	/**
-	 * Authentication form submit action to sign out.
-	 * Routed by route configured by:
-	 * MvcCore\Ext\Auth::GetInstance()->SetSignOutRoute();
-	 * @return void
-	 */
-	public function SignOutAction () {
-		/** @var $form \MvcCore\Ext\Auth\SignOutForm */
-		$form = \MvcCore\Ext\Auth::GetInstance()->GetForm();
-		/*list ($result, $data, $errors) = */$form->Submit();
-		$form->ClearSession(); // to remove all submited data from session
-		$form->RedirectAfterSubmit();
 	}
 }
 }
@@ -17791,53 +18878,64 @@ class Application implements \MvcCore\Interfaces\IApplication
 	}
 }
 }
-namespace App\Models{
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
 
-class User extends \MvcCore\Ext\Auth\User
+namespace MvcCore\Ext\Auth{
+
+class User extends \MvcCore\Model implements \MvcCore\Ext\Auth\Interfaces\IUser {
+
+	/** @var bool */
+	protected $autoInit = FALSE;
+
+	use \MvcCore\Ext\Auth\Traits\User;
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth{
+
+class SignController extends \MvcCore\Controller implements \MvcCore\Ext\Auth\Interfaces\ISignController
 {
-	/** @var int */
-	public $Id;
-	public $UserName = '';
-	public $PasswordHash = '';
-	public $FullName = '';
+	use Traits\SignController;
+}
+}
+namespace MvcCore\Ext\Auth\Users{
 
-	public static function GetUserBySession () {
-		$session = static::getSession();
-		if (isset($session->uname)) {
-			return self::GetByUserName($session->uname);
-		}
-		return NULL;
-	}
-
-	public static function Authenticate ($uniqueUserName = '', $password = '') {
-		$hashedPassword = static::GetPasswordHash($password);
-		$user = self::GetByUserName($uniqueUserName);
-		if ($user && $user->PasswordHash === $hashedPassword) {
-			return $user;
-		}
-		return NULL;
-	}
-
+class SystemConfig extends \MvcCore\Ext\Auth\User
+{
 	public static function GetByUserName ($userName) {
-		$select = self::getDb()->prepare("
-			SELECT
-				u.id AS Id,
-				u.user_name AS UserName,
-				u.password_hash AS PasswordHash,
-				u.full_name AS FullName
-			FROM
-				users AS u
-			WHERE
-				u.user_name = :user_name
-		");
-		$select->execute(array(
-			":user_name" => $userName,
-		));
-		if ($data = $select->fetch(\PDO::FETCH_ASSOC)) {
-			return (new self())->setUp($data);
+		$result = NULL;
+		$configClass = \MvcCore\Application::GetInstance()->GetConfigClass();
+		$allSysConfigCredentials = $configClass::GetSystem()->credentials;
+		foreach ($allSysConfigCredentials as $key => & $sysConfigCredentials) {
+			if ($sysConfigCredentials->username === $userName) {
+				$result = (new static())
+					->SetId($key)
+					->SetUserName($sysConfigCredentials->username)
+					->SetFullName($sysConfigCredentials->fullname);
+				break;
+			}
 		}
-		return NULL;
-    }
+		return $result;
+	}
 }
 }
 /**
@@ -18488,6 +19586,64 @@ class View implements Interfaces\IView
 }
 View::StaticInit();
 }
+namespace MvcCore\Ext\Auth\Users{
+
+class Database extends \MvcCore\Ext\Auth\User implements \MvcCore\Ext\Auth\Interfaces\IDatabaseUser
+{
+	protected static $usersTableStructure = array(
+		'table'		=> 'users',
+		'columns'	=> array(
+			'id'			=> 'id',
+			'userName'		=> 'user_name',
+			'passwordHash'	=> 'password_hash',
+			'fullName'		=> 'full_name',
+		)
+	);
+
+	/**
+	 * Set database table structure how to load user from db.
+	 * @param string|NULL	$tableName
+	 * @param string[]|NULL	$columnNames
+	 */
+	public static function SetUsersTableStructure ($tableName = NULL, $columnNames = NULL) {
+		if ($tableName !== NULL) static::$usersTableStructure['table'] = $tableName;
+		if ($columnNames !== NULL) {
+			$columns = & static::$usersTableStructure['columns'];
+			foreach ($columnNames as $propertyName => $columnName)
+				$columns[$propertyName] = $columnName;
+		}
+	}
+
+	/**
+	 * Get user model instance from database using submitted and cleaned `$userName` field value.
+	 * @param string $userName
+	 * @return \MvcCore\Ext\Auth\User
+	 */
+	public static function GetByUserName ($userName) {
+		$table = static::$usersTableStructure['table'];
+		$columns = (object) static::$usersTableStructure['columns'];
+		$sql = "
+			SELECT
+				u.$columns->id AS id,
+				u.$columns->userName AS userName,
+				u.$columns->passwordHash AS passwordHash,
+				u.$columns->fullName AS fullName
+			FROM
+				$table u
+			WHERE
+				u.$columns->userName = :user_name
+		";
+		$select = static::getDb()->prepare($sql);
+		$select->execute(array(
+			":user_name" => $userName,
+		));
+		if ($data = $select->fetch(\PDO::FETCH_ASSOC)) {
+			return (new static())->SetUp($data, FALSE, TRUE, FALSE);
+		}
+		return NULL;
+	}
+}
+}
 /**
  * MvcCore
  *
@@ -19120,20 +20276,29 @@ class Form extends Form\Core\Configuration
 	/**
 	 * Add form submit error and switch form result to zero - error state.
 	 * @param string $errorMsg
-	 * @param string $fieldName optional
+	 * @param string|array|NULL $fieldNames optional
 	 * @return \MvcCore\Ext\Form
 	 */
-	public function AddError ($errorMsg, $fieldName = '') {
+	public function AddError ($errorMsg, $fieldNames = NULL) {
 		$errorMsgUtf8 = iconv(
-			mb_detect_encoding($errorMsg, mb_detect_order(), true),
+			mb_detect_encoding($errorMsg, mb_detect_order(), TRUE),
 			"UTF-8",
 			$errorMsg
 		);
 		$newErrorRec = array(strip_tags($errorMsgUtf8));
-		if ($fieldName) $newErrorRec[] = $fieldName;
-		$this->Errors[] = $newErrorRec;
-		if ($fieldName && isset($this->Fields[$fieldName])) {
-			$this->Fields[$fieldName]->AddError($errorMsgUtf8);
+		/** @var int $fieldNameType 0 - NULL, 1 - string, 2 - array */
+		$fieldNameType = $fieldNames === NULL ? 0 : (gettype($fieldNames) == 'array' ? 2 : 1);
+		if ($fieldNameType > 0) {
+			$newErrorRec[] = $fieldNames;
+			if ($fieldNameType === 1) {
+				if (isset($this->Fields[$fieldNames]))
+					$this->Fields[$fieldNames]->AddError($errorMsgUtf8);
+			} else if ($fieldNameType === 2) {
+				foreach ($fieldNames as $fieldName)
+					if (isset($this->Fields[$fieldName]))
+						$this->Fields[$fieldName]->AddError($errorMsgUtf8);
+			}
+			$this->Errors[] = $newErrorRec;
 		}
 		$this->Result = Form::RESULT_ERRORS;
 		return $this;
@@ -19184,13 +20349,14 @@ class Form extends Form\Core\Configuration
 	/**
 	 * Clear all session records for this form by form id.
 	 * Data sended from last submit, any csrf tokens and any errors.
-	 * @return void
+	 * @return \MvcCore\Ext\Form
 	 */
 	public function ClearSession () {
 		$this->Data = array();
 				Form\Core\Helpers::SetSessionData($this->Id, array());
 		Form\Core\Helpers::SetSessionCsrf($this->Id, array());
 		Form\Core\Helpers::SetSessionErrors($this->Id, array());
+		return $this;
 	}
 	/**
 	 * Return current cross site request forgery hidden
@@ -19487,7 +20653,7 @@ class Form extends Form\Core\Configuration
 	public function Submit ($rawParams = array()) {
 		if (!$this->initialized) $this->Init();
 				Form\Core\Helpers::ValidateMaxPostSizeIfNecessary($this);
-		if (!$rawParams) $rawParams = $this->Controller->GetRequest()->GetParams();
+		if (!$rawParams) $rawParams = $this->Controller->GetRequest()->GetParams('.*');
 		$this->ValidateCsrf($rawParams);
 		$this->submitFields($rawParams);
 		return array(
@@ -19900,8 +21066,10 @@ class View extends \MvcCore\View
 			$result .= '<div class="errors">';
 			foreach ($this->Form->Errors as & $errorMessageAndFieldName) {
 				$errorMessage = $errorMessageAndFieldName[0];
-				$fieldName = isset($errorMessageAndFieldName[1]) ? $errorMessageAndFieldName[1] : '' ;
-				$result .= '<div class="error ' . $fieldName . '">'.$errorMessage.'</div>';
+				$fieldNames = isset($errorMessageAndFieldName[1]) ? $errorMessageAndFieldName[1] : NULL ;
+				/** @var int $fieldNameType 0 - NULL, 1 - string, 2 - array */
+				$fieldNames = $fieldNames === NULL ? array() : (gettype($fieldNames) == 'array' ? $fieldNames : array($fieldNames));
+				$result .= '<div class="error ' . implode(' ', $fieldNames) . '">'.$errorMessage.'</div>';
 			}
 			$result .= '</div>';
 		}
@@ -20891,14 +22059,21 @@ abstract class Base
 				$errors = Helpers::GetSessionErrors($this->Id);
 		foreach ($errors as & $errorMsgAndFieldName) {
 			if (!isset($errorMsgAndFieldName[1])) $errorMsgAndFieldName[1] = '';
-			list($errorMsg, $fieldName) = $errorMsgAndFieldName;
-			$this->AddError($errorMsg, $fieldName);
-			if (isset($this->Fields[$fieldName])) {
-				// add error classes into settings config where necessary
-				$fieldInstance = & $this->Fields[$fieldName];
-				$fieldInstance->AddCssClass('error');
-				if (method_exists($fieldInstance, 'AddGroupCssClass')) {
-					$fieldInstance->AddGroupCssClass('error');
+			list($errorMsg, $fieldNames) = $errorMsgAndFieldName;
+			$this->AddError($errorMsg, $fieldNames);
+			/** @var int $fieldNameType 0 - NULL, 1 - string, 2 - array */
+			$fieldNameType = $fieldNames === NULL ? 0 : (gettype($fieldNames) == 'array' ? 2 : 1);
+			if ($fieldNameType > 0) {
+				if ($fieldNameType < 2) $fieldNames = array($fieldNames);
+				foreach ($fieldNames as $fieldName) {
+					if (isset($this->Fields[$fieldName])) {
+						// add error classes into settings config where necessary
+						$fieldInstance = & $this->Fields[$fieldName];
+						$fieldInstance->AddCssClass('error');
+						if (method_exists($fieldInstance, 'AddGroupCssClass')) {
+							$fieldInstance->AddGroupCssClass('error');
+						}
+					}
 				}
 			}
 		}
@@ -21529,7 +22704,7 @@ abstract class Configuration extends Base
 	 * @param string $url
 	 * @return \MvcCore\Ext\Form
 	 */
-	public function SetAction ($url = '') {
+	public function & SetAction ($url = '') {
 		$this->Action = $url;
 		return $this;
 	}
@@ -21596,7 +22771,10 @@ abstract class Configuration extends Base
 	 */
 	public function SetDefaults (array $defaults = array(), $keysInsensitive = FALSE) {
 		if (!$this->initialized) $this->Init();
-		$defaultsKeys = $keysInsensitive ? ',' . implode(',', array_keys($defaults)) . ',' : '' ;
+		$this->ClearSession();
+		$defaultsKeys = $keysInsensitive
+			? ',' . implode(',', array_keys($defaults)) . ','
+			: '' ;
 		foreach ($this->Fields as $fieldName => & $field) {
 			if (isset($defaults[$fieldName])) {
 				$fieldValue = $defaults[$fieldName];
@@ -21646,7 +22824,7 @@ abstract class Configuration extends Base
 	 * @param string $url
 	 * @return \MvcCore\Ext\Form
 	 */
-	public function SetErrorUrl ($url = '') {
+	public function & SetErrorUrl ($url = '') {
 		$this->ErrorUrl = $url;
 		return $this;
 	}
@@ -21780,7 +22958,7 @@ abstract class Configuration extends Base
 	 * @param string $url
 	 * @return \MvcCore\Ext\Form
 	 */
-	public function SetSuccessUrl ($url = '') {
+	public function & SetSuccessUrl ($url = '') {
 		$this->SuccessUrl = $url;
 		return $this;
 	}
@@ -21813,9 +22991,9 @@ abstract class Configuration extends Base
 	 * Set TRUE to translate everything visible in form.
 	 * Control placeholders, label texts and error messages.
 	 * If you are configuring your form to be translated, there is also necessary to
-	 * set $form->Translator callable to translate everything with it by method 
+	 * set $form->Translator callable to translate everything with it by method
 	 * $form->SetTranslator();.
-	 * Default values is NULL, means no translations will 
+	 * Default values is NULL, means no translations will
 	 * be processed it no Translator callable is set.
 	 * @param bool $translate
 	 * @return \MvcCore\Ext\Form
@@ -21834,7 +23012,7 @@ abstract class Configuration extends Base
 	 * @param callable $handler
 	 * @return \MvcCore\Ext\Form
 	 */
-	public function SetTranslator (callable $translator = null) {
+	public function & SetTranslator (callable $translator = null) {
 		$this->Translate = is_callable($translator);
 		if ($this->Translate) {
 			$this->Translator = $translator;
@@ -21842,84 +23020,6 @@ abstract class Configuration extends Base
 			$this->Translator = NULL;
 		}
 		return $this;
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\Auth\Virtual{
-
-class Form extends \MvcCore\Ext\Form {
-
-	/**
-	 * Unique form id.
-	 * @var string
-	 */
-	public $Id = 'authentication';
-
-	/**
-	 * Form http method.
-	 * @var string
-	 */
-	public $Method = \MvcCore\Ext\Form::METHOD_POST;
-
-	/**
-	 * For sign in form:
-	 *   initialize all form fields, initialize hidden field with
-	 *   sourceUrl for cases when in request params is any source url param.
-	 *   To return there after form is submitted.
-	 * For sign out form:
-	 * - initialize sign out button and user into
-	 *   template for any custom template rendering.
-	 * @throws \MvcCore\Ext\Form\Core\Exception
-	 * @return \MvcCore\Ext\Auth\Virtual\Form|\MvcCore\Ext\Form
-	 */
-	public function Init () {
-		return parent::Init();
-	}
-
-	/**
-	 * For sign in form:
-	 * - if there is any user with the same password imprint
-	 *   store user in session for next requests, if there is not - wait for
-	 *   three seconds and then go to error page.
-	 * For sign out form:
-	 * - sign out submit - if everything is ok, unser user unique name from session
-	 *   for next requests to hanve not authenticated user anymore.
-	 * @param array $rawParams
-	 * @return array
-	 */
-	public function Submit ($rawParams = array()) {
-		return parent::Submit($rawParams);
-	}
-
-	/**
-	 * Add success and error url which are used
-	 * to redirect user to success url or error url
-	 * after form is submitted.
-	 * @param string $successUrl
-	 * @param string $errorUrl
-	 */
-	protected function addSuccessAndErrorUrlHiddens ($successUrl = '', $errorUrl = '') {
-		$this->AddField(new \MvcCore\Ext\Form\Hidden(array(
-			'name'			=> 'successUrl',
-			'value'			=> $successUrl,
-			'validators'	=> array('Url'),
-		)));
-		$this->AddField(new \MvcCore\Ext\Form\Hidden(array(
-			'name'			=> 'errorUrl',
-			'value'			=> $errorUrl,
-			'validators'	=> array('Url'),
-		)));
 	}
 }
 }
@@ -22041,97 +23141,6 @@ class Password extends Text
  * MvcCore
  *
  * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\Auth{
-
-use \MvcCore\Ext\Auth,
-	\MvcCore\Ext\Form;
-
-class SignInForm extends Virtual\Form {
-
-	/** @var string */
-	public $CssClass = 'sign-in';
-
-	/**
-	 * Initialize all form fields, initialize hidden field with
-	 * sourceUrl for cases when in request params is any source url param.
-	 * To return there after form is submitted.
-	 * @return \MvcCore\Ext\Auth\SignInForm
-	 */
-	public function Init () {
-		parent::Init();
-
-		$cfg = Auth::GetInstance()->GetConfig();
-		$this->addSuccessAndErrorUrlHiddens($cfg->signedInUrl, $cfg->errorUrl);
-
-		$this->AddField(new Form\Text(array(
-			'name'			=> 'username',
-			'placeholder'	=> 'User',
-		)));
-		$this->AddField(new Form\Password(array(
-			'name'			=> 'password',
-			'placeholder'	=> 'Password',
-		)));
-		$this->AddField(new Form\SubmitButton(array(
-			'name'			=> 'send',
-			'value'			=> 'Sign In',
-			'cssClasses'	=> array('button'),
-		)));
-
-		$params = \MvcCore\Application::GetInstance()->GetRequest()->GetParams();
-
-		$sourceUrl = isset($params['sourceUrl']) ? $params['sourceUrl'] : '' ;
-		$sourceUrl = filter_var($sourceUrl, FILTER_VALIDATE_URL);
-		$this->AddField(new Form\Hidden(array(
-			'name'			=> 'sourceUrl',
-			'value'			=> $sourceUrl,
-		)));
-
-		return $this;
-	}
-
-	/**
-	 * Sign in submit - if there is any user with the same password imprint
-	 * store user in session for next requests, if there is not - wait for
-	 * three seconds and then go to error page.
-	 * @param array $rawParams
-	 * @return array
-	 */
-	public function Submit ($rawParams = array()) {
-		parent::Submit();
-		$userClass = Auth::GetInstance()->GetConfig()->userClass;
-		if ($this->Result === Form::RESULT_SUCCESS) {
-			// now sended values are safe strings, 
-			// try to get use by username and compare password hashes:
-			$user = $userClass::Authenticate(
-				$this->Data['username'], $this->Data['password']
-			);
-			if (is_null($user)) {
-				$this->AddError('User name or password is incorrect.');
-			} else {
-				$userClass::StoreInSession($user);
-			}
-		}
-		$data = (object) $this->Data;
-		$this->SuccessUrl = $data->sourceUrl ? urldecode($data->sourceUrl) : $data->successUrl;
-		$this->ErrorUrl = $data->errorUrl;
-		if ($this->Result !== Form::RESULT_SUCCESS) {
-			sleep(3);
-		}
-		return array($this->Result, $this->Data, $this->Errors);
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
  * For the full copyright and license information, please view 
  * the LICENSE.md file that are distributed with this source code.
  *
@@ -22210,24 +23219,133 @@ namespace MvcCore\Ext\Auth{
 use \MvcCore\Ext\Auth,
 	\MvcCore\Ext\Form;
 
-class SignOutForm extends Virtual\Form {
+class SignInForm extends \MvcCore\Ext\Form implements \MvcCore\Ext\Auth\Interfaces\ISignForm {
+
+	use \MvcCore\Ext\Auth\Traits\SignForm;
+
+	/** @var string */
+	public $Id = 'authentication';
+
+	/** @var string */
+	public $CssClass = 'sign-in';
+
+	/** @var string */
+	public $Method = \MvcCore\Ext\Form::METHOD_POST;
+
+	/**
+	 * Initialize all form fields, initialize hidden field with
+	 * sourceUrl for cases when in request params is any source url param.
+	 * To return there after form is submitted.
+	 * @return \MvcCore\Ext\Auth\SignInForm
+	 */
+	public function Init () {
+		parent::Init();
+
+		$this->addSuccessAndErrorUrlHiddenControls();
+
+		$this->AddField(new Form\Text(array(
+			'name'			=> 'username',
+			'placeholder'	=> 'User',
+		)));
+		$this->AddField(new Form\Password(array(
+			'name'			=> 'password',
+			'placeholder'	=> 'Password',
+		)));
+		$this->AddField(new Form\SubmitButton(array(
+			'name'			=> 'send',
+			'value'			=> 'Sign In',
+			'cssClasses'	=> array('button'),
+		)));
+
+		$sourceUrl = \MvcCore\Application::GetInstance()->GetRequest()
+			->GetParam('sourceUrl', '.*', '', 'string');
+		$sourceUrl = filter_var(rawurldecode($sourceUrl), FILTER_VALIDATE_URL);
+
+		$this->AddField(new Form\Hidden(array(
+			'name'			=> 'sourceUrl',
+			'value'			=> rawurlencode($sourceUrl) ?: '',
+			'validators'	=> array('Url'),
+		)));
+
+		return $this;
+	}
+
+	/**
+	 * Sign in submit - if there is any user with the same password imprint
+	 * store user in session for next requests, if there is not - wait for
+	 * three seconds and then go to error page.
+	 * @param array $rawParams
+	 * @return array
+	 */
+	public function Submit ($rawParams = array()) {
+		parent::Submit();
+		if ($this->Result === Form::RESULT_SUCCESS) {
+			// now sended values are safe strings,
+			// try to get use by username and compare password hashes:
+			$userClass = Auth::GetInstance()->GetConfig()->userClass;
+			$user = $userClass::LogIn(
+				$this->Data['username'], $this->Data['password']
+			);
+			if ($user === NULL) $this->AddError(
+				'User name or password is incorrect.', 
+				array('username', 'password')
+			);
+		}
+		$data = (object) $this->Data;
+		$this->SuccessUrl = $data->sourceUrl
+			? $data->sourceUrl
+			: $data->successUrl;
+		$this->ErrorUrl = $data->errorUrl;
+		if ($this->Result !== Form::RESULT_SUCCESS) sleep(3);
+		return array(
+			$this->Result,
+			$this->Data,
+			$this->Errors
+		);
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Auth{
+
+use \MvcCore\Ext\Auth,
+	\MvcCore\Ext\Form;
+
+class SignOutForm extends \MvcCore\Ext\Form implements \MvcCore\Ext\Auth\Interfaces\ISignForm {
+
+	use \MvcCore\Ext\Auth\Traits\SignForm;
+
+	/** @var string */
+	public $Id = 'authentication';
 
 	/** @var string */
 	public $CssClass = 'sign-out';
 
-	/** @var \MvcCore\Ext\Auth\Virtual\User */
-	public $User = NULL;
+	/** @var string */
+	public $Method = \MvcCore\Ext\Form::METHOD_POST;
+
+	/** @var \MvcCore\Ext\Auth\Traits\User|\MvcCore\Ext\Auth\Interfaces\IUser */
+	protected $user = NULL;
 
 	/**
-	 * Initialize sign out button and user into 
+	 * Initialize sign out button and user into
 	 * template for any custom template rendering.
 	 * @return \MvcCore\Ext\Auth\SignOutForm
 	 */
 	public function Init () {
 		parent::Init();
 
-		$cfg = Auth::GetInstance()->GetConfig();
-		$this->addSuccessAndErrorUrlHiddens($cfg->signedInUrl, $cfg->errorUrl);
+		$this->addSuccessAndErrorUrlHiddenControls();
 
 		$this->AddField(new Form\SubmitButton(array(
 			'name'			=> 'send',
@@ -22235,7 +23353,7 @@ class SignOutForm extends Virtual\Form {
 			'cssClasses'	=> array('button'),
 		)));
 
-		$this->User = Auth::GetInstance()->GetUser();
+		$this->user = Auth::GetInstance()->GetUser();
 
 		return $this;
 	}
@@ -22250,10 +23368,10 @@ class SignOutForm extends Virtual\Form {
 		parent::Submit();
 		if ($this->Result === Form::RESULT_SUCCESS) {
 			$userClass = Auth::GetInstance()->GetConfig()->userClass;
-			$userClass::ClearFromSession();
+			$userClass::LogOut();
 		}
-		$this->SuccessUrl = $this->Data['successUrl'];
-		$this->ErrorUrl = $this->Data['errorUrl'];
+		$this->SetSuccessUrl($this->Data['successUrl']);
+		$this->SetErrorUrl($this->Data['errorUrl']);
 		return array($this->Result, $this->Data, $this->Errors);
 	}
 }
@@ -22771,6 +23889,51 @@ use
 	MvcCore\Ext\Form,
 	MvcCore\Ext\Form\Core;
 
+class Maxlength extends Core\Validator
+{
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+		$submitValue = trim($submitValue);
+		if (isset($field->Maxlength) && !is_null($field->Maxlength) && $field->Maxlength > 0) {
+			$safeValue = mb_substr($submitValue, 0, $field->Maxlength);
+		} else {
+			$safeValue = $submitValue;
+		}
+		if (mb_strlen($safeValue) !== mb_strlen($submitValue)) {
+			$this->addError(
+				$field, 
+				Form::$DefaultMessages[Form::MAX_LENGTH], 
+				function ($msg, $args) use (& $field) {
+					$args[] = $field->Maxlength;
+					return Core\View::Format($msg, $args);
+				}
+			);
+		}
+		return $safeValue;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view 
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Validators{
+
+
+
+
+
+
+use
+	MvcCore\Ext\Form,
+	MvcCore\Ext\Form\Core;
+
 class NumberField extends Core\Validator
 {
 	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
@@ -22826,51 +23989,6 @@ class NumberField extends Core\Validator
 				Form::$DefaultMessages[$errorMsgKey],
 				function ($msg, $args) use (& $errorReplacements) {
 					$args = array_merge($args, $errorReplacements);
-					return Core\View::Format($msg, $args);
-				}
-			);
-		}
-		return $safeValue;
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view 
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\Form\Validators{
-
-
-
-
-
-
-use
-	MvcCore\Ext\Form,
-	MvcCore\Ext\Form\Core;
-
-class Maxlength extends Core\Validator
-{
-	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
-		$submitValue = trim($submitValue);
-		if (isset($field->Maxlength) && !is_null($field->Maxlength) && $field->Maxlength > 0) {
-			$safeValue = mb_substr($submitValue, 0, $field->Maxlength);
-		} else {
-			$safeValue = $submitValue;
-		}
-		if (mb_strlen($safeValue) !== mb_strlen($submitValue)) {
-			$this->addError(
-				$field, 
-				Form::$DefaultMessages[Form::MAX_LENGTH], 
-				function ($msg, $args) use (& $field) {
-					$args[] = $field->Maxlength;
 					return Core\View::Format($msg, $args);
 				}
 			);
@@ -22956,48 +24074,6 @@ class SafeString extends Core\Validator
  * MvcCore
  *
  * This source file is subject to the BSD 3 License
- * For the full copyright and license information, please view
- * the LICENSE.md file that are distributed with this source code.
- *
- * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
- * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
- */
-
-namespace MvcCore\Ext\Form\Validators{
-
-
-
-
-
-
-
-use
-	MvcCore\Ext\Form,
-	MvcCore\Ext\Form\Core;
-
-class Url extends Core\Validator
-{
-	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
-		$submitValue = trim($submitValue);
-		$safeValue = filter_var($submitValue, FILTER_VALIDATE_URL);
-		$safeValue = $safeValue === FALSE ? '' : $safeValue ;
-		if (mb_strlen($safeValue) !== mb_strlen($submitValue)) {
-			$this->addError(
-				$field,
-				Form::$DefaultMessages[Form::URL],
-				function ($msg, $args) {
-					return Core\View::Format($msg, $args);
-				}
-			);
-		}
-		return $safeValue;
-	}
-}
-}
-/**
- * MvcCore
- *
- * This source file is subject to the BSD 3 License
  * For the full copyright and license information, please view 
  * the LICENSE.md file that are distributed with this source code.
  *
@@ -23026,6 +24102,45 @@ class Integer extends Core\Validator
 			$this->addError($field, Form::$DefaultMessages[Form::INTEGER], function ($msg, $args) {
 				return Core\View::Format($msg, $args);
 			});
+		}
+		return $safeValue;
+	}
+}
+}
+/**
+ * MvcCore
+ *
+ * This source file is subject to the BSD 3 License
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that are distributed with this source code.
+ *
+ * @copyright	Copyright (c) 2016 Tom FlÃ­dr (https://github.com/mvccore/mvccore)
+ * @license		https://mvccore.github.io/docs/mvccore/4.0.0/LICENCE.md
+ */
+
+namespace MvcCore\Ext\Form\Validators{
+
+
+use
+	MvcCore\Ext\Form,
+	MvcCore\Ext\Form\Core;
+
+class Url extends Core\Validator
+{
+	public function Validate ($submitValue, $fieldName, \MvcCore\Ext\Form\Core\Field & $field) {
+		$submitValue = trim($submitValue);
+		while (mb_strpos($submitValue, '%') !== FALSE) 
+			$submitValue = rawurldecode($submitValue);
+			$safeValue = filter_var($submitValue, FILTER_VALIDATE_URL);
+		$safeValue = $safeValue === FALSE ? '' : $safeValue ;
+		if (mb_strlen($safeValue) !== mb_strlen($submitValue)) {
+			$this->addError(
+				$field,
+				Form::$DefaultMessages[Form::URL],
+				function ($msg, $args) {
+					return Core\View::Format($msg, $args);
+				}
+			);
 		}
 		return $safeValue;
 	}

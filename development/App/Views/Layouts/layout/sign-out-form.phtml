@@ -5,7 +5,7 @@
 	<?php echo $this->SignOutForm->RenderBegin(); ?>
 
 		<?php if ($this->User): ?>
-			<span><?php echo $this->User->FullName; ?></span>
+			<span><?php echo $this->User->GetFullName(); ?></span>
 		<?php endif; ?>
 
 		<?php foreach ($this->SignOutForm->Fields as & $field): ?>
