@@ -17,7 +17,7 @@ class Bootstrap
 
 		// Initialize authentication service extension and set custom user class
 		\MvcCore\Ext\Auth::GetInstance()
-			->SetPasswordHashSalt('!fa*RN+twe65ts1E9$8z16d')
+			->SetPasswordHashSalt('s9E56/QH6!a69sJML9aS$6s+')
 			->SetUserClass(\MvcCore\Ext\Auth\Users\Database::class)
 			/*->SetTableStructureForDbUsers('users', array(
 				'id'			=> 'id',
@@ -25,7 +25,8 @@ class Bootstrap
 				'passwordHash'	=> 'password_hash',
 				'fullName'		=> 'full_name',
 			))*/;
-
+		//var_dump(\MvcCore\Ext\Auth\User::EncodePasswordToHash('demo'));
+		//die();
 		// set up application routes without custom names, defined basicly as Controller::Action
 		\MvcCore\Router::GetInstance(array(
 			'Index:Index'			=> '/',

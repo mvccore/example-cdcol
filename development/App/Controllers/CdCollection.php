@@ -45,8 +45,8 @@ class CdCollection extends Base
 	 * to initialize javascript in delete post forms
 	 * created multiple times in view only.
 	 * @return void
-     */
-    public function IndexAction () {
+	 */
+	public function IndexAction () {
 		$this->view->Title = 'CD Collection';
 		$this->view->Albums = Models\Album::GetAll();
 		/** @var $abstractForm \MvcCore\Ext\Form */

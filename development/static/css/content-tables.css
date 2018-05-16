@@ -27,7 +27,7 @@ table.theme::before{
 	background-position:0 0;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
-	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/box-bg.passive.min.svg'); ?>');
+	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/box-bg.min.svg'); ?>');
 }
 table.theme:after,
 table.theme::after{
@@ -43,7 +43,7 @@ table.theme::after{
 	background-position:0 0;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
-	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/box-dots-bg.passive.min.svg'); ?>');
+	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/box-light-dots-bg.min.svg'); ?>');
 }
 table.theme tr th,
 table.theme tr td{
@@ -60,9 +60,9 @@ table.theme tr th{
 	color:#fff;
 	font-weight:bold;
 	background-color:#15215a;
-	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/form.min.svg'); ?>');
+	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/box-dark-dots-bg.min.svg'); ?>');
 	background-image:linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)),
-					 url('<?php echo $this->AssetUrl('/static/img/theme/form.min.svg'); ?>');
+					 url('<?php echo $this->AssetUrl('/static/img/theme/box-dark-dots-bg.min.svg'); ?>');
 	background-size:100% 100%;
 	background-position:0 0;
 	background-repeat:no-repeat;

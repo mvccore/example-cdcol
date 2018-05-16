@@ -52,7 +52,7 @@ GO
 
 SET IDENTITY_INSERT [dbo].[users] ON
 INSERT [dbo].[users] ([id], [user_name], [password_hash], [full_name]) 
-VALUES (1, N'admin', N'$2y$10$IWZhKlJOK3R3ZTY1dHMxROHExizREYyUTjUUiQfm9wk.rrPCRjwbC', N'Administrator') -- password is "demo"
+VALUES (1, N'admin', N'$2y$10$czlFNTYvUUg2IWE2OXNKTO8PB5xPGXz9i8IH7Fa7M0YsPlSLriJZu', N'Administrator') -- password is "demo"
 SET IDENTITY_INSERT [dbo].[users] OFF
 GO
 
@@ -100,9 +100,7 @@ ALTER TABLE [dbo].[users] ADD  CONSTRAINT [IX_users_user_name] UNIQUE NONCLUSTER
 ) WITH (
 	PAD_INDEX = OFF, 
 	STATISTICS_NORECOMPUTE = OFF, 
-	SORT_IN_TEMPDB = OFF, 
 	IGNORE_DUP_KEY = OFF, 
-	ONLINE = OFF, 
 	ALLOW_ROW_LOCKS = ON, 
 	ALLOW_PAGE_LOCKS = ON
 ) ON [PRIMARY]

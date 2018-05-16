@@ -6,7 +6,7 @@ form.theme{
 	display:block;
 	color:#fff;
 	background-color:transparent;
-	background:url('<?php echo $this->AssetUrl('/static/img/theme/box-bg.passive.min.svg'); ?>');
+	background:url('<?php echo $this->AssetUrl('/static/img/theme/box-bg.min.svg'); ?>');
 	box-shadow:0 0 15px #eaecf5,0 0 15px rgba(234,236,245,0.75);
 }
 form.theme input,
@@ -30,7 +30,7 @@ form.theme::before {
 	width:calc(100% - 6px);
 	height:calc(100% - 6px);
 	background-color:#15215a;
-	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/form.min.svg'); ?>');
+	background-image:url('<?php echo $this->AssetUrl('/static/img/theme/box-dark-dots-bg.min.svg'); ?>');
 }
 
 /* all controls */

@@ -31,4 +31,4 @@ CREATE TABLE `users` (
 ) CHARSET=utf8;
 
 INSERT INTO `users` (`id`, `user_name`, `password_hash`, `full_name`) VALUES
-(1,	'admin',	'$2y$10$IWZhKlJOK3R3ZTY1dHMxROHExizREYyUTjUUiQfm9wk.rrPCRjwbC',	'Administrator'); -- password is "demo"
+(1,	'admin',	'$2y$10$czlFNTYvUUg2IWE2OXNKTO8PB5xPGXz9i8IH7Fa7M0YsPlSLriJZu',	'Administrator'); -- password is "demo"
