@@ -72,7 +72,7 @@ class CdCollection extends Base
     public function EditAction () {
 		$this->view->Title = 'Edit album - ' . $this->album->Title;
 		$this->view->DetailForm = $this->getCreateEditForm(TRUE)
-			->SetDefaults($this->album->GetValues(), TRUE);
+			->SetDefaults($this->album->GetValues(), TRUE, TRUE);
     }
     /**
      * Submit action data fro create and edit form.

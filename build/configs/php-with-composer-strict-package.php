@@ -51,5 +51,5 @@ $config = array(
 		"class_exists('\MvcCore\Ext\Debug\Tracy')"	=> 'FALSE',
 	),
 	'minifyTemplates'		=> 1,// Remove non-conditional comments and whitespaces
-	'minifyPhp'				=> 0,// Remove comments and whitespaces
+	'minifyPhp'				=> 1,// Remove comments and whitespaces
 );

@@ -7,7 +7,7 @@ use \MvcCore\Ext\Form,
 
 class Base extends \MvcCore\Controller
 {
-	/** @var \App\Models\User|\MvcCore\Ext\Auth\Interfaces\IUser */
+	/** @var \MvcCore\Ext\Auth\Interfaces\IUser */
 	protected $user = null;
 
 	public function Init() {
