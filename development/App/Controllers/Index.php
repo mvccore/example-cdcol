@@ -28,8 +28,8 @@ class Index extends Base
 
 	protected function getSignInForm () {
 		// you can customize sign in form here:
-		/** @var $signInForm \MvcCore\Ext\Auth\SignInForm */
-		$signInForm = \MvcCore\Ext\Auth::GetInstance()->GetForm();
+		/** @var $signInForm \MvcCore\Ext\Auth\Basic\SignInForm */
+		$signInForm = \MvcCore\Ext\Auth\Basic::GetInstance()->GetForm();
 		// add 'theme' css class to style the form by css stylesheet
 		$signInForm->AddCssClass('theme');
 		// set signed in url to albums list by default:

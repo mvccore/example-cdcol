@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS `cdcol`;
+
 CREATE DATABASE IF NOT EXISTS `cdcol` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 USE `cdcol`;
 
@@ -22,13 +24,19 @@ INSERT INTO `cds` (`id`, `title`, `interpret`, `year`) VALUES
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `user_name` varchar(50) NOT NULL,
-  `password_hash` varchar(60) NOT NULL,
-  `full_name` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `user_name` (`user_name`)
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`active` TINYINT(1) NOT NULL DEFAULT 1,
+	`admin` TINYINT(1) NOT NULL DEFAULT 0,
+	`user_name` VARCHAR(50) NOT NULL,
+	`full_name` VARCHAR(100) NOT NULL,
+	`password_hash` VARCHAR(60) NOT NULL,
+	`permissions` VARCHAR(1000) NULL DEFAULT NULL,
+	`roles` VARCHAR(1000) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`),
+	UNIQUE INDEX `user_name` (`user_name`),
+	INDEX `active` (`active`),
+	INDEX `admin` (`admin`)
 ) CHARSET=utf8;
 
-INSERT INTO `users` (`id`, `user_name`, `password_hash`, `full_name`) VALUES
-(1,	'admin',	'$2y$10$czlFNTYvUUg2IWE2OXNKTO8PB5xPGXz9i8IH7Fa7M0YsPlSLriJZu',	'Administrator'); -- password is "demo"
+INSERT INTO `users` (`id`, `active`, `admin`, `user_name`, `full_name`, `password_hash`) VALUES
+(1,	1,	1,	'admin',	'Administrator',	'$2y$10$czlFNTYvUUg2IWE2OXNKTO8PB5xPGXz9i8IH7Fa7M0YsPlSLriJZu'); -- password is "demo"

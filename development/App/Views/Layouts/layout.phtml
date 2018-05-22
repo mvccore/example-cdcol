@@ -16,7 +16,7 @@
 	<body>
 		<!--[if lt IE 9]><div class="old-browser-warning"><p>Your browser is <b>very</b> old.<br />Please install any actual browser, <br />for example <a href="https://www.google.com/chrome" target="_blank">Google Chrome</a> or <a href="https://www.mozilla.org/en/firefox/new" target="_blank">Mozilla Firefox</a>.</p></div><![endif]-->
 		<div class="master-container">
-			<?php echo $this->RenderLayout('./layout/sign-out-form'); ?>
+			<?php if ($this->SignOutForm) echo $this->SignOutForm->Render(); ?>
 			<div class="content route-<?php 
 				echo str_replace(':', '-', strtolower($this->GetController()->GetRouter()->GetCurrentRoute()->GetName()));
 			?>">

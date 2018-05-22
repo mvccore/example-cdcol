@@ -9,9 +9,15 @@ background:	linear-gradient(rgb(108,120,159,0.6),rgb(108,120,159,0.3)),
 
 .master-container{width:50%;min-width:518px;margin:30px auto 50px auto;}
 
-input.text-link{background:transparent;border:0;padding:0;}
-a,input.text-link{color:#3d497f;border-bottom:1px solid #3d497f;font-family:'MyriadRegular';text-decoration:none;cursor:pointer;}
-a:hover,a:focus,a:active,input.text-link:hover,input.text-link:focus,input.text-link:active{color:#263b97;border-bottom:1px solid transparent;}
+button.text-link{background:transparent;border:0;padding:0;}
+a,
+button.text-link{color:#3d497f;border-bottom:1px solid #3d497f;font-family:'MyriadRegular';text-decoration:none;cursor:pointer;}
+a:hover,
+a:focus,
+a:active,
+button.text-link:hover,
+button.text-link:focus,
+button.text-link:active{color:#263b97;border-bottom:1px solid transparent;}
 a:visited{color:#633d7f;border-bottom:1px solid #633d7f;}
 a:visited:hover,a:visited:focus,a:visited:active{color:#263b97;border-bottom:1px solid transparent;}
 
@@ -44,6 +50,7 @@ form.sign-in button{margin:10px auto 0 auto;}
 form.sign-in input{width:200px;margin:5px auto;}
 
 form.sign-out{height:21px;margin:0 25px 10px 25px;text-align:right;color:#fff;}
-form.sign-out input{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important;}
-form.sign-out input.text-link:hover,form.sign-out input.text-link:focus,
-form.sign-out input.text-link:active{border-bottom:0 !important;}
+form.sign-out button.text-link{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important;}
+form.sign-out button.text-link:hover,
+form.sign-out button.text-link:focus,
+form.sign-out button.text-link:active{border-bottom:0 !important;}

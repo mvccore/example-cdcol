@@ -7,14 +7,13 @@ use \MvcCore\Ext\Form,
 
 class Base extends \MvcCore\Controller
 {
-	/** @var \MvcCore\Ext\Auth\Interfaces\IUser */
+	/** @var \MvcCore\Ext\Auth\Basic\Interfaces\IUser */
 	protected $user = null;
 
 	public function Init() {
 		parent::Init();
-		$this->user = Auth::GetInstance()->GetUser();
-		Form::AddCsrfErrorHandler(function (Form & $form, $errorMsg) {
-			Auth\User::ClearFromSession();
+		\MvcCore\Ext\Form::AddCsrfErrorHandler(function (\MvcCore\Ext\Form & $form, $errorMsg) {
+			\MvcCore\Ext\Auth\Basic\User::LogOut();
 			self::Redirect($this->Url(
 				'Index:Index',
 				array('absolute' => TRUE, 'sourceUrl'	=> rawurlencode($form->ErrorUrl))
@@ -34,25 +33,12 @@ class Base extends \MvcCore\Controller
 		// customize sign out form if necessary, set it into view
 		$signOutForm = NULL;
 		if ($this->user) {
-			/** @var $signOutForm \MvcCore\Ext\Auth\SignOutForm */
-			$signOutForm = Auth::GetInstance()->GetForm()
-				// initialize fields
-				->Init()
-				// set signed out url to homepage
-				->SetDefaults(array(
-					'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
-				));
-			$signOutForm
-				// replace sign out <button> tag to sign out <input> tag
-				->RemoveField(
-					$signOutForm->GetFirstFieldsByClass(Form\SubmitButton::class)->Name
-				)
-				->AddField(new Form\SubmitInput(array(
-					'name'		=> 'send',
-					'value'		=> 'Sign Out',
-					'cssClasses'=> array('text-link')
-				))
-			);
+			/** @var $signOutForm \MvcCore\Ext\Auth\Basic\SignOutForm */
+			$signOutForm = \MvcCore\Ext\Auth\Basic::GetInstance()->GetForm();
+			$signOutForm->SetDefaults(array(// set signed out url to homepage
+				'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
+			));
+			$signOutForm->GetFirstFieldsByClass(Form\SubmitButton::class)->AddCssClass('text-link');
 		}
 		$this->view->SignOutForm = $signOutForm;
 	}

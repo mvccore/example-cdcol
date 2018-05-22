@@ -16,7 +16,7 @@ class Bootstrap
 
 
 		// Initialize authentication service extension and set custom user class
-		\MvcCore\Ext\Auth::GetInstance()
+		\MvcCore\Ext\Auth\Basic::GetInstance()
 			->SetPasswordHashSalt('s9E56/QH6!a69sJML9aS$6s+')
 			->SetUserClass(\MvcCore\Ext\Auth\Users\Database::class)
 			/*->SetTableStructureForDbUsers('users', array(
