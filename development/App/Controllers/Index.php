@@ -2,10 +2,13 @@
 
 namespace App\Controllers;
 
-use \MvcCore\Ext\Form;
-
 class Index extends Base
 {
+	/**
+	 * Render homepage with signin form.
+	 * If user is already authenticated, redirect user to albums list.
+	 * @return void
+	 */
 	public function IndexAction () {
 		if ($this->user !== NULL)
 			self::Redirect($this->Url('CdCollection:Index'));
@@ -19,10 +22,18 @@ class Index extends Base
 			));
 	}
 
+	/**
+	 * Render not found action.
+	 * @return void
+	 */
 	public function NotFoundAction(){
 		$this->ErrorAction();
 	}
 
+	/**
+	 * Render possible server error action.
+	 * @return void
+	 */
 	public function ErrorAction(){
 		$code = $this->response->GetCode();
 		$message = $this->request->GetParam('message', '\\a-zA-Z0-9_;, /\-\@\:');

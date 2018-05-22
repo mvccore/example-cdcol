@@ -10,12 +10,13 @@ class CdCollection extends Base
 	/** @var \App\Models\Album */
 	protected $album;
 
-    /**
-	 * Initialize this controller, before prdispatching and before every action
-	 * executing in current controller. This method is template method - so
-	 * it's necessary to call parent method at the beginning.
+	/**
+	 * Initialize this controller, before pre-dispatching and before every action
+	 * executing in this controller. This method is template method - so
+	 * it's necessary to call parent method first.
+	 * @return void
 	 */
-	public function Init(){
+	public function Init () {
 		parent::Init();
 		// if user is not authorized, redirect to homepage and exit
 		if (!$this->user)
@@ -23,12 +24,14 @@ class CdCollection extends Base
 				'Index:Index', array('sourceUrl' => rawurlencode($this->request->GetFullUrl()))
 			));
 	}
-    /**
-     * Pre execute every action in current controller. This method
-	 * is template method - so it's necessary to call parent method at the beginning.
-     */
-    public function PreDispatch() {
-        parent::PreDispatch();
+
+	/**
+	 * Pre execute every action in this controller. This method
+	 * is template method - so it's necessary to call parent method first.
+	 * @return void
+	 */
+	public function PreDispatch () {
+		parent::PreDispatch();
 		// if there is any 'id' param in $_GET or $_POST,
 		// try to load album model instance from database
 		$id = $this->GetParam("id", "0-9");
@@ -36,11 +39,12 @@ class CdCollection extends Base
 			$this->album = Models\Album::GetById(intval($id));
 			if (!$this->album) $this->renderNotFound();
 		}
-    }
-    /**
-	 * Load all album items, create virtual delete form
-	 * to initialize and manage CSRF tokens only once, not
-	 * for every album row and add supporting js file
+	}
+
+	/**
+	 * Load all album items, create empty form  to delete any item
+	 * to generate and manage CSRF tokens (once only, not
+	 * for every album row) and add supporting js file
 	 * to initialize javascript in delete post forms
 	 * created multiple times in view only.
 	 * @return void
@@ -53,31 +57,34 @@ class CdCollection extends Base
 			= $this->getVirtualDeleteForm()->SetUpCsrf();
 		$this->view->Js('varFoot')
 			->Prepend(self::$staticPath . '/js/List.js');
-    }
-    /**
+	}
+
+	/**
 	 * Create form for new album without hidden id input.
 	 * @return void
-     */
-    public function CreateAction () {
+	 */
+	public function CreateAction () {
 		$this->view->Title = 'New album';
 		$this->view->DetailForm = $this->getCreateEditForm(FALSE);
-    }
-    /**
-     * Load previously saved album data,
+	}
+
+	/**
+	 * Load previously saved album data,
 	 * create edit form with hidden id input
 	 * and set form defaults with album values.
 	 * @return void
-     */
+	 */
     public function EditAction () {
 		$this->view->Title = 'Edit album - ' . $this->album->Title;
 		$this->view->DetailForm = $this->getCreateEditForm(TRUE)
 			->SetDefaults($this->album->GetValues(), TRUE, TRUE);
     }
-    /**
-     * Submit action data fro create and edit form.
+
+	/**
+	 * Handle create and edit action form submit.
 	 * @return void
-     */
-    public function SubmitAction () {
+	 */
+	public function SubmitAction () {
 		$detailForm = $this->getCreateEditForm();
 		if (!$this->album) {
 			$this->album = new Models\Album();
@@ -91,21 +98,23 @@ class CdCollection extends Base
 			$this->album->SetUp($detailForm->Data, TRUE)->Save();
 		}
 		$detailForm->RedirectAfterSubmit();
-    }
-    /**
+	}
+
+	/**
 	 * Delete album by sended id param, if sended CSRF tokens
-	 * are the same as tokens in session, tokens are managed
-	 * by virtual delete form, initialized only once, not for all album rows.
+	 * are the same as CSRF tokens in session (tokens are managed
+	 * by empty virtual delete form initialized once, not for all album rows).
 	 * @return void
-     */
+	 */
     public function DeleteAction () {
 		if ($this->getVirtualDeleteForm()->ValidateCsrf($_POST)) {
 			$this->album->Delete();
 		}
 		self::Redirect($this->Url(':Index'));
     }
+
 	/**
-	 * Create form for create album and edit album
+	 * Create form instance to create new or edit existing album.
 	 * @return \MvcCore\Ext\Form
 	 */
 	protected function getCreateEditForm ($editForm = TRUE) {
@@ -146,9 +155,11 @@ class CdCollection extends Base
 			->SetValue('Save');
 		return $form->AddFields($title, $interpret, $year, $send);
 	}
+
 	/**
-	 * Create empty form where to store CSRF tokens
-	 * @return \MvcCore\Ext\Form|mixed
+	 * Create empty form, where to store and manage CSRF 
+	 * tokens for delete links in albums list.
+	 * @return \MvcCore\Ext\Form
 	 */
 	protected function getVirtualDeleteForm () {
 		return (new Form($this))
