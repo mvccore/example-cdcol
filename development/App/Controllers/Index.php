@@ -11,11 +11,18 @@ class Index extends Base
 			self::Redirect($this->Url('CdCollection:Index'));
 		$this->view->Title = 'CD Collection';
 		$this->view->User = $this->user;
-		$this->view->SignInForm = $this->getSignInForm();
+		$this->view->SignInForm = \MvcCore\Ext\Auth\Basic::GetInstance()
+			->GetSignInForm()
+			->AddCssClass('theme')
+			->SetDefaults(array(// set signed in url to albums list by default:
+				'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
+			));
 	}
+
 	public function NotFoundAction(){
 		$this->ErrorAction();
 	}
+
 	public function ErrorAction(){
 		$code = $this->response->GetCode();
 		$message = $this->request->GetParam('message', '\\a-zA-Z0-9_;, /\-\@\:');
@@ -24,18 +31,5 @@ class Index extends Base
 		$this->view->Title = "Error $code";
 		$this->view->Message = $message;
 		$this->Render('error');
-	}
-
-	protected function getSignInForm () {
-		// you can customize sign in form here:
-		/** @var $signInForm \MvcCore\Ext\Auth\Basic\SignInForm */
-		$signInForm = \MvcCore\Ext\Auth\Basic::GetInstance()->GetForm();
-		// add 'theme' css class to style the form by css stylesheet
-		$signInForm->AddCssClass('theme');
-		// set signed in url to albums list by default:
-		$signInForm->SetDefaults(array(
-			'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
-		));
-		return $signInForm;
 	}
 }

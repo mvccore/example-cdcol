@@ -7,13 +7,13 @@ use \MvcCore\Ext\Form,
 
 class Base extends \MvcCore\Controller
 {
-	/** @var \MvcCore\Ext\Auth\Basic\Interfaces\IUser */
+	/** @var \MvcCore\Ext\Auth\Basics\Interfaces\IUser */
 	protected $user = null;
 
 	public function Init() {
 		parent::Init();
 		\MvcCore\Ext\Form::AddCsrfErrorHandler(function (\MvcCore\Ext\Form & $form, $errorMsg) {
-			\MvcCore\Ext\Auth\Basic\User::LogOut();
+			\MvcCore\Ext\Auth\Basics\User::LogOut();
 			self::Redirect($this->Url(
 				'Index:Index',
 				array('absolute' => TRUE, 'sourceUrl'	=> rawurlencode($form->ErrorUrl))
@@ -30,17 +30,13 @@ class Base extends \MvcCore\Controller
 	private function _preDispatchSetUpAuth () {
 		// init user in view
 		$this->view->User = $this->user;
-		// customize sign out form if necessary, set it into view
-		$signOutForm = NULL;
-		if ($this->user) {
-			/** @var $signOutForm \MvcCore\Ext\Auth\Basic\SignOutForm */
-			$signOutForm = \MvcCore\Ext\Auth\Basic::GetInstance()->GetForm();
-			$signOutForm->SetDefaults(array(// set signed out url to homepage
-				'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
-			));
-			$signOutForm->GetFirstFieldsByClass(Form\SubmitButton::class)->AddCssClass('text-link');
-		}
-		$this->view->SignOutForm = $signOutForm;
+		if ($this->user)
+			// set signout form into view, set signedout url to homepage:
+			$this->view->SignOutForm = \MvcCore\Ext\Auth\Basic::GetInstance()
+				->GetSignOutForm()
+				->SetDefaults(array(
+					'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
+				));
 	}
 	private function _preDispatchSetUpBundles () {
 		\MvcCore\Ext\View\Helpers\Assets::SetGlobalOptions(array(

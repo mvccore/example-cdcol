@@ -18,11 +18,10 @@ class CdCollection extends Base
 	public function Init(){
 		parent::Init();
 		// if user is not authorized, redirect to homepage and exit
-		if (!$this->user) {
+		if (!$this->user)
 			self::Redirect($this->Url(
 				'Index:Index', array('sourceUrl' => rawurlencode($this->request->GetFullUrl()))
 			));
-		}
 	}
     /**
      * Pre execute every action in current controller. This method
@@ -143,8 +142,8 @@ class CdCollection extends Base
 			->SetSize(4);
 		$send = (new Form\SubmitButton)
 			->SetName('send')
-			->SetCssClasses('button-green')
-			->SetValue('<span><b>Save</b></span>');
+			->SetCssClasses('btn btn-large')
+			->SetValue('Save');
 		return $form->AddFields($title, $interpret, $year, $send);
 	}
 	/**

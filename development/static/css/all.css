@@ -9,15 +9,20 @@ background:	linear-gradient(rgb(108,120,159,0.6),rgb(108,120,159,0.3)),
 
 .master-container{width:50%;min-width:518px;margin:30px auto 50px auto;}
 
-button.text-link{background:transparent;border:0;padding:0;}
+form.signout button[type=submit],
+form.delete input[type=submit]{background:transparent;border:0;padding:0;}
 a,
-button.text-link{color:#3d497f;border-bottom:1px solid #3d497f;font-family:'MyriadRegular';text-decoration:none;cursor:pointer;}
+form.signout button[type=submit],
+form.delete input[type=submit]{color:#3d497f;border-bottom:1px solid #3d497f;font-family:'MyriadRegular';text-decoration:none;cursor:pointer;}
 a:hover,
 a:focus,
 a:active,
-button.text-link:hover,
-button.text-link:focus,
-button.text-link:active{color:#263b97;border-bottom:1px solid transparent;}
+form.signout button[type=submit]:hover,
+form.signout button[type=submit]:focus,
+form.signout button[type=submit]:active,
+form.delete input[type=submit]:hover,
+form.delete input[type=submit]:focus,
+form.delete input[type=submit]:active{color:#263b97;border-bottom:1px solid transparent;}
 a:visited{color:#633d7f;border-bottom:1px solid #633d7f;}
 a:visited:hover,a:visited:focus,a:visited:active{color:#263b97;border-bottom:1px solid transparent;}
 
@@ -45,12 +50,12 @@ form#detail input{width:300px;margin-bottom:10px;}
 form#detail input.year{width:100px;}
 form#detail button.send{margin-left:85px;}
 
-form.sign-in{width:75%;margin:15px auto 0 auto;text-align:center;}
-form.sign-in button{margin:10px auto 0 auto;}
-form.sign-in input{width:200px;margin:5px auto;}
+form.signin{width:75%;margin:15px auto 0 auto;text-align:center;}
+form.signin button{margin:10px auto 0 auto;}
+form.signin input{width:200px;margin:5px auto;}
 
-form.sign-out{height:21px;margin:0 25px 10px 25px;text-align:right;color:#fff;}
-form.sign-out button.text-link{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important;}
-form.sign-out button.text-link:hover,
-form.sign-out button.text-link:focus,
-form.sign-out button.text-link:active{border-bottom:0 !important;}
+form.signout{height:21px;margin:0 25px 10px 25px;text-align:right;color:#fff;}
+form.signout button[type=submit]{margin-left:5px;color:#fff !important;border-bottom:1px solid #fff !important;}
+form.signout button[type=submit]:hover,
+form.signout button[type=submit]:focus,
+form.signout button[type=submit]:active{border-bottom:0 !important;}
