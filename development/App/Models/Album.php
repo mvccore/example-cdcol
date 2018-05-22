@@ -29,7 +29,7 @@ class Album extends \MvcCore\Model
 		")->fetchAll(\PDO::FETCH_ASSOC);
 		$result = array();
 		foreach ($rawData as $rawItem) {
-			$item = (new self)->SetUp($rawItem);
+			$item = (new self)->SetUp($rawItem, TRUE);
 			$result[$item->Id] = $item;
 		}
 		return $result;

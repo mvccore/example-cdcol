@@ -40,7 +40,7 @@ SET IDENTITY_INSERT dbo.cds OFF;
 GO
 
 SET IDENTITY_INSERT dbo.users ON
-INSERT dbo.users (id, active, [admin], [user_name], password_hash, full_name) VALUES 
+INSERT dbo.users (id, active, [admin], [user_name], full_name, password_hash) VALUES 
 (1, 1, 1, 'admin', 'Administrator', '$2y$10$czlFNTYvUUg2IWE2OXNKTO8PB5xPGXz9i8IH7Fa7M0YsPlSLriJZu') -- password is "demo"
 SET IDENTITY_INSERT dbo.users OFF
 GO
