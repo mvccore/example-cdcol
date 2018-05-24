@@ -2,23 +2,20 @@
 
 namespace App\Controllers;
 
-use \MvcCore\Ext\Form,
-	\MvcCore\Ext\Auth;
-
 class Base extends \MvcCore\Controller
 {
 	/**
 	 * Authenticated user instance is automaticly asigned
 	 * by authentication extension before `Controller::Init();`.
-	 * @var Auth\Basics\Interfaces\IUser
+	 * @var \MvcCore\Ext\Auths\Basics\IUser
 	 */
 	protected $user = NULL;
 
 	public function Init() {
 		parent::Init();
 		// when any CSRF token is outdated or not the same - sign out user by default
-		Form::AddCsrfErrorHandler(function (Form & $form, $errorMsg) {
-			Auth\Basics\User::LogOut();
+		\MvcCore\Ext\Form::AddCsrfErrorHandler(function (\MvcCore\Ext\Form & $form, $errorMsg) {
+			\MvcCore\Ext\Auths\User::LogOut();
 			self::Redirect($this->Url(
 				'Index:Index',
 				array('absolute' => TRUE, 'sourceUrl'	=> rawurlencode($form->ErrorUrl))
@@ -39,15 +36,15 @@ class Base extends \MvcCore\Controller
 		$this->view->User = $this->user;
 		if ($this->user)
 			// set signout form into view, set signedout url to homepage:
-			$this->view->SignOutForm = Auth\Basic::GetInstance()
+			$this->view->SignOutForm = \MvcCore\Ext\Auth::GetInstance()
 				->GetSignOutForm()
-				->SetDefaults(array(
+				->SetValues(array(
 					'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
 				));
 	}
 
 	private function _preDispatchSetUpBundles () {
-		\MvcCore\Ext\View\Helpers\Assets::SetGlobalOptions(array(
+		\MvcCore\Ext\Views\Helpers\Assets::SetGlobalOptions(array(
 				'cssMinify'	=> 1,
 				'cssJoin'	=> 1,
 				'jsMinify'	=> 1,

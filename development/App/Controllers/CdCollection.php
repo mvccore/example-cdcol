@@ -3,7 +3,8 @@
 namespace App\Controllers;
 
 use \App\Models,
-	\MvcCore\Ext\Form;
+	\MvcCore\Ext\Form,
+	\MvcCore\Ext\Forms\Fields;
 
 class CdCollection extends Base
 {
@@ -77,7 +78,7 @@ class CdCollection extends Base
     public function EditAction () {
 		$this->view->Title = 'Edit album - ' . $this->album->Title;
 		$this->view->DetailForm = $this->getCreateEditForm(TRUE)
-			->SetDefaults($this->album->GetValues(), TRUE, TRUE);
+			->SetValues($this->album->GetValues(), TRUE, TRUE);
     }
 
 	/**
@@ -97,7 +98,7 @@ class CdCollection extends Base
 		if ($detailForm->Result) {
 			$this->album->SetUp($detailForm->Data, TRUE)->Save();
 		}
-		$detailForm->RedirectAfterSubmit();
+		$detailForm->SubmittedRedirect();
 	}
 
 	/**
@@ -115,7 +116,7 @@ class CdCollection extends Base
 
 	/**
 	 * Create form instance to create new or edit existing album.
-	 * @return \MvcCore\Ext\Form
+	 * @return \MvcCore\Ext\Form|\MvcCore\Ext\Forms\IForm
 	 */
 	protected function getCreateEditForm ($editForm = TRUE) {
 		$form = (new Form($this))
@@ -124,32 +125,32 @@ class CdCollection extends Base
 			->SetAction($this->Url(':Submit'))
 			->SetSuccessUrl($this->Url(':Index', array('absolute' => TRUE)))
 			->AddCssClass('theme')
-			->SetFieldsDefaultRenderMode(
+			->SetDefaultFieldsRenderMode(
 				Form::FIELD_RENDER_MODE_LABEL_AROUND
 			);
 		if ($editForm) {
-			$id = (new Form\Hidden)
+			$id = (new Fields\Hidden)
 				->SetName('id')
 				->AddValidators('NumberField');
 			$form->AddField($id);
 		}
-		$title = (new Form\Text)
+		$title = (new Fields\Text)
 			->SetName('title')
 			->SetLabel('Title:')
 			->SetSize(200)
 			->SetRequired()
 			->SetAutocomplete('off');
-		$interpret = (new Form\Text)
+		$interpret = (new Fields\Text)
 			->SetName('interpret')
 			->SetLabel('Interpret:')
 			->SetSize(200)
 			->SetRequired()
 			->SetAutocomplete('off');
-		$year = (new Form\Number)
+		$year = (new Fields\Number)
 			->SetName('year')
 			->SetLabel('Year:')
 			->SetSize(4);
-		$send = (new Form\SubmitButton)
+		$send = (new Fields\SubmitButton)
 			->SetName('send')
 			->SetCssClasses('btn btn-large')
 			->SetValue('Save');
@@ -157,9 +158,9 @@ class CdCollection extends Base
 	}
 
 	/**
-	 * Create empty form, where to store and manage CSRF 
+	 * Create empty form, where to store and manage CSRF
 	 * tokens for delete links in albums list.
-	 * @return \MvcCore\Ext\Form
+	 * @return \MvcCore\Ext\Form|\MvcCore\Ext\Forms\IForm
 	 */
 	protected function getVirtualDeleteForm () {
 		return (new Form($this))

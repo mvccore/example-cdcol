@@ -33,8 +33,8 @@ $config = array(
 		// Exclude all Form validators and fields by default
 		// and add strictly and only used validators and fields
 		// later in include patterns array for override rules
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/#",
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/([a-zA-Z0-9]*)\.php$#",
+		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Forms/Validators/#",
+		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Forms/([a-zA-Z0-9]*)\.php$#",
 
 		// Exclude everything from '/static/...', '/Var/Tmp' directory
 		// and souce JS/CSS from SimpleForm lib:
@@ -46,9 +46,9 @@ $config = array(
 	// (include paterns always overides exclude patterns)
 	'includePatterns'		=> array(
 		// include previously excluded Form validators - but only realy used validators
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/(Maxlength|SafeString|NumberField|Integer|Url)\.php$#",
+		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Forms/Validators/(Maxlength|SafeString|NumberField|Integer|Url)\.php$#",
 		// include previously excluded Form fields - but only realy used fields
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/(Text|Password|Hidden|SubmitButton|SubmitInput|Button|Number)\.php$#",
+		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Forms/(Text|Password|Hidden|SubmitButton|SubmitInput|Button|Number)\.php$#",
 	),
 	// process simple strings replacements on all readed PHP scripts before saving into result package:
 	// (replacements are executed before configured minification in RAM, they don't affect anythin on hard drive)
@@ -56,7 +56,7 @@ $config = array(
 		// Switch MvcCore application back from SFU mode to automatic compile mode detection
 		'->Run(1);'		=> '->Run();',
 		// Remove tracy debug library extension usage (optional):
-		"class_exists('\MvcCore\Ext\Debug\Tracy')"	=> 'FALSE',
+		"class_exists('\MvcCore\Ext\Debugs\Tracy')"	=> 'FALSE',
 	),
 	'minifyTemplates'		=> 1,// Remove non-conditional comments and whitespaces
 	'minifyPhp'				=> 1,// Remove comments and whitespaces

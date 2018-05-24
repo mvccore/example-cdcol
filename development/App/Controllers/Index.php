@@ -14,10 +14,10 @@ class Index extends Base
 			self::Redirect($this->Url('CdCollection:Index'));
 		$this->view->Title = 'CD Collection';
 		$this->view->User = $this->user;
-		$this->view->SignInForm = \MvcCore\Ext\Auth\Basic::GetInstance()
+		$this->view->SignInForm = \MvcCore\Ext\Auth::GetInstance()
 			->GetSignInForm()
 			->AddCssClass('theme')
-			->SetDefaults(array(// set signed in url to albums list by default:
+			->SetValues(array(// set signed in url to albums list by default:
 				'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
 			));
 	}

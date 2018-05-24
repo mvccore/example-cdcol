@@ -10,24 +10,24 @@ class Bootstrap
 
 
 		// Patch core to use extended debug class:
-		if (class_exists('\MvcCore\Ext\Debug\Tracy')) {
-			\MvcCore\Ext\Debug\Tracy::$Editor = 'MSVS2017';
-			$app->SetDebugClass(\MvcCore\Ext\Debug\Tracy::class);
+		if (class_exists('\MvcCore\Ext\Debugs\Tracy')) {
+			\MvcCore\Ext\Debugs\Tracy::$Editor = 'MSVS2017';
+			$app->SetDebugClass(\MvcCore\Ext\Debugs\Tracy::class);
 		}
 
 
 		// Initialize authentication service extension and set custom user class
-		\MvcCore\Ext\Auth\Basic::GetInstance()
+		\MvcCore\Ext\Auth::GetInstance()
 			->SetPasswordHashSalt('s9E56/QH6!a69sJML9aS$6s+')
-			->SetUserClass(\MvcCore\Ext\Auth\Users\Database::class)
-			//->SetUserClass(\MvcCore\Ext\Auth\Users\SystemConfig::class)
+			->SetUserClass(\MvcCore\Ext\Auths\Users\Database::class)
+			//->SetUserClass(\MvcCore\Ext\Auths\Users\SystemConfig::class)
 			/*->SetTableStructureForDbUsers('users', array(
 				'id'			=> 'id',
 				'userName'		=> 'user_name',
 				'passwordHash'	=> 'password_hash',
 				'fullName'		=> 'full_name',
 			))*/;
-		//die(\MvcCore\Ext\Auth\Basics\User::EncodePasswordToHash('demo'));
+		//die(\MvcCore\Ext\Auths\Basics\User::EncodePasswordToHash('demo'));
 
 
 		// Set up application routes (without custom names),
