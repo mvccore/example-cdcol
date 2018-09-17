@@ -158,7 +158,8 @@ class CdCollection extends Base
 			->SetLabel('Year:')
 			->SetSize(4)
 			->SetMin(intval(date('Y')) - 500)
-			->SetMax(date('Y'));
+			->SetMax(date('Y'))
+			->SetValidators(['IntNumber']);
 		$send = (new Fields\SubmitButton)
 			->SetName('send')
 			->SetCssClasses('btn btn-large')

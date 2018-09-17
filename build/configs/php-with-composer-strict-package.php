@@ -1,5 +1,8 @@
 <?php
 
+ini_set('memory_limit', '128M');
+ini_set('max_execution_time', 300);
+
 $config = [
 	'sourcesDir'				=> __DIR__ . '/../../development',
 	'releaseFile'				=> __DIR__ . '/../../release/index.php',
@@ -26,8 +29,8 @@ $config = [
 		// Exclude all Form validators and fields by default
 		// and add strictly and only used validators and fields
 		// later in include patterns array for override rules
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/#",
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/([a-zA-Z0-9]*)\.php$#",
+		"#/MvcCore/Ext/Form/Validators/#",
+		"#/MvcCore/Ext/Form/Fields/#",
 
 		// Exclude source css and js files, use only what is generated in '/Var/Tmp' dir
 		"#^/static/js#",
@@ -38,9 +41,9 @@ $config = [
 	// (include paterns always overides exclude patterns)
 	'includePatterns'		=> [
 		// include previously excluded Form validators - but only realy used validators
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/Validators/(Maxlength|SafeString|NumberField|Integer|Url)\.php$#",
+		"#/MvcCore/Ext/Form/Validators/(MaxLength|SafeString|Number|IntNumber|Url)\.php$#",
 		// include previously excluded Form fields - but only realy used fields
-		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Form/(Text|Password|Hidden|SubmitButton|SubmitInput|Button|Number)\.php$#",
+		"#/MvcCore/Ext/Form/Fields/(Text|Password|Hidden|SubmitButton|SubmitInput|Button|Number)\.php$#",
 	],
 	// process simple strings replacements on all readed PHP scripts before saving into result package:
 	// (replacements are executed before configured minification in RAM, they don't affect anythin on hard drive)
