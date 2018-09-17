@@ -67,7 +67,7 @@ a.btn.btn-left-arrow span{
 	padding-left:16px;
 }
 a.btn.btn-right-arrow span{
-    background-position:100% 15px;
+	background-position:100% 15px;
 	padding-right:16px;
 }
 
@@ -109,7 +109,7 @@ a.btn.btn-right-arrow.btn-wide:active span{
 }
 a.btn:after,
 a.btn::after{
-    position:absolute;
+	position:absolute;
 	overflow:hidden;
 	width:0;
 	height:0;

@@ -27,7 +27,7 @@ class Album extends \MvcCore\Model
 			FROM 
 				cds AS c
 		")->fetchAll(\PDO::FETCH_ASSOC);
-		$result = array();
+		$result = [];
 		foreach ($rawData as $rawItem) {
 			$item = (new self)->SetUp($rawItem, TRUE);
 			$result[$item->Id] = $item;
@@ -52,15 +52,15 @@ class Album extends \MvcCore\Model
 			WHERE
 				c.id = :id
 		");
-        $select->execute(array(
-            ":id" => $id,
-        ));
-        $data = $select->fetch(\PDO::FETCH_ASSOC);
+		$select->execute([
+			":id" => $id,
+		]);
+		$data = $select->fetch(\PDO::FETCH_ASSOC);
 		if ($data) {
 			return (new self)->SetUp($data);
 		}
 		return NULL;
-    }
+	}
 
 	/**
 	 * Delete database row by album Id. Return affected rows count.
@@ -73,9 +73,9 @@ class Album extends \MvcCore\Model
 			WHERE
 				id = :id
 		");
-        return $update->execute(array(
-            ":id"	=> $this->Id,
-        ));
+		return $update->execute([
+			":id"	=> $this->Id,
+		]);
 	}
 	/**
 	 * Update album with completed Id or insert new one if no Id defined.
@@ -89,7 +89,7 @@ class Album extends \MvcCore\Model
 			$this->Id = $this->insert();
 		}
 		return $this->Id;
-    }
+	}
 
 	/**
 	 * Update all public defined properties.
@@ -106,12 +106,12 @@ class Album extends \MvcCore\Model
 			WHERE
 				id = :id
 		");
-        return $update->execute(array(
+		return $update->execute([
 			":interpret"	=> $this->Interpret,
-            ":year"			=> $this->Year,
-            ":title"		=> $this->Title,
-            ":id"			=> $this->Id,
-        ));
+			":year"			=> $this->Year,
+			":title"		=> $this->Title,
+			":id"			=> $this->Id,
+		]);
 	}
 
 	/**
@@ -119,18 +119,17 @@ class Album extends \MvcCore\Model
 	 * @return int
 	 */
 	protected function insert() {
-		$columnsSql = array();
-		$params = array();
+		$columnsSql = [];
+		$params = [];
 		$newValues = $this->GetValues();
 		foreach ($newValues as $key => & $value) {
 			$keyUnderscored = \MvcCore\Tool::GetUnderscoredFromPascalCase($key);
 			$columnsSql[] = $keyUnderscored;
 			$params[$keyUnderscored] = $value;
 		}
-		$insertCommand = $this->db->prepare(
-			'INSERT INTO cds (' . implode(',', $columnsSql) . ')
-			 VALUES (:' . implode(', :', $columnsSql) . ')'
-		);
+		$sql = 'INSERT INTO cds (' . implode(',', $columnsSql) . ')
+			 VALUES (:' . implode(', :', $columnsSql) . ')';
+		$insertCommand = $this->db->prepare($sql);
 		$insertCommand->execute($params);
 		return (int) $this->db->lastInsertId();
 	}

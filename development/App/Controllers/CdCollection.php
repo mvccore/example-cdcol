@@ -19,11 +19,19 @@ class CdCollection extends Base
 	 */
 	public function Init () {
 		parent::Init();
-		// if user is not authorized, redirect to homepage and exit
-		if (!$this->user)
+		// if user is not authorized, redirect to proper location and exit
+		if (!$this->user) {
+			// if post, get safe value from where the form has been submitted
+			$sourceUrl = (
+				$this->request->GetMethod() === \MvcCore\Request::METHOD_POST &&
+				parse_url($this->request->GetReferer(), PHP_URL_HOST) === $this->request->GetServerName()
+			)
+				? $this->request->GetReferer()
+				: $this->request->GetFullUrl();
 			self::Redirect($this->Url(
-				'Index:Index', array('sourceUrl' => rawurlencode($this->request->GetFullUrl()))
+				'Index:Index', ['sourceUrl' => rawurlencode($sourceUrl)]
 			));
+		}
 	}
 
 	/**
@@ -75,11 +83,11 @@ class CdCollection extends Base
 	 * and set form defaults with album values.
 	 * @return void
 	 */
-    public function EditAction () {
+	public function EditAction () {
 		$this->view->Title = 'Edit album - ' . $this->album->Title;
 		$this->view->DetailForm = $this->getCreateEditForm(TRUE)
 			->SetValues($this->album->GetValues(), TRUE, TRUE);
-    }
+	}
 
 	/**
 	 * Handle create and edit action form submit.
@@ -89,14 +97,13 @@ class CdCollection extends Base
 		$detailForm = $this->getCreateEditForm();
 		if (!$this->album) {
 			$this->album = new Models\Album();
-			$detailForm->SetErrorUrl($this->Url(':Create', array('absolute' => TRUE)));
+			$detailForm->SetErrorUrl($this->Url(':Create', ['absolute' => TRUE]));
 		} else {
-			$detailForm->SetErrorUrl($this->Url(':Edit', array('id' => $this->album->Id, 'absolute' => TRUE)));
+			$detailForm->SetErrorUrl($this->Url(':Edit', ['id' => $this->album->Id, 'absolute' => TRUE]));
 		}
 		$detailForm->Submit();
-		$detailForm->UnsetEmptyData();
-		if ($detailForm->Result) {
-			$this->album->SetUp($detailForm->Data, TRUE)->Save();
+		if ($detailForm->GetResult()) {
+			$this->album->SetUp($detailForm->GetValues(), TRUE)->Save();
 		}
 		$detailForm->SubmittedRedirect();
 	}
@@ -107,12 +114,12 @@ class CdCollection extends Base
 	 * by empty virtual delete form initialized once, not for all album rows).
 	 * @return void
 	 */
-    public function DeleteAction () {
-		if ($this->getVirtualDeleteForm()->ValidateCsrf($_POST)) {
+	public function DeleteAction () {
+		if ($this->getVirtualDeleteForm()->SubmitCsrfTokens($_POST)) {
 			$this->album->Delete();
 		}
 		self::Redirect($this->Url(':Index'));
-    }
+	}
 
 	/**
 	 * Create form instance to create new or edit existing album.
@@ -123,33 +130,35 @@ class CdCollection extends Base
 			->SetId('detail')
 			->SetMethod(Form::METHOD_POST)
 			->SetAction($this->Url(':Submit'))
-			->SetSuccessUrl($this->Url(':Index', array('absolute' => TRUE)))
-			->AddCssClass('theme')
+			->SetSuccessUrl($this->Url(':Index', ['absolute' => TRUE]))
+			->AddCssClasses('theme')
 			->SetDefaultFieldsRenderMode(
 				Form::FIELD_RENDER_MODE_LABEL_AROUND
 			);
 		if ($editForm) {
 			$id = (new Fields\Hidden)
 				->SetName('id')
-				->AddValidators('NumberField');
+				->AddValidators('Number');
 			$form->AddField($id);
 		}
 		$title = (new Fields\Text)
 			->SetName('title')
 			->SetLabel('Title:')
-			->SetSize(200)
+			->SetMaxLength(200)
 			->SetRequired()
 			->SetAutocomplete('off');
 		$interpret = (new Fields\Text)
 			->SetName('interpret')
 			->SetLabel('Interpret:')
-			->SetSize(200)
+			->SetMaxLength(200)
 			->SetRequired()
 			->SetAutocomplete('off');
 		$year = (new Fields\Number)
 			->SetName('year')
 			->SetLabel('Year:')
-			->SetSize(4);
+			->SetSize(4)
+			->SetMin(intval(date('Y')) - 500)
+			->SetMax(date('Y'));
 		$send = (new Fields\SubmitButton)
 			->SetName('send')
 			->SetCssClasses('btn btn-large')
@@ -168,7 +177,7 @@ class CdCollection extends Base
 			// set error url, where to redirect if CSRF
 			// are wrong, see App_Controller_Base::Init()
 			->SetErrorUrl(
-				$this->Url('Index:Index', array('absolute' => TRUE))
+				$this->Url('Index:Index', ['absolute' => TRUE])
 			);
 	}
 }

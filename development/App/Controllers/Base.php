@@ -18,7 +18,7 @@ class Base extends \MvcCore\Controller
 			\MvcCore\Ext\Auths\User::LogOut();
 			self::Redirect($this->Url(
 				'Index:Index',
-				array('absolute' => TRUE, 'sourceUrl'	=> rawurlencode($form->ErrorUrl))
+				['absolute' => TRUE, 'sourceUrl'	=> rawurlencode($form->GetErrorUrl())]
 			));
 		});
 	}
@@ -34,22 +34,23 @@ class Base extends \MvcCore\Controller
 	private function _preDispatchSetUpAuth () {
 		// init user in view
 		$this->view->User = $this->user;
-		if ($this->user)
+		if ($this->user) {
 			// set signout form into view, set signedout url to homepage:
 			$this->view->SignOutForm = \MvcCore\Ext\Auth::GetInstance()
 				->GetSignOutForm()
-				->SetValues(array(
-					'successUrl' => $this->Url('Index:Index', array('absolute' => TRUE))
-				));
+				->SetValues([
+					'successUrl' => $this->Url('Index:Index', ['absolute' => TRUE])
+				]);
+		}
 	}
 
 	private function _preDispatchSetUpBundles () {
-		\MvcCore\Ext\Views\Helpers\Assets::SetGlobalOptions(array(
+		\MvcCore\Ext\Views\Helpers\Assets::SetGlobalOptions([
 				'cssMinify'	=> 1,
 				'cssJoin'	=> 1,
 				'jsMinify'	=> 1,
 				'jsJoin'	=> 1,
-			));
+			]);
 		$static = self::$staticPath;
 		$this->view->Css('fixedHead')
 			->Append($static . '/css/resets.css')

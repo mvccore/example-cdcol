@@ -32,17 +32,17 @@ class Bootstrap
 
 		// Set up application routes (without custom names),
 		// defined basicly as `Controller::Action` combination:
-		\MvcCore\Router::GetInstance(array(
+		\MvcCore\Router::GetInstance([
 			'Index:Index'			=> '/',
 			'CdCollection:Index'	=> '/albums',
 			'CdCollection:Create'	=> '/create',
-			'CdCollection:Edit'	=> array(
+			'CdCollection:Edit'	=> [
 				'pattern'			=> "/edit/<id>",
-				'constraints'		=> array(
-					'id' => '\d'
-				),
-			),
-		));
+				'constraints'		=> [
+					'id' => '\d+'
+				],
+			],
+		]);
 
 	}
 }

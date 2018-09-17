@@ -16,10 +16,10 @@ class Index extends Base
 		$this->view->User = $this->user;
 		$this->view->SignInForm = \MvcCore\Ext\Auth::GetInstance()
 			->GetSignInForm()
-			->AddCssClass('theme')
-			->SetValues(array(// set signed in url to albums list by default:
-				'successUrl' => $this->Url('CdCollection:', array('absolute' => TRUE)),
-			));
+			->AddCssClasses('theme')
+			->SetValues([// set signed in url to albums list by default:
+				'successUrl' => $this->Url('CdCollection:', ['absolute' => TRUE]),
+			]);
 	}
 
 	/**
@@ -34,7 +34,7 @@ class Index extends Base
 	 * Render possible server error action.
 	 * @return void
 	 */
-	public function ErrorAction(){
+	public function ErrorAction () {
 		$code = $this->response->GetCode();
 		$message = $this->request->GetParam('message', '\\a-zA-Z0-9_;, /\-\@\:');
 		$message = preg_replace('#`([^`]*)`#', '<code>$1</code>', $message);

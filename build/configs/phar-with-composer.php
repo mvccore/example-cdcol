@@ -1,10 +1,10 @@
 <?php
 
-$config = array(
+$config = [
 	'sourcesDir'			=> __DIR__ . '/../../development',
 	'releaseFile'			=> __DIR__ . '/../../release/index.php',
 	// do not include script or file, where it's relative path from sourceDir match any of these rules:
-	'excludePatterns'		=> array(
+	'excludePatterns'		=> [
 
 		// Common excludes for every MvcCore app using composer:
 		"#/\.#",										// Everything started with '.' (.git, .htaccess ...)
@@ -33,10 +33,10 @@ $config = array(
 		"#^/static/js#",
 		"#^/static/css#",
 		"#^/vendor/mvccore/ext-form/(.*)\.(css|js)$#",
-	),
+	],
 	// include all scripts or files, where it's relative path from sourceDir match any of these rules:
 	// (include paterns always overides exclude patterns)
-	'includePatterns'		=> array(
+	'includePatterns'		=> [
 		// add staticly included tracy file back again and override it's exclusion,
 		// to run composer at application start properly, but this file will not be used.
 		"#^/vendor/tracy/tracy/src/shortcuts.php#",
@@ -44,15 +44,15 @@ $config = array(
 		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Forms/Validators/(Maxlength|SafeString|NumberField|Integer|Url)\.php$#",
 		// include previously excluded Form fields - but only realy used fields
 		"#^/vendor/mvccore/ext-form/src/MvcCore/Ext/Forms/(Text|Password|Hidden|SubmitButton|SubmitInput|Button|Number)\.php$#",
-	),
+	],
 	// process simple strings replacements on all readed PHP scripts before saving into result package:
 	// (replacements are executed before configured minification in RAM, they don't affect anythin on hard drive)
-	'stringReplacements'	=> array(
+	'stringReplacements'	=> [
 		// Switch MvcCore application back from SFU mode to automatic compile mode detection
 		'->Run(1);'		=> '->Run();',
 		// Remove tracy debug library extension usage (optional):
 		"class_exists('\MvcCore\Ext\Debugs\Tracy')"	=> 'FALSE',
-	),
+	],
 	'minifyTemplates'		=> 1,// Remove non-conditional comments and whitespaces
 	'minifyPhp'				=> 1,// Remove comments and whitespaces
-);
+];

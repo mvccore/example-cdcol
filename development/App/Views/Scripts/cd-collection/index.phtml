@@ -25,9 +25,9 @@
 				<tr>
 					<td class="right"><?php echo $album->Id; ?></td>
 					<td><a href="<?php
-						echo $this->Url(':Edit', array(
+						echo $this->Url(':Edit', [
 							"id"	=> $album->Id,
-						));
+						]);
 					?>">
 						<?php echo $album->Title; ?>
 					</a></td>
@@ -35,7 +35,7 @@
 					<td class="right"><?php echo $album->Year; ?></td>
 					<td class="center">
 						<form class="delete" action="<?php
-							echo $this->Url(':Delete', array('absolute' => TRUE));
+							echo $this->Url(':Delete', ['absolute' => TRUE]);
 						?>" method="post">
 							<input type="hidden" name="<?php
 								echo $this->CsrfName;
