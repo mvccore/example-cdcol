@@ -7,7 +7,7 @@ background:	linear-gradient(rgb(108,120,159,0.6),rgb(108,120,159,0.3)),
 			url('<?php echo $this->AssetUrl('/static/img/theme/box-light-dots-bg.min.svg'); ?>');
 }
 
-.master-container{width:50%;min-width:518px;margin:30px auto 50px auto;}
+.master-container{width:50%;min-width:600px;margin:30px auto 50px auto;}
 
 form.signout button[type=submit],
 form.delete input[type=submit]{background:transparent;border:0;padding:0;}

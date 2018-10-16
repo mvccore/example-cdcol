@@ -7,6 +7,9 @@
 // and you need to uncomment line 12 in Bootstrap.php
 // before compilation to generate css/js files properly in tmp
 
+ini_set('memory_limit', '128M');
+ini_set('max_execution_time', 300);
+
 $config = [
 	'sourcesDir'				=> __DIR__ . '/../../development',
 	'releaseFile'				=> __DIR__ . '/../../release/index.php',

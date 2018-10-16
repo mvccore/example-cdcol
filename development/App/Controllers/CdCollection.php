@@ -24,7 +24,7 @@ class CdCollection extends Base
 			// if post, get safe value from where the form has been submitted
 			$sourceUrl = (
 				$this->request->GetMethod() === \MvcCore\Request::METHOD_POST &&
-				parse_url($this->request->GetReferer(), PHP_URL_HOST) === $this->request->GetServerName()
+				parse_url($this->request->GetReferer(), PHP_URL_HOST) === $this->request->GetHostName()
 			)
 				? $this->request->GetReferer()
 				: $this->request->GetFullUrl();
@@ -43,11 +43,10 @@ class CdCollection extends Base
 		parent::PreDispatch();
 		// if there is any 'id' param in $_GET or $_POST,
 		// try to load album model instance from database
-		$id = $this->GetParam("id", "0-9");
-		if (strlen($id) > 0) {
-			$this->album = Models\Album::GetById(intval($id));
-			if (!$this->album) $this->renderNotFound();
-		}
+		$id = $this->GetParam("id", "0-9", NULL, 'int');
+		$this->album = Models\Album::GetById(intval($id));
+		if (!$this->album && $this->actionName == 'edit') 
+			$this->renderNotFound();
 	}
 
 	/**
