@@ -1,26 +1,17 @@
 {
 	"name": "mvccore/example-cdcol",
-	"type": "application",
+	"type": "project",
 	"description": "MvcCore Example - CD collection - classic CRUD example with default SQLite database with cd albums.",
 	"keywords": [
-		"mvccore", 
-		"framework", 
-		"mvc", 
-		"simple mvc", 
-		"super fast mvc", 
-		"easy mvc", 
-		"single file application", 
-		"cd collection", 
-		"cdcol", 
-		"cds", 
+		"mvccore",
+		"framework",
+		"crud",
+		"crud sample",
+		"crud application",
+		"cd albums",
+		"cds",
 		"albums",
-		"cd albums", 
-		"CRUD", 
-		"CRUD example", 
-		"albums CRUD",
-		"cds CRUD",
-		"cd collection CRUD",
-		"mvccore CRUD"
+		"cd collection"
 	],
 	"license": ["BSD-3-Clause"],
 	"authors": [{
@@ -28,9 +19,15 @@
 		"homepage": "https://github.com/tomFlidr"
 	}],
 	"require": {
-		"php": ">=5.3.0",
-		"mrclay/minify": "2.3.*",
-		"mvccore/packager": "2.*"
+		"php": ">=5.4.0",
+		"mvccore/mvccore": "^5.0",
+		"mvccore/ext-form": "^5.0",
+		"mvccore/ext-form-field-text": "^5.0",
+		"mvccore/ext-form-field-numeric": "^5.0",
+		"mvccore/ext-form-field-button": "^5.0",
+		"mvccore/ext-view-helper-assets": "^5.0",
+		"mvccore/ext-auth-basic": "^5.0",
+		"mvccore/ext-debug-tracy-all": "^5.0"
 	},
 	"minimum-stability": "stable"
 }
