@@ -1,4 +1,4 @@
-# MvcCore - Example - CD Collection
+# MvcCore - Example - CD Collection - With Authentication
 
 [![Latest Stable Version](https://img.shields.io/badge/Stable-v5.0.0-brightgreen.svg?style=plastic)](https://github.com/mvccore/example-cdcol/releases)
 [![License](https://img.shields.io/badge/Licence-BSD-brightgreen.svg?style=plastic)](https://github.com/mvccore/example-cdcol/blob/master/LICENCE.md)

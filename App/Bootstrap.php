@@ -52,7 +52,10 @@ class Bootstrap
 		// Set up application routes (without custom names),
 		// defined basically as `Controller::Action` combinations:
 		\MvcCore\Router::GetInstance([
-			'Index:Index'			=> '/[index.php]',
+			'Index:Index'			=> [
+				'match'				=> '#^/(index\.php)?$#',
+				'reverse'			=> '/',
+			],
 			'CdCollection:Index'	=> '/albums',
 			'CdCollection:Create'	=> '/create',
 			'CdCollection:Submit'	=> [
