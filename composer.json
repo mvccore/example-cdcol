@@ -1,7 +1,7 @@
 {
 	"name": "mvccore/example-cdcol",
 	"type": "project",
-	"description": "MvcCore Example - CD collection - classic CRUD example with default SQLite database with cd albums.",
+	"description": "MvcCore Example - CD collection - classic CRUD example with default SQLite database and authentication.",
 	"keywords": [
 		"mvccore",
 		"framework",
@@ -11,7 +11,11 @@
 		"cd albums",
 		"cds",
 		"albums",
-		"cd collection"
+		"cd collection",
+		"authentication",
+		"auth",
+		"login",
+		"credentials"
 	],
 	"license": ["BSD-3-Clause"],
 	"authors": [{
