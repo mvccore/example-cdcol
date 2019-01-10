@@ -5,7 +5,7 @@
 [![Packager Build](https://img.shields.io/badge/Packager%20Build-passing-brightgreen.svg?style=plastic)](https://github.com/mvccore/packager)
 ![PHP Version](https://img.shields.io/badge/PHP->=5.4-brightgreen.svg?style=plastic)
 
-[**MvcCore**](https://github.com/mvccore/mvccore) classic CD collection CRUD example with default SQLite database with CD albums.
+[**MvcCore**](https://github.com/mvccore/mvccore) classic CD collection CRUD example with default SQLite database and authentication.
 
 Example uses SQLite database by default, but it contains also MySQL, MSSQL and PostgreSQL database backups, included in `./.databases/` directory.
 
