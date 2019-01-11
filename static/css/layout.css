@@ -14,15 +14,6 @@ background:	linear-gradient(rgb(108,120,159,0.6),rgb(108,120,159,0.3)),
 .content.route-index-index{text-align:center;}
 .content a.head-btn{float:right;}
 
-.cd-collection-items{width:75%;}
-.cd-collection-items th,
-.cd-collection-items td{text-align:left;}
-.cd-collection-items th.right,
-.cd-collection-items td.right{text-align:right;}
-.cd-collection-items th.center,
-.cd-collection-items td.center{text-align:center;}
-.cd-collection-items td{white-space:nowrap;}
-
 div.errors{margin-bottom:10px;}
 div.error{color:#ff2222;font-family:'MyriadSemiBold';text-align:center;}
 input.error,select.error,textarea.error{text-align:left;}
