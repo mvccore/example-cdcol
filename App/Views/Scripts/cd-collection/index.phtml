@@ -1,5 +1,5 @@
 <?php /** @var $this \MvcCore\View */ ?>
-<?php /** @var $this->Albums \App\Models\Album[] */ ?>
+<?php /** @var $albums \App\Models\Album[] */ ?>
 
 <a class="head-btn btn btn-wide btn-no-visiting" href="<?php
 	echo $this->Url(':Create');
@@ -7,7 +7,7 @@
 
 <h1>CD Collection</h1>
 
-<?php if (!$this->Albums): ?>
+<?php if (!$albums): ?>
 	<p>No albums in database. To create, click to 'New Album' button.</p>
 <?php else: ?>
 	<table class="cd-collection-items theme">
@@ -21,28 +21,22 @@
 			</tr>
 		</thead>
 		<tbody>
-			<?php foreach ($this->Albums as $id => $album): ?>
+			<?php foreach ($albums as $id => $album): ?>
 				<tr>
-					<td class="right"><?php echo $album->Id; ?></td>
+					<td class="right"><?=$album->Id?></td>
 					<td><a href="<?php
 						echo $this->Url(':Edit', [
 							"id"	=> $album->Id,
 						]);
-					?>">
-						<?php echo $album->Title; ?>
-					</a></td>
-					<td><?php echo $album->Interpret; ?></td>
-					<td class="right"><?php echo $album->Year; ?></td>
+					?>"><?=$album->Title?></a></td>
+					<td><?=$album->Interpret?></td>
+					<td class="right"><?=$album->Year?></td>
 					<td class="center">
 						<form class="delete" action="<?php
 							echo $this->Url(':Delete', ['absolute' => TRUE]);
 						?>" method="post">
-							<input type="hidden" name="<?php
-								echo $this->CsrfName;
-							?>" value="<?php
-								echo $this->CsrfValue;
-							?>" />
-							<input type="hidden" name="id" value="<?php echo $album->Id; ?>" />
+							<input type="hidden" name="<?=$csrfName?>" value="<?=$csrfValue?>" />
+							<input type="hidden" name="id" value="<?=$album->Id?>" />
 							<input type="submit" value="Delete" />
 						</form>
 					</td>

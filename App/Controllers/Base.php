@@ -14,7 +14,7 @@ class Base extends \MvcCore\Controller
 	public function Init() {
 		parent::Init();
 		// when any CSRF token is outdated or not the same - sign out user by default
-		\MvcCore\Ext\Form::AddCsrfErrorHandler(function (\MvcCore\Ext\Form & $form, $errorMsg) {
+		\MvcCore\Ext\Form::AddCsrfErrorHandler(function (\MvcCore\Ext\Form $form, $errorMsg) {
 			\MvcCore\Ext\Auths\Basics\User::LogOut();
 			self::Redirect($this->Url(
 				'Index:Index',
@@ -28,10 +28,10 @@ class Base extends \MvcCore\Controller
 		if ($this->viewEnabled) {
 			$this->_preDispatchSetUpAuth();
 			$this->_preDispatchSetUpBundles();
-			$this->view->BasePath = $this->GetRequest()->GetBasePath();
-			$this->view->CurrentRouteCssClass = str_replace(
+			$this->view->basePath = $this->request->GetBasePath();
+			$this->view->currentRouteCssClass = str_replace(
 				':', '-', strtolower(
-					$this->GetRouter()->GetCurrentRoute()->GetName()
+					$this->router->GetCurrentRoute()->GetName()
 				)
 			);
 		}
@@ -42,7 +42,7 @@ class Base extends \MvcCore\Controller
 		$this->view->User = $this->user;
 		if ($this->user) {
 			// set sign-out form into view, set signed-out url to homepage:
-			$this->view->SignOutForm = \MvcCore\Ext\Auths\Basic::GetInstance()
+			$this->view->signOutForm = \MvcCore\Ext\Auths\Basic::GetInstance()
 				->GetSignOutForm()
 				->SetValues([
 					'successUrl' => $this->Url('Index:Index', ['absolute' => TRUE])

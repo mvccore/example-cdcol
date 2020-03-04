@@ -2,6 +2,6 @@
 	/** @var $this \MvcCore\View */
 	/** @var $this->SingInForm \MvcCore\Ext\Auths\SignInForm */
 ?>
-<h1><?php echo $this->Title; ?></h1>
+<h1><?=$title?></h1>
 <p>Use login: "admin" and password: "demo".</p>
-<?php echo $this->SignInForm->Render(); ?>
+<?=$signInForm?>
