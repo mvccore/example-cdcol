@@ -39,7 +39,7 @@ class Base extends \MvcCore\Controller
 
 	private function _preDispatchSetUpAuth () {
 		// init user in view
-		$this->view->User = $this->user;
+		$this->view->user = $this->user;
 		if ($this->user) {
 			// set sign-out form into view, set signed-out url to homepage:
 			$this->view->signOutForm = \MvcCore\Ext\Auths\Basic::GetInstance()

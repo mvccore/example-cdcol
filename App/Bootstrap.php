@@ -2,16 +2,19 @@
 
 namespace App;
 
-class Bootstrap
-{
-	public static function Init ()
-	{
+class Bootstrap {
+
+	/**
+	 * @return \MvcCore\Application
+	 */
+	public static function Init () {
+
 		$app = \MvcCore\Application::GetInstance();
 
 
 		// Patch core to use extended debug class:
 		if (class_exists('MvcCore\Ext\Debugs\Tracy')) {
-			\MvcCore\Ext\Debugs\Tracy::$Editor = 'MSVS2017';
+			\MvcCore\Ext\Debugs\Tracy::$Editor = 'MSVS2019';
 			$app->SetDebugClass('MvcCore\Ext\Debugs\Tracy');
 		}
 
@@ -70,5 +73,7 @@ class Bootstrap
 				'constraints'		=> ['id' => '\d+'],
 			]
 		]);
+
+		return $app;
 	}
 }
