@@ -63,7 +63,7 @@ class Album extends \MvcCore\Model
 	 */
 	public function Delete () {
 		$this->Init();
-		$update = $this->db->prepare("
+		$update = $this->connection->prepare("
 			DELETE FROM
 				cds
 			WHERE
@@ -93,7 +93,7 @@ class Album extends \MvcCore\Model
 	 * @return bool
 	 */
 	protected function update () {
-		$update = $this->db->prepare("
+		$update = $this->connection->prepare("
 			UPDATE
 				cds
 			SET
@@ -125,8 +125,8 @@ class Album extends \MvcCore\Model
 		}
 		$sql = 'INSERT INTO cds (' . implode(',', $columnsSql) . ')
 			 VALUES (:' . implode(', :', $columnsSql) . ')';
-		$insertCommand = $this->db->prepare($sql);
+		$insertCommand = $this->connection->prepare($sql);
 		$insertCommand->execute($params);
-		return (int) $this->db->lastInsertId();
+		return (int) $this->connection->lastInsertId();
 	}
 }
