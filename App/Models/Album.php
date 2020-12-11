@@ -13,6 +13,8 @@ class Album extends \MvcCore\Model
 	/** @var int */
 	public $Year;
 
+	protected $autoInit = TRUE;
+
 	/**
 	 * Get all albums in database as array, keyed by $album->Id.
 	 * @return \MvcCore\Model[]
@@ -59,19 +61,20 @@ class Album extends \MvcCore\Model
 
 	/**
 	 * Delete database row by album Id. Return affected rows count.
-	 * @return bool
+	 * @return int
 	 */
 	public function Delete () {
 		$this->Init();
-		$update = $this->connection->prepare("
+		$delete = $this->connection->prepare("
 			DELETE FROM
 				cds
 			WHERE
 				id = :id
 		");
-		return $update->execute([
+		$deleted = $delete->execute([
 			":id"	=> $this->Id,
 		]);
+		return $deleted ? $delete->rowCount() : 0;
 	}
 	/**
 	 * Update album with completed Id or insert new one if no Id defined.
