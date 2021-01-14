@@ -69,7 +69,7 @@ class Bootstrap {
 				//'pattern'			=> '/edit[/<id>]',
 				'match'				=> '#^/edit(/(?<id>\d+))?/?$#',
 				'reverse'			=> '/edit[/<id>]',
-				'defaults'			=> ['id' => 1,],
+				'defaults'			=> ['id' => 0,],
 				'constraints'		=> ['id' => '\d+'],
 			]
 		]);

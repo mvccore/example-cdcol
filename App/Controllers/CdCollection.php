@@ -45,9 +45,8 @@ class CdCollection extends Base {
 		// try to load album model instance from database
 		$id = $this->GetParam("id", "0-9", NULL, 'int');
 		$this->album = Models\Album::GetById(intval($id));
-		x($this->album);
 		if (!$this->album && $this->actionName == 'edit')
-			$this->renderNotFound();
+			$this->RenderNotFound();
 	}
 
 	/**
@@ -86,7 +85,12 @@ class CdCollection extends Base {
 	public function EditAction () {
 		$this->view->title = 'Edit album - ' . $this->album->Title;
 		$this->view->detailForm = $this->getCreateEditForm(TRUE)
-			->SetValues($this->album->GetValues(), TRUE, TRUE);
+			->SetValues(
+				$this->album->GetValues(
+					\MvcCore\IModel::PROPS_PUBLIC |
+					\MvcCore\IModel::PROPS_CONVERT_PASCALCASE_TO_CAMELCASE
+				), FALSE, TRUE
+			);
 	}
 
 	/**
@@ -102,11 +106,14 @@ class CdCollection extends Base {
 			$detailForm->SetErrorUrl($this->Url(':Edit', ['id' => $this->album->Id, 'absolute' => TRUE]));
 		}
 		$detailForm->Submit();
-		if ($detailForm->GetResult())
+		if ($detailForm->GetResult()) {
 			$this->album->SetValues(
 				$detailForm->GetValues(), 
-				\MvcCore\IModel::PROPS_CONVERT_UNDERSCORES_TO_PASCALCASE
-			)->Save();
+				\MvcCore\IModel::PROPS_PUBLIC |
+				\MvcCore\IModel::PROPS_CONVERT_CAMELCASE_TO_PASCALCASE
+			);
+			$this->album->Save();
+		}
 		$detailForm->SubmittedRedirect();
 	}
 
@@ -119,7 +126,7 @@ class CdCollection extends Base {
 	public function DeleteAction () {
 		$form = $this->getVirtualDeleteForm();
 		$form->SubmitCsrfTokens($_POST);
-		if ($form->GetResult() !== \MvcCore\Ext\Forms\IForm::RESULT_ERRORS)
+		if (!$form->GetErrors())
 			$this->album->Delete();
 		self::Redirect($this->Url(':Index'));
 	}

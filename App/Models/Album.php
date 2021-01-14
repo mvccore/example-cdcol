@@ -61,34 +61,25 @@ class Album extends \MvcCore\Model
 
 	/**
 	 * Delete database row by album Id. Return affected rows count.
-	 * @return int
+	 * @return bool
 	 */
 	public function Delete () {
-		$this->Init();
-		$delete = $this->connection->prepare("
-			DELETE FROM
-				cds
-			WHERE
-				id = :id
-		");
-		$deleted = $delete->execute([
-			":id"	=> $this->Id,
-		]);
-		return $deleted ? $delete->rowCount() : 0;
+		return self::GetConnection()
+			->prepare("DELETE FROM cds WHERE id = :id;")
+			->execute([":id" => $this->Id]);
 	}
+
 	/**
 	 * Update album with completed Id or insert new one if no Id defined.
 	 * Return Id as result.
-	 * @return int
+	 * @return bool
 	 */
 	public function Save () {
-		$this->Init();
 		if (isset($this->Id)) {
-			$this->update();
+			return $this->update();
 		} else {
-			$this->Id = $this->insert();
+			return $this->insert();
 		}
-		return $this->Id;
 	}
 
 	/**
@@ -96,40 +87,54 @@ class Album extends \MvcCore\Model
 	 * @return bool
 	 */
 	protected function update () {
-		$update = $this->connection->prepare("
-			UPDATE
-				cds
-			SET
-				interpret = :interpret,
-				year = :year,
-				title = :title
-			WHERE
-				id = :id
-		");
-		return $update->execute([
-			":interpret"	=> $this->Interpret,
-			":year"			=> $this->Year,
-			":title"		=> $this->Title,
-			":id"			=> $this->Id,
-		]);
+		$data = $this->GetTouched(
+			\MvcCore\IModel::PROPS_PUBLIC |
+			\MvcCore\IModel::PROPS_CONVERT_PASCALCASE_TO_UNDERSCORES
+		);
+		$colsSqlItems = [];
+		$params = [];
+		foreach ($data as $columnName => $value) {
+			if ($columnName === 'id') continue;
+			$colsSqlItems[] = "{$columnName} = :{$columnName}";
+			$params[":{$columnName}"] = self::convertToScalar($value);
+		}
+		$params[':id'] = $this->Id;
+		$colsSql = implode(", ", $colsSqlItems);
+		return self::GetConnection()
+			->prepare("UPDATE cds SET {$colsSql} WHERE id = :id;")
+			->execute($params);
 	}
 
 	/**
-	 * Insert only filled values, return new album id.
-	 * @return int
+	 * Insert only filled values and complete new album id.
+	 * @return bool
 	 */
-	protected function insert() {
+	protected function insert () {
 		$columnsSql = [];
 		$params = [];
-		foreach ($this->GetValues() as $key => $value) {
-			$keyUnderscored = \MvcCore\Tool::GetUnderscoredFromPascalCase($key);
-			$columnsSql[] = $keyUnderscored;
-			$params[':' . $keyUnderscored] = $value;
+		$data = $this->GetValues(
+			\MvcCore\IModel::PROPS_PUBLIC |
+			\MvcCore\IModel::PROPS_CONVERT_PASCALCASE_TO_UNDERSCORES
+		);
+		foreach ($data as $columnName => $value) {
+			$columnsSql[] = $columnName;
+			$params[":{$columnName}"] = self::convertToScalar($value);
 		}
 		$sql = 'INSERT INTO cds (' . implode(',', $columnsSql) . ')
 			 VALUES (:' . implode(', :', $columnsSql) . ')';
-		$insertCommand = $this->connection->prepare($sql);
-		$insertCommand->execute($params);
-		return (int) $this->connection->lastInsertId();
+		$db = self::GetConnection();
+		try {
+			$db->beginTransaction();
+			$db
+				->prepare($sql)
+				->execute($params);
+			$newId = $db->lastInsertId();
+			$db->commit();
+			$this->Id = $newId;
+		} catch (\Throwable $e) {
+			$db->rollBack();
+			throw $e;
+		}
+		return TRUE;
 	}
 }
