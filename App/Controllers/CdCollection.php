@@ -45,6 +45,7 @@ class CdCollection extends Base {
 		// try to load album model instance from database
 		$id = $this->GetParam("id", "0-9", NULL, 'int');
 		$this->album = Models\Album::GetById(intval($id));
+		x($this->album);
 		if (!$this->album && $this->actionName == 'edit')
 			$this->renderNotFound();
 	}
@@ -102,8 +103,9 @@ class CdCollection extends Base {
 		}
 		$detailForm->Submit();
 		if ($detailForm->GetResult())
-			$this->album->SetUp(
-				$detailForm->GetValues(), \MvcCore\IModel::KEYS_CONVERSION_UNDERSCORES_TO_PASCALCASE
+			$this->album->SetValues(
+				$detailForm->GetValues(), 
+				\MvcCore\IModel::PROPS_CONVERT_UNDERSCORES_TO_PASCALCASE
 			)->Save();
 		$detailForm->SubmittedRedirect();
 	}
