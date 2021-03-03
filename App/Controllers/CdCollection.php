@@ -142,7 +142,7 @@ class CdCollection extends Base {
 			->SetAction($this->Url(':Submit'))
 			->SetSuccessUrl($this->Url(':Index', ['absolute' => TRUE]))
 			->AddCssClasses('theme')
-			->SetDefaultFieldsRenderMode(
+			->SetFieldsRenderModeDefault(
 				Form::FIELD_RENDER_MODE_LABEL_AROUND
 			);
 		if ($editForm) {
