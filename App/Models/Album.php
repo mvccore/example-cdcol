@@ -13,8 +13,6 @@ class Album extends \MvcCore\Model
 	/** @var int */
 	public $Year;
 
-	protected $autoInit = TRUE;
-
 	/**
 	 * Get all albums in database as array, keyed by $album->Id.
 	 * @return \MvcCore\Model[]
