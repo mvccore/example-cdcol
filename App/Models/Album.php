@@ -94,7 +94,7 @@ class Album extends \MvcCore\Model
 		foreach ($data as $columnName => $value) {
 			if ($columnName === 'id') continue;
 			$colsSqlItems[] = "{$columnName} = :{$columnName}";
-			$params[":{$columnName}"] = self::convertToScalar($value);
+			$params[":{$columnName}"] = self::convertToScalar($columnName, $value);
 		}
 		$params[':id'] = $this->Id;
 		$colsSql = implode(", ", $colsSqlItems);
@@ -116,7 +116,7 @@ class Album extends \MvcCore\Model
 		);
 		foreach ($data as $columnName => $value) {
 			$columnsSql[] = $columnName;
-			$params[":{$columnName}"] = self::convertToScalar($value);
+			$params[":{$columnName}"] = self::convertToScalar($columnName, $value);
 		}
 		$sql = 'INSERT INTO cds (' . implode(',', $columnsSql) . ')
 			 VALUES (:' . implode(', :', $columnsSql) . ')';

@@ -24,13 +24,15 @@
 	}],
 	"require": {
 		"php": ">=5.4.0",
-		"mvccore/mvccore": "^5.1",
-		"mvccore/ext-form": "^5.0",
-		"mvccore/ext-form-field-text": "^5.0",
-		"mvccore/ext-form-field-numeric": "^5.0",
-		"mvccore/ext-form-field-button": "^5.0",
-		"mvccore/ext-view-helper-assets": "^5.0",
-		"mvccore/ext-auth-basic": "^5.0",
+		"mvccore/mvccore": "^5.2.33",
+		"mvccore/ext-model-db": "^5.2.22",
+		"mvccore/ext-model-db-sqlite": "^5.2.4",
+		"mvccore/ext-form": "^5.2.20",
+		"mvccore/ext-form-field-text": "^5.2.2",
+		"mvccore/ext-form-field-numeric": "^5.2.4",
+		"mvccore/ext-form-field-button": "^5.2.2",
+		"mvccore/ext-auth-basic": "^5.2.7",
+		"mvccore/ext-view-helper-assets": "^5.2.5",
 		"mvccore/ext-debug-tracy-all": "^5.0"
 	},
 	"minimum-stability": "stable"
