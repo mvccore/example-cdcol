@@ -51,13 +51,10 @@ class Base extends \MvcCore\Controller
 	}
 
 	private function _preDispatchSetUpBundles () {
-		\MvcCore\Ext\Views\Helpers\Assets::SetGlobalOptions([
-			'cssMinify'	=> 1,
-			'cssJoin'	=> 1,
-			'jsMinify'	=> 1,
-			'jsJoin'	=> 1,
-		]);
-		$static = self::$staticPath;
+		\MvcCore\Ext\Views\Helpers\Assets::SetGlobalOptions(
+			(array) $this->GetConfigSystem()->assets
+		);
+		$static = $this->application->GetPathStatic();
 		$this->view->Css('fixedHead')
 			->Append($static . '/css/components/resets.css')
 			->Append($static . '/css/components/old-browsers-warning.css')
