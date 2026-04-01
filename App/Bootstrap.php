@@ -13,11 +13,10 @@ class Bootstrap {
 
 
 		// Patch core to use extended debug class:
-		if (class_exists('MvcCore\Ext\Debugs\Tracy')) {
-			\MvcCore\Ext\Debugs\Tracy::$Editor = 'MSVS2019';
+		if (class_exists('MvcCore\Ext\Debugs\Tracy'))
 			$app->SetDebugClass('MvcCore\Ext\Debugs\Tracy');
-		}
 
+		//$app->SetSecurityProtection($app::SECURITY_PROTECTION_COOKIE | $app::SECURITY_PROTECTION_FORM_TOKEN);
 
 		/**
 		 * Uncomment this line before generate any assets into temporary directory, before application
